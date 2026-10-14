@@ -17,9 +17,60 @@
   <table><tr><th>Name</th><td>Electricity mix</td></tr><tr><th>BAFU version</th><td>BAFU 2026 v1</td></tr><tr><th>Location</th><td>IR</td></tr><tr><th>Reference unit</th><td>kWh</td></tr><tr><th>Category</th><td>electricity</td></tr><tr><th>Subcategory</th><td>supply mix</td></tr><tr><th>Start date</th><td>2023</td></tr><tr><th>End date</th><td>2023</td></tr><tr><th>UUID</th><td>daa6b12c-58dc-37c9-bfa1-0e7f5349c862</td></tr></table>
   <p class="links"><a href="/bafu-dev/raw_data/bafu_2026_v1/ecoSpold files/nexus_version_1/process_daa6b12c-58dc-37c9-bfa1-0e7f5349c862.xml">EcoSpold1 (nexus v1)</a> &middot; <a href="/bafu-dev/raw_data/bafu_2026_v1/openlca_ilcd_export/nexus_version_1/ILCD/processes/daa6b12c-58dc-37c9-bfa1-0e7f5349c862.xml">ILCD (nexus v1)</a> &middot; <a href="/bafu-dev/raw_data/bafu_2026_v1/openlca_ilcd_export/nexus_version_2/ILCD/processes/daa6b12c-58dc-37c9-bfa1-0e7f5349c862.xml">ILCD (nexus v2)</a></p>
 </section>
+<section class="exchanges">
+  <h2>Exchanges (EcoSpold1 reference vs ILCD)</h2>
+  <p class="ex-summary">11 EcoSpold1 exchanges, 11 matched in ILCD, 0 unmatched, 0 ILCD-only</p>
+  <p class="legend">Each cell shows the <strong>EcoSpold1</strong> value on top and the <strong>ILCD</strong> value below; <span class="ok">green</span> = identical, <span class="diff">red</span> = different, <span class="missing">&mdash;</span> = missing.</p>
+  <div class="tbl-wrap"><table class="ex-table">
+    <thead><tr><th>Flow name</th><th>Direction</th><th>Amount</th><th>Unit</th><th>Category / compartment</th><th>Location</th><th>Sphere</th><th>Raw</th></tr></thead>
+    <tbody><tr><td class="ok">Electricity mix<div class="ilcd">Electricity mix</div></td><td class="ok">Output<div class="ilcd">Output</div></td><td class="ok">1.0<div class="ilcd">1.0</div></td><td class="ok">kWh<div class="ilcd">kWh</div></td><td class="ok">electricity / supply mix<div class="ilcd">electricity / supply mix</div></td><td class="ok">IR<div class="ilcd">IR</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="0">raw</button></td></tr><tr><td class="ok">Electricity, at cogen with biogas engine, allocation exergy<div class="ilcd">Electricity, at cogen with biogas engine, allocation exergy</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">6.6386458399352e-05<div class="ilcd">6.6386458399352E-5</div></td><td class="ok">kWh<div class="ilcd">kWh</div></td><td class="diff">electricity by fuel / biomass\cogeneration<div class="ilcd">electricity by fuel / biomass / cogeneration</div></td><td class="ok">CH<div class="ilcd">CH</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="1">raw</button></td></tr><tr><td class="ok">Electricity, industrial gas, at power plant<div class="ilcd">Electricity, industrial gas, at power plant</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">0.00193675276796315<div class="ilcd">0.00193675276796315</div></td><td class="ok">kWh<div class="ilcd">kWh</div></td><td class="ok">electricity by fuel / gas<div class="ilcd">electricity by fuel / gas</div></td><td class="ok">AT<div class="ilcd">AT</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="2">raw</button></td></tr><tr><td class="ok">Electricity, hydropower, at run-of-river power plant<div class="ilcd">Electricity, hydropower, at run-of-river power plant</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">0.0168290585673221<div class="ilcd">0.0168290585673221</div></td><td class="ok">kWh<div class="ilcd">kWh</div></td><td class="diff">electricity by fuel / hydro\flow through<div class="ilcd">electricity by fuel / hydro / flow through</div></td><td class="ok">RER<div class="ilcd">RER</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="3">raw</button></td></tr><tr><td class="ok">Electricity, hydropower, at reservoir power plant<div class="ilcd">Electricity, hydropower, at reservoir power plant</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">0.0168290585673221<div class="ilcd">0.0168290585673221</div></td><td class="ok">kWh<div class="ilcd">kWh</div></td><td class="diff">electricity by fuel / hydro\reservoir<div class="ilcd">electricity by fuel / hydro / reservoir</div></td><td class="ok">FI<div class="ilcd">FI</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="4">raw</button></td></tr><tr><td class="ok">Electricity, from natural gas<div class="ilcd">Electricity, from natural gas</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">0.811437324662774<div class="ilcd">0.811437324662774</div></td><td class="ok">kWh<div class="ilcd">kWh</div></td><td class="ok">electricity by fuel / gas<div class="ilcd">electricity by fuel / gas</div></td><td class="ok">AT<div class="ilcd">AT</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="5">raw</button></td></tr><tr><td class="ok">Electricity, nuclear, at power plant pressure water reactor<div class="ilcd">Electricity, nuclear, at power plant pressure water reactor</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">0.0161587512994113<div class="ilcd">0.0161587512994113</div></td><td class="ok">kWh<div class="ilcd">kWh</div></td><td class="diff">electricity by fuel / waste\nuclear\pwr<div class="ilcd">electricity by fuel / waste / nuclear / pwr</div></td><td class="ok">DE<div class="ilcd">DE</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="6">raw</button></td></tr><tr><td class="ok">Electricity, at cogen 300kWth, diesel, allocation exergy<div class="ilcd">Electricity, at cogen 300kWth, diesel, allocation exergy</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">0.0806296702568131<div class="ilcd">0.0806296702568131</div></td><td class="ok">kWh<div class="ilcd">kWh</div></td><td class="diff">electricity by fuel / oil\cogeneration<div class="ilcd">electricity by fuel / oil / cogeneration</div></td><td class="ok">CH<div class="ilcd">CH</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="7">raw</button></td></tr><tr><td class="ok">Electricity, oil, at power plant<div class="ilcd">Electricity, oil, at power plant</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">0.051876881331046<div class="ilcd">0.051876881331046</div></td><td class="ok">kWh<div class="ilcd">kWh</div></td><td class="ok">electricity by fuel / oil<div class="ilcd">electricity by fuel / oil</div></td><td class="ok">GR<div class="ilcd">GR</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="8">raw</button></td></tr><tr><td class="ok">Electricity, production mix photovoltaic, at plant<div class="ilcd">Electricity, production mix photovoltaic, at plant</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">0.00203289025826079<div class="ilcd">0.00203289025826079</div></td><td class="ok">kWh<div class="ilcd">kWh</div></td><td class="ok">electricity by fuel / photovoltaic<div class="ilcd">electricity by fuel / photovoltaic</div></td><td class="ok">TR<div class="ilcd">TR</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="9">raw</button></td></tr><tr><td class="ok">Electricity, at wind farm<div class="ilcd">Electricity, at wind farm</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">0.00220322583068779<div class="ilcd">0.00220322583068779</div></td><td class="ok">kWh<div class="ilcd">kWh</div></td><td class="ok">electricity by fuel / wind<div class="ilcd">electricity by fuel / wind</div></td><td class="ok">RER<div class="ilcd">RER</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="10">raw</button></td></tr></tbody>
+  </table></div>
+  <div id="ex-detail" class="ex-detail" hidden>
+    <button id="ex-detail-close">&times;</button>
+    <div class="panes">
+      <div><h3>EcoSpold1 exchange (raw)</h3><pre id="detail-eco"></pre></div>
+      <div><h3>ILCD exchange (raw)</h3><pre id="detail-ilcd"></pre></div>
+    </div>
+  </div>
+</section>
 <section class="compare three">
 <div class="pane"><h2>EcoSpold1 (nexus v1)</h2><iframe src="/bafu-dev/raw_data/bafu_2026_v1/ecoSpold files/nexus_version_1/process_daa6b12c-58dc-37c9-bfa1-0e7f5349c862.xml" title="EcoSpold1 (nexus v1) raw XML"></iframe></div><div class="pane"><h2>ILCD (nexus v1)</h2><iframe src="/bafu-dev/raw_data/bafu_2026_v1/openlca_ilcd_export/nexus_version_1/ILCD/processes/daa6b12c-58dc-37c9-bfa1-0e7f5349c862.xml" title="ILCD (nexus v1) raw XML"></iframe></div><div class="pane"><h2>ILCD (nexus v2)</h2><iframe src="/bafu-dev/raw_data/bafu_2026_v1/openlca_ilcd_export/nexus_version_2/ILCD/processes/daa6b12c-58dc-37c9-bfa1-0e7f5349c862.xml" title="ILCD (nexus v2) raw XML"></iframe></div>
 </section>
+<script>
+(function() {
+  var details = [{"eco": 0, "ilcd": 10}, {"eco": 1, "ilcd": 1}, {"eco": 2, "ilcd": 0}, {"eco": 3, "ilcd": 3}, {"eco": 4, "ilcd": 2}, {"eco": 5, "ilcd": 5}, {"eco": 6, "ilcd": 4}, {"eco": 7, "ilcd": 7}, {"eco": 8, "ilcd": 6}, {"eco": 9, "ilcd": 9}, {"eco": 10, "ilcd": 8}];
+  var box = document.getElementById("ex-detail");
+  var ecoEl = document.getElementById("detail-eco");
+  var ilcdEl = document.getElementById("detail-ilcd");
+  var ecoUrl = "/bafu-dev/raw_data/bafu_2026_v1/ecoSpold files/nexus_version_1/process_daa6b12c-58dc-37c9-bfa1-0e7f5349c862.xml";
+  var ilcdUrl = "/bafu-dev/raw_data/bafu_2026_v1/openlca_ilcd_export/nexus_version_1/ILCD/processes/daa6b12c-58dc-37c9-bfa1-0e7f5349c862.xml";
+  var cache = {};
+  function extractNth(xmlText, tagName, n) {
+    var doc = new DOMParser().parseFromString(xmlText, "application/xml");
+    var els = doc.getElementsByTagName(tagName);
+    return els.length > n ? new XMLSerializer().serializeToString(els[n]) : null;
+  }
+  function load(url, n, tagName, target) {
+    if (n === null || n === undefined) { target.textContent = "(no counterpart in this format)"; return Promise.resolve(); }
+    if (cache[url]) { target.textContent = extractNth(cache[url], tagName, n) || "(exchange not found)"; return Promise.resolve(); }
+    return fetch(url).then(function(r) { return r.text(); }).then(function(t) {
+      cache[url] = t;
+      target.textContent = extractNth(t, tagName, n) || "(exchange not found)";
+    }).catch(function() { target.textContent = "(failed to load raw file)"; });
+  }
+  document.querySelectorAll(".detail-btn").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      var d = details[parseInt(this.getAttribute("data-ex"), 10)];
+      ecoEl.textContent = "loading...";
+      ilcdEl.textContent = "loading...";
+      load(ecoUrl, d.eco, "exchange", ecoEl);
+      load(ilcdUrl, d.ilcd, "exchange", ilcdEl);
+      box.hidden = false;
+    });
+  });
+  document.getElementById("ex-detail-close").addEventListener("click", function() { box.hidden = true; });
+})();
+</script>
 </main>
 
 </body>

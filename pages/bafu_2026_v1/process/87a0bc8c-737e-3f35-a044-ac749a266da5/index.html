@@ -17,9 +17,60 @@
   <table><tr><th>Name</th><td>Goods wagon</td></tr><tr><th>BAFU version</th><td>BAFU 2026 v1</td></tr><tr><th>Location</th><td>RER</td></tr><tr><th>Reference unit</th><td>p</td></tr><tr><th>Category</th><td>transport systems</td></tr><tr><th>Subcategory</th><td>train\operations\infrastructure</td></tr><tr><th>Start date</th><td>2000-01</td></tr><tr><th>End date</th><td>2000-12</td></tr><tr><th>UUID</th><td>87a0bc8c-737e-3f35-a044-ac749a266da5</td></tr></table>
   <p class="links"><a href="/bafu-dev/raw_data/bafu_2026_v1/ecoSpold files/nexus_version_1/process_87a0bc8c-737e-3f35-a044-ac749a266da5.xml">EcoSpold1 (nexus v1)</a> &middot; <a href="/bafu-dev/raw_data/bafu_2026_v1/openlca_ilcd_export/nexus_version_1/ILCD/processes/87a0bc8c-737e-3f35-a044-ac749a266da5.xml">ILCD (nexus v1)</a> &middot; <a href="/bafu-dev/raw_data/bafu_2026_v1/openlca_ilcd_export/nexus_version_2/ILCD/processes/87a0bc8c-737e-3f35-a044-ac749a266da5.xml">ILCD (nexus v2)</a></p>
 </section>
+<section class="exchanges">
+  <h2>Exchanges (EcoSpold1 reference vs ILCD)</h2>
+  <p class="ex-summary">12 EcoSpold1 exchanges, 12 matched in ILCD, 0 unmatched, 0 ILCD-only</p>
+  <p class="legend">Each cell shows the <strong>EcoSpold1</strong> value on top and the <strong>ILCD</strong> value below; <span class="ok">green</span> = identical, <span class="diff">red</span> = different, <span class="missing">&mdash;</span> = missing.</p>
+  <div class="tbl-wrap"><table class="ex-table">
+    <thead><tr><th>Flow name</th><th>Direction</th><th>Amount</th><th>Unit</th><th>Category / compartment</th><th>Location</th><th>Sphere</th><th>Raw</th></tr></thead>
+    <tbody><tr><td class="ok">Goods wagon<div class="ilcd">Goods wagon</div></td><td class="ok">Output<div class="ilcd">Output</div></td><td class="ok">1.0<div class="ilcd">1.0</div></td><td class="diff">p<div class="ilcd">Item(s)</div></td><td class="diff">transport systems / train\operations\infrastructure<div class="ilcd">transport systems / train / operations / infrastructure</div></td><td class="ok">RER<div class="ilcd">RER</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="0">raw</button></td></tr><tr><td class="ok">Electricity, medium voltage, production ENTSO-E, at grid<div class="ilcd">Electricity, medium voltage, production ENTSO-E, at grid</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">9220.0<div class="ilcd">9220.0</div></td><td class="ok">kWh<div class="ilcd">kWh</div></td><td class="ok">electricity / production mix<div class="ilcd">electricity / production mix</div></td><td class="diff"><span class="missing">&mdash;</span><div class="ilcd">ENTSO-E</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="1">raw</button></td></tr><tr><td class="ok">Synthetic rubber, at plant<div class="ilcd">Synthetic rubber, at plant</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">10.0<div class="ilcd">10.0</div></td><td class="ok">kg<div class="ilcd">kg</div></td><td class="ok">plastics / rubbers<div class="ilcd">plastics / rubbers</div></td><td class="ok">RER<div class="ilcd">RER</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="2">raw</button></td></tr><tr><td class="ok">Steel, low-alloyed, at plant<div class="ilcd">Steel, low-alloyed, at plant</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">21000.0<div class="ilcd">21000.0</div></td><td class="ok">kg<div class="ilcd">kg</div></td><td class="ok">metals / ferro<div class="ilcd">metals / ferro</div></td><td class="ok">RER<div class="ilcd">RER</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="3">raw</button></td></tr><tr><td class="ok">Heat, waste<div class="ilcd">Heat, waste</div></td><td class="ok">Output<div class="ilcd">Output</div></td><td class="ok">33200.0<div class="ilcd">33200.0</div></td><td class="ok">MJ<div class="ilcd">MJ</div></td><td class="diff">emissions to air / unspecified<div class="ilcd">Elementary flows / Emission to air / unspecified</div></td><td class="ok"><span class="missing">&mdash;</span><div class="ilcd"><span class="missing">&mdash;</span></div></td><td>Biosphere</td><td><button class="detail-btn" data-ex="4">raw</button></td></tr><tr><td class="ok">Transport, freight, lorry, fleet average<div class="ilcd">Transport, freight, lorry, fleet average</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">2210<div class="ilcd">2210.0</div></td><td class="diff">tkm<div class="ilcd">t*km</div></td><td class="diff">transport systems / road\Transformation<div class="ilcd">transport systems / road / Transformation</div></td><td class="ok">RER<div class="ilcd">RER</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="5">raw</button></td></tr><tr><td class="ok">Rock wool, packed, at plant<div class="ilcd">Rock wool, packed, at plant</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">32.0<div class="ilcd">32.0</div></td><td class="ok">kg<div class="ilcd">kg</div></td><td class="ok">construction / insulation<div class="ilcd">construction / insulation</div></td><td class="ok">CH<div class="ilcd">CH</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="6">raw</button></td></tr><tr><td class="ok">Glued laminated timber, average glue mix, at plant<div class="ilcd">Glued laminated timber, average glue mix, at plant</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">1.92<div class="ilcd">1.92</div></td><td class="ok">m3<div class="ilcd">m3</div></td><td class="diff">wood / wooden materials\new processes\other material<div class="ilcd">wood / wooden materials / new processes / other material</div></td><td class="ok">RER<div class="ilcd">RER</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="7">raw</button></td></tr><tr><td class="ok">Transport, freight, rail<div class="ilcd">Transport, freight, rail</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">4430.0<div class="ilcd">4430.0</div></td><td class="diff">tkm<div class="ilcd">t*km</div></td><td class="ok">transport systems / train<div class="ilcd">transport systems / train</div></td><td class="ok">RER<div class="ilcd">RER</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="8">raw</button></td></tr><tr><td class="ok">Alkyd paint, white, 60% in solvent, at plant<div class="ilcd">Alkyd paint, white, 60% in solvent, at plant</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">106.0<div class="ilcd">106.0</div></td><td class="ok">kg<div class="ilcd">kg</div></td><td class="ok">construction / paints<div class="ilcd">construction / paints</div></td><td class="ok">RER<div class="ilcd">RER</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="9">raw</button></td></tr><tr><td class="ok">Aluminium, production mix, at plant<div class="ilcd">Aluminium, production mix, at plant</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">1070.0<div class="ilcd">1070.0</div></td><td class="ok">kg<div class="ilcd">kg</div></td><td class="ok">metals / extraction<div class="ilcd">metals / extraction</div></td><td class="ok">RER<div class="ilcd">RER</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="10">raw</button></td></tr><tr><td class="ok">Light fuel oil, burned in industrial furnace 1MW, non-modulating<div class="ilcd">Light fuel oil, burned in industrial furnace 1MW, non-modulating</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">46000.0<div class="ilcd">46000.0</div></td><td class="ok">MJ<div class="ilcd">MJ</div></td><td class="diff">heat / oil\heating systems<div class="ilcd">heat / oil / heating systems</div></td><td class="ok">RER<div class="ilcd">RER</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="11">raw</button></td></tr></tbody>
+  </table></div>
+  <div id="ex-detail" class="ex-detail" hidden>
+    <button id="ex-detail-close">&times;</button>
+    <div class="panes">
+      <div><h3>EcoSpold1 exchange (raw)</h3><pre id="detail-eco"></pre></div>
+      <div><h3>ILCD exchange (raw)</h3><pre id="detail-ilcd"></pre></div>
+    </div>
+  </div>
+</section>
 <section class="compare three">
 <div class="pane"><h2>EcoSpold1 (nexus v1)</h2><iframe src="/bafu-dev/raw_data/bafu_2026_v1/ecoSpold files/nexus_version_1/process_87a0bc8c-737e-3f35-a044-ac749a266da5.xml" title="EcoSpold1 (nexus v1) raw XML"></iframe></div><div class="pane"><h2>ILCD (nexus v1)</h2><iframe src="/bafu-dev/raw_data/bafu_2026_v1/openlca_ilcd_export/nexus_version_1/ILCD/processes/87a0bc8c-737e-3f35-a044-ac749a266da5.xml" title="ILCD (nexus v1) raw XML"></iframe></div><div class="pane"><h2>ILCD (nexus v2)</h2><iframe src="/bafu-dev/raw_data/bafu_2026_v1/openlca_ilcd_export/nexus_version_2/ILCD/processes/87a0bc8c-737e-3f35-a044-ac749a266da5.xml" title="ILCD (nexus v2) raw XML"></iframe></div>
 </section>
+<script>
+(function() {
+  var details = [{"eco": 0, "ilcd": 4}, {"eco": 1, "ilcd": 1}, {"eco": 2, "ilcd": 0}, {"eco": 3, "ilcd": 3}, {"eco": 4, "ilcd": 2}, {"eco": 5, "ilcd": 9}, {"eco": 6, "ilcd": 8}, {"eco": 7, "ilcd": 11}, {"eco": 8, "ilcd": 10}, {"eco": 9, "ilcd": 6}, {"eco": 10, "ilcd": 5}, {"eco": 11, "ilcd": 7}];
+  var box = document.getElementById("ex-detail");
+  var ecoEl = document.getElementById("detail-eco");
+  var ilcdEl = document.getElementById("detail-ilcd");
+  var ecoUrl = "/bafu-dev/raw_data/bafu_2026_v1/ecoSpold files/nexus_version_1/process_87a0bc8c-737e-3f35-a044-ac749a266da5.xml";
+  var ilcdUrl = "/bafu-dev/raw_data/bafu_2026_v1/openlca_ilcd_export/nexus_version_1/ILCD/processes/87a0bc8c-737e-3f35-a044-ac749a266da5.xml";
+  var cache = {};
+  function extractNth(xmlText, tagName, n) {
+    var doc = new DOMParser().parseFromString(xmlText, "application/xml");
+    var els = doc.getElementsByTagName(tagName);
+    return els.length > n ? new XMLSerializer().serializeToString(els[n]) : null;
+  }
+  function load(url, n, tagName, target) {
+    if (n === null || n === undefined) { target.textContent = "(no counterpart in this format)"; return Promise.resolve(); }
+    if (cache[url]) { target.textContent = extractNth(cache[url], tagName, n) || "(exchange not found)"; return Promise.resolve(); }
+    return fetch(url).then(function(r) { return r.text(); }).then(function(t) {
+      cache[url] = t;
+      target.textContent = extractNth(t, tagName, n) || "(exchange not found)";
+    }).catch(function() { target.textContent = "(failed to load raw file)"; });
+  }
+  document.querySelectorAll(".detail-btn").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      var d = details[parseInt(this.getAttribute("data-ex"), 10)];
+      ecoEl.textContent = "loading...";
+      ilcdEl.textContent = "loading...";
+      load(ecoUrl, d.eco, "exchange", ecoEl);
+      load(ilcdUrl, d.ilcd, "exchange", ilcdEl);
+      box.hidden = false;
+    });
+  });
+  document.getElementById("ex-detail-close").addEventListener("click", function() { box.hidden = true; });
+})();
+</script>
 </main>
 
 </body>

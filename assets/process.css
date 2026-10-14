@@ -16,3 +16,26 @@ header h1 { font-size: 1.3rem; margin: 0.4rem 0; word-break: break-word; }
 .pane iframe { flex: 1; width: 100%; height: 70vh; border: 1px solid #d4d7de; border-radius: 6px; background: #fff; }
 @media (max-width: 1100px) { .compare { flex-wrap: wrap; } .pane { flex: 1 1 45%; } }
 @media (max-width: 700px) { .compare { flex-direction: column; } .pane { flex: 1 1 auto; } .pane iframe { height: 45vh; } }
+.exchanges { margin-top: 1.5rem; }
+.exchanges h2 { font-size: 1.1rem; }
+.ex-summary { font-size: 0.9rem; color: #5a6272; }
+.legend { font-size: 0.8rem; color: #5a6272; }
+.legend .ok { color: #14713c; } .legend .diff { color: #b3261e; } .legend .missing { color: #888; }
+.tbl-wrap { overflow-x: auto; max-height: 60vh; overflow-y: auto; border: 1px solid #d4d7de; border-radius: 6px; }
+table.ex-table { min-width: 60rem; }
+table.ex-table th { position: sticky; top: 0; background: #eef1f6; cursor: default; }
+table.ex-table td { vertical-align: top; font-size: 0.82rem; }
+table.ex-table td .ilcd { color: #5a6272; margin-top: 0.15rem; border-top: 1px dashed #dfe3ea; padding-top: 0.15rem; }
+table.ex-table td.ok { background: #e8f5ec; }
+table.ex-table td.diff { background: #fdecea; }
+table.ex-table td.missing { background: #f3f4f6; color: #989ea9; }
+tr.orphan td { background: #fff8e6; }
+.detail-btn { border: 1px solid #c9cdd6; background: #fff; border-radius: 4px; cursor: pointer; font-size: 0.75rem; padding: 0.1rem 0.45rem; }
+.ex-detail { position: fixed; inset: 0; background: rgba(20,24,32,0.55); display: flex; align-items: center; justify-content: center; z-index: 10; }
+.ex-detail[hidden] { display: none; }
+.ex-detail > .card { position: relative; }
+#ex-detail-close { position: absolute; top: 0.4rem; right: 0.6rem; border: none; background: none; font-size: 1.4rem; cursor: pointer; }
+.ex-detail .panes { display: flex; gap: 1rem; background: #fff; border-radius: 8px; padding: 1.2rem; max-width: 95vw; max-height: 85vh; overflow: auto; }
+.ex-detail .panes > div { flex: 1 1 40%; min-width: 20rem; }
+.ex-detail h3 { font-size: 0.9rem; margin: 0 0 0.4rem; }
+.ex-detail pre { white-space: pre-wrap; word-break: break-word; font-size: 0.72rem; background: #f7f8fa; border: 1px solid #e6e8ee; border-radius: 6px; padding: 0.6rem; max-height: 70vh; overflow: auto; }
