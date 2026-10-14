@@ -4,36 +4,32 @@ BAFU LCI process datasets and the source for the GitHub Pages site.
 
 ## Repository layout
 
-- `data/<dataset>/ecoSpold files/nexus_version_1/` — process data sets in EcoSpold1 format (`process_<uuid>.xml`), one folder per dataset version (e.g. `bafu_2026_v1`, `bafu_2026_v2`, `bafu_2027_v1`)
-- `data/<dataset>/openlca_ilcd_export/nexus_version_1/ILCD/` — the same data sets in ILCD format (`processes/<uuid>.xml`), plus flows, flow properties, unit groups, sources, contacts and LCIA methods
+- `raw_data/<dataset>/ecoSpold files/nexus_version_<n>/` — process data sets in EcoSpold1 format (`process_<uuid>.xml`), one folder per dataset version (e.g. `bafu_2026_v1`, `bafu_2026_v2`, `bafu_2027_v1`); each raw format may have multiple nexus subversions
+- `raw_data/<dataset>/openlca_ilcd_export/nexus_version_<n>/ILCD/` — the same data sets in ILCD format (`processes/<uuid>.xml`), plus flows, flow properties, unit groups, sources, contacts and LCIA methods; likewise per nexus subversion
 - `site/` — static site generator and page templates
-- `<dataset>/` (generated, at the repo root) — GitHub Pages output per dataset version: `index.html`, `assets/`, `process/`
-- `index.html` (generated, at the repo root) — redirects to the latest dataset version
+- `index.html`, `assets/` (generated, at the repo root) — version-independent landing page
+- `pages/<dataset>/process/<uuid>/` (generated) — one page per process and dataset version
 
 Do not edit generated output by hand; regenerate instead.
 
-Every process exists in both formats with the same UUID. The GitHub Pages site serves the repository root, so each raw XML file is directly reachable under the Pages URL.
+Every process exists in all raw formats with the same UUID. The GitHub Pages site serves the repository root, so each raw XML file is directly reachable under the Pages URL.
 
 ## Website
 
 Published at `https://cswh.github.io/bafu-dev/` (GitHub Pages, served from the `main` branch root).
 
-- `https://cswh.github.io/bafu-dev/` redirects to the latest dataset version.
-- Each dataset version has its own landing page, e.g.
-  `https://cswh.github.io/bafu-dev/bafu_2026_v1/`,
-  with an overview of (and navigation between) all existing BAFU versions.
-- The landing page lists all processes of all dataset versions with search, filtering (BAFU version, location, reference unit, category, subcategory), column sorting and pagination. A BAFU version column shows the dataset each process belongs to.
+- The landing page at `https://cswh.github.io/bafu-dev/` is version-independent: it lists the processes of all existing BAFU versions with search, filtering (BAFU version, location, reference unit, category, subcategory), column sorting and pagination. A BAFU version column shows the dataset each process belongs to, and a version overview at the top filters the list per version.
 - Each process has a dedicated, shareable page, namespaced by dataset version:
-  `https://cswh.github.io/bafu-dev/<dataset>/process/<uuid>/`
-  e.g. `https://cswh.github.io/bafu-dev/bafu_2026_v1/process/0004e814-c18d-42e2-a3f7-ce1fa51a3c2c/`
-  It shows the raw EcoSpold1 and raw ILCD XML of that process side by side, plus direct links to both raw files.
+  `https://cswh.github.io/bafu-dev/pages/<dataset>/process/<uuid>/`
+  e.g. `https://cswh.github.io/bafu-dev/pages/bafu_2026_v1/process/0004e814-c18d-42e2-a3f7-ce1fa51a3c2c/`
+- A process page shows the raw XML of every available raw format of that dataset side by side (e.g. EcoSpold1 nexus v1, ILCD nexus v1 and ILCD nexus v2), plus direct links to the raw files.
 
 ## Regenerating the site
 
-After adding or changing data under `data/`, run:
+After adding or changing data under `raw_data/`, run:
 
 ```bash
 python3 site/generate.py
 ```
 
-The generator automatically detects every `data/bafu_<year>_v<number>/` folder, builds each version's landing page and all `process/<uuid>/` pages, and rewrites the root redirect to the newest version. Output for dataset versions that no longer exist is removed. Commit and push the result to publish it.
+The generator automatically detects every `raw_data/bafu_<year>_v<number>/` folder and, within it, every `nexus_version_<n>` subfolder of the EcoSpold and ILCD raw formats. It builds the root landing page and all `pages/<dataset>/process/<uuid>/` pages; output for dataset versions that no longer exist is removed. Commit and push the result to publish it.

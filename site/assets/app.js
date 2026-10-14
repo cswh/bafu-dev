@@ -94,7 +94,7 @@
   }
 
   function link(d, dlabel) {
-    return '<a href="/bafu-dev/' + d.dataset + "/process/" + d.uuid + '/">' + esc(dlabel) + "</a>";
+    return '<a href="/bafu-dev/pages/' + d.dataset + "/process/" + d.uuid + '/">' + esc(dlabel) + "</a>";
   }
 
   function render() {
@@ -163,11 +163,15 @@
     if (p && !e.target.disabled) { state.page = parseInt(p, 10); apply(); render(); window.scrollTo(0, 0); }
   });
 
+  var preset = new URLSearchParams(window.location.search).get("dataset");
+  if (preset) { state.dataset = preset; }
+
   fetch("/bafu-dev/assets/index.json")
     .then(function (r) { return r.json(); })
     .then(function (d) {
       data = d;
       fillSelect("dataset", uniqDatasets(), label);
+      $("dataset").value = state.dataset;
       fillSelect("location", uniq("location").sort(function (a, b) { return a.localeCompare(b, undefined, { numeric: true }); }));
       fillSelect("unit", uniq("unit").sort(function (a, b) { return a.localeCompare(b, undefined, { numeric: true }); }));
       fillSelect("category", uniq("category").sort(function (a, b) { return a.localeCompare(b, undefined, { numeric: true }); }));
