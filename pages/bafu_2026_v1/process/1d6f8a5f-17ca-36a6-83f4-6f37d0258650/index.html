@@ -17,9 +17,60 @@
   <table><tr><th>Name</th><td>Thermal insulation, 30mm, 40kg/m3, alumium cladding, at plant</td></tr><tr><th>BAFU version</th><td>BAFU 2026 v1</td></tr><tr><th>Location</th><td>CH</td></tr><tr><th>Reference unit</th><td>m2</td></tr><tr><th>Category</th><td>ventilation</td></tr><tr><th>Subcategory</th><td>production of components</td></tr><tr><th>Start date</th><td>2014-01</td></tr><tr><th>End date</th><td>2014-12</td></tr><tr><th>UUID</th><td>1d6f8a5f-17ca-36a6-83f4-6f37d0258650</td></tr></table>
   <p class="links"><a href="/bafu-dev/raw_data/bafu_2026_v1/ecoSpold files/nexus_version_1/process_1d6f8a5f-17ca-36a6-83f4-6f37d0258650.xml">EcoSpold1 (nexus v1)</a> &middot; <a href="/bafu-dev/raw_data/bafu_2026_v1/openlca_ilcd_export/nexus_version_1/ILCD/processes/1d6f8a5f-17ca-36a6-83f4-6f37d0258650.xml">ILCD (nexus v1)</a> &middot; <a href="/bafu-dev/raw_data/bafu_2026_v1/openlca_ilcd_export/nexus_version_2/ILCD/processes/1d6f8a5f-17ca-36a6-83f4-6f37d0258650.xml">ILCD (nexus v2)</a></p>
 </section>
+<section class="exchanges">
+  <h2>Exchanges (EcoSpold1 reference vs ILCD)</h2>
+  <p class="ex-summary">6 EcoSpold1 exchanges, 6 matched in ILCD, 0 unmatched, 0 ILCD-only</p>
+  <p class="legend">Each cell shows the <strong>EcoSpold1</strong> value on top and the <strong>ILCD</strong> value below; <span class="ok">green</span> = identical, <span class="diff">red</span> = different, <span class="missing">&mdash;</span> = missing.</p>
+  <div class="tbl-wrap"><table class="ex-table">
+    <thead><tr><th>Flow name</th><th>Direction</th><th>Amount</th><th>Unit</th><th>Category / compartment</th><th>Location</th><th>Sphere</th><th>Raw</th></tr></thead>
+    <tbody><tr><td class="ok">Thermal insulation, 30mm, 40kg/m3, alumium cladding, at plant<div class="ilcd">Thermal insulation, 30mm, 40kg/m3, alumium cladding, at plant</div></td><td class="ok">Output<div class="ilcd">Output</div></td><td class="ok">1.0<div class="ilcd">1.0</div></td><td class="ok">m2<div class="ilcd">m2</div></td><td class="ok">ventilation / production of components<div class="ilcd">ventilation / production of components</div></td><td class="ok">CH<div class="ilcd">CH</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="0">raw</button></td></tr><tr><td class="ok">Aluminium, production mix, wrought alloy, at plant<div class="ilcd">Aluminium, production mix, wrought alloy, at plant</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">2.16<div class="ilcd">2.16</div></td><td class="ok">kg<div class="ilcd">kg</div></td><td class="ok">metals / extraction<div class="ilcd">metals / extraction</div></td><td class="ok">RER<div class="ilcd">RER</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="1">raw</button></td></tr><tr><td class="ok">Sheet rolling, aluminium<div class="ilcd">Sheet rolling, aluminium</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">2.16<div class="ilcd">2.16</div></td><td class="ok">kg<div class="ilcd">kg</div></td><td class="ok">metals / chipless shaping<div class="ilcd">metals / chipless shaping</div></td><td class="ok">RER<div class="ilcd">RER</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="2">raw</button></td></tr><tr><td class="ok">Transport, freight, lorry, 16t-32t gross weight, fleet average<div class="ilcd">Transport, freight, lorry, 16t-32t gross weight, fleet average</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">0.174<div class="ilcd">0.174</div></td><td class="diff">tkm<div class="ilcd">t*km</div></td><td class="diff">transport systems / road\Transformation<div class="ilcd">transport systems / road / Transformation</div></td><td class="ok">CH<div class="ilcd">CH</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="3">raw</button></td></tr><tr><td class="ok">Transport, freight, rail<div class="ilcd">Transport, freight, rail</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">0.696<div class="ilcd">0.696</div></td><td class="diff">tkm<div class="ilcd">t*km</div></td><td class="ok">transport systems / train<div class="ilcd">transport systems / train</div></td><td class="ok">RER<div class="ilcd">RER</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="4">raw</button></td></tr><tr><td class="ok">Rock wool, at plant<div class="ilcd">Rock wool, at plant</div></td><td class="ok">Input<div class="ilcd">Input</div></td><td class="ok">1.32<div class="ilcd">1.32</div></td><td class="ok">kg<div class="ilcd">kg</div></td><td class="ok">construction / insulation<div class="ilcd">construction / insulation</div></td><td class="ok">CH<div class="ilcd">CH</div></td><td>Technosphere</td><td><button class="detail-btn" data-ex="5">raw</button></td></tr></tbody>
+  </table></div>
+  <div id="ex-detail" class="ex-detail" hidden>
+    <button id="ex-detail-close">&times;</button>
+    <div class="panes">
+      <div><h3>EcoSpold1 exchange (raw)</h3><pre id="detail-eco"></pre></div>
+      <div><h3>ILCD exchange (raw)</h3><pre id="detail-ilcd"></pre></div>
+    </div>
+  </div>
+</section>
 <section class="compare three">
 <div class="pane"><h2>EcoSpold1 (nexus v1)</h2><iframe src="/bafu-dev/raw_data/bafu_2026_v1/ecoSpold files/nexus_version_1/process_1d6f8a5f-17ca-36a6-83f4-6f37d0258650.xml" title="EcoSpold1 (nexus v1) raw XML"></iframe></div><div class="pane"><h2>ILCD (nexus v1)</h2><iframe src="/bafu-dev/raw_data/bafu_2026_v1/openlca_ilcd_export/nexus_version_1/ILCD/processes/1d6f8a5f-17ca-36a6-83f4-6f37d0258650.xml" title="ILCD (nexus v1) raw XML"></iframe></div><div class="pane"><h2>ILCD (nexus v2)</h2><iframe src="/bafu-dev/raw_data/bafu_2026_v1/openlca_ilcd_export/nexus_version_2/ILCD/processes/1d6f8a5f-17ca-36a6-83f4-6f37d0258650.xml" title="ILCD (nexus v2) raw XML"></iframe></div>
 </section>
+<script>
+(function() {
+  var details = [{"eco": 0, "ilcd": 3}, {"eco": 1, "ilcd": 2}, {"eco": 2, "ilcd": 1}, {"eco": 3, "ilcd": 0}, {"eco": 4, "ilcd": 5}, {"eco": 5, "ilcd": 4}];
+  var box = document.getElementById("ex-detail");
+  var ecoEl = document.getElementById("detail-eco");
+  var ilcdEl = document.getElementById("detail-ilcd");
+  var ecoUrl = "/bafu-dev/raw_data/bafu_2026_v1/ecoSpold files/nexus_version_1/process_1d6f8a5f-17ca-36a6-83f4-6f37d0258650.xml";
+  var ilcdUrl = "/bafu-dev/raw_data/bafu_2026_v1/openlca_ilcd_export/nexus_version_1/ILCD/processes/1d6f8a5f-17ca-36a6-83f4-6f37d0258650.xml";
+  var cache = {};
+  function extractNth(xmlText, tagName, n) {
+    var doc = new DOMParser().parseFromString(xmlText, "application/xml");
+    var els = doc.getElementsByTagName(tagName);
+    return els.length > n ? new XMLSerializer().serializeToString(els[n]) : null;
+  }
+  function load(url, n, tagName, target) {
+    if (n === null || n === undefined) { target.textContent = "(no counterpart in this format)"; return Promise.resolve(); }
+    if (cache[url]) { target.textContent = extractNth(cache[url], tagName, n) || "(exchange not found)"; return Promise.resolve(); }
+    return fetch(url).then(function(r) { return r.text(); }).then(function(t) {
+      cache[url] = t;
+      target.textContent = extractNth(t, tagName, n) || "(exchange not found)";
+    }).catch(function() { target.textContent = "(failed to load raw file)"; });
+  }
+  document.querySelectorAll(".detail-btn").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      var d = details[parseInt(this.getAttribute("data-ex"), 10)];
+      ecoEl.textContent = "loading...";
+      ilcdEl.textContent = "loading...";
+      load(ecoUrl, d.eco, "exchange", ecoEl);
+      load(ilcdUrl, d.ilcd, "exchange", ilcdEl);
+      box.hidden = false;
+    });
+  });
+  document.getElementById("ex-detail-close").addEventListener("click", function() { box.hidden = true; });
+})();
+</script>
 </main>
 
 </body>
