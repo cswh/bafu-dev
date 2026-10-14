@@ -1,0 +1,19 @@
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 1.5rem; background: #f7f8fa; color: #1f2430; }
+h1 { font-size: 1.4rem; margin: 0 0 0.25rem; }
+#count { color: #5a6272; font-size: 0.9rem; margin-bottom: 1rem; }
+#controls { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1rem; }
+#controls input, #controls select { padding: 0.45rem 0.6rem; border: 1px solid #c9cdd6; border-radius: 6px; font-size: 0.95rem; background: #fff; }
+#controls input[type="search"] { flex: 2 1 18rem; min-width: 12rem; }
+#controls select { flex: 1 1 9rem; }
+#controls label { display: flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; color: #5a6272; }
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; }
+th, td { text-align: left; padding: 0.45rem 0.8rem; border-bottom: 1px solid #e6e8ee; font-size: 0.9rem; }
+th { background: #eef1f6; cursor: pointer; user-select: none; white-space: nowrap; }
+th.sort-asc::after { content: " \\25B4"; }
+th.sort-desc::after { content: " \\25BE"; }
+td.name a { color: #0b5cad; text-decoration: none; word-break: break-word; }
+td.uuid { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.78rem; color: #5a6272; white-space: nowrap; }
+#pagination { display: flex; gap: 0.4rem; align-items: center; margin-top: 1rem; flex-wrap: wrap; }
+#pagination button { padding: 0.3rem 0.7rem; border: 1px solid #c9cdd6; background: #fff; border-radius: 6px; cursor: pointer; }
+#pagination button[disabled] { opacity: 0.45; cursor: default; }
+#pagination button.current { background: #0b5cad; color: #fff; border-color: #0b5cad; }
