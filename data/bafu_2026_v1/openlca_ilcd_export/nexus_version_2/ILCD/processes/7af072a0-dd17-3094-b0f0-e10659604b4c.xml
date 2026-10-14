@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>7af072a0-dd17-3094-b0f0-e10659604b4c</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity mix, DB</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="6299429b-5a23-3f58-ba95-d33dc8e1875b">electricity</common:class>
+                    <common:class level="1" classId="b3130dcd-51b6-31b7-b98e-f30e6a0e917c">supply mix</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Technology shares determined based on information from DB and information on gross electricity generation in Germany;
+UUID: 7af072a0-dd17-3094-b0f0-e10659604b4c</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1388530800000" olca:endDate="1417388400000">
+            <common:referenceYear>2014</common:referenceYear>
+            <common:dataSetValidUntil>2014</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="DE" latitudeAndLongitude="51.10636348632842;10.381493843430931">
+                <descriptionOfRestrictions xml:lang="en">Germany</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Average technology\n\n# Included processes\nThis dataset includes the shares of different technologies of the DB production mix in Germany .</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="215b4236-5b63-30b8-a945-d808ca843f1f" version="00.00.000" uri="../sources/215b4236-5b63-30b8-a945-d808ca843f1f.xml">
+                <common:shortDescription xml:lang="en">2020 - Update Mobitool 2020 - Krebs</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistics </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 02.11.2020; Other validation: G:\Projekte laufend\713 Aktualisierung mobitool 2020\EcoSpold\[713-Strommix-Übertragung-Verteilung-Bahnstrom-EIv2-v0.4.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="c19a828a-d7fd-342a-9626-cbb0076aac8e" version="00.00.000" uri="../contacts/c19a828a-d7fd-342a-9626-cbb0076aac8e.xml">
+                <common:shortDescription xml:lang="en">Luana Krebs</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:51:17.453+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="c19a828a-d7fd-342a-9626-cbb0076aac8e" version="00.00.000" uri="../contacts/c19a828a-d7fd-342a-9626-cbb0076aac8e.xml">
+                <common:shortDescription xml:lang="en">Luana Krebs</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2020-11-02T00:00:00.000+01:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="215b4236-5b63-30b8-a945-d808ca843f1f" version="00.00.000" uri="../sources/215b4236-5b63-30b8-a945-d808ca843f1f.xml">
+                <common:shortDescription xml:lang="en">2020 - Update Mobitool 2020 - Krebs</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="016d490f-79c5-3c87-b3fb-165aa94757f4" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.16489">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5c0a762d-2a14-3135-a20c-219411240623" version="00.00.000" uri="../flows/5c0a762d-2a14-3135-a20c-219411240623.xml">
+                <common:shortDescription xml:lang="en">Electricity, lignite, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.593604</meanAmount>
+            <resultingAmount>0.593604</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b63ac3b6-a7b3-30eb-b18f-e385832342ad" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.083">
+            <referenceToFlowDataSet type="flow data set" refObjectId="50f9ed3f-c20a-35be-926b-5b9a2fb9cb36" version="00.00.000" uri="../flows/50f9ed3f-c20a-35be-926b-5b9a2fb9cb36.xml">
+                <common:shortDescription xml:lang="en">Electricity, natural gas, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.2988</meanAmount>
+            <resultingAmount>0.2988</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="0108a517-7311-3f83-a805-e653f5bd2c89" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.096">
+            <referenceToFlowDataSet type="flow data set" refObjectId="78ca8d2f-d1d5-3ff1-a6a5-abacf3562900" version="00.00.012" uri="../flows/78ca8d2f-d1d5-3ff1-a6a5-abacf3562900.xml">
+                <common:shortDescription xml:lang="en">Electricity, nuclear, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.3456</meanAmount>
+            <resultingAmount>0.3456</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b35b43a0-cf11-3cf1-ba91-54faaf294f6c" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.30465">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b9a490eb-5dd2-3d4b-93c6-4da877870523" version="00.00.000" uri="../flows/b9a490eb-5dd2-3d4b-93c6-4da877870523.xml">
+                <common:shortDescription xml:lang="en">Electricity, at wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.09674</meanAmount>
+            <resultingAmount>1.09674</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation AT
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="aeb0fb1c-e3e4-371c-802e-7513e1b69faa" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.10694">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dd527dc0-c908-3998-8113-d8395e514454" version="00.00.004" uri="../flows/dd527dc0-c908-3998-8113-d8395e514454.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen with biogas engine, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.384984</meanAmount>
+            <resultingAmount>0.384984</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="98d8c27e-4603-3c15-b75a-fe61a5997d33" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.11316">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b1e82e30-47f7-38ae-9b84-7ce9193f29dd" version="00.00.000" uri="../flows/b1e82e30-47f7-38ae-9b84-7ce9193f29dd.xml">
+                <common:shortDescription xml:lang="en">Electricity, production mix photovoltaic, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.407376</meanAmount>
+            <resultingAmount>0.407376</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="055611a6-62c4-3c28-9f71-25bfbdd7c21c" version="00.00.000" uri="../flows/055611a6-62c4-3c28-9f71-25bfbdd7c21c.xml">
+                <common:shortDescription xml:lang="en">Electricity mix, DB</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+            <generalComment xml:lang="en">GERMANY
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="ed68b9a9-e120-315c-8bc6-9161b9e775f0" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.005">
+            <referenceToFlowDataSet type="flow data set" refObjectId="59bfd8c0-8fd9-3d05-855e-a51055a584a3" version="00.00.000" uri="../flows/59bfd8c0-8fd9-3d05-855e-a51055a584a3.xml">
+                <common:shortDescription xml:lang="en">Electricity, industrial gas, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.018000000000000002</meanAmount>
+            <resultingAmount>0.018000000000000002</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="1a559be6-7f67-37be-aa1e-e8ce53dc304e" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.047252">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4ad444b8-a2ec-3f0d-bfd3-d30d7ea348e5" version="00.00.000" uri="../flows/4ad444b8-a2ec-3f0d-bfd3-d30d7ea348e5.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.17010720000000001</meanAmount>
+            <resultingAmount>0.17010720000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="ee0f9f93-524a-380a-963a-5eb4a78b8d92" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.079113">
+            <referenceToFlowDataSet type="flow data set" refObjectId="851788f3-4a4d-3c4b-b6a2-f5904354fff3" version="00.00.000" uri="../flows/851788f3-4a4d-3c4b-b6a2-f5904354fff3.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.2848068</meanAmount>
+            <resultingAmount>0.2848068</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

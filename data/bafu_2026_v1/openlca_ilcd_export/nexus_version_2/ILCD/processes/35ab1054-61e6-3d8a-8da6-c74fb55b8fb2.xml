@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>35ab1054-61e6-3d8a-8da6-c74fb55b8fb2</common:UUID>
+            <name>
+                <baseName xml:lang="en">Ventilation system, centralized, average for 4 m3/(h m2)</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="ff1072e5-b2a6-348e-9ddd-e14d1129df3f">ventilation</common:class>
+                    <common:class level="1" classId="08426efe-d872-3ed4-ac21-54531861ec2a">production of components</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Production of a ventilation system for a building with a specific air flow rate of 4 m3/h per m2 heated gross floor area. The reference value of the inventory is 1 m2 heated gross floor area. The inventory is based on average data of 4 office buildings, 3 schools and 3 residential care homes with a total heated gross floor area of 61719 m2 and a total nominal air flow of 302190 m3/h, specific weight of the components: 8.51 kg/m2, including average components for air handling units, ducts including insulation, air valves, roof-hoods, dampers, fire dampers, silencers. The data represent a ductwork mainly made of galvanized steel and includes air handling units mainly with heat recovery and a nominal air flow rate of 5'000-20'000 m3/h per unit. No ground heat exchanger is included.;
+UUID: 35ab1054-61e6-3d8a-8da6-c74fb55b8fb2</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1388530800000" olca:endDate="1417388400000">
+            <common:referenceYear>2014</common:referenceYear>
+            <common:dataSetValidUntil>2014</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Amount of material investigated in 2013. Process information partly from 2003 to 2012</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">&lt;null&gt;</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Typical technology, materials and components used for ventilation systems in commercial and public buildings\n\n# Included processes\nMaterials used for the production. Energy use for the different production steps and for heating the production building. Transport of raw materials to the plant. Estimation for infrastructure of the production site included.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="9f888a3e-a670-3f20-a5e9-820739ba7617" version="00.00.000" uri="../sources/9f888a3e-a670-3f20-a5e9-820739ba7617.xml">
+                <common:shortDescription xml:lang="en">2014 - LCA ventilation and heating systems - Klingler</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Data from different call of bids for ventilation system used. Data completed with information from literature and from manufacturers </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="8f5d6c7c-062f-3dba-9816-47dbbeab85b3" version="00.00.000" uri="../contacts/8f5d6c7c-062f-3dba-9816-47dbbeab85b3.xml">
+                    <common:shortDescription xml:lang="en">Alex Primas</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8f5d6c7c-062f-3dba-9816-47dbbeab85b3" version="00.00.000" uri="../contacts/8f5d6c7c-062f-3dba-9816-47dbbeab85b3.xml">
+                <common:shortDescription xml:lang="en">Alex Primas</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:48:49.067+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="8f5d6c7c-062f-3dba-9816-47dbbeab85b3" version="00.00.000" uri="../contacts/8f5d6c7c-062f-3dba-9816-47dbbeab85b3.xml">
+                <common:shortDescription xml:lang="en">Alex Primas</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2014-03-29T00:00:00.000+01:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="9f888a3e-a670-3f20-a5e9-820739ba7617" version="00.00.000" uri="../sources/9f888a3e-a670-3f20-a5e9-820739ba7617.xml">
+                <common:shortDescription xml:lang="en">2014 - LCA ventilation and heating systems - Klingler</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="86f24215-60a8-31ba-b2e2-e25785251129" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.0028842">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0e41cdcc-c74f-3a19-bcfb-b11a4995ee9b" version="00.00.000" uri="../flows/0e41cdcc-c74f-3a19-bcfb-b11a4995ee9b.xml">
+                <common:shortDescription xml:lang="en">Ventilation duct, stainless steel, s= 1.0mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0028842</meanAmount>
+            <resultingAmount>0.0028842</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="70625134-2bc0-3a6b-a7b6-4b533de3d568" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.0021496">
+            <referenceToFlowDataSet type="flow data set" refObjectId="80cc54a1-1d7a-332d-9384-b94815f72a56" version="00.00.000" uri="../flows/80cc54a1-1d7a-332d-9384-b94815f72a56.xml">
+                <common:shortDescription xml:lang="en">Ventilation duct, stainless steel, s= 1.25mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0021496</meanAmount>
+            <resultingAmount>0.0021496</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="d0171a47-ec64-30f5-80a0-0998c3891252" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.056387">
+            <referenceToFlowDataSet type="flow data set" refObjectId="33031b43-db6f-3dda-862b-1029dcb4c9b5" version="00.00.000" uri="../flows/33031b43-db6f-3dda-862b-1029dcb4c9b5.xml">
+                <common:shortDescription xml:lang="en">Ventilation duct, steel, zinc coated, s= 1.0mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.056387</meanAmount>
+            <resultingAmount>0.056387</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="fd150af7-2147-3f8e-a3a1-361e46382b1c" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.13431">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e6286119-b7da-35bf-916a-3ad424f90b78" version="00.00.000" uri="../flows/e6286119-b7da-35bf-916a-3ad424f90b78.xml">
+                <common:shortDescription xml:lang="en">EI 30 fire insulation, 50mm, 120kg/m3, reinforced alumium foil, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.13431</meanAmount>
+            <resultingAmount>0.13431</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="d797beff-f09e-3faa-8cdc-281e13868af7" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="6.3126E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b5ba2db6-f91d-3abd-a75f-230802309e7c" version="00.00.000" uri="../flows/b5ba2db6-f91d-3abd-a75f-230802309e7c.xml">
+                <common:shortDescription xml:lang="en">Silencer for ventilator unit 13000 m3/h, modular, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.3126E-4</meanAmount>
+            <resultingAmount>6.3126E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="adf42e1c-7073-3618-b927-ee2aaf7cfeee" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="9.8888E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c971e704-6380-349e-80a6-08e8058c2771" version="00.00.000" uri="../flows/c971e704-6380-349e-80a6-08e8058c2771.xml">
+                <common:shortDescription xml:lang="en">Ventilation unit 13000 m3/h, w. circuit connected heat exchanger, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.8888E-5</meanAmount>
+            <resultingAmount>9.8888E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="cb176b9b-d69d-3c8f-8006-623bb6eeddad" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="1.0796E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6f98a56f-9596-3318-80b6-d273f700f44f" version="00.00.000" uri="../flows/6f98a56f-9596-3318-80b6-d273f700f44f.xml">
+                <common:shortDescription xml:lang="en">Ventilation unit 3500 m3/h, w. cross plate heat excanger, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0796E-4</meanAmount>
+            <resultingAmount>1.0796E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="f505b446-a4d0-37d7-a887-4cf900ae3744" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="7.3878E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f6d5d4d1-9e83-3e62-9231-a9fba9f80bbe" version="00.00.000" uri="../flows/f6d5d4d1-9e83-3e62-9231-a9fba9f80bbe.xml">
+                <common:shortDescription xml:lang="en">Ventilation unit 13000 m3/h, w. rotary heat exchanger, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.3878E-5</meanAmount>
+            <resultingAmount>7.3878E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="8f718e49-08d0-321b-b8e8-a07f7cd49bff" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="3.5066E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="caa4dbab-c67f-3245-8bc4-59a83460a385" version="00.00.000" uri="../flows/caa4dbab-c67f-3245-8bc4-59a83460a385.xml">
+                <common:shortDescription xml:lang="en">Spiral-seam duct, steel, zinc coated, s= 1.0mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.5066E-5</meanAmount>
+            <resultingAmount>3.5066E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="e1f228bf-f70b-3032-aee7-0ea982b2b87e" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.16043">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9fc6429b-aa59-386b-8c00-dbfac42174b0" version="00.00.000" uri="../flows/9fc6429b-aa59-386b-8c00-dbfac42174b0.xml">
+                <common:shortDescription xml:lang="en">Ventilation duct, steel, zinc coated, s= 0.75mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.16043</meanAmount>
+            <resultingAmount>0.16043</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="872f3828-8bc1-3f9a-b39c-643854de3751" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="2.3668E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6d874141-5d44-373d-af55-0b0f3c1f1187" version="00.00.000" uri="../flows/6d874141-5d44-373d-af55-0b0f3c1f1187.xml">
+                <common:shortDescription xml:lang="en">Silencer for ventilator unit 3500 m3/h, modular, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.3668E-4</meanAmount>
+            <resultingAmount>2.3668E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="ea3924a5-5987-368e-a3bf-d1c789d6f663" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="1.0361E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="28aa8074-e75c-3a9d-82a4-1f16bd527df9" version="00.00.000" uri="../flows/28aa8074-e75c-3a9d-82a4-1f16bd527df9.xml">
+                <common:shortDescription xml:lang="en">Silencer for ventilator unit 1800 m3/h, modular, at plant, Device</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0361E-4</meanAmount>
+            <resultingAmount>1.0361E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="78adab48-b58b-3a1d-95a7-37239aa98b71" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.077861">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1e742728-1c1b-3875-9742-b78731819317" version="00.00.000" uri="../flows/1e742728-1c1b-3875-9742-b78731819317.xml">
+                <common:shortDescription xml:lang="en">Ventilation duct, steel, zinc coated, s= 0.87mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.077861</meanAmount>
+            <resultingAmount>0.077861</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="7e48fcd2-639f-3edf-9356-a5004894f75d" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="3.6967E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a350cddb-eb7b-36df-bb13-e4289c312bf0" version="00.00.000" uri="../flows/a350cddb-eb7b-36df-bb13-e4289c312bf0.xml">
+                <common:shortDescription xml:lang="en">Ventilator unit 3500 m3/h, modular, w. filter, without silencer, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.6967E-5</meanAmount>
+            <resultingAmount>3.6967E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="a2009d19-e0ab-34df-a351-41cc4e5a4bf5" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.12436">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7b5c0547-f229-3c52-bc37-a5c5e38f2e6f" version="00.00.000" uri="../flows/7b5c0547-f229-3c52-bc37-a5c5e38f2e6f.xml">
+                <common:shortDescription xml:lang="en">Ventilation duct, steel, zinc coated, s= 0.62mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.12436</meanAmount>
+            <resultingAmount>0.12436</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="7e2c703d-d90b-39ca-8787-37d52066d5f9" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.0035588">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1029620d-073d-3434-b824-e30176f5f173" version="00.00.000" uri="../flows/1029620d-073d-3434-b824-e30176f5f173.xml">
+                <common:shortDescription xml:lang="en">Thermal insulation, 100mm, 40kg/m3, reinforced alumium foil, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0035588</meanAmount>
+            <resultingAmount>0.0035588</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="32" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="d13f0739-2096-3354-a8c5-d9ef032cfd8c" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="5.8318E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3182beba-71e6-3a3d-9bc3-a2d82cf3e8ae" version="00.00.000" uri="../flows/3182beba-71e6-3a3d-9bc3-a2d82cf3e8ae.xml">
+                <common:shortDescription xml:lang="en">Ventilation unit 6700 m3/h, w. circuit connected heat exchanger, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.8318E-5</meanAmount>
+            <resultingAmount>5.8318E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="31" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="a757c6a8-b485-37d4-b87f-8954763d6cdc" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.011638">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d630e8ee-ceea-36ff-abcd-6c7d0409b16c" version="00.00.000" uri="../flows/d630e8ee-ceea-36ff-abcd-6c7d0409b16c.xml">
+                <common:shortDescription xml:lang="en">Thermal insulation, 60mm, 40kg/m3, reinforced alumium foil, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.011638</meanAmount>
+            <resultingAmount>0.011638</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="34" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="7cf88dde-69be-3a0a-a60f-aff4895545d9" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.0015888">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b49b8755-7c3d-39c7-aaaf-83cf13b177f6" version="00.00.000" uri="../flows/b49b8755-7c3d-39c7-aaaf-83cf13b177f6.xml">
+                <common:shortDescription xml:lang="en">Ventilation duct, stainless steel, s= 1.5mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0015888</meanAmount>
+            <resultingAmount>0.0015888</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="33" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="05bf2434-8e40-3663-9d07-c8164dc2b2ec" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.0085044">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ce9c3c94-1500-329e-967d-33a5f8563c0c" version="00.00.000" uri="../flows/ce9c3c94-1500-329e-967d-33a5f8563c0c.xml">
+                <common:shortDescription xml:lang="en">Ventilation duct, steel, zinc coated, s= 1.5mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0085044</meanAmount>
+            <resultingAmount>0.0085044</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="e2e124b0-e1df-3682-bb64-1200f161ab4b" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="2.4511E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fb56ee74-3258-3b24-a069-33fed088d622" version="00.00.000" uri="../flows/fb56ee74-3258-3b24-a069-33fed088d622.xml">
+                <common:shortDescription xml:lang="en">Ventilator unit 13000 m3/h, modular, w. filter, without silencer, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.4511E-5</meanAmount>
+            <resultingAmount>2.4511E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="7ad2ba7a-0372-3a2e-9eb4-9c4f017ab1cf" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="4.7011E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4dffc459-e54e-31ae-be23-5f57d24ef84c" version="00.00.000" uri="../flows/4dffc459-e54e-31ae-be23-5f57d24ef84c.xml">
+                <common:shortDescription xml:lang="en">Spiral-seam duct, stainless steel, s= 0.8mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.7011E-4</meanAmount>
+            <resultingAmount>4.7011E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="30" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="10142d1b-caca-3889-8996-84410c363fbf" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="1.776E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e2268bcb-a8d4-3100-a543-d5db10394562" version="00.00.000" uri="../flows/e2268bcb-a8d4-3100-a543-d5db10394562.xml">
+                <common:shortDescription xml:lang="en">Spiral-seam duct, stainless steel, s= 0.5mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.776E-4</meanAmount>
+            <resultingAmount>1.776E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="e2fb680e-430f-3739-88ab-1071aa28be66" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.047092">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2c7e4e7f-068b-36e8-bb38-a7fccceb3eb9" version="00.00.000" uri="../flows/2c7e4e7f-068b-36e8-bb38-a7fccceb3eb9.xml">
+                <common:shortDescription xml:lang="en">Spiral-seam duct, steel, zinc coated, s= 0.6mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.047092</meanAmount>
+            <resultingAmount>0.047092</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="aebdc9a0-67a1-3941-be80-b8e5f6815b3f" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.186">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5b53d88c-99e6-3e60-a09c-143861330316" version="00.00.000" uri="../flows/5b53d88c-99e6-3e60-a09c-143861330316.xml">
+                <common:shortDescription xml:lang="en">Thermal insulation, 30mm, 40kg/m3, reinforced alumium foil, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.186</meanAmount>
+            <resultingAmount>0.186</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="90524f15-4207-3af0-93c6-979e3a4037e4" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="5.9372E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="67909ca9-7772-37d7-8f97-3211f4a4dfdc" version="00.00.000" uri="../flows/67909ca9-7772-37d7-8f97-3211f4a4dfdc.xml">
+                <common:shortDescription xml:lang="en">Ventilation unit 6700 m3/h, w. cross plate heat excanger, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.9372E-5</meanAmount>
+            <resultingAmount>5.9372E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="70404ccb-65d3-38fe-ac5d-1ae31041f4a2" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.0029234">
+            <referenceToFlowDataSet type="flow data set" refObjectId="08dfc68d-18b4-3fd1-8d4e-4f563f28249a" version="00.00.000" uri="../flows/08dfc68d-18b4-3fd1-8d4e-4f563f28249a.xml">
+                <common:shortDescription xml:lang="en">Thermal insulation, 30mm, 40kg/m3, stainless steel cladding, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0029234</meanAmount>
+            <resultingAmount>0.0029234</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="3d314eab-ef11-4ff3-a35e-9bc5cd858694" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="2e0c5286-81ca-307b-819e-9548c3bda8a8" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.031778">
+            <referenceToFlowDataSet type="flow data set" refObjectId="15a2be0f-75a3-3d10-ad15-a6e004bae3e8" version="00.00.006" uri="../flows/15a2be0f-75a3-3d10-ad15-a6e004bae3e8.xml">
+                <common:shortDescription xml:lang="en">Flexible duct, aluminum/PET, DN of 125, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.031778</meanAmount>
+            <resultingAmount>0.031778</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="3d314eab-ef11-4ff3-a35e-9bc5cd858694" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="e17bcaea-37c4-3b28-8fb0-f25194a77bd3" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.18577">
+            <referenceToFlowDataSet type="flow data set" refObjectId="46df0dda-3d45-3405-a03a-3145aaf5bfab" version="00.00.006" uri="../flows/46df0dda-3d45-3405-a03a-3145aaf5bfab.xml">
+                <common:shortDescription xml:lang="en">Ventilation duct, PE corrugated tube, DN 75, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.18577</meanAmount>
+            <resultingAmount>0.18577</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="58c96545-0b1a-3ac1-b8f7-9de6ad5f5500" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="9.9345E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3a629fa2-020b-380b-8c5b-fcac746422af" version="00.00.000" uri="../flows/3a629fa2-020b-380b-8c5b-fcac746422af.xml">
+                <common:shortDescription xml:lang="en">Ventilation unit 3500 m3/h, w. circuit connected heat exchanger, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.9345E-6</meanAmount>
+            <resultingAmount>9.9345E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="912c4b85-7918-345e-babe-cf15f5ffc6f3" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="7.5023E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="887343c6-9c7a-3206-9111-85b825f2d583" version="00.00.000" uri="../flows/887343c6-9c7a-3206-9111-85b825f2d583.xml">
+                <common:shortDescription xml:lang="en">Ventilation duct, stainless steel, s= 0.62mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.5023E-4</meanAmount>
+            <resultingAmount>7.5023E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="877ce695-7c68-3114-8172-182bbb9d9f0b" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="4.1567E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5fcf543e-095d-3a5e-bff0-3dd24d133794" version="00.00.006" uri="../flows/5fcf543e-095d-3a5e-bff0-3dd24d133794.xml">
+                <common:shortDescription xml:lang="en">Ventilation equipment, central, 600-1200 m3/h, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.1567E-5</meanAmount>
+            <resultingAmount>4.1567E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="44" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="04047a41-df0e-3c56-a917-adad4a5cb39a" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.0010979">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2afc1a72-b4fb-3cea-8745-efcfcb31948e" version="00.00.000" uri="../flows/2afc1a72-b4fb-3cea-8745-efcfcb31948e.xml">
+                <common:shortDescription xml:lang="en">Ventilation duct, stainless steel, s= 0.87mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0010979</meanAmount>
+            <resultingAmount>0.0010979</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="43" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="ba84847e-f49f-3146-a4f2-40ced6afd556" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="4.1306E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f11a12e8-6acd-3462-b088-0bdc0c5cf8cb" version="00.00.000" uri="../flows/f11a12e8-6acd-3462-b088-0bdc0c5cf8cb.xml">
+                <common:shortDescription xml:lang="en">Silencer for ventilator unit 6700 m3/h, modular, at plant, Device</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.1306E-4</meanAmount>
+            <resultingAmount>4.1306E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="46" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="e1600206-442c-3156-a6a4-3b6ba1f24a8d" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.011292">
+            <referenceToFlowDataSet type="flow data set" refObjectId="924cc347-94a5-346b-aa2d-93409d0a9887" version="00.00.000" uri="../flows/924cc347-94a5-346b-aa2d-93409d0a9887.xml">
+                <common:shortDescription xml:lang="en">Thermal insulation, 100mm, 40kg/m3, alumium cladding, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.011292</meanAmount>
+            <resultingAmount>0.011292</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="45" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="662d857d-863b-31e2-a23c-b1bfd3ab9259" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="3.518E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5262bc03-0c2b-37f7-af32-1e56f8bf74e4" version="00.00.000" uri="../flows/5262bc03-0c2b-37f7-af32-1e56f8bf74e4.xml">
+                <common:shortDescription xml:lang="en">Ventilation unit 6700 m3/h, w. rotary heat exchanger, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.518E-5</meanAmount>
+            <resultingAmount>3.518E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="40" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="a4c3a04f-3905-3697-9c77-2c4c75ba883d" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.022871">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f963475f-6f3d-3124-b88f-e6ac7a10ea71" version="00.00.000" uri="../flows/f963475f-6f3d-3124-b88f-e6ac7a10ea71.xml">
+                <common:shortDescription xml:lang="en">Ventilation duct, steel, zinc coated, s= 1.25mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.022871</meanAmount>
+            <resultingAmount>0.022871</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="39" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="41485519-743d-3dc0-8399-22f9adb4e9aa" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="1.4687E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9e524f8b-4c94-303e-85f3-c7c68d47112e" version="00.00.000" uri="../flows/9e524f8b-4c94-303e-85f3-c7c68d47112e.xml">
+                <common:shortDescription xml:lang="en">Ventilation duct, stainless steel, s= 0.75mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.4687E-4</meanAmount>
+            <resultingAmount>1.4687E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="42" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="2499123a-36cc-3113-b10f-d7b9885f200b" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.027402">
+            <referenceToFlowDataSet type="flow data set" refObjectId="687c9c46-9200-33a1-a2f9-2bf7e51eb4b3" version="00.00.000" uri="../flows/687c9c46-9200-33a1-a2f9-2bf7e51eb4b3.xml">
+                <common:shortDescription xml:lang="en">EI 60 fire insulation, 70mm, 120kg/m3, reinforced alumium foil, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.027402</meanAmount>
+            <resultingAmount>0.027402</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="41" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="fdfe3042-1c9a-341c-abff-e3b953311440" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="2.1421E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="37d3fc79-e8f1-3760-b208-6398c0c40b09" version="00.00.000" uri="../flows/37d3fc79-e8f1-3760-b208-6398c0c40b09.xml">
+                <common:shortDescription xml:lang="en">Ventilation unit 13000 m3/h, w. cross plate heat excanger, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.1421E-5</meanAmount>
+            <resultingAmount>2.1421E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="36" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="8e409ab1-457a-310e-b932-902ad29ee092" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.0013286">
+            <referenceToFlowDataSet type="flow data set" refObjectId="50ce2b26-b67d-35a3-a292-6ef2e9e46f06" version="00.00.000" uri="../flows/50ce2b26-b67d-35a3-a292-6ef2e9e46f06.xml">
+                <common:shortDescription xml:lang="en">Thermal insulation, 60mm, 40kg/m3, stainless steel cladding, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0013286</meanAmount>
+            <resultingAmount>0.0013286</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="35" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="8658d5e4-109c-3054-abe5-59430c4c7b50" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b214c2be-5c0a-3465-9ce3-fad89874d375" version="00.00.000" uri="../flows/b214c2be-5c0a-3465-9ce3-fad89874d375.xml">
+                <common:shortDescription xml:lang="en">Ventilation system, various components, m2</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="38" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="cdbe41c7-733f-357f-9d7e-183e3ce8f246" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.079888">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b1e3d08b-7de0-35df-9893-b36e0761e2f5" version="00.00.000" uri="../flows/b1e3d08b-7de0-35df-9893-b36e0761e2f5.xml">
+                <common:shortDescription xml:lang="en">Spiral-seam duct, steel, zinc coated, s= 0.5mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.079888</meanAmount>
+            <resultingAmount>0.079888</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="37" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="856eb52a-e1be-3688-9b94-1df33d0d1a53" olca:pedigreeUncertainty="(3;4;1;1;1;5)" olca:amount="3.2713E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1a41dbda-757b-35e7-8df4-48c7f5060908" version="00.00.000" uri="../flows/1a41dbda-757b-35e7-8df4-48c7f5060908.xml">
+                <common:shortDescription xml:lang="en">Ventilation unit 1800 m3/h, w. cross plate heat excanger, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.2713E-5</meanAmount>
+            <resultingAmount>3.2713E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1224972160321824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,1,1,5); Data for average unit, estimations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="d38dd609-3b76-38c3-b53b-43c1ada628f1" olca:pedigreeUncertainty="(2;4;1;1;1;5)" olca:amount="0.0019964">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7cece0bc-8fcd-3649-9be9-4b6e3e6cf39c" version="00.00.000" uri="../flows/7cece0bc-8fcd-3649-9be9-4b6e3e6cf39c.xml">
+                <common:shortDescription xml:lang="en">Spiral-seam duct, steel, zinc coated, s= 0.8mm, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0019964</meanAmount>
+            <resultingAmount>0.0019964</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,1,1,5); Data for average installation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aec171dd-46c1-343a-9cf3-9ec79d9c04f4" version="00.00.000" uri="../flows/aec171dd-46c1-343a-9cf3-9ec79d9c04f4.xml">
+                <common:shortDescription xml:lang="en">Ventilation system, centralized, average for 4 m3/(h m2)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

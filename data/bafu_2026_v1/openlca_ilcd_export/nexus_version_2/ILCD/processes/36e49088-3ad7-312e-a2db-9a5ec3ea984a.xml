@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>36e49088-3ad7-312e-a2db-9a5ec3ea984a</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, at cogen 1MWe lean burn, allocation exergy</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="f9a2a33f-39a6-39b4-8639-0c4958d0e80a">natural gas</common:class>
+                    <common:class level="2" classId="943664f9-4862-3a8c-99aa-bb583600170c">cogeneration</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The multioutput-process 'natural gas, burned in cogen 1MWe lean burn, allocation exergy' delivers the coproducts 'heat, at cogen 1MWe lean burn, allocation exergy' and 'electricity, at cogen 1MWe lean burn, allocation exergy'. The exergy allocation is the allocation scheme suggested to be used within ecoinvent (e.g. in electricity mixes).;
+UUID: 36e49088-3ad7-312e-a2db-9a5ec3ea984a</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="975625200000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2000</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">undefined</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="RER" latitudeAndLongitude="55.895602991909776;28.119894957029818">
+                <descriptionOfRestrictions xml:lang="en">Emissions and efficiencies adjusted to typical European conditions; extrapolated from German and Swiss emission regulations.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Average technology available on market.\n\n# Included processes\nThe module includes fuel input, infrastructure, emissions to air, and substances needed for operation. Module "natural gas, high pressure, at consumer" is used; methane emissions from leakages due to distribution in low pressure network have been included (emission factor taken from Swiss module "natural gas, low pressure, at consumer, CH").</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="6713bc4b-7d57-3225-979e-4e1d8bd656e8" version="00.00.000" uri="../sources/6713bc4b-7d57-3225-979e-4e1d8bd656e8.xml">
+                <common:shortDescription xml:lang="en">2007 - Combined heat power generation - Heck</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Literature. Manufacturer information. </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: had passed; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="5322091d-fd2a-3be0-b341-4124e7b1da28" version="00.00.000" uri="../contacts/5322091d-fd2a-3be0-b341-4124e7b1da28.xml">
+                    <common:shortDescription xml:lang="en">Gerald Rebitzer</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e9a05e3c-7298-38a3-96cb-56f233ea4628" version="00.00.000" uri="../contacts/e9a05e3c-7298-38a3-96cb-56f233ea4628.xml">
+                <common:shortDescription xml:lang="en">Thomas Heck</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:50:00.457+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e9a05e3c-7298-38a3-96cb-56f233ea4628" version="00.00.000" uri="../contacts/e9a05e3c-7298-38a3-96cb-56f233ea4628.xml">
+                <common:shortDescription xml:lang="en">Thomas Heck</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:42:08.874+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.004</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="6713bc4b-7d57-3225-979e-4e1d8bd656e8" version="00.00.000" uri="../sources/6713bc4b-7d57-3225-979e-4e1d8bd656e8.xml">
+                <common:shortDescription xml:lang="en">2007 - Combined heat power generation - Heck</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.44377">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f9749677-9c9f-4678-ab55-c607dfdc2cb9" version="00.00.000" uri="../flows/f9749677-9c9f-4678-ab55-c607dfdc2cb9.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.44377</meanAmount>
+            <resultingAmount>0.44377</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">composition of natural gas
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="be69d35d-4a8e-4e4c-88c0-c5df0c7db472" olca:amount="2.3774E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="44b0ed19-fde1-33c0-a55c-8768cf5dcfcc" version="00.00.000" uri="../flows/44b0ed19-fde1-33c0-a55c-8768cf5dcfcc.xml">
+                <common:shortDescription xml:lang="en">Disposal, used mineral oil, 10% water, to hazardous waste incineration</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.3774E-4</meanAmount>
+            <resultingAmount>2.3774E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4142135623730951</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="52167408-1c86-310c-ab50-a92f15e84379" olca:amount="7.924528301886793">
+            <referenceToFlowDataSet type="flow data set" refObjectId="247ba601-c0ed-3cb4-99e1-d03537184f34" version="00.00.014" uri="../flows/247ba601-c0ed-3cb4-99e1-d03537184f34.xml">
+                <common:shortDescription xml:lang="en">Natural gas, high pressure, at consumer</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.924528301886793</meanAmount>
+            <resultingAmount>7.924528301886793</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty because of application of CH module to RER
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.4792E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6edcc2df-88a3-48e1-83d8-ffc38d31c35b" version="00.00.000" uri="../flows/6edcc2df-88a3-48e1-83d8-ffc38d31c35b.xml">
+                <common:shortDescription xml:lang="en">Carbon monoxide, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.4792E-4</meanAmount>
+            <resultingAmount>8.4792E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5811388300841898</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">estimate based on different references
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.9245E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="175baa64-d985-4c5e-84ef-67cc3a1cf952" version="00.00.000" uri="../flows/175baa64-d985-4c5e-84ef-67cc3a1cf952.xml">
+                <common:shortDescription xml:lang="en">NMVOC, non-methane volatile organic compounds</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.9245E-5</meanAmount>
+            <resultingAmount>7.9245E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8284271247461903</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">estimate based on different references
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.3208E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d068f3e2-b033-417b-a359-ca4f25da9731" version="00.00.000" uri="../flows/d068f3e2-b033-417b-a359-ca4f25da9731.xml">
+                <common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.3208E-4</meanAmount>
+            <resultingAmount>8.3208E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4142135623730951</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">estimate based on different references
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.9623E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6dc1b46f-ee89-4495-95c4-b8a637bcd6cb" version="00.00.000" uri="../flows/6dc1b46f-ee89-4495-95c4-b8a637bcd6cb.xml">
+                <common:shortDescription xml:lang="en">Dinitrogen monoxide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.9623E-5</meanAmount>
+            <resultingAmount>3.9623E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="6.3396E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5f7aad3d-566c-4d0d-ad59-e765f971aa0f" version="00.00.000" uri="../flows/5f7aad3d-566c-4d0d-ad59-e765f971aa0f.xml">
+                <common:shortDescription xml:lang="en">Methane, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.3396E-4</meanAmount>
+            <resultingAmount>6.3396E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.0</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">estimate based on different references
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="e0ef25e1-b21f-3735-9400-7c78de053f68" olca:amount="8.4E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5625da61-a2fc-3433-b79d-833c16baa445" version="00.00.012" uri="../flows/5625da61-a2fc-3433-b79d-833c16baa445.xml">
+                <common:shortDescription xml:lang="en">Cogen unit 1MWe, common components for heat+electricity</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.4E-9</meanAmount>
+            <resultingAmount>8.4E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0</relativeStandardDeviation95In>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.3585E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8c52f40c-69b7-4538-8923-b371523c71f5" version="00.00.000" uri="../flows/8c52f40c-69b7-4538-8923-b371523c71f5.xml">
+                <common:shortDescription xml:lang="en">Sulfur dioxide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.3585E-6</meanAmount>
+            <resultingAmount>4.3585E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">composition of natural gas
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="5.705660377358491">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b411ec8b-c60a-4235-a3b2-8bf8443cbc55" version="00.00.000" uri="../flows/b411ec8b-c60a-4235-a3b2-8bf8443cbc55.xml">
+                <common:shortDescription xml:lang="en">Heat, waste</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.705660377358491</meanAmount>
+            <resultingAmount>5.705660377358491</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty of heating value and electric efficiency
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0010619">
+            <referenceToFlowDataSet type="flow data set" refObjectId="70ef743b-3ed5-4a6d-b192-fb6d62378555" version="00.00.000" uri="../flows/70ef743b-3ed5-4a6d-b192-fb6d62378555.xml">
+                <common:shortDescription xml:lang="en">Methane, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0010619</meanAmount>
+            <resultingAmount>0.0010619</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">losses due to distribution in low pressure network, data from module 'natural gas, low pressure, at consumer, CH'
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="c358953c-2ee5-39fa-8997-ee192f630572" olca:amount="1.0E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1de8e720-e85c-3763-853d-d5737f5633d0" version="00.00.012" uri="../flows/1de8e720-e85c-3763-853d-d5737f5633d0.xml">
+                <common:shortDescription xml:lang="en">Cogen unit 1MWe, components for electricity only</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0E-8</meanAmount>
+            <resultingAmount>1.0E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0</relativeStandardDeviation95In>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0a5ee2e0-835a-3342-a4f7-96c61c2940a6" version="00.00.004" uri="../flows/0a5ee2e0-835a-3342-a4f7-96c61c2940a6.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 1MWe lean burn, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+            <generalComment xml:lang="en">Europe
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="0b14288a-dbf3-3dac-a570-83d083f4b600" olca:amount="2.3774E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="45effa3b-506a-323b-848c-d8bc43273045" version="00.00.000" uri="../flows/45effa3b-506a-323b-848c-d8bc43273045.xml">
+                <common:shortDescription xml:lang="en">Lubricating oil, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.3774E-4</meanAmount>
+            <resultingAmount>2.3774E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0954451150103321</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">vendor information
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.1887E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="230d8a0a-517c-43fe-8357-1818dd12997a" version="00.00.000" uri="../flows/230d8a0a-517c-43fe-8357-1818dd12997a.xml">
+                <common:shortDescription xml:lang="en">Particulate Matter, &lt; 2.5 um</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.1887E-6</meanAmount>
+            <resultingAmount>1.1887E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4142135623730951</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">estimate based on different references
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

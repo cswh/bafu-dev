@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>04d0b024-fbca-4cbc-9237-cfa9f69a1006</common:UUID>
+            <name>
+                <baseName xml:lang="en">Disposal, hard coal ash, 0% water, to residual material landfill</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="d01e176f-ff7e-3ea3-83ba-5ffc6d218854">landfill</common:class>
+                    <common:class level="1" classId="770ebd2a-0365-3880-acca-0e0a60384839">residual material landfill</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Inventoried waste contains 100% DE hard coal ash; . waste composition (wet, in ppm): H2O n.a.; O 575260; H n.a.; C n.a.; S 3806.9; N n.a.; P 1427; B 149.07; Cl 41.297; Br 43.92; F 91.229; I 2.2287; Ag n.a.; As 38.874; Ba 1027.3; Cd 1.4689; Co 58.551; Cr 132.54; Cu 128.78; Hg 0.21287; Mn 439.27; Mo 32.536; Ni 135.23; Pb 164.67; Sb 7.7516; Se 9.0108; Sn 58.396; V 234.78; Zn 209.54; Be 12.113; Sc 34.643; Sr 855.58; Ti 5933.2; Tl 3.9161; W 15.383; Si 176700; Fe 54015; Ca 21975; Al 107170; K 12286; Mg 30736; Na 6756; Share of carbon in waste that is biogenic 60.4%. ;; UUID: 04d0b024-fbca-4cbc-9237-cfa9f69a1006</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="975625200000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2000</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Waste composition as given in literature reference, theoretical data or other source. Transfer coefficients from prospective model.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="DE" latitudeAndLongitude="51.10636348632842;10.381493843430931">
+                <descriptionOfRestrictions xml:lang="en">Technology encountered in Switzerland in 2000. Landfill includes base seal and leachate collection system.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Swiss residual material landfill for polluted, inorganic waste. With base seal and leachate collection system. Recultivation after closure.\n\n# Included processes\nWaste-specific short-term emissions to water from leachate. Long-term emissions from landfill to ground water.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="a6565e7c-3f2e-320f-a0d3-197f26494880" version="00.00.000" uri="../sources/a6565e7c-3f2e-320f-a0d3-197f26494880.xml">
+                <common:shortDescription xml:lang="en">2009 - LCI waste treatment services - Doka</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Landfill model based on observed leachate concentrations in literature. Extrapolated to 60'000 years heeding chemical characteristics. Initial waste composition from various literature sources. </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: passed.; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="0bcb8400-bb3d-3da1-b808-677f447cdc8c" version="00.00.000" uri="../contacts/0bcb8400-bb3d-3da1-b808-677f447cdc8c.xml">
+                    <common:shortDescription xml:lang="en">Niels Jungbluth</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="679eba73-a9b1-312e-99a4-f18bc8fc0dbf" version="00.00.000" uri="../contacts/679eba73-a9b1-312e-99a4-f18bc8fc0dbf.xml">
+                <common:shortDescription xml:lang="en">Gabor Doka</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:41.357+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="2094c752-a0c0-37ae-be3e-0e1593b6acf6" version="00.00.000" uri="../contacts/2094c752-a0c0-37ae-be3e-0e1593b6acf6.xml">
+                <common:shortDescription xml:lang="en">Roland Hischier</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2009-02-15T00:00:00.000+01:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="a6565e7c-3f2e-320f-a0d3-197f26494880" version="00.00.000" uri="../sources/a6565e7c-3f2e-320f-a0d3-197f26494880.xml">
+                <common:shortDescription xml:lang="en">2009 - LCI waste treatment services - Doka</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.974E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9b79e20c-f793-4582-8cc7-e8add9c493db" version="00.00.000" uri="../flows/9b79e20c-f793-4582-8cc7-e8add9c493db.xml">
+                <common:shortDescription xml:lang="en">Silicon</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.974E-4</meanAmount>
+            <resultingAmount>3.974E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.202044504545719</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0012253">
+            <referenceToFlowDataSet type="flow data set" refObjectId="796c56b3-a863-444c-8b75-1412832af498" version="00.00.000" uri="../flows/796c56b3-a863-444c-8b75-1412832af498.xml">
+                <common:shortDescription xml:lang="en">Sulfate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0012253</meanAmount>
+            <resultingAmount>0.0012253</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.1699308744750376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0034923">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ce9fd912-233a-4807-a33e-0323b1e4a7a2" version="00.00.000" uri="../flows/ce9fd912-233a-4807-a33e-0323b1e4a7a2.xml">
+                <common:shortDescription xml:lang="en">Magnesium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0034923</meanAmount>
+            <resultingAmount>0.0034923</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.2942373927815223</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.762E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a708a1f6-7297-45ba-8fda-47a1ce6f11c3" version="00.00.000" uri="../flows/a708a1f6-7297-45ba-8fda-47a1ce6f11c3.xml">
+                <common:shortDescription xml:lang="en">Vanadium V</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.762E-7</meanAmount>
+            <resultingAmount>5.762E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.2457664734234966</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.0975E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8f1b69d9-fc00-4b46-99f9-7a57fd71dad2" version="00.00.000" uri="../flows/8f1b69d9-fc00-4b46-99f9-7a57fd71dad2.xml">
+                <common:shortDescription xml:lang="en">Strontium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.0975E-4</meanAmount>
+            <resultingAmount>3.0975E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.6312734559524595</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.9675E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="caa6bc06-e7e6-4f08-acd3-2163db51e395" version="00.00.000" uri="../flows/caa6bc06-e7e6-4f08-acd3-2163db51e395.xml">
+                <common:shortDescription xml:lang="en">Chromium VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.9675E-6</meanAmount>
+            <resultingAmount>7.9675E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.843677196870278</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.9439E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a1faf981-6b10-45c6-87c0-86bff464c0d6" version="00.00.000" uri="../flows/a1faf981-6b10-45c6-87c0-86bff464c0d6.xml">
+                <common:shortDescription xml:lang="en">Fluoride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.9439E-6</meanAmount>
+            <resultingAmount>4.9439E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.9253034030677916</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.3214E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="04512c78-0228-4291-8c4d-7e64b6ad670c" version="00.00.000" uri="../flows/04512c78-0228-4291-8c4d-7e64b6ad670c.xml">
+                <common:shortDescription xml:lang="en">Beryllium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.3214E-9</meanAmount>
+            <resultingAmount>7.3214E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.056599561208871</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="0311b8c7-c4b4-3863-baee-04ee9d28c324" olca:amount="2.0833E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1636cc68-da72-3798-b198-c1caafee6fe0" version="00.00.000" uri="../flows/1636cc68-da72-3798-b198-c1caafee6fe0.xml">
+                <common:shortDescription xml:lang="en">Residual material landfill facility</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.0833E-9</meanAmount>
+            <resultingAmount>2.0833E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">demands per kilogram waste. uncertainty is heeded in the module
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.4937E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7d3f7498-3596-478a-9fa1-72201ef94082" version="00.00.000" uri="../flows/7d3f7498-3596-478a-9fa1-72201ef94082.xml">
+                <common:shortDescription xml:lang="en">Molybdenum VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.4937E-7</meanAmount>
+            <resultingAmount>1.4937E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.9018270106951585</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.3669E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="db652d59-898e-46f3-acce-b28596c26dc7" version="00.00.000" uri="../flows/db652d59-898e-46f3-acce-b28596c26dc7.xml">
+                <common:shortDescription xml:lang="en">Thallium I</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.3669E-9</meanAmount>
+            <resultingAmount>2.3669E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.27387412074806</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.5196E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6c445f1d-db0f-431c-a2f0-d25aa28bdfd1" version="00.00.000" uri="../flows/6c445f1d-db0f-431c-a2f0-d25aa28bdfd1.xml">
+                <common:shortDescription xml:lang="en">Iron ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.5196E-7</meanAmount>
+            <resultingAmount>4.5196E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.3521634805003173</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.9486E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ea70cc93-c68c-4228-8b8e-1b189b4c705c" version="00.00.000" uri="../flows/ea70cc93-c68c-4228-8b8e-1b189b4c705c.xml">
+                <common:shortDescription xml:lang="en">Chloride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.9486E-5</meanAmount>
+            <resultingAmount>2.9486E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.832066383402762</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.5418E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0ff15165-d761-48c9-9814-2d1dcdd56857" version="00.00.000" uri="../flows/0ff15165-d761-48c9-9814-2d1dcdd56857.xml">
+                <common:shortDescription xml:lang="en">Lead II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.5418E-7</meanAmount>
+            <resultingAmount>8.5418E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>16.376507564190845</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0025354">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6d5c5a51-42ce-412a-9517-d0baba8b5b99" version="00.00.000" uri="../flows/6d5c5a51-42ce-412a-9517-d0baba8b5b99.xml">
+                <common:shortDescription xml:lang="en">Sodium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0025354</meanAmount>
+            <resultingAmount>0.0025354</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.9431160541768986</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.1811E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ca347524-6865-416f-95b5-76e086b46fd7" version="00.00.000" uri="../flows/ca347524-6865-416f-95b5-76e086b46fd7.xml">
+                <common:shortDescription xml:lang="en">Chloride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.1811E-5</meanAmount>
+            <resultingAmount>1.1811E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8828805039404597</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="36" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.001E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1e904267-caa3-40e6-a3a0-fc104489770b" version="00.00.000" uri="../flows/1e904267-caa3-40e6-a3a0-fc104489770b.xml">
+                <common:shortDescription xml:lang="en">Cobalt II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.001E-5</meanAmount>
+            <resultingAmount>1.001E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.8442164351139234</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="35" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.2757E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e2a4c2f8-3671-47e7-8649-f5e97a4ad32e" version="00.00.000" uri="../flows/e2a4c2f8-3671-47e7-8649-f5e97a4ad32e.xml">
+                <common:shortDescription xml:lang="en">Copper ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.2757E-9</meanAmount>
+            <resultingAmount>8.2757E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.029888335921977</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="34" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.315E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9e82f459-ca38-43dd-9c30-3913ed433ed8" version="00.00.000" uri="../flows/9e82f459-ca38-43dd-9c30-3913ed433ed8.xml">
+                <common:shortDescription xml:lang="en">Calcium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.315E-6</meanAmount>
+            <resultingAmount>3.315E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.9591552848743845</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="33" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.168E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="eeaa554c-edc0-4b69-8737-170ac48f6de1" version="00.00.000" uri="../flows/eeaa554c-edc0-4b69-8737-170ac48f6de1.xml">
+                <common:shortDescription xml:lang="en">Boron</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.168E-6</meanAmount>
+            <resultingAmount>1.168E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.130894440890654</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="40" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.5168E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ef475b50-9cd0-4e7c-9c59-07868fe16e91" version="00.00.000" uri="../flows/ef475b50-9cd0-4e7c-9c59-07868fe16e91.xml">
+                <common:shortDescription xml:lang="en">Chromium VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.5168E-5</meanAmount>
+            <resultingAmount>2.5168E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.6247095077360467</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="39" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.6319E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a87680bc-ecde-471a-88bb-6bc7482a62cf" version="00.00.000" uri="../flows/a87680bc-ecde-471a-88bb-6bc7482a62cf.xml">
+                <common:shortDescription xml:lang="en">Phosphate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.6319E-6</meanAmount>
+            <resultingAmount>1.6319E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.2553033652794943</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="38" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="9.775E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="490b267b-f429-4d9a-ac79-224e37fb4d58" version="00.00.000" uri="../flows/490b267b-f429-4d9a-ac79-224e37fb4d58.xml">
+                <common:shortDescription xml:lang="en">Phosphate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.775E-4</meanAmount>
+            <resultingAmount>9.775E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.9529984761255803</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="37" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.031813">
+            <referenceToFlowDataSet type="flow data set" refObjectId="01056d4b-f9b0-4dfc-b8d9-8407c8376efb" version="00.00.000" uri="../flows/01056d4b-f9b0-4dfc-b8d9-8407c8376efb.xml">
+                <common:shortDescription xml:lang="en">Aluminium III</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.031813</meanAmount>
+            <resultingAmount>0.031813</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.004993765576342</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0019857">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a2017716-a6ee-3c76-adf4-eab05dcfeb14" version="00.00.000" uri="../flows/a2017716-a6ee-3c76-adf4-eab05dcfeb14.xml">
+                <common:shortDescription xml:lang="en">Calcium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0019857</meanAmount>
+            <resultingAmount>0.0019857</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.7125462960076336</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.6285E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ae3e6e8-75e6-4566-b18f-6d848086c4e5" version="00.00.000" uri="../flows/7ae3e6e8-75e6-4566-b18f-6d848086c4e5.xml">
+                <common:shortDescription xml:lang="en">Fluoride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.6285E-5</meanAmount>
+            <resultingAmount>8.6285E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.6836355937421907</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.4658E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="061d04a0-af1d-4884-bdd3-997b6cd5550f" version="00.00.000" uri="../flows/061d04a0-af1d-4884-bdd3-997b6cd5550f.xml">
+                <common:shortDescription xml:lang="en">Boron</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.4658E-4</meanAmount>
+            <resultingAmount>1.4658E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.5944941703538285</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.5682E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bdce3a7c-e008-4391-be26-285f71a02453" version="00.00.000" uri="../flows/bdce3a7c-e008-4391-be26-285f71a02453.xml">
+                <common:shortDescription xml:lang="en">Zinc II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.5682E-6</meanAmount>
+            <resultingAmount>2.5682E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>10.902751946183129</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="32" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.17631">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ce88a9b6-0afa-4f68-9b32-8c3438bf4025" version="00.00.000" uri="../flows/ce88a9b6-0afa-4f68-9b32-8c3438bf4025.xml">
+                <common:shortDescription xml:lang="en">Silicon</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.17631</meanAmount>
+            <resultingAmount>0.17631</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3136590120727676</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="31" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.9572E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="40229ebf-9346-4f20-910a-f8ea3bd88d44" version="00.00.000" uri="../flows/40229ebf-9346-4f20-910a-f8ea3bd88d44.xml">
+                <common:shortDescription xml:lang="en">Copper ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.9572E-6</meanAmount>
+            <resultingAmount>4.9572E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>6.634530880175327</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="30" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.8874E-14">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e60edb16-3c74-415b-9aff-a22a6f49fecb" version="00.00.000" uri="../flows/e60edb16-3c74-415b-9aff-a22a6f49fecb.xml">
+                <common:shortDescription xml:lang="en">Arsenic ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.8874E-14</meanAmount>
+            <resultingAmount>3.8874E-14</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8698083559708305</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.4178E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7e9baf19-8fa4-49c6-a3c2-2e875217e60b" version="00.00.000" uri="../flows/7e9baf19-8fa4-49c6-a3c2-2e875217e60b.xml">
+                <common:shortDescription xml:lang="en">Thallium I</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.4178E-6</meanAmount>
+            <resultingAmount>1.4178E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.612063122372033</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.8958E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9f69cb8e-51fe-447b-a1ac-4da74de8ebe4" version="00.00.000" uri="../flows/9f69cb8e-51fe-447b-a1ac-4da74de8ebe4.xml">
+                <common:shortDescription xml:lang="en">Nickel II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.8958E-5</meanAmount>
+            <resultingAmount>4.8958E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.9630558550253485</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0034634">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a2632dc9-f27b-4f4d-bf67-c0bab45421dd" version="00.00.000" uri="../flows/a2632dc9-f27b-4f4d-bf67-c0bab45421dd.xml">
+                <common:shortDescription xml:lang="en">Potassium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0034634</meanAmount>
+            <resultingAmount>0.0034634</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.8599731180853125</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="9.9581E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="10319ea8-90db-4340-be33-b7182dca01db" version="00.00.000" uri="../flows/10319ea8-90db-4340-be33-b7182dca01db.xml">
+                <common:shortDescription xml:lang="en">Tungsten</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.9581E-6</meanAmount>
+            <resultingAmount>9.9581E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.012789405185832</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ad0b33a5-b25a-36eb-a5c6-2b529b80ab36" version="00.00.000" uri="../flows/ad0b33a5-b25a-36eb-a5c6-2b529b80ab36.xml">
+                <common:shortDescription xml:lang="en">Disposal, hard coal ash, 0% water, to residual material landfill</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">GERMANY
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.2287E-13">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b5fae91e-cff0-4513-a997-cdb6922f1ab4" version="00.00.000" uri="../flows/b5fae91e-cff0-4513-a997-cdb6922f1ab4.xml">
+                <common:shortDescription xml:lang="en">Iodide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.2287E-13</meanAmount>
+            <resultingAmount>2.2287E-13</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.387772129290871</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.8331E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4d54a415-82d7-49ac-88e1-712bd0009363" version="00.00.000" uri="../flows/4d54a415-82d7-49ac-88e1-712bd0009363.xml">
+                <common:shortDescription xml:lang="en">Selenium IV</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.8331E-6</meanAmount>
+            <resultingAmount>5.8331E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.1095980447639855</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.9404E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a86c05d6-fd47-4f0d-8ece-559afa4fd339" version="00.00.000" uri="../flows/a86c05d6-fd47-4f0d-8ece-559afa4fd339.xml">
+                <common:shortDescription xml:lang="en">Titanium ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.9404E-6</meanAmount>
+            <resultingAmount>2.9404E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.9567211569574834</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.6285E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="835d0907-a668-4d92-b6b6-7b56fa343713" version="00.00.000" uri="../flows/835d0907-a668-4d92-b6b6-7b56fa343713.xml">
+                <common:shortDescription xml:lang="en">Manganese II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6285E-6</meanAmount>
+            <resultingAmount>3.6285E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>12.842896869476139</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="75" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.010195">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bfc0bf1c-e5e2-4702-a502-08c892031837" version="00.00.000" uri="../flows/bfc0bf1c-e5e2-4702-a502-08c892031837.xml">
+                <common:shortDescription xml:lang="en">Sulfate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.010195</meanAmount>
+            <resultingAmount>0.010195</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.0092784774639876</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="74" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.5281E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c626d246-a314-4dab-b4be-cfb79c230f55" version="00.00.000" uri="../flows/c626d246-a314-4dab-b4be-cfb79c230f55.xml">
+                <common:shortDescription xml:lang="en">Bromine</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.5281E-5</meanAmount>
+            <resultingAmount>3.5281E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.817587620642879</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="73" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.8891E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="11a9c7c4-8368-467f-87c6-a8b12b124138" version="00.00.000" uri="../flows/11a9c7c4-8368-467f-87c6-a8b12b124138.xml">
+                <common:shortDescription xml:lang="en">Scandium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.8891E-6</meanAmount>
+            <resultingAmount>4.8891E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.9827001190196776</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="52" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.1066E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="60a6702f-20ad-444f-a6df-f6374f1e3183" version="00.00.000" uri="../flows/60a6702f-20ad-444f-a6df-f6374f1e3183.xml">
+                <common:shortDescription xml:lang="en">Tin ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.1066E-6</meanAmount>
+            <resultingAmount>1.1066E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>9.285257131603842</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="51" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.4166E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0ee08c3a-1553-4637-8f17-c486c115ef2b" version="00.00.000" uri="../flows/0ee08c3a-1553-4637-8f17-c486c115ef2b.xml">
+                <common:shortDescription xml:lang="en">Barium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.4166E-8</meanAmount>
+            <resultingAmount>1.4166E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.927849284277593</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="50" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.6711E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e69510c5-d9c6-42aa-a6cb-ff6336b3eae4" version="00.00.000" uri="../flows/e69510c5-d9c6-42aa-a6cb-ff6336b3eae4.xml">
+                <common:shortDescription xml:lang="en">Cobalt II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.6711E-8</meanAmount>
+            <resultingAmount>1.6711E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.8970501664720714</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="49" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0042206">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ada8c83c-995a-3fa1-bdec-36a0590efbd2" version="00.00.000" uri="../flows/ada8c83c-995a-3fa1-bdec-36a0590efbd2.xml">
+                <common:shortDescription xml:lang="en">Sodium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0042206</meanAmount>
+            <resultingAmount>0.0042206</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.9130603754194482</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="56" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.6389E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="20bc9500-2e2f-4cba-9332-8ea17d362aba" version="00.00.000" uri="../flows/20bc9500-2e2f-4cba-9332-8ea17d362aba.xml">
+                <common:shortDescription xml:lang="en">Bromine</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.6389E-6</meanAmount>
+            <resultingAmount>8.6389E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.839506999463111</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="55" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0048E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="40f89b03-64f8-466d-9480-bca47d8a435c" version="00.00.000" uri="../flows/40f89b03-64f8-466d-9480-bca47d8a435c.xml">
+                <common:shortDescription xml:lang="en">Mercury II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0048E-8</meanAmount>
+            <resultingAmount>1.0048E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>7.5727141765683985</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="54" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.6774E-11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e529c930-e3c6-4d2d-8a96-f052ec23f2e7" version="00.00.000" uri="../flows/e529c930-e3c6-4d2d-8a96-f052ec23f2e7.xml">
+                <common:shortDescription xml:lang="en">Mercury II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.6774E-11</meanAmount>
+            <resultingAmount>1.6774E-11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>5.258707065429676</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="53" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.7072E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9b6d6f07-ebc6-447d-a3c0-f2017d77d852" version="00.00.000" uri="../flows/9b6d6f07-ebc6-447d-a3c0-f2017d77d852.xml">
+                <common:shortDescription xml:lang="en">Iron ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.7072E-4</meanAmount>
+            <resultingAmount>2.7072E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>14.609928131240073</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="44" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0017613">
+            <referenceToFlowDataSet type="flow data set" refObjectId="08fbcb07-e7a1-352c-b779-9d7c578059d5" version="00.00.000" uri="../flows/08fbcb07-e7a1-352c-b779-9d7c578059d5.xml">
+                <common:shortDescription xml:lang="en">Titanium ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0017613</meanAmount>
+            <resultingAmount>0.0017613</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.445301617387925</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="43" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.425E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7282b430-0b75-426c-a8c0-6aff91985c0d" version="00.00.000" uri="../flows/7282b430-0b75-426c-a8c0-6aff91985c0d.xml">
+                <common:shortDescription xml:lang="en">Tungsten</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.425E-6</meanAmount>
+            <resultingAmount>5.425E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.045800387418716</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="42" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0088231">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2f2083f7-404b-3c39-a1f6-2bc88e8b1e20" version="00.00.000" uri="../flows/2f2083f7-404b-3c39-a1f6-2bc88e8b1e20.xml">
+                <common:shortDescription xml:lang="en">Potassium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0088231</meanAmount>
+            <resultingAmount>0.0088231</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.8019711429431937</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="41" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.9754E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f6266ac7-9608-47f2-bc91-3857eb366446" version="00.00.000" uri="../flows/f6266ac7-9608-47f2-bc91-3857eb366446.xml">
+                <common:shortDescription xml:lang="en">Scandium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.9754E-5</meanAmount>
+            <resultingAmount>2.9754E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.860244744772727</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="48" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="6.0576E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d3a50c57-7caf-4400-87f5-b0c10d69e760" version="00.00.000" uri="../flows/d3a50c57-7caf-4400-87f5-b0c10d69e760.xml">
+                <common:shortDescription xml:lang="en">Manganese II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.0576E-9</meanAmount>
+            <resultingAmount>6.0576E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.088765094744378</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="47" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.7337E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f5aa8364-8feb-4e1b-a9d0-2ceffa388306" version="00.00.000" uri="../flows/f5aa8364-8feb-4e1b-a9d0-2ceffa388306.xml">
+                <common:shortDescription xml:lang="en">Antimony ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.7337E-6</meanAmount>
+            <resultingAmount>2.7337E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.170015772831422</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="46" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.1734E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="77b23aa4-9f0a-4d3f-8857-29ee054cdae1" version="00.00.000" uri="../flows/77b23aa4-9f0a-4d3f-8857-29ee054cdae1.xml">
+                <common:shortDescription xml:lang="en">Nickel II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.1734E-8</meanAmount>
+            <resultingAmount>8.1734E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.5993054885630364</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="45" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.2287E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="795b9f74-ca43-4acc-8d29-79165973500a" version="00.00.000" uri="../flows/795b9f74-ca43-4acc-8d29-79165973500a.xml">
+                <common:shortDescription xml:lang="en">Iodide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.2287E-6</meanAmount>
+            <resultingAmount>2.2287E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.354996274215517</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="68" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.3855E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="24e0a9cb-a789-46e2-a25c-0278a90d67e5" version="00.00.000" uri="../flows/24e0a9cb-a789-46e2-a25c-0278a90d67e5.xml">
+                <common:shortDescription xml:lang="en">Beryllium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.3855E-6</meanAmount>
+            <resultingAmount>4.3855E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.404115156689033</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="67" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.018E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="83cf77ca-867b-4eef-b0f0-78d71b3d91d5" version="00.00.000" uri="../flows/83cf77ca-867b-4eef-b0f0-78d71b3d91d5.xml">
+                <common:shortDescription xml:lang="en">Antimony ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.018E-6</meanAmount>
+            <resultingAmount>5.018E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.1368455492739837</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="66" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.4857E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3184c902-c587-4fd7-bd89-769d3cf30072" version="00.00.000" uri="../flows/3184c902-c587-4fd7-bd89-769d3cf30072.xml">
+                <common:shortDescription xml:lang="en">Barium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.4857E-6</meanAmount>
+            <resultingAmount>8.4857E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>12.564234954823155</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="65" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.8874E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="78443a3c-a25a-47bc-a1a1-48d2a57e04df" version="00.00.000" uri="../flows/78443a3c-a25a-47bc-a1a1-48d2a57e04df.xml">
+                <common:shortDescription xml:lang="en">Arsenic ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.8874E-5</meanAmount>
+            <resultingAmount>3.8874E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.837639864394353</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="72" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.2874E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7213c990-49f1-4416-b154-64fba3771f50" version="00.00.000" uri="../flows/7213c990-49f1-4416-b154-64fba3771f50.xml">
+                <common:shortDescription xml:lang="en">Zinc II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.2874E-9</meanAmount>
+            <resultingAmount>4.2874E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.15571895103603</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="71" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.1711E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="549b1a2a-6675-4bf9-b0d7-47a5113a9787" version="00.00.000" uri="../flows/549b1a2a-6675-4bf9-b0d7-47a5113a9787.xml">
+                <common:shortDescription xml:lang="en">Strontium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.1711E-7</meanAmount>
+            <resultingAmount>5.1711E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.2599079741612345</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="70" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.426E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="80b3c2a1-af98-4dde-b298-abf7e78e38ee" version="00.00.000" uri="../flows/80b3c2a1-af98-4dde-b298-abf7e78e38ee.xml">
+                <common:shortDescription xml:lang="en">Lead II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.426E-9</meanAmount>
+            <resultingAmount>1.426E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.369324890643862</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="69" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.8474E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="df28f5b4-4754-4e51-ac98-31238976d7c7" version="00.00.000" uri="../flows/df28f5b4-4754-4e51-ac98-31238976d7c7.xml">
+                <common:shortDescription xml:lang="en">Tin ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.8474E-9</meanAmount>
+            <resultingAmount>1.8474E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.320648099533217</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="60" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="9.9722E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4ce23896-a82f-49f1-a8e3-8848734805a3" version="00.00.000" uri="../flows/4ce23896-a82f-49f1-a8e3-8848734805a3.xml">
+                <common:shortDescription xml:lang="en">Cadmium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.9722E-9</meanAmount>
+            <resultingAmount>9.9722E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>16.18363370816332</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="59" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.3111E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5fb7fbc0-e7d1-4be5-a194-ec5ef5fb4f64" version="00.00.000" uri="../flows/5fb7fbc0-e7d1-4be5-a194-ec5ef5fb4f64.xml">
+                <common:shortDescription xml:lang="en">Aluminium III</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.3111E-5</meanAmount>
+            <resultingAmount>5.3111E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.527310823780882</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="58" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.2386E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="408b3ab9-9ef7-4535-b7eb-975d55b3c6b6" version="00.00.000" uri="../flows/408b3ab9-9ef7-4535-b7eb-975d55b3c6b6.xml">
+                <common:shortDescription xml:lang="en">Molybdenum VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.2386E-5</meanAmount>
+            <resultingAmount>3.2386E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8698432012916664</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="57" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.6648E-11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cd26472d-d670-49fd-9df2-f689a14e9892" version="00.00.000" uri="../flows/cd26472d-d670-49fd-9df2-f689a14e9892.xml">
+                <common:shortDescription xml:lang="en">Cadmium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.6648E-11</meanAmount>
+            <resultingAmount>1.6648E-11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>5.270863306897647</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="64" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.8046E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="41dbbe1f-06e1-4a34-8497-5986be8f9e51" version="00.00.000" uri="../flows/41dbbe1f-06e1-4a34-8497-5986be8f9e51.xml">
+                <common:shortDescription xml:lang="en">Vanadium V</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.8046E-4</meanAmount>
+            <resultingAmount>1.8046E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.5357247484693604</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="63" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.1777E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="307c1028-7727-4627-ac0b-a3c14fef1d7a" version="00.00.000" uri="../flows/307c1028-7727-4627-ac0b-a3c14fef1d7a.xml">
+                <common:shortDescription xml:lang="en">Selenium IV</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.1777E-6</meanAmount>
+            <resultingAmount>3.1777E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.142721750330436</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="62" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.8302E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f069e9b3-0fb0-4e2c-adc7-bb7df6580cc7" version="00.00.000" uri="../flows/f069e9b3-0fb0-4e2c-adc7-bb7df6580cc7.xml">
+                <common:shortDescription xml:lang="en">Magnesium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.8302E-6</meanAmount>
+            <resultingAmount>5.8302E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.867385568771664</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="61" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="89a4ae2f-2679-47a7-90b3-834244ba3384" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f2387e12-a763-39d8-91b7-b0afcd1cb585" version="00.00.000" uri="../flows/f2387e12-a763-39d8-91b7-b0afcd1cb585.xml">
+                <common:shortDescription xml:lang="en">Process-specific burdens, residual material landfill</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">demands per kilogram waste. uncertainty is heeded in the module
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

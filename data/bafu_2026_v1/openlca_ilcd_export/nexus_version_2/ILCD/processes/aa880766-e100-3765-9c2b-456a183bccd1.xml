@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>aa880766-e100-3765-9c2b-456a183bccd1</common:UUID>
+            <name>
+                <baseName xml:lang="en">Natural gas, high pressure, at consumer</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="e70d2ea9-becd-32e6-9944-c946e949f129">fuels</common:class>
+                    <common:class level="1" classId="5c8ab928-ac6f-3027-aad4-f3a488a3d1af">natural gas</common:class>
+                    <common:class level="2" classId="9013b975-5d6f-32f1-bd83-dcff350137c9">gas to user</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Infrastructure requirements are based on estimated standard capacity. The net calorific value of natural gas is 36.0 MJ/Nm³. UUID=aa880766-e100-3765-9c2b-456a183bccd1</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1672527600000" olca:endDate="1704063600000">
+            <common:referenceYear>2023</common:referenceYear>
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Energy requirements are from 2019 and leakage data are from 2018. Trade movements investigated for 2023.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="FR" latitudeAndLongitude="46.55495408686003;2.546379530184141">
+                <descriptionOfRestrictions xml:lang="en">Energy requirements and emissions are based on Swiss data. Calculations include production and transport of natural gas from 16 countries.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">The quantity of gas delivered in the high pressure network is estimated. Industry, power plants and half of commercial and of other sectors are assumed to consume high pressure gas.\n\n# Included processes\nThis dataset describes the structure of the French gas mix with regard to the countries of origin and the energy requirements and the emissions of the high pressure distribution network.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="f3e1930d-fd27-353b-a59a-a54448c7d2e9" version="00.00.000" uri="../sources/f3e1930d-fd27-353b-a59a-a54448c7d2e9.xml">
+                <common:shortDescription xml:lang="en">2025 - LCI long-distance transport crude oil - Meili</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource type="source data set" refObjectId="0871224f-8469-34b9-a7df-3bc9a8dc84d1" version="00.00.000" uri="../sources/0871224f-8469-34b9-a7df-3bc9a8dc84d1.xml">
+                <common:shortDescription xml:lang="en">2025 - LCI long-dist. transp. and distrib. natural gas - Bussa</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Literature. Online calculators for distances.The consumption mix is calculated based on international trade statistics for 2023.</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Passed. https://esuservices-my.sharepoint.com/personal/jungbluth_esu-services_ch/Documents/ESU-intern/565 Beratung BAFU/EcoSpoldDataXML/[565-EcoSpold-gas-transport-2025-v2.0.xlsb]X-Process</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="0bcb8400-bb3d-3da1-b808-677f447cdc8c" version="00.00.000" uri="../contacts/0bcb8400-bb3d-3da1-b808-677f447cdc8c.xml">
+                    <common:shortDescription xml:lang="en">Niels Jungbluth</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="0bcb8400-bb3d-3da1-b808-677f447cdc8c" version="00.00.000" uri="../contacts/0bcb8400-bb3d-3da1-b808-677f447cdc8c.xml">
+                <common:shortDescription xml:lang="en">Niels Jungbluth</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:14.635+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="1d53c53f-b2cd-3a94-8782-b9fa32da925f" version="00.00.000" uri="../contacts/1d53c53f-b2cd-3a94-8782-b9fa32da925f.xml">
+                <common:shortDescription xml:lang="en">Maresa Bussa</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T09:00:53.682+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.014</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="0871224f-8469-34b9-a7df-3bc9a8dc84d1" version="00.00.000" uri="../sources/0871224f-8469-34b9-a7df-3bc9a8dc84d1.xml">
+                <common:shortDescription xml:lang="en">2025 - LCI long-dist. transp. and distrib. natural gas - Bussa</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;3;4;1;1;n.a.)" olca:amount="6.6606E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aa7cac3a-3625-41d4-bc54-33e2cf11ec46" version="00.00.000" uri="../flows/aa7cac3a-3625-41d4-bc54-33e2cf11ec46.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.6606E-7</meanAmount>
+            <resultingAmount>6.6606E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.105712440013225</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,4,1,1,BU:1.05); Calculated based on leakage and average gas composition</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;3;4;1;1;n.a.)" olca:amount="1.3286E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="33b38ccb-593b-4b11-b965-10d747ba3556" version="00.00.000" uri="../flows/33b38ccb-593b-4b11-b965-10d747ba3556.xml">
+                <common:shortDescription xml:lang="en">NMVOC, non-methane volatile organic compounds</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.3286E-8</meanAmount>
+            <resultingAmount>1.3286E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2522379965485795</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;3;4;1;1;n.a.)" olca:amount="1.8451E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fa5512cf-04a2-4014-8e96-d3e2d137f0df" version="00.00.000" uri="../flows/fa5512cf-04a2-4014-8e96-d3e2d137f0df.xml">
+                <common:shortDescription xml:lang="en">Butane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.8451E-7</meanAmount>
+            <resultingAmount>1.8451E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2522379965485795</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;3;4;1;1;n.a.)" olca:amount="3.5882E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9beb60a3-3a8c-4345-9a0e-107eec2f709f" version="00.00.000" uri="../flows/9beb60a3-3a8c-4345-9a0e-107eec2f709f.xml">
+                <common:shortDescription xml:lang="en">Propane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.5882E-7</meanAmount>
+            <resultingAmount>3.5882E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2522379965485795</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;3;4;1;1;n.a.)" olca:amount="1.5948E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e7e0031e-791d-42f4-b26c-ec322db637bc" version="00.00.000" uri="../flows/e7e0031e-791d-42f4-b26c-ec322db637bc.xml">
+                <common:shortDescription xml:lang="en">Ethane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.5948E-6</meanAmount>
+            <resultingAmount>1.5948E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2522379965485795</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;3;4;1;1;n.a.)" olca:amount="1.9255E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="70ef743b-3ed5-4a6d-b192-fb6d62378555" version="00.00.000" uri="../flows/70ef743b-3ed5-4a6d-b192-fb6d62378555.xml">
+                <common:shortDescription xml:lang="en">Methane, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.9255E-5</meanAmount>
+            <resultingAmount>1.9255E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2522379965485795</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="bc1e62e2-5394-3457-9502-1f71a6030977" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.25733">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e54577d0-d249-323a-bf9f-9180e909c3cf" version="00.00.000" uri="../flows/e54577d0-d249-323a-bf9f-9180e909c3cf.xml">
+                <common:shortDescription xml:lang="en">Natural gas, production US, at long-distance pipeline</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.25733</meanAmount>
+            <resultingAmount>0.25733</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="00d080c8-d4e4-39a8-a046-20aba9c9d668" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.0048061">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cb3db5bb-76ec-3087-b3fb-7531422b3052" version="00.00.000" uri="../flows/cb3db5bb-76ec-3087-b3fb-7531422b3052.xml">
+                <common:shortDescription xml:lang="en">Natural gas, production TT, at long-distance pipeline</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0048061</meanAmount>
+            <resultingAmount>0.0048061</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="327a3f48-c3a9-3aa2-b25f-633a134c9313" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.1307">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9bec276c-f630-380b-b1bc-8cca90566805" version="00.00.000" uri="../flows/9bec276c-f630-380b-b1bc-8cca90566805.xml">
+                <common:shortDescription xml:lang="en">Natural gas, production RU, at long-distance pipeline</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1307</meanAmount>
+            <resultingAmount>0.1307</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f763556d-7d7b-3ce3-bc6c-364098320d0b" version="00.00.014" uri="../flows/f763556d-7d7b-3ce3-bc6c-364098320d0b.xml">
+                <common:shortDescription xml:lang="en">Natural gas, high pressure, at consumer</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f43f19ab-881a-3451-b00d-fcb618ba12c4" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.050149">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f1707125-b653-3e3f-8eb6-f4a6af1c7239" version="00.00.000" uri="../flows/f1707125-b653-3e3f-8eb6-f4a6af1c7239.xml">
+                <common:shortDescription xml:lang="en">Natural gas, production QA, at long-distance pipeline</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.050149</meanAmount>
+            <resultingAmount>0.050149</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="dd25f713-f604-31f9-afb3-fefee6371286" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.0062849">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0b1cf939-9512-3771-9431-2c11deabaf6c" version="00.00.000" uri="../flows/0b1cf939-9512-3771-9431-2c11deabaf6c.xml">
+                <common:shortDescription xml:lang="en">Natural gas, production PE, at long-distance pipeline</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0062849</meanAmount>
+            <resultingAmount>0.0062849</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="3fdaca1c-da5c-3486-8c39-eff182064ce7" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.0020007">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9c977294-fbc3-3de9-b5fe-7c0f06e70a1d" version="00.00.000" uri="../flows/9c977294-fbc3-3de9-b5fe-7c0f06e70a1d.xml">
+                <common:shortDescription xml:lang="en">Natural gas, production OM, at long-distance pipeline</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0020007</meanAmount>
+            <resultingAmount>0.0020007</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="7640ae34-bc4a-3942-994e-50cde5261fcf" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.32523">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1bb6f254-dcb6-327a-a194-b33548c93136" version="00.00.000" uri="../flows/1bb6f254-dcb6-327a-a194-b33548c93136.xml">
+                <common:shortDescription xml:lang="en">Natural gas, production NO, at long-distance pipeline</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.32523</meanAmount>
+            <resultingAmount>0.32523</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="169e8aa3-3e20-33cf-af18-aff90ec47316" olca:pedigreeUncertainty="(4;3;5;3;1;n.a.)" olca:amount="0.055999">
+            <referenceToFlowDataSet type="flow data set" refObjectId="62e5e13c-a507-3e10-acc1-bc0fc91cf043" version="00.00.014" uri="../flows/62e5e13c-a507-3e10-acc1-bc0fc91cf043.xml">
+                <common:shortDescription xml:lang="en">Natural gas, high pressure, at consumer</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.055999</meanAmount>
+            <resultingAmount>0.055999</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2525174649480941</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,5,3,1,BU:1.05); natural gas input</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="dc95f503-3557-3c6c-9ecf-2e04daf420dd" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.0095035">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0b1ad3e8-3b55-31a0-b977-999fd7f326f7" version="00.00.000" uri="../flows/0b1ad3e8-3b55-31a0-b977-999fd7f326f7.xml">
+                <common:shortDescription xml:lang="en">Natural gas, production NG, at long-distance pipeline</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0095035</meanAmount>
+            <resultingAmount>0.0095035</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="d19f1031-7946-35d8-b37f-a0c744cc9de7" olca:pedigreeUncertainty="(4;3;5;3;1;n.a.)" olca:amount="0.043146">
+            <referenceToFlowDataSet type="flow data set" refObjectId="11844ce2-682b-33af-b006-cbffef1b6c8a" version="00.00.014" uri="../flows/11844ce2-682b-33af-b006-cbffef1b6c8a.xml">
+                <common:shortDescription xml:lang="en">Natural gas, high pressure, at consumer</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.043146</meanAmount>
+            <resultingAmount>0.043146</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2525174649480941</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,5,3,1,BU:1.05); natural gas input</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="fbda1796-6c79-3a87-b89c-f8186905ffe2" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.0083074">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cebc731d-a973-3f18-b2ac-76099646f7b0" version="00.00.000" uri="../flows/cebc731d-a973-3f18-b2ac-76099646f7b0.xml">
+                <common:shortDescription xml:lang="en">Natural gas, production EG, at long-distance pipeline</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0083074</meanAmount>
+            <resultingAmount>0.0083074</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="55af763c-4005-362b-b614-f0f235463424" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.088402">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d1545058-c63a-3834-b04e-24e6333d72b1" version="00.00.000" uri="../flows/d1545058-c63a-3834-b04e-24e6333d72b1.xml">
+                <common:shortDescription xml:lang="en">Natural gas, production DZ, at long-distance pipeline</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.088402</meanAmount>
+            <resultingAmount>0.088402</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="7633b030-93b1-3355-b64b-a6ede9b73524" olca:pedigreeUncertainty="(4;3;5;3;1;n.a.)" olca:amount="0.0074593">
+            <referenceToFlowDataSet type="flow data set" refObjectId="29108e7f-ce18-368f-8ca2-1763a6d2495d" version="00.00.014" uri="../flows/29108e7f-ce18-368f-8ca2-1763a6d2495d.xml">
+                <common:shortDescription xml:lang="en">Natural gas, high pressure, at consumer</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0074593</meanAmount>
+            <resultingAmount>0.0074593</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2525174649480941</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,5,3,1,BU:1.05); natural gas input</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="c60999be-6009-3a0e-937a-1f7ed06ba658" olca:pedigreeUncertainty="(4;3;5;3;1;n.a.)" olca:amount="0.0016528">
+            <referenceToFlowDataSet type="flow data set" refObjectId="70161b12-c763-3f93-9183-6d467402dac9" version="00.00.014" uri="../flows/70161b12-c763-3f93-9183-6d467402dac9.xml">
+                <common:shortDescription xml:lang="en">Natural gas, high pressure, at consumer</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0016528</meanAmount>
+            <resultingAmount>0.0016528</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2525174649480941</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,5,3,1,BU:1.05); natural gas input</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f6be1585-f794-319e-90ac-0d6d8924d672" olca:pedigreeUncertainty="(4;3;5;3;1;n.a.)" olca:amount="0.0048714">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c3e22fda-9026-3db1-968d-8d494fd09afa" version="00.00.014" uri="../flows/c3e22fda-9026-3db1-968d-8d494fd09afa.xml">
+                <common:shortDescription xml:lang="en">Natural gas, high pressure, at consumer</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0048714</meanAmount>
+            <resultingAmount>0.0048714</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2525174649480941</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,5,3,1,BU:1.05); natural gas input</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e91f9abe-7abb-30f4-a0ac-0b09d64b9127" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.0041537">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b7ccdf63-95ba-3777-aade-cabd43199da1" version="00.00.000" uri="../flows/b7ccdf63-95ba-3777-aade-cabd43199da1.xml">
+                <common:shortDescription xml:lang="en">Natural gas, production AO, at long-distance pipeline</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0041537</meanAmount>
+            <resultingAmount>0.0041537</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="f6d354f1-3cee-3a1f-988d-f6016a7188fe" olca:pedigreeUncertainty="(4;3;5;3;3;n.a.)" olca:amount="1.0666E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c9d15c8f-36ad-3107-a524-b222399a7a93" version="00.00.000" uri="../flows/c9d15c8f-36ad-3107-a524-b222399a7a93.xml">
+                <common:shortDescription xml:lang="en">Pipeline, natural gas, high pressure distribution network</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0666E-6</meanAmount>
+            <resultingAmount>1.0666E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.822361105818493</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,5,3,3,BU:3); based on estimated standard capacity</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f89f6c7f-4bfa-34fa-be74-0e1d838963e3" olca:pedigreeUncertainty="(4;2;2;3;3;n.a.)" olca:amount="0.0049022">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2ac1b0b5-ed5c-35f2-bb56-1bc70b079769" version="00.00.000" uri="../flows/2ac1b0b5-ed5c-35f2-bb56-1bc70b079769.xml">
+                <common:shortDescription xml:lang="en">Natural gas, burned in gas turbine</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0049022</meanAmount>
+            <resultingAmount>0.0049022</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1420157617125957</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,2,3,3,BU:1.05); Qualified estimates from different gas companies</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="aa880766-e100-3765-9c2b-456a183bccd1" olca:pedigreeUncertainty="(4;3;5;3;1;n.a.)" olca:amount="0.0010457">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f763556d-7d7b-3ce3-bc6c-364098320d0b" version="00.00.014" uri="../flows/f763556d-7d7b-3ce3-bc6c-364098320d0b.xml">
+                <common:shortDescription xml:lang="en">Natural gas, high pressure, at consumer</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0010457</meanAmount>
+            <resultingAmount>0.0010457</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2525174649480941</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,5,3,1,BU:1.05); including leakage </generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

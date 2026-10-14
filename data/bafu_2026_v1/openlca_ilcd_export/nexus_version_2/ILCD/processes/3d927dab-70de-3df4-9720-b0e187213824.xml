@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>3d927dab-70de-3df4-9720-b0e187213824</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, hydropower, at pumped storage plant, ENTSO, summer 2018</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="6f11c2d0-4f16-3031-9733-444055c70cb9">hydro</common:class>
+                    <common:class level="2" classId="865e9ac7-232c-3777-830b-e9dfb179ff0f">power plants</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The electricity used to run the pump storage power plant is modelled by a specific electricity mix used for the operation of storage pumps in Austria in summer 2018.;
+UUID: 3d927dab-70de-3df4-9720-b0e187213824</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1514761200000" olca:endDate="1543618800000">
+            <common:referenceYear>2018</common:referenceYear>
+            <common:dataSetValidUntil>2018</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="AT" latitudeAndLongitude="47.58565692372875;14.130672880286792">
+                <descriptionOfRestrictions xml:lang="en">Austria</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Average technology\n\n# Included processes\nThis dataset includes the shares of different technologies of the electricity mix used for the operation of storage pumps in Austria.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="4a176b97-6b02-3c8f-a524-f9cc0b521085" version="00.00.000" uri="../sources/4a176b97-6b02-3c8f-a524-f9cc0b521085.xml">
+                <common:shortDescription xml:lang="en">2021 - Electricity mixes in LCA of buildings - Frischknecht</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistics </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 20.07.2020; Other validation: G:\Projekte laufend\651 Strommixe LCA Gebäude BFE\EcoSpold\[651-Electricity-Mixes-Attributional-CH-v0.19.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:51:32.904+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:41:10.362+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.010</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="4a176b97-6b02-3c8f-a524-f9cc0b521085" version="00.00.000" uri="../sources/4a176b97-6b02-3c8f-a524-f9cc0b521085.xml">
+                <common:shortDescription xml:lang="en">2021 - Electricity mixes in LCA of buildings - Frischknecht</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="0b14288a-dbf3-3dac-a570-83d083f4b600" olca:pedigreeUncertainty="(4;5;5;5;1;5)" olca:amount="3.244E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="45effa3b-506a-323b-848c-d8bc43273045" version="00.00.000" uri="../flows/45effa3b-506a-323b-848c-d8bc43273045.xml">
+                <common:shortDescription xml:lang="en">Lubricating oil, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.244E-8</meanAmount>
+            <resultingAmount>3.244E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3001538370516006</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,5,5,1,5,BU:1.05); Flury &amp; Frischknecht 2011; Turbines; based on Vattenfall (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="c7266b67-4ea2-457f-b391-9b94e26e195a" olca:propertyId="93a60a56-a3c8-21da-a746-0800200c9a66" olca:pedigreeUncertainty="(3;1;5;1;1;1)" olca:amount="0.0036198">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b9a35003-86ed-45d8-b616-ef6859087b40" version="00.00.000" uri="../flows/b9a35003-86ed-45d8-b616-ef6859087b40.xml">
+                <common:shortDescription xml:lang="en">Occupation, water bodies, artificial</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0036198</meanAmount>
+            <resultingAmount>0.0036198</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.33727334528136</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,1,5,1,1,1,BU:1.5); Flury &amp; Frischknecht 2011; Area occupied by the reservoir; recalculated based on Frischknecht et al. (1996) and Schweizerisches Talsperrenkomitee (2011)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="c7266b67-4ea2-457f-b391-9b94e26e195a" olca:propertyId="93a60a56-a3c8-21da-a746-0800200c9a66" olca:pedigreeUncertainty="(4;1;5;1;1;1)" olca:amount="3.6198E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cf39ec61-e779-4614-97b7-ec622556040d" version="00.00.000" uri="../flows/cf39ec61-e779-4614-97b7-ec622556040d.xml">
+                <common:shortDescription xml:lang="en">Occupation, industrial area, built up</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.6198E-5</meanAmount>
+            <resultingAmount>3.6198E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3509996299037244</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,5,1,1,1,BU:1.5); Flury &amp; Frischknecht 2011; Area occupied by the infrastructure; recalculated based on Frischknecht et al. (1996) and Schweizerisches Talsperrenkomitee (2011)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3fcb32b1-c02b-31ca-a3f9-228c2b909854" version="00.00.010" uri="../flows/3fcb32b1-c02b-31ca-a3f9-228c2b909854.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at pumped storage plant, ENTSO, summer 2018</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+            <generalComment xml:lang="en">AUSTRIA
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(4;1;5;1;1;3)" olca:amount="0.9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="07f704a2-2746-4364-bcfd-606cefc30715" version="00.00.000" uri="../flows/07f704a2-2746-4364-bcfd-606cefc30715.xml">
+                <common:shortDescription xml:lang="en">Heat, waste</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.9</meanAmount>
+            <resultingAmount>0.9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2522379965485795</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,5,1,1,3,BU:1.05); Flury &amp; Frischknecht 2011; Heat emissions
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;5;3;1;3)" olca:amount="2.6424E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="57bdb443-d4a6-423d-8024-959b8261d02e" version="00.00.000" uri="../flows/57bdb443-d4a6-423d-8024-959b8261d02e.xml">
+                <common:shortDescription xml:lang="en">Methane, non-fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.6424E-7</meanAmount>
+            <resultingAmount>2.6424E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3538833036861042</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,5,3,1,3,BU:1.5); Flury &amp; Frischknecht 2011; Methane emissions due to the biomass in the reservoirs; calculated based on Diem et al. (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;5;3;1;3)" olca:amount="0.0013609">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6d89125e-e9b7-4d7e-a1fc-ada45dbd8815" version="00.00.000" uri="../flows/6d89125e-e9b7-4d7e-a1fc-ada45dbd8815.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0013609</meanAmount>
+            <resultingAmount>0.0013609</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.324537655183876</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,5,3,1,3,BU:1.4); Flury &amp; Frischknecht 2011; Carbon dioxide emissions due to the biomass in the reservoirs; calculated based on Diem et al. (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="5d4f0090-160f-314e-976e-9321243a1eda" olca:pedigreeUncertainty="(4;1;5;1;1;2)" olca:amount="3.347E-11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="866c5e3b-1209-3c6a-95f5-93a5900a58d3" version="00.00.006" uri="../flows/866c5e3b-1209-3c6a-95f5-93a5900a58d3.xml">
+                <common:shortDescription xml:lang="en">Reservoir hydropower plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.347E-11</meanAmount>
+            <resultingAmount>3.347E-11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.8087841220001906</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,5,1,1,2,BU:3); Flury &amp; Frischknecht 2011; Infrastructure of the storage power station producing the electricity
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;5;3;1;4)" olca:amount="2.5618E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="afd6d670-bbb0-4625-9730-04088a5b035e" version="00.00.000" uri="../flows/afd6d670-bbb0-4625-9730-04088a5b035e.xml">
+                <common:shortDescription xml:lang="en">Dinitrogen monoxide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.5618E-8</meanAmount>
+            <resultingAmount>2.5618E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3576081909004527</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,5,3,1,4,BU:1.5); Flury &amp; Frischknecht 2011; Nitrous oxide emissions due to the biomass in the reservoirs; calculated based on Diem et al. (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="bf96a041-29df-34fb-82a1-fc9f97ef5935" olca:pedigreeUncertainty="(4;1;5;1;1;3)" olca:amount="1.25">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6fc08b2f-3ac6-3153-8f69-82189da10afe" version="00.00.000" uri="../flows/6fc08b2f-3ac6-3153-8f69-82189da10afe.xml">
+                <common:shortDescription xml:lang="en">Electricity, high voltage, operation storage pumps, ENTSO, summer 2018, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.5</meanAmount>
+            <resultingAmount>4.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2522379965485795</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,5,1,1,3,BU:1.05); Flury &amp; Frischknecht 2011; For the pumping of the water; BFE (2010)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:pedigreeUncertainty="(3;1;5;1;1;1)" olca:amount="2.4132E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="426e316e-db90-40ec-9f45-fa08e6db160c" version="00.00.000" uri="../flows/426e316e-db90-40ec-9f45-fa08e6db160c.xml">
+                <common:shortDescription xml:lang="en">Transformation, to water bodies, artificial</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.4132E-5</meanAmount>
+            <resultingAmount>2.4132E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4982990355733397</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,1,5,1,1,1,BU:2); Flury &amp; Frischknecht 2011; Area covered by the reservoir; recalculated based on Frischknecht et al. (1996) and Schweizerisches Talsperrenkomitee (2011)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="ee5f2241-18af-4444-b457-b275660e5a20" olca:propertyId="441238a3-ba09-46ec-b35b-c30cfba746d1" olca:pedigreeUncertainty="(3;1;5;1;1;1)" olca:amount="0.16418">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9a9d71c7-79f7-42d0-af47-282d22a7cf07" version="00.00.000" uri="../flows/9a9d71c7-79f7-42d0-af47-282d22a7cf07.xml">
+                <common:shortDescription xml:lang="en">Volume occupied, reservoir</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.16418</meanAmount>
+            <resultingAmount>0.16418</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2332882874656679</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,1,5,1,1,1,BU:1.05); Flury &amp; Frischknecht 2011; Volume occupied by the reservoir; based on Schweizerisches Talsperrenkomitee (2011)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(5;5;5;5;5;n.a.)" olca:amount="1403.6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3564b893-744f-326d-a75d-a086409ef6ca" version="00.00.000" uri="../flows/3564b893-744f-326d-a75d-a086409ef6ca.xml">
+                <common:shortDescription xml:lang="en">Water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1403.6</meanAmount>
+            <resultingAmount>1403.6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5873247934811578</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;5;5;5;1;5)" olca:amount="2.268E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="82c27b2a-69a8-4b1e-ad4e-4de9475630c6" version="00.00.000" uri="../flows/82c27b2a-69a8-4b1e-ad4e-4de9475630c6.xml">
+                <common:shortDescription xml:lang="en">Oils, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.268E-8</meanAmount>
+            <resultingAmount>2.268E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3920129309744216</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,5,5,1,5,BU:1.5); Flury &amp; Frischknecht 2011; From turbines; based on Vattenfall (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;5;5;5;1;5)" olca:amount="3.4E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c7c769bb-89b9-4459-afed-e3acecd39339" version="00.00.000" uri="../flows/c7c769bb-89b9-4459-afed-e3acecd39339.xml">
+                <common:shortDescription xml:lang="en">Sulfur hexafluoride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.4E-10</meanAmount>
+            <resultingAmount>3.4E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3920129309744216</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,5,5,1,5,BU:1.5); Flury &amp; Frischknecht 2011; From electric insulations (e.g. switches); based on Vattenfall (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:pedigreeUncertainty="(3;1;5;1;1;1)" olca:amount="1.4036">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8c1494a5-4987-4715-aa2d-1908c495f4eb" version="00.00.000" uri="../flows/8c1494a5-4987-4715-aa2d-1908c495f4eb.xml">
+                <common:shortDescription xml:lang="en">Water, turbine use, unspecified natural origin</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.4036</meanAmount>
+            <resultingAmount>1.4036</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2332882874656679</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,1,5,1,1,1,BU:1.05); Flury &amp; Frischknecht 2011; Amount of water turbined for the generation of electricity; based on BWW (1973)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;5;2;4;5)" olca:amount="1.752">
+            <referenceToFlowDataSet type="flow data set" refObjectId="301f2cb6-9672-3d86-ab17-b04d283656da" version="00.00.000" uri="../flows/301f2cb6-9672-3d86-ab17-b04d283656da.xml">
+                <common:shortDescription xml:lang="en">Water, CH</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.752</meanAmount>
+            <resultingAmount>1.752</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4548195764423848</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,5,2,4,5,BU:1.5); Flury &amp; Frischknecht 2011; Water evaporated from reservoir; calculated based on Spreafico &amp; Weingartner (2005)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;5;5;5;1;5)" olca:amount="9.76E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e9bf9e2d-4bd1-4679-86ff-e34f6b750ea0" version="00.00.000" uri="../flows/e9bf9e2d-4bd1-4679-86ff-e34f6b750ea0.xml">
+                <common:shortDescription xml:lang="en">Oils, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.76E-9</meanAmount>
+            <resultingAmount>9.76E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3920129309744216</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,5,5,1,5,BU:1.5); Flury &amp; Frischknecht 2011; From turbines; based on Vattenfall (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:pedigreeUncertainty="(3;1;5;1;1;1)" olca:amount="2.4373E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="12264257-7f8b-4afe-b3cb-3ac28ca1661a" version="00.00.000" uri="../flows/12264257-7f8b-4afe-b3cb-3ac28ca1661a.xml">
+                <common:shortDescription xml:lang="en">Transformation, from unknown</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.4373E-5</meanAmount>
+            <resultingAmount>2.4373E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4982990355733397</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,1,5,1,1,1,BU:2); Flury &amp; Frischknecht 2011; Original area before the construction of the power station; recalculated based on Frischknecht et al. (1996) and Schweizerisches Talsperrenkomitee (2011)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b1ff97f2-2364-3290-86c7-d513fd4be2e9" olca:pedigreeUncertainty="(4;5;5;5;1;5)" olca:amount="3.4E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9e0359f0-8c08-35fc-9359-53bfa4291aa0" version="00.00.000" uri="../flows/9e0359f0-8c08-35fc-9359-53bfa4291aa0.xml">
+                <common:shortDescription xml:lang="en">Sulphur hexafluoride, liquid, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.4E-10</meanAmount>
+            <resultingAmount>3.4E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3001538370516006</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,5,5,1,5,BU:1.05); Flury &amp; Frischknecht 2011; In electric insulation (e.g. switches); based on Vattenfall (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:pedigreeUncertainty="(4;1;5;1;1;1)" olca:amount="2.4132E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c24fe83a-3170-49a3-ab67-279d34b8d920" version="00.00.000" uri="../flows/c24fe83a-3170-49a3-ab67-279d34b8d920.xml">
+                <common:shortDescription xml:lang="en">Transformation, to industrial area, built up</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.4132E-7</meanAmount>
+            <resultingAmount>2.4132E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5094369811290567</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,5,1,1,1,BU:2); Flury &amp; Frischknecht 2011; Area covered by infrastructures other than held-back river; recalculated based on Frischknecht et al. (1996) and Schweizerisches Talsperrenkomitee (2011)
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

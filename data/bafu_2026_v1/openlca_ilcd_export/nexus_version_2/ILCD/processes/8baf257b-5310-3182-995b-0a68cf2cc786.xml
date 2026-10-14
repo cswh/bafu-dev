@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>8baf257b-5310-3182-995b-0a68cf2cc786</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity mix</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="6299429b-5a23-3f58-ba95-d33dc8e1875b">electricity</common:class>
+                    <common:class level="1" classId="b3130dcd-51b6-31b7-b98e-f30e6a0e917c">supply mix</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Electricity domestic net production and import shares are based on annual averages for the years 2021-2023. Only gross to net electicity conversion losses are included as the power plants could not be operated without these, whereas other losses (such as transmission and distribution losses) are not included. Electricity trade between countries is included. UUID: 8baf257b-5310-3182-995b-0a68cf2cc786</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1672527600000" olca:endDate="1672527600000">
+            <common:referenceYear>2023</common:referenceYear>
+            <common:dataSetValidUntil>2023</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time period of statistics used.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CO" latitudeAndLongitude="3.9094125964283495;-73.08378474967137">
+                <descriptionOfRestrictions xml:lang="en">Data apply to utilities and auto-producers.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">No technology description is provided because the dataset just describes the power plant portfolio of the respective country using current average technology per energy carrier.\n\n# Included processes\nIncluded are the shares of corresponding electricity production by technology and country at the busbar. Not included are transformation, transport or distribution losses.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="cbecfe91-411c-34ed-9d8a-4f15bd2c2d77" version="00.00.000" uri="../sources/cbecfe91-411c-34ed-9d8a-4f15bd2c2d77.xml">
+                <common:shortDescription xml:lang="en">2025 - Electricity mixes in UVEK database - Oberschelp</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistical data</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">manual review of spold files and documentation none</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="dda0f90d-944f-3015-ba07-9f8b3ca0af60" version="00.00.000" uri="../contacts/dda0f90d-944f-3015-ba07-9f8b3ca0af60.xml">
+                    <common:shortDescription xml:lang="en">René Itten</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="13ee94c0-afcc-3954-b3d2-5f352fc753df" version="00.00.000" uri="../contacts/13ee94c0-afcc-3954-b3d2-5f352fc753df.xml">
+                <common:shortDescription xml:lang="en">Christopher Oberschelp</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:32.730+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="13ee94c0-afcc-3954-b3d2-5f352fc753df" version="00.00.000" uri="../contacts/13ee94c0-afcc-3954-b3d2-5f352fc753df.xml">
+                <common:shortDescription xml:lang="en">Christopher Oberschelp</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="cbecfe91-411c-34ed-9d8a-4f15bd2c2d77" version="00.00.000" uri="../sources/cbecfe91-411c-34ed-9d8a-4f15bd2c2d77.xml">
+                <common:shortDescription xml:lang="en">2025 - Electricity mixes in UVEK database - Oberschelp</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e0a1e90a-da44-3f54-9187-3bdf139975d7" olca:pedigreeUncertainty="(1;1;1;5;1;1)" olca:amount="0.310691149546062">
+            <referenceToFlowDataSet type="flow data set" refObjectId="84109613-d782-37c2-b97f-8e1a4c8e6c95" version="00.00.006" uri="../flows/84109613-d782-37c2-b97f-8e1a4c8e6c95.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at reservoir power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1184881383658232</meanAmount>
+            <resultingAmount>1.1184881383658232</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0549952606528619</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="ebe4a137-c13e-3473-8f1a-1ab61186bc6f" olca:pedigreeUncertainty="(1;1;1;5;1;1)" olca:amount="0.179205446135526">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2c26a930-ceae-30c1-8a35-396dc6403bd8" version="00.00.000" uri="../flows/2c26a930-ceae-30c1-8a35-396dc6403bd8.xml">
+                <common:shortDescription xml:lang="en">Electricity, from natural gas</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.6451396060878936</meanAmount>
+            <resultingAmount>0.6451396060878936</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0549952606528619</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="29612bfe-5e20-37df-a2d4-e255324c5dbe" olca:pedigreeUncertainty="(1;1;1;5;1;1)" olca:amount="0.0200605529928047">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ae34201f-c861-3fb3-a83f-832ad113c8db" version="00.00.008" uri="../flows/ae34201f-c861-3fb3-a83f-832ad113c8db.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 300kWth, diesel, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.07221799077409692</meanAmount>
+            <resultingAmount>0.07221799077409692</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0549952606528619</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="dac43dc1-1641-3b88-8ec0-c4f1723d4750" olca:pedigreeUncertainty="(1;1;1;5;1;1)" olca:amount="0.0155440616460671">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9d2401ec-5c3b-3f14-aa31-b6c724377cc1" version="00.00.000" uri="../flows/9d2401ec-5c3b-3f14-aa31-b6c724377cc1.xml">
+                <common:shortDescription xml:lang="en">Electricity, oil, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.05595862192584156</meanAmount>
+            <resultingAmount>0.05595862192584156</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0549952606528619</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="aeb0fb1c-e3e4-371c-802e-7513e1b69faa" olca:pedigreeUncertainty="(1;1;1;5;1;1)" olca:amount="1.44848080466983E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dd527dc0-c908-3998-8113-d8395e514454" version="00.00.004" uri="../flows/dd527dc0-c908-3998-8113-d8395e514454.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen with biogas engine, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.214530896811388E-5</meanAmount>
+            <resultingAmount>5.214530896811388E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0549952606528619</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="d1603317-548d-30ea-ab4f-b5447d845e84" olca:pedigreeUncertainty="(1;1;1;5;1;1)" olca:amount="2.65408542883478E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b55e76ae-e19d-3a23-b664-afd7f3008130" version="00.00.000" uri="../flows/b55e76ae-e19d-3a23-b664-afd7f3008130.xml">
+                <common:shortDescription xml:lang="en">Electricity, industrial gas, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.554707543805208E-4</meanAmount>
+            <resultingAmount>9.554707543805208E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0549952606528619</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="474d908c-bf5c-36ca-893b-af6e91c2676e" olca:pedigreeUncertainty="(1;1;1;5;1;1)" olca:amount="0.125266252320876">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5800dd6c-6a17-365d-9136-e3144c89f116" version="00.00.000" uri="../flows/5800dd6c-6a17-365d-9136-e3144c89f116.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.45095850835515355</meanAmount>
+            <resultingAmount>0.45095850835515355</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0549952606528619</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="9c67c892-d289-3a7d-bf72-cbfd7d0b3484" olca:pedigreeUncertainty="(1;1;1;5;1;1)" olca:amount="0.310691149546062">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4183acf1-db0a-3c51-ad72-cf3b33aa9f40" version="00.00.014" uri="../flows/4183acf1-db0a-3c51-ad72-cf3b33aa9f40.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at run-of-river power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1184881383658232</meanAmount>
+            <resultingAmount>1.1184881383658232</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0549952606528619</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="346e35eb-be7f-3c61-8aa4-1b2f256c50b1" version="00.00.000" uri="../flows/346e35eb-be7f-3c61-8aa4-1b2f256c50b1.xml">
+                <common:shortDescription xml:lang="en">Electricity mix</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="c5497f52-a5e4-3da9-8b20-fb829ed78b31" olca:pedigreeUncertainty="(1;1;1;5;1;1)" olca:amount="0.0125006527944286">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f483fb36-7b7f-3a8b-b169-fe016c7826dd" version="00.00.000" uri="../flows/f483fb36-7b7f-3a8b-b169-fe016c7826dd.xml">
+                <common:shortDescription xml:lang="en">Electricity, production mix photovoltaic, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.045002350059942964</meanAmount>
+            <resultingAmount>0.045002350059942964</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0549952606528619</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b35b43a0-cf11-3cf1-ba91-54faaf294f6c" olca:pedigreeUncertainty="(1;1;1;5;1;1)" olca:amount="6.39502989946669E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b9a490eb-5dd2-3d4b-93c6-4da877870523" version="00.00.000" uri="../flows/b9a490eb-5dd2-3d4b-93c6-4da877870523.xml">
+                <common:shortDescription xml:lang="en">Electricity, at wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0023022107638080084</meanAmount>
+            <resultingAmount>0.0023022107638080084</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0549952606528619</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f566629f-cb3c-361b-a2f1-ad710225f81d" olca:pedigreeUncertainty="(1;1;1;5;1;1)" olca:amount="0.0251213386772953">
+            <referenceToFlowDataSet type="flow data set" refObjectId="648fefba-a431-39b9-a9ec-d960cae17096" version="00.00.004" uri="../flows/648fefba-a431-39b9-a9ec-d960cae17096.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 1MWth, wood chips, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.09043681923826308</meanAmount>
+            <resultingAmount>0.09043681923826308</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0549952606528619</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

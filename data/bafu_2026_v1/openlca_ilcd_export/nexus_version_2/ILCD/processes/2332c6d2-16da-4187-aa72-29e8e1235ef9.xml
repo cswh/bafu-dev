@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>2332c6d2-16da-4187-aa72-29e8e1235ef9</common:UUID>
+            <name>
+                <baseName xml:lang="en">Disposal, laptop computer, to WEEE treatment</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="7b5425f4-9bc3-32a5-8b41-cbb21b9b16f6">electronics waste</common:class>
+                    <common:class level="1" classId="89e2fedf-4444-30c5-9b11-3e1e73887f49">unspecified</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">mix process of the two disposal ways - the manual dismantling and the mechanical treatment (in a shredder). Update 2023: The average mass of 2.77 kg is used as in the dataset for laptop computer, where the split to manual and mechanical treatment is assumed to be the same as in the original dataset. Another change is that the batteries flows are now removed since desktop computers do not contain lithium ion batteries.; Geography: data of the situation in Switzerland; UUID: 2332c6d2-16da-4187-aa72-29e8e1235ef9</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1672527600000" olca:endDate="1890774000000">
+            <common:referenceYear>2023</common:referenceYear>
+            <common:dataSetValidUntil>2029</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Unspecified</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">data of the situation in Switzerland</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">current mix of manual and mechanical treatment in Switzerland\n\n# Included processes\nThis dataset represents the statistical mixture of the two different disposal ways for WEEE devices in Switzerland.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="7e27b577-b31d-3a15-b1f7-c47afab2beb7" version="00.00.000" uri="../sources/7e27b577-b31d-3a15-b1f7-c47afab2beb7.xml">
+                <common:shortDescription xml:lang="en">2024 - LCI ICT sector - Raka Adrianto</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">statistical data</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="67f3c08e-69c1-33a4-ae8b-5b595d8e5578" version="00.00.000" uri="../contacts/67f3c08e-69c1-33a4-ae8b-5b595d8e5578.xml">
+                <common:shortDescription xml:lang="en">Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:11.430+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="67f3c08e-69c1-33a4-ae8b-5b595d8e5578" version="00.00.000" uri="../contacts/67f3c08e-69c1-33a4-ae8b-5b595d8e5578.xml">
+                <common:shortDescription xml:lang="en">Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2024-07-09T16:22:34.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="7e27b577-b31d-3a15-b1f7-c47afab2beb7" version="00.00.000" uri="../sources/7e27b577-b31d-3a15-b1f7-c47afab2beb7.xml">
+                <common:shortDescription xml:lang="en">2024 - LCI ICT sector - Raka Adrianto</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>false</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dfed39f5-c099-3e76-8538-bb967cd6eb5a" version="00.00.000" uri="../flows/dfed39f5-c099-3e76-8538-bb967cd6eb5a.xml">
+                <common:shortDescription xml:lang="en">Disposal, laptop computer, to WEEE treatment</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="52e93c90-c9e4-48ba-8152-4d8e2ddda97c" olca:pedigreeUncertainty="(1;1;1;1;1;5)" olca:amount="0.631">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8153454c-b11a-32e6-8c2d-30cd3e649943" version="00.00.000" uri="../flows/8153454c-b11a-32e6-8c2d-30cd3e649943.xml">
+                <common:shortDescription xml:lang="en">Dismantling, laptop, manually, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.631</meanAmount>
+            <resultingAmount>0.631</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,5,BU:1.05); data from Swiss WEEE systems - updated using data from SWICO report 2022</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="cb9824ef-fc19-417e-b8ce-93974d267250" olca:pedigreeUncertainty="(1;1;1;1;1;5)" olca:amount="2.11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="003c49bd-0ca1-3f7e-92f2-99e2c81f5d65" version="00.00.000" uri="../flows/003c49bd-0ca1-3f7e-92f2-99e2c81f5d65.xml">
+                <common:shortDescription xml:lang="en">Dismantling, laptop, mechanically, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.11</meanAmount>
+            <resultingAmount>2.11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,5,BU:1.05); data from Swiss WEEE systems - updated using data from SWICO report 2022</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

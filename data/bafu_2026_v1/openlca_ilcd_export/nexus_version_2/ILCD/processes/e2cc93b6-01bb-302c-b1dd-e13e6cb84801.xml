@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>e2cc93b6-01bb-302c-b1dd-e13e6cb84801</common:UUID>
+            <name>
+                <baseName xml:lang="en">Transport, regional train, SBB mix, Infrastruktur</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="2279f95c-4711-3ee2-8393-0e7a7bbfe8d1">transport systems</common:class>
+                    <common:class level="1" classId="ebb37c1f-868d-3172-8f6e-d9d8b5f9a869">train</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Inventory refers to the entire transport life cycle. For rail infrastructure, expenditures and environmental interventions due to construction, renewal and disposal of rail tracks have been allocated based on the Gross tonne kilometre performance on SBB track in 2014 (72126484166 Gtkm).  Expenditures due to operation of the rail infrastructure, as well as land use have been allocated based on the yearly train kilometre performance (141255 vkm) and a load factor of 67 passengers. Electricity and diesel consumption have been updated based on SBB data for the year 2019.;
+UUID: e2cc93b6-01bb-302c-b1dd-e13e6cb84801</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1388530800000" olca:endDate="1575154800000">
+            <common:referenceYear>2014</common:referenceYear>
+            <common:dataSetValidUntil>2019</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">&lt;null&gt;</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">For vehicle operation all technologies are included in the average data. Rail construction addresses conventional gravel track beddings. For the manufacturing of vehicles, the data reflects the currently dominating train type (Kolibri).\n\n# Included processes\nThe module calls the modules "production, maintenance and disposal of vehicles" as well as the modules "construction, maintenance and disposal of railway tracks". Included in this modul is the operation (energy consumption including shunting and emissions) of the train .</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="215b4236-5b63-30b8-a945-d808ca843f1f" version="00.00.000" uri="../sources/215b4236-5b63-30b8-a945-d808ca843f1f.xml">
+                <common:shortDescription xml:lang="en">2020 - Update Mobitool 2020 - Krebs</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistics </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 13.11.2020; Other validation: G:\Projekte laufend\713 Aktualisierung mobitool 2020\EcoSpold\[713_Transport-Train-passenger-CH_v0.7.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="c19a828a-d7fd-342a-9626-cbb0076aac8e" version="00.00.000" uri="../contacts/c19a828a-d7fd-342a-9626-cbb0076aac8e.xml">
+                <common:shortDescription xml:lang="en">Luana Krebs</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:57.755+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="c19a828a-d7fd-342a-9626-cbb0076aac8e" version="00.00.000" uri="../contacts/c19a828a-d7fd-342a-9626-cbb0076aac8e.xml">
+                <common:shortDescription xml:lang="en">Luana Krebs</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2020-11-13T00:00:00.000+01:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="215b4236-5b63-30b8-a945-d808ca843f1f" version="00.00.000" uri="../sources/215b4236-5b63-30b8-a945-d808ca843f1f.xml">
+                <common:shortDescription xml:lang="en">2020 - Update Mobitool 2020 - Krebs</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="f7fe0af2-e764-4984-bb9f-2cbff6cd2f18" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="81085e38-b471-33ae-a18f-55686d931f3c" olca:pedigreeUncertainty="(2;3;1;1;1;5)" olca:amount="1.0137E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5a07dce6-03b7-3bb7-a439-282f5572d31f" version="00.00.008" uri="../flows/5a07dce6-03b7-3bb7-a439-282f5572d31f.xml">
+                <common:shortDescription xml:lang="en">Railway track</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0137E-7</meanAmount>
+            <resultingAmount>1.0137E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.74696880338488</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,1,1,1,5,BU:3); demand infrastructure per Gtkm 3.31E-8km/Gtkm; Pers. communication SBB, 26.10.2020
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9c546b32-b740-3267-a480-6d0d8a232e58" version="00.00.000" uri="../flows/9c546b32-b740-3267-a480-6d0d8a232e58.xml">
+                <common:shortDescription xml:lang="en">Transport, regional train, SBB mix, Infrastruktur</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="f7fe0af2-e764-4984-bb9f-2cbff6cd2f18" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="c144a4d4-ac3f-3a68-8a46-256d1c446b2a" olca:pedigreeUncertainty="(2;3;1;1;1;5)" olca:amount="1.0137E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="be6ee039-9e42-3067-bc90-4d0dd41aaec9" version="00.00.008" uri="../flows/be6ee039-9e42-3067-bc90-4d0dd41aaec9.xml">
+                <common:shortDescription xml:lang="en">Operation, maintenance, railway track</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0137E-7</meanAmount>
+            <resultingAmount>1.0137E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.74696880338488</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,1,1,1,5,BU:3); ;
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="f7fe0af2-e764-4984-bb9f-2cbff6cd2f18" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="2f8cf21b-3cfd-4836-9ab7-f68a607bb1ac" olca:pedigreeUncertainty="(2;3;1;1;1;5)" olca:amount="1.0137E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="30c5ffcc-23f9-30b6-a330-b95cc4397994" version="00.00.000" uri="../flows/30c5ffcc-23f9-30b6-a330-b95cc4397994.xml">
+                <common:shortDescription xml:lang="en">Disposal, railway track</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0137E-7</meanAmount>
+            <resultingAmount>1.0137E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.74696880338488</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,1,1,1,5,BU:3); ;
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

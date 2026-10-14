@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>1964335d-f378-3981-b4bf-67e70905b8e4</common:UUID>
+            <name>
+                <baseName xml:lang="en">xx Electricity, at cogen ORC 1400kWth, wood, allocation heat</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="470d1f1f-c730-32a9-bb66-ef73b3727dfb">energy, obsolete</common:class>
+                    <common:class level="1" classId="ea033ee8-7636-3511-a00c-aeeb16f6ea50">cogeneration, obsolete</common:class>
+                    <common:class level="2" classId="b29a39f5-f5dd-3cf3-b720-11928b8d6750">wood</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The multioutput-prozess "wood chips, burned in cogen ORC 1400kWth, allocation heat" delivers the coproducts "heat, at cogen ORC 1400kWth, wood, allocation heat" and "electricity, at cogen ORC 1400kWth, wood, allocation heat".;
+UUID: 1964335d-f378-3981-b4bf-67e70905b8e4</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="1007161200000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2001</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">none</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Could be used for central European conditions.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Specific cogeneration unit installed in Switzerland.\n\n# Included processes\nThis module describes the combustion of natural wood chips. Included are the infrastructure, the wood input, the emissions to air, the transport of the fuel, and the disposal of the ashes. Also included are substances needed for operation: lubricating oil, urea, organic chemicals, sodium chloride, chlorine and decarbonized water.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="51345e6c-23ae-3790-b84c-54e79a0a535e" version="00.00.000" uri="../sources/51345e6c-23ae-3790-b84c-54e79a0a535e.xml">
+                <common:shortDescription xml:lang="en">2007 - Wood energy - Bauer</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">literature </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: passed; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="8d853a24-5b5a-3c45-8fe3-7ac004e07041" version="00.00.000" uri="../contacts/8d853a24-5b5a-3c45-8fe3-7ac004e07041.xml">
+                    <common:shortDescription xml:lang="en">Hans-Joerg Althaus</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="233afe28-34e8-3e8b-ad9a-547b2441b39e" version="00.00.000" uri="../contacts/233afe28-34e8-3e8b-ad9a-547b2441b39e.xml">
+                <common:shortDescription xml:lang="en">Christian Bauer</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:59.236+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="233afe28-34e8-3e8b-ad9a-547b2441b39e" version="00.00.000" uri="../contacts/233afe28-34e8-3e8b-ad9a-547b2441b39e.xml">
+                <common:shortDescription xml:lang="en">Christian Bauer</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:48:30.562+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.012</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="51345e6c-23ae-3790-b84c-54e79a0a535e" version="00.00.000" uri="../sources/51345e6c-23ae-3790-b84c-54e79a0a535e.xml">
+                <common:shortDescription xml:lang="en">2007 - Wood energy - Bauer</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="7805bb97-e4da-3706-8602-30a0683e9278" olca:amount="1.6629E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9a25967e-2314-3f54-b6f0-8168025e944a" version="00.00.010" uri="../flows/9a25967e-2314-3f54-b6f0-8168025e944a.xml">
+                <common:shortDescription xml:lang="en">Cogen unit ORC 1400kWth, wood burning, components for electricity only</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.6629E-7</meanAmount>
+            <resultingAmount>1.6629E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0954451150103321</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">essentially uncertainty of assignment of reference system
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c2644548-bcc8-3aeb-ad36-c398e26b0b33" version="00.00.006" uri="../flows/c2644548-bcc8-3aeb-ad36-c398e26b0b33.xml">
+                <common:shortDescription xml:lang="en">xx Electricity, at cogen ORC 1400kWth, wood, allocation heat</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

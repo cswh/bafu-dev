@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>29334c85-7935-3a62-b632-82c8c5a593b8</common:UUID>
+            <name>
+                <baseName xml:lang="en">Internal combustion engine, for passenger car</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="2279f95c-4711-3ee2-8393-0e7a7bbfe8d1">transport systems</common:class>
+                    <common:class level="1" classId="a68df7d5-0492-3d7e-a949-c23730a59b9f">road</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">This dataset describes the production of an internal combustion engine (ICE) for a passenger car. The entries are given per kg engine. The original data has been derived for an ICE of approximately 275kg. The information described in this dataset has been obtained starting from the "Life Cycle Inventory of the Golf A4" made by Schweimer and Levin.  The final dataset has been published in Althaus and Gauch: "Vergleichende Oekobilanz der Elektromobilität: Elektromobilität bersus konventionelle Mobilität mit Bio- und fossilen Treibstoffen".;
+UUID: 29334c85-7935-3a62-b632-82c8c5a593b8</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1388530800000" olca:endDate="1417388400000">
+            <common:referenceYear>2014</common:referenceYear>
+            <common:dataSetValidUntil>2014</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Unspecified</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="RER" latitudeAndLongitude="55.895602991909776;28.119894957029818">
+                <descriptionOfRestrictions xml:lang="en">Unspecified</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">The dataset is based on current car technologies.\n\n# Included processes\nThe dataset takes as input the raw materials and the energy inputs required for the production process and includes the production facility. The dataset returns the finished internal combustion engine as well as the output scrap fractions from the production process.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="1bf11325-6d87-3d87-97b5-78b9cc66f4ef" version="00.00.000" uri="../sources/1bf11325-6d87-3d87-97b5-78b9cc66f4ef.xml">
+                <common:shortDescription xml:lang="en">2016 - Mobitool - Frischknecht</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Lliterature </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="6082c0fb-90a7-3cb6-93fd-1b0ae1f449be" version="00.00.000" uri="../contacts/6082c0fb-90a7-3cb6-93fd-1b0ae1f449be.xml">
+                    <common:shortDescription xml:lang="en">Andrea Delduce</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8d853a24-5b5a-3c45-8fe3-7ac004e07041" version="00.00.000" uri="../contacts/8d853a24-5b5a-3c45-8fe3-7ac004e07041.xml">
+                <common:shortDescription xml:lang="en">Hans-Joerg Althaus</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:45.647+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="6082c0fb-90a7-3cb6-93fd-1b0ae1f449be" version="00.00.000" uri="../contacts/6082c0fb-90a7-3cb6-93fd-1b0ae1f449be.xml">
+                <common:shortDescription xml:lang="en">Andrea Delduce</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2016-07-05T00:00:00.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="1bf11325-6d87-3d87-97b5-78b9cc66f4ef" version="00.00.000" uri="../sources/1bf11325-6d87-3d87-97b5-78b9cc66f4ef.xml">
+                <common:shortDescription xml:lang="en">2016 - Mobitool - Frischknecht</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="f7ce1c49-0916-320e-9585-666388269b3d" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.048">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1b4f4192-6d9f-3f42-9579-3e00e26c3599" version="00.00.000" uri="../flows/1b4f4192-6d9f-3f42-9579-3e00e26c3599.xml">
+                <common:shortDescription xml:lang="en">Injection moulding</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.048</meanAmount>
+            <resultingAmount>0.048</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="0b14288a-dbf3-3dac-a570-83d083f4b600" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.021818">
+            <referenceToFlowDataSet type="flow data set" refObjectId="45effa3b-506a-323b-848c-d8bc43273045" version="00.00.000" uri="../flows/45effa3b-506a-323b-848c-d8bc43273045.xml">
+                <common:shortDescription xml:lang="en">Lubricating oil, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.021818</meanAmount>
+            <resultingAmount>0.021818</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="e05efc01-a536-3337-a408-aa2241f2fbe9" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f2c44b8d-93bc-3a3d-9dad-5e0f3198a27b" version="00.00.000" uri="../flows/f2c44b8d-93bc-3a3d-9dad-5e0f3198a27b.xml">
+                <common:shortDescription xml:lang="en">Disposal, internal combustion engine, for passenger car</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Production Volume Amount: 16500000000
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="582ad303-7f18-3110-83c2-bccca0dc995f" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.025455">
+            <referenceToFlowDataSet type="flow data set" refObjectId="29f72e25-b0d8-37f4-850c-ff8bad28da45" version="00.00.000" uri="../flows/29f72e25-b0d8-37f4-850c-ff8bad28da45.xml">
+                <common:shortDescription xml:lang="en">Ethylene glycol, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.025455</meanAmount>
+            <resultingAmount>0.025455</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b9430f24-d0b9-3422-a5ad-f874acbbef18" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.39344">
+            <referenceToFlowDataSet type="flow data set" refObjectId="740db303-1a44-378b-83ae-6d7423e622cf" version="00.00.000" uri="../flows/740db303-1a44-378b-83ae-6d7423e622cf.xml">
+                <common:shortDescription xml:lang="en">Steel, low-alloyed, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.39344</meanAmount>
+            <resultingAmount>0.39344</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="6556440f-cd03-3975-9615-023309701fe2" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="3.0517">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b398c24c-eb85-35da-bc2d-eea4ca5241d8" version="00.00.000" uri="../flows/b398c24c-eb85-35da-bc2d-eea4ca5241d8.xml">
+                <common:shortDescription xml:lang="en">Tap water, at user</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.0517</meanAmount>
+            <resultingAmount>3.0517</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;4;4;2;4;n.a.)" olca:amount="0.45775">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8864b4ad-7348-469e-b2d3-48610ffd4fca" version="00.00.000" uri="../flows/8864b4ad-7348-469e-b2d3-48610ffd4fca.xml">
+                <common:shortDescription xml:lang="en">Water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.45775</meanAmount>
+            <resultingAmount>0.45775</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3676256797823008</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,4,4,2,4,na)
+Calculated value based on literature values and expert opinion. See comments in the parametres' comment field.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="1.8291E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="961ccd56-2eee-4f57-bb18-fc4362b49000" version="00.00.000" uri="../flows/961ccd56-2eee-4f57-bb18-fc4362b49000.xml">
+                <common:shortDescription xml:lang="en">COD, Chemical Oxygen Demand</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.8291E-4</meanAmount>
+            <resultingAmount>1.8291E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.255587511884377</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Extrapolated from ecoinvent v2.2 passenger car.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="e6037d3e-db63-3537-b5fa-73c72c806426" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.0036364">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b4a900af-0ee9-39e8-b155-635244f2845a" version="00.00.000" uri="../flows/b4a900af-0ee9-39e8-b155-635244f2845a.xml">
+                <common:shortDescription xml:lang="en">Sulphuric acid, liquid, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0036364</meanAmount>
+            <resultingAmount>0.0036364</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="3cef9fc0-0cf8-42ba-88f5-0ff65ef6169f" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.014182">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6a5cc907-30a4-38c7-8ca7-b1b098e79e33" version="00.00.000" uri="../flows/6a5cc907-30a4-38c7-8ca7-b1b098e79e33.xml">
+                <common:shortDescription xml:lang="en">Disposal, plastics, mixture, 15.3% water, to municipal incineration</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.014182</meanAmount>
+            <resultingAmount>0.014182</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Scrap fraction from production process.
+Production Volume Amount: 234000000
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="7cab0912-ac94-3deb-bd13-5ede9c7d223d" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.0072727">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f7139ee0-2b5e-3ca7-9e75-fae30d024b9e" version="00.00.000" uri="../flows/f7139ee0-2b5e-3ca7-9e75-fae30d024b9e.xml">
+                <common:shortDescription xml:lang="en">Wire drawing, copper</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0072727</meanAmount>
+            <resultingAmount>0.0072727</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="9.4772E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c8791f3c-3c4a-4278-91c0-483797d14da2" version="00.00.000" uri="../flows/c8791f3c-3c4a-4278-91c0-483797d14da2.xml">
+                <common:shortDescription xml:lang="en">Phosphate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.4772E-7</meanAmount>
+            <resultingAmount>9.4772E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.255587511884377</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Extrapolated from ecoinvent v2.2 passenger car.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="79cdf328-b4c5-3885-a6ed-fcf7b5c0afcd" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.39344">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e465ecbf-49d8-3d7f-8f10-82f87fb4d3c1" version="00.00.000" uri="../flows/e465ecbf-49d8-3d7f-8f10-82f87fb4d3c1.xml">
+                <common:shortDescription xml:lang="en">Hot rolling, steel</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.39344</meanAmount>
+            <resultingAmount>0.39344</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;4;4;2;4;n.a.)" olca:amount="2.5939">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b61cc486-7a9d-3880-a2ae-1bc3a65d0f43" version="00.00.000" uri="../flows/b61cc486-7a9d-3880-a2ae-1bc3a65d0f43.xml">
+                <common:shortDescription xml:lang="en">Waste water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.5939</meanAmount>
+            <resultingAmount>2.5939</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3676256797823008</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,4,4,2,4,na)
+Calculated value based on literature values and expert opinion. See comments in the parametres' comment field.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="aacc6120-0e68-3835-8303-5ae37d62c030" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.28739">
+            <referenceToFlowDataSet type="flow data set" refObjectId="12262ce2-ee81-3caf-8488-1dbf8fb21abe" version="00.00.000" uri="../flows/12262ce2-ee81-3caf-8488-1dbf8fb21abe.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, rail</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.28739</meanAmount>
+            <resultingAmount>0.28739</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Transport of all input materials and wastes calculated based on ecoinvent standard distances
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="2.4641E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="91955aba-6ebc-4413-9342-f0298860b4aa" version="00.00.000" uri="../flows/91955aba-6ebc-4413-9342-f0298860b4aa.xml">
+                <common:shortDescription xml:lang="en">BOD5, Biological Oxygen Demand</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.4641E-5</meanAmount>
+            <resultingAmount>2.4641E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.255587511884377</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Extrapolated from ecoinvent v2.2 passenger car.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="30" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="6738f024-eb64-3ef8-837e-05b84c6e43da" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.056">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2ed71299-f11a-327f-a285-5ea75bb8941b" version="00.00.000" uri="../flows/2ed71299-f11a-327f-a285-5ea75bb8941b.xml">
+                <common:shortDescription xml:lang="en">Polyethylene, HDPE, granulate, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.056</meanAmount>
+            <resultingAmount>0.056</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="31" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.0045491">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d3260d0e-8203-4cbb-a45a-6a13131a5108" version="00.00.000" uri="../flows/d3260d0e-8203-4cbb-a45a-6a13131a5108.xml">
+                <common:shortDescription xml:lang="en">NMVOC, non-methane volatile organic compounds</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0045491</meanAmount>
+            <resultingAmount>0.0045491</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.255587511884377</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Extrapolated from ecoinvent v2.2 passenger car.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="3972eb0c-d60e-3537-9ad1-fd6b7bbafce8" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.0072727">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0c11761a-f4b6-3114-a56b-c180f7af93d7" version="00.00.000" uri="../flows/0c11761a-f4b6-3114-a56b-c180f7af93d7.xml">
+                <common:shortDescription xml:lang="en">Copper, at regional storage</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0072727</meanAmount>
+            <resultingAmount>0.0072727</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="e6bb879c-8f26-352d-85ad-4972078ccab2" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.1">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5a75fb90-a29b-33f0-b704-c0859816a5bb" version="00.00.000" uri="../flows/5a75fb90-a29b-33f0-b704-c0859816a5bb.xml">
+                <common:shortDescription xml:lang="en">Polyphenylene sulfide, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="add62058-528c-3255-b17d-65d0a77cc3d9" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="2.7579E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d4966ddf-1a5d-3463-bf61-a874d7f40d8f" version="00.00.026" uri="../flows/d4966ddf-1a5d-3463-bf61-a874d7f40d8f.xml">
+                <common:shortDescription xml:lang="en">Road vehicle plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.7579E-10</meanAmount>
+            <resultingAmount>2.7579E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="0f78f863-1aee-3ebb-b60e-93c4869a88b4" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.61844">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ad7a59f2-66d6-3b9c-b4e5-fcb13b56d748" version="00.00.000" uri="../flows/ad7a59f2-66d6-3b9c-b4e5-fcb13b56d748.xml">
+                <common:shortDescription xml:lang="en">Aluminium, production mix, cast alloy, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.61844</meanAmount>
+            <resultingAmount>0.61844</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="99f8a4b0-99b5-3130-924c-5de4c10b62ef" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.15384">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4e8927da-4e59-319e-9df6-1965b861e482" version="00.00.022" uri="../flows/4e8927da-4e59-319e-9df6-1965b861e482.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.15384</meanAmount>
+            <resultingAmount>0.15384</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Transport of all input materials and wastes calculated based on ecoinvent standard distances
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="c66b37b5-67d2-32cf-a5ba-5abcb693cc6f" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.010909">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a03677f7-a173-3d8b-982f-8d96ebab9ee7" version="00.00.000" uri="../flows/a03677f7-a173-3d8b-982f-8d96ebab9ee7.xml">
+                <common:shortDescription xml:lang="en">Synthetic rubber, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.010909</meanAmount>
+            <resultingAmount>0.010909</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="6.7744E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="79607917-9e12-4292-b289-21ff2b36e04b" version="00.00.000" uri="../flows/79607917-9e12-4292-b289-21ff2b36e04b.xml">
+                <common:shortDescription xml:lang="en">DOC, Dissolved Organic Carbon</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.7744E-5</meanAmount>
+            <resultingAmount>6.7744E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.255587511884377</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Derived from COD as described in ecoinvent 3 Data Quality Guidelines (p. 49, paragraph 5.9.7). The same Pedigree matrix value as COD has been used.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b38bbde0-a4b0-347f-8136-ce520abfa557" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.15273">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0cce7489-6fcc-315f-94e7-a274ad613444" version="00.00.000" uri="../flows/0cce7489-6fcc-315f-94e7-a274ad613444.xml">
+                <common:shortDescription xml:lang="en">Reinforcing steel, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.15273</meanAmount>
+            <resultingAmount>0.15273</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="7a020379-c844-32ff-8fde-fb468f6661b5" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="5.8182E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2c679cf3-81cc-3b63-b3df-a9df7fb789c0" version="00.00.000" uri="../flows/2c679cf3-81cc-3b63-b3df-a9df7fb789c0.xml">
+                <common:shortDescription xml:lang="en">Platinum, at regional storage</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.8182E-6</meanAmount>
+            <resultingAmount>5.8182E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="fdb5ae4c-a3d6-35f7-b7e6-0156433958d3" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="1.0909E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1fe13ac8-4c1f-3638-b1cf-03f551b03101" version="00.00.000" uri="../flows/1fe13ac8-4c1f-3638-b1cf-03f551b03101.xml">
+                <common:shortDescription xml:lang="en">Palladium, at regional storage</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0909E-6</meanAmount>
+            <resultingAmount>1.0909E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="5097fdf8-210b-3053-9e5a-98fbf73b914f" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="0.047273">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a1fe4a34-af5b-3ba8-89c7-7bef8f8df01c" version="00.00.000" uri="../flows/a1fe4a34-af5b-3ba8-89c7-7bef8f8df01c.xml">
+                <common:shortDescription xml:lang="en">Lead, at regional storage</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.047273</meanAmount>
+            <resultingAmount>0.047273</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.117810359586992</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Based on a Volkswagen Golf A4 materialization.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;4;4;4;2;n.a.)" olca:amount="6.7744E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cec4a04d-562a-4a38-a98f-5fb3d07eea6b" version="00.00.000" uri="../flows/cec4a04d-562a-4a38-a98f-5fb3d07eea6b.xml">
+                <common:shortDescription xml:lang="en">TOC, Total Organic Carbon</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.7744E-5</meanAmount>
+            <resultingAmount>6.7744E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.255587511884377</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,4,4,2,na)
+Derived from COD as described in ecoinvent 3 Data Quality Guidelines (p. 49, paragraph 5.9.7). The same Pedigree matrix value as COD has been used.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="380b7946-89e2-3d5c-bff3-c1bbd51f608e" version="00.00.000" uri="../flows/380b7946-89e2-3d5c-bff3-c1bbd51f608e.xml">
+                <common:shortDescription xml:lang="en">Internal combustion engine, for passenger car</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">Europe
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

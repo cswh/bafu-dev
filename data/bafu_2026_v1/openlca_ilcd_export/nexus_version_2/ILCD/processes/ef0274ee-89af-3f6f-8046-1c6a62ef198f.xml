@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>ef0274ee-89af-3f6f-8046-1c6a62ef198f</common:UUID>
+            <name>
+                <baseName xml:lang="en">Tablet, average, at plant</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="57aded3d-4d3f-3d65-b03a-7392ab36aef2">electronics</common:class>
+                    <common:class level="1" classId="296c829f-9160-371d-9441-529c080d79d5">devices</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The data set represents the production of tablet with defined technical specifications; UUID: ef0274ee-89af-3f6f-8046-1c6a62ef198f</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1672527600000" olca:endDate="1890774000000">
+            <common:referenceYear>2023</common:referenceYear>
+            <common:dataSetValidUntil>2029</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Unspecified</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="GLO">
+                <descriptionOfRestrictions xml:lang="en">Data for global average for tablets</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">The tablet has a processing unit, flash storage, RAM, and other connectivity features for standard tablets.\n\n# Included processes\nThe dataset for average tablets, represented here as iPad Gen 2 with the weight of ~500 gr, is obtained from the LCA studies of Ahmadi Achachlouei et al., 2015; Teehan and Kandikar, 2013; and Hischier et al., 2015. The referred studies connect the lab-based data with the LCA database, i.e., Ecoinvent. This means that data is performed on the level of individual components (i.e., on the level of ICs, resistors, etc.) to build more precise inventory models for the device. The modeled tablet has a flash storage capacity of 256 GB and RAM capacity of 3 GB. According to the industry technology for IC tablets, up to 6 stacked dies can be integrated in a single package to optimize density and performance. In the modeling, the area of wafer/die is assumed to be ~10.2 cm2 to represent total wafer logic area according to the literature.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="7e27b577-b31d-3a15-b1f7-c47afab2beb7" version="00.00.000" uri="../sources/7e27b577-b31d-3a15-b1f7-c47afab2beb7.xml">
+                <common:shortDescription xml:lang="en">2024 - LCI ICT sector - Raka Adrianto</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Literature &amp; own estimations</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="67f3c08e-69c1-33a4-ae8b-5b595d8e5578" version="00.00.000" uri="../contacts/67f3c08e-69c1-33a4-ae8b-5b595d8e5578.xml">
+                <common:shortDescription xml:lang="en">Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:50:40.761+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="67f3c08e-69c1-33a4-ae8b-5b595d8e5578" version="00.00.000" uri="../contacts/67f3c08e-69c1-33a4-ae8b-5b595d8e5578.xml">
+                <common:shortDescription xml:lang="en">Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2024-07-09T17:48:31.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="7e27b577-b31d-3a15-b1f7-c47afab2beb7" version="00.00.000" uri="../sources/7e27b577-b31d-3a15-b1f7-c47afab2beb7.xml">
+                <common:shortDescription xml:lang="en">2024 - LCI ICT sector - Raka Adrianto</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>false</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="a7c19342-01d0-37f6-86bf-7ecf91a7d206" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.009">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dbb466f7-7f72-3b17-bff7-47237db5bafe" version="00.00.000" uri="../flows/dbb466f7-7f72-3b17-bff7-47237db5bafe.xml">
+                <common:shortDescription xml:lang="en">Polyurethane, rigid foam, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.009</meanAmount>
+            <resultingAmount>0.009</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Housing, plastics. Literature: Hischer et al 2015.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="58b553a2-ece3-32d6-b357-97fe2302213f" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.145">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0a3b74e1-09c9-38b1-99c4-bb114f65253b" version="00.00.000" uri="../flows/0a3b74e1-09c9-38b1-99c4-bb114f65253b.xml">
+                <common:shortDescription xml:lang="en">LED module, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.145</meanAmount>
+            <resultingAmount>0.145</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Display. Literature: Hischer et al 2015.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="16811c9b-2dc8-3bbf-9acf-2a7b255044b1" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.039">
+            <referenceToFlowDataSet type="flow data set" refObjectId="527b1ed6-fd36-3f85-8bf7-2321d284c51a" version="00.00.000" uri="../flows/527b1ed6-fd36-3f85-8bf7-2321d284c51a.xml">
+                <common:shortDescription xml:lang="en">Printed wiring board, surface mounted, unspec., Pb free, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.039</meanAmount>
+            <resultingAmount>0.039</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Circuit boards. Literature: Hischer et al 2015.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="3306ddd8-3d7c-35dc-84c1-11261935e335" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.09">
+            <referenceToFlowDataSet type="flow data set" refObjectId="83505f4b-0cea-3b6c-990a-2ff101798d9b" version="00.00.000" uri="../flows/83505f4b-0cea-3b6c-990a-2ff101798d9b.xml">
+                <common:shortDescription xml:lang="en">Power supply unit, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.09</meanAmount>
+            <resultingAmount>0.09</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Literature: Teehan and Kandikar 2013.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="cc7e838a-99f1-3477-a3ea-04d56ecb13c0" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.013">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c7fd6e15-3c53-3463-a243-722e59ff548a" version="00.00.000" uri="../flows/c7fd6e15-3c53-3463-a243-722e59ff548a.xml">
+                <common:shortDescription xml:lang="en">Sheet rolling, copper</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.013</meanAmount>
+            <resultingAmount>0.013</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Others. Literature: Hischer et al 2015.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="6113497a-792f-38e7-a69a-420dff702898" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.14">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aed9f814-644f-3d7c-838d-3af17ff94819" version="00.00.000" uri="../flows/aed9f814-644f-3d7c-838d-3af17ff94819.xml">
+                <common:shortDescription xml:lang="en">Sheet rolling, aluminium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.14</meanAmount>
+            <resultingAmount>0.14</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Housing, black panel. Literature: Hischer et al 2015.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b9430f24-d0b9-3422-a5ad-f874acbbef18" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.013">
+            <referenceToFlowDataSet type="flow data set" refObjectId="740db303-1a44-378b-83ae-6d7423e622cf" version="00.00.000" uri="../flows/740db303-1a44-378b-83ae-6d7423e622cf.xml">
+                <common:shortDescription xml:lang="en">Steel, low-alloyed, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.013</meanAmount>
+            <resultingAmount>0.013</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Others. Literature: Hischer et al 2015.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="d9215fd1-60bb-33f5-9a60-cef1b079b523" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.013">
+            <referenceToFlowDataSet type="flow data set" refObjectId="02808293-f104-3b2a-8aaa-1ff2a90aa78e" version="00.00.000" uri="../flows/02808293-f104-3b2a-8aaa-1ff2a90aa78e.xml">
+                <common:shortDescription xml:lang="en">Sheet rolling, steel</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.013</meanAmount>
+            <resultingAmount>0.013</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Others. Literature: Hischer et al 2015.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="99f8a4b0-99b5-3130-924c-5de4c10b62ef" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.0505">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4e8927da-4e59-319e-9df6-1965b861e482" version="00.00.022" uri="../flows/4e8927da-4e59-319e-9df6-1965b861e482.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0505</meanAmount>
+            <resultingAmount>0.0505</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4387494569938157</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:2.00); According to tablet mass</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="a18c26ee-2c29-3089-8bb3-9b5d4399facf" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aa27f94c-3225-3eeb-a94c-82276fd25e33" version="00.00.000" uri="../flows/aa27f94c-3225-3eeb-a94c-82276fd25e33.xml">
+                <common:shortDescription xml:lang="en">Charger, for tablet, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Literature: Hischier et al 2014.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="1846e2f7-dc18-37a6-9bb7-da1570d8798c" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="10.7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bb6923bf-03d8-3610-9eb1-65f0380e0dbe" version="00.00.000" uri="../flows/bb6923bf-03d8-3610-9eb1-65f0380e0dbe.xml">
+                <common:shortDescription xml:lang="en">Transport, transoceanic freight ship</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>10.7</meanAmount>
+            <resultingAmount>10.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4387494569938157</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:2.00); According to tablet mass</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="aacc6120-0e68-3835-8303-5ae37d62c030" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.101">
+            <referenceToFlowDataSet type="flow data set" refObjectId="12262ce2-ee81-3caf-8488-1dbf8fb21abe" version="00.00.000" uri="../flows/12262ce2-ee81-3caf-8488-1dbf8fb21abe.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, rail</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.101</meanAmount>
+            <resultingAmount>0.101</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4387494569938157</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:2.00); According to tablet mass</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="c9bf4821-3883-39d9-90c5-e6f7fbb1de5b" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="7.7E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="49a2d7a0-2255-32b2-864f-9d599631729a" version="00.00.000" uri="../flows/49a2d7a0-2255-32b2-864f-9d599631729a.xml">
+                <common:shortDescription xml:lang="en">Wafer, fabricated, for integrated circuit, memory type, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.7E-4</meanAmount>
+            <resultingAmount>7.7E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Memory = 256 GB and RAM = 3 GB. Literature: UBA report, 2021.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="36868178-7cb5-3098-82e5-831e7c12cf13" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.00102">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8fffee72-7c7f-3485-a540-f20ee24288e0" version="00.00.000" uri="../flows/8fffee72-7c7f-3485-a540-f20ee24288e0.xml">
+                <common:shortDescription xml:lang="en">Wafer, fabricated, for integrated circuit, logic type, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00102</meanAmount>
+            <resultingAmount>0.00102</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Total die area = 10.2 cm2 wafer logic. Literature: Clement et al. 2020 and Teehan et al 2013.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="2332c6d2-16da-4187-aa72-29e8e1235ef9" olca:pedigreeUncertainty="(3;4;3;3;3;5)" olca:amount="0.18">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dfed39f5-c099-3e76-8538-bb967cd6eb5a" version="00.00.000" uri="../flows/dfed39f5-c099-3e76-8538-bb967cd6eb5a.xml">
+                <common:shortDescription xml:lang="en">Disposal, laptop computer, to WEEE treatment</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.18</meanAmount>
+            <resultingAmount>0.18</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1661903789690602</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,3,3,3,5,BU:1.05); Proxy, adusted using weight</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fd982ff9-1afa-3780-a521-0449f48b539b" version="00.00.000" uri="../flows/fd982ff9-1afa-3780-a521-0449f48b539b.xml">
+                <common:shortDescription xml:lang="en">Tablet, average, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="ede45db2-bc7b-386a-b3e3-eafcf2dac420" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.14">
+            <referenceToFlowDataSet type="flow data set" refObjectId="46c8540a-cf94-34ac-8d9c-da27a767121b" version="00.00.000" uri="../flows/46c8540a-cf94-34ac-8d9c-da27a767121b.xml">
+                <common:shortDescription xml:lang="en">Aluminium, production mix, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.14</meanAmount>
+            <resultingAmount>0.14</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Housing, black panel. Literature: Hischer et al 2015.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="dad0fc14-f7f9-3292-8754-ac91fe7c2825" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.009">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e12f0627-a5e6-38c8-9259-227adae8a6ee" version="00.00.000" uri="../flows/e12f0627-a5e6-38c8-9259-227adae8a6ee.xml">
+                <common:shortDescription xml:lang="en">Acrylonitrile-butadiene-styrene copolymer, ABS, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.009</meanAmount>
+            <resultingAmount>0.009</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Housing, plastics. Literature: Hischer et al 2015.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="602d023d-19c6-3ecf-a6dc-e662664612d0" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.013">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a58e5352-aec0-3108-9691-3f75ea566711" version="00.00.000" uri="../flows/a58e5352-aec0-3108-9691-3f75ea566711.xml">
+                <common:shortDescription xml:lang="en">Copper, primary, at refinery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.013</meanAmount>
+            <resultingAmount>0.013</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Others. Literature: Hischer et al 2015.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="678e731c-148d-3bb2-b3db-11423011f7ce" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.135">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e452cd1d-ef16-35d7-b39c-08d44d7cb175" version="00.00.000" uri="../flows/e452cd1d-ef16-35d7-b39c-08d44d7cb175.xml">
+                <common:shortDescription xml:lang="en">Battery, Li-ion, NMC111, rechargeable, prismatic</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.135</meanAmount>
+            <resultingAmount>0.135</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Battery. Literature: Hischer et al 2015.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="a409ab70-f348-3f2f-91b2-47d0a4e1adb9" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.109">
+            <referenceToFlowDataSet type="flow data set" refObjectId="81632e4a-9f2f-34e0-821d-4bb95a54f5e8" version="00.00.000" uri="../flows/81632e4a-9f2f-34e0-821d-4bb95a54f5e8.xml">
+                <common:shortDescription xml:lang="en">Flat glass, coated, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.109</meanAmount>
+            <resultingAmount>0.109</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Glass. Literature: Hischer et al 2015.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="18b3b539-ee3b-3bd8-a5bd-7da3a00bffc9" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="3.5278">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8f7ccf9f-f36a-3fd8-bed7-68931c526f3b" version="00.00.000" uri="../flows/8f7ccf9f-f36a-3fd8-bed7-68931c526f3b.xml">
+                <common:shortDescription xml:lang="en">Electricity, medium voltage, production RAS, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>12.70008</meanAmount>
+            <resultingAmount>12.70008</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Literature: Teehan and Kandikar 2013.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="bc7dfcbd-1656-3133-a481-81fd9f749183" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.001">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b0d02565-2f1e-3456-a2ea-1120774cab25" version="00.00.000" uri="../flows/b0d02565-2f1e-3456-a2ea-1120774cab25.xml">
+                <common:shortDescription xml:lang="en">Integrated circuit, IC, memory type, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.001</meanAmount>
+            <resultingAmount>0.001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Literature: Teehan and Kandikar 2013.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b9cb8b9e-539f-32ec-b096-046f3582e4df" olca:pedigreeUncertainty="(2;3;3;3;1;5)" olca:amount="0.001">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1229622d-eb00-35a4-9d8c-318fc6ddff0d" version="00.00.000" uri="../flows/1229622d-eb00-35a4-9d8c-318fc6ddff0d.xml">
+                <common:shortDescription xml:lang="en">Integrated circuit, IC, logic type, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.001</meanAmount>
+            <resultingAmount>0.001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.118033988749895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,3,3,1,5,BU:1.05); Literature: Teehan and Kandikar 2013.</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

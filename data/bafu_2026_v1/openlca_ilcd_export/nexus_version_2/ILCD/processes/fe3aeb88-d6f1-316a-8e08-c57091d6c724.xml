@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>fe3aeb88-d6f1-316a-8e08-c57091d6c724</common:UUID>
+            <name>
+                <baseName xml:lang="en">Spruce wood, chipping and drying</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="e4e4b267-93a0-3240-a089-b3db6f71dbbe">wood</common:class>
+                    <common:class level="1" classId="89b06b29-571d-373c-a187-ff969df2fefe">wooden materials</common:class>
+                    <common:class level="2" classId="e7482007-e419-3c8c-a93b-d66e52ec1154">new processes</common:class>
+                    <common:class level="3" classId="c2bbe5dd-83f8-35a2-9273-72efcaa25a2a">other material</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">This dataset supplies 1 kilogram of preprocessed spruce wood before entering the pyrolysis process. The wood goes through drying and chipping. The energy requirements for drying the feedstock depend on its moisture content. The moisture level is assumed to be 40% (based on data from Tisserant, A., Morales, M., Cavalett, O., O'Toole, A., Weldon, S., Rasse, D. P., &amp; Cherubini, F. (2022). Life-cycle assessment to unravel co-benefits and trade-offs of large-scale biochar deployment in Norwegian agriculture. Resources, Conservation and Recycling, 179, 106030. https://doi.org/10.1016/j.resconrec.2021.106030) with a conversion factor to dry ton of 0.6. The feedstock is assumed to be dried to zero moisture content to be on the safe side in accounting for the energy requirements of evaporating water at all stages. Rotary drier requirements: 0.1 GJ electricity/tonnes of water and 2.7 GJ thermal energy/tonnes of water. Electricity and heat requirements are taken from Manouchehrinejad, M., &amp; Mani, S. (2019). Process simulation of an integrated biomass torrefaction and pelletization (iBTP) plant to produce solid biofuels. Energy Conversion and Management: X, 1, 100008. https://doi.org/10.1016/j.ecmx.2019.100008. Electric chipping requirements: 0.0005 GJ/ MJfsdry. The requirements for electric chipping are taken from Kuptz, D., &amp; Hartmann, H. (2014). Throughput Rate and Energy Consumption During Wood Chip Production in Relation to Raw Material, Chipper Type and Machine Setting. https://doi.org/10.5071/22ndEUBCE2014-2CO.1.5. The distance from the collection point to the plant is assumed to be 100km.
+
+Source: Hoeskuldsdottir, Gudrun. 2022. Life Cycle Assessment of Biochar to Soil Systems: A Parametric Analysis. Masterâ€™s thesis, Swiss Federal Institute of Technology ZÃ¼rich and Paul Scherrer Institute.
+UUID: fe3aeb88-d6f1-316a-8e08-c57091d6c724</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1704063600000" olca:endDate="1704063600000">
+            <common:referenceYear>2024</common:referenceYear>
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305"/>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">&lt;null&gt;</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="0c114b47-2f0e-36ef-8bdb-16d536f9f5f2" version="00.00.000" uri="../sources/0c114b47-2f0e-36ef-8bdb-16d536f9f5f2.xml">
+                <common:shortDescription xml:lang="en">2024 - LCA power-to-X in residential sector - Sacchi</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Sampling procedure: Literature data</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: Passed, Other validation: none, Validator: Pierryves Padey, Telephone: +41 58 462 93 11, E-mail: pierryves.padey@bafu.admin.ch, Company: Federal Office for the Environment, Country: CH</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1487cf9-01c0-3287-829f-d7950fde8183" version="00.00.000" uri="../contacts/b1487cf9-01c0-3287-829f-d7950fde8183.xml">
+                    <common:shortDescription xml:lang="en">Pierryves Padey</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:48.593+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T10:08:32.310+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.009</common:dataSetVersion>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="2fcda415-e506-38d9-9c3e-8ce2c2e7c8f2" olca:pedigreeUncertainty="(2;4;1;3;1;5)" olca:amount="1.08">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f823cebb-5a19-323c-9180-adf0143f03e7" version="00.00.006" uri="../flows/f823cebb-5a19-323c-9180-adf0143f03e7.xml">
+                <common:shortDescription xml:lang="en">Heat, natural gas, at industrial furnace 1MW</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.08</meanAmount>
+            <resultingAmount>1.08</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Heat input for drying (2,4,1,3,1,5,1.05)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="c4a92617-9f99-3d7b-95c0-15fb110b80ad" olca:amount="0.015205547">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ec91f1d-db72-39ef-bbc0-46119b059efe" version="00.00.000" uri="../flows/7ec91f1d-db72-39ef-bbc0-46119b059efe.xml">
+                <common:shortDescription xml:lang="en">Electricity, low voltage, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0547399692</meanAmount>
+            <resultingAmount>0.0547399692</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1815244390193542</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{3;5;1;2;3;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8ecf7975-005c-3630-bc66-912ae4f5eaf1" version="00.00.009" uri="../flows/8ecf7975-005c-3630-bc66-912ae4f5eaf1.xml">
+                <common:shortDescription xml:lang="en">Spruce wood, chipping and drying</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="9e4272f1-f091-3ba8-8239-abbd8abe89ea" olca:pedigreeUncertainty="(1;1;4;5;4;n.a.)" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b2d0ea4a-8f02-377b-b8fd-6e7c6eb5f90b" version="00.00.009" uri="../flows/b2d0ea4a-8f02-377b-b8fd-6e7c6eb5f90b.xml">
+                <common:shortDescription xml:lang="en">Cleft timber, spruce, sustainable forest management, measured as dry mass, at forest road</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">Pedigree: (1,1,4,5,4).
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="a169f230-3e05-33d0-a12d-f9d6d4d6abf1" olca:amount="0.1">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f9e371c1-b7aa-3519-8a79-cee28b230151" version="00.00.000" uri="../flows/f9e371c1-b7aa-3519-8a79-cee28b230151.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, rail, electricity with shunting</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4859340496805369</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Distribution: 1.0 kg over 100.0 km.</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

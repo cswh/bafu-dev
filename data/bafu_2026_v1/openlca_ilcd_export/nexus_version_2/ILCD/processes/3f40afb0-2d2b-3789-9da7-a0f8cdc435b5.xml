@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>3f40afb0-2d2b-3789-9da7-a0f8cdc435b5</common:UUID>
+            <name>
+                <baseName xml:lang="en">Uranium natural, in yellowcake, at in-situ leaching mine</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="e70d2ea9-becd-32e6-9944-c946e949f129">fuels</common:class>
+                    <common:class level="1" classId="d9d22a1b-abde-33c5-a1bd-13c677d7ad0e">uranium</common:class>
+                    <common:class level="2" classId="12eebfcf-f3b0-3e43-8621-e24a1b053a00">enriched</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">PSI data (BFE project 407, Christian Bauer, April 2012).;
+UUID: 3f40afb0-2d2b-3789-9da7-a0f8cdc435b5</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1293836400000" olca:endDate="1322694000000">
+            <common:referenceYear>2011</common:referenceYear>
+            <common:dataSetValidUntil>2011</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Unspecified</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="GLO">
+                <descriptionOfRestrictions xml:lang="en">&lt;null&gt;</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Generic ISL process with overall uranium recovery of 75%. Assumed depth of ore body is 120m and assumed vertical dimension of ore body is 15m. Assumed hexagonal injection field with 20m grid edge and central production well.\n\n# Included processes\nUranium production and mining site underground remediation. Process energy for pumping. Sulfuric acid and water consumption. Piping material consumption. Isolation of pollutant concentrate during remediation. Landfilling of isolate.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="770d4a78-1d91-352b-8eb3-91e193ae5c73" version="00.00.000" uri="../sources/770d4a78-1d91-352b-8eb3-91e193ae5c73.xml">
+                <common:shortDescription xml:lang="en">2012 - LCA electricity generation in Switzerland - Uster</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">&lt;null&gt;</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: Unknown; Other validation: \\Server\E\ESU-Docs\Projektablage\407 Update LCI Energiesysteme\EcoSpold\import in unit process library\[uranium natural.xls]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="fca0bf47-00d4-376a-b9c8-b9c5234fdd4a" version="00.00.000" uri="../contacts/fca0bf47-00d4-376a-b9c8-b9c5234fdd4a.xml">
+                    <common:shortDescription xml:lang="en">Frank Werner</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="679eba73-a9b1-312e-99a4-f18bc8fc0dbf" version="00.00.000" uri="../contacts/679eba73-a9b1-312e-99a4-f18bc8fc0dbf.xml">
+                <common:shortDescription xml:lang="en">Gabor Doka</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:50:32.062+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="679eba73-a9b1-312e-99a4-f18bc8fc0dbf" version="00.00.000" uri="../contacts/679eba73-a9b1-312e-99a4-f18bc8fc0dbf.xml">
+                <common:shortDescription xml:lang="en">Gabor Doka</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T09:05:18.602+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.008</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="770d4a78-1d91-352b-8eb3-91e193ae5c73" version="00.00.000" uri="../sources/770d4a78-1d91-352b-8eb3-91e193ae5c73.xml">
+                <common:shortDescription xml:lang="en">2012 - LCA electricity generation in Switzerland - Uster</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="61" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.168">
+            <referenceToFlowDataSet type="flow data set" refObjectId="84792d87-a744-40ef-a3f2-f3a3c09d59cc" version="00.00.000" uri="../flows/84792d87-a744-40ef-a3f2-f3a3c09d59cc.xml">
+                <common:shortDescription xml:lang="en">Sodium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.168</meanAmount>
+            <resultingAmount>1.168</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3152946437965904</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="60" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.00159">
+            <referenceToFlowDataSet type="flow data set" refObjectId="061d04a0-af1d-4884-bdd3-997b6cd5550f" version="00.00.000" uri="../flows/061d04a0-af1d-4884-bdd3-997b6cd5550f.xml">
+                <common:shortDescription xml:lang="en">Boron</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00159</meanAmount>
+            <resultingAmount>0.00159</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.8248287590894658</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="59" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(1;2;1;1;1;5)" olca:amount="1.33">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2ba5e39b-adb6-4767-a51d-90c1cf32fe98" version="00.00.000" uri="../flows/2ba5e39b-adb6-4767-a51d-90c1cf32fe98.xml">
+                <common:shortDescription xml:lang="en">Uranium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.33</meanAmount>
+            <resultingAmount>1.33</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,1,1,5) &amp; basic uncertainty of 1.05; calculated from generic recovery rate for ISL
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="58" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.51E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="71cfe87c-ab80-421e-adba-afb7d5bd0861" version="00.00.000" uri="../flows/71cfe87c-ab80-421e-adba-afb7d5bd0861.xml">
+                <common:shortDescription xml:lang="en">Silver I</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.51E-9</meanAmount>
+            <resultingAmount>1.51E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.677685567799177</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="65" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.00917">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1f607ae2-b42d-4411-90b8-e9bbac66a554" version="00.00.000" uri="../flows/1f607ae2-b42d-4411-90b8-e9bbac66a554.xml">
+                <common:shortDescription xml:lang="en">Arsenic ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00917</meanAmount>
+            <resultingAmount>0.00917</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.760681686165901</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="64" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.92E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2e0c9efa-d55c-49db-8be3-0376d5921ff4" version="00.00.000" uri="../flows/2e0c9efa-d55c-49db-8be3-0376d5921ff4.xml">
+                <common:shortDescription xml:lang="en">Aluminium III</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.92E-4</meanAmount>
+            <resultingAmount>2.92E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7804493814764855</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="63" olca:unitId="c7266b67-4ea2-457f-b391-9b94e26e195a" olca:propertyId="93a60a56-a3c8-21da-a746-0800200c9a66" olca:pedigreeUncertainty="(5;5;1;n.a.;1;n.a.)" olca:amount="0.219">
+            <referenceToFlowDataSet type="flow data set" refObjectId="379ba5c9-5c3a-43d0-8e2d-605ad9c39e46" version="00.00.000" uri="../flows/379ba5c9-5c3a-43d0-8e2d-605ad9c39e46.xml">
+                <common:shortDescription xml:lang="en">Occupation, mineral extraction site</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.219</meanAmount>
+            <resultingAmount>0.219</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3527749258468684</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(5,5,1,nA,1,nA) &amp; basic uncertainty of 1.5; estimate for a generic hexagonal grid and 120m drilling depth
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="62" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.12E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="44f28e11-061d-44fd-8f25-dc62a9f1fa57" version="00.00.000" uri="../flows/44f28e11-061d-44fd-8f25-dc62a9f1fa57.xml">
+                <common:shortDescription xml:lang="en">Manganese II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.12E-6</meanAmount>
+            <resultingAmount>2.12E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.1447610589527217</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="53" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="e6037d3e-db63-3537-b5fa-73c72c806426" olca:amount="20.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b4a900af-0ee9-39e8-b155-635244f2845a" version="00.00.000" uri="../flows/b4a900af-0ee9-39e8-b155-635244f2845a.xml">
+                <common:shortDescription xml:lang="en">Sulphuric acid, liquid, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>20.0</meanAmount>
+            <resultingAmount>20.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5459624833740306</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty estimated from range in literature
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="52" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.2E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9500e0a4-a485-483e-ae55-3b99b4420cd2" version="00.00.000" uri="../flows/9500e0a4-a485-483e-ae55-3b99b4420cd2.xml">
+                <common:shortDescription xml:lang="en">Zinc II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.2E-7</meanAmount>
+            <resultingAmount>1.2E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.3366642891095846</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="51" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.55E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0ff15165-d761-48c9-9814-2d1dcdd56857" version="00.00.000" uri="../flows/0ff15165-d761-48c9-9814-2d1dcdd56857.xml">
+                <common:shortDescription xml:lang="en">Lead II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.55E-6</meanAmount>
+            <resultingAmount>5.55E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>15.083103128998356</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients. Large uncertainty range covers the possibility of a complete release when the mean value suggests only a very small release
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="50" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.41">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ea70cc93-c68c-4228-8b8e-1b189b4c705c" version="00.00.000" uri="../flows/ea70cc93-c68c-4228-8b8e-1b189b4c705c.xml">
+                <common:shortDescription xml:lang="en">Chloride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.41</meanAmount>
+            <resultingAmount>1.41</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3601470508735443</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="57" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:pedigreeUncertainty="(5;5;1;n.a.;1;n.a.)" olca:amount="0.0312">
+            <referenceToFlowDataSet type="flow data set" refObjectId="12264257-7f8b-4afe-b3cb-3ac28ca1661a" version="00.00.000" uri="../flows/12264257-7f8b-4afe-b3cb-3ac28ca1661a.xml">
+                <common:shortDescription xml:lang="en">Transformation, from unknown</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0312</meanAmount>
+            <resultingAmount>0.0312</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5099668870541498</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(5,5,1,nA,1,nA) &amp; basic uncertainty of 2; estimate for a generic hexagonal grid and 120m drilling depth
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="56" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.51E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fc91fc6f-596e-424a-9ee4-4432d718a66f" version="00.00.000" uri="../flows/fc91fc6f-596e-424a-9ee4-4432d718a66f.xml">
+                <common:shortDescription xml:lang="en">Silicon</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.51E-4</meanAmount>
+            <resultingAmount>1.51E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.8110770276274832</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="55" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.85E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3937f5a5-b4a4-434d-9fc3-1d29064fc3f8" version="00.00.000" uri="../flows/3937f5a5-b4a4-434d-9fc3-1d29064fc3f8.xml">
+                <common:shortDescription xml:lang="en">Cadmium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.85E-9</meanAmount>
+            <resultingAmount>2.85E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.613426869074396</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="54" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="9.17E-12">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e60edb16-3c74-415b-9aff-a22a6f49fecb" version="00.00.000" uri="../flows/e60edb16-3c74-415b-9aff-a22a6f49fecb.xml">
+                <common:shortDescription xml:lang="en">Arsenic ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.17E-12</meanAmount>
+            <resultingAmount>9.17E-12</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.760681686165901</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="76" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:pedigreeUncertainty="(5;5;1;n.a.;1;n.a.)" olca:amount="0.0312">
+            <referenceToFlowDataSet type="flow data set" refObjectId="64d99cb5-3b4f-4195-b86f-c5f45b4dcd19" version="00.00.000" uri="../flows/64d99cb5-3b4f-4195-b86f-c5f45b4dcd19.xml">
+                <common:shortDescription xml:lang="en">Transformation, from mineral extraction site</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0312</meanAmount>
+            <resultingAmount>0.0312</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5099668870541498</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(5,5,1,nA,1,nA) &amp; basic uncertainty of 2; estimate for a generic hexagonal grid and 120m drilling depth
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="75" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="9.02E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="94426df9-63b1-4dc6-ad1b-3509e22f1154" version="00.00.000" uri="../flows/94426df9-63b1-4dc6-ad1b-3509e22f1154.xml">
+                <common:shortDescription xml:lang="en">Silver I</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.02E-7</meanAmount>
+            <resultingAmount>9.02E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>6.161980201201558</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients. Large uncertainty range covers the possibility of a complete release when the mean value suggests only a very small release
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="74" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="d51355e5-b0a8-3db5-bd7e-c74fd60c87e0" olca:pedigreeUncertainty="(1;4;1;3;1;1)" olca:amount="9123.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="502e1c3d-e6f1-34a9-8f99-6b87f1e729a8" version="00.00.000" uri="../flows/502e1c3d-e6f1-34a9-8f99-6b87f1e729a8.xml">
+                <common:shortDescription xml:lang="en">Water, decarbonised, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9123.0</meanAmount>
+            <resultingAmount>9123.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0583005244258363</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,4,1,3,1,1) &amp; basic uncertainty of 1.05; from annual water demand for ISL Beverley, Australia
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="69" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.71E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4ce23896-a82f-49f1-a8e3-8848734805a3" version="00.00.000" uri="../flows/4ce23896-a82f-49f1-a8e3-8848734805a3.xml">
+                <common:shortDescription xml:lang="en">Cadmium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.71E-6</meanAmount>
+            <resultingAmount>1.71E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>13.435773144854746</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients. Large uncertainty range covers the possibility of a complete release when the mean value suggests only a very small release
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="68" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.067009">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ce88a9b6-0afa-4f68-9b32-8c3438bf4025" version="00.00.000" uri="../flows/ce88a9b6-0afa-4f68-9b32-8c3438bf4025.xml">
+                <common:shortDescription xml:lang="en">Silicon</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.067009</meanAmount>
+            <resultingAmount>0.067009</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.56547117507797</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="67" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.6E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="40f89b03-64f8-466d-9480-bca47d8a435c" version="00.00.000" uri="../flows/40f89b03-64f8-466d-9480-bca47d8a435c.xml">
+                <common:shortDescription xml:lang="en">Mercury II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.6E-6</meanAmount>
+            <resultingAmount>1.6E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>5.592852581643825</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients. Large uncertainty range covers the possibility of a complete release when the mean value suggests only a very small release
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="66" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.48E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="24acc516-974c-4ff3-b7e1-5950b8d37206" version="00.00.000" uri="../flows/24acc516-974c-4ff3-b7e1-5950b8d37206.xml">
+                <common:shortDescription xml:lang="en">Magnesium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.48E-4</meanAmount>
+            <resultingAmount>1.48E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.841195263952197</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="73" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="8a33231b-294c-3d48-aef0-89d8d9e71ede" olca:pedigreeUncertainty="(5;5;1;n.a.;1;n.a.)" olca:amount="0.108">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e8cc8012-8153-32a0-9c98-c06f320ef0ed" version="00.00.000" uri="../flows/e8cc8012-8153-32a0-9c98-c06f320ef0ed.xml">
+                <common:shortDescription xml:lang="en">Steel, electric, chromium steel 18/8, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.108</meanAmount>
+            <resultingAmount>0.108</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.8083141320025125</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(5,5,1,nA,1,nA) &amp; basic uncertainty of 3; estimate for a generic hexagonal grid and 120m drilling depth
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="72" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="9.27E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c864aa15-0abc-41ad-9889-348106e485d8" version="00.00.000" uri="../flows/c864aa15-0abc-41ad-9889-348106e485d8.xml">
+                <common:shortDescription xml:lang="en">Lead II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.27E-9</meanAmount>
+            <resultingAmount>9.27E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.5298221281347035</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="71" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.010948">
+            <referenceToFlowDataSet type="flow data set" refObjectId="41dbbe1f-06e1-4a34-8497-5986be8f9e51" version="00.00.000" uri="../flows/41dbbe1f-06e1-4a34-8497-5986be8f9e51.xml">
+                <common:shortDescription xml:lang="en">Vanadium V</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.010948</meanAmount>
+            <resultingAmount>0.010948</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7286121600868138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="70" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="16.5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="31eacbfc-683a-4d36-afc1-80dee42a3b94" version="00.00.000" uri="../flows/31eacbfc-683a-4d36-afc1-80dee42a3b94.xml">
+                <common:shortDescription xml:lang="en">Sulfate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>16.5</meanAmount>
+            <resultingAmount>16.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.174734012447073</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.00307">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b84e31d0-cf7b-4c3f-bc8a-3cc93bdb30d9" version="00.00.000" uri="../flows/b84e31d0-cf7b-4c3f-bc8a-3cc93bdb30d9.xml">
+                <common:shortDescription xml:lang="en">Fluoride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00307</meanAmount>
+            <resultingAmount>0.00307</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.705872210923198</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.00127">
+            <referenceToFlowDataSet type="flow data set" refObjectId="835d0907-a668-4d92-b6b6-7b56fa343713" version="00.00.000" uri="../flows/835d0907-a668-4d92-b6b6-7b56fa343713.xml">
+                <common:shortDescription xml:lang="en">Manganese II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00127</meanAmount>
+            <resultingAmount>0.00127</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>11.435033887138244</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients. Large uncertainty range covers the possibility of a complete release when the mean value suggests only a very small release
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.39E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="40229ebf-9346-4f20-910a-f8ea3bd88d44" version="00.00.000" uri="../flows/40229ebf-9346-4f20-910a-f8ea3bd88d44.xml">
+                <common:shortDescription xml:lang="en">Copper ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.39E-4</meanAmount>
+            <resultingAmount>1.39E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>5.688585061331157</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients. Large uncertainty range covers the possibility of a complete release when the mean value suggests only a very small release
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.944">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ada8c83c-995a-3fa1-bdec-36a0590efbd2" version="00.00.000" uri="../flows/ada8c83c-995a-3fa1-bdec-36a0590efbd2.xml">
+                <common:shortDescription xml:lang="en">Sodium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.944</meanAmount>
+            <resultingAmount>1.944</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3002692028960772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="33" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.43E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e030108f-2125-4bcb-a73b-ad72130fcca3" version="00.00.000" uri="../flows/e030108f-2125-4bcb-a73b-ad72130fcca3.xml">
+                <common:shortDescription xml:lang="en">Nickel II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.43E-6</meanAmount>
+            <resultingAmount>1.43E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.1702534414210706</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="32" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.72E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f0d1c319-249f-4a89-b0e7-3a5a90a54036" version="00.00.000" uri="../flows/f0d1c319-249f-4a89-b0e7-3a5a90a54036.xml">
+                <common:shortDescription xml:lang="en">Cobalt II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.72E-6</meanAmount>
+            <resultingAmount>1.72E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.149418526020468</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="31" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.00162">
+            <referenceToFlowDataSet type="flow data set" refObjectId="83cf77ca-867b-4eef-b0f0-78d71b3d91d5" version="00.00.000" uri="../flows/83cf77ca-867b-4eef-b0f0-78d71b3d91d5.xml">
+                <common:shortDescription xml:lang="en">Antimony ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00162</meanAmount>
+            <resultingAmount>0.00162</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.8708286933869707</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="30" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.332">
+            <referenceToFlowDataSet type="flow data set" refObjectId="490b267b-f429-4d9a-ac79-224e37fb4d58" version="00.00.000" uri="../flows/490b267b-f429-4d9a-ac79-224e37fb4d58.xml">
+                <common:shortDescription xml:lang="en">Phosphate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.332</meanAmount>
+            <resultingAmount>0.332</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.2605309110914633</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.85E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5df5cb9f-812c-4ce8-ab1c-df6ab4d31900" version="00.00.000" uri="../flows/5df5cb9f-812c-4ce8-ab1c-df6ab4d31900.xml">
+                <common:shortDescription xml:lang="en">Antimony ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.85E-4</meanAmount>
+            <resultingAmount>8.85E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.8788294228055935</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.55E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="329fc7d8-4011-4327-84e4-34ff76f0e42d" version="00.00.000" uri="../flows/329fc7d8-4011-4327-84e4-34ff76f0e42d.xml">
+                <common:shortDescription xml:lang="en">Phosphate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.55E-4</meanAmount>
+            <resultingAmount>5.55E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.786057109949175</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.21E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bdce3a7c-e008-4391-be26-285f71a02453" version="00.00.000" uri="../flows/bdce3a7c-e008-4391-be26-285f71a02453.xml">
+                <common:shortDescription xml:lang="en">Zinc II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.21E-5</meanAmount>
+            <resultingAmount>7.21E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>9.756382526326036</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients. Large uncertainty range covers the possibility of a complete release when the mean value suggests only a very small release
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.57E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3184c902-c587-4fd7-bd89-769d3cf30072" version="00.00.000" uri="../flows/3184c902-c587-4fd7-bd89-769d3cf30072.xml">
+                <common:shortDescription xml:lang="en">Barium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.57E-6</meanAmount>
+            <resultingAmount>3.57E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>12.15976973466192</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients. Large uncertainty range covers the possibility of a complete release when the mean value suggests only a very small release
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.36E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="33fd8342-58e7-45c9-ad92-0951c002c403" version="00.00.000" uri="../flows/33fd8342-58e7-45c9-ad92-0951c002c403.xml">
+                <common:shortDescription xml:lang="en">Iron ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.36E-6</meanAmount>
+            <resultingAmount>1.36E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.1702534414210706</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.02E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9bbae55a-35de-4eff-a219-814a9fec5ac2" version="00.00.000" uri="../flows/9bbae55a-35de-4eff-a219-814a9fec5ac2.xml">
+                <common:shortDescription xml:lang="en">Chromium VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.02E-5</meanAmount>
+            <resultingAmount>3.02E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.0371548787463363</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.59E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9f69cb8e-51fe-447b-a1ac-4da74de8ebe4" version="00.00.000" uri="../flows/9f69cb8e-51fe-447b-a1ac-4da74de8ebe4.xml">
+                <common:shortDescription xml:lang="en">Nickel II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.59E-4</meanAmount>
+            <resultingAmount>8.59E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.238302928559939</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.21E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7d3f7498-3596-478a-9fa1-72201ef94082" version="00.00.000" uri="../flows/7d3f7498-3596-478a-9fa1-72201ef94082.xml">
+                <common:shortDescription xml:lang="en">Molybdenum VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.21E-4</meanAmount>
+            <resultingAmount>1.21E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6673332000533065</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="45" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:pedigreeUncertainty="(5;5;1;n.a.;1;n.a.)" olca:amount="0.0312">
+            <referenceToFlowDataSet type="flow data set" refObjectId="626915e9-2424-4059-8b6a-fae47161acdf" version="00.00.000" uri="../flows/626915e9-2424-4059-8b6a-fae47161acdf.xml">
+                <common:shortDescription xml:lang="en">Transformation, to mineral extraction site</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0312</meanAmount>
+            <resultingAmount>0.0312</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5099668870541498</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(5,5,1,nA,1,nA) &amp; basic uncertainty of 2; estimate for a generic hexagonal grid and 120m drilling depth
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="44" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.17474">
+            <referenceToFlowDataSet type="flow data set" refObjectId="01056d4b-f9b0-4dfc-b8d9-8407c8376efb" version="00.00.000" uri="../flows/01056d4b-f9b0-4dfc-b8d9-8407c8376efb.xml">
+                <common:shortDescription xml:lang="en">Aluminium III</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.17474</meanAmount>
+            <resultingAmount>0.17474</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.004968827687852</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="43" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.19754">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a2017716-a6ee-3c76-adf4-eab05dcfeb14" version="00.00.000" uri="../flows/a2017716-a6ee-3c76-adf4-eab05dcfeb14.xml">
+                <common:shortDescription xml:lang="en">Calcium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.19754</meanAmount>
+            <resultingAmount>0.19754</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.4364225584174015</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients. Large uncertainty range covers the possibility of a complete release when the mean value suggests only a very small release
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="42" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.00225">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1be475e0-ccef-4145-98e0-0d47c570a71b" version="00.00.000" uri="../flows/1be475e0-ccef-4145-98e0-0d47c570a71b.xml">
+                <common:shortDescription xml:lang="en">Selenium IV</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00225</meanAmount>
+            <resultingAmount>0.00225</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.8055470085267789</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="49" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.00103">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1e904267-caa3-40e6-a3a0-fc104489770b" version="00.00.000" uri="../flows/1e904267-caa3-40e6-a3a0-fc104489770b.xml">
+                <common:shortDescription xml:lang="en">Cobalt II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00103</meanAmount>
+            <resultingAmount>0.00103</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8844410203711917</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="48" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="19.1">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b61057a3-a0bc-4158-882e-b819c4797419" version="00.00.000" uri="../flows/b61057a3-a0bc-4158-882e-b819c4797419.xml">
+                <common:shortDescription xml:lang="en">Nitrate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>19.1</meanAmount>
+            <resultingAmount>19.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1661903789690602</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="47" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0021851">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8f1b69d9-fc00-4b46-99f9-7a57fd71dad2" version="00.00.000" uri="../flows/8f1b69d9-fc00-4b46-99f9-7a57fd71dad2.xml">
+                <common:shortDescription xml:lang="en">Strontium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0021851</meanAmount>
+            <resultingAmount>0.0021851</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.1756378375088072</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="46" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.3482E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="24e0a9cb-a789-46e2-a25c-0278a90d67e5" version="00.00.000" uri="../flows/24e0a9cb-a789-46e2-a25c-0278a90d67e5.xml">
+                <common:shortDescription xml:lang="en">Beryllium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.3482E-4</meanAmount>
+            <resultingAmount>1.3482E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.3169592141425364</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="37" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.009475">
+            <referenceToFlowDataSet type="flow data set" refObjectId="08fbcb07-e7a1-352c-b779-9d7c578059d5" version="00.00.000" uri="../flows/08fbcb07-e7a1-352c-b779-9d7c578059d5.xml">
+                <common:shortDescription xml:lang="en">Titanium ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.009475</meanAmount>
+            <resultingAmount>0.009475</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.191118435867856</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="36" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="137.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bfc0bf1c-e5e2-4702-a502-08c892031837" version="00.00.000" uri="../flows/bfc0bf1c-e5e2-4702-a502-08c892031837.xml">
+                <common:shortDescription xml:lang="en">Sulfate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>137.0</meanAmount>
+            <resultingAmount>137.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.014889156509222</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="35" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.12773">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2f2083f7-404b-3c39-a1f6-2bc88e8b1e20" version="00.00.000" uri="../flows/2f2083f7-404b-3c39-a1f6-2bc88e8b1e20.xml">
+                <common:shortDescription xml:lang="en">Potassium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.12773</meanAmount>
+            <resultingAmount>0.12773</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.534079528577316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="34" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:pedigreeUncertainty="(5;5;1;n.a.;1;n.a.)" olca:amount="0.0312">
+            <referenceToFlowDataSet type="flow data set" refObjectId="36965153-1daf-452a-8089-f4b5222c46ae" version="00.00.000" uri="../flows/36965153-1daf-452a-8089-f4b5222c46ae.xml">
+                <common:shortDescription xml:lang="en">Transformation, to unknown</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0312</meanAmount>
+            <resultingAmount>0.0312</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5099668870541498</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(5,5,1,nA,1,nA) &amp; basic uncertainty of 2; estimate for a generic hexagonal grid and 120m drilling depth
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="41" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.3E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="313b9346-b5b7-385a-b5d6-a59e11fd57cf" version="00.00.000" uri="../flows/313b9346-b5b7-385a-b5d6-a59e11fd57cf.xml">
+                <common:shortDescription xml:lang="en">Calcium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.3E-4</meanAmount>
+            <resultingAmount>3.3E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.8110770276274832</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="40" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0262">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3822809c-cc03-469d-ac2a-9f85842f8440" version="00.00.000" uri="../flows/3822809c-cc03-469d-ac2a-9f85842f8440.xml">
+                <common:shortDescription xml:lang="en">Molybdenum VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0262</meanAmount>
+            <resultingAmount>0.0262</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6673332000533065</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="39" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.25E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fa89c354-2263-4ed2-ac56-99946be5c665" version="00.00.000" uri="../flows/fa89c354-2263-4ed2-ac56-99946be5c665.xml">
+                <common:shortDescription xml:lang="en">Beryllium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.25E-7</meanAmount>
+            <resultingAmount>2.25E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.2494443758403984</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="38" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.5E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a3178646-f9e4-3a94-9988-e81e3935aea7" version="00.00.000" uri="../flows/a3178646-f9e4-3a94-9988-e81e3935aea7.xml">
+                <common:shortDescription xml:lang="en">Vanadium V</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.5E-5</meanAmount>
+            <resultingAmount>3.5E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.9287301521985911</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d3f5f725-f822-3419-90dc-582a0ab64670" version="00.00.008" uri="../flows/d3f5f725-f822-3419-90dc-582a0ab64670.xml">
+                <common:shortDescription xml:lang="en">Uranium natural, in yellowcake, at in-situ leaching mine</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">Global
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="e9773595-284e-46dd-9671-5fc9ff406833" olca:propertyId="93a60a56-a3c8-17da-a746-0800200c9a66" olca:pedigreeUncertainty="(2;4;1;3;1;1)" olca:amount="21550.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1551f1cd-7cb7-4f68-a628-cb9301323c7b" version="00.00.000" uri="../flows/1551f1cd-7cb7-4f68-a628-cb9301323c7b.xml">
+                <common:shortDescription xml:lang="en">Radon-222</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>21550.0</meanAmount>
+            <resultingAmount>21550.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7378147196982767</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,3,1,1) &amp; basic uncertainty of 3; half of upper estimate for Beverley Australia
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.564">
+            <referenceToFlowDataSet type="flow data set" refObjectId="85bec19f-c785-4364-8ef6-472b8e9dd90e" version="00.00.000" uri="../flows/85bec19f-c785-4364-8ef6-472b8e9dd90e.xml">
+                <common:shortDescription xml:lang="en">Chloride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.564</meanAmount>
+            <resultingAmount>0.564</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.378404875209022</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.45">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b9291c72-4b1d-4275-8068-4c707dc3ce33" version="00.00.000" uri="../flows/b9291c72-4b1d-4275-8068-4c707dc3ce33.xml">
+                <common:shortDescription xml:lang="en">Nitrate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.45</meanAmount>
+            <resultingAmount>4.45</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2165525060596438</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.27E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="242b4a08-f6ff-496d-ae0f-bf8f8bc77692" version="00.00.000" uri="../flows/242b4a08-f6ff-496d-ae0f-bf8f8bc77692.xml">
+                <common:shortDescription xml:lang="en">Boron</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.27E-5</meanAmount>
+            <resultingAmount>1.27E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.9798989873223332</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.00413">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4d54a415-82d7-49ac-88e1-712bd0009363" version="00.00.000" uri="../flows/4d54a415-82d7-49ac-88e1-712bd0009363.xml">
+                <common:shortDescription xml:lang="en">Selenium IV</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00413</meanAmount>
+            <resultingAmount>0.00413</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.794435844492636</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.32E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ea6de79e-ce2c-44b2-994e-d2ea0125732b" version="00.00.000" uri="../flows/ea6de79e-ce2c-44b2-994e-d2ea0125732b.xml">
+                <common:shortDescription xml:lang="en">Copper ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.32E-7</meanAmount>
+            <resultingAmount>2.32E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.2891046284519194</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.67E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e1aa92d7-9297-452e-ade0-e5e2acc52ad7" version="00.00.000" uri="../flows/e1aa92d7-9297-452e-ade0-e5e2acc52ad7.xml">
+                <common:shortDescription xml:lang="en">Mercury II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.67E-9</meanAmount>
+            <resultingAmount>2.67E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.6362852652928135</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.1299E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9b6d6f07-ebc6-447d-a3c0-f2017d77d852" version="00.00.000" uri="../flows/9b6d6f07-ebc6-447d-a3c0-f2017d77d852.xml">
+                <common:shortDescription xml:lang="en">Iron ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.1299E-4</meanAmount>
+            <resultingAmount>8.1299E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>14.60958589419974</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients. Large uncertainty range covers the possibility of a complete release when the mean value suggests only a very small release
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.65E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="070f9c6e-584d-40ed-8b07-6b1f7f75dd3f" version="00.00.000" uri="../flows/070f9c6e-584d-40ed-8b07-6b1f7f75dd3f.xml">
+                <common:shortDescription xml:lang="en">Strontium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.65E-6</meanAmount>
+            <resultingAmount>3.65E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.1071307505705477</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.96E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d68f41b3-6887-49a8-8efa-96812f8ec9f6" version="00.00.000" uri="../flows/d68f41b3-6887-49a8-8efa-96812f8ec9f6.xml">
+                <common:shortDescription xml:lang="en">Barium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.96E-9</meanAmount>
+            <resultingAmount>5.96E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.5612496949731396</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.088599">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ce9fd912-233a-4807-a33e-0323b1e4a7a2" version="00.00.000" uri="../flows/ce9fd912-233a-4807-a33e-0323b1e4a7a2.xml">
+                <common:shortDescription xml:lang="en">Magnesium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.088599</meanAmount>
+            <resultingAmount>0.088599</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.1164402769826984</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0501">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dcf8705e-f066-4a89-9311-d2993c27fb84" version="00.00.000" uri="../flows/dcf8705e-f066-4a89-9311-d2993c27fb84.xml">
+                <common:shortDescription xml:lang="en">Potassium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0501</meanAmount>
+            <resultingAmount>0.0501</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5491933384829668</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="9.54E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ef475b50-9cd0-4e7c-9c59-07868fe16e91" version="00.00.000" uri="../flows/ef475b50-9cd0-4e7c-9c59-07868fe16e91.xml">
+                <common:shortDescription xml:lang="en">Chromium VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.54E-5</meanAmount>
+            <resultingAmount>9.54E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8635642126552705</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="32865dd1-13be-378f-a2cb-8da075b9e203" olca:amount="887.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="302baeac-0ab4-3a74-888c-5e299e2a0e44" version="00.00.000" uri="../flows/302baeac-0ab4-3a74-888c-5e299e2a0e44.xml">
+                <common:shortDescription xml:lang="en">Diesel, burned in diesel-electric generating set</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>887.0</meanAmount>
+            <resultingAmount>887.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3190905958272918</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">sum of consumption during operation and estimate for remediation. uncertainty estimated from range in literature
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.58E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="df8c7706-a6c7-37f7-81d6-5feb3dd08b92" version="00.00.000" uri="../flows/df8c7706-a6c7-37f7-81d6-5feb3dd08b92.xml">
+                <common:shortDescription xml:lang="en">Titanium ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.58E-5</meanAmount>
+            <resultingAmount>1.58E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.977371993328519</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">short-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0535">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ae3e6e8-75e6-4566-b18f-6d848086c4e5" version="00.00.000" uri="../flows/7ae3e6e8-75e6-4566-b18f-6d848086c4e5.xml">
+                <common:shortDescription xml:lang="en">Fluoride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0535</meanAmount>
+            <resultingAmount>0.0535</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6401219466856725</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">long-term emissions of landfilled pollutant isolate from remediation. Uncertainty calculated based on estimated uncertainty of isolate composition and uncertainty of landfill transfer coefficients
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

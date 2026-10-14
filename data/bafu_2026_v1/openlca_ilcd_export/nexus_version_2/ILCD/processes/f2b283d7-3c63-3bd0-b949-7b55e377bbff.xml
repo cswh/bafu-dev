@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>f2b283d7-3c63-3bd0-b949-7b55e377bbff</common:UUID>
+            <name>
+                <baseName xml:lang="en">Transport, freight, lorry, 3.5t gross weight, fleet average</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="2279f95c-4711-3ee2-8393-0e7a7bbfe8d1">transport systems</common:class>
+                    <common:class level="1" classId="a68df7d5-0492-3d7e-a949-c23730a59b9f">road</common:class>
+                    <common:class level="2" classId="944e4422-9c8a-3ad4-9faa-fe1fdf65edb8">Transformation</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en"> Average of other Mobitool datasets created with the purpose of replacing older datasets in the database. Basis for fleet shares: Switzerland year 2020. Source: HBEFA 5.1, INFRAS. UUID: f2b283d7-3c63-3bd0-b949-7b55e377bbff</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>23</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1577833200000" olca:endDate="1606777200000">
+            <common:referenceYear>2020</common:referenceYear>
+            <common:dataSetValidUntil>2020</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Technology and fleet shares valid for year 2020</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Unspecified</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Average of other Mobitool datasets created with the purpose of replacing older datasets in the database. Basis for fleet shares: Switzerland year 2020. Source: HBEFA 5.1, INFRAS</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="0e73cd97-c332-3b37-8f71-c19ea140d648" version="00.00.000" uri="../sources/0e73cd97-c332-3b37-8f71-c19ea140d648.xml">
+                <common:shortDescription xml:lang="en">2025 - Mobitool integration project - Cox</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Unspecified</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Data from HBEFA 5.1 for the year 2020. Some technologies with very small shares in the fleet removed for simplicity. Technology shares normalised to ensure sum of 100%</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="efab6acc-e069-365d-b922-c7081723eaa3" version="00.00.000" uri="../contacts/efab6acc-e069-365d-b922-c7081723eaa3.xml">
+                    <common:shortDescription xml:lang="en">Julien McTighe</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="38b429bd-4961-37c6-b2e8-98ea67ee44eb" version="00.00.000" uri="../contacts/38b429bd-4961-37c6-b2e8-98ea67ee44eb.xml">
+                <common:shortDescription xml:lang="en">Brian Cox</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:51:17.141+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="38b429bd-4961-37c6-b2e8-98ea67ee44eb" version="00.00.000" uri="../contacts/38b429bd-4961-37c6-b2e8-98ea67ee44eb.xml">
+                <common:shortDescription xml:lang="en">Brian Cox</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T10:01:08.041+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.022</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="0e73cd97-c332-3b37-8f71-c19ea140d648" version="00.00.000" uri="../sources/0e73cd97-c332-3b37-8f71-c19ea140d648.xml">
+                <common:shortDescription xml:lang="en">2025 - Mobitool integration project - Cox</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>false</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="15090636-65a6-386a-8081-cfe980604566" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.07215456592723941">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d2a2c438-5321-38d3-91bf-1cafd1b93bac" version="00.00.022" uri="../flows/d2a2c438-5321-38d3-91bf-1cafd1b93bac.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel, 3.5t gross weight, 2006, EURO-IV, regional delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.07215456592723941</meanAmount>
+            <resultingAmount>0.07215456592723941</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="f61c910b-1b7c-341f-9d74-aa3845257f17" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.01603434798383098">
+            <referenceToFlowDataSet type="flow data set" refObjectId="58271421-48fa-3734-b479-65db01b8e065" version="00.00.022" uri="../flows/58271421-48fa-3734-b479-65db01b8e065.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel, 3.5t gross weight, 2006, EURO-IV, long haul</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.01603434798383098</meanAmount>
+            <resultingAmount>0.01603434798383098</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="73c96c94-940b-3ca8-93d7-a8cfbaea4a5b" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.03146126262142786">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8a68c990-4c94-348d-823c-2f1b1d4fa44f" version="00.00.022" uri="../flows/8a68c990-4c94-348d-823c-2f1b1d4fa44f.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel, 3.5t gross weight, 2010, EURO-V, long haul</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.03146126262142786</meanAmount>
+            <resultingAmount>0.03146126262142786</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="8b99bc6b-19f0-37a6-bbfe-e3dd9b928cb1" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.07215456592723941">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5726e892-7943-39f2-bb49-6e98b5e6dbdb" version="00.00.022" uri="../flows/5726e892-7943-39f2-bb49-6e98b5e6dbdb.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel, 3.5t gross weight, 2006, EURO-IV, urban delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.07215456592723941</meanAmount>
+            <resultingAmount>0.07215456592723941</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="3cd761fb-27d8-318c-8c5e-061951f3597b" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.14157568179642535">
+            <referenceToFlowDataSet type="flow data set" refObjectId="862c7931-39a6-3754-a681-8fcf554f8de4" version="00.00.022" uri="../flows/862c7931-39a6-3754-a681-8fcf554f8de4.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel, 3.5t gross weight, 2010, EURO-V, urban delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.14157568179642535</meanAmount>
+            <resultingAmount>0.14157568179642535</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="c7165067-caa4-3795-9671-1e8a1ab92302" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.14157568179642535">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7e3a9cdb-578c-3f6a-ab5b-1632d53e05e9" version="00.00.022" uri="../flows/7e3a9cdb-578c-3f6a-ab5b-1632d53e05e9.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel, 3.5t gross weight, 2010, EURO-V, regional delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.14157568179642535</meanAmount>
+            <resultingAmount>0.14157568179642535</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="6ec376f9-8522-361e-bbb9-9880f6316df3" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.19138461434293358">
+            <referenceToFlowDataSet type="flow data set" refObjectId="037d4950-40db-3178-8017-d40ce46e57de" version="00.00.022" uri="../flows/037d4950-40db-3178-8017-d40ce46e57de.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel, 3.5t gross weight, 2020, EURO-VI, regional delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.19138461434293358</meanAmount>
+            <resultingAmount>0.19138461434293358</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="f12c6c19-7160-39b4-8ef5-4feacc586f56" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.04252991429842969">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1108db25-4f3f-3c7f-9d5c-a85b571a1b44" version="00.00.022" uri="../flows/1108db25-4f3f-3c7f-9d5c-a85b571a1b44.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel, 3.5t gross weight, 2020, EURO-VI, long haul</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.04252991429842969</meanAmount>
+            <resultingAmount>0.04252991429842969</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="1363ac7a-6c44-3cf2-89ab-659645a19ef9" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.19138461434293358">
+            <referenceToFlowDataSet type="flow data set" refObjectId="96c2f38c-bd69-3bef-8837-f949084376df" version="00.00.022" uri="../flows/96c2f38c-bd69-3bef-8837-f949084376df.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel, 3.5t gross weight, 2020, EURO-VI, urban delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.19138461434293358</meanAmount>
+            <resultingAmount>0.19138461434293358</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="6725bf51-85aa-3376-b1ee-08cd982cc89a" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.005016770724684119">
+            <referenceToFlowDataSet type="flow data set" refObjectId="49742fb7-bf83-3ce5-b465-2fafe3efba1c" version="00.00.022" uri="../flows/49742fb7-bf83-3ce5-b465-2fafe3efba1c.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, battery electric, NMC-622 battery, 3.5t gross weight, 2020, urban delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.005016770724684119</meanAmount>
+            <resultingAmount>0.005016770724684119</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e234478d-8bb0-34a1-a86a-36cca6a349d7" version="00.00.022" uri="../flows/e234478d-8bb0-34a1-a86a-36cca6a349d7.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, 3.5t gross weight, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="ae8befd2-cdbd-3843-a479-ee51904e4609" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="4.8134863956092564E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0f92a4ac-02e1-3069-86bc-1744de986353" version="00.00.022" uri="../flows/0f92a4ac-02e1-3069-86bc-1744de986353.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, compressed gas, 100% biomethane, 3.5t gross weight, 2020, EURO-VI, regional delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.8134863956092564E-4</meanAmount>
+            <resultingAmount>4.8134863956092564E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="df2a01fe-cf60-3385-8fee-91f0450aa20a" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="1.0696636434687237E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f88a62f0-5f79-33d3-b3b7-693639d6cdc1" version="00.00.022" uri="../flows/f88a62f0-5f79-33d3-b3b7-693639d6cdc1.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, compressed gas, 100% biomethane, 3.5t gross weight, 2020, EURO-VI, long haul</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0696636434687237E-4</meanAmount>
+            <resultingAmount>1.0696636434687237E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="ef525c00-1c25-3d87-b43c-2599ae6c9a69" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="2.847510927278006E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5fc376d2-2e26-37a7-9279-0a2babab3f40" version="00.00.022" uri="../flows/5fc376d2-2e26-37a7-9279-0a2babab3f40.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, compressed gas, 3.5t gross weight, 2020, EURO-VI, long haul</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.847510927278006E-4</meanAmount>
+            <resultingAmount>2.847510927278006E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="4c56a976-f1ea-3c8d-946f-9c8ccd75df95" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="4.8134863956092564E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cd3a13b4-71c4-3359-b2c6-ea8359efb062" version="00.00.022" uri="../flows/cd3a13b4-71c4-3359-b2c6-ea8359efb062.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, compressed gas, 100% biomethane, 3.5t gross weight, 2020, EURO-VI, urban delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.8134863956092564E-4</meanAmount>
+            <resultingAmount>4.8134863956092564E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="c3d5ce94-0964-3d37-b956-162017055104" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.0012813799172751027">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c8acf88a-2273-383e-a4bd-af64b04cb135" version="00.00.022" uri="../flows/c8acf88a-2273-383e-a4bd-af64b04cb135.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, compressed gas, 3.5t gross weight, 2020, EURO-VI, urban delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0012813799172751027</meanAmount>
+            <resultingAmount>0.0012813799172751027</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="b9742ab1-b418-3822-ba3f-e12b7625354c" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.0012813799172751027">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9a97e4ce-c877-38ca-b8d3-d8a730f887a4" version="00.00.022" uri="../flows/9a97e4ce-c877-38ca-b8d3-d8a730f887a4.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, compressed gas, 3.5t gross weight, 2020, EURO-VI, regional delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0012813799172751027</meanAmount>
+            <resultingAmount>0.0012813799172751027</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="95fee4bd-649a-348a-94a0-47afc7f884b5" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.021264957149214846">
+            <referenceToFlowDataSet type="flow data set" refObjectId="75f3ef18-81d9-338f-80a4-30e2a79c6993" version="00.00.022" uri="../flows/75f3ef18-81d9-338f-80a4-30e2a79c6993.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel hybrid, 3.5t gross weight, 2020, EURO-VI, regional delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.021264957149214846</meanAmount>
+            <resultingAmount>0.021264957149214846</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="4e8f0d39-b08f-35b5-a58c-7dd10c9424cc" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.004725546033158855">
+            <referenceToFlowDataSet type="flow data set" refObjectId="81a0016f-1207-361c-b10a-7606cf271784" version="00.00.022" uri="../flows/81a0016f-1207-361c-b10a-7606cf271784.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel hybrid, 3.5t gross weight, 2020, EURO-VI, long haul</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.004725546033158855</meanAmount>
+            <resultingAmount>0.004725546033158855</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="79212170-c580-3630-a633-72679920d3d1" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.004355534533609536">
+            <referenceToFlowDataSet type="flow data set" refObjectId="48691618-2ac3-32c3-a7f5-3450e821fb89" version="00.00.022" uri="../flows/48691618-2ac3-32c3-a7f5-3450e821fb89.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel, 3.5t gross weight, 2002, EURO-III, long haul</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.004355534533609536</meanAmount>
+            <resultingAmount>0.004355534533609536</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="a642e4cd-56ac-3b4e-be8f-47baa7f085d8" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.021264957149214846">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a94cfd03-a9e9-37b6-bd48-1a8c3d7ec84c" version="00.00.022" uri="../flows/a94cfd03-a9e9-37b6-bd48-1a8c3d7ec84c.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel hybrid, 3.5t gross weight, 2020, EURO-VI, urban delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.021264957149214846</meanAmount>
+            <resultingAmount>0.021264957149214846</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="b9685685-7b86-3044-8c6f-ad3b26ede57d" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.01959990540124291">
+            <referenceToFlowDataSet type="flow data set" refObjectId="96e276d3-7965-3fbb-8488-ec73211aa813" version="00.00.022" uri="../flows/96e276d3-7965-3fbb-8488-ec73211aa813.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel, 3.5t gross weight, 2002, EURO-III, urban delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.01959990540124291</meanAmount>
+            <resultingAmount>0.01959990540124291</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="50d0993b-ed2b-36a1-bd3c-4c6d9987f483" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.01959990540124291">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1ae9ddbf-9cbe-3454-9d5e-b86474a8c301" version="00.00.022" uri="../flows/1ae9ddbf-9cbe-3454-9d5e-b86474a8c301.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel, 3.5t gross weight, 2002, EURO-III, regional delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.01959990540124291</meanAmount>
+            <resultingAmount>0.01959990540124291</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020. Assume 45% Urban, 45% Rural, 10% Long-haul. Assume 10% of diesel Euro 6 powertrains are hybrids</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>
