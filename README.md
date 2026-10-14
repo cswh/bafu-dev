@@ -23,6 +23,7 @@ Published at `https://cswh.github.io/bafu-dev/` (GitHub Pages, served from the `
   `https://cswh.github.io/bafu-dev/pages/<dataset>/process/<uuid>/`
   e.g. `https://cswh.github.io/bafu-dev/pages/bafu_2026_v1/process/0004e814-c18d-42e2-a3f7-ce1fa51a3c2c/`
 - A process page shows the raw XML of every available raw format of that dataset side by side (e.g. EcoSpold1 nexus v1, ILCD nexus v1 and ILCD nexus v2), plus direct links to the raw files.
+- The exchanges table lists every exchange of the EcoSpold1 file as reference and one row per raw format (EcoSpold1, ILCD nexus v1, ILCD nexus v2, ...), with a Source column indicating the origin of each row. It supports full-text filtering, dropdown filters (source, direction, sphere) and column sorting; a raw button per row shows the raw `<exchange>` XML fetched from the corresponding raw file.
 
 ## Regenerating the site
 
