@@ -344,61 +344,78 @@ def flag(a, b, cmp=None):
     return ok, cls
 
 
-def build_exchange_table(eco, ilcd):
-    pairs, orphans = match_exchanges(eco, ilcd)
+def build_exchange_rows(eco_ex, ilcd_sources):
+    """ilcd_sources: list of (key, label, exchanges). Returns rows, summary, details."""
     rows = []
-    for idx, (e, x, score) in enumerate(pairs):
-        bs = biosphere_or_technosphere(e, x)
-        matched = x is not None
-        cells = []
-        # name
-        ok, cls = flag(e["name"], x["name"] if x else None)
-        cells.append(f'<td class="{cls}">{fmt_val(e["name"])}<div class="ilcd">{fmt_val(x["name"] if x else None)}</div></td>')
-        # direction
-        ok, cls = flag(e["direction"], x["direction"] if x else None)
-        cells.append(f'<td class="{cls}">{fmt_val(e["direction"])}<div class="ilcd">{fmt_val(x["direction"] if x else None)}</div></td>')
-        # amount
-        ok_amt, cls = (True, "ok") if not matched else flag(e["amount"], x["amount"], num_eq)
-        cells.append(f'<td class="{cls}">{fmt_val(e["amount"])}<div class="ilcd">{fmt_val(x["amount"] if x else None)}</div></td>')
-        # unit
-        ok_unit, cls = (True, "ok") if not matched else flag(e["unit"], x["unit"])
-        cells.append(f'<td class="{cls}">{fmt_val(e["unit"])}<div class="ilcd">{fmt_val(x["unit"] if x else None)}</div></td>')
-        # category / compartment
+    details = {}
+    matched_counts = {}
+    orphan_counts = {}
+    for gi, e in enumerate(eco_ex):
         eco_cat = (e.get("category") or "") + ((" / " + e["subcategory"]) if e.get("subcategory") else "")
-        ilcd_cat = " / ".join(x["category"]) if x and x.get("category") else ""
-        ok_cat, cls = (True, "ok") if not matched else flag(eco_cat, ilcd_cat)
-        cells.append(f'<td class="{cls}">{esc(eco_cat)}<div class="ilcd">{fmt_val(ilcd_cat)}</div></td>')
-        # location
-        ok_loc, cls = (True, "ok") if not matched else flag(e["location"], x["location"])
-        cells.append(f'<td class="{cls}">{fmt_val(e["location"])}<div class="ilcd">{fmt_val(x["location"] if x else None)}</div></td>')
-        # biosphere/technosphere
-        cells.append(f'<td>{bs}</td>')
-        # detail link
-        cells.append(f'<td><button class="detail-btn" data-ex="{idx}">raw</button></td>')
-        rows.append("<tr>" + "".join(cells) + "</tr>")
-    for x in orphans:
-        cells = [
-            f'<td class="missing">no EcoSpold1 counterpart<div class="ilcd">{fmt_val(x["name"])}</div></td>',
-            f'<td>{fmt_val(x["direction"])}</td>',
-            f'<td>{fmt_val(x["amount"])}</td>',
-            f'<td>{fmt_val(x["unit"])}</td>',
-            f'<td>{fmt_val(" / ".join(x["category"]) if x.get("category") else "")}</td>',
-            f'<td>{fmt_val(x["location"])}</td>',
-            '<td>?</td>',
-            '<td></td>',
-        ]
-        rows.append('<tr class="orphan">' + "".join(cells) + "</tr>")
-    unmatched = sum(1 for _, x, _ in pairs if x is None)
-    summary = f"{len(pairs)} EcoSpold1 exchanges, {len(pairs) - unmatched} matched in ILCD, {unmatched} unmatched, {len(orphans)} ILCD-only"
-    detail_data = []
-    for e, x, _ in pairs:
-        detail_data.append({"eco": e["index"], "ilcd": x["index"] if x else None})
-    for x in orphans:
-        detail_data.append({"eco": None, "ilcd": x["index"]})
-    return rows, summary, detail_data
+        d = {"eco": e["index"]}
+        rows.append({
+            "group": gi, "source": "EcoSpold1", "ref": True,
+            "name": e["name"], "direction": e["direction"], "amount": e["amount"],
+            "unit": e["unit"], "cat": eco_cat, "location": e["location"],
+            "sphere": biosphere_or_technosphere(e, None), "raw": ("eco", e["index"]),
+        })
+        for key, label, ilcd in ilcd_sources:
+            x = None
+            for xx in ilcd:
+                if xx.get("_matched_group") == gi:
+                    x = xx
+                    break
+            if x is not None:
+                matched_counts[label] = matched_counts.get(label, 0) + 1
+                ilcd_cat = " / ".join(x["category"]) if x.get("category") else ""
+                d[key] = x["index"]
+                rows.append({
+                    "group": gi, "source": label, "ref": False,
+                    "name": x["name"], "direction": x["direction"], "amount": x["amount"],
+                    "unit": x["unit"], "cat": ilcd_cat, "location": x["location"],
+                    "sphere": biosphere_or_technosphere(e, x), "raw": (key, x["index"]),
+                })
+            else:
+                rows.append({
+                    "group": gi, "source": label, "ref": False,
+                    "name": None, "direction": e["direction"], "amount": None,
+                    "unit": None, "cat": None, "location": None,
+                    "sphere": None, "raw": (key, None),
+                })
+        details[gi] = d
+    for key, label, ilcd in ilcd_sources:
+        for x in ilcd:
+            if x.get("_matched_group") is None:
+                orphan_counts[label] = orphan_counts.get(label, 0) + 1
+                rows.append({
+                    "group": None, "source": label, "ref": False,
+                    "name": x["name"], "direction": x["direction"], "amount": x["amount"],
+                    "unit": x["unit"],
+                    "cat": " / ".join(x["category"]) if x.get("category") else "",
+                    "location": x["location"], "sphere": "Biosphere" if x.get("type") and "Elementary" in x["type"] else "Technosphere",
+                    "raw": (key, x["index"]),
+                })
+    parts = [f"{len(eco_ex)} EcoSpold1 exchanges"]
+    for key, label, ilcd in ilcd_sources:
+        m = matched_counts.get(label, 0)
+        o = orphan_counts.get(label, 0)
+        parts.append(f"{label}: {m} matched, {len(eco_ex) - m} unmatched, {o} ILCD-only")
+    summary = "; ".join(parts)
+    return rows, summary, details
 
 
-def build_process_page(entry, formats, eco_exchanges, ilcd_exchanges, ilcd_ctx):
+def tag_sources(ilcd_sources, eco_ex):
+    """Attach matched group ids to each ILCD exchange of each source."""
+    for key, label, ilcd in ilcd_sources:
+        pairs, orphans = match_exchanges(eco_ex, ilcd)
+        for x in ilcd:
+            x["_matched_group"] = None
+        for gi, (e, x, score) in enumerate(pairs):
+            if x is not None:
+                x["_matched_group"] = gi
+
+
+def build_process_page(entry, formats, eco_ex, ilcd_sources):
     uid = entry["uuid"]
     ds = entry["dataset"]
     name = entry.get("name") or uid
@@ -427,13 +444,16 @@ def build_process_page(entry, formats, eco_exchanges, ilcd_exchanges, ilcd_ctx):
         for _, title, rel in formats
     )
     cls = "many" if len(formats) > 3 else ("three" if len(formats) == 3 else "two")
-    ex_rows, ex_summary, ex_details = build_exchange_table(eco_exchanges, ilcd_exchanges)
-    details_json = json.dumps(ex_details, ensure_ascii=False)
-    eco_fmt_url = next((f for f in formats if f[0].startswith("ecospold")), None)
-    ilcd_fmt_url = next((f for f in formats if f[0].startswith("ilcd")), None)
-    eco_url_json = json.dumps(BASE_PATH + eco_fmt_url[2].format(u=uid)) if eco_fmt_url else "null"
-    ilcd_url_json = json.dumps(BASE_PATH + ilcd_fmt_url[2].format(u=uid)) if ilcd_fmt_url else "null"
-    ex_table = "".join(ex_rows)
+    rows, ex_summary, details = build_exchange_rows(eco_ex, ilcd_sources)
+    rows_json = json.dumps([{**{k: r[k] for k in ("group","source","ref","name","direction","amount","unit","cat","location","sphere")}, "raw": [r["raw"][0], r["raw"][1]]} for r in rows], ensure_ascii=False)
+    details_json = json.dumps(details, ensure_ascii=False)
+    source_urls = {}
+    eco_fmt = next((f for f in formats if f[0].startswith("ecospold")), None)
+    if eco_fmt:
+        source_urls["eco"] = BASE_PATH + eco_fmt[2].format(u=uid)
+    for i, f in enumerate(f for f in formats if f[0].startswith("ilcd")):
+        source_urls[f[0]] = BASE_PATH + f[2].format(u=uid)
+    urls_json = json.dumps(source_urls, ensure_ascii=False)
     body = f"""
 <header>
   {back}
@@ -445,62 +465,52 @@ def build_process_page(entry, formats, eco_exchanges, ilcd_exchanges, ilcd_ctx):
   <p class="links">{raw_links}</p>
 </section>
 <section class="exchanges">
-  <h2>Exchanges (EcoSpold1 reference vs ILCD)</h2>
+  <h2>Exchanges</h2>
   <p class="ex-summary">{esc(ex_summary)}</p>
-  <p class="legend">Each cell shows the <strong>EcoSpold1</strong> value on top and the <strong>ILCD</strong> value below; <span class="ok">green</span> = identical, <span class="diff">red</span> = different, <span class="missing">&mdash;</span> = missing.</p>
-  <div class="tbl-wrap"><table class="ex-table">
-    <thead><tr><th>Flow name</th><th>Direction</th><th>Amount</th><th>Unit</th><th>Category / compartment</th><th>Location</th><th>Sphere</th><th>Raw</th></tr></thead>
-    <tbody>{ex_table}</tbody>
+  <div class="ex-controls">
+    <input type="search" id="ex-q" placeholder="Filter by name, category, unit&hellip;" aria-label="Filter exchanges">
+    <select id="ex-source" aria-label="Filter by source"><option value="">Source: all</option></select>
+    <select id="ex-direction" aria-label="Filter by direction"><option value="">Direction: all</option><option>Input</option><option>Output</option></select>
+    <select id="ex-sphere" aria-label="Filter by sphere"><option value="">Sphere: all</option><option>Biosphere</option><option>Technosphere</option></select>
+    <select id="ex-sort" aria-label="Sort by">
+      <option value="group">Sort: file order</option>
+      <option value="name">Sort: name</option>
+      <option value="source">Sort: source</option>
+      <option value="direction">Sort: direction</option>
+      <option value="amount">Sort: amount</option>
+      <option value="unit">Sort: unit</option>
+      <option value="cat">Sort: category</option>
+      <option value="location">Sort: location</option>
+      <option value="sphere">Sort: sphere</option>
+    </select>
+    <label><input type="checkbox" id="ex-desc"> descending</label>
+  </div>
+  <div class="tbl-wrap"><table class="ex-table" id="ex-table">
+    <thead><tr>
+      <th data-key="name">Flow name</th><th data-key="source">Source</th><th data-key="direction">Direction</th>
+      <th data-key="amount">Amount</th><th data-key="unit">Unit</th><th data-key="cat">Category / compartment</th>
+      <th data-key="location">Location</th><th data-key="sphere">Sphere</th><th>Raw</th>
+    </tr></thead>
+    <tbody></tbody>
   </table></div>
+  <p class="ex-count" id="ex-count"></p>
   <div id="ex-detail" class="ex-detail" hidden>
     <button id="ex-detail-close">&times;</button>
-    <div class="panes">
-      <div><h3>EcoSpold1 exchange (raw)</h3><pre id="detail-eco"></pre></div>
-      <div><h3>ILCD exchange (raw)</h3><pre id="detail-ilcd"></pre></div>
-    </div>
+    <div class="panes" id="detail-panes"></div>
   </div>
 </section>
 <section class="compare {cls}">
 {panes}
 </section>
-<script>
-(function() {{
-  var details = {details_json};
-  var box = document.getElementById("ex-detail");
-  var ecoEl = document.getElementById("detail-eco");
-  var ilcdEl = document.getElementById("detail-ilcd");
-  var ecoUrl = {eco_url_json};
-  var ilcdUrl = {ilcd_url_json};
-  var cache = {{}};
-  function extractNth(xmlText, tagName, n) {{
-    var doc = new DOMParser().parseFromString(xmlText, "application/xml");
-    var els = doc.getElementsByTagName(tagName);
-    return els.length > n ? new XMLSerializer().serializeToString(els[n]) : null;
-  }}
-  function load(url, n, tagName, target) {{
-    if (n === null || n === undefined) {{ target.textContent = "(no counterpart in this format)"; return Promise.resolve(); }}
-    if (cache[url]) {{ target.textContent = extractNth(cache[url], tagName, n) || "(exchange not found)"; return Promise.resolve(); }}
-    return fetch(url).then(function(r) {{ return r.text(); }}).then(function(t) {{
-      cache[url] = t;
-      target.textContent = extractNth(t, tagName, n) || "(exchange not found)";
-    }}).catch(function() {{ target.textContent = "(failed to load raw file)"; }});
-  }}
-  document.querySelectorAll(".detail-btn").forEach(function(btn) {{
-    btn.addEventListener("click", function() {{
-      var d = details[parseInt(this.getAttribute("data-ex"), 10)];
-      ecoEl.textContent = "loading...";
-      ilcdEl.textContent = "loading...";
-      load(ecoUrl, d.eco, "exchange", ecoEl);
-      load(ilcdUrl, d.ilcd, "exchange", ilcdEl);
-      box.hidden = false;
-    }});
-  }});
-  document.getElementById("ex-detail-close").addEventListener("click", function() {{ box.hidden = true; }});
-}})();
-</script>
+<script src="{BASE_PATH}assets/exchanges.js"></script>
 </main>
 """
-    return page_shell(name, body, f"{BASE_PATH}assets/process.css")
+    payload_json = json.dumps(
+        {"rows": json.loads(rows_json), "details": json.loads(details_json), "urls": json.loads(urls_json)},
+        ensure_ascii=False,
+    ).replace("</", "<" + chr(92) + "/")
+    payload = '<script type="application/json" id="ex-data">' + payload_json + '</script>'
+    return page_shell(name, payload + body, f"{BASE_PATH}assets/process.css")
 
 
 def write_root_site(datasets, indexes):
@@ -535,28 +545,31 @@ def write_process_pages(dataset, index, formats):
         shutil.rmtree(proc_dir)
     os.makedirs(proc_dir)
     eco_fmt = next((f for f in formats if f[0].startswith("ecospold")), None)
-    ilcd_fmt = next((f for f in formats if f[0].startswith("ilcd")), None)
-    ilcd_ctx = None
-    if ilcd_fmt:
-        ilcd_base = os.path.join(RAW_DATA, dataset, "openlca_ilcd_export", "nexus_version_1", "ILCD")
-        if os.path.isdir(ilcd_base):
-            ilcd_ctx = load_ilcd_context(ilcd_base)
+    ilcd_fmts = [f for f in formats if f[0].startswith("ilcd")]
+    ctxs = {}
+    for f in ilcd_fmts:
+        nv = f[0].replace("ilcd", "")
+        ilcd_base = os.path.join(RAW_DATA, dataset, "openlca_ilcd_export", f"nexus_version_{nv}", "ILCD")
+        ctxs[f[0]] = load_ilcd_context(ilcd_base) if os.path.isdir(ilcd_base) else None
     for entry in index:
         uid = entry["uuid"]
         eco_ex = []
-        ilcd_ex = []
         if eco_fmt:
             eco_path = os.path.join(ROOT, eco_fmt[2].format(u=uid))
             if os.path.exists(eco_path):
                 eco_ex = parse_eco_exchanges(eco_path)
-        if ilcd_fmt and ilcd_ctx:
-            ilcd_path = os.path.join(ROOT, ilcd_fmt[2].format(u=uid))
-            if os.path.exists(ilcd_path):
-                ilcd_ex = parse_ilcd_exchanges(ilcd_path, ilcd_ctx)
+        ilcd_sources = []
+        for f in ilcd_fmts:
+            path = os.path.join(ROOT, f[2].format(u=uid))
+            exs = []
+            if os.path.exists(path) and ctxs.get(f[0]):
+                exs = parse_ilcd_exchanges(path, ctxs[f[0]])
+            ilcd_sources.append((f[0], f[1], exs))
+        tag_sources(ilcd_sources, eco_ex)
         d = os.path.join(proc_dir, uid)
         os.makedirs(d)
         with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as f:
-            f.write(build_process_page(entry, formats, eco_ex, ilcd_ex, ilcd_ctx))
+            f.write(build_process_page(entry, formats, eco_ex, ilcd_sources))
 
 
 def cleanup_stale(datasets):
