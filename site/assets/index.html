@@ -3,20 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BAFU 2026 v1 &ndash; Process datasets</title>
+<title>BAFU process datasets</title>
 <link rel="stylesheet" href="/bafu-dev/assets/style.css">
 </head>
 <body>
-<h1>BAFU 2026 v1 &ndash; Process datasets</h1>
+<h1>BAFU process datasets</h1>
+<!--VERSIONS-->
 <p id="count">Loading&hellip;</p>
 <div id="controls">
   <input type="search" id="q" placeholder="Search name, UUID, category, subcategory&hellip;" aria-label="Search processes">
+  <select id="dataset" aria-label="Filter by BAFU version"><option value="">BAFU version: all</option></select>
   <select id="location" aria-label="Filter by location"><option value="">Location: all</option></select>
   <select id="unit" aria-label="Filter by reference unit"><option value="">Unit: all</option></select>
   <select id="category" aria-label="Filter by category"><option value="">Category: all</option></select>
   <select id="subcategory" aria-label="Filter by subcategory"><option value="">Subcategory: all</option></select>
   <select id="sort" aria-label="Sort by">
     <option value="name">Sort: name</option>
+    <option value="dataset">Sort: BAFU version</option>
     <option value="location">Sort: location</option>
     <option value="unit">Sort: reference unit</option>
     <option value="category">Sort: category</option>
@@ -30,6 +33,7 @@
   <thead>
     <tr>
       <th data-key="name">Name</th>
+      <th data-key="dataset">BAFU version</th>
       <th data-key="location">Location</th>
       <th data-key="unit">Reference unit</th>
       <th data-key="category">Category</th>
