@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>37ceb7de-6da9-365f-982c-4e7ad4709162</common:UUID>
+            <name>
+                <baseName xml:lang="en">Railway track, in tunnel, single track</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="2279f95c-4711-3ee2-8393-0e7a7bbfe8d1">transport systems</common:class>
+                    <common:class level="1" classId="ebb37c1f-868d-3172-8f6e-d9d8b5f9a869">train</common:class>
+                    <common:class level="2" classId="889ab627-885b-3632-9c3f-a7423e8bdfe0">operations</common:class>
+                    <common:class level="3" classId="9af64804-ec61-3831-af66-f8a70034373a">infrastructure</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The starting point for the tunnel inventory is a double-track railway tunnel as described in Damián &amp; Zamorano (2022). This is a tunnel for high-speed trains with a free cross-sectional area of 85m2. The inventory includes the materials and energy used to drill and blast the tunnel as well as the tunnel materials. This data was supplemented with information from the GrETu study (EBP Schweiz AG, 2023). In particular, the drive systems used to construct the railway tunnels opened between 2000 and 2020 were taken into account. Approximately one third of the tunnel kilometres were built with blasting propulsion during this period. The amount of explosives required was reduced accordingly. In addition, the amount of energy and the breakdown into diesel and electricity were adjusted in line with the information from the GrETu study. The ecoinvent standard values were used for transport distances for material deliveries. The inventory does not include maintenance or disposal. The material quantities are heavily dependent on the rock or the RMR value (RMR - Rock Mass Rating). In order to obtain an average inventory, the average of the 5 RMR classes was calculated.
+
+The inventory also includes the rails, concrete sleepers, safety systems and traction current system according to SBB (pers. comm., SBB, 2024).
+
+In the SCHIG report (SCHIG mbH, 2022), the ratio of concrete quantities between single and double-track tunnels is 1.319. This conversion factor was used to form the inventory for the single-track tunnel. 
+
+The service life of a tunnel is 135 years according to SBB (pers. comm., SBB, 2024). The service life of the rails is 25 years and that of the sleepers 40 years. After that, refurbishment or new construction is due. Maintenance, refurbishment or dismantling was not taken into account in these inventories.; UUID:37ceb7de-6da9-365f-982c-4e7ad4709162</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1640991600000" olca:endDate="1704063600000">
+            <common:referenceYear>2022</common:referenceYear>
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Data apply to construction in Switzerland. </descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Average technology available on the market\n\n# Included processes\nThe inventory includes all the materials, energy and transport necessary for constructing a single track railway tunnel. Excluded are maintenance and disposal</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="4dcfa07c-f7d5-3b75-9b10-80e93a7da44b" version="00.00.000" uri="../sources/4dcfa07c-f7d5-3b75-9b10-80e93a7da44b.xml">
+                <common:shortDescription xml:lang="en">2024 - LCA railway infrastructure - Kaegi</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">based on literature </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">01.10.2024 \\tsclient\Schreibtisch\WinShare\BAV Gleisinfrastruktur\Ecospold\[EcoSpold_Railway track in tunnel v0.2.xlsx]X-Process</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="904c837f-e400-3310-88d9-910ab1423ce4" version="00.00.000" uri="../contacts/904c837f-e400-3310-88d9-910ab1423ce4.xml">
+                    <common:shortDescription xml:lang="en">Thomas Kaegi</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="ce9afe80-a479-3dfb-8df3-6d33b1c84680" version="00.00.000" uri="../contacts/ce9afe80-a479-3dfb-8df3-6d33b1c84680.xml">
+                <common:shortDescription xml:lang="en">Gavin Roberts</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:54:20.545+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="904c837f-e400-3310-88d9-910ab1423ce4" version="00.00.000" uri="../contacts/904c837f-e400-3310-88d9-910ab1423ce4.xml">
+                <common:shortDescription xml:lang="en">Thomas Kaegi</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T10:02:59.493+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.008</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="4dcfa07c-f7d5-3b75-9b10-80e93a7da44b" version="00.00.000" uri="../sources/4dcfa07c-f7d5-3b75-9b10-80e93a7da44b.xml">
+                <common:shortDescription xml:lang="en">2024 - LCA railway infrastructure - Kaegi</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b2f2d26b-5a36-3c36-8bd0-312f9925e4a2" olca:pedigreeUncertainty="(2;1;1;3;3;5)" olca:amount="164.75">
+            <referenceToFlowDataSet type="flow data set" refObjectId="69965873-7c6b-3641-9aa1-868e28db2d32" version="00.00.000" uri="../flows/69965873-7c6b-3641-9aa1-868e28db2d32.xml">
+                <common:shortDescription xml:lang="en">Stretch blow moulding</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>164.75</meanAmount>
+            <resultingAmount>164.75</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,3,3,5,BU:1.05); PP geotextile and fibres; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="09cda8b1-b652-39b2-8761-c93aecc29f70" olca:pedigreeUncertainty="(2;1;1;3;3;5)" olca:amount="164.75">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d0f3397a-c71a-361f-9c4a-8088a46bc8f3" version="00.00.000" uri="../flows/d0f3397a-c71a-361f-9c4a-8088a46bc8f3.xml">
+                <common:shortDescription xml:lang="en">Polypropylene, granulate, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>164.75</meanAmount>
+            <resultingAmount>164.75</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,3,3,5,BU:1.05); PP geotextile and fibres; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="27e791d7-abd8-399c-a405-41b994be6cc1" olca:pedigreeUncertainty="(2;1;1;3;3;5)" olca:amount="24916.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f3aaa415-4a14-34da-85ea-c85c8c08e0e7" version="00.00.000" uri="../flows/f3aaa415-4a14-34da-85ea-c85c8c08e0e7.xml">
+                <common:shortDescription xml:lang="en">Electricity, medium voltage, SBB, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>89697.6</meanAmount>
+            <resultingAmount>89697.6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,3,3,5,BU:1.05); Electricity consumption for construction; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="305b1615-5345-3437-8c6d-ef1938ab0be4" olca:pedigreeUncertainty="(2;1;1;3;3;5)" olca:amount="174780.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c0881ebd-397d-3038-b14c-2168e3ced39e" version="00.00.000" uri="../flows/c0881ebd-397d-3038-b14c-2168e3ced39e.xml">
+                <common:shortDescription xml:lang="en">Diesel, burned in building machine, with particle filter</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>174780.0</meanAmount>
+            <resultingAmount>174780.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4487580888471339</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,3,3,5,BU:2); Diesel consumption for construction (43.7MJ/L); </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="36f2eccd-a31b-330a-b685-b87163460c36" olca:pedigreeUncertainty="(2;1;1;3;3;5)" olca:amount="632.96">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6d53d8ea-f574-3bf9-b67f-b20e24684a57" version="00.00.000" uri="../flows/6d53d8ea-f574-3bf9-b67f-b20e24684a57.xml">
+                <common:shortDescription xml:lang="en">Polyvinylchloride, at regional storage</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>632.96</meanAmount>
+            <resultingAmount>632.96</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,3,3,5,BU:1.05); PVC sheets and pipes; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:defaultProvider="9dc7ef6a-1dcc-3968-b7ac-675141e0f5fa" olca:pedigreeUncertainty="(2;1;1;3;3;5)" olca:amount="224.86">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aac618df-1174-3507-9bd0-46e66c40e1e7" version="00.00.000" uri="../flows/aac618df-1174-3507-9bd0-46e66c40e1e7.xml">
+                <common:shortDescription xml:lang="en">Concrete, normal, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>224.86</meanAmount>
+            <resultingAmount>224.86</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,3,3,5,BU:1.05); Normal concrete; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="0c4cff21-9b05-3ebf-bde2-fe4919628d27" olca:pedigreeUncertainty="(2;1;1;3;3;5)" olca:amount="192.02">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4bcba50d-59f9-3f54-be02-7c0c102a479b" version="00.00.000" uri="../flows/4bcba50d-59f9-3f54-be02-7c0c102a479b.xml">
+                <common:shortDescription xml:lang="en">Extrusion, plastic pipes</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>192.02</meanAmount>
+            <resultingAmount>192.02</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,3,3,5,BU:1.05); PVC pipes; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="9ed430d8-92ed-30ed-920d-a26d29d38d91" olca:pedigreeUncertainty="(2;1;1;3;3;5)" olca:amount="440.95">
+            <referenceToFlowDataSet type="flow data set" refObjectId="957ea419-51ef-33eb-a2b6-58f488ee55a1" version="00.00.000" uri="../flows/957ea419-51ef-33eb-a2b6-58f488ee55a1.xml">
+                <common:shortDescription xml:lang="en">Calendering, rigid sheets</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>440.95</meanAmount>
+            <resultingAmount>440.95</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,3,3,5,BU:1.05); PVC sheets; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b9430f24-d0b9-3422-a5ad-f874acbbef18" olca:pedigreeUncertainty="(2;1;1;3;3;5)" olca:amount="7085.7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="740db303-1a44-378b-83ae-6d7423e622cf" version="00.00.000" uri="../flows/740db303-1a44-378b-83ae-6d7423e622cf.xml">
+                <common:shortDescription xml:lang="en">Steel, low-alloyed, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7085.7</meanAmount>
+            <resultingAmount>7085.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,3,3,5,BU:1.05); Structural sections, bars, wire rods; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="8cbb4edb-d76c-41f7-8b30-cc789217c954" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4530e6ba-99ed-357a-8812-1e3c5eea4d54" version="00.00.008" uri="../flows/4530e6ba-99ed-357a-8812-1e3c5eea4d54.xml">
+                <common:shortDescription xml:lang="en">Railway track, in tunnel, single track</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:defaultProvider="8b50e56e-4dbe-39f2-bcb9-35f2e18914c1" olca:pedigreeUncertainty="(2;1;1;3;3;5)" olca:amount="2.4286">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cd3c9fa9-2b30-348b-a498-146da397d2df" version="00.00.000" uri="../flows/cd3c9fa9-2b30-348b-a498-146da397d2df.xml">
+                <common:shortDescription xml:lang="en">Concrete, exacting, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.4286</meanAmount>
+            <resultingAmount>2.4286</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,3,3,5,BU:1.05); Precast concrete; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b38bbde0-a4b0-347f-8136-ce520abfa557" olca:pedigreeUncertainty="(2;1;1;3;3;5)" olca:amount="496.27">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0cce7489-6fcc-315f-94e7-a274ad613444" version="00.00.000" uri="../flows/0cce7489-6fcc-315f-94e7-a274ad613444.xml">
+                <common:shortDescription xml:lang="en">Reinforcing steel, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>496.27</meanAmount>
+            <resultingAmount>496.27</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,3,3,5,BU:1.05); Steel fibres; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="85b3a5a6-2635-3546-b51b-4ccad397650b" olca:pedigreeUncertainty="(4;1;3;2;3;5)" olca:amount="11272.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="92f1a04f-c637-3a36-b7f5-7df5e5ac3408" version="00.00.022" uri="../flows/92f1a04f-c637-3a36-b7f5-7df5e5ac3408.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, 16t-32t gross weight, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>11272.0</meanAmount>
+            <resultingAmount>11272.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4679237037394006</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,3,2,3,5,BU:2); Material transportation to construction site; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="8cbb4edb-d76c-41f7-8b30-cc789217c954" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="1071deb4-03cd-3447-966d-c567d0722a86" olca:pedigreeUncertainty="(2;1;1;1;1;5)" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="652029a8-d038-3ab7-91a0-5f624fef386b" version="00.00.008" uri="../flows/652029a8-d038-3ab7-91a0-5f624fef386b.xml">
+                <common:shortDescription xml:lang="en">Safety system, single track</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1023611023616535</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,1,1,5,BU:1.05); ; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="a169f230-3e05-33d0-a12d-f9d6d4d6abf1" olca:pedigreeUncertainty="(4;1;3;2;3;5)" olca:amount="6481.1">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f9e371c1-b7aa-3519-8a79-cee28b230151" version="00.00.000" uri="../flows/f9e371c1-b7aa-3519-8a79-cee28b230151.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, rail, electricity with shunting</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6481.1</meanAmount>
+            <resultingAmount>6481.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4679237037394006</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,3,2,3,5,BU:2); Material transportation to construction site; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="0997435b-c105-30ad-8320-1f28033fbb13" olca:pedigreeUncertainty="(2;1;1;3;3;5)" olca:amount="4560.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7925a3c0-a564-300b-9946-69329d57e49d" version="00.00.008" uri="../flows/7925a3c0-a564-300b-9946-69329d57e49d.xml">
+                <common:shortDescription xml:lang="en">Rail, at regional storage</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4560.0</meanAmount>
+            <resultingAmount>4560.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,3,3,5,BU:1.05); 57 kg per single rail and metre; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="8192cd30-4b43-3fa6-9bfe-57fd394849c5" olca:pedigreeUncertainty="(2;1;1;3;3;5)" olca:amount="204.68">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a958d2d9-3ca0-39cb-8c27-8fa56fa09ad8" version="00.00.000" uri="../flows/a958d2d9-3ca0-39cb-8c27-8fa56fa09ad8.xml">
+                <common:shortDescription xml:lang="en">Explosives, tovex, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>204.68</meanAmount>
+            <resultingAmount>204.68</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,3,3,5,BU:1.05); ; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="8cbb4edb-d76c-41f7-8b30-cc789217c954" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="01f0338d-f68b-3566-ad11-aec65c82c85d" olca:pedigreeUncertainty="(2;1;1;1;1;5)" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="09a21190-dd9a-362f-8d40-1c254e80b091" version="00.00.008" uri="../flows/09a21190-dd9a-362f-8d40-1c254e80b091.xml">
+                <common:shortDescription xml:lang="en">Traction power system, single track</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1023611023616535</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,1,1,5,BU:1.05); ; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="9051c306-fb38-3b43-9959-0ef4a5cc9651" olca:pedigreeUncertainty="(2;1;1;3;3;5)" olca:amount="41.667">
+            <referenceToFlowDataSet type="flow data set" refObjectId="75758c09-5590-36e7-b1d1-82143f988fde" version="00.00.008" uri="../flows/75758c09-5590-36e7-b1d1-82143f988fde.xml">
+                <common:shortDescription xml:lang="en">Concrete sleeper, at regional storage</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>41.667</meanAmount>
+            <resultingAmount>41.667</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,3,3,5,BU:1.05); ; </generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

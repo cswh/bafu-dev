@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>bf3edfd6-d2bc-3885-8acb-5c718d43ae2d</common:UUID>
+            <name>
+                <baseName xml:lang="en">Carbon dioxide, captured from atmosphere, with adsorbent-based direct air capture system, operated with HP, 100kt CO2</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="c3652903-5cc5-3b77-aabb-625d30a0937f">chemicals</common:class>
+                    <common:class level="1" classId="4aee4e4c-41c5-39b3-9ed0-a21b07b51cda">gases</common:class>
+                    <common:class level="2" classId="958b0e17-611a-3933-b6b0-42678b318d23">transformation</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Direct Air Capture (DAC) of CO2 through temperature-vacuum swing adsorption. This DAC process uses adsorbents to capture CO2 from the air and separates it through vacuum and low-temperature heating. Climeworks provides data from its commercial DAC plants, which consist of multiple CO2 collectors and heat exchangers, capturing and releasing CO2 in cyclic operations. The solid sorbent used here is Amine on Silica. It can be regenerated at low temperatures (80-120C). For the sorbent system, the LCI data are collected from the work of Deutz and Bardow based on the Climeworks system. The LCI data represent a plant with an annual capacity of 100 kt CO2/year and a lifetime of 20 years. 
+
+Source: Deutz, S., Bardow, A. Life-cycle assessment of an industrial direct air capture process based on temperature-vacuum swing adsorption. Nat Energy 6, (2021). https://doi.org/10.1038/s41560-020-00771-9. Assumes "future" electricity consumption of 0.5 kWh/kg CO2 captured as per Deutz and Bardow, 2021. Current electricity consumption is closer to 0.7 kWh/kg CO2 captured. Future heat demand is 5.4 MJ/kg CO2 captured, as per Deutz and Bardow, 2021. The current demand is closer to 11.9. Future MEA consumption is 3 kg/t CO2 captured. Current consumption is closer to 7 kg/t CO2 captured, as per Deutz and Bardow, 2021.
+UUID: bf3edfd6-d2bc-3885-8acb-5c718d43ae2d</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1704063600000" olca:endDate="1704063600000">
+            <common:referenceYear>2024</common:referenceYear>
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305"/>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">&lt;null&gt;</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="0c114b47-2f0e-36ef-8bdb-16d536f9f5f2" version="00.00.000" uri="../sources/0c114b47-2f0e-36ef-8bdb-16d536f9f5f2.xml">
+                <common:shortDescription xml:lang="en">2024 - LCA power-to-X in residential sector - Sacchi</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Sampling procedure: Literature data</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: Passed, Other validation: none, Validator: Pierryves Padey, Telephone: +41 58 462 93 11, E-mail: pierryves.padey@bafu.admin.ch, Company: Federal Office for the Environment, Country: CH</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1487cf9-01c0-3287-829f-d7950fde8183" version="00.00.000" uri="../contacts/b1487cf9-01c0-3287-829f-d7950fde8183.xml">
+                    <common:shortDescription xml:lang="en">Pierryves Padey</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:53:40.840+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:34:10.909+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.004</common:dataSetVersion>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cc6a1abb-b123-4ca6-8f16-38209df609be" version="00.00.000" uri="../flows/cc6a1abb-b123-4ca6-8f16-38209df609be.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, in air</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1734564329364767</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">CO2 uptake {1;5;1;2;3;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.021">
+            <referenceToFlowDataSet type="flow data set" refObjectId="73ed05cc-9727-4abf-9516-4b5c0fe54a16" version="00.00.000" uri="../flows/73ed05cc-9727-4abf-9516-4b5c0fe54a16.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, non-fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.021</meanAmount>
+            <resultingAmount>0.021</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1734564329364767</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">leak {1;5;1;2;3;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="954e73f3-648c-35d1-bc2b-d96c1f2de4c8" version="00.00.004" uri="../flows/954e73f3-648c-35d1-bc2b-d96c1f2de4c8.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, captured from atmosphere, with adsorbent-based direct air capture system, operated with HP, 100kt CO2</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">not defined</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="c4a92617-9f99-3d7b-95c0-15fb110b80ad" olca:amount="0.5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ec91f1d-db72-39ef-bbc0-46119b059efe" version="00.00.000" uri="../flows/7ec91f1d-db72-39ef-bbc0-46119b059efe.xml">
+                <common:shortDescription xml:lang="en">Electricity, low voltage, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.8</meanAmount>
+            <resultingAmount>1.8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1734564329364767</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">operational {1;5;1;2;3;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="6044f547-291d-347a-a07c-620a38e22934" olca:pedigreeUncertainty="(1;5;1;2;3;5)" olca:amount="5.4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f1974974-8172-375c-ad29-88fee0d09cf6" version="00.00.006" uri="../flows/f1974974-8172-375c-ad29-88fee0d09cf6.xml">
+                <common:shortDescription xml:lang="en">Heat, at heat pump, air-water, 50kW, CH electricity, in old building</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.4</meanAmount>
+            <resultingAmount>5.4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1734564329364767</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">operational, proxy used (no industrial HP in the database) {1;5;1;2;3;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="85d4e7c4-b589-3350-9f08-b9884934a01c" olca:amount="0.003">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fae06065-4d43-3125-af3a-8108f2c13bc8" version="00.00.006" uri="../flows/fae06065-4d43-3125-af3a-8108f2c13bc8.xml">
+                <common:shortDescription xml:lang="en">Amine-based silica production, for sorbent-based direct air capture system</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.003</meanAmount>
+            <resultingAmount>0.003</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1734564329364767</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">operational {1;5;1;2;3;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="7484b270-e065-46c4-9759-89c4d046dc52" olca:amount="5.0E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3690d831-7ecb-3051-89d6-ec5e2bc75545" version="00.00.006" uri="../flows/3690d831-7ecb-3051-89d6-ec5e2bc75545.xml">
+                <common:shortDescription xml:lang="en">Direct air capture system, sorbent-based, 100ktCO2</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.0E-10</meanAmount>
+            <resultingAmount>5.0E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7711578134090706</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">System</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="df1d4e3c-8c25-4b6d-8d2b-52d9abd4ab13" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ceb096f7-f976-33fa-a9b1-1623ca4a479d" version="00.00.004" uri="../flows/ceb096f7-f976-33fa-a9b1-1623ca4a479d.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide compression, transport and storage</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">CO2 sent for compression and storage</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="a169f230-3e05-33d0-a12d-f9d6d4d6abf1" olca:amount="0.0018">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f9e371c1-b7aa-3519-8a79-cee28b230151" version="00.00.000" uri="../flows/f9e371c1-b7aa-3519-8a79-cee28b230151.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, rail, electricity with shunting</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0018</meanAmount>
+            <resultingAmount>0.0018</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4859340496805369</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: over 600.0 km.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="eb5552ed-63a8-374d-8fa4-296f644c37f8" olca:amount="1.5E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f3e7a082-a8ab-3b86-8db2-3e46c3cb8a6c" version="00.00.022" uri="../flows/f3e7a082-a8ab-3b86-8db2-3e46c3cb8a6c.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, 16t-32t gross weight, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.5E-4</meanAmount>
+            <resultingAmount>1.5E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4859340496805369</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: over 50.0 km.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="47d6d122-ffd0-4d06-afc0-cc34e6796a0b" olca:amount="5.0E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b4be5165-c449-3903-90fd-3557b28fc925" version="00.00.000" uri="../flows/b4be5165-c449-3903-90fd-3557b28fc925.xml">
+                <common:shortDescription xml:lang="en">Treatment of direct air capture system, sorbent-based, 100ktCO2</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.0E-10</meanAmount>
+            <resultingAmount>5.0E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7711578134090706</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">EoL</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

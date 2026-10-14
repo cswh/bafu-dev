@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>87b749d0-8738-3dc5-b3ed-c54badc35f99</common:UUID>
+            <name>
+                <baseName xml:lang="en">Fuel cell stack production, 1 kWe, proton exchange membrane (PEM)</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="e70d2ea9-becd-32e6-9944-c946e949f129">fuels</common:class>
+                    <common:class level="1" classId="d3d5aec1-7214-3444-ab34-f2534f1733b6">synthetic</common:class>
+                    <common:class level="2" classId="834b3928-6ae5-3bec-8977-b23276555e6a">infrastructure</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">LCI for a PEMFC fuel cell stack system. Operational time was set to 20,000 h at power of 1 kWe. Due to the degradation effects the hydrogen consumption must be increased to always generate the power of 1 kWe. In the case of dynamic operational regime 5 replacements (Nd = 5) of the PEMFC stack are included (lifetime of 3'800 hours per stack). Source: Rok Stropnik, Nejc Mlakar, Andrej LotriÄ�, Mihael SekavÄ�nik, Mitja Mori, The influence of degradation effects in proton exchange membrane fuel cells on life cycle assessment modelling and environmental impact indicators, International Journal of Hydrogen Energy, Volume 47, Issue 57, 2022, https://doi.org/10.1016/j.ijhydene.2022.04.011
+
+ UUID: 87b749d0-8738-3dc5-b3ed-c54badc35f99</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1704063600000" olca:endDate="1704063600000">
+            <common:referenceYear>2024</common:referenceYear>
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="GLO"/>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">&lt;null&gt;</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="0c114b47-2f0e-36ef-8bdb-16d536f9f5f2" version="00.00.000" uri="../sources/0c114b47-2f0e-36ef-8bdb-16d536f9f5f2.xml">
+                <common:shortDescription xml:lang="en">2024 - LCA power-to-X in residential sector - Sacchi</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Sampling procedure: Literature data</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: Passed, Other validation: none, Validator: Rolf Frischknecht, Telephone: 0041 44 940 61 91, E-mail: frischknecht@treeze.ch, Company: treeze, Country: CH</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                    <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:52:25.916+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T09:04:42.943+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.006</common:dataSetVersion>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="9ff39b71-5d21-3756-85b8-76a08a064a12" olca:amount="0.147">
+            <referenceToFlowDataSet type="flow data set" refObjectId="09c4550a-54a4-3424-aa0f-d6862d0725b0" version="00.00.000" uri="../flows/09c4550a-54a4-3424-aa0f-d6862d0725b0.xml">
+                <common:shortDescription xml:lang="en">Transport, barge tanker</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.147</meanAmount>
+            <resultingAmount>0.147</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4859340496805369</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: 0.49 kg over 300.0 km.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="85b3a5a6-2635-3546-b51b-4ccad397650b" olca:amount="0.9028">
+            <referenceToFlowDataSet type="flow data set" refObjectId="92f1a04f-c637-3a36-b7f5-7df5e5ac3408" version="00.00.022" uri="../flows/92f1a04f-c637-3a36-b7f5-7df5e5ac3408.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, 16t-32t gross weight, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.9028</meanAmount>
+            <resultingAmount>0.9028</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4859340496805369</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: 0.56 kg over 1600.0 km.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="47f77cec-3512-394d-b274-b351c225d996" olca:amount="8.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d9ee93d3-65b0-3f57-9490-2bfcb119dd14" version="00.00.000" uri="../flows/d9ee93d3-65b0-3f57-9490-2bfcb119dd14.xml">
+                <common:shortDescription xml:lang="en">Carbon black, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.0E-4</meanAmount>
+            <resultingAmount>8.0E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6015617378046967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{5;5;5;5;5;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="e8610445-cb47-3f69-8bd9-d2d580fd8e45" olca:amount="0.07">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1478d130-8790-359a-a9a3-7fb7ad779fae" version="00.00.006" uri="../flows/1478d130-8790-359a-a9a3-7fb7ad779fae.xml">
+                <common:shortDescription xml:lang="en">Polymer electrolyte membrane (Nafion) production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.07</meanAmount>
+            <resultingAmount>0.07</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6015617378046967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{5;5;5;5;5;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="aacc6120-0e68-3835-8303-5ae37d62c030" olca:amount="1.202">
+            <referenceToFlowDataSet type="flow data set" refObjectId="12262ce2-ee81-3caf-8488-1dbf8fb21abe" version="00.00.000" uri="../flows/12262ce2-ee81-3caf-8488-1dbf8fb21abe.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, rail</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.202</meanAmount>
+            <resultingAmount>1.202</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4859340496805369</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: 0.6 kg over 2000.0 km.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="7a020379-c844-32ff-8fde-fb468f6661b5" olca:amount="7.5E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2c679cf3-81cc-3b63-b3df-a9df7fb789c0" version="00.00.000" uri="../flows/2c679cf3-81cc-3b63-b3df-a9df7fb789c0.xml">
+                <common:shortDescription xml:lang="en">Platinum, at regional storage</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.5E-4</meanAmount>
+            <resultingAmount>7.5E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6015617378046967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{5;5;5;5;5;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="fc9385f8-fe2d-3399-b663-4b66e5062a3f" olca:amount="0.1">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4b78cf71-32e5-3408-8df4-43fab247dff0" version="00.00.000" uri="../flows/4b78cf71-32e5-3408-8df4-43fab247dff0.xml">
+                <common:shortDescription xml:lang="en">Chromium steel 18/8, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6015617378046967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{5;5;5;5;5;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="1ab1ad31-3b88-3d36-9449-c5a15e573c75" olca:amount="0.3">
+            <referenceToFlowDataSet type="flow data set" refObjectId="17bc5ed4-e23f-3e14-add8-54868930804a" version="00.00.000" uri="../flows/17bc5ed4-e23f-3e14-add8-54868930804a.xml">
+                <common:shortDescription xml:lang="en">Aluminium product manufacturing, average metal working</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.3</meanAmount>
+            <resultingAmount>0.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6015617378046967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Under-floor heating system {5;5;5;5;5;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="e7c90a94-cb2d-34a0-bd20-1d755ba5f0a5" olca:amount="0.1">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5d00176f-b9aa-3b5b-a6de-daf6da98d48c" version="00.00.000" uri="../flows/5d00176f-b9aa-3b5b-a6de-daf6da98d48c.xml">
+                <common:shortDescription xml:lang="en">Glass fibre, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6015617378046967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{5;5;5;5;5;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="89772c02-1f8b-36dc-87eb-de910174d166" olca:amount="0.1">
+            <referenceToFlowDataSet type="flow data set" refObjectId="484e30d2-9ece-3f0d-a8cd-48adbbeae49b" version="00.00.000" uri="../flows/484e30d2-9ece-3f0d-a8cd-48adbbeae49b.xml">
+                <common:shortDescription xml:lang="en">Steel product manufacturing, average metal working</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6015617378046967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Evaporator and condenser {5;5;5;5;5;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="d10bea27-bb15-3e80-a163-9c8260f2b785" olca:amount="1.1">
+            <referenceToFlowDataSet type="flow data set" refObjectId="903264ff-dca5-3256-a814-cf7e5609bf97" version="00.00.000" uri="../flows/903264ff-dca5-3256-a814-cf7e5609bf97.xml">
+                <common:shortDescription xml:lang="en">Polyvinylidenchloride, granulate, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1</meanAmount>
+            <resultingAmount>1.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6015617378046967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{5;5;5;5;5;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="80976703-5e65-34a4-94c1-b0e5b5075574" olca:amount="4.5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="85f36196-c669-3629-bbc5-29c10626337e" version="00.00.000" uri="../flows/85f36196-c669-3629-bbc5-29c10626337e.xml">
+                <common:shortDescription xml:lang="en">Graphite, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.5</meanAmount>
+            <resultingAmount>4.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6015617378046967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{5;5;5;5;5;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="ede45db2-bc7b-386a-b3e3-eafcf2dac420" olca:amount="0.3">
+            <referenceToFlowDataSet type="flow data set" refObjectId="46c8540a-cf94-34ac-8d9c-da27a767121b" version="00.00.000" uri="../flows/46c8540a-cf94-34ac-8d9c-da27a767121b.xml">
+                <common:shortDescription xml:lang="en">Aluminium, production mix, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.3</meanAmount>
+            <resultingAmount>0.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6015617378046967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{5;5;5;5;5;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="f7ce1c49-0916-320e-9585-666388269b3d" olca:amount="1.107">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1b4f4192-6d9f-3f42-9579-3e00e26c3599" version="00.00.000" uri="../flows/1b4f4192-6d9f-3f42-9579-3e00e26c3599.xml">
+                <common:shortDescription xml:lang="en">Injection moulding</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.107</meanAmount>
+            <resultingAmount>1.107</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6015617378046967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{5;5;5;5;5;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="4c1b2ea4-dc7e-3719-a54a-a27add61afb1" olca:amount="16.9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="538e57ac-9267-328c-96eb-3aac828a92c2" version="00.00.000" uri="../flows/538e57ac-9267-328c-96eb-3aac828a92c2.xml">
+                <common:shortDescription xml:lang="en">Electricity, low voltage, production GLO, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>60.839999999999996</meanAmount>
+            <resultingAmount>60.839999999999996</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6015617378046967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{5;5;5;5;5;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="70003bd8-b592-3540-9c8b-a352577780e0" version="00.00.006" uri="../flows/70003bd8-b592-3540-9c8b-a352577780e0.xml">
+                <common:shortDescription xml:lang="en">Fuel cell stack production, 1 kWe, proton exchange membrane (PEM)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">not defined</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>729a0dd2-5a2b-3b5e-8960-df2240b7629f</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity mix, operation storage pumps, ENTSO, 2020, at plant</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="6299429b-5a23-3f58-ba95-d33dc8e1875b">electricity</common:class>
+                    <common:class level="1" classId="872b92c1-5e59-3890-9422-f8b70c0cb8a6">production mix</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Technology shares determined based on data from ENTSO Transparency Platform. Both electricity production in Switzerland and electricity imports from neighbouring countries (Italy, France, Germany, Austria) are included.; UUID:729a0dd2-5a2b-3b5e-8960-df2240b7629f</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1577833200000" olca:endDate="1577833200000">
+            <common:referenceYear>2020</common:referenceYear>
+            <common:dataSetValidUntil>2020</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Switzerland</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Average technology\n\n# Included processes\nThis dataset includes the shares of different technologies of the electricity mix used for the operation of storage pumps in Switzerland in 2018.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="df03641d-e4d2-306a-b444-c584227b80fc" version="00.00.000" uri="../sources/df03641d-e4d2-306a-b444-c584227b80fc.xml">
+                <common:shortDescription xml:lang="en">2021 - Energy label for passenger cars - Stolz</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistics</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">09.05.2022 G:\Projekte laufend\754 Aktualisierung Energieetikette 2022 BFE\EcoSpold\Strommix Schweiz 2020\[754-Electricity-Mixes-Attributional-CH-v0.4.xlsx]X-Process</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:54:31.026+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2022-05-09T17:32:13.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="df03641d-e4d2-306a-b444-c584227b80fc" version="00.00.000" uri="../sources/df03641d-e4d2-306a-b444-c584227b80fc.xml">
+                <common:shortDescription xml:lang="en">2021 - Energy label for passenger cars - Stolz</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="49" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="79a7b7d6-d0eb-48f2-bae7-da98facdae0f" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="3.1773E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f117faeb-ad59-3ca9-86b4-27a8c995e4d4" version="00.00.000" uri="../flows/f117faeb-ad59-3ca9-86b4-27a8c995e4d4.xml">
+                <common:shortDescription xml:lang="en">Electricity, at 100MW wind farm, onshore, 2.3MW turbines</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0011438280000000002</meanAmount>
+            <resultingAmount>0.0011438280000000002</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Other renewable / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="50" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b35b43a0-cf11-3cf1-ba91-54faaf294f6c" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="4.4094E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b9a490eb-5dd2-3d4b-93c6-4da877870523" version="00.00.000" uri="../flows/b9a490eb-5dd2-3d4b-93c6-4da877870523.xml">
+                <common:shortDescription xml:lang="en">Electricity, at wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.587384E-4</meanAmount>
+            <resultingAmount>1.587384E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Geothermal / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="47" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="79a7b7d6-d0eb-48f2-bae7-da98facdae0f" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0058202">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f117faeb-ad59-3ca9-86b4-27a8c995e4d4" version="00.00.000" uri="../flows/f117faeb-ad59-3ca9-86b4-27a8c995e4d4.xml">
+                <common:shortDescription xml:lang="en">Electricity, at 100MW wind farm, onshore, 2.3MW turbines</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.02095272</meanAmount>
+            <resultingAmount>0.02095272</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Wind Offshore / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="48" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="79a7b7d6-d0eb-48f2-bae7-da98facdae0f" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.019824">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f117faeb-ad59-3ca9-86b4-27a8c995e4d4" version="00.00.000" uri="../flows/f117faeb-ad59-3ca9-86b4-27a8c995e4d4.xml">
+                <common:shortDescription xml:lang="en">Electricity, at 100MW wind farm, onshore, 2.3MW turbines</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.07136640000000001</meanAmount>
+            <resultingAmount>0.07136640000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Wind Onshore / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="45" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="18d6458c-55da-3f60-b11e-16e65eaa63c4" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0019922">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8a6d8aa3-7085-38a5-94b9-0f2468c05f3f" version="00.00.010" uri="../flows/8a6d8aa3-7085-38a5-94b9-0f2468c05f3f.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at pumped storage plant, ENTSO, 2020</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00717192</meanAmount>
+            <resultingAmount>0.00717192</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Hydro Pumped Storage / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="46" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="98d8c27e-4603-3c15-b75a-fe61a5997d33" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0063973">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b1e82e30-47f7-38ae-9b84-7ce9193f29dd" version="00.00.000" uri="../flows/b1e82e30-47f7-38ae-9b84-7ce9193f29dd.xml">
+                <common:shortDescription xml:lang="en">Electricity, production mix photovoltaic, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.02303028</meanAmount>
+            <resultingAmount>0.02303028</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Solar / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="43" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="9c67c892-d289-3a7d-bf72-cbfd7d0b3484" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.003205">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4183acf1-db0a-3c51-ad72-cf3b33aa9f40" version="00.00.014" uri="../flows/4183acf1-db0a-3c51-ad72-cf3b33aa9f40.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at run-of-river power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.011538</meanAmount>
+            <resultingAmount>0.011538</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Hydro Run-of-river and poundage / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="44" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="fbd1f9e7-9b53-32ce-b7b5-29dd0a7a66bf" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="2.758E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0ebc7d9c-a2aa-3522-ab24-c2498293b433" version="00.00.006" uri="../flows/0ebc7d9c-a2aa-3522-ab24-c2498293b433.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at reservoir power plant, non alpine regions</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.9288E-4</meanAmount>
+            <resultingAmount>9.9288E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Hydro Water Reservoir / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="41" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="29612bfe-5e20-37df-a2d4-e255324c5dbe" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="6.0534E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ae34201f-c861-3fb3-a83f-832ad113c8db" version="00.00.008" uri="../flows/ae34201f-c861-3fb3-a83f-832ad113c8db.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 300kWth, diesel, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.179224E-4</meanAmount>
+            <resultingAmount>2.179224E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Oil / FR; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="42" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="a9f81d35-ac75-3917-8e35-e9c000a104e6" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="9.6023E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ce4cbad-79fa-333c-9a41-723e3bce5740" version="00.00.000" uri="../flows/7ce4cbad-79fa-333c-9a41-723e3bce5740.xml">
+                <common:shortDescription xml:lang="en">Electricity from waste, at municipal waste incineration plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.003456828</meanAmount>
+            <resultingAmount>0.003456828</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Waste / FR; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="39" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="fc352d10-a249-3235-98a5-dc928cd06daf" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="9.4867E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b5773a0d-02c1-32d2-94b2-72a3f5f5922a" version="00.00.000" uri="../flows/b5773a0d-02c1-32d2-94b2-72a3f5f5922a.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.003415212</meanAmount>
+            <resultingAmount>0.003415212</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Hard coal / FR; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="40" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="20c73089-24e6-3782-ab75-d76df32fec06" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="8.0584E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d2e64c7b-aec7-3326-9f38-3a9371dd2c99" version="00.00.000" uri="../flows/d2e64c7b-aec7-3326-9f38-3a9371dd2c99.xml">
+                <common:shortDescription xml:lang="en">Electricity, oil, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0029010240000000003</meanAmount>
+            <resultingAmount>0.0029010240000000003</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Oil / FR; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="37" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f70df649-dd9e-3fef-b46e-6a867c000041" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.19182">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ea9f641d-c74f-3abc-acad-29b3f7a5c681" version="00.00.010" uri="../flows/ea9f641d-c74f-3abc-acad-29b3f7a5c681.xml">
+                <common:shortDescription xml:lang="en">Electricity, nuclear, at power plant pressure water reactor</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.6905519999999999</meanAmount>
+            <resultingAmount>0.6905519999999999</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Nuclear / FR; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="38" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="50abc47e-b63f-3ed0-9963-1ea4373f1dbd" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.021633">
+            <referenceToFlowDataSet type="flow data set" refObjectId="35d9941d-aa7e-3cb7-9c27-613932233017" version="00.00.000" uri="../flows/35d9941d-aa7e-3cb7-9c27-613932233017.xml">
+                <common:shortDescription xml:lang="en">Electricity, natural gas, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0778788</meanAmount>
+            <resultingAmount>0.0778788</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Gas / FR; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="35" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f566629f-cb3c-361b-a2f1-ad710225f81d" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.001103">
+            <referenceToFlowDataSet type="flow data set" refObjectId="648fefba-a431-39b9-a9ec-d960cae17096" version="00.00.004" uri="../flows/648fefba-a431-39b9-a9ec-d960cae17096.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 1MWth, wood chips, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0039708</meanAmount>
+            <resultingAmount>0.0039708</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Biomass / FR; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="36" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e153215e-5b20-3008-8366-76412dad6b2a" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="5.2569E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f511cc43-928a-3dd8-b338-407aaa45f7cf" version="00.00.004" uri="../flows/f511cc43-928a-3dd8-b338-407aaa45f7cf.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 300kWth, biomethane, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.001892484</meanAmount>
+            <resultingAmount>0.001892484</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Biomass / FR; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="65" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="377a7d5d-c39a-3e60-a106-0739a0f45e32" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="4.1717E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="39a2f834-c5ce-3507-a4f8-5231f4a600ed" version="00.00.000" uri="../flows/39a2f834-c5ce-3507-a4f8-5231f4a600ed.xml">
+                <common:shortDescription xml:lang="en">Electricity, production mix photovoltaic, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0015018120000000002</meanAmount>
+            <resultingAmount>0.0015018120000000002</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Solar / AT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="66" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b35b43a0-cf11-3cf1-ba91-54faaf294f6c" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.009227">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b9a490eb-5dd2-3d4b-93c6-4da877870523" version="00.00.000" uri="../flows/b9a490eb-5dd2-3d4b-93c6-4da877870523.xml">
+                <common:shortDescription xml:lang="en">Electricity, at wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0332172</meanAmount>
+            <resultingAmount>0.0332172</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Wind Onshore / AT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="63" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="0c726eb1-b5f2-36ef-9a0e-5824059731e8" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0051931">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d8683713-2577-37fa-aad4-790308e0ad17" version="00.00.006" uri="../flows/d8683713-2577-37fa-aad4-790308e0ad17.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at reservoir power plant, alpine region</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.01869516</meanAmount>
+            <resultingAmount>0.01869516</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Hydro Water Reservoir / AT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="64" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b6bab09e-bb87-3700-bfb4-09f032fe2ccb" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0046825">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ab79256b-5042-376d-a14e-126a90b37844" version="00.00.010" uri="../flows/ab79256b-5042-376d-a14e-126a90b37844.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at pumped storage plant, ENTSO, 2020</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.016857</meanAmount>
+            <resultingAmount>0.016857</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Hydro Pumped Storage / AT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="61" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="a9f81d35-ac75-3917-8e35-e9c000a104e6" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0012615">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ce4cbad-79fa-333c-9a41-723e3bce5740" version="00.00.000" uri="../flows/7ce4cbad-79fa-333c-9a41-723e3bce5740.xml">
+                <common:shortDescription xml:lang="en">Electricity from waste, at municipal waste incineration plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0045414</meanAmount>
+            <resultingAmount>0.0045414</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Waste / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="62" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="9c67c892-d289-3a7d-bf72-cbfd7d0b3484" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.034317">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4183acf1-db0a-3c51-ad72-cf3b33aa9f40" version="00.00.014" uri="../flows/4183acf1-db0a-3c51-ad72-cf3b33aa9f40.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at run-of-river power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1235412</meanAmount>
+            <resultingAmount>0.1235412</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Hydro Run-of-river and poundage / AT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="59" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="29612bfe-5e20-37df-a2d4-e255324c5dbe" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="6.9177E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ae34201f-c861-3fb3-a83f-832ad113c8db" version="00.00.008" uri="../flows/ae34201f-c861-3fb3-a83f-832ad113c8db.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 300kWth, diesel, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.4903720000000004E-4</meanAmount>
+            <resultingAmount>2.4903720000000004E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Oil / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="60" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="ed68b9a9-e120-315c-8bc6-9161b9e775f0" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="6.0808E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="59bfd8c0-8fd9-3d05-855e-a51055a584a3" version="00.00.000" uri="../flows/59bfd8c0-8fd9-3d05-855e-a51055a584a3.xml">
+                <common:shortDescription xml:lang="en">Electricity, industrial gas, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.002189088</meanAmount>
+            <resultingAmount>0.002189088</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Other / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="57" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="ee0f9f93-524a-380a-963a-5eb4a78b8d92" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0094273">
+            <referenceToFlowDataSet type="flow data set" refObjectId="851788f3-4a4d-3c4b-b6a2-f5904354fff3" version="00.00.000" uri="../flows/851788f3-4a4d-3c4b-b6a2-f5904354fff3.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.03393828</meanAmount>
+            <resultingAmount>0.03393828</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Hard coal / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="58" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="10452abe-20fb-3f80-a31c-96dea9abd177" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="7.915E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3c972da3-c1a7-310d-8e20-db55edbab6a8" version="00.00.000" uri="../flows/3c972da3-c1a7-310d-8e20-db55edbab6a8.xml">
+                <common:shortDescription xml:lang="en">Electricity, oil, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0028494</meanAmount>
+            <resultingAmount>0.0028494</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Oil / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="55" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b63ac3b6-a7b3-30eb-b18f-e385832342ad" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.014894">
+            <referenceToFlowDataSet type="flow data set" refObjectId="50f9ed3f-c20a-35be-926b-5b9a2fb9cb36" version="00.00.000" uri="../flows/50f9ed3f-c20a-35be-926b-5b9a2fb9cb36.xml">
+                <common:shortDescription xml:lang="en">Electricity, natural gas, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0536184</meanAmount>
+            <resultingAmount>0.0536184</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Gas / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="56" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="016d490f-79c5-3c87-b3fb-165aa94757f4" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.021138">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5c0a762d-2a14-3135-a20c-219411240623" version="00.00.000" uri="../flows/5c0a762d-2a14-3135-a20c-219411240623.xml">
+                <common:shortDescription xml:lang="en">Electricity, lignite, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0760968</meanAmount>
+            <resultingAmount>0.0760968</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Brown coal/Lignite / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="53" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="6ee93188-b1d9-3659-a6a9-f708e741ddfd" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.010821">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b997d5da-a1d3-3ddf-b137-a86c1bddcf91" version="00.00.010" uri="../flows/b997d5da-a1d3-3ddf-b137-a86c1bddcf91.xml">
+                <common:shortDescription xml:lang="en">Electricity, nuclear, at power plant pressure water reactor</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.03895560000000001</meanAmount>
+            <resultingAmount>0.03895560000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Nuclear / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="54" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="ecf35b33-e186-3b5a-9bd5-d60bd87f9518" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0029308">
+            <referenceToFlowDataSet type="flow data set" refObjectId="71a49212-b980-3ffd-9bb0-f4ce374bd111" version="00.00.015" uri="../flows/71a49212-b980-3ffd-9bb0-f4ce374bd111.xml">
+                <common:shortDescription xml:lang="en">Electricity, nuclear, at power plant boiling water reactor</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.01055088</meanAmount>
+            <resultingAmount>0.01055088</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Nuclear / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="51" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f566629f-cb3c-361b-a2f1-ad710225f81d" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0039854">
+            <referenceToFlowDataSet type="flow data set" refObjectId="648fefba-a431-39b9-a9ec-d960cae17096" version="00.00.004" uri="../flows/648fefba-a431-39b9-a9ec-d960cae17096.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 1MWth, wood chips, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.014347440000000001</meanAmount>
+            <resultingAmount>0.014347440000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Biomass / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="52" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e153215e-5b20-3008-8366-76412dad6b2a" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0048442">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f511cc43-928a-3dd8-b338-407aaa45f7cf" version="00.00.004" uri="../flows/f511cc43-928a-3dd8-b338-407aaa45f7cf.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 300kWth, biomethane, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.01743912</meanAmount>
+            <resultingAmount>0.01743912</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Biomass / DE; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="2aac0b06-cd94-3774-91a9-f1385d026c3c" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="3.1865E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0db79c9a-ec8e-39bd-a6b5-ea95990f4e12" version="00.00.010" uri="../flows/0db79c9a-ec8e-39bd-a6b5-ea95990f4e12.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at pumped storage plant, ENTSO, 2020</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00114714</meanAmount>
+            <resultingAmount>0.00114714</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Hydro Pumped Storage / IT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="aef63a73-dad2-3f17-9e8f-35e8e91cdd81" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="9.4656E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="03d39d28-2b6f-39e7-bbeb-83b9c432533f" version="00.00.000" uri="../flows/03d39d28-2b6f-39e7-bbeb-83b9c432533f.xml">
+                <common:shortDescription xml:lang="en">Electricity, production mix photovoltaic, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.003407616</meanAmount>
+            <resultingAmount>0.003407616</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Solar / IT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="9c67c892-d289-3a7d-bf72-cbfd7d0b3484" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0033544">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4183acf1-db0a-3c51-ad72-cf3b33aa9f40" version="00.00.014" uri="../flows/4183acf1-db0a-3c51-ad72-cf3b33aa9f40.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at run-of-river power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.012075840000000001</meanAmount>
+            <resultingAmount>0.012075840000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Hydro Run-of-river and poundage / IT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="0c726eb1-b5f2-36ef-9a0e-5824059731e8" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="5.8736E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d8683713-2577-37fa-aad4-790308e0ad17" version="00.00.006" uri="../flows/d8683713-2577-37fa-aad4-790308e0ad17.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at reservoir power plant, alpine region</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.002114496</meanAmount>
+            <resultingAmount>0.002114496</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Hydro Water Reservoir / IT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="d1c86f4a-5d63-3762-8b21-a103fa453547" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0044325">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5551f42d-89e2-3240-b76f-d3777ecdc020" version="00.00.004" uri="../flows/5551f42d-89e2-3240-b76f-d3777ecdc020.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 1MWth, natural gas, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.015957</meanAmount>
+            <resultingAmount>0.015957</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Gas / CH; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="a9f81d35-ac75-3917-8e35-e9c000a104e6" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0085728">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ce4cbad-79fa-333c-9a41-723e3bce5740" version="00.00.000" uri="../flows/7ce4cbad-79fa-333c-9a41-723e3bce5740.xml">
+                <common:shortDescription xml:lang="en">Electricity from waste, at municipal waste incineration plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.03086208</meanAmount>
+            <resultingAmount>0.03086208</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Waste / CH; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="a6c6744d-d6e7-3804-87b2-e1efa1a9146b" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.078002">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3d6d1a52-2cc0-34fd-9ee9-0d143ee11f5b" version="00.00.015" uri="../flows/3d6d1a52-2cc0-34fd-9ee9-0d143ee11f5b.xml">
+                <common:shortDescription xml:lang="en">Electricity, nuclear, at power plant boiling water reactor</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.28080720000000003</meanAmount>
+            <resultingAmount>0.28080720000000003</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Nuclear / CH; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="29612bfe-5e20-37df-a2d4-e255324c5dbe" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="2.0005E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ae34201f-c861-3fb3-a83f-832ad113c8db" version="00.00.008" uri="../flows/ae34201f-c861-3fb3-a83f-832ad113c8db.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 300kWth, diesel, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.201800000000001E-4</meanAmount>
+            <resultingAmount>7.201800000000001E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Oil / CH; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e153215e-5b20-3008-8366-76412dad6b2a" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0050656">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f511cc43-928a-3dd8-b338-407aaa45f7cf" version="00.00.004" uri="../flows/f511cc43-928a-3dd8-b338-407aaa45f7cf.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 300kWth, biomethane, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.01823616</meanAmount>
+            <resultingAmount>0.01823616</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Biomass / CH; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b5fde38b-ee84-39b8-bed7-216d51f4a90e" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.086745">
+            <referenceToFlowDataSet type="flow data set" refObjectId="95532735-a62a-3cff-b685-f41bc4be9261" version="00.00.010" uri="../flows/95532735-a62a-3cff-b685-f41bc4be9261.xml">
+                <common:shortDescription xml:lang="en">Electricity, nuclear, at power plant pressure water reactor</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.312282</meanAmount>
+            <resultingAmount>0.312282</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Nuclear / CH; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f566629f-cb3c-361b-a2f1-ad710225f81d" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0071296">
+            <referenceToFlowDataSet type="flow data set" refObjectId="648fefba-a431-39b9-a9ec-d960cae17096" version="00.00.004" uri="../flows/648fefba-a431-39b9-a9ec-d960cae17096.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 1MWth, wood chips, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.02566656</meanAmount>
+            <resultingAmount>0.02566656</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Biomass / CH; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f750cb25-3801-38c0-a8e1-454eec70b8f5" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0022112">
+            <referenceToFlowDataSet type="flow data set" refObjectId="49478cac-f2d1-358b-a541-0ac8bd95296b" version="00.00.004" uri="../flows/49478cac-f2d1-358b-a541-0ac8bd95296b.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen with biogas engine, agricultural covered, alloc. exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00796032</meanAmount>
+            <resultingAmount>0.00796032</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Biomass / CH; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="d2ecb765-db25-37a5-b678-26606f6e2cf1" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.012206">
+            <referenceToFlowDataSet type="flow data set" refObjectId="07fd335d-d1b8-344c-afbd-c9f621f8e6f9" version="00.00.000" uri="../flows/07fd335d-d1b8-344c-afbd-c9f621f8e6f9.xml">
+                <common:shortDescription xml:lang="en">Electricity, production mix photovoltaic, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0439416</meanAmount>
+            <resultingAmount>0.0439416</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Solar / CH; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="542e8ae5-f22c-39fe-8d11-7681851e9dfc" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0010112">
+            <referenceToFlowDataSet type="flow data set" refObjectId="24c231da-02b1-339d-8527-cdcded72509e" version="00.00.000" uri="../flows/24c231da-02b1-339d-8527-cdcded72509e.xml">
+                <common:shortDescription xml:lang="en">Electricity, at wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0036403200000000003</meanAmount>
+            <resultingAmount>0.0036403200000000003</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Wind Onshore / CH; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="8b83697e-270a-36ef-bcd0-c913b8ee67be" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.17847">
+            <referenceToFlowDataSet type="flow data set" refObjectId="58f19637-0706-313c-8838-e060120368e5" version="00.00.006" uri="../flows/58f19637-0706-313c-8838-e060120368e5.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, net, at reservoir power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.642492</meanAmount>
+            <resultingAmount>0.642492</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Hydro Water Reservoir / CH; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="fcc4a324-b55c-3c58-9c7d-2fbc96cf4121" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.026513">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8cfd947f-c710-3954-b1ce-ce2e61124414" version="00.00.006" uri="../flows/8cfd947f-c710-3954-b1ce-ce2e61124414.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at small hydropower plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0954468</meanAmount>
+            <resultingAmount>0.0954468</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Hydro Run-of-river and poundage / CH; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="33" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="cffe4292-f7c8-3891-a83d-7c1529c3ff78" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0032051">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e893e03c-f7e0-31d1-b38e-3fc110553d61" version="00.00.000" uri="../flows/e893e03c-f7e0-31d1-b38e-3fc110553d61.xml">
+                <common:shortDescription xml:lang="en">Electricity, production mix photovoltaic, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.01153836</meanAmount>
+            <resultingAmount>0.01153836</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Solar / FR; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="34" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b35b43a0-cf11-3cf1-ba91-54faaf294f6c" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.021291">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b9a490eb-5dd2-3d4b-93c6-4da877870523" version="00.00.000" uri="../flows/b9a490eb-5dd2-3d4b-93c6-4da877870523.xml">
+                <common:shortDescription xml:lang="en">Electricity, at wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.07664760000000001</meanAmount>
+            <resultingAmount>0.07664760000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Wind Onshore / FR; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="31" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="0c726eb1-b5f2-36ef-9a0e-5824059731e8" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.010423">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d8683713-2577-37fa-aad4-790308e0ad17" version="00.00.006" uri="../flows/d8683713-2577-37fa-aad4-790308e0ad17.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at reservoir power plant, alpine region</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0375228</meanAmount>
+            <resultingAmount>0.0375228</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Hydro Water Reservoir / FR; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="32" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="eb065c43-5395-3e34-988a-b719f07cf4fd" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0027641">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4620380e-a16c-3c17-9dcf-7e3fe07bf6a1" version="00.00.010" uri="../flows/4620380e-a16c-3c17-9dcf-7e3fe07bf6a1.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at pumped storage plant, ENTSO, 2020</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00995076</meanAmount>
+            <resultingAmount>0.00995076</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Hydro Pumped Storage / FR; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="a9f81d35-ac75-3917-8e35-e9c000a104e6" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="2.6248E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ce4cbad-79fa-333c-9a41-723e3bce5740" version="00.00.000" uri="../flows/7ce4cbad-79fa-333c-9a41-723e3bce5740.xml">
+                <common:shortDescription xml:lang="en">Electricity from waste, at municipal waste incineration plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.44928E-5</meanAmount>
+            <resultingAmount>9.44928E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Waste / IT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="30" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="9c67c892-d289-3a7d-bf72-cbfd7d0b3484" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.023124">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4183acf1-db0a-3c51-ad72-cf3b33aa9f40" version="00.00.014" uri="../flows/4183acf1-db0a-3c51-ad72-cf3b33aa9f40.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at run-of-river power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0832464</meanAmount>
+            <resultingAmount>0.0832464</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Hydro Run-of-river and poundage / FR; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e04bebff-1430-37e9-b9dd-c04d1a166aa8" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="5.4458E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ba1acb2e-1f81-316b-aeab-8343c4a96e4c" version="00.00.000" uri="../flows/ba1acb2e-1f81-316b-aeab-8343c4a96e4c.xml">
+                <common:shortDescription xml:lang="en">Electricity, industrial gas, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0019604880000000002</meanAmount>
+            <resultingAmount>0.0019604880000000002</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Coal-derived gas / IT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e04bebff-1430-37e9-b9dd-c04d1a166aa8" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0015838">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ba1acb2e-1f81-316b-aeab-8343c4a96e4c" version="00.00.000" uri="../flows/ba1acb2e-1f81-316b-aeab-8343c4a96e4c.xml">
+                <common:shortDescription xml:lang="en">Electricity, industrial gas, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00570168</meanAmount>
+            <resultingAmount>0.00570168</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Other / IT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="798b61a3-7340-3600-a874-39c9bc2d45db" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="8.7944E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="37e49c7f-4b82-376a-9b40-4c0f7e4ffdcd" version="00.00.000" uri="../flows/37e49c7f-4b82-376a-9b40-4c0f7e4ffdcd.xml">
+                <common:shortDescription xml:lang="en">Electricity, oil, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.165984E-4</meanAmount>
+            <resultingAmount>3.165984E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Oil / IT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="29612bfe-5e20-37df-a2d4-e255324c5dbe" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="1.9663E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ae34201f-c861-3fb3-a83f-832ad113c8db" version="00.00.008" uri="../flows/ae34201f-c861-3fb3-a83f-832ad113c8db.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 300kWth, diesel, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.078680000000001E-6</meanAmount>
+            <resultingAmount>7.078680000000001E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Oil / IT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f0e6c460-e587-307c-95d1-624f091f75f0" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.010317">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6fe1cb7d-55a8-38f7-b777-a6ec61fe16fc" version="00.00.000" uri="../flows/6fe1cb7d-55a8-38f7-b777-a6ec61fe16fc.xml">
+                <common:shortDescription xml:lang="en">Electricity, natural gas, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0371412</meanAmount>
+            <resultingAmount>0.0371412</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Gas / IT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="1e061819-aa03-343b-955b-cc856ed06788" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0010761">
+            <referenceToFlowDataSet type="flow data set" refObjectId="82804501-7077-334e-bdf3-cd4a984344c1" version="00.00.000" uri="../flows/82804501-7077-334e-bdf3-cd4a984344c1.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00387396</meanAmount>
+            <resultingAmount>0.00387396</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Hard coal / IT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f566629f-cb3c-361b-a2f1-ad710225f81d" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="3.1617E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="648fefba-a431-39b9-a9ec-d960cae17096" version="00.00.004" uri="../flows/648fefba-a431-39b9-a9ec-d960cae17096.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 1MWth, wood chips, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.001138212</meanAmount>
+            <resultingAmount>0.001138212</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Biomass / IT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e153215e-5b20-3008-8366-76412dad6b2a" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="1.9147E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f511cc43-928a-3dd8-b338-407aaa45f7cf" version="00.00.004" uri="../flows/f511cc43-928a-3dd8-b338-407aaa45f7cf.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 300kWth, biomethane, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.892920000000001E-4</meanAmount>
+            <resultingAmount>6.892920000000001E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Biomass / IT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b35b43a0-cf11-3cf1-ba91-54faaf294f6c" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0018593">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b9a490eb-5dd2-3d4b-93c6-4da877870523" version="00.00.000" uri="../flows/b9a490eb-5dd2-3d4b-93c6-4da877870523.xml">
+                <common:shortDescription xml:lang="en">Electricity, at wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00669348</meanAmount>
+            <resultingAmount>0.00669348</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Wind Onshore / IT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b35b43a0-cf11-3cf1-ba91-54faaf294f6c" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="4.9773E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b9a490eb-5dd2-3d4b-93c6-4da877870523" version="00.00.000" uri="../flows/b9a490eb-5dd2-3d4b-93c6-4da877870523.xml">
+                <common:shortDescription xml:lang="en">Electricity, at wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0017918280000000003</meanAmount>
+            <resultingAmount>0.0017918280000000003</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Geothermal / IT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d37ed3ff-0a75-31fc-a125-e785d549c3ca" version="00.00.000" uri="../flows/d37ed3ff-0a75-31fc-a125-e785d549c3ca.xml">
+                <common:shortDescription xml:lang="en">Electricity mix, operation storage pumps, ENTSO, 2020, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="4ee29e29-9e37-376e-9340-831e6fbe5b37" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.10794">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7e12b7a1-f642-3f0c-98d5-b04fe37dd07e" version="00.00.014" uri="../flows/7e12b7a1-f642-3f0c-98d5-b04fe37dd07e.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at run-of-river power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.388584</meanAmount>
+            <resultingAmount>0.388584</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Hydro Run-of-river and poundage / CH; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="71" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="46e83e9e-a0a0-3cf1-91ac-05ee8541de96" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="2.511E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="684d39bb-1355-372e-b077-177da404b8cc" version="00.00.000" uri="../flows/684d39bb-1355-372e-b077-177da404b8cc.xml">
+                <common:shortDescription xml:lang="en">Electricity, industrial gas, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.0396E-4</meanAmount>
+            <resultingAmount>9.0396E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Other / AT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="72" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="a9f81d35-ac75-3917-8e35-e9c000a104e6" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0011414">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ce4cbad-79fa-333c-9a41-723e3bce5740" version="00.00.000" uri="../flows/7ce4cbad-79fa-333c-9a41-723e3bce5740.xml">
+                <common:shortDescription xml:lang="en">Electricity from waste, at municipal waste incineration plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0041090400000000004</meanAmount>
+            <resultingAmount>0.0041090400000000004</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Waste / AT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="69" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="cd8c256e-1e08-391f-97c3-9391dbdd5768" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.014529">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8eb1fb28-7d05-397a-badc-73b9fcc83609" version="00.00.000" uri="../flows/8eb1fb28-7d05-397a-badc-73b9fcc83609.xml">
+                <common:shortDescription xml:lang="en">Electricity, natural gas, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0523044</meanAmount>
+            <resultingAmount>0.0523044</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Gas / AT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="70" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e90357b6-913c-3ada-982f-fed274f10e46" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="5.0144E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="87f2b85c-63b3-33ca-9fb3-aba051c545d6" version="00.00.000" uri="../flows/87f2b85c-63b3-33ca-9fb3-aba051c545d6.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.001805184</meanAmount>
+            <resultingAmount>0.001805184</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Fossil Hard coal / AT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="67" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f566629f-cb3c-361b-a2f1-ad710225f81d" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="0.0016931">
+            <referenceToFlowDataSet type="flow data set" refObjectId="648fefba-a431-39b9-a9ec-d960cae17096" version="00.00.004" uri="../flows/648fefba-a431-39b9-a9ec-d960cae17096.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 1MWth, wood chips, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00609516</meanAmount>
+            <resultingAmount>0.00609516</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Biomass / AT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="68" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e153215e-5b20-3008-8366-76412dad6b2a" olca:pedigreeUncertainty="(4;2;1;1;3;3)" olca:amount="5.2214E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f511cc43-928a-3dd8-b338-407aaa45f7cf" version="00.00.004" uri="../flows/f511cc43-928a-3dd8-b338-407aaa45f7cf.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 300kWth, biomethane, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0018797040000000003</meanAmount>
+            <resultingAmount>0.0018797040000000003</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1431972708154967</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,2,1,1,3,3,BU:1.05); Biomass / AT; ENTSO Transparency Platform</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

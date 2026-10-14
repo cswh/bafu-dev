@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>1b74dbcf-fbf6-33d3-9228-9fb7ac87cf7d</common:UUID>
+            <name>
+                <baseName xml:lang="en">Maintenance micro gas turbine 100kWe</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="19cb16ec-2a0e-3f73-a828-b3f1347d3bee">heat</common:class>
+                    <common:class level="1" classId="d102926d-1bb7-30a6-afd5-2543f28f2f53">natural gas</common:class>
+                    <common:class level="2" classId="f587d50d-8287-3be4-9911-8020aa6d359b">cogeneration</common:class>
+                    <common:class level="3" classId="19fe4425-2d33-328e-b553-472b46d4b686">power unit</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The module reflects a micro gas turbine system with 100 kW electrical output. Inventory is based on the maintenance costs of the micro gas turbine and estimations on the material use. Life time operation is 50'000 h with five maintenance operations during the life time.;
+UUID: 1b74dbcf-fbf6-33d3-9228-9fb7ac87cf7d</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="1133391600000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2005</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">undefined</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Process applicable in central European conditions.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Radial turbine with recuperation for preheating the compressed air and fuel gas booster to increase gas pressure. Operation with connection to low pressure gas network. Electrical efficiency 29%, total efficiency 75%.\n\n# Included processes\nThe module includes an estimation for materials and transport used for the maintenance of the micro gas turbine.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="2bff1c6e-d656-30dc-b8e5-2e8d3fb0ee06" version="00.00.000" uri="../sources/2bff1c6e-d656-30dc-b8e5-2e8d3fb0ee06.xml">
+                <common:shortDescription xml:lang="en">2007 - LCI new CHP systems - Primas</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Literature data and estimations </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: passed; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8f5d6c7c-062f-3dba-9816-47dbbeab85b3" version="00.00.000" uri="../contacts/8f5d6c7c-062f-3dba-9816-47dbbeab85b3.xml">
+                <common:shortDescription xml:lang="en">Alex Primas</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:52:20.706+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="8f5d6c7c-062f-3dba-9816-47dbbeab85b3" version="00.00.000" uri="../contacts/8f5d6c7c-062f-3dba-9816-47dbbeab85b3.xml">
+                <common:shortDescription xml:lang="en">Alex Primas</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T09:08:30.624+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.012</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="2bff1c6e-d656-30dc-b8e5-2e8d3fb0ee06" version="00.00.000" uri="../sources/2bff1c6e-d656-30dc-b8e5-2e8d3fb0ee06.xml">
+                <common:shortDescription xml:lang="en">2007 - LCI new CHP systems - Primas</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a27b0e44-0c9b-325d-a29d-dfd4c0ec98e3" version="00.00.013" uri="../flows/a27b0e44-0c9b-325d-a29d-dfd4c0ec98e3.xml">
+                <common:shortDescription xml:lang="en">Maintenance micro gas turbine 100kWe</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="b9582f04-7fe5-378e-97af-efe0641fc67e" olca:pedigreeUncertainty="(4;5;n.A.;n.A.;1;5)" olca:amount="0.01">
+            <referenceToFlowDataSet type="flow data set" refObjectId="45153ca2-4ab6-306e-b5a7-3a829eb2712e" version="00.00.012" uri="../flows/45153ca2-4ab6-306e-b5a7-3a829eb2712e.xml">
+                <common:shortDescription xml:lang="en">Micro gas turbine 100kWe</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.01</meanAmount>
+            <resultingAmount>0.01</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7710166571774528</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,n.A.,n.A.,1,5); estimate based on mainenance costs
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="e2f12d27-a509-335c-9337-643eb1235045" olca:pedigreeUncertainty="(4;5;n.A.;n.A.;1;5)" olca:amount="125.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a4163215-0e9e-3767-a25c-2e3703e7c8c0" version="00.00.022" uri="../flows/a4163215-0e9e-3767-a25c-2e3703e7c8c0.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>125000.0</meanAmount>
+            <resultingAmount>125000.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4635231463834113</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,n.A.,n.A.,1,5); estimated
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

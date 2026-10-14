@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>ddfac649-b18a-36e8-87be-b909a40d2b6d</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, at 740MW wind farm, offshore, 10MW turbines</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="60929f0d-0c80-3ab8-b929-ef3db3b5a2bf">wind</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">UUID=ddfac649-b18a-36e8-87be-b909a40d2b6d</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1704063600000" olca:endDate="1704063600000">
+            <common:referenceYear>2024</common:referenceYear>
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="RER" latitudeAndLongitude="55.895602991909776;28.119894957029818"/>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en"># Included processes\nElectricity from wind farm, fed to grid. Includes the operation of the wind farm with the necessary change of gear oil. A leackage of 5% of SF6 is assumed over the entire life cycle of the wind farm.\nThe 740 MW wind farm consists of 74 wind turbines with a nominal capacity of 10 MW and monopile substructure, as well as 1 offshore substation and 1 land-based substation.\nThe modelled wind farm represents the IEA Wind 740-10 MW Reference Offshore Wind Plant, derived in the IEA Wind Task 55 (Kainz, Quick, et al., 2024).\nThe distance to service port is 50 km. Total length of export cables is 203 km (consisting of 3 parallel export cables). The total length of array cables is 140 km.\nThe model uses a capacity factor of 34.1%, representing the average capacity factor of offshore wind farms in Europe between 2016-2024 (source: ENTSO-E).\nAssumed lifetime is 25 years. Annual electricity production is 2212 GWh, applying a capacity factor of 34.1%.\n\n\nKainz, S., Quick, J., Souza de Alencar, M., Sanchez Perez Moreno, S., Dykes, K., Bay, C., Zaaijer, M. B., &amp; Bortolotti, P. (2024). IEA Wind TCP Task 55 The IEA Wind 740-10-MW Reference Offshore Wind Plants. IEA Wind TCP\n</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="90bc691d-f2a7-3e06-b5af-d0c9702654ae" version="00.00.000" uri="../sources/90bc691d-f2a7-3e06-b5af-d0c9702654ae.xml">
+                <common:shortDescription xml:lang="en">2025 - LCI wind Energy - Kroehnert</common:shortDescription>
+            </referenceToDataSource>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">22.07.2025 "S:\pools\n\N-IUNR-FG-LCA\Projekte\Wind LCA\LCI-Update\Sachbilanz"</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="00249ec8-2e4a-384f-b37c-8ea25f756a69" version="00.00.000" uri="../contacts/00249ec8-2e4a-384f-b37c-8ea25f756a69.xml">
+                    <common:shortDescription xml:lang="en">Joanna Schlesinger, Mathilde Marchand-Lasserre</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="a27610ad-cbcf-3cf9-89d0-2b3e5356f13c" version="00.00.000" uri="../contacts/a27610ad-cbcf-3cf9-89d0-2b3e5356f13c.xml">
+                <common:shortDescription xml:lang="en">Hanna Kroehnert</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:52:18.253+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="a27610ad-cbcf-3cf9-89d0-2b3e5356f13c" version="00.00.000" uri="../contacts/a27610ad-cbcf-3cf9-89d0-2b3e5356f13c.xml">
+                <common:shortDescription xml:lang="en">Hanna Kroehnert</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2025-07-22T17:43:40.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="90bc691d-f2a7-3e06-b5af-d0c9702654ae" version="00.00.000" uri="../sources/90bc691d-f2a7-3e06-b5af-d0c9702654ae.xml">
+                <common:shortDescription xml:lang="en">2025 - LCI wind Energy - Kroehnert</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(4;1;1;1;1;1)" olca:amount="3.87">
+            <referenceToFlowDataSet type="flow data set" refObjectId="57c71b25-4663-4fad-9167-7ce5be3e8268" version="00.00.000" uri="../flows/57c71b25-4663-4fad-9167-7ce5be3e8268.xml">
+                <common:shortDescription xml:lang="en">Energy, kinetic (in wind), converted</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.87</meanAmount>
+            <resultingAmount>3.87</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,1,1,1,1,BU:1.05); </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f8875895-daef-31a2-bda9-5572a4a6cb06" version="00.00.000" uri="../flows/f8875895-daef-31a2-bda9-5572a4a6cb06.xml">
+                <common:shortDescription xml:lang="en">Electricity, at 740MW wind farm, offshore, 10MW turbines</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="53f780e1-6261-3178-a4b0-9c24e25161a6" olca:pedigreeUncertainty="(2;2;1;1;1;1)" olca:amount="1.3381E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ae477ab4-5f8e-3f73-8358-98cb62d2669e" version="00.00.000" uri="../flows/ae477ab4-5f8e-3f73-8358-98cb62d2669e.xml">
+                <common:shortDescription xml:lang="en">Wind turbine 10MW, offshore, tower</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.3381E-9</meanAmount>
+            <resultingAmount>1.3381E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,1,BU:3); Own calculation; number of wind turbines divided by total electricity production over a life cycle of 25 years with an annual electricity production of 2212 GWh, calculated as 74/(25 × 2212 GWh)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="a298d58c-74c6-3f22-a483-78533cf7f9a9" olca:pedigreeUncertainty="(2;2;1;1;1;1)" olca:amount="1.3381E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aa814a8c-8346-3d72-a689-0e56d001e219" version="00.00.000" uri="../flows/aa814a8c-8346-3d72-a689-0e56d001e219.xml">
+                <common:shortDescription xml:lang="en">Wind turbine 10MW, offshore, moving parts</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.3381E-9</meanAmount>
+            <resultingAmount>1.3381E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,1,BU:3); Own calculation; number of wind turbines divided by total electricity production over a life cycle of 25 years with an annual electricity production of 2212 GWh, calculated as 74/(25 × 2212 GWh)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="ab395015-4576-3804-b11e-4c69b2a48fe5" olca:pedigreeUncertainty="(2;2;1;1;1;1)" olca:amount="2.5299E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3d973af3-66f6-30db-aceb-c6fc8abfcd00" version="00.00.000" uri="../flows/3d973af3-66f6-30db-aceb-c6fc8abfcd00.xml">
+                <common:shortDescription xml:lang="en">Array cable, 66kV, offshore wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.5299E-6</meanAmount>
+            <resultingAmount>2.5299E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,1,BU:3); Own calculation; total length of array cables of 140 km divided by total electricity production over a life cycle of 25 years with an annual electricity production of 2212 GWh, calculated as 140 km/(25 × 2212 GWh)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="e7aaf097-d6fc-39c1-946e-30e5c6ea3dc2" olca:pedigreeUncertainty="(2;2;1;1;1;1)" olca:amount="1.3381E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9d0c6cec-41df-3dfe-bd35-d6e26f9e44a9" version="00.00.000" uri="../flows/9d0c6cec-41df-3dfe-bd35-d6e26f9e44a9.xml">
+                <common:shortDescription xml:lang="en">Wind turbine 10MW, offshore, monopile substructure</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.3381E-9</meanAmount>
+            <resultingAmount>1.3381E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,1,BU:3); Own calculation; number of wind turbines divided by total electricity production over a life cycle of 25 years with an annual electricity production of 2212 GWh, calculated as 74/(25 × 2212 GWh)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="f59fea54-e0e7-3593-9d2e-e9d0ece3964f" olca:pedigreeUncertainty="(2;2;1;1;1;1)" olca:amount="1.8083E-11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a8caf5e0-ebca-3994-9f26-509903998dbb" version="00.00.000" uri="../flows/a8caf5e0-ebca-3994-9f26-509903998dbb.xml">
+                <common:shortDescription xml:lang="en">Substation, offshore, 740MW offshore wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.8083E-11</meanAmount>
+            <resultingAmount>1.8083E-11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,1,BU:3); Own calculation; 1p divided by total electricity production over a life cycle of 25 years with an annual electricity production of 2212 GWh, calculated as 1/(25 × 2212 GWh)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="b82390d4-b132-3b8a-a999-f80ad57b4e25" olca:pedigreeUncertainty="(2;2;1;1;1;1)" olca:amount="3.6626E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2bb722f7-3858-372a-8a8c-9df17097f481" version="00.00.000" uri="../flows/2bb722f7-3858-372a-8a8c-9df17097f481.xml">
+                <common:shortDescription xml:lang="en">Export cable, 220kV, offshore wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.6626000000000003E-6</meanAmount>
+            <resultingAmount>3.6626000000000003E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,1,BU:3); Own calculation; total length of export cables of 203 km divided by total electricity production over a life cycle of 25 years with an annual electricity production of 2212 GWh, calculated as 203 km/(25 × 2212 GWh)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="0b14288a-dbf3-3dac-a570-83d083f4b600" olca:pedigreeUncertainty="(2;5;5;2;1;5)" olca:amount="1.3489E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="45effa3b-506a-323b-848c-d8bc43273045" version="00.00.000" uri="../flows/45effa3b-506a-323b-848c-d8bc43273045.xml">
+                <common:shortDescription xml:lang="en">Lubricating oil, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.3489E-5</meanAmount>
+            <resultingAmount>1.3489E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,5,5,2,1,5,BU:1.05); Own calculation, assuming exchange of lubrication oil every two years</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="a40f748b-4944-36b1-86d1-01351531ba84" olca:pedigreeUncertainty="(2;2;1;1;1;1)" olca:amount="1.8083E-11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="30b3ca95-1ed3-3102-965d-e92fad0a4a9b" version="00.00.000" uri="../flows/30b3ca95-1ed3-3102-965d-e92fad0a4a9b.xml">
+                <common:shortDescription xml:lang="en">Substation, land-based, 740MW offshore wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.8083E-11</meanAmount>
+            <resultingAmount>1.8083E-11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,1,BU:3); Own calculation; 1p divided by total electricity production over a life cycle of 25 years with an annual electricity production of 2212 GWh, calculated as 1/(25 × 2212 GWh)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;5;1;2;1;5)" olca:amount="1.2919E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c7c769bb-89b9-4459-afed-e3acecd39339" version="00.00.000" uri="../flows/c7c769bb-89b9-4459-afed-e3acecd39339.xml">
+                <common:shortDescription xml:lang="en">Sulfur hexafluoride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.2919E-9</meanAmount>
+            <resultingAmount>1.2919E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.224744871391589</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,1,2,1,5,BU:1.5); Estimated SF6 emissions due to 5% leackage over entire life cycle of wind farm</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="1846e2f7-dc18-37a6-9bb7-da1570d8798c" olca:pedigreeUncertainty="(2;1;1;1;1;5)" olca:amount="0.27782">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bb6923bf-03d8-3610-9eb1-65f0380e0dbe" version="00.00.000" uri="../flows/bb6923bf-03d8-3610-9eb1-65f0380e0dbe.xml">
+                <common:shortDescription xml:lang="en">Transport, transoceanic freight ship</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.27782</meanAmount>
+            <resultingAmount>0.27782</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4142135623730951</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,1,1,5,BU:2); Own calculation for O&amp;M vessel activities based on life cylce inventory for 740 MW offshore wind farm as published by Kainz, S. (2025); Heavy fuel oil used as proxy for marine gasoil.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="be69d35d-4a8e-4e4c-88c0-c5df0c7db472" olca:pedigreeUncertainty="(2;5;5;2;1;5)" olca:amount="1.3489E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="44b0ed19-fde1-33c0-a55c-8768cf5dcfcc" version="00.00.000" uri="../flows/44b0ed19-fde1-33c0-a55c-8768cf5dcfcc.xml">
+                <common:shortDescription xml:lang="en">Disposal, used mineral oil, 10% water, to hazardous waste incineration</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.3489E-5</meanAmount>
+            <resultingAmount>1.3489E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,5,5,2,1,5,BU:1.05); Own calculation; assuming that 100% of the lubricating oil is disposed of after use.</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

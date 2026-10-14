@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>d265b9fd-31e7-35ba-80a8-4751e833d113</common:UUID>
+            <name>
+                <baseName xml:lang="en">Hard coal, at mine</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="e70d2ea9-becd-32e6-9944-c946e949f129">fuels</common:class>
+                    <common:class level="1" classId="637a36de-9e80-3dcd-be3e-ae504be332dd">coal</common:class>
+                    <common:class level="2" classId="eb5a17ca-43a8-3a2c-9d23-f4473893f757">produced coal</common:class>
+                    <common:class level="3" classId="ee1d1bf0-d4c6-3126-bd9e-da9e89caee45">mined coal</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Average data for coal mining in the specific region have been taken from a summary study on material flows and energy uses. Data are normalized by the mass unit of produced coal, including preparation and without differentiating steam coal from the rest. In order to enable a consistent calculation of the cumulative energy demand, the extracted mass of raw coal was adjusted by a factor of 0.83, taking into account the difference in the upper heating value of raw coal of this region (15.8 MJ/kg), compared to the used worldwide average of 19.1 MJ/kg. Mine reclamation is not included in this module, because it mostly concerns the tailings, which are described in a separate module. Electricity, heating from heavy oil industrial boilers, and diesel uses are included. The use of the module "heat, at hard coal industrial furnace 1-10MW" leads to an underestimation of emissions, because the quality of coal burned at mines is usually lower than coal burned in industrial boilers elsewhere. Electricity supply is modelled with the UCTE mix, because no specific mix has been modelled. Water uses in mining and coal washing have been approximately described using the module "tap water". Particle emissions are assumed to be all greater than 10 micrometer. Radon emissions are average value worldwide. Methane emissions are region specific. Emissions to water are estimated for Western European conditions. They are assumed to be released to rivers. Possible emissions to groundwater have not been accounted for. All coalbed methane released from the seam is accounted for as natural gas resource. However the recovered methane, possibly used for district heating and for energetic needs of some individual mines, has not been described as an energy byproduct. The unaccounted energy is nevertheless negligible compared to the energy content of the product coal (maximum of two percent for underground mining).;
+UUID: d265b9fd-31e7-35ba-80a8-4751e833d113</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="975625200000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2000</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">undefined</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="WEU" latitudeAndLongitude="48.53162575976461;6.479276161181118">
+                <descriptionOfRestrictions xml:lang="en">Region specific.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Not specified.\n\n# Included processes\nThe module represents average operational conditions in the relevant geographical region. It quantifies the directly affected area and occupation during operation of the mine. Electricity, heat, and diesel requirements for mining operation are included. Pumped groundwater, explosives, emissions to air and water, and solid waste complete the module. Not included is the methane recovered.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="7490c6fc-e047-3b94-bd16-843ce4c9f98e" version="00.00.000" uri="../sources/7490c6fc-e047-3b94-bd16-843ce4c9f98e.xml">
+                <common:shortDescription xml:lang="en">2007 - Coal - Dones</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">literature </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: passed; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="233afe28-34e8-3e8b-ad9a-547b2441b39e" version="00.00.000" uri="../contacts/233afe28-34e8-3e8b-ad9a-547b2441b39e.xml">
+                    <common:shortDescription xml:lang="en">Christian Bauer</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="233afe28-34e8-3e8b-ad9a-547b2441b39e" version="00.00.000" uri="../contacts/233afe28-34e8-3e8b-ad9a-547b2441b39e.xml">
+                <common:shortDescription xml:lang="en">Christian Bauer</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:53:25.597+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="233afe28-34e8-3e8b-ad9a-547b2441b39e" version="00.00.000" uri="../contacts/233afe28-34e8-3e8b-ad9a-547b2441b39e.xml">
+                <common:shortDescription xml:lang="en">Christian Bauer</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:59:43.387+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.009</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="7490c6fc-e047-3b94-bd16-843ce4c9f98e" version="00.00.000" uri="../sources/7490c6fc-e047-3b94-bd16-843ce4c9f98e.xml">
+                <common:shortDescription xml:lang="en">2007 - Coal - Dones</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="e9773595-284e-46dd-9671-5fc9ff406833" olca:propertyId="93a60a56-a3c8-17da-a746-0800200c9a66" olca:amount="0.012">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1551f1cd-7cb7-4f68-a628-cb9301323c7b" version="00.00.000" uri="../flows/1551f1cd-7cb7-4f68-a628-cb9301323c7b.xml">
+                <common:shortDescription xml:lang="en">Radon-222</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.012</meanAmount>
+            <resultingAmount>0.012</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23606797749979</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e4e7ddc0-f7d1-3fad-bd12-9d6981142800" olca:amount="0.0058">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4cb41ab9-c1a0-368f-bc5f-792051c1f606" version="00.00.000" uri="../flows/4cb41ab9-c1a0-368f-bc5f-792051c1f606.xml">
+                <common:shortDescription xml:lang="en">Diesel, burned in building machine, average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0058</meanAmount>
+            <resultingAmount>0.0058</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5811388300841898</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="30" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0167">
+            <referenceToFlowDataSet type="flow data set" refObjectId="85bec19f-c785-4364-8ef6-472b8e9dd90e" version="00.00.000" uri="../flows/85bec19f-c785-4364-8ef6-472b8e9dd90e.xml">
+                <common:shortDescription xml:lang="en">Chloride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0167</meanAmount>
+            <resultingAmount>0.0167</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4142135623730951</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="78fa456f-a455-38b2-9332-67df26933a8c" olca:amount="0.11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e8b58898-2e1a-3a9a-bbc2-7045ff42be45" version="00.00.000" uri="../flows/e8b58898-2e1a-3a9a-bbc2-7045ff42be45.xml">
+                <common:shortDescription xml:lang="en">Heat, at hard coal industrial furnace 1-10MW</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.11</meanAmount>
+            <resultingAmount>0.11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5811388300841898</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="32" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.0E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="070f9c6e-584d-40ed-8b07-6b1f7f75dd3f" version="00.00.000" uri="../flows/070f9c6e-584d-40ed-8b07-6b1f7f75dd3f.xml">
+                <common:shortDescription xml:lang="en">Strontium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.0E-6</meanAmount>
+            <resultingAmount>5.0E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4142135623730951</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="31" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:amount="0.0251">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a76ab6e5-c67b-35b1-963a-5dc06af130e4" version="00.00.000" uri="../flows/a76ab6e5-c67b-35b1-963a-5dc06af130e4.xml">
+                <common:shortDescription xml:lang="en">Gas, mine, off-gas, process, coal mining/m3</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0251</meanAmount>
+            <resultingAmount>0.0251</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5811388300841898</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="34" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.5E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="51c35cf0-3417-4d42-936f-9a6fd7a2638a" version="00.00.000" uri="../flows/51c35cf0-3417-4d42-936f-9a6fd7a2638a.xml">
+                <common:shortDescription xml:lang="en">Suspended solids, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.5E-5</meanAmount>
+            <resultingAmount>1.5E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="33" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:amount="0.00158">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0c755f21-5270-3341-9239-4f4fd780e143" version="00.00.000" uri="../flows/0c755f21-5270-3341-9239-4f4fd780e143.xml">
+                <common:shortDescription xml:lang="en">Water, well</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00158</meanAmount>
+            <resultingAmount>0.00158</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="35" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(5;5;5;5;5;n.a.)" olca:amount="1.422">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3564b893-744f-326d-a75d-a086409ef6ca" version="00.00.000" uri="../flows/3564b893-744f-326d-a75d-a086409ef6ca.xml">
+                <common:shortDescription xml:lang="en">Water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.422</meanAmount>
+            <resultingAmount>1.422</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5873247934811578</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="c7266b67-4ea2-457f-b391-9b94e26e195a" olca:propertyId="93a60a56-a3c8-21da-a746-0800200c9a66" olca:amount="0.0043">
+            <referenceToFlowDataSet type="flow data set" refObjectId="379ba5c9-5c3a-43d0-8e2d-605ad9c39e46" version="00.00.000" uri="../flows/379ba5c9-5c3a-43d0-8e2d-605ad9c39e46.xml">
+                <common:shortDescription xml:lang="en">Occupation, mineral extraction site</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0043</meanAmount>
+            <resultingAmount>0.0043</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23606797749979</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="695901ce-3394-363f-9833-e258e6b2f8a0" olca:amount="3.33E-11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="eb47fedc-d547-33a4-91e9-7090a3052074" version="00.00.012" uri="../flows/eb47fedc-d547-33a4-91e9-7090a3052074.xml">
+                <common:shortDescription xml:lang="en">Underground mine, hard coal</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.33E-11</meanAmount>
+            <resultingAmount>3.33E-11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">standard for ressources
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="95ff20e4-7e2c-4531-910e-d0d8eeb072c4" olca:amount="0.461">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ca37aa44-cf17-3b7b-a34f-1d4ab0d68eb7" version="00.00.000" uri="../flows/ca37aa44-cf17-3b7b-a34f-1d4ab0d68eb7.xml">
+                <common:shortDescription xml:lang="en">Disposal, tailings from hard coal milling, in impoundment</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.461</meanAmount>
+            <resultingAmount>0.461</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4142135623730951</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="f4afe0ed-9682-35b1-8c80-43a0d8bf3898" olca:amount="3.5E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9b56b5f9-eacf-3b17-8c57-47c21fe98883" version="00.00.000" uri="../flows/9b56b5f9-eacf-3b17-8c57-47c21fe98883.xml">
+                <common:shortDescription xml:lang="en">Blasting</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.5E-5</meanAmount>
+            <resultingAmount>3.5E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5811388300841898</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e030108f-2125-4bcb-a73b-ad72130fcca3" version="00.00.000" uri="../flows/e030108f-2125-4bcb-a73b-ad72130fcca3.xml">
+                <common:shortDescription xml:lang="en">Nickel II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0E-7</meanAmount>
+            <resultingAmount>1.0E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:amount="3.6E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="626915e9-2424-4059-8b6a-fae47161acdf" version="00.00.000" uri="../flows/626915e9-2424-4059-8b6a-fae47161acdf.xml">
+                <common:shortDescription xml:lang="en">Transformation, to mineral extraction site</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.6E-5</meanAmount>
+            <resultingAmount>3.6E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23606797749979</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">large spread in data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.53">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b6d0042d-0ef8-49ed-9162-a07ff1ccf750" version="00.00.000" uri="../flows/b6d0042d-0ef8-49ed-9162-a07ff1ccf750.xml">
+                <common:shortDescription xml:lang="en">Coal, hard</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.53</meanAmount>
+            <resultingAmount>1.53</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0954451150103321</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="36fc181c-13da-4792-aa29-e2012c405ccd" olca:amount="1.6803">
+            <referenceToFlowDataSet type="flow data set" refObjectId="465ab168-50ca-37e3-b00b-79d477479ae6" version="00.00.000" uri="../flows/465ab168-50ca-37e3-b00b-79d477479ae6.xml">
+                <common:shortDescription xml:lang="en">Disposal, spoil from coal mining, in surface landfill</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.6803</meanAmount>
+            <resultingAmount>1.6803</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4142135623730951</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="736f52e8-9703-4076-8909-7ae80a7f8005" version="00.00.000" uri="../flows/736f52e8-9703-4076-8909-7ae80a7f8005.xml">
+                <common:shortDescription xml:lang="en">Ammonium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0E-6</meanAmount>
+            <resultingAmount>1.0E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23606797749979</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2e0c9efa-d55c-49db-8be3-0376d5921ff4" version="00.00.000" uri="../flows/2e0c9efa-d55c-49db-8be3-0376d5921ff4.xml">
+                <common:shortDescription xml:lang="en">Aluminium III</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0E-6</meanAmount>
+            <resultingAmount>1.0E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23606797749979</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:amount="5.0E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="90a5a447-af6f-421a-8201-011f07ad1150" version="00.00.000" uri="../flows/90a5a447-af6f-421a-8201-011f07ad1150.xml">
+                <common:shortDescription xml:lang="en">Transformation, to dump site</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.0E-5</meanAmount>
+            <resultingAmount>5.0E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23606797749979</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">large spread in data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="c7266b67-4ea2-457f-b391-9b94e26e195a" olca:propertyId="93a60a56-a3c8-21da-a746-0800200c9a66" olca:amount="0.006">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1eaa9ea4-40b8-414a-b198-5626400372e1" version="00.00.000" uri="../flows/1eaa9ea4-40b8-414a-b198-5626400372e1.xml">
+                <common:shortDescription xml:lang="en">Occupation, dump site</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.006</meanAmount>
+            <resultingAmount>0.006</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23606797749979</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">large spread in data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="d7cd364e-1d5c-4f92-8c81-942cad46c4bd" olca:amount="0.0378">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dfc4264d-bdbd-3db5-87dc-ec3b21f9e733" version="00.00.000" uri="../flows/dfc4264d-bdbd-3db5-87dc-ec3b21f9e733.xml">
+                <common:shortDescription xml:lang="en">Electricity, high voltage, production ENTSO-E, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.13608</meanAmount>
+            <resultingAmount>0.13608</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5811388300841898</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7678cec7-b8e1-439d-8242-99cd452834b1" version="00.00.000" uri="../flows/7678cec7-b8e1-439d-8242-99cd452834b1.xml">
+                <common:shortDescription xml:lang="en">Particulate Matter, &gt; 10 um</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0E-4</meanAmount>
+            <resultingAmount>1.0E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.0E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="33fd8342-58e7-45c9-ad92-0951c002c403" version="00.00.000" uri="../flows/33fd8342-58e7-45c9-ad92-0951c002c403.xml">
+                <common:shortDescription xml:lang="en">Iron ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.0E-6</meanAmount>
+            <resultingAmount>2.0E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23606797749979</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="0.136">
+            <referenceToFlowDataSet type="flow data set" refObjectId="07f704a2-2746-4364-bcfd-606cefc30715" version="00.00.000" uri="../flows/07f704a2-2746-4364-bcfd-606cefc30715.xml">
+                <common:shortDescription xml:lang="en">Heat, waste</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.136</meanAmount>
+            <resultingAmount>0.136</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4142135623730951</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:amount="3.6E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c3f83a91-4888-41a4-add9-fd01678a1e5f" version="00.00.000" uri="../flows/c3f83a91-4888-41a4-add9-fd01678a1e5f.xml">
+                <common:shortDescription xml:lang="en">Transformation, to annual crop</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.6E-5</meanAmount>
+            <resultingAmount>3.6E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23606797749979</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3512d0e8-7742-3ff6-adf1-1b9889de9902" version="00.00.018" uri="../flows/3512d0e8-7742-3ff6-adf1-1b9889de9902.xml">
+                <common:shortDescription xml:lang="en">Hard coal, at mine</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">Western Europe
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0136">
+            <referenceToFlowDataSet type="flow data set" refObjectId="70ef743b-3ed5-4a6d-b192-fb6d62378555" version="00.00.000" uri="../flows/70ef743b-3ed5-4a6d-b192-fb6d62378555.xml">
+                <common:shortDescription xml:lang="en">Methane, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0136</meanAmount>
+            <resultingAmount>0.0136</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5811388300841898</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="6556440f-cd03-3975-9615-023309701fe2" olca:amount="0.486">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b398c24c-eb85-35da-bc2d-eea4ca5241d8" version="00.00.000" uri="../flows/b398c24c-eb85-35da-bc2d-eea4ca5241d8.xml">
+                <common:shortDescription xml:lang="en">Tap water, at user</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.486</meanAmount>
+            <resultingAmount>0.486</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5811388300841898</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9500e0a4-a485-483e-ae55-3b99b4420cd2" version="00.00.000" uri="../flows/9500e0a4-a485-483e-ae55-3b99b4420cd2.xml">
+                <common:shortDescription xml:lang="en">Zinc II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0E-7</meanAmount>
+            <resultingAmount>1.0E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="31eacbfc-683a-4d36-afc1-80dee42a3b94" version="00.00.000" uri="../flows/31eacbfc-683a-4d36-afc1-80dee42a3b94.xml">
+                <common:shortDescription xml:lang="en">Sulfate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.0E-4</meanAmount>
+            <resultingAmount>5.0E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23606797749979</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:amount="8.6E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="12264257-7f8b-4afe-b3cb-3ac28ca1661a" version="00.00.000" uri="../flows/12264257-7f8b-4afe-b3cb-3ac28ca1661a.xml">
+                <common:shortDescription xml:lang="en">Transformation, from unknown</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.6E-5</meanAmount>
+            <resultingAmount>8.6E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23606797749979</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">large spread in data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.0E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b84e31d0-cf7b-4c3f-bc8a-3cc93bdb30d9" version="00.00.000" uri="../flows/b84e31d0-cf7b-4c3f-bc8a-3cc93bdb30d9.xml">
+                <common:shortDescription xml:lang="en">Fluoride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.0E-6</meanAmount>
+            <resultingAmount>3.0E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4142135623730951</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="44f28e11-061d-44fd-8f25-dc62a9f1fa57" version="00.00.000" uri="../flows/44f28e11-061d-44fd-8f25-dc62a9f1fa57.xml">
+                <common:shortDescription xml:lang="en">Manganese II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0E-6</meanAmount>
+            <resultingAmount>1.0E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4142135623730951</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:amount="3.6E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="64d99cb5-3b4f-4195-b86f-c5f45b4dcd19" version="00.00.000" uri="../flows/64d99cb5-3b4f-4195-b86f-c5f45b4dcd19.xml">
+                <common:shortDescription xml:lang="en">Transformation, from mineral extraction site</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.6E-5</meanAmount>
+            <resultingAmount>3.6E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23606797749979</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">own assumption
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

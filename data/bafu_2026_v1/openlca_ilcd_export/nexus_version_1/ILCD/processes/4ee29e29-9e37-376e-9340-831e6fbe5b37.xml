@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>4ee29e29-9e37-376e-9340-831e6fbe5b37</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, hydropower, at run-of-river power plant</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="6f11c2d0-4f16-3031-9733-444055c70cb9">hydro</common:class>
+                    <common:class level="2" classId="ec67f8ec-e53f-3969-8c70-923566dd1077">flow through</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Efficiency: 0.82. The data set describes a mix and is therefore not representative for individual plants. This dataset is recalculated based on Frischknecht et al. (1996) and Bauer (2007), complemented with data from Vattenfall (2008) and Axpo (2008);
+UUID: 4ee29e29-9e37-376e-9340-831e6fbe5b37</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="-788922000000" olca:endDate="975625200000">
+            <common:referenceYear>1945</common:referenceYear>
+            <common:dataSetValidUntil>2000</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">undefined</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Average electricity production of Swiss run-of-river hydropower plants. GHG emissions valid for temperate zones.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Mix of run-of-river hydropower plants built between 1945 and 1980, representative for Switzerland. Efficiency: 0.82. Annual production volume: 38.5GWh/a.\n\n# Included processes\nThis dataset includes the average electricity production of run-of-river power stations in Switzerland. 2% of the electricity is produced in run-of-river power stations with a reservoir, the rest in power stations without reservoir.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="edce014f-8cb7-31e2-8dcf-1cae6221d72f" version="00.00.000" uri="../sources/edce014f-8cb7-31e2-8dcf-1cae6221d72f.xml">
+                <common:shortDescription xml:lang="en">2012 - LCI hydroelectric power generation - Flury</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">literature </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 22.10.2012; Other validation: \\Server\e\ESU-Docs\Projektablage\349 Sachbilanzen erneuerbare Energie DE\DatenErgebnisse\[Ecospold_runofriver_CH_v2.2.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e6eddbc0-cb60-39a6-8d13-042cfd4023d2" version="00.00.000" uri="../contacts/e6eddbc0-cb60-39a6-8d13-042cfd4023d2.xml">
+                <common:shortDescription xml:lang="en">Karin Flury</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:52:38.147+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e6eddbc0-cb60-39a6-8d13-042cfd4023d2" version="00.00.000" uri="../contacts/e6eddbc0-cb60-39a6-8d13-042cfd4023d2.xml">
+                <common:shortDescription xml:lang="en">Karin Flury</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:40:56.416+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.014</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="edce014f-8cb7-31e2-8dcf-1cae6221d72f" version="00.00.000" uri="../sources/edce014f-8cb7-31e2-8dcf-1cae6221d72f.xml">
+                <common:shortDescription xml:lang="en">2012 - LCI hydroelectric power generation - Flury</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7e12b7a1-f642-3f0c-98d5-b04fe37dd07e" version="00.00.014" uri="../flows/7e12b7a1-f642-3f0c-98d5-b04fe37dd07e.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at run-of-river power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b34c3c41-226c-398d-8754-2d14f351afe2" olca:pedigreeUncertainty="(4;3;3;1;1;4)" olca:amount="0.01981843138">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8383da81-6b5a-3e06-b2a5-8fad509317f7" version="00.00.014" uri="../flows/8383da81-6b5a-3e06-b2a5-8fad509317f7.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at run-of-river power plant with reservoir</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.071346352968</meanAmount>
+            <resultingAmount>0.071346352968</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1258082647591463</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,3,1,1,4,BU:1.05); Proportion of hydropower from run-of-river hydropower stations with reservoir
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="7057ceb6-10bc-3ca2-9f03-8a85629ea0d5" olca:pedigreeUncertainty="(4;3;3;1;1;4)" olca:amount="0.9801815686">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6f1b01f9-a7be-32a0-9fae-909e54f1b0a2" version="00.00.014" uri="../flows/6f1b01f9-a7be-32a0-9fae-909e54f1b0a2.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at run-of-river power plant without reservoir</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.52865364696</meanAmount>
+            <resultingAmount>3.52865364696</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1258082647591463</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,3,1,1,4,BU:1.05); Proportion of hydropower from run-of-river hydropower stations without reservoir
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>960ee8d7-acb1-382b-b05d-4b4070cba823</common:UUID>
+            <name>
+                <baseName xml:lang="en">Battery, LiIo, rechargeable, prismatic, at plant</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="57aded3d-4d3f-3d65-b03a-7392ab36aef2">electronics</common:class>
+                    <common:class level="1" classId="296c829f-9160-371d-9441-529c080d79d5">devices</common:class>
+                    <common:class level="2" classId="658b1079-65ad-3243-869e-69888b514fd6">module</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The dataset can be used for a lithium-ion battery, e.g. for mechanical drive of an electrical vehicle. The battery pack (containing 14 singel cells) provides an electric power of 2.1 kWh and a voltage of 48 V. Data are based on measurements. For infrastructure, the ecoinvent dataset "electronic component production plant" is accounted. Transportation: the single cell are transported by ship from Peking to Amsterdam and by lorry within Europe (1000 km).;
+UUID: 960ee8d7-acb1-382b-b05d-4b4070cba823</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1072911600000" olca:endDate="1101855600000">
+            <common:referenceYear>2004</common:referenceYear>
+            <common:dataSetValidUntil>2004</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">undefined</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="GLO">
+                <descriptionOfRestrictions xml:lang="en">Some European datasets are used for global processes.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">This dataset includes a method of producing a lithium ion battery. During the charge process, lithium ion move from the cathode (LiMn2O4) into the electrolyte (LiPF6 in ethylenecarbonate) through the micropores of the seperator into the anode (lithium ion intercalation). During the discharge of the battery the Li+-ions move back into the cathode. The battery pack (containing 14 singel cells) provides an electric power of 2.1 kWh and a voltage of 48V. Data are based measurements. The battery pack contains a battery management system.\n\n# Included processes\nThis dataset incudes the production of a lithium ion battery pack.14 single cells, a steel box, a battery management system and cables are taken into acount. Further, the dataset includes the electric current for battery activating and testing. For infrastructure, the ecoinvent dataset "electronic component production plant" is accounted. Transportation: the single cells are transported by ship from Peking to Amsterdam and by lorry within Europe (1000 km).</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="01316d0b-d68a-3d65-ace1-675f3e46c82e" version="00.00.000" uri="../sources/01316d0b-d68a-3d65-ace1-675f3e46c82e.xml">
+                <common:shortDescription xml:lang="en">2010 - Changes in ecoinvent v2.1 and v2.2 - Althaus</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">measurements, patent, ecoinvent </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: passed; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="233afe28-34e8-3e8b-ad9a-547b2441b39e" version="00.00.000" uri="../contacts/233afe28-34e8-3e8b-ad9a-547b2441b39e.xml">
+                    <common:shortDescription xml:lang="en">Christian Bauer</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="5ca3a0e4-0d7b-3261-a4df-176cf1ea4327" version="00.00.000" uri="../contacts/5ca3a0e4-0d7b-3261-a4df-176cf1ea4327.xml">
+                <common:shortDescription xml:lang="en">Dominic Notter</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:51:46.206+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="5ca3a0e4-0d7b-3261-a4df-176cf1ea4327" version="00.00.000" uri="../contacts/5ca3a0e4-0d7b-3261-a4df-176cf1ea4327.xml">
+                <common:shortDescription xml:lang="en">Dominic Notter</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:44:20.082+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.008</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="01316d0b-d68a-3d65-ace1-675f3e46c82e" version="00.00.000" uri="../sources/01316d0b-d68a-3d65-ace1-675f3e46c82e.xml">
+                <common:shortDescription xml:lang="en">2010 - Changes in ecoinvent v2.1 and v2.2 - Althaus</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="1846e2f7-dc18-37a6-9bb7-da1570d8798c" olca:pedigreeUncertainty="(3;4;1;2;3;5)" olca:amount="7.814">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bb6923bf-03d8-3610-9eb1-65f0380e0dbe" version="00.00.000" uri="../flows/bb6923bf-03d8-3610-9eb1-65f0380e0dbe.xml">
+                <common:shortDescription xml:lang="en">Transport, transoceanic freight ship</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.814</meanAmount>
+            <resultingAmount>7.814</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4562966730718023</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,2,3,5,5)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="3d314eab-ef11-4ff3-a35e-9bc5cd858694" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="10b19bdd-fb0f-3731-a72c-95fbf2607455" olca:pedigreeUncertainty="(3;4;1;3;1;4)" olca:amount="0.024955">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0d77ea58-8933-3eaa-813e-fb565af8ece8" version="00.00.000" uri="../flows/0d77ea58-8933-3eaa-813e-fb565af8ece8.xml">
+                <common:shortDescription xml:lang="en">Cable, three-conductor cable, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.024955</meanAmount>
+            <resultingAmount>0.024955</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0905044704172469</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,3,1,4,3)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="61f3f657-439c-3568-97e0-14c34a10e5bf" version="00.00.008" uri="../flows/61f3f657-439c-3568-97e0-14c34a10e5bf.xml">
+                <common:shortDescription xml:lang="en">Battery, LiIo, rechargeable, prismatic, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">Global
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="3d314eab-ef11-4ff3-a35e-9bc5cd858694" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="65aec195-832d-3b1b-8d8d-0bcac2160392" olca:pedigreeUncertainty="(3;4;1;3;1;4)" olca:amount="0.3729">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8dd9d6e1-9f99-36da-964a-76bb083c1eef" version="00.00.000" uri="../flows/8dd9d6e1-9f99-36da-964a-76bb083c1eef.xml">
+                <common:shortDescription xml:lang="en">Cable, data cable in infrastructure, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.3729</meanAmount>
+            <resultingAmount>0.3729</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0905044704172469</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,3,1,4,3)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="a748abc6-4058-372d-bf9d-6bfd24d954ea" olca:pedigreeUncertainty="(1;4;1;3;1;4)" olca:amount="0.79937">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9071c7c9-60a0-3492-8c91-fbef7a3be855" version="00.00.008" uri="../flows/9071c7c9-60a0-3492-8c91-fbef7a3be855.xml">
+                <common:shortDescription xml:lang="en">Single cell, lithium-ion battery, lithium manganese oxide/graphite, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.79937</meanAmount>
+            <resultingAmount>0.79937</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0750348831549608</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,4,1,3,1,4,3)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="fdb74cda-5905-32f0-a1fd-1d69b95fa5aa" olca:pedigreeUncertainty="(5;5;2;3;3;5)" olca:amount="4.58E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f606ef54-c78b-3db5-8fdc-24fd00150a57" version="00.00.000" uri="../flows/f606ef54-c78b-3db5-8fdc-24fd00150a57.xml">
+                <common:shortDescription xml:lang="en">Metal working factory</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.58E-10</meanAmount>
+            <resultingAmount>4.58E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.8343663756185677</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(5,5,2,3,3,5,9)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b38bbde0-a4b0-347f-8136-ce520abfa557" olca:pedigreeUncertainty="(2;4;1;3;3;4)" olca:amount="0.14534">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0cce7489-6fcc-315f-94e7-a274ad613444" version="00.00.000" uri="../flows/0cce7489-6fcc-315f-94e7-a274ad613444.xml">
+                <common:shortDescription xml:lang="en">Reinforcing steel, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.14534</meanAmount>
+            <resultingAmount>0.14534</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1262770529492288</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,3,3,4,12)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="99f8a4b0-99b5-3130-924c-5de4c10b62ef" olca:pedigreeUncertainty="(3;4;1;2;3;5)" olca:amount="1.0201">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4e8927da-4e59-319e-9df6-1965b861e482" version="00.00.022" uri="../flows/4e8927da-4e59-319e-9df6-1965b861e482.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0201</meanAmount>
+            <resultingAmount>1.0201</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4562966730718023</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,1,2,3,5,5)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="3cf82bde-ba4e-3873-b7b7-cec1973d1a3c" olca:pedigreeUncertainty="(1;4;1;3;1;4)" olca:amount="0.0033843">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6f952c06-c038-309b-8f16-4a33d07b94e0" version="00.00.000" uri="../flows/6f952c06-c038-309b-8f16-4a33d07b94e0.xml">
+                <common:shortDescription xml:lang="en">Printed wiring board, surface mounted, unspec., solder mix, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0033843</meanAmount>
+            <resultingAmount>0.0033843</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0750348831549608</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,4,1,3,1,4,3)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(4;4;1;2;4;4)" olca:amount="0.38719">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f2d84834-d0b3-42e5-b41a-f04cc80337a4" version="00.00.000" uri="../flows/f2d84834-d0b3-42e5-b41a-f04cc80337a4.xml">
+                <common:shortDescription xml:lang="en">Heat, waste</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.38719</meanAmount>
+            <resultingAmount>0.38719</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2631310304160848</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,4,1,2,4,4,13)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="d9215fd1-60bb-33f5-9a60-cef1b079b523" olca:pedigreeUncertainty="(2;4;1;3;3;4)" olca:amount="0.14534">
+            <referenceToFlowDataSet type="flow data set" refObjectId="02808293-f104-3b2a-8aaa-1ff2a90aa78e" version="00.00.000" uri="../flows/02808293-f104-3b2a-8aaa-1ff2a90aa78e.xml">
+                <common:shortDescription xml:lang="en">Sheet rolling, steel</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.14534</meanAmount>
+            <resultingAmount>0.14534</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1262770529492288</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,3,3,4,3)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="8cebe831-b6c1-4854-a5ab-a08a7ba3e50d" olca:pedigreeUncertainty="(4;5;3;5;3;5)" olca:amount="0.10755">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e6eb4a56-a451-3694-bb66-5f4f4fa19cc1" version="00.00.000" uri="../flows/e6eb4a56-a451-3694-bb66-5f4f4fa19cc1.xml">
+                <common:shortDescription xml:lang="en">Electricity, low voltage, production ENTSO-E, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.38718</meanAmount>
+            <resultingAmount>0.38718</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2164292005702593</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,3,5,3,5,2)
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

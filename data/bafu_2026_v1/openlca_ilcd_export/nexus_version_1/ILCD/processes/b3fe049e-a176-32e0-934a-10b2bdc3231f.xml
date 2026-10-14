@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>b3fe049e-a176-32e0-934a-10b2bdc3231f</common:UUID>
+            <name>
+                <baseName xml:lang="en">Transport, passenger bus, battery electric - battery-equipped trolleybus, fleet average</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="2279f95c-4711-3ee2-8393-0e7a7bbfe8d1">transport systems</common:class>
+                    <common:class level="1" classId="a68df7d5-0492-3d7e-a949-c23730a59b9f">road</common:class>
+                    <common:class level="2" classId="944e4422-9c8a-3ad4-9faa-fe1fdf65edb8">Transformation</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en"> Average of other Mobitool datasets created with the purpose of replacing older datasets in the database. Basis for fleet shares: Switzerland year 2020. Source: HBEFA 5.1, INFRAS. UUID: b3fe049e-a176-32e0-934a-10b2bdc3231f</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>3</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1577833200000" olca:endDate="1606777200000">
+            <common:referenceYear>2020</common:referenceYear>
+            <common:dataSetValidUntil>2020</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Technology and fleet shares valid for year 2020</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Unspecified</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Average of other Mobitool datasets created with the purpose of replacing older datasets in the database. Basis for fleet shares: Switzerland year 2020. Source: HBEFA 5.1, INFRAS</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="0e73cd97-c332-3b37-8f71-c19ea140d648" version="00.00.000" uri="../sources/0e73cd97-c332-3b37-8f71-c19ea140d648.xml">
+                <common:shortDescription xml:lang="en">2025 - Mobitool integration project - Cox</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Unspecified</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Data from HBEFA 5.1 for the year 2020. Some technologies with very small shares in the fleet removed for simplicity. Technology shares normalised to ensure sum of 100%</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="efab6acc-e069-365d-b922-c7081723eaa3" version="00.00.000" uri="../contacts/efab6acc-e069-365d-b922-c7081723eaa3.xml">
+                    <common:shortDescription xml:lang="en">Julien McTighe</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="38b429bd-4961-37c6-b2e8-98ea67ee44eb" version="00.00.000" uri="../contacts/38b429bd-4961-37c6-b2e8-98ea67ee44eb.xml">
+                <common:shortDescription xml:lang="en">Brian Cox</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:52:40.598+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="38b429bd-4961-37c6-b2e8-98ea67ee44eb" version="00.00.000" uri="../contacts/38b429bd-4961-37c6-b2e8-98ea67ee44eb.xml">
+                <common:shortDescription xml:lang="en">Brian Cox</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T10:01:07.704+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.022</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="0e73cd97-c332-3b37-8f71-c19ea140d648" version="00.00.000" uri="../sources/0e73cd97-c332-3b37-8f71-c19ea140d648.xml">
+                <common:shortDescription xml:lang="en">2025 - Mobitool integration project - Cox</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>false</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="ceef3a28-c89a-3c20-b332-8be198411742" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.95">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fb602fbc-f274-3cdc-a629-8d4f759d9a2a" version="00.00.022" uri="../flows/fb602fbc-f274-3cdc-a629-8d4f759d9a2a.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, battery electric - battery-equipped trolleybus, LTO battery, 18m articulated urban bus, 2020</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.95</meanAmount>
+            <resultingAmount>0.95</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Trolleybuses in Switzerland almost exclusively 18m and longer</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="056fe845-2d19-3e2a-9c08-454212a9728c" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.05">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9ce285ef-869d-39d6-99b6-5ff48fdd8190" version="00.00.022" uri="../flows/9ce285ef-869d-39d6-99b6-5ff48fdd8190.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, battery electric - battery-equipped trolleybus, LTO battery, 13m single deck urban bus, 2020</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.05</meanAmount>
+            <resultingAmount>0.05</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Trolleybuses in Switzerland almost exclusively 18m and longer</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="db67ee33-6cbd-38a4-a925-0c5e21688726" version="00.00.022" uri="../flows/db67ee33-6cbd-38a4-a925-0c5e21688726.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, battery electric - battery-equipped trolleybus, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+        </exchange>
+    </exchanges>
+</processDataSet>

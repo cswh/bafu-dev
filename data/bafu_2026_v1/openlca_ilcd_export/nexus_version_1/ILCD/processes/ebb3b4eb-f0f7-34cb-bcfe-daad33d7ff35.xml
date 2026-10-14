@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>ebb3b4eb-f0f7-34cb-bcfe-daad33d7ff35</common:UUID>
+            <name>
+                <baseName xml:lang="en">Heat, at system cogen 160kWe Jakobsberg, allocation electricity</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="19cb16ec-2a0e-3f73-a828-b3f1347d3bee">heat</common:class>
+                    <common:class level="1" classId="d102926d-1bb7-30a6-afd5-2543f28f2f53">natural gas</common:class>
+                    <common:class level="2" classId="f587d50d-8287-3be4-9911-8020aa6d359b">cogeneration</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Heat at system i.e. distribution is not included.;
+UUID: ebb3b4eb-f0f7-34cb-bcfe-daad33d7ff35</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="975625200000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2000</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">undefined</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Efficiencies refer to a specific plant in Switzerland.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Specific cogeneration unit installed in Switzerland.\n\n# Included processes\nThe module includes heat from module cogen (i.e. the cogeneration unit and a heat pump) and from two oil boilers.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="6713bc4b-7d57-3225-979e-4e1d8bd656e8" version="00.00.000" uri="../sources/6713bc4b-7d57-3225-979e-4e1d8bd656e8.xml">
+                <common:shortDescription xml:lang="en">2007 - Combined heat power generation - Heck</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Operator information </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: prepared; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="5322091d-fd2a-3be0-b341-4124e7b1da28" version="00.00.000" uri="../contacts/5322091d-fd2a-3be0-b341-4124e7b1da28.xml">
+                    <common:shortDescription xml:lang="en">Gerald Rebitzer</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e9a05e3c-7298-38a3-96cb-56f233ea4628" version="00.00.000" uri="../contacts/e9a05e3c-7298-38a3-96cb-56f233ea4628.xml">
+                <common:shortDescription xml:lang="en">Thomas Heck</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:52:50.612+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e9a05e3c-7298-38a3-96cb-56f233ea4628" version="00.00.000" uri="../contacts/e9a05e3c-7298-38a3-96cb-56f233ea4628.xml">
+                <common:shortDescription xml:lang="en">Thomas Heck</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T09:08:22.817+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.012</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="6713bc4b-7d57-3225-979e-4e1d8bd656e8" version="00.00.000" uri="../sources/6713bc4b-7d57-3225-979e-4e1d8bd656e8.xml">
+                <common:shortDescription xml:lang="en">2007 - Combined heat power generation - Heck</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="aea3ca72-3cb0-3806-934a-01a2f22a4094" olca:amount="0.4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4e3bf8df-90a5-3a24-8cb1-962a0e572dfd" version="00.00.004" uri="../flows/4e3bf8df-90a5-3a24-8cb1-962a0e572dfd.xml">
+                <common:shortDescription xml:lang="en">Heat, light fuel oil, at boiler 100kW, non-modulating</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.4</meanAmount>
+            <resultingAmount>0.4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">data from operators; basic uncertainty
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9b3ed6ab-ce9c-3f13-98df-2cc609848482" version="00.00.012" uri="../flows/9b3ed6ab-ce9c-3f13-98df-2cc609848482.xml">
+                <common:shortDescription xml:lang="en">Heat, at system cogen 160kWe Jakobsberg, allocation electricity</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="6fcc8cad-6170-3cf2-b80d-d841d7429e44" olca:amount="0.6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2a4e30b8-ce40-3e2d-9e6e-3d2e2473ae06" version="00.00.012" uri="../flows/2a4e30b8-ce40-3e2d-9e6e-3d2e2473ae06.xml">
+                <common:shortDescription xml:lang="en">Heat, at module cogen 160kWe Jakobsberg, allocation electricity</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.6</meanAmount>
+            <resultingAmount>0.6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">data from operators; basic uncertainty
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

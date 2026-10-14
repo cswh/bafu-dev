@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>52d3c8c4-69ce-35f4-84dc-2b987a362267</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, hard coal, at power plant</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="1e16a4cb-ccc6-35f7-b15f-24774dfc57ec">coal</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The average allocated net electrical efficiency is about 37.9 %. The electricity generation of this technology in the region is at about 200 TWh based on Eurostat/IEA. NA; UUID: 52d3c8c4-69ce-35f4-84dc-2b987a362267</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1514761200000" olca:endDate="1577833200000">
+            <common:referenceYear>2018</common:referenceYear>
+            <common:dataSetValidUntil>2020</common:dataSetValidUntil>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="UCTE" latitudeAndLongitude="46.09253959449625;10.796497859472167">
+                <descriptionOfRestrictions xml:lang="en">ENTSO-E in 2019</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Average installed technology.\n\n# Included processes\nElectricity output at busbar. The dataset is composed of the electricity generation in covered sub-regions and thus uses the average net efficiencies of power plants in those regions adjusted for co-generation (using allocation based on exergy content).</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="18208c77-0e87-3b8f-ae6e-aefaadf8dd4f" version="00.00.000" uri="../sources/18208c77-0e87-3b8f-ae6e-aefaadf8dd4f.xml">
+                <common:shortDescription xml:lang="en">2023 - LCI solid fossil fuel - Itten</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Databases/ literature data based on regional statistics.</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">27.07.2023</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="13ee94c0-afcc-3954-b3d2-5f352fc753df" version="00.00.000" uri="../contacts/13ee94c0-afcc-3954-b3d2-5f352fc753df.xml">
+                <common:shortDescription xml:lang="en">Christopher Oberschelp</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:54:21.374+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="dda0f90d-944f-3015-ba07-9f8b3ca0af60" version="00.00.000" uri="../contacts/dda0f90d-944f-3015-ba07-9f8b3ca0af60.xml">
+                <common:shortDescription xml:lang="en">René Itten</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2023-07-27T16:03:41.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="18208c77-0e87-3b8f-ae6e-aefaadf8dd4f" version="00.00.000" uri="../sources/18208c77-0e87-3b8f-ae6e-aefaadf8dd4f.xml">
+                <common:shortDescription xml:lang="en">2023 - LCI solid fossil fuel - Itten</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="53f0a077-87a5-334e-8155-cc3dc6f8b249" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.013142">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c46f2cd7-057b-31bc-94af-aa0f0787dff1" version="00.00.000" uri="../flows/c46f2cd7-057b-31bc-94af-aa0f0787dff1.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0473112</meanAmount>
+            <resultingAmount>0.0473112</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1.05)calculated from IEA Extended World Energy Balances for 2019; uncertainty own estimate</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="fc352d10-a249-3235-98a5-dc928cd06daf" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.030508">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b5773a0d-02c1-32d2-94b2-72a3f5f5922a" version="00.00.000" uri="../flows/b5773a0d-02c1-32d2-94b2-72a3f5f5922a.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1098288</meanAmount>
+            <resultingAmount>0.1098288</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1.05)calculated from IEA Extended World Energy Balances for 2019; uncertainty own estimate</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="9cea8bf1-9715-368a-b5ec-fe4c70d61b66" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.1535">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e6b1d666-4095-3a89-80c0-1cd91430f8b9" version="00.00.000" uri="../flows/e6b1d666-4095-3a89-80c0-1cd91430f8b9.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.5526</meanAmount>
+            <resultingAmount>0.5526</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1.05)calculated from IEA Extended World Energy Balances for 2019; uncertainty own estimate</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="1e061819-aa03-343b-955b-cc856ed06788" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.15863">
+            <referenceToFlowDataSet type="flow data set" refObjectId="82804501-7077-334e-bdf3-cd4a984344c1" version="00.00.000" uri="../flows/82804501-7077-334e-bdf3-cd4a984344c1.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.571068</meanAmount>
+            <resultingAmount>0.571068</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1.05)calculated from IEA Extended World Energy Balances for 2019; uncertainty own estimate</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="a2606599-aea3-3187-9594-72fba555a8ef" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="8.0916E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="23d85aa3-de86-31c3-8338-eaa9ac05c611" version="00.00.000" uri="../flows/23d85aa3-de86-31c3-8338-eaa9ac05c611.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.002912976</meanAmount>
+            <resultingAmount>0.002912976</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1.05)calculated from IEA Extended World Energy Balances for 2019; uncertainty own estimate</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e90357b6-913c-3ada-982f-fed274f10e46" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.012769">
+            <referenceToFlowDataSet type="flow data set" refObjectId="87f2b85c-63b3-33ca-9fb3-aba051c545d6" version="00.00.000" uri="../flows/87f2b85c-63b3-33ca-9fb3-aba051c545d6.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.045968400000000006</meanAmount>
+            <resultingAmount>0.045968400000000006</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1.05)calculated from IEA Extended World Energy Balances for 2019; uncertainty own estimate</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="a3b8fd88-053f-38ce-b819-2a7905118255" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.10981">
+            <referenceToFlowDataSet type="flow data set" refObjectId="55c80536-e191-367d-a63d-d93862fe1f4d" version="00.00.000" uri="../flows/55c80536-e191-367d-a63d-d93862fe1f4d.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.395316</meanAmount>
+            <resultingAmount>0.395316</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1.05)calculated from IEA Extended World Energy Balances for 2019; uncertainty own estimate</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="ee0f9f93-524a-380a-963a-5eb4a78b8d92" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.47361">
+            <referenceToFlowDataSet type="flow data set" refObjectId="851788f3-4a4d-3c4b-b6a2-f5904354fff3" version="00.00.000" uri="../flows/851788f3-4a4d-3c4b-b6a2-f5904354fff3.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.704996</meanAmount>
+            <resultingAmount>1.704996</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1.05)calculated from IEA Extended World Energy Balances for 2019; uncertainty own estimate</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="305914ff-6602-355d-afc3-41f955d1eb0a" version="00.00.000" uri="../flows/305914ff-6602-355d-afc3-41f955d1eb0a.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="5855a1e3-e92d-356f-83ee-f5af6583ed0d" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.047216">
+            <referenceToFlowDataSet type="flow data set" refObjectId="eb436bec-8dc5-35a7-93a6-2b1a369efdf1" version="00.00.000" uri="../flows/eb436bec-8dc5-35a7-93a6-2b1a369efdf1.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1699776</meanAmount>
+            <resultingAmount>0.1699776</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1.05)calculated from IEA Extended World Energy Balances for 2019; uncertainty own estimate</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

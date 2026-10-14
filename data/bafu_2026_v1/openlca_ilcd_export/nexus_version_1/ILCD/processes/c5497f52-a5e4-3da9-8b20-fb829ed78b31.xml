@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>c5497f52-a5e4-3da9-8b20-fb829ed78b31</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, production mix photovoltaic, at plant</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="3e3c30aa-7498-38cc-aaf1-0977dd9d7c49">photovoltaic</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Annual output of grid-connected PV power plants differentiated for roof-top, facade and centralized power plants. Technology and installation type breakdown based on literature (IEA-PVPS Task 1 and Fraunhofer ISE reports) and expert estimates. Average yield based on population-weighted average according to Breyer &amp; Schmid (2010), corrected by performance ratio as specified in IEA-PVPS Task 12 methodology guidelines. The lifetime of PV systems is estimated at 30 years based on the PEFCR PV electricity.\nTechnology: Electricity production with grid-connected photovoltaic power plants.\nTime period: Time of publications\nVersion: 1\nEnergy values: Undefined\n100.0\nProduction volume: Unknown.\nLocal category: Photovoltaik\nLocal subcategory: Kraftwerke\nUVEK 2022 source file:174-photovoltaics-global-supply-chain-v2.5._X-elec-Americas.xml\n\n
+UUID: c5497f52-a5e4-3da9-8b20-fb829ed78b31</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1104534000000" olca:endDate="1543618800000">
+            <common:referenceYear>2005</common:referenceYear>
+            <common:dataSetValidUntil>2018</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="MX" latitudeAndLongitude="23.949270115472356;-102.53117151937622">
+                <descriptionOfRestrictions xml:lang="en">undefined</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Electricity production with grid-connected photovoltaic power plants.\n\n# Included processes\nProduction mix of photovoltaic electricity in the country. Annual output, Roof-Top: 1612, Annual output, Facade: 1128 kWh/kWp, Annual output, centralized PV systems: 1709 kWh/kWp. Amount of solar energy transformed to electricity. Waste heat emission due to losses of electricity in the system.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="51a9cf34-4577-3aed-b9ee-3622691cf1e0" version="00.00.000" uri="../sources/51a9cf34-4577-3aed-b9ee-3622691cf1e0.xml">
+                <common:shortDescription xml:lang="en">2015 - LCI and LCA photovoltaic systems - Frischknecht</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistical data and model calculations </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 30.09.2020; Other validation: G:\Projekte laufend\174 Photovoltaic, IEA Task 12\2017 Global supply chain\EcoSpold\[174-photovoltaics-global-supply-chain-v2.5.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:51:44.350+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2020-09-30T00:00:00.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="51a9cf34-4577-3aed-b9ee-3622691cf1e0" version="00.00.000" uri="../sources/51a9cf34-4577-3aed-b9ee-3622691cf1e0.xml">
+                <common:shortDescription xml:lang="en">2015 - LCI and LCA photovoltaic systems - Frischknecht</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="a468a961-9732-3d6f-8053-d229293dba3d" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="0.0021436">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a573547e-ef3b-3e65-8bdf-442d50e8fa6b" version="00.00.004" uri="../flows/a573547e-ef3b-3e65-8bdf-442d50e8fa6b.xml">
+                <common:shortDescription xml:lang="en">Tap water, water balance according to MoeK 2013, at user</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0021436</meanAmount>
+            <resultingAmount>0.0021436</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0443658362853507</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Estimation 20l/m2 panel
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="80323585-77e9-3477-842e-8bda1af58109" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="4.7675E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="102293e6-dffe-3a37-8d45-63f2af77cee8" version="00.00.000" uri="../flows/102293e6-dffe-3a37-8d45-63f2af77cee8.xml">
+                <common:shortDescription xml:lang="en">3kWp facade installation, single-Si, laminated, integrated, at building</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.7675E-9</meanAmount>
+            <resultingAmount>4.7675E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="30" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="00c42a3d-5009-3d77-8a89-5c56d12cc64c" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="1.0632E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3b91443a-ead0-3ed6-9851-08fb504337b5" version="00.00.000" uri="../flows/3b91443a-ead0-3ed6-9851-08fb504337b5.xml">
+                <common:shortDescription xml:lang="en">3kWp slanted-roof installation, CIS, laminated, integrated, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0632E-9</meanAmount>
+            <resultingAmount>1.0632E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="31" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="3b46feb5-bda8-394a-af31-8cb2c54b2ded" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="6.9443E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="81d0876d-b08d-3169-8fa8-b4e5078435c5" version="00.00.000" uri="../flows/81d0876d-b08d-3169-8fa8-b4e5078435c5.xml">
+                <common:shortDescription xml:lang="en">570 kWp open ground installation, CdTe, on open ground</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.9443E-10</meanAmount>
+            <resultingAmount>6.9443E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="32" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="7daf2429-6762-3dc8-8d6f-45a93e325ba4" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="9.4521E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="28f2e20a-5157-3fad-a49b-f04ec58f2979" version="00.00.000" uri="../flows/28f2e20a-5157-3fad-a49b-f04ec58f2979.xml">
+                <common:shortDescription xml:lang="en">3kWp flat roof installation, multi-Si, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.4521E-8</meanAmount>
+            <resultingAmount>9.4521E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="33" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="7c5bcdfa-391e-388b-a2ec-2d6191d08437" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="1.9253E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="550e987d-6c86-3012-9092-f4e7c2025463" version="00.00.004" uri="../flows/550e987d-6c86-3012-9092-f4e7c2025463.xml">
+                <common:shortDescription xml:lang="en">156 kWp flat-roof installation, single-Si, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.9253E-9</meanAmount>
+            <resultingAmount>1.9253E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:defaultProvider="af36788f-505a-462c-bc7b-2b30e1f5f756" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="1.9292E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="039f3562-c307-393b-bc50-a2d7f11ec548" version="00.00.000" uri="../flows/039f3562-c307-393b-bc50-a2d7f11ec548.xml">
+                <common:shortDescription xml:lang="en">Treatment, sewage, from residence, to wastewater treatment, class 2</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.9292E-6</meanAmount>
+            <resultingAmount>1.9292E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0443658362853507</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Estimation 20l/m2 panel
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="72f4b692-8e68-3270-90f4-5352b5c88597" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="9.7221E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="50099fd5-652c-3f88-bb32-f6445190d335" version="00.00.000" uri="../flows/50099fd5-652c-3f88-bb32-f6445190d335.xml">
+                <common:shortDescription xml:lang="en">570 kWp open ground installation, single-Si, on open ground</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.7221E-9</meanAmount>
+            <resultingAmount>9.7221E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="ecbdff4d-8a66-3c6d-8d42-3b10cfbe816f" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="4.109E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="97be8f16-0cfd-31c5-ad0b-972f12bbd24d" version="00.00.000" uri="../flows/97be8f16-0cfd-31c5-ad0b-972f12bbd24d.xml">
+                <common:shortDescription xml:lang="en">3kWp slanted-roof installation, single-Si, panel, mounted, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.109E-8</meanAmount>
+            <resultingAmount>4.109E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="dc134106-2d82-3837-a0af-b29947a8c23e" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="9.002E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6484c83b-7a10-3445-95fd-6a867de0e7bf" version="00.00.000" uri="../flows/6484c83b-7a10-3445-95fd-6a867de0e7bf.xml">
+                <common:shortDescription xml:lang="en">3kWp facade installation, multi-Si, laminated, integrated, at building</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.002E-9</meanAmount>
+            <resultingAmount>9.002E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="76f991ed-2bfa-364b-a313-f77eaf4a645c" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="1.772E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9b4504af-7e0c-3e50-b92c-650f81cf2003" version="00.00.000" uri="../flows/9b4504af-7e0c-3e50-b92c-650f81cf2003.xml">
+                <common:shortDescription xml:lang="en">3kWp slanted-roof installation, CIS, panel, mounted, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.772E-8</meanAmount>
+            <resultingAmount>1.772E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="49dbade1-f1ac-39af-a3d0-8cb78040602f" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="1.287E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3548802e-f818-3663-8488-710cd19bf00d" version="00.00.000" uri="../flows/3548802e-f818-3663-8488-710cd19bf00d.xml">
+                <common:shortDescription xml:lang="en">3kWp slanted-roof installation, CdTe, laminated, integrated, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.287E-9</meanAmount>
+            <resultingAmount>1.287E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="327e56bf-2282-3e89-82d5-64203976178f" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="1.6787E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="95523c69-99e2-377d-8374-dbfedf7d5464" version="00.00.000" uri="../flows/95523c69-99e2-377d-8374-dbfedf7d5464.xml">
+                <common:shortDescription xml:lang="en">3kWp slanted-roof installation, micro-Si, laminated, integrated, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.6787E-10</meanAmount>
+            <resultingAmount>1.6787E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="ea2232d4-e7f4-3143-8055-b5055c60fca0" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="4.0654E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c145cf18-72e7-3f9b-bb6a-52e6d5a66e50" version="00.00.005" uri="../flows/c145cf18-72e7-3f9b-bb6a-52e6d5a66e50.xml">
+                <common:shortDescription xml:lang="en">93 kWp slanted-roof installation, multi-Si, laminated,  integrated, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.0654E-10</meanAmount>
+            <resultingAmount>4.0654E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="3.8503">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a7ff17d4-d3fe-4a70-9f2e-392b34630772" version="00.00.000" uri="../flows/a7ff17d4-d3fe-4a70-9f2e-392b34630772.xml">
+                <common:shortDescription xml:lang="en">Energy, solar, converted</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.8503</meanAmount>
+            <resultingAmount>3.8503</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0443658362853507</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Energy loss in the system
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="db38470f-42d5-3bc2-8e03-ca35c2434c50" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="7.7586E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1421dde4-d011-32e5-827d-b8e27be5d31d" version="00.00.000" uri="../flows/1421dde4-d011-32e5-827d-b8e27be5d31d.xml">
+                <common:shortDescription xml:lang="en">3kWp slanted-roof installation, multi-Si, panel, mounted, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.7586E-8</meanAmount>
+            <resultingAmount>7.7586E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="7e86cb3d-68bc-3d47-98d9-4ea7726acc2e" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="3.6354E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0f5edd36-0f21-3b6e-89c6-0fe29ec3b9d1" version="00.00.004" uri="../flows/0f5edd36-0f21-3b6e-89c6-0fe29ec3b9d1.xml">
+                <common:shortDescription xml:lang="en">156 kWp flat-roof installation, multi-Si, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.6354E-9</meanAmount>
+            <resultingAmount>3.6354E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="2363149c-cbdc-3d98-8838-4665c7cee8c8" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="5.7366E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ab878fa8-35be-33c2-ba87-40cc0a7c3347" version="00.00.000" uri="../flows/ab878fa8-35be-33c2-ba87-40cc0a7c3347.xml">
+                <common:shortDescription xml:lang="en">570 kWp open ground installation, CIS, on open ground</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.7366E-10</meanAmount>
+            <resultingAmount>5.7366E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(1;n.a.;n.a.;n.a.;n.a.;n.a.)" olca:amount="0.25027">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f2d84834-d0b3-42e5-b41a-f04cc80337a4" version="00.00.000" uri="../flows/f2d84834-d0b3-42e5-b41a-f04cc80337a4.xml">
+                <common:shortDescription xml:lang="en">Heat, waste</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.25027</meanAmount>
+            <resultingAmount>0.25027</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,na,na,na,na,na); Calculation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="2.1436E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bfa5d0c0-374a-34eb-88f4-0b514aff3282" version="00.00.000" uri="../flows/bfa5d0c0-374a-34eb-88f4-0b514aff3282.xml">
+                <common:shortDescription xml:lang="en">Water, MX</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.1436E-4</meanAmount>
+            <resultingAmount>2.1436E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0443658362853507</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Assumption: 10% of water used is evaporated
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="5886f533-e82c-37bb-a400-30121381de79" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="4.6552E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e83798ba-99ce-3943-9be6-f0f13c65338a" version="00.00.000" uri="../flows/e83798ba-99ce-3943-9be6-f0f13c65338a.xml">
+                <common:shortDescription xml:lang="en">3kWp slanted-roof installation, multi-Si, laminated, integrated, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.6552E-9</meanAmount>
+            <resultingAmount>4.6552E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="c35baca1-b81c-3185-b8b9-4f003fccbf09" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="1.8357E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f00152dc-5864-3e75-8d6a-0b06388e1f87" version="00.00.000" uri="../flows/f00152dc-5864-3e75-8d6a-0b06388e1f87.xml">
+                <common:shortDescription xml:lang="en">570 kWp open ground installation, multi-Si, on open ground</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.8357E-8</meanAmount>
+            <resultingAmount>1.8357E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f483fb36-7b7f-3a8b-b169-fe016c7826dd" version="00.00.000" uri="../flows/f483fb36-7b7f-3a8b-b169-fe016c7826dd.xml">
+                <common:shortDescription xml:lang="en">Electricity, production mix photovoltaic, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+            <generalComment xml:lang="en">MEXICO
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="c22eedc4-f3f6-3568-931d-08bda8a7a5ac" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="2.7979E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="679cf29e-f6fa-3064-be7e-508f50bb43d1" version="00.00.000" uri="../flows/679cf29e-f6fa-3064-be7e-508f50bb43d1.xml">
+                <common:shortDescription xml:lang="en">3kWp slanted-roof installation, micro-Si, panel, mounted, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.7979E-9</meanAmount>
+            <resultingAmount>2.7979E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="d777787e-6732-3c75-9a75-69c61e46424a" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="6.7757E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e56353a9-4ba0-3c02-b963-ba76516e19cf" version="00.00.004" uri="../flows/e56353a9-4ba0-3c02-b963-ba76516e19cf.xml">
+                <common:shortDescription xml:lang="en">93 kWp slanted-roof installation, multi-Si, panel, mounted, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.7757E-9</meanAmount>
+            <resultingAmount>6.7757E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="d4cbeba9-0c9f-3135-b727-53d74b26608d" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="9.0578E-11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6101e185-7fe3-3b9c-a527-7d9c7b33aa10" version="00.00.000" uri="../flows/6101e185-7fe3-3b9c-a527-7d9c7b33aa10.xml">
+                <common:shortDescription xml:lang="en">570 kWp open ground installation, micro-Si, on open ground</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.0578E-11</meanAmount>
+            <resultingAmount>9.0578E-11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="2929ea29-e6b5-360c-8998-118d4f328f9c" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="5.0059E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="93c0282a-926b-3018-94b2-4f281a826d27" version="00.00.000" uri="../flows/93c0282a-926b-3018-94b2-4f281a826d27.xml">
+                <common:shortDescription xml:lang="en">3kWp flat roof installation, single-Si, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.0059E-8</meanAmount>
+            <resultingAmount>5.0059E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="e0c7a37f-365c-3471-ab33-2d88f7e8d6fc" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="2.145E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="13587350-9f56-3096-aa43-ada3de40aee0" version="00.00.000" uri="../flows/13587350-9f56-3096-aa43-ada3de40aee0.xml">
+                <common:shortDescription xml:lang="en">3kWp slanted-roof installation, CdTe, panel, mounted, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.145E-8</meanAmount>
+            <resultingAmount>2.145E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="da09a5d2-96c3-39dd-ad4d-e1d720ffea83" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="2.4654E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1bbb4bc5-24d1-3fcc-945e-98160fda5b4f" version="00.00.000" uri="../flows/1bbb4bc5-24d1-3fcc-945e-98160fda5b4f.xml">
+                <common:shortDescription xml:lang="en">3kWp slanted-roof installation, single-Si, laminated, integrated, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.4654E-9</meanAmount>
+            <resultingAmount>2.4654E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="5a892a57-e071-393f-a52f-65c06bb99f1d" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="9.002E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e18f822c-826e-3268-80d9-c66499dd66c4" version="00.00.000" uri="../flows/e18f822c-826e-3268-80d9-c66499dd66c4.xml">
+                <common:shortDescription xml:lang="en">3kWp facade installation, multi-Si, panel, mounted, at building</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.002E-9</meanAmount>
+            <resultingAmount>9.002E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="b2787ff0-1d6c-37bb-b9f5-33d729f1dbd8" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="2.1531E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="416fc08f-41de-30fc-b0ac-3de1b5b83b85" version="00.00.005" uri="../flows/416fc08f-41de-30fc-b0ac-3de1b5b83b85.xml">
+                <common:shortDescription xml:lang="en">93 kWp slanted-roof installation, single-Si, laminated,  integrated, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.1531E-10</meanAmount>
+            <resultingAmount>2.1531E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="0a1e3460-fd50-38ba-a3db-317b43c7f6db" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="3.5884E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8e1e62d9-1bcf-3af4-9f1e-c6a4a93211c5" version="00.00.004" uri="../flows/8e1e62d9-1bcf-3af4-9f1e-c6a4a93211c5.xml">
+                <common:shortDescription xml:lang="en">93 kWp slanted-roof installation, single-Si, panel, mounted, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.5884E-9</meanAmount>
+            <resultingAmount>3.5884E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="96bc08a2-f642-351f-a6c3-88a370c69b31" olca:pedigreeUncertainty="(2;2;1;1;1;3)" olca:amount="4.7675E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cbe10cf5-7ebf-3571-98c5-6ed183f93fc0" version="00.00.000" uri="../flows/cbe10cf5-7ebf-3571-98c5-6ed183f93fc0.xml">
+                <common:shortDescription xml:lang="en">3kWp facade installation, single-Si, panel, mounted, at building</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.7675E-9</meanAmount>
+            <resultingAmount>4.7675E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,3); Calculation with average annual yield and share of technologies. Lifetime: 30a.
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>2076491d-bc07-318c-9e18-73e512c9f753</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, at cogen 300kWth, natural gas, economic allocation</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="f9a2a33f-39a6-39b4-8639-0c4958d0e80a">natural gas</common:class>
+                    <common:class level="2" classId="943664f9-4862-3a8c-99aa-bb583600170c">cogeneration</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Inventory for 1 MJ heat from natural gas, burned in a cogeneration unit with a capacity of 300 kWth. The multioutput process "natural gas, burned in cogen 300kWth delivers the coproducts "heat, at cogen 300kWth, natural gas, allocation exergy" and "electricity, at cogen 300kWth, natural gas, allocation exergy". The energy efficiency is 38% for electricity and 49% for heat. The economic factor is 0.72 for electricity and 0.28 for heat. This leads to the allocation factor of 0.66 for electricity and 0.34 for heat.;
+UUID: 2076491d-bc07-318c-9e18-73e512c9f753</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1420066800000" olca:endDate="1606777200000">
+            <common:referenceYear>2015</common:referenceYear>
+            <common:dataSetValidUntil>2020</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Data apply to the combustion in Switzerland.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">efficiency of average technology available on the market\n\n# Included processes\nIncluded are the natural gas burning in a 300 kWth cogen unit which in turn includes fuel input, infrastructure (boiler), air and water emissions and electrictiy needed for operation. The efficiency and economic allocation is considered</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="30a19596-4507-3096-ac2d-da99992eb60a" version="00.00.000" uri="../sources/30a19596-4507-3096-ac2d-da99992eb60a.xml">
+                <common:shortDescription xml:lang="en">2021 - LCI heating systems - Kaegi</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Data from literature </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 14.09.2020; Other validation: Z:\Schreibtisch\WinShare\BAFU Heizsysteme\_A-Konvertieren\BHKW\[EcoSpold_heat natural gas cogen300kw_v0.1.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="d67fb2ba-4422-366b-8e35-c6ed50f7dec9" version="00.00.000" uri="../contacts/d67fb2ba-4422-366b-8e35-c6ed50f7dec9.xml">
+                    <common:shortDescription xml:lang="en">Andy Spoerri</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="904c837f-e400-3310-88d9-910ab1423ce4" version="00.00.000" uri="../contacts/904c837f-e400-3310-88d9-910ab1423ce4.xml">
+                <common:shortDescription xml:lang="en">Thomas Kaegi</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:51:55.165+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="904c837f-e400-3310-88d9-910ab1423ce4" version="00.00.000" uri="../contacts/904c837f-e400-3310-88d9-910ab1423ce4.xml">
+                <common:shortDescription xml:lang="en">Thomas Kaegi</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:42:08.879+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.004</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="30a19596-4507-3096-ac2d-da99992eb60a" version="00.00.000" uri="../sources/30a19596-4507-3096-ac2d-da99992eb60a.xml">
+                <common:shortDescription xml:lang="en">2021 - LCI heating systems - Kaegi</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="4e0166e2-812a-3892-91d1-0c435125579b" olca:pedigreeUncertainty="(1;1;1;1;1;5)" olca:amount="6.3357">
+            <referenceToFlowDataSet type="flow data set" refObjectId="82e8cb7f-ca83-3922-b947-68df4a7b8668" version="00.00.012" uri="../flows/82e8cb7f-ca83-3922-b947-68df4a7b8668.xml">
+                <common:shortDescription xml:lang="en">Natural gas, burned in cogen 300kWth</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.3357</meanAmount>
+            <resultingAmount>6.3357</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,5,BU:1.05); ;
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="55908d8b-a727-397a-9779-2b51c8656910" version="00.00.004" uri="../flows/55908d8b-a727-397a-9779-2b51c8656910.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 300kWth, natural gas, economic allocation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>
