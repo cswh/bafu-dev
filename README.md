@@ -1,13 +1,16 @@
 # bafu-dev
 
-BAFU 2026 v1 LCI process datasets and the source for the GitHub Pages site.
+BAFU LCI process datasets and the source for the GitHub Pages site.
 
 ## Repository layout
 
-- `data/bafu_2026_v1/ecoSpold files/nexus_version_1/` — 11,947 process data sets in EcoSpold1 format (`process_<uuid>.xml`)
-- `data/bafu_2026_v1/openlca_ilcd_export/nexus_version_1/ILCD/` — the same data sets in ILCD format (`processes/<uuid>.xml`), plus flows, flow properties, unit groups, sources, contacts and LCIA methods
+- `data/<dataset>/ecoSpold files/nexus_version_1/` — process data sets in EcoSpold1 format (`process_<uuid>.xml`), one folder per dataset version (e.g. `bafu_2026_v1`, `bafu_2026_v2`, `bafu_2027_v1`)
+- `data/<dataset>/openlca_ilcd_export/nexus_version_1/ILCD/` — the same data sets in ILCD format (`processes/<uuid>.xml`), plus flows, flow properties, unit groups, sources, contacts and LCIA methods
 - `site/` — static site generator and page templates
-- `index.html`, `assets/`, `process/` — generated GitHub Pages output (do not edit by hand; regenerate instead)
+- `<dataset>/` (generated, at the repo root) — GitHub Pages output per dataset version: `index.html`, `assets/`, `process/`
+- `index.html` (generated, at the repo root) — redirects to the latest dataset version
+
+Do not edit generated output by hand; regenerate instead.
 
 Every process exists in both formats with the same UUID. The GitHub Pages site serves the repository root, so each raw XML file is directly reachable under the Pages URL.
 
@@ -15,10 +18,15 @@ Every process exists in both formats with the same UUID. The GitHub Pages site s
 
 Published at `https://cswh.github.io/bafu-dev/` (GitHub Pages, served from the `main` branch root).
 
-- The landing page lists all processes with search, filtering (location, reference unit, category, subcategory), column sorting and pagination.
-- Each process has a dedicated, shareable page at
-  `https://cswh.github.io/bafu-dev/process/<uuid>/`
-  showing its raw EcoSpold1 and raw ILCD XML side by side, plus direct links to both raw files.
+- `https://cswh.github.io/bafu-dev/` redirects to the latest dataset version.
+- Each dataset version has its own landing page, e.g.
+  `https://cswh.github.io/bafu-dev/bafu_2026_v1/`,
+  with an overview of (and navigation between) all existing BAFU versions.
+- The landing page lists all processes of all dataset versions with search, filtering (BAFU version, location, reference unit, category, subcategory), column sorting and pagination. A BAFU version column shows the dataset each process belongs to.
+- Each process has a dedicated, shareable page, namespaced by dataset version:
+  `https://cswh.github.io/bafu-dev/<dataset>/process/<uuid>/`
+  e.g. `https://cswh.github.io/bafu-dev/bafu_2026_v1/process/0004e814-c18d-42e2-a3f7-ce1fa51a3c2c/`
+  It shows the raw EcoSpold1 and raw ILCD XML of that process side by side, plus direct links to both raw files.
 
 ## Regenerating the site
 
@@ -28,4 +36,4 @@ After adding or changing data under `data/`, run:
 python3 site/generate.py
 ```
 
-This rebuilds `assets/index.json`, all `process/<uuid>/index.html` pages and the landing page from the current data. Commit and push the result to publish it.
+The generator automatically detects every `data/bafu_<year>_v<number>/` folder, builds each version's landing page and all `process/<uuid>/` pages, and rewrites the root redirect to the newest version. Output for dataset versions that no longer exist is removed. Commit and push the result to publish it.

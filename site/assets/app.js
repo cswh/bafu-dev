@@ -1,7 +1,7 @@
 "use strict";
 (function () {
   var PAGE_SIZE = 50;
-  var state = { q: "", location: "", unit: "", category: "", subcategory: "", sort: "name", desc: false, page: 1 };
+  var state = { q: "", dataset: "", location: "", unit: "", category: "", subcategory: "", sort: "name", desc: false, page: 1 };
   var data = [];
   var filtered = [];
 
@@ -9,11 +9,29 @@
   var tbody = $("tbl").getElementsByTagName("tbody")[0];
   var headers = $("tbl").getElementsByTagName("th");
 
-  function fillSelect(id, values) {
+  var datasetLabels = {};
+
+  function label(d) {
+    var m = /^(bafu_\d{4}_v\d+)$/.exec(d || "");
+    if (!m) return d || "";
+    if (!datasetLabels[d]) {
+      var p = d.split("_");
+      datasetLabels[d] = "BAFU " + p[1] + " v" + p[2].replace(/^v/, "");
+    }
+    return datasetLabels[d];
+  }
+
+  function datasetOrder(d) {
+    var m = /^bafu_(\d{4})_v(\d+)$/.exec(d || "");
+    return m ? (parseInt(m[1], 10) * 1000 + parseInt(m[2], 10)) : 0;
+  }
+
+  function fillSelect(id, values, labelText) {
     var sel = $(id);
     values.forEach(function (v) {
       var o = document.createElement("option");
-      o.value = v; o.textContent = v;
+      o.value = v;
+      o.textContent = labelText ? labelText(v) : v;
       sel.appendChild(o);
     });
   }
@@ -25,28 +43,45 @@
       var v = d[key];
       if (v && !seen[v]) { seen[v] = true; out.push(v); }
     });
-    out.sort(function (a, b) { return a.localeCompare(b, undefined, { numeric: true }); });
+    return out;
+  }
+
+  function uniqDatasets() {
+    var seen = Object.create(null);
+    var out = [];
+    data.forEach(function (d) {
+      if (!seen[d.dataset]) { seen[d.dataset] = true; out.push(d.dataset); }
+    });
+    out.sort(function (a, b) { return datasetOrder(a) - datasetOrder(b); });
     return out;
   }
 
   function apply() {
     var q = state.q.trim().toLowerCase();
-    var loc = state.location, unit = state.unit, cat = state.category, sub = state.subcategory;
     filtered = data.filter(function (d) {
-      if (loc && d.location !== loc) return false;
-      if (unit && d.unit !== unit) return false;
-      if (cat && d.category !== cat) return false;
-      if (sub && d.subcategory !== sub) return false;
+      if (state.dataset && d.dataset !== state.dataset) return false;
+      if (state.location && d.location !== state.location) return false;
+      if (state.unit && d.unit !== state.unit) return false;
+      if (state.category && d.category !== state.category) return false;
+      if (state.subcategory && d.subcategory !== state.subcategory) return false;
       if (q) {
-        var hay = (d.name + " " + d.uuid + " " + d.category + " " + d.subcategory + " " + (d.location || "")).toLowerCase();
+        var hay = (d.name + " " + d.uuid + " " + d.dataset + " " + d.category + " " + d.subcategory + " " + (d.location || "")).toLowerCase();
         if (hay.indexOf(q) === -1) return false;
       }
       return true;
     });
     var k = state.sort;
     filtered.sort(function (a, b) {
-      var va = a[k] || "", vb = b[k] || "";
-      var c = String(va).localeCompare(String(vb), undefined, { numeric: true, sensitivity: "base" });
+      var c;
+      if (k === "dataset") {
+        c = datasetOrder(a.dataset) - datasetOrder(b.dataset);
+      } else {
+        var va = a[k] || "", vb = b[k] || "";
+        c = String(va).localeCompare(String(vb), undefined, { numeric: true, sensitivity: "base" });
+      }
+      if (c === 0 && a.uuid !== b.uuid) {
+        c = String(a.uuid).localeCompare(String(b.uuid));
+      }
       return state.desc ? -c : c;
     });
     state.page = Math.min(state.page, Math.max(1, Math.ceil(filtered.length / PAGE_SIZE)));
@@ -58,8 +93,8 @@
     });
   }
 
-  function link(d, label) {
-    return '<a href="/bafu-dev/process/' + d.uuid + '/">' + esc(label) + "</a>";
+  function link(d, dlabel) {
+    return '<a href="/bafu-dev/' + d.dataset + "/process/" + d.uuid + '/">' + esc(dlabel) + "</a>";
   }
 
   function render() {
@@ -68,6 +103,7 @@
     var html = rows.map(function (d) {
       return "<tr>" +
         '<td class="name">' + link(d, d.name) + "</td>" +
+        "<td>" + link(d, label(d.dataset)) + "</td>" +
         "<td>" + esc(d.location) + "</td>" +
         "<td>" + esc(d.unit) + "</td>" +
         "<td>" + esc(d.category) + "</td>" +
@@ -110,7 +146,7 @@
   function refresh() { apply(); render(); }
 
   $("q").addEventListener("input", function () { state.q = this.value; state.page = 1; refresh(); });
-  ["location", "unit", "category", "subcategory"].forEach(function (id) {
+  ["dataset", "location", "unit", "category", "subcategory"].forEach(function (id) {
     $(id).addEventListener("change", function () { state[id] = this.value; state.page = 1; refresh(); });
   });
   $("sort").addEventListener("change", function () { state.sort = this.value; refresh(); });
@@ -131,10 +167,11 @@
     .then(function (r) { return r.json(); })
     .then(function (d) {
       data = d;
-      fillSelect("location", uniq("location"));
-      fillSelect("unit", uniq("unit"));
-      fillSelect("category", uniq("category"));
-      fillSelect("subcategory", uniq("subcategory"));
+      fillSelect("dataset", uniqDatasets(), label);
+      fillSelect("location", uniq("location").sort(function (a, b) { return a.localeCompare(b, undefined, { numeric: true }); }));
+      fillSelect("unit", uniq("unit").sort(function (a, b) { return a.localeCompare(b, undefined, { numeric: true }); }));
+      fillSelect("category", uniq("category").sort(function (a, b) { return a.localeCompare(b, undefined, { numeric: true }); }));
+      fillSelect("subcategory", uniq("subcategory").sort(function (a, b) { return a.localeCompare(b, undefined, { numeric: true }); }));
       refresh();
     })
     .catch(function (err) {
