@@ -44,7 +44,7 @@
       if (state.direction && r.direction !== state.direction) return false;
       if (state.sphere && r.sphere !== state.sphere) return false;
       if (q) {
-        var hay = [r.name, r.source, r.ref_name, r.direction, r.amount, r.unit, r.cat, r.location, r.sphere].join(" ").toLowerCase();
+        var hay = [r.name, r.source, r.ref_idx, r.direction, r.amount, r.unit, r.cat, r.location, r.sphere].join(" ").toLowerCase();
         if (hay.indexOf(q) === -1) return false;
       }
       return true;
@@ -59,6 +59,8 @@
       if (k === "group") {
         c = (a.group == null ? 1e9 : a.group) - (b.group == null ? 1e9 : b.group);
         if (c === 0) c = a.source.localeCompare(b.source);
+      } else if (k === "ref_idx") {
+        c = (a.ref_idx || 0) - (b.ref_idx || 0);
       } else if (k === "amount") {
         var va = parseFloat(a.amount), vb = parseFloat(b.amount);
         if (isNaN(va)) va = -Infinity;
@@ -76,8 +78,8 @@
         ? '<button class="detail-btn" data-src="' + esc(r.raw[0]) + '" data-idx="' + r.raw[1] + '">raw</button>'
         : "";
       var refCell = r.ref
-        ? '<td class="refcell">' + esc(r.ref_name) + "</td>"
-        : '<td>' + (r.guess ? '<span class="guessed" title="guessed match">&asymp;</span> ' : "") + esc(r.ref_name || "") + "</td>";
+        ? '<td class="refcell">' + esc(r.ref_idx) + "</td>"
+        : '<td>' + (r.guess ? '<span class="guessed" title="guessed match">&asymp;</span> ' : "") + esc(r.ref_idx || 0) + "</td>";
       return "<tr" + rowCls + ">" +
         "<td>" + esc(r.name) + "</td>" +
         '<td class="' + srcCls + '">' + esc(r.source) + "</td>" +

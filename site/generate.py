@@ -499,7 +499,7 @@ def flag(a, b, cmp=None):
 def build_exchange_rows(eco_ex, sources):
     """sources: list of dicts {key, label, exchanges, kind} where kind is 'ilcd' or 'sentier'.
     EcoSpold1 rows are the reference; every other source adds a row per exchange.
-    Each row carries 'ref_name': the EcoSpold1 exchange name it corresponds to."""
+    Each row carries 'ref_idx': the 1-based index of the EcoSpold1 exchange it corresponds to (0 = unlinked)."""
     rows = []
     details = {}
     matched_counts = {}
@@ -509,7 +509,7 @@ def build_exchange_rows(eco_ex, sources):
         eco_name = e["name"]
         d = {"eco": e["index"]}
         rows.append({
-            "group": gi, "source": "EcoSpold1", "ref": True, "ref_name": eco_name,
+            "group": gi, "source": "EcoSpold1", "ref": True, "ref_idx": gi + 1,
             "name": e["name"], "direction": e["direction"], "amount": e["amount"],
             "unit": e["unit"], "cat": eco_cat, "location": e["location"],
             "sphere": biosphere_or_technosphere(e, None), "raw": ("eco", e["index"]),
@@ -525,7 +525,7 @@ def build_exchange_rows(eco_ex, sources):
                 matched_counts[label] = matched_counts.get(label, 0) + 1
                 d[key] = x["index"]
                 common = {
-                    "group": gi, "source": label, "ref": False, "ref_name": eco_name,
+                    "group": gi, "source": label, "ref": False, "ref_idx": gi + 1,
                     "name": x["name"], "direction": x["direction"], "amount": x["amount"],
                     "unit": x["unit"], "location": x["location"],
                     "raw": (key, x["index"]),
@@ -542,7 +542,7 @@ def build_exchange_rows(eco_ex, sources):
                 rows.append(common)
             else:
                 rows.append({
-                    "group": gi, "source": label, "ref": False, "ref_name": eco_name,
+                    "group": gi, "source": label, "ref": False, "ref_idx": gi + 1,
                     "name": None, "direction": e["direction"], "amount": None,
                     "unit": None, "cat": None, "location": None,
                     "sphere": None, "raw": (key, None), "guess": False,
@@ -553,13 +553,11 @@ def build_exchange_rows(eco_ex, sources):
         for x in exch:
             if x.get("_matched_group") is None:
                 orphan_counts[label] = orphan_counts.get(label, 0) + 1
-                # guess the reference eco exchange for orphans
-                ref_name = guess_eco_reference(x, eco_ex)
                 common = {
                     "group": None, "source": label, "ref": False,
                     "name": x["name"], "direction": x["direction"], "amount": x["amount"],
                     "unit": x["unit"], "location": x["location"],
-                    "ref_name": ref_name,
+                    "ref_idx": 0,
                     "raw": (key, x["index"]), "guess": False,
                 }
                 if src["kind"] == "ilcd":
@@ -578,28 +576,6 @@ def build_exchange_rows(eco_ex, sources):
         parts.append(f"{src['label']}: {m} matched, {len(eco_ex) - m} unmatched, {o} source-only")
     summary = "; ".join(parts)
     return rows, summary, details
-
-
-def guess_eco_reference(x, eco_ex):
-    """Guess the EcoSpold1 exchange a source-only exchange refers to."""
-    import difflib
-    best, best_score = None, 0.0
-    xn = (x.get("name") or "")
-    xbn = x.get("bafu_name")
-    for e in eco_ex:
-        en = (e.get("name") or "")
-        score = 0.0
-        if xbn and en and xbn.lower() == en.lower():
-            score = 1.0
-        elif xbn and en:
-            score = difflib.SequenceMatcher(None, xbn.lower(), en.lower()).ratio() * 0.9
-        elif xn and en:
-            score = difflib.SequenceMatcher(None, xn.lower(), en.lower()).ratio()
-        if score > best_score:
-            best, best_score = e, score
-    if best is not None and best_score >= 0.45:
-        return best["name"]
-    return None
 
 
 def tag_sources(sources, eco_ex):
@@ -682,7 +658,7 @@ def build_process_page(entry, formats, eco_ex, sources, sentier_json=None):
         )
     cls = "many" if len(formats) > 3 else ("three" if len(formats) == 3 else "two")
     rows, ex_summary, details = build_exchange_rows(eco_ex, sources)
-    rows_json = json.dumps([{**{k: r.get(k) for k in ("group","source","ref","ref_name","guess","name","direction","amount","unit","cat","location","sphere","xtype","bafu_name")}, "raw": [r["raw"][0], r["raw"][1]]} for r in rows], ensure_ascii=False)
+    rows_json = json.dumps([{**{k: r.get(k) for k in ("group","source","ref","ref_idx","guess","name","direction","amount","unit","cat","location","sphere","xtype","bafu_name")}, "raw": [r["raw"][0], r["raw"][1]]} for r in rows], ensure_ascii=False)
     details_json = json.dumps(details, ensure_ascii=False)
     source_urls = {}
     eco_fmt = next((f for f in formats if f[0].startswith("ecospold")), None)
@@ -724,7 +700,7 @@ def build_process_page(entry, formats, eco_ex, sources, sentier_json=None):
   </div>
   <div class="tbl-wrap"><table class="ex-table" id="ex-table">
     <thead><tr>
-      <th data-key="name">Flow name</th><th data-key="source">Source</th><th data-key="ref_name">EcoSpold1 reference</th><th data-key="direction">Direction</th>
+      <th data-key="name">Flow name</th><th data-key="source">Source</th><th data-key="ref_idx">EcoSpold1 reference</th><th data-key="direction">Direction</th>
       <th data-key="amount">Amount</th><th data-key="unit">Unit</th><th data-key="cat">Category / compartment</th>
       <th data-key="location">Location</th><th data-key="sphere">Sphere</th><th>Raw</th>
     </tr></thead>
