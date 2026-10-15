@@ -246,7 +246,16 @@ def sentier_exchange_rows(sent, uid):
                 name = p["name"]
                 loc = p["location"]
                 cat = None
-        direction = "Output" if x["type"] == "production" else "Input"
+        if x["type"] == "production":
+            direction = "Output"
+        elif x["type"] == "technosphere":
+            direction = "Input"
+        elif ftype == "emission":
+            direction = "Output"
+        elif ftype == "natural resource":
+            direction = "Input"
+        else:
+            direction = "Input"
         rows.append({
             "type": x["type"],
             "name": name,
