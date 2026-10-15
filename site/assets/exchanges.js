@@ -44,7 +44,7 @@
       if (state.direction && r.direction !== state.direction) return false;
       if (state.sphere && r.sphere !== state.sphere) return false;
       if (q) {
-        var hay = [r.name, r.source, r.direction, r.amount, r.unit, r.cat, r.location, r.sphere].join(" ").toLowerCase();
+        var hay = [r.name, r.source, r.ref_name, r.direction, r.amount, r.unit, r.cat, r.location, r.sphere].join(" ").toLowerCase();
         if (hay.indexOf(q) === -1) return false;
       }
       return true;
@@ -75,9 +75,13 @@
       var rawBtn = r.raw && (r.raw[1] !== null && r.raw[1] !== undefined)
         ? '<button class="detail-btn" data-src="' + esc(r.raw[0]) + '" data-idx="' + r.raw[1] + '">raw</button>'
         : "";
+      var refCell = r.ref
+        ? '<td class="refcell">' + esc(r.ref_name) + "</td>"
+        : '<td>' + (r.guess ? '<span class="guessed" title="guessed match">&asymp;</span> ' : "") + esc(r.ref_name || "") + "</td>";
       return "<tr" + rowCls + ">" +
         "<td>" + esc(r.name) + "</td>" +
         '<td class="' + srcCls + '">' + esc(r.source) + "</td>" +
+        refCell +
         "<td>" + esc(r.direction) + "</td>" +
         "<td>" + esc(r.amount) + "</td>" +
         "<td>" + esc(r.unit) + "</td>" +
@@ -125,11 +129,28 @@
     return els.length > n ? new XMLSerializer().serializeToString(els[n]) : null;
   }
 
+  function sentierRaw(idx) {
+    var view = document.querySelector(".jsonview");
+    if (!view) return "(sentier_dev view not available)";
+    try {
+      var data = JSON.parse(view.textContent.replace(/<\u002f/g, "</"));
+      var x = data.exchanges[idx];
+      return x ? JSON.stringify(x, null, 2) : "(exchange not found)";
+    } catch (e) {
+      return "(failed to parse sentier_dev view)";
+    }
+  }
+
   tbody.addEventListener("click", function (e) {
     var btn = e.target.closest ? e.target.closest(".detail-btn") : null;
     if (!btn) return;
     var src = btn.getAttribute("data-src");
     var idx = parseInt(btn.getAttribute("data-idx"), 10);
+    if (src === "sentier") {
+      panes.innerHTML = '<div><h3>' + esc(labels[src] || src) + " exchange (JSON-like)</h3><pre>" + esc(sentierRaw(idx)) + "</pre></div>";
+      box.hidden = false;
+      return;
+    }
     var url = urls[src];
     if (!url) return;
     panes.innerHTML = '<div><h3>' + esc(labels[src] || src) + " exchange (raw)</h3><pre>loading...</pre></div>";

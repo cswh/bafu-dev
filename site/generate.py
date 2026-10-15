@@ -136,6 +136,136 @@ def load_ilcd_context(ilcd_base):
     return {"flows": flows, "units": units}
 
 
+def sentier_dirs(dataset):
+    out = []
+    sdir = os.path.join(RAW_DATA, dataset, "sentier_dev")
+    if not os.path.isdir(sdir):
+        return out
+    for fn in sorted(os.listdir(sdir)):
+        if os.path.isdir(os.path.join(sdir, fn)):
+            out.append(os.path.join(sdir, fn))
+    return out
+
+
+_SENTIER_CACHE = {}
+
+
+def load_sentier(dataset):
+    """Load sentier_dev registry for a dataset. Returns dict or None."""
+    if dataset in _SENTIER_CACHE:
+        return _SENTIER_CACHE[dataset]
+    dirs = sentier_dirs(dataset)
+    result = None
+    for d in dirs:
+        reg = os.path.join(d, "registry")
+        if not os.path.isdir(reg):
+            continue
+        try:
+            import pyarrow.parquet as pq
+        except ImportError:
+            result = None
+            break
+        procs = pq.read_table(os.path.join(reg, "processes.parquet")).to_pylist()
+        bios = pq.read_table(os.path.join(reg, "biosphere.parquet")).to_pylist()
+        exch = pq.read_table(os.path.join(reg, "exchanges.parquet")).to_pylist()
+        # reverse nomenclature map: EF3.1 (name, categories) -> BAFU source name
+        rev = {}
+        mdir = None
+        for cand in os.listdir(d):
+            if os.path.isdir(os.path.join(d, cand)) and cand.startswith("mappings"):
+                mdir = os.path.join(d, cand)
+                break
+        if mdir:
+            for sub in os.listdir(mdir):
+                subp = os.path.join(mdir, sub)
+                if not os.path.isdir(subp):
+                    continue
+                for fn in os.listdir(subp):
+                    if not fn.startswith("biosphere-") or not fn.endswith(".json"):
+                        continue
+                    try:
+                        mj = json.load(open(os.path.join(subp, fn), encoding="utf-8"))
+                    except (OSError, ValueError):
+                        continue
+                    for r in mj.get("replace", []):
+                        t, sr = r.get("target"), r.get("source")
+                        if t and sr:
+                            rev.setdefault(
+                                (str(t.get("name", "")).lower(), "::".join(str(c) for c in (t.get("context") or []))),
+                                sr.get("name"),
+                            )
+        rev_name = {}
+        for (nm, _ctx), v in rev.items():
+            rev_name.setdefault(nm, v)
+        bw2proc = {p["bw_id"]: p for p in procs}
+        bw2bio = {b["bw_id"]: b for b in bios}
+        uuid2bw = {p["code"]: p["bw_id"] for p in procs}
+        ex_by_proc = {}
+        for x in exch:
+            ex_by_proc.setdefault(x["process_bw_id"], []).append(x)
+        result = {
+            "dir": d,
+            "bw2proc": bw2proc,
+            "bw2bio": bw2bio,
+            "uuid2bw": uuid2bw,
+            "ex_by_proc": ex_by_proc,
+            "rev": rev,
+            "rev_name": rev_name,
+        }
+        break
+    _SENTIER_CACHE[dataset] = result
+    return result
+
+
+def sentier_exchange_rows(sent, uid):
+    """Build display rows for one process from the sentier registry."""
+    bw = sent["uuid2bw"].get(uid)
+    if bw is None:
+        return []
+    rows = []
+    for x in sent["ex_by_proc"].get(bw, []):
+        db = x["input_database"]
+        name = None
+        cat = None
+        loc = None
+        ftype = None
+        bafu_name = None
+        if db.endswith("biosphere"):
+            b = sent["bw2bio"].get(x["input_bw_id"])
+            if b:
+                name = b["name"]
+                cat = b["categories"]
+                ftype = b["type"]
+                key = (str(b["name"]).lower(), str(b["categories"] or ""))
+                bafu_name = sent["rev"].get((str(b["name"]).lower(), key[1]))
+                if bafu_name is None:
+                    bafu_name = sent["rev_name"].get(str(b["name"]).lower())
+        else:
+            p = sent["bw2proc"].get(x["input_bw_id"])
+            if p:
+                name = p["name"]
+                loc = p["location"]
+                cat = None
+        direction = "Output" if x["type"] == "production" else "Input"
+        rows.append({
+            "type": x["type"],
+            "name": name,
+            "bafu_name": bafu_name,
+            "direction": direction,
+            "amount": x["amount"],
+            "unit": x["unit"],
+            "cat": cat,
+            "location": loc,
+            "flow_type": ftype,
+            "code": x["input_code"],
+            "uncertainty": x.get("uncertainty_type"),
+            "loc_p": x.get("loc"),
+            "scale": x.get("scale"),
+            "index": len(rows),
+        })
+    return rows
+
+
 def eco_direction(ex):
     for child in ex:
         t = loc(child.tag)
@@ -253,6 +383,19 @@ def match_exchanges(eco, ilcd):
         if best is not None and best_score >= 0.5:
             x = orphans.pop(best)
             pairs[pi] = (e, x, 1)
+    # third pass: guess remaining by direction + similar name only (nomenclature renames)
+    still2 = [(i, p) for i, p in enumerate(pairs) if p[1] is None]
+    for pi, (e, _x, _s) in still2:
+        best, best_score = None, 0.0
+        for oi, x in enumerate(orphans):
+            if x["direction"] != e["direction"]:
+                continue
+            sim = difflib.SequenceMatcher(None, (e["name"] or "").lower(), (x["name"] or "").lower()).ratio()
+            if sim > best_score:
+                best, best_score = oi, sim
+        if best is not None and best_score >= 0.45:
+            x = orphans.pop(best)
+            pairs[pi] = (e, x, 0)
     orphans2 = [x for x in orphans]
     return pairs, orphans2
 
@@ -344,78 +487,157 @@ def flag(a, b, cmp=None):
     return ok, cls
 
 
-def build_exchange_rows(eco_ex, ilcd_sources):
-    """ilcd_sources: list of (key, label, exchanges). Returns rows, summary, details."""
+def build_exchange_rows(eco_ex, sources):
+    """sources: list of dicts {key, label, exchanges, kind} where kind is 'ilcd' or 'sentier'.
+    EcoSpold1 rows are the reference; every other source adds a row per exchange.
+    Each row carries 'ref_name': the EcoSpold1 exchange name it corresponds to."""
     rows = []
     details = {}
     matched_counts = {}
     orphan_counts = {}
     for gi, e in enumerate(eco_ex):
         eco_cat = (e.get("category") or "") + ((" / " + e["subcategory"]) if e.get("subcategory") else "")
+        eco_name = e["name"]
         d = {"eco": e["index"]}
         rows.append({
-            "group": gi, "source": "EcoSpold1", "ref": True,
+            "group": gi, "source": "EcoSpold1", "ref": True, "ref_name": eco_name,
             "name": e["name"], "direction": e["direction"], "amount": e["amount"],
             "unit": e["unit"], "cat": eco_cat, "location": e["location"],
             "sphere": biosphere_or_technosphere(e, None), "raw": ("eco", e["index"]),
         })
-        for key, label, ilcd in ilcd_sources:
+        for src in sources:
+            key, label, exch = src["key"], src["label"], src["exchanges"]
             x = None
-            for xx in ilcd:
+            for xx in exch:
                 if xx.get("_matched_group") == gi:
                     x = xx
                     break
             if x is not None:
                 matched_counts[label] = matched_counts.get(label, 0) + 1
-                ilcd_cat = " / ".join(x["category"]) if x.get("category") else ""
                 d[key] = x["index"]
-                rows.append({
-                    "group": gi, "source": label, "ref": False,
+                common = {
+                    "group": gi, "source": label, "ref": False, "ref_name": eco_name,
                     "name": x["name"], "direction": x["direction"], "amount": x["amount"],
-                    "unit": x["unit"], "cat": ilcd_cat, "location": x["location"],
-                    "sphere": biosphere_or_technosphere(e, x), "raw": (key, x["index"]),
-                })
+                    "unit": x["unit"], "location": x["location"],
+                    "raw": (key, x["index"]),
+                    "guess": x.get("_guessed", False),
+                }
+                if src["kind"] == "ilcd":
+                    common["cat"] = " / ".join(x["category"]) if x.get("category") else ""
+                    common["sphere"] = biosphere_or_technosphere(e, x)
+                else:
+                    common["cat"] = x.get("cat")
+                    common["sphere"] = "Biosphere" if x.get("type") == "biosphere" else "Technosphere"
+                    common["xtype"] = x.get("type")
+                    common["bafu_name"] = x.get("bafu_name")
+                rows.append(common)
             else:
                 rows.append({
-                    "group": gi, "source": label, "ref": False,
+                    "group": gi, "source": label, "ref": False, "ref_name": eco_name,
                     "name": None, "direction": e["direction"], "amount": None,
                     "unit": None, "cat": None, "location": None,
-                    "sphere": None, "raw": (key, None),
+                    "sphere": None, "raw": (key, None), "guess": False,
                 })
         details[gi] = d
-    for key, label, ilcd in ilcd_sources:
-        for x in ilcd:
+    for src in sources:
+        key, label, exch = src["key"], src["label"], src["exchanges"]
+        for x in exch:
             if x.get("_matched_group") is None:
                 orphan_counts[label] = orphan_counts.get(label, 0) + 1
-                rows.append({
+                # guess the reference eco exchange for orphans
+                ref_name = guess_eco_reference(x, eco_ex)
+                common = {
                     "group": None, "source": label, "ref": False,
                     "name": x["name"], "direction": x["direction"], "amount": x["amount"],
-                    "unit": x["unit"],
-                    "cat": " / ".join(x["category"]) if x.get("category") else "",
-                    "location": x["location"], "sphere": "Biosphere" if x.get("type") and "Elementary" in x["type"] else "Technosphere",
-                    "raw": (key, x["index"]),
-                })
+                    "unit": x["unit"], "location": x["location"],
+                    "ref_name": ref_name,
+                    "raw": (key, x["index"]), "guess": False,
+                }
+                if src["kind"] == "ilcd":
+                    common["cat"] = " / ".join(x["category"]) if x.get("category") else ""
+                    common["sphere"] = "Biosphere" if x.get("type") and "Elementary" in x["type"] else "Technosphere"
+                else:
+                    common["cat"] = x.get("cat")
+                    common["sphere"] = "Biosphere" if x.get("type") == "biosphere" else "Technosphere"
+                    common["xtype"] = x.get("type")
+                    common["bafu_name"] = x.get("bafu_name")
+                rows.append(common)
     parts = [f"{len(eco_ex)} EcoSpold1 exchanges"]
-    for key, label, ilcd in ilcd_sources:
-        m = matched_counts.get(label, 0)
-        o = orphan_counts.get(label, 0)
-        parts.append(f"{label}: {m} matched, {len(eco_ex) - m} unmatched, {o} ILCD-only")
+    for src in sources:
+        m = matched_counts.get(src["label"], 0)
+        o = orphan_counts.get(src["label"], 0)
+        parts.append(f"{src['label']}: {m} matched, {len(eco_ex) - m} unmatched, {o} source-only")
     summary = "; ".join(parts)
     return rows, summary, details
 
 
-def tag_sources(ilcd_sources, eco_ex):
-    """Attach matched group ids to each ILCD exchange of each source."""
-    for key, label, ilcd in ilcd_sources:
-        pairs, orphans = match_exchanges(eco_ex, ilcd)
-        for x in ilcd:
+def guess_eco_reference(x, eco_ex):
+    """Guess the EcoSpold1 exchange a source-only exchange refers to."""
+    import difflib
+    best, best_score = None, 0.0
+    xn = (x.get("name") or "")
+    xbn = x.get("bafu_name")
+    for e in eco_ex:
+        en = (e.get("name") or "")
+        score = 0.0
+        if xbn and en and xbn.lower() == en.lower():
+            score = 1.0
+        elif xbn and en:
+            score = difflib.SequenceMatcher(None, xbn.lower(), en.lower()).ratio() * 0.9
+        elif xn and en:
+            score = difflib.SequenceMatcher(None, xn.lower(), en.lower()).ratio()
+        if score > best_score:
+            best, best_score = e, score
+    if best is not None and best_score >= 0.45:
+        return best["name"]
+    return None
+
+
+def tag_sources(sources, eco_ex):
+    """Attach matched group ids to each exchange of each source."""
+    for src in sources:
+        exch = src["exchanges"]
+        pairs, orphans = match_exchanges(eco_ex, exch)
+        for x in exch:
             x["_matched_group"] = None
+            x["_guessed"] = False
         for gi, (e, x, score) in enumerate(pairs):
             if x is not None:
                 x["_matched_group"] = gi
+                x["_guessed"] = score <= 1
 
 
-def build_process_page(entry, formats, eco_ex, ilcd_sources):
+def tag_sources(sources, eco_ex):
+    """Attach matched group ids to each exchange of each source."""
+    for src in sources:
+        exch = src["exchanges"]
+        pairs, orphans = match_exchanges(eco_ex, exch)
+        for x in exch:
+            x["_matched_group"] = None
+            x["_guessed"] = False
+        for gi, (e, x, score) in enumerate(pairs):
+            if x is not None:
+                x["_matched_group"] = gi
+                x["_guessed"] = score <= 1
+
+
+def sentier_process_json(sent, uid):
+    """JSON-like view of the sentier_dev data for one process."""
+    bw = sent["uuid2bw"].get(uid)
+    if bw is None:
+        return None
+    p = sent["bw2proc"][bw]
+    rows = sentier_exchange_rows(sent, uid)
+    return {
+        "process": {k: p[k] for k in ("bw_id", "database", "code", "name", "reference_product", "unit", "location", "production_amount")},
+        "exchanges": [
+            {k: r[k] for k in ("type", "name", "bafu_name", "direction", "amount", "unit", "cat", "location", "flow_type", "code", "uncertainty", "loc_p", "scale") if r.get(k) is not None}
+            for r in rows
+        ],
+    }
+
+
+def build_process_page(entry, formats, eco_ex, sources, sentier_json=None):
     uid = entry["uuid"]
     ds = entry["dataset"]
     name = entry.get("name") or uid
@@ -443,9 +665,15 @@ def build_process_page(entry, formats, eco_ex, ilcd_sources):
         f'<iframe src="{BASE_PATH}{rel.format(u=uid)}" title="{esc(title)} raw XML"></iframe></div>'
         for _, title, rel in formats
     )
+    if sentier_json is not None:
+        sentier_html = json.dumps(sentier_json, ensure_ascii=False, indent=1).replace("</", "<" + chr(92) + "/")
+        panes += (
+            '<div class="pane"><h2>sentier_dev (JSON-like view)</h2>'
+            f'<pre class="jsonview">{sentier_html}</pre></div>'
+        )
     cls = "many" if len(formats) > 3 else ("three" if len(formats) == 3 else "two")
-    rows, ex_summary, details = build_exchange_rows(eco_ex, ilcd_sources)
-    rows_json = json.dumps([{**{k: r[k] for k in ("group","source","ref","name","direction","amount","unit","cat","location","sphere")}, "raw": [r["raw"][0], r["raw"][1]]} for r in rows], ensure_ascii=False)
+    rows, ex_summary, details = build_exchange_rows(eco_ex, sources)
+    rows_json = json.dumps([{**{k: r.get(k) for k in ("group","source","ref","ref_name","guess","name","direction","amount","unit","cat","location","sphere","xtype","bafu_name")}, "raw": [r["raw"][0], r["raw"][1]]} for r in rows], ensure_ascii=False)
     details_json = json.dumps(details, ensure_ascii=False)
     source_urls = {}
     eco_fmt = next((f for f in formats if f[0].startswith("ecospold")), None)
@@ -487,7 +715,7 @@ def build_process_page(entry, formats, eco_ex, ilcd_sources):
   </div>
   <div class="tbl-wrap"><table class="ex-table" id="ex-table">
     <thead><tr>
-      <th data-key="name">Flow name</th><th data-key="source">Source</th><th data-key="direction">Direction</th>
+      <th data-key="name">Flow name</th><th data-key="source">Source</th><th data-key="ref_name">EcoSpold1 reference</th><th data-key="direction">Direction</th>
       <th data-key="amount">Amount</th><th data-key="unit">Unit</th><th data-key="cat">Category / compartment</th>
       <th data-key="location">Location</th><th data-key="sphere">Sphere</th><th>Raw</th>
     </tr></thead>
@@ -551,6 +779,7 @@ def write_process_pages(dataset, index, formats):
         nv = f[0].replace("ilcd", "")
         ilcd_base = os.path.join(RAW_DATA, dataset, "openlca_ilcd_export", f"nexus_version_{nv}", "ILCD")
         ctxs[f[0]] = load_ilcd_context(ilcd_base) if os.path.isdir(ilcd_base) else None
+    sent = load_sentier(dataset)
     for entry in index:
         uid = entry["uuid"]
         eco_ex = []
@@ -558,18 +787,22 @@ def write_process_pages(dataset, index, formats):
             eco_path = os.path.join(ROOT, eco_fmt[2].format(u=uid))
             if os.path.exists(eco_path):
                 eco_ex = parse_eco_exchanges(eco_path)
-        ilcd_sources = []
+        sources = []
         for f in ilcd_fmts:
             path = os.path.join(ROOT, f[2].format(u=uid))
             exs = []
             if os.path.exists(path) and ctxs.get(f[0]):
                 exs = parse_ilcd_exchanges(path, ctxs[f[0]])
-            ilcd_sources.append((f[0], f[1], exs))
-        tag_sources(ilcd_sources, eco_ex)
+            sources.append({"key": f[0], "label": f[1], "exchanges": exs, "kind": "ilcd"})
+        if sent and sent["uuid2bw"].get(uid) is not None:
+            sent_rows = sentier_exchange_rows(sent, uid)
+            sources.append({"key": "sentier", "label": "sentier_dev (EF 3.1)", "exchanges": sent_rows, "kind": "sentier"})
+        tag_sources(sources, eco_ex)
         d = os.path.join(proc_dir, uid)
         os.makedirs(d)
+        sentier_json = sentier_process_json(sent, uid) if sent else None
         with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as f:
-            f.write(build_process_page(entry, formats, eco_ex, ilcd_sources))
+            f.write(build_process_page(entry, formats, eco_ex, sources, sentier_json))
 
 
 def cleanup_stale(datasets):
