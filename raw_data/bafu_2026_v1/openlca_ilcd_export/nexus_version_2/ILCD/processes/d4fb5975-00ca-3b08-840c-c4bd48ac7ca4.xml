@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>d4fb5975-00ca-3b08-840c-c4bd48ac7ca4</common:UUID>
+            <name>
+                <baseName xml:lang="en">Railway track, average</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="2279f95c-4711-3ee2-8393-0e7a7bbfe8d1">transport systems</common:class>
+                    <common:class level="1" classId="ebb37c1f-868d-3172-8f6e-d9d8b5f9a869">train</common:class>
+                    <common:class level="2" classId="889ab627-885b-3632-9c3f-a7423e8bdfe0">operations</common:class>
+                    <common:class level="3" classId="9af64804-ec61-3831-af66-f8a70034373a">infrastructure</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">This inventory applies to the average railway track in Switzerland and includes the various types of facilities such as open track, tunnels, bridges, pedestrian overpasses and underpasses, etc. in 1 and 2 tracks. The proportions come from the SBB statistics portal (SBB, 2023) and refer to the year 2023. The information on platforms, passenger overpasses and pedestrian underpasses comes from SBB's material flow analysis. It was assumed that the SBB carriageway network is representative of the entire Swiss railway network.; UUID:d4fb5975-00ca-3b08-840c-c4bd48ac7ca4</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1672527600000" olca:endDate="1704063600000">
+            <common:referenceYear>2023</common:referenceYear>
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Data apply to construction in Switzerland. </descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Average technology available on the market\n\n# Included processes\nThe inventory includes all the materials, energy and transport necessary for constructing an average railway track. Excluded are maintenance and disposal</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="4dcfa07c-f7d5-3b75-9b10-80e93a7da44b" version="00.00.000" uri="../sources/4dcfa07c-f7d5-3b75-9b10-80e93a7da44b.xml">
+                <common:shortDescription xml:lang="en">2024 - LCA railway infrastructure - Kaegi</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">based on literature </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">01.10.2024 \\tsclient\Schreibtisch\WinShare\BAV Gleisinfrastruktur\Ecospold\[EcoSpold_Railway track average v0.2.xlsx]X-Process</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="904c837f-e400-3310-88d9-910ab1423ce4" version="00.00.000" uri="../contacts/904c837f-e400-3310-88d9-910ab1423ce4.xml">
+                    <common:shortDescription xml:lang="en">Thomas Kaegi</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="ce9afe80-a479-3dfb-8df3-6d33b1c84680" version="00.00.000" uri="../contacts/ce9afe80-a479-3dfb-8df3-6d33b1c84680.xml">
+                <common:shortDescription xml:lang="en">Gavin Roberts</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:40.308+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="904c837f-e400-3310-88d9-910ab1423ce4" version="00.00.000" uri="../contacts/904c837f-e400-3310-88d9-910ab1423ce4.xml">
+                <common:shortDescription xml:lang="en">Thomas Kaegi</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T10:02:59.527+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.008</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="4dcfa07c-f7d5-3b75-9b10-80e93a7da44b" version="00.00.000" uri="../sources/4dcfa07c-f7d5-3b75-9b10-80e93a7da44b.xml">
+                <common:shortDescription xml:lang="en">2024 - LCA railway infrastructure - Kaegi</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="8cbb4edb-d76c-41f7-8b30-cc789217c954" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="f21ec680-8246-3630-9d7e-520ae8146399" olca:pedigreeUncertainty="(2;2;1;1;1;5)" olca:amount="0.0772">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6f97d4e7-4be1-3b82-b160-8694baa88699" version="00.00.008" uri="../flows/6f97d4e7-4be1-3b82-b160-8694baa88699.xml">
+                <common:shortDescription xml:lang="en">Railway track, in tunnel, double track</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0772</meanAmount>
+            <resultingAmount>0.0772</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,5,BU:1.05); ; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="8cbb4edb-d76c-41f7-8b30-cc789217c954" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="37ceb7de-6da9-365f-982c-4e7ad4709162" olca:pedigreeUncertainty="(2;2;1;1;1;5)" olca:amount="0.0549">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4530e6ba-99ed-357a-8812-1e3c5eea4d54" version="00.00.008" uri="../flows/4530e6ba-99ed-357a-8812-1e3c5eea4d54.xml">
+                <common:shortDescription xml:lang="en">Railway track, in tunnel, single track</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0549</meanAmount>
+            <resultingAmount>0.0549</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,5,BU:1.05); ; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="8cbb4edb-d76c-41f7-8b30-cc789217c954" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="f549a675-eaf1-3d02-8f45-73fd785d7851" olca:pedigreeUncertainty="(2;2;1;1;1;5)" olca:amount="0.0198">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7d3087fd-683b-3702-95a2-2068b5a3e754" version="00.00.008" uri="../flows/7d3087fd-683b-3702-95a2-2068b5a3e754.xml">
+                <common:shortDescription xml:lang="en">Railway track, on bridge, double track</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0198</meanAmount>
+            <resultingAmount>0.0198</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,5,BU:1.05); ; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="8cbb4edb-d76c-41f7-8b30-cc789217c954" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="5b98ffcb-442f-39b6-b5c7-c01ea562abff" olca:pedigreeUncertainty="(2;2;1;1;1;5)" olca:amount="0.014">
+            <referenceToFlowDataSet type="flow data set" refObjectId="717077c9-13c6-3ca2-b09b-0903ef24e10e" version="00.00.008" uri="../flows/717077c9-13c6-3ca2-b09b-0903ef24e10e.xml">
+                <common:shortDescription xml:lang="en">Railway track, on bridge, single track</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.014</meanAmount>
+            <resultingAmount>0.014</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,5,BU:1.05); ; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="8cbb4edb-d76c-41f7-8b30-cc789217c954" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="4c0a6f11-6b0d-3573-91a4-20db35018130" olca:pedigreeUncertainty="(2;2;1;1;1;5)" olca:amount="0.385">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9d26295a-1133-35f8-ac6b-4f38612f9d11" version="00.00.008" uri="../flows/9d26295a-1133-35f8-ac6b-4f38612f9d11.xml">
+                <common:shortDescription xml:lang="en">Railway track, open field, double track</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.385</meanAmount>
+            <resultingAmount>0.385</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,5,BU:1.05); ; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="8cbb4edb-d76c-41f7-8b30-cc789217c954" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="642fd2bc-584f-3bb1-95a3-342d559356fa" olca:pedigreeUncertainty="(2;2;1;1;1;5)" olca:amount="0.274">
+            <referenceToFlowDataSet type="flow data set" refObjectId="63a48318-7337-36d7-9703-99e086fad239" version="00.00.008" uri="../flows/63a48318-7337-36d7-9703-99e086fad239.xml">
+                <common:shortDescription xml:lang="en">Railway track, open field, single track</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.274</meanAmount>
+            <resultingAmount>0.274</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7461958653026297</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,5,BU:3); ; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="c7266b67-4ea2-457f-b391-9b94e26e195a" olca:propertyId="93a60a56-a3c8-21da-a746-0800200c9a66" olca:defaultProvider="e66e9555-cf47-33e9-9ed4-1a7d343c84bc" olca:pedigreeUncertainty="(2;2;1;1;1;5)" olca:amount="21.7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7e0986aa-eb30-3c8f-bacc-247abdbce0a9" version="00.00.008" uri="../flows/7e0986aa-eb30-3c8f-bacc-247abdbce0a9.xml">
+                <common:shortDescription xml:lang="en">Pedestrian overpass, over 2 tracks</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>21.7</meanAmount>
+            <resultingAmount>21.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,5,BU:1.05); ; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="f7fe0af2-e764-4984-bb9f-2cbff6cd2f18" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="5205ca40-42dd-3bef-97c6-71d1544da6de" olca:pedigreeUncertainty="(2;2;1;1;1;5)" olca:amount="175.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4154ed40-7ed7-38e9-9064-fef5d1011ad5" version="00.00.008" uri="../flows/4154ed40-7ed7-38e9-9064-fef5d1011ad5.xml">
+                <common:shortDescription xml:lang="en">Railway switch</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.17500000000000002</meanAmount>
+            <resultingAmount>0.17500000000000002</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,5,BU:1.05); ; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="f7fe0af2-e764-4984-bb9f-2cbff6cd2f18" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="35fddf5c-524b-32ca-bda4-10be8b8e5ea0" olca:pedigreeUncertainty="(2;2;1;1;1;5)" olca:amount="130.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="96fc862b-d877-372f-9b2f-a2e68f62b73f" version="00.00.008" uri="../flows/96fc862b-d877-372f-9b2f-a2e68f62b73f.xml">
+                <common:shortDescription xml:lang="en">Noise barrier for railway</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.13</meanAmount>
+            <resultingAmount>0.13</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,5,BU:1.05); ; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="c7266b67-4ea2-457f-b391-9b94e26e195a" olca:propertyId="93a60a56-a3c8-21da-a746-0800200c9a66" olca:defaultProvider="cc35c5b9-2d9d-3972-a31c-a8b23a4055bb" olca:pedigreeUncertainty="(2;2;1;1;1;5)" olca:amount="48.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c4ef7bce-58e8-3d5f-8f42-eb44734016b6" version="00.00.008" uri="../flows/c4ef7bce-58e8-3d5f-8f42-eb44734016b6.xml">
+                <common:shortDescription xml:lang="en">Pedestrian underpass, underneath 2 tracks</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>48.0</meanAmount>
+            <resultingAmount>48.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,5,BU:1.05); ; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="c7266b67-4ea2-457f-b391-9b94e26e195a" olca:propertyId="93a60a56-a3c8-21da-a746-0800200c9a66" olca:defaultProvider="6ae02038-e9af-3cf0-9db0-eb4c0fde9cc3" olca:pedigreeUncertainty="(2;2;1;1;1;5)" olca:amount="357.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bf11b0d7-0d94-34e3-bf79-971fd021aadf" version="00.00.008" uri="../flows/bf11b0d7-0d94-34e3-bf79-971fd021aadf.xml">
+                <common:shortDescription xml:lang="en">Platform, standard</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>357.0</meanAmount>
+            <resultingAmount>357.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1029505881951376</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,1,1,5,BU:1.05); ; </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="8cbb4edb-d76c-41f7-8b30-cc789217c954" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e81d2c6e-e428-3506-9dc0-b1a387f48227" version="00.00.008" uri="../flows/e81d2c6e-e428-3506-9dc0-b1a387f48227.xml">
+                <common:shortDescription xml:lang="en">Railway track, average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+        </exchange>
+    </exchanges>
+</processDataSet>

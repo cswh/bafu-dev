@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>f528b6c5-d2de-3329-b5d6-db3a399ea9df</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, at cogen 15kWth, biomethane, economic allocation</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="4a560dd7-cda1-3342-bf94-ee301eed1605">biomethane</common:class>
+                    <common:class level="2" classId="8dd5215d-f875-30a5-8880-3e99aa685477">cogeneration</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Inventory for 1 MJ heat from biomethane, burned in a cogeneration unit with a capacity of 15 kWth. The multioutput process "biomethane, burned in cogen 15kWth delivers the coproducts "heat, at cogen 15kWth, biomethane, allocation exergy" and "electricity, at cogen 15kWth, biomethane, allocation exergy". The energy efficiency is 26% for electricity and 67% for heat. The economic factor is 0.72 for electricity and 0.28 for heat. This leads to the allocation factor of 0.5 for electricity and 0.5 for heat.;
+Synonyms: Strom, ab BHKW 15kWth, Biogas, aufbereitet, ökonomische Allokation; 
+UUID: f528b6c5-d2de-3329-b5d6-db3a399ea9df</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1420066800000" olca:endDate="1606777200000">
+            <common:referenceYear>2015</common:referenceYear>
+            <common:dataSetValidUntil>2020</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Data apply to the combustion in Switzerland.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">efficiency of average technology available on the market\n\n# Included processes\nIncluded are the biomethane burning in a 15kW cogen unit which in turn includes fuel input, infrastructure (boiler), air and water emissions and electrictiy needed for operation. The efficiency and economic allocation is considered</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="30a19596-4507-3096-ac2d-da99992eb60a" version="00.00.000" uri="../sources/30a19596-4507-3096-ac2d-da99992eb60a.xml">
+                <common:shortDescription xml:lang="en">2021 - LCI heating systems - Kaegi</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Data from literature </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 19.04.2021; Other validation: Z:\Schreibtisch\WinShare\BAFU Heizsysteme\A zum Konvertieren\[EcoSpold_heat biomethane cogen15kw_v0.1xlsx.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="d67fb2ba-4422-366b-8e35-c6ed50f7dec9" version="00.00.000" uri="../contacts/d67fb2ba-4422-366b-8e35-c6ed50f7dec9.xml">
+                    <common:shortDescription xml:lang="en">Andy Spoerri</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="904c837f-e400-3310-88d9-910ab1423ce4" version="00.00.000" uri="../contacts/904c837f-e400-3310-88d9-910ab1423ce4.xml">
+                <common:shortDescription xml:lang="en">Thomas Kaegi</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:51:00.283+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="904c837f-e400-3310-88d9-910ab1423ce4" version="00.00.000" uri="../contacts/904c837f-e400-3310-88d9-910ab1423ce4.xml">
+                <common:shortDescription xml:lang="en">Thomas Kaegi</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:39:38.379+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.004</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="30a19596-4507-3096-ac2d-da99992eb60a" version="00.00.000" uri="../sources/30a19596-4507-3096-ac2d-da99992eb60a.xml">
+                <common:shortDescription xml:lang="en">2021 - LCI heating systems - Kaegi</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="29785f4a-27a5-3bf1-9e42-960b49ab2611" version="00.00.004" uri="../flows/29785f4a-27a5-3bf1-9e42-960b49ab2611.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 15kWth, biomethane, economic allocation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="0bc708df-9b27-3357-aaff-f00580f90ba6" olca:pedigreeUncertainty="(1;1;1;1;1;5)" olca:amount="6.9051">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4f74c33c-05f9-3b73-9dfa-ce2c2ef23a51" version="00.00.004" uri="../flows/4f74c33c-05f9-3b73-9dfa-ce2c2ef23a51.xml">
+                <common:shortDescription xml:lang="en">Biomethane, burned in cogen 15kWth</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.9051</meanAmount>
+            <resultingAmount>6.9051</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,5,BU:1.05); ;
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

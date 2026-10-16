@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<m:LCIAMethodDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" version="1.1">
+    <m:LCIAMethodInformation>
+        <m:dataSetInformation>
+            <common:UUID>3fc4d870-c0de-45d3-817d-a3fb6437503a</common:UUID>
+            <common:name xml:lang="en">IPCC 2021 (ISO 14067) - Aircraft</common:name>
+            <m:methodology>IPCC 2021 (ISO 14067)</m:methodology>
+            <m:classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="f1412667-b481-3661-86df-f616af439f3c">openLCA LCIA Categories 2.8.0 adapted</common:class>
+                    <common:class level="1" classId="096fc060-252e-30a8-bd8a-7d64d3d3d0ef">IPCC 2021 (ISO 14067)</common:class>
+                </common:classification>
+            </m:classificationInformation>
+            <m:impactCategory>IPCC 2021 (ISO 14067) - Aircraft</m:impactCategory>
+            <common:generalComment xml:lang="en">GWP100 Global Warming Potential
+
+The same total impact method results as "IPCC 2021 GWP 100 (non-fossil CO2 uptake and emission)" but with addtitional sub-categories for sorting partial results like aircraft emissions, biogenic emissions, biogenic removals, fossil fuels and land use change.</common:generalComment>
+        </m:dataSetInformation>
+        <m:quantitativeReference>
+            <m:referenceQuantity>
+                <common:shortDescription xml:lang="en">kg CO2 eq</common:shortDescription>
+            </m:referenceQuantity>
+        </m:quantitativeReference>
+    </m:LCIAMethodInformation>
+    <m:administrativeInformation>
+        <m:dataGenerator/>
+        <m:dataEntryBy>
+            <common:timeStamp>2026-06-22T16:51:39.076+02:00</common:timeStamp>
+        </m:dataEntryBy>
+        <m:publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-22T16:51:39.076+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.050</common:dataSetVersion>
+        </m:publicationAndOwnership>
+    </m:administrativeInformation>
+    <m:characterisationFactors>
+        <m:factor>
+            <m:referenceToFlowDataSet type="flow data set" refObjectId="6b1b495b-70ee-4be6-b1c2-3031aa4d6add" version="00.00.000" uri="../flows/6b1b495b-70ee-4be6-b1c2-3031aa4d6add.xml">
+                <common:shortDescription xml:lang="en">Methane, fossil</common:shortDescription>
+            </m:referenceToFlowDataSet>
+            <m:meanValue>29.8</m:meanValue>
+        </m:factor>
+        <m:factor>
+            <m:referenceToFlowDataSet type="flow data set" refObjectId="6d89125e-e9b7-4d7e-a1fc-ada45dbd8815" version="00.00.000" uri="../flows/6d89125e-e9b7-4d7e-a1fc-ada45dbd8815.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, land transformation</common:shortDescription>
+            </m:referenceToFlowDataSet>
+            <m:meanValue>1.0</m:meanValue>
+        </m:factor>
+        <m:factor>
+            <m:referenceToFlowDataSet type="flow data set" refObjectId="16eeda8a-1ea2-408e-ab37-2648495058dd" version="00.00.000" uri="../flows/16eeda8a-1ea2-408e-ab37-2648495058dd.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, fossil</common:shortDescription>
+            </m:referenceToFlowDataSet>
+            <m:meanValue>1.0</m:meanValue>
+        </m:factor>
+        <m:factor>
+            <m:referenceToFlowDataSet type="flow data set" refObjectId="473826ae-125a-4b02-8c8e-c84322491d80" version="00.00.000" uri="../flows/473826ae-125a-4b02-8c8e-c84322491d80.xml">
+                <common:shortDescription xml:lang="en">Dinitrogen monoxide</common:shortDescription>
+            </m:referenceToFlowDataSet>
+            <m:meanValue>273.0</m:meanValue>
+        </m:factor>
+    </m:characterisationFactors>
+</m:LCIAMethodDataSet>

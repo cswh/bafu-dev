@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>30454683-418c-3f43-9806-6dbdc2f6e91f</common:UUID>
+            <name>
+                <baseName xml:lang="en">Methane, from biological methanation, with carbon from municipal waste incineration plant (100:0 alloc.)</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="e70d2ea9-becd-32e6-9944-c946e949f129">fuels</common:class>
+                    <common:class level="1" classId="d3d5aec1-7214-3444-ab34-f2534f1733b6">synthetic</common:class>
+                    <common:class level="2" classId="886561fb-eff6-337c-9b97-1d9ce41c0a3f">transformation</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Based on stoichiometry, for every kilogram of methane produced, the system would consume approximately 2.75 kilograms of CO2 and 0.5 kilograms of H2, and produce approximately 2.25 kilograms of water. Rest of info Adapted from BioCat II project Annex I 2014. Consider 51.3 kg CH4 per full-load hour. Reactor heat re-circulated at the wastewater treatment plant, hence not considered here. Infrastructure missing. Note that a 100:0 CO2 alloc. is applied: the carbon dioxide emissions from the MSWI plant are entirely allocated to the cement plant, but the carbon capture efforst fall within the synthetic natural gas producer's system boundaries. The combustion of the resulting synthetic natural gas does not lead to any carbon dioxide emissions. Source: https://energiforskning.dk/sites/energiforskning.dk/files/slutrapporter/12164_annex_1_p2g_biocat_lca_final_report.pdf
+
+ UUID: 30454683-418c-3f43-9806-6dbdc2f6e91f</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1704063600000" olca:endDate="1704063600000">
+            <common:referenceYear>2024</common:referenceYear>
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305"/>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">&lt;null&gt;</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="0c114b47-2f0e-36ef-8bdb-16d536f9f5f2" version="00.00.000" uri="../sources/0c114b47-2f0e-36ef-8bdb-16d536f9f5f2.xml">
+                <common:shortDescription xml:lang="en">2024 - LCA power-to-X in residential sector - Sacchi</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Sampling procedure: Literature data</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: Passed, Other validation: none, Validator: Rolf Frischknecht, Telephone: 0041 44 940 61 91, E-mail: frischknecht@treeze.ch, Company: treeze, Country: CH</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                    <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:53:30.498+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-18T13:57:56.974+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.011</common:dataSetVersion>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:defaultProvider="67f2f405-ebb6-4818-9450-a9bdba5c44df" olca:amount="0.6628">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c54b3215-1ab1-3a37-8f85-b8ffc661f06e" version="00.00.000" uri="../flows/c54b3215-1ab1-3a37-8f85-b8ffc661f06e.xml">
+                <common:shortDescription xml:lang="en">Treatment, sewage, to wastewater treatment, class 1</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.6628</meanAmount>
+            <resultingAmount>0.6628</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.202913130695646</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">34 m3 of wastewater/full-load hour. {4;5;2;2;3;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="eb5552ed-63a8-374d-8fa4-296f644c37f8" olca:amount="8.119E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f3e7a082-a8ab-3b86-8db2-3e46c3cb8a6c" version="00.00.022" uri="../flows/f3e7a082-a8ab-3b86-8db2-3e46c3cb8a6c.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, 16t-32t gross weight, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.119E-5</meanAmount>
+            <resultingAmount>8.119E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4859340496805369</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: 0.0 kg over 50.0 km.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="a169f230-3e05-33d0-a12d-f9d6d4d6abf1" olca:amount="9.743E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f9e371c1-b7aa-3519-8a79-cee28b230151" version="00.00.000" uri="../flows/f9e371c1-b7aa-3519-8a79-cee28b230151.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, rail, electricity with shunting</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.743E-4</meanAmount>
+            <resultingAmount>9.743E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4859340496805369</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: 0.0 kg over 600.0 km.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="5355918b-1afd-3cdd-b57c-b3e92097f2b0" olca:amount="0.001624">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3c842b8f-0f6e-3aac-b07b-ae10752a135d" version="00.00.000" uri="../flows/3c842b8f-0f6e-3aac-b07b-ae10752a135d.xml">
+                <common:shortDescription xml:lang="en">Ammonia, liquid, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.001624</meanAmount>
+            <resultingAmount>0.001624</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.202913130695646</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">0,0833 kg Ammonia/full load hour. {4;5;2;2;3;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="99a1af16-58cd-3f11-a877-c43d3c8e5d78" olca:amount="0.5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aa515f14-2b9b-395b-82d5-4038dcf4871b" version="00.00.004" uri="../flows/aa515f14-2b9b-395b-82d5-4038dcf4871b.xml">
+                <common:shortDescription xml:lang="en">Hydrogen production, gaseous, 30 bar, from PEM electrolysis, from grid electricity</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.5</meanAmount>
+            <resultingAmount>0.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.202913130695646</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{4;5;2;2;3;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="d0144850-f6c8-3e74-8ccb-cd41c737576f" olca:amount="2.75">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9f1956e1-f557-316e-9c63-d61fbb288e2c" version="00.00.004" uri="../flows/9f1956e1-f557-316e-9c63-d61fbb288e2c.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, captured at municipal solid waste incineration plant, for subsequent reuse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.75</meanAmount>
+            <resultingAmount>2.75</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.202913130695646</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{4;5;2;2;3;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="c4a92617-9f99-3d7b-95c0-15fb110b80ad" olca:amount="1.55">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ec91f1d-db72-39ef-bbc0-46119b059efe" version="00.00.000" uri="../flows/7ec91f1d-db72-39ef-bbc0-46119b059efe.xml">
+                <common:shortDescription xml:lang="en">Electricity, low voltage, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.58</meanAmount>
+            <resultingAmount>5.58</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.202913130695646</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">60 kW at full-load, 10 kW at standby, 3000 full-load hours per year. 51.3 kg CH4 /h at full-load {4;5;2;2;3;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e0f719f3-97cd-342f-9c14-a63f01c6db7d" version="00.00.004" uri="../flows/e0f719f3-97cd-342f-9c14-a63f01c6db7d.xml">
+                <common:shortDescription xml:lang="en">Methane, from biological methanation, with carbon from municipal waste incineration plant (100:0 alloc.)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">not defined</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

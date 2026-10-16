@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>96a6a42f-a9b8-38d0-9148-bf1bab6687ec</common:UUID>
+            <name>
+                <baseName xml:lang="en">Hydrogen production, gaseous, 30 bar, from PEM electrolysis, from autonomous hybrid plant</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="e70d2ea9-becd-32e6-9944-c946e949f129">fuels</common:class>
+                    <common:class level="1" classId="d3d5aec1-7214-3444-ab34-f2534f1733b6">synthetic</common:class>
+                    <common:class level="2" classId="886561fb-eff6-337c-9b97-1d9ce41c0a3f">transformation</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">1 kg H2 produced using a PEM electrolyzer, produced in a hybrid solar PV/wind plant in Central Morocco (Latitude: 28.7, Longitude: -9.54). The hybrid plant has a lifetime of 30 years and produces 2.35 kilotons of hydrogen annually. 0.24 percent of the hydrogen mass produced is lost. 26.21 MW electrolyzer installation, with a capacity factor of 57%. 13 2-MW turbines are considered, for a total capacity of 26,272 kW, with a lifetime of 20 years and a 50% load factor and a curtailment factor of 2.3%. 28 570-kWp ground mounted PV units are considered, with a lifetime of 30 years, and a 22% load factor and a curtailment factor of 13.8%. A NMC stationary battery of 862 kWh of capacity is required, with a lifetime of 13 years. A water requirement of 24 liters per kg H2 is assumed, considering losses due to cleaning, cooling, but also significant evaporation -- see Tonelli et al., 2023. Stack lifetime [hours] 45'000 IndWEDe Stack lifetime [years] 5.5 IndWEDe, based on the lower estimate of 8,000 hours per year, from manufacturers' data.  Balance of Plant lifetime [years]: Same as system. System lifetime [years]: 20 IndWEDe. Stack replacement over system's lifetime, excluding initial unit [unit] 3 Calculated. Water demand [kg water/kg H2] 8.9, corrected to 124 to represent extreme climatic consitions. Electricity demand [kWh/kg H2]:  54 IndWEDe. Electrical Efficiency [%, based on H2 LHV]: 61.7%:  Productivity [kg H2/hour]: 18.52: From row above. Operating temperature [Â°C] 50-80 Manufacturers' data. Operating pressure [bar]: ~30 IndWEDe Produced amount over system's lifetime years [kg H2] 70.5 million tons.
+
+ UUID: 96a6a42f-a9b8-38d0-9148-bf1bab6687ec</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1704063600000" olca:endDate="1704063600000">
+            <common:referenceYear>2024</common:referenceYear>
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="MA" latitudeAndLongitude="29.841692243396082;-8.396435064233978"/>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">&lt;null&gt;</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="0c114b47-2f0e-36ef-8bdb-16d536f9f5f2" version="00.00.000" uri="../sources/0c114b47-2f0e-36ef-8bdb-16d536f9f5f2.xml">
+                <common:shortDescription xml:lang="en">2024 - LCA power-to-X in residential sector - Sacchi</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Sampling procedure: Literature data</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: Passed, Other validation: none, Validator: Rolf Frischknecht, Telephone: 0041 44 940 61 91, E-mail: frischknecht@treeze.ch, Company: treeze, Country: CH</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                    <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:02.353+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-18T13:57:56.943+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.011</common:dataSetVersion>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0024">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b301fa9a-ba60-4eac-8ccc-6ccbdf099b35" version="00.00.000" uri="../flows/b301fa9a-ba60-4eac-8ccc-6ccbdf099b35.xml">
+                <common:shortDescription xml:lang="en">Hydrogen</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0024</meanAmount>
+            <resultingAmount>0.0024</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1528226229563678</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Hydrogen loss. {2;4;1;3;3;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a7926af9-ff9d-3634-a033-17c85bef2b41" version="00.00.004" uri="../flows/a7926af9-ff9d-3634-a033-17c85bef2b41.xml">
+                <common:shortDescription xml:lang="en">Hydrogen production, gaseous, 30 bar, from PEM electrolysis, from autonomous hybrid plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">not defined</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="102ea13b-a309-3dc1-8ec4-cb6af7703e08" olca:amount="5.568E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="108f3821-fdf2-35f2-ae4f-6fdfda4ba24c" version="00.00.006" uri="../flows/108f3821-fdf2-35f2-ae4f-6fdfda4ba24c.xml">
+                <common:shortDescription xml:lang="en">Electrolyzer production, 1MWe, PEM, Balance of Plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.568E-7</meanAmount>
+            <resultingAmount>5.568E-7</resultingAmount>
+            <uncertaintyDistributionType>normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>0.030345</relativeStandardDeviation95In>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="0a8201a6-3055-383f-b0ed-88fb77239a2b" olca:amount="4.293E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="974175a6-9c69-3e30-9c01-da30dfa43fb4" version="00.00.004" uri="../flows/974175a6-9c69-3e30-9c01-da30dfa43fb4.xml">
+                <common:shortDescription xml:lang="en">570 kWp open ground installation, multi-Si, on open ground</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.293E-7</meanAmount>
+            <resultingAmount>4.293E-7</resultingAmount>
+            <uncertaintyDistributionType>normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>0.030345</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Using 24,596 kW onshore wind system with lifetime of 20 years.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="e094d7d0-d0c6-31bf-9fa1-1e1685a4a6c3" olca:pedigreeUncertainty="(2;4;1;3;3;5)" olca:amount="24.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ed60e659-c867-399b-9cd2-d94f7c326f18" version="00.00.000" uri="../flows/ed60e659-c867-399b-9cd2-d94f7c326f18.xml">
+                <common:shortDescription xml:lang="en">Water, deionised, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>24.0</meanAmount>
+            <resultingAmount>24.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2794530081249564</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">A perfect reaction of H2O results in 1 kg H2 and 8 kg O2, and needs 9 kg H2O, however, considering some losses we assume 24 kg H2O (Tonelli et al., 2023, preprint). {2;4;1;3;3;5;1.5;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="165.8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="57c71b25-4663-4fad-9167-7ce5be3e8268" version="00.00.000" uri="../flows/57c71b25-4663-4fad-9167-7ce5be3e8268.xml">
+                <common:shortDescription xml:lang="en">Energy, kinetic (in wind), converted</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>165.8</meanAmount>
+            <resultingAmount>165.8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1528226229563678</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{2;4;1;3;3;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="f096f1ce-c80e-3dc4-89e2-d207aa45f336" olca:amount="1.591E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8cfbc21f-6046-37b9-9ffb-7a4b36e0dc29" version="00.00.006" uri="../flows/8cfbc21f-6046-37b9-9ffb-7a4b36e0dc29.xml">
+                <common:shortDescription xml:lang="en">Electrolyzer production, 1MWe, PEM, Stack</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.591E-6</meanAmount>
+            <resultingAmount>1.591E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2794530081249564</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{2;4;1;3;3;5;1.5;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="c1666d68-463b-3134-88fe-f7c22b884153" olca:amount="8.71E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bad068ab-a6e2-37e8-ac92-a749182be2bf" version="00.00.000" uri="../flows/bad068ab-a6e2-37e8-ac92-a749182be2bf.xml">
+                <common:shortDescription xml:lang="en">Wind turbine 5MW, offshore, jacket substructure</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.71E-8</meanAmount>
+            <resultingAmount>8.71E-8</resultingAmount>
+            <uncertaintyDistributionType>normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>0.030345</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Using 26,272 kW onshore wind system with lifetime of 20 years.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="cc8c02da-14df-351b-a03a-64f03f0e4f97" olca:amount="8.71E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e4a4f313-5fb0-3f4c-9f25-cf507cfe9221" version="00.00.000" uri="../flows/e4a4f313-5fb0-3f4c-9f25-cf507cfe9221.xml">
+                <common:shortDescription xml:lang="en">Wind turbine 5MW, offshore, tower</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.71E-8</meanAmount>
+            <resultingAmount>8.71E-8</resultingAmount>
+            <uncertaintyDistributionType>normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>0.030345</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Using 26,272 kW onshore wind system with lifetime of 20 years.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="0134eea3-7697-4aae-b4aa-840bc0d8cf89" olca:amount="5.568E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="eae4f22a-66ed-354e-b391-d48a8c75ab01" version="00.00.000" uri="../flows/eae4f22a-66ed-354e-b391-d48a8c75ab01.xml">
+                <common:shortDescription xml:lang="en">Treatment of fuel cell balance of plant, 1MWe, PEM</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.568E-7</meanAmount>
+            <resultingAmount>5.568E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2794530081249564</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{2;4;1;3;3;5;1.5;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="c9c9c61d-b6c4-421b-981f-f2713a497ddd" olca:amount="1.591E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="482ab452-e7f1-3176-846e-d8adf7c2c14e" version="00.00.000" uri="../flows/482ab452-e7f1-3176-846e-d8adf7c2c14e.xml">
+                <common:shortDescription xml:lang="en">Treatment of fuel cell stack, 1MWe, PEM</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.591E-6</meanAmount>
+            <resultingAmount>1.591E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2794530081249564</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{2;4;1;3;3;5;1.5;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="42.95">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a7ff17d4-d3fe-4a70-9f2e-392b34630772" version="00.00.000" uri="../flows/a7ff17d4-d3fe-4a70-9f2e-392b34630772.xml">
+                <common:shortDescription xml:lang="en">Energy, solar, converted</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>42.95</meanAmount>
+            <resultingAmount>42.95</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1528226229563678</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{2;4;1;3;3;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:amount="1.277E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6f2f97dc-2aeb-482c-a20a-9747f0746898" version="00.00.000" uri="../flows/6f2f97dc-2aeb-482c-a20a-9747f0746898.xml">
+                <common:shortDescription xml:lang="en">Transformation, to industrial area, vegetation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.277E-6</meanAmount>
+            <resultingAmount>1.277E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2794530081249564</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{2;4;1;3;3;5;1.5;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="47c614a8-7ca0-3b41-be94-8148a5823cff" olca:amount="8.71E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b3d7d086-68d4-3ddb-aa05-d2b5e7bb4e51" version="00.00.000" uri="../flows/b3d7d086-68d4-3ddb-aa05-d2b5e7bb4e51.xml">
+                <common:shortDescription xml:lang="en">Wind turbine 5MW, offshore, moving parts</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.71E-8</meanAmount>
+            <resultingAmount>8.71E-8</resultingAmount>
+            <uncertaintyDistributionType>normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>0.030345</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Using 24,596 kW onshore wind system with lifetime of 20 years.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="cee8c87a-511e-3fb2-b489-f98d26c10beb" olca:amount="1.895E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2262a34a-2867-3d61-b580-1a75efb1cfb2" version="00.00.000" uri="../flows/2262a34a-2867-3d61-b580-1a75efb1cfb2.xml">
+                <common:shortDescription xml:lang="en">Battery, rechargeable, prismatic, LiNCM, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.895E-4</meanAmount>
+            <resultingAmount>1.895E-4</resultingAmount>
+            <uncertaintyDistributionType>normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>0.030345</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Using 862 kWh of storage capacity, with lifetime of 13 years. System-level energy density of 0.14 kWh/kg.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:amount="1.277E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1a1d0d4b-6b95-4815-ad06-2ec5fe333c43" version="00.00.000" uri="../flows/1a1d0d4b-6b95-4815-ad06-2ec5fe333c43.xml">
+                <common:shortDescription xml:lang="en">Transformation, from unspecified, natural (non-use)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.277E-6</meanAmount>
+            <resultingAmount>1.277E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2794530081249564</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{2;4;1;3;3;5;1.5;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="c7266b67-4ea2-457f-b391-9b94e26e195a" olca:propertyId="93a60a56-a3c8-21da-a746-0800200c9a66" olca:amount="3.83E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="061259d7-7bcc-4298-af3a-63d084191988" version="00.00.000" uri="../flows/061259d7-7bcc-4298-af3a-63d084191988.xml">
+                <common:shortDescription xml:lang="en">Occupation, unspecified, natural (non-use)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.83E-5</meanAmount>
+            <resultingAmount>3.83E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2794530081249564</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{2;4;1;3;3;5;1.5;}</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>913d3e72-055f-3432-ab4c-18b54044fa85</common:UUID>
+            <name>
+                <baseName xml:lang="en">Sour gas, burned in gas turbine, production, MJ</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="2f16794b-3f55-3b8b-97da-217091c8ecca">gas</common:class>
+                    <common:class level="2" classId="7e655245-4956-3780-8baf-e7b9f4d3c379">gas turbine</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Burning of sour gas in a turbine for on-site electricity production.;
+UUID: 913d3e72-055f-3432-ab4c-18b54044fa85</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="975625200000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2000</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Average of 1999-2000 is used for CH4, CO2, NMVOC, NO2 (data from the Norwegian offshore combined production). Data for CO, N2O, SO2, Hg, Radon-222 and waste heat are based on data from 1991 in Frischknecht et al. 1996, Tab. V.6.7.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="NO" latitudeAndLongitude="64.46726586414813;14.087345837994976">
+                <descriptionOfRestrictions xml:lang="en">&lt;null&gt;</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Data is based on the Norwegian data (offshore combined production). No information about technology. As the data is an average over all gas turbines, motors and boilers in the Norwegian gas and oil production it can be assumed that different technologies are represented.\n\n# Included processes\nProviding of compression energy by the exploitation of (sour) gas fields.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="179008c2-4cb8-3da4-8326-fbb613c915da" version="00.00.000" uri="../sources/179008c2-4cb8-3da4-8326-fbb613c915da.xml">
+                <common:shortDescription xml:lang="en">2007 - Natural gas - Faist-Emmeneger</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Data is based on the annual reports on emissions and discharges submitted by each individual operator. The emissions and discharges are estimated according to guidelines given by the Norwegian authorities and OLF (Norwegian Oil Industry Association) </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: Passed.; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="9bdba24c-e194-3f62-a9fc-e5caa2845c57" version="00.00.000" uri="../contacts/9bdba24c-e194-3f62-a9fc-e5caa2845c57.xml">
+                    <common:shortDescription xml:lang="en">Michael Spielmann</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="ff931c4f-72f1-3572-bc8f-456e6ab272e0" version="00.00.000" uri="../contacts/ff931c4f-72f1-3572-bc8f-456e6ab272e0.xml">
+                <common:shortDescription xml:lang="en">Mireille Faist Emmenegger</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:59.937+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="0bcb8400-bb3d-3da1-b808-677f447cdc8c" version="00.00.000" uri="../contacts/0bcb8400-bb3d-3da1-b808-677f447cdc8c.xml">
+                <common:shortDescription xml:lang="en">Niels Jungbluth</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:40:17.144+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.010</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="179008c2-4cb8-3da4-8326-fbb613c915da" version="00.00.000" uri="../sources/179008c2-4cb8-3da4-8326-fbb613c915da.xml">
+                <common:shortDescription xml:lang="en">2007 - Natural gas - Faist-Emmeneger</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(3;1;2;2;1;3)" olca:amount="2.5E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="afd6d670-bbb0-4625-9730-04088a5b035e" version="00.00.000" uri="../flows/afd6d670-bbb0-4625-9730-04088a5b035e.xml">
+                <common:shortDescription xml:lang="en">Dinitrogen monoxide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.5E-7</meanAmount>
+            <resultingAmount>2.5E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2328828005937953</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,1,2,2,1,3); based on assumptions
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="2.43E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="70ef743b-3ed5-4a6d-b192-fb6d62378555" version="00.00.000" uri="../flows/70ef743b-3ed5-4a6d-b192-fb6d62378555.xml">
+                <common:shortDescription xml:lang="en">Methane, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.43E-5</meanAmount>
+            <resultingAmount>2.43E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.224744871391589</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3); environmental report for Norway
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.0278">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7c337428-fb1b-45c7-bbb2-2ee4d29e17ba" version="00.00.000" uri="../flows/7c337428-fb1b-45c7-bbb2-2ee4d29e17ba.xml">
+                <common:shortDescription xml:lang="en">Gas, natural</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0278</meanAmount>
+            <resultingAmount>0.0278</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.03440804327886</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3); environmental report for Norway
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="e9773595-284e-46dd-9671-5fc9ff406833" olca:propertyId="93a60a56-a3c8-17da-a746-0800200c9a66" olca:pedigreeUncertainty="(3;1;2;2;1;3)" olca:amount="0.00556">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1551f1cd-7cb7-4f68-a628-cb9301323c7b" version="00.00.000" uri="../flows/1551f1cd-7cb7-4f68-a628-cb9301323c7b.xml">
+                <common:shortDescription xml:lang="en">Radon-222</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00556</meanAmount>
+            <resultingAmount>0.00556</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7378147196982767</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,1,2,2,1,3); based on assumptions
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f97bdedd-9f48-3807-8e99-ce81c07608d9" version="00.00.010" uri="../flows/f97bdedd-9f48-3807-8e99-ce81c07608d9.xml">
+                <common:shortDescription xml:lang="en">Sour gas, burned in gas turbine, production, MJ</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">NORWAY
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(3;1;1;1;1;3)" olca:amount="0.00486">
+            <referenceToFlowDataSet type="flow data set" refObjectId="78c3efe4-421c-4d30-82e4-b97ac5124993" version="00.00.000" uri="../flows/78c3efe4-421c-4d30-82e4-b97ac5124993.xml">
+                <common:shortDescription xml:lang="en">Sulfur dioxide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00486</meanAmount>
+            <resultingAmount>0.00486</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0583005244258363</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,1,1,1,1,3); calculated
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(1;1;3;1;1;3)" olca:amount="3.07E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="33b38ccb-593b-4b11-b965-10d747ba3556" version="00.00.000" uri="../flows/33b38ccb-593b-4b11-b965-10d747ba3556.xml">
+                <common:shortDescription xml:lang="en">NMVOC, non-methane volatile organic compounds</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.07E-6</meanAmount>
+            <resultingAmount>3.07E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4212670403551895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,3,1,1,3); environmental report for Norway
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="1.99E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="77357947-ccc5-438e-9996-95e65e1e1bce" version="00.00.000" uri="../flows/77357947-ccc5-438e-9996-95e65e1e1bce.xml">
+                <common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.99E-4</meanAmount>
+            <resultingAmount>1.99E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.224744871391589</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3); environmental report for Norway
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(3;1;2;2;1;3)" olca:amount="2.78E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5ec9c16a-959d-44cd-be7d-a935727d2151" version="00.00.000" uri="../flows/5ec9c16a-959d-44cd-be7d-a935727d2151.xml">
+                <common:shortDescription xml:lang="en">Mercury II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.78E-9</meanAmount>
+            <resultingAmount>2.78E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2328828005937953</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,1,2,2,1,3); based on assumptions
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(2;1;1;1;1;3)" olca:amount="1.11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="07f704a2-2746-4364-bcfd-606cefc30715" version="00.00.000" uri="../flows/07f704a2-2746-4364-bcfd-606cefc30715.xml">
+                <common:shortDescription xml:lang="en">Heat, waste</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.11</meanAmount>
+            <resultingAmount>1.11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.044030650891055</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,1,1,3); environmental report for Norway
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.0669">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aa7cac3a-3625-41d4-bc54-33e2cf11ec46" version="00.00.000" uri="../flows/aa7cac3a-3625-41d4-bc54-33e2cf11ec46.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0669</meanAmount>
+            <resultingAmount>0.0669</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.03440804327886</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3); environmental report for Norway
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="098ea88a-716d-3420-88c9-76d9c4c41fcc" olca:pedigreeUncertainty="(1;1;1;1;3;3)" olca:amount="3.37E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e023e25a-25ee-3a2a-93ec-195d340756d6" version="00.00.010" uri="../flows/e023e25a-25ee-3a2a-93ec-195d340756d6.xml">
+                <common:shortDescription xml:lang="en">Gas turbine, 10MWe, at production plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.37E-10</meanAmount>
+            <resultingAmount>3.37E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,3); environmental report for Norway
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="1.39E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="099b36ab-4c03-4587-87f4-2f81e337afb8" version="00.00.000" uri="../flows/099b36ab-4c03-4587-87f4-2f81e337afb8.xml">
+                <common:shortDescription xml:lang="en">Carbon monoxide, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.39E-4</meanAmount>
+            <resultingAmount>1.39E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23606797749979</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3); environmental report for Norway
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

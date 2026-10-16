@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>fb30ad5a-0529-38e7-865a-efb34a8b0916</common:UUID>
+            <name>
+                <baseName xml:lang="en">Soybeans, at farm</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="bafa637e-bb37-3043-b132-26d2ef3f2ab0">agricultural</common:class>
+                    <common:class level="1" classId="8245c4e8-6580-3756-8fc0-b46e50bf1f98">plant production</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The inventory for the cultivation of soybeans in the USA is modelled with data from literature.  Some data  are extrapolated from Europe (production of fertilizers and pesticides) or Switzerland , (machine use). Some transports are modelled with standard distances. The functional unit is 1 kg soybeans (fresh mass with a water content of 11 %). Carbon content: 0.388 kg/kg fresh mass. Biomass energy content: 20.45 MJ/kg fresh mass. Yield: 2641 kg/ha. The emissions of N2O and NH3 to air are calculated standard factors for mineral fertilizers from Nemecek et al. 2004 and standard factors for the emission from the crop residue from Ostermayer 2002. The emission of nitrate to water is calculated with a nitrogen loss factor of 30%.;
+UUID: fb30ad5a-0529-38e7-865a-efb34a8b0916</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1072911600000" olca:endDate="1164927600000">
+            <common:referenceYear>2004</common:referenceYear>
+            <common:dataSetValidUntil>2006</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="US" latitudeAndLongitude="45.68811936470228;-112.49616351105776">
+                <descriptionOfRestrictions xml:lang="en">&lt;null&gt;</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Cultivation of soybeans\n\n# Included processes\nCultivation of soybeans in the USA including use of diesel, machines, fertilizers, and pesticides.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="49725337-1144-3335-8470-1dede2db7cb4" version="00.00.000" uri="../sources/49725337-1144-3335-8470-1dede2db7cb4.xml">
+                <common:shortDescription xml:lang="en">2007 - LCI bioenergy - Jungbluth</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Literature data </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: Passed.; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="0bcb8400-bb3d-3da1-b808-677f447cdc8c" version="00.00.000" uri="../contacts/0bcb8400-bb3d-3da1-b808-677f447cdc8c.xml">
+                    <common:shortDescription xml:lang="en">Niels Jungbluth</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="1603ee4f-1435-30bc-abca-1000b8494c01" version="00.00.000" uri="../contacts/1603ee4f-1435-30bc-abca-1000b8494c01.xml">
+                <common:shortDescription xml:lang="en">Juergen Sutter</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:51:13.843+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="1603ee4f-1435-30bc-abca-1000b8494c01" version="00.00.000" uri="../contacts/1603ee4f-1435-30bc-abca-1000b8494c01.xml">
+                <common:shortDescription xml:lang="en">Juergen Sutter</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2009-01-28T00:00:00.000+01:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="49725337-1144-3335-8470-1dede2db7cb4" version="00.00.000" uri="../sources/49725337-1144-3335-8470-1dede2db7cb4.xml">
+                <common:shortDescription xml:lang="en">2007 - LCI bioenergy - Jungbluth</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="8.49E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="873d28d3-e53b-46a6-aaa0-63b923f0a56c" version="00.00.000" uri="../flows/873d28d3-e53b-46a6-aaa0-63b923f0a56c.xml">
+                <common:shortDescription xml:lang="en">Clethodim</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.49E-7</meanAmount>
+            <resultingAmount>8.49E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="2.04E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="171aebab-b5e0-493f-8776-43e1a694666f" version="00.00.000" uri="../flows/171aebab-b5e0-493f-8776-43e1a694666f.xml">
+                <common:shortDescription xml:lang="en">Metribuzin</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.04E-6</meanAmount>
+            <resultingAmount>2.04E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e58d7440-1f2e-33cf-8a3a-6e9f2d7a3464" version="00.00.000" uri="../flows/e58d7440-1f2e-33cf-8a3a-6e9f2d7a3464.xml">
+                <common:shortDescription xml:lang="en">Soybeans, at farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">UNITED STATES
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="2e3a6ccd-0c16-3510-8197-4d7c54a4f03a" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="0.00835">
+            <referenceToFlowDataSet type="flow data set" refObjectId="27afead1-a71a-3599-ad33-46fd2700c0e1" version="00.00.000" uri="../flows/27afead1-a71a-3599-ad33-46fd2700c0e1.xml">
+                <common:shortDescription xml:lang="en">Lime, from carbonation, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00835</meanAmount>
+            <resultingAmount>0.00835</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); NREL 2006
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;4)" olca:amount="-4.95E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e429b852-e421-4fcb-8a9b-b0241863bfb2" version="00.00.000" uri="../flows/e429b852-e421-4fcb-8a9b-b0241863bfb2.xml">
+                <common:shortDescription xml:lang="en">Cadmium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>-4.95E-8</meanAmount>
+            <resultingAmount>-4.95E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2569805089976536</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,4); Calculated from the fertilizer application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="cedd6b69-4829-358e-9ea2-f280e8ac03cb" olca:pedigreeUncertainty="(4;5;n.a.;n.a.;n.a.;n.a.)" olca:amount="0.015">
+            <referenceToFlowDataSet type="flow data set" refObjectId="afaabccd-eee1-3b10-b0b7-c5adb6d385fa" version="00.00.022" uri="../flows/afaabccd-eee1-3b10-b0b7-c5adb6d385fa.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.015</meanAmount>
+            <resultingAmount>0.015</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.445683229480096</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,na,na,na,na); Standard Distances
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="13ce5dc8-cdd7-322f-9d6b-646f27b9af9d" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="0.00933">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2c770e9f-181b-32f3-8d96-575835a8387b" version="00.00.000" uri="../flows/2c770e9f-181b-32f3-8d96-575835a8387b.xml">
+                <common:shortDescription xml:lang="en">Potassium chloride, as K2O, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00933</meanAmount>
+            <resultingAmount>0.00933</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); IFA 2006; NASS 2005
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="5.94E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="af99a064-3ca7-43cd-9c72-cf20d245b0a8" version="00.00.000" uri="../flows/af99a064-3ca7-43cd-9c72-cf20d245b0a8.xml">
+                <common:shortDescription xml:lang="en">Chlorimuron-ethyl</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.94E-7</meanAmount>
+            <resultingAmount>5.94E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="99f8a4b0-99b5-3130-924c-5de4c10b62ef" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="0.0223">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4e8927da-4e59-319e-9df6-1965b861e482" version="00.00.022" uri="../flows/4e8927da-4e59-319e-9df6-1965b861e482.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0223</meanAmount>
+            <resultingAmount>0.0223</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4142135623730951</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); NREL 2006; Spielmann 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="7bb60e3a-d456-30f6-b82e-8bdf59ba25aa" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="0.00612">
+            <referenceToFlowDataSet type="flow data set" refObjectId="845688fc-cef0-383b-9df8-2c6f6ad7f6d9" version="00.00.000" uri="../flows/845688fc-cef0-383b-9df8-2c6f6ad7f6d9.xml">
+                <common:shortDescription xml:lang="en">Diammonium phosphate, as P2O5, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00612</meanAmount>
+            <resultingAmount>0.00612</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); IFA 2006; NASS 2005
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;4)" olca:amount="8.93E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="afd6d670-bbb0-4625-9730-04088a5b035e" version="00.00.000" uri="../flows/afd6d670-bbb0-4625-9730-04088a5b035e.xml">
+                <common:shortDescription xml:lang="en">Dinitrogen monoxide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.93E-4</meanAmount>
+            <resultingAmount>8.93E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2569805089976536</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,4); Calculated with standard method
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="1.95E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cc05b490-fe4b-47ac-893c-951b0f359285" version="00.00.000" uri="../flows/cc05b490-fe4b-47ac-893c-951b0f359285.xml">
+                <common:shortDescription xml:lang="en">Fomesafen</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.95E-6</meanAmount>
+            <resultingAmount>1.95E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="63" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="1.91E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="736923cd-6eb7-4896-98f8-46951d56da97" version="00.00.000" uri="../flows/736923cd-6eb7-4896-98f8-46951d56da97.xml">
+                <common:shortDescription xml:lang="en">Chlorpyrifos</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.91E-6</meanAmount>
+            <resultingAmount>1.91E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="64" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;4)" olca:amount="-3.19E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9f79-0050c2490048" version="00.00.000" uri="../flows/08a91e70-3ddc-11dd-9f79-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">Chromium III</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>-3.19E-7</meanAmount>
+            <resultingAmount>-3.19E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2569805089976536</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,4); Calculated from the fertilizer application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="61" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="6.32E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f681eb3c-854a-4f78-bcfe-76dfbcf9df3c" version="00.00.000" uri="../flows/f681eb3c-854a-4f78-bcfe-76dfbcf9df3c.xml">
+                <common:shortDescription xml:lang="en">2,4-D</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.32E-6</meanAmount>
+            <resultingAmount>6.32E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="62" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="3.79">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4b420f19-0421-461e-a0b6-7efbf580089b" version="00.00.000" uri="../flows/4b420f19-0421-461e-a0b6-7efbf580089b.xml">
+                <common:shortDescription xml:lang="en">Transformation, from annual crop, non-irrigated</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.79</meanAmount>
+            <resultingAmount>3.79</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0954451150103321</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); FAOSTAT 2006
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="47" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="a0f1b527-f018-3f0e-b671-b33eb6e0891c" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="4.21E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9dde207b-3a6b-3f07-abe8-741c18b0c7e4" version="00.00.000" uri="../flows/9dde207b-3a6b-3f07-abe8-741c18b0c7e4.xml">
+                <common:shortDescription xml:lang="en">Organophosphorus-compounds, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.21E-4</meanAmount>
+            <resultingAmount>4.21E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); USDA 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="48" olca:unitId="c7266b67-4ea2-457f-b391-9b94e26e195a" olca:propertyId="93a60a56-a3c8-21da-a746-0800200c9a66" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="3.79">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a6889a22-e99e-42ea-85cd-4a68d7975dcd" version="00.00.000" uri="../flows/a6889a22-e99e-42ea-85cd-4a68d7975dcd.xml">
+                <common:shortDescription xml:lang="en">Occupation, annual crop, non-irrigated</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.79</meanAmount>
+            <resultingAmount>3.79</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0488088481701516</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); FAOSTAT 2006; Nemecek 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="45" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;4)" olca:amount="-1.28E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7e66a41c-d311-4949-bdd8-eef09cdcfa47" version="00.00.000" uri="../flows/7e66a41c-d311-4949-bdd8-eef09cdcfa47.xml">
+                <common:shortDescription xml:lang="en">Copper ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>-1.28E-5</meanAmount>
+            <resultingAmount>-1.28E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2569805089976536</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,4); Calculated from the fertilizer application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="46" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="228f89a1-0e07-37f4-98c8-1ba6c2894bb3" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="3.45E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1ef06b92-32f0-3d39-9ed7-3f30ff5d6247" version="00.00.000" uri="../flows/1ef06b92-32f0-3d39-9ed7-3f30ff5d6247.xml">
+                <common:shortDescription xml:lang="en">Dinitroaniline-compounds, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.45E-5</meanAmount>
+            <resultingAmount>3.45E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); USDA 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="51" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="2.97E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a1693936-2774-4f31-8e5b-c513a5870015" version="00.00.000" uri="../flows/a1693936-2774-4f31-8e5b-c513a5870015.xml">
+                <common:shortDescription xml:lang="en">Flumioxazin</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.97E-7</meanAmount>
+            <resultingAmount>2.97E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="52" olca:unitId="debee4d9-bc47-4e35-8624-4957ecb75386" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="7fe98270-36fa-3fd5-ab4f-2d191c8fc271" olca:pedigreeUncertainty="(2;2;1;3;1;1)" olca:amount="5.35E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c236365d-788a-35b9-aabe-b8cc5e307c3b" version="00.00.000" uri="../flows/c236365d-788a-35b9-aabe-b8cc5e307c3b.xml">
+                <common:shortDescription xml:lang="en">Fertilising, by broadcaster</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.535</meanAmount>
+            <resultingAmount>0.535</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0392304845413265</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,3,1,1); NREL 2006; Nemecek 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="49" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="5f28b611-f8d0-3d9b-bef6-884718117b86" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="3.06E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="457a5b77-0ba8-3196-808c-b49baae3786c" version="00.00.000" uri="../flows/457a5b77-0ba8-3196-808c-b49baae3786c.xml">
+                <common:shortDescription xml:lang="en">Benzo[thia]diazole-compounds, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.06E-6</meanAmount>
+            <resultingAmount>3.06E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); USDA 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="50" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="1.78E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="91b452dc-ddbd-40a4-9281-33303109495e" version="00.00.000" uri="../flows/91b452dc-ddbd-40a4-9281-33303109495e.xml">
+                <common:shortDescription xml:lang="en">Trifluralin</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.78E-5</meanAmount>
+            <resultingAmount>1.78E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="55" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="4.06E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3850d44e-8919-47bc-9c0a-51ccc4ec9d9f" version="00.00.000" uri="../flows/3850d44e-8919-47bc-9c0a-51ccc4ec9d9f.xml">
+                <common:shortDescription xml:lang="en">Glyphosate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.06E-4</meanAmount>
+            <resultingAmount>4.06E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="56" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="848bc772-3902-346c-aa2f-e6f8af2c0899" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="5.43E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="53e6707b-00ad-34a0-a9de-5f22d0cd1124" version="00.00.000" uri="../flows/53e6707b-00ad-34a0-a9de-5f22d0cd1124.xml">
+                <common:shortDescription xml:lang="en">Acetamide-anillide-compounds, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.43E-6</meanAmount>
+            <resultingAmount>5.43E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); USDA 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="53" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;4)" olca:amount="2.65E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b1fca66f-8e83-469a-a7b5-018e14d5d545" version="00.00.000" uri="../flows/b1fca66f-8e83-469a-a7b5-018e14d5d545.xml">
+                <common:shortDescription xml:lang="en">Phosphorus</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.65E-5</meanAmount>
+            <resultingAmount>2.65E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2569805089976536</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,4); Calculated with standard method
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="54" olca:unitId="debee4d9-bc47-4e35-8624-4957ecb75386" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="1956d802-1be3-3c15-9165-ec9d94ac45d6" olca:pedigreeUncertainty="(2;2;1;3;1;1)" olca:amount="2.97E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="34bb44c5-2aec-3a64-96d5-d1c3444c98b8" version="00.00.000" uri="../flows/34bb44c5-2aec-3a64-96d5-d1c3444c98b8.xml">
+                <common:shortDescription xml:lang="en">Tillage, harrowing, by spring tine harrow</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.97</meanAmount>
+            <resultingAmount>2.97</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0392304845413265</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,3,1,1); NREL 2006; Nemecek 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="59" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;4)" olca:amount="9.43E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0f440cc0-0f74-446d-99d6-8ff0e97a2444" version="00.00.000" uri="../flows/0f440cc0-0f74-446d-99d6-8ff0e97a2444.xml">
+                <common:shortDescription xml:lang="en">Ammonia</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.43E-4</meanAmount>
+            <resultingAmount>9.43E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1489125293076057</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,4); Calculated with standard method
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="60" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="6.37E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3bf44c34-e91e-449a-878c-9a6e8220cb63" version="00.00.000" uri="../flows/3bf44c34-e91e-449a-878c-9a6e8220cb63.xml">
+                <common:shortDescription xml:lang="en">Imazethapyr</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.37E-7</meanAmount>
+            <resultingAmount>6.37E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="57" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="8.49E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f1b48f46-77aa-4dba-bd83-87e220816f42" version="00.00.000" uri="../flows/f1b48f46-77aa-4dba-bd83-87e220816f42.xml">
+                <common:shortDescription xml:lang="en">Lambda-cyhalothrin</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.49E-8</meanAmount>
+            <resultingAmount>8.49E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="58" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="63c42af8-593e-30d3-b2c8-bb2db1c3d760" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="8.49E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2c7269a8-5d01-32dd-bf43-7f64bf4d25b4" version="00.00.000" uri="../flows/2c7269a8-5d01-32dd-bf43-7f64bf4d25b4.xml">
+                <common:shortDescription xml:lang="en">Benzimidazole-compounds, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.49E-7</meanAmount>
+            <resultingAmount>8.49E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); USDA 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="31" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(4;3;1;1;1;4)" olca:amount="20.5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="01c12fca-ad8b-4902-8b48-2d5afe3d3a0f" version="00.00.000" uri="../flows/01c12fca-ad8b-4902-8b48-2d5afe3d3a0f.xml">
+                <common:shortDescription xml:lang="en">Energy, gross calorific value, in biomass</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>20.5</meanAmount>
+            <resultingAmount>20.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,4); calculated from the energy balance
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="32" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="1.26E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4518a791-f5dd-4ee2-ab87-2f8ffca6b230" version="00.00.000" uri="../flows/4518a791-f5dd-4ee2-ab87-2f8ffca6b230.xml">
+                <common:shortDescription xml:lang="en">Sulfosate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.26E-5</meanAmount>
+            <resultingAmount>1.26E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="debee4d9-bc47-4e35-8624-4957ecb75386" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="0324121d-7ddb-3ad1-b819-dbb7871c1136" olca:pedigreeUncertainty="(2;2;1;3;1;1)" olca:amount="2.04E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d892114d-58ec-3d06-88ae-24b558fc725d" version="00.00.000" uri="../flows/d892114d-58ec-3d06-88ae-24b558fc725d.xml">
+                <common:shortDescription xml:lang="en">Sowing</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.04</meanAmount>
+            <resultingAmount>2.04</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0392304845413265</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,3,1,1); NREL 2006; Nemecek 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="30" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;4)" olca:amount="6.36E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4010918f-7fd0-4925-8fbb-8fd7a44a806c" version="00.00.000" uri="../flows/4010918f-7fd0-4925-8fbb-8fd7a44a806c.xml">
+                <common:shortDescription xml:lang="en">Lead II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.36E-8</meanAmount>
+            <resultingAmount>6.36E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2569805089976536</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,4); Calculated from the fertilizer application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="35" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="4452c90e-c51b-3e5e-ad55-bd58032d755d" olca:pedigreeUncertainty="(2;3;1;3;3;5)" olca:amount="0.0417">
+            <referenceToFlowDataSet type="flow data set" refObjectId="09eb11be-93bd-3d81-b249-f18eb664d651" version="00.00.004" uri="../flows/09eb11be-93bd-3d81-b249-f18eb664d651.xml">
+                <common:shortDescription xml:lang="en">Pea seed IP, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0417</meanAmount>
+            <resultingAmount>0.0417</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1445523142259597</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,1,3,3,5); Nemecek 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="36" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="23f3ffba-42da-3167-96ac-808ccb478f9d" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="5.49E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ba551dbb-b907-3689-a550-d2c31fd257df" version="00.00.000" uri="../flows/ba551dbb-b907-3689-a550-d2c31fd257df.xml">
+                <common:shortDescription xml:lang="en">Ammonium nitrate, as N, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.49E-4</meanAmount>
+            <resultingAmount>5.49E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); IFA 2006; NASS 2005
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="33" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="50e02960-05c9-3848-ad7a-b423148f5721" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="4.24E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b2577c99-a32c-3489-ac6e-fadcab96bf5d" version="00.00.000" uri="../flows/b2577c99-a32c-3489-ac6e-fadcab96bf5d.xml">
+                <common:shortDescription xml:lang="en">Diphenylether-compounds, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.24E-7</meanAmount>
+            <resultingAmount>4.24E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); USDA 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="34" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="5.09E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5229d225-38a2-4ec9-a7ed-4fd906a57c76" version="00.00.000" uri="../flows/5229d225-38a2-4ec9-a7ed-4fd906a57c76.xml">
+                <common:shortDescription xml:lang="en">Fenoxaprop</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.09E-7</meanAmount>
+            <resultingAmount>5.09E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="39" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="aacc6120-0e68-3835-8303-5ae37d62c030" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="0.0463">
+            <referenceToFlowDataSet type="flow data set" refObjectId="12262ce2-ee81-3caf-8488-1dbf8fb21abe" version="00.00.000" uri="../flows/12262ce2-ee81-3caf-8488-1dbf8fb21abe.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, rail</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0463</meanAmount>
+            <resultingAmount>0.0463</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4142135623730951</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); NREL 2006
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="40" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="36fe2f4f-91bb-3bfe-a13d-06a59f95beac" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="3.98E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bec9dbc9-b350-3f7d-bac1-0e0504563025" version="00.00.000" uri="../flows/bec9dbc9-b350-3f7d-bac1-0e0504563025.xml">
+                <common:shortDescription xml:lang="en">Urea, as N, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.98E-4</meanAmount>
+            <resultingAmount>3.98E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); IFA 2006; NASS 2005
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="37" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="8d459374-cb1d-35b0-9745-c18e0e619269" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="8.49E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2dd17104-52e7-3b27-83ca-9e1309328447" version="00.00.000" uri="../flows/2dd17104-52e7-3b27-83ca-9e1309328447.xml">
+                <common:shortDescription xml:lang="en">Pyretroid-compounds, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.49E-8</meanAmount>
+            <resultingAmount>8.49E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); USDA 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="38" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="2.55E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f5613910-92ec-4bf3-9585-926749432289" version="00.00.000" uri="../flows/f5613910-92ec-4bf3-9585-926749432289.xml">
+                <common:shortDescription xml:lang="en">Imazamox</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.55E-7</meanAmount>
+            <resultingAmount>2.55E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="43" olca:unitId="debee4d9-bc47-4e35-8624-4957ecb75386" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="36638b0b-18c3-37ec-9c65-57acbdefaba1" olca:pedigreeUncertainty="(2;2;1;3;1;1)" olca:amount="9.3E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cbf497a8-d24d-326e-9d20-d4873bb8d867" version="00.00.000" uri="../flows/cbf497a8-d24d-326e-9d20-d4873bb8d867.xml">
+                <common:shortDescription xml:lang="en">Tillage, ploughing</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.9299999999999999</meanAmount>
+            <resultingAmount>0.9299999999999999</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0392304845413265</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,3,1,1); NREL 2006; Nemecek 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="44" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="1.48E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9cbbd44e-bc02-4586-9d58-e223db6f5e24" version="00.00.000" uri="../flows/9cbbd44e-bc02-4586-9d58-e223db6f5e24.xml">
+                <common:shortDescription xml:lang="en">Pendimethalin</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.48E-5</meanAmount>
+            <resultingAmount>1.48E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="41" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="53ce246b-6302-39dc-8eac-46f34c528536" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="7.47E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d50c1eed-e6fa-3a23-97a4-e621c6bc3a1e" version="00.00.000" uri="../flows/d50c1eed-e6fa-3a23-97a4-e621c6bc3a1e.xml">
+                <common:shortDescription xml:lang="en">Phenoxy-compounds, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.47E-6</meanAmount>
+            <resultingAmount>7.47E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); USDA 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="42" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="1.7E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="82f5987e-39bf-4055-8f4e-ea3a1882306f" version="00.00.000" uri="../flows/82f5987e-39bf-4055-8f4e-ea3a1882306f.xml">
+                <common:shortDescription xml:lang="en">Fluazifop-P-butyl</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.7E-7</meanAmount>
+            <resultingAmount>1.7E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="debee4d9-bc47-4e35-8624-4957ecb75386" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="7cdc6a0a-2723-3732-a2e3-e88dd6a61352" olca:pedigreeUncertainty="(2;2;1;3;1;1)" olca:amount="1.06E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cbbf7574-ab64-36f1-abb3-bbed698119c2" version="00.00.000" uri="../flows/cbbf7574-ab64-36f1-abb3-bbed698119c2.xml">
+                <common:shortDescription xml:lang="en">Combine harvesting</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.06</meanAmount>
+            <resultingAmount>1.06</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0392304845413265</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,3,1,1); NREL 2006; Nemecek 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="8a1be6e0-deb2-3d3f-bdaf-da46edae7112" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="2.55E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fb944496-694c-35ea-ae4b-02a38230b56f" version="00.00.000" uri="../flows/fb944496-694c-35ea-ae4b-02a38230b56f.xml">
+                <common:shortDescription xml:lang="en">[thio]carbamate-compounds, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.55E-7</meanAmount>
+            <resultingAmount>2.55E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); USDA 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="3.79">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e97b784a-ec09-4b1b-9f14-cc0ce9799c9e" version="00.00.000" uri="../flows/e97b784a-ec09-4b1b-9f14-cc0ce9799c9e.xml">
+                <common:shortDescription xml:lang="en">Transformation, to annual crop, non-irrigated</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.79</meanAmount>
+            <resultingAmount>3.79</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0954451150103321</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); FAOSTAT 2006
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;4)" olca:amount="0.0377">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b9291c72-4b1d-4275-8068-4c707dc3ce33" version="00.00.000" uri="../flows/b9291c72-4b1d-4275-8068-4c707dc3ce33.xml">
+                <common:shortDescription xml:lang="en">Nitrate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0377</meanAmount>
+            <resultingAmount>0.0377</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2569805089976536</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,4); Calculated with standard method
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="3.06E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ab9afec-40e0-41b0-82b1-6cb15c84e949" version="00.00.000" uri="../flows/7ab9afec-40e0-41b0-82b1-6cb15c84e949.xml">
+                <common:shortDescription xml:lang="en">Sulfentrazone</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.06E-6</meanAmount>
+            <resultingAmount>3.06E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;4)" olca:amount="-3.92E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="84aa799e-9d98-4d34-85e0-516d28ab1be9" version="00.00.000" uri="../flows/84aa799e-9d98-4d34-85e0-516d28ab1be9.xml">
+                <common:shortDescription xml:lang="en">Zinc II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>-3.92E-5</meanAmount>
+            <resultingAmount>-3.92E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2569805089976536</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,4); Calculated from the fertilizer application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="5.43E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d2885a24-b728-4832-8638-15697630eff9" version="00.00.000" uri="../flows/d2885a24-b728-4832-8638-15697630eff9.xml">
+                <common:shortDescription xml:lang="en">Metolachlor</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.43E-6</meanAmount>
+            <resultingAmount>5.43E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="461aa0e0-5253-3cda-b22f-4c075152cdb5" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="9.47E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="34747f8d-385f-32f6-aec9-0a0a97159927" version="00.00.000" uri="../flows/34747f8d-385f-32f6-aec9-0a0a97159927.xml">
+                <common:shortDescription xml:lang="en">Ammonia, liquid, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.47E-4</meanAmount>
+            <resultingAmount>9.47E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); IFA 2006; NASS 2005
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;4)" olca:amount="1.87E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="77357947-ccc5-438e-9996-95e65e1e1bce" version="00.00.000" uri="../flows/77357947-ccc5-438e-9996-95e65e1e1bce.xml">
+                <common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.87E-4</meanAmount>
+            <resultingAmount>1.87E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2569805089976536</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,4); Calculated with standard method
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;1)" olca:amount="2.55E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d0431945-ea71-4257-9be6-78a849cd5440" version="00.00.000" uri="../flows/d0431945-ea71-4257-9be6-78a849cd5440.xml">
+                <common:shortDescription xml:lang="en">Cloransulam-methyl</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.55E-7</meanAmount>
+            <resultingAmount>2.55E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140175425099138</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,1); Calculated from the pesticide application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="fa5bd83c-f5ff-3dd1-83b3-af87812ccb28" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="2.33E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="22aaa467-fef8-3181-b89c-9ad3205c4fd5" version="00.00.000" uri="../flows/22aaa467-fef8-3181-b89c-9ad3205c4fd5.xml">
+                <common:shortDescription xml:lang="en">Triazine-compounds, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.33E-6</meanAmount>
+            <resultingAmount>2.33E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); USDA 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;4)" olca:amount="-4.24E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b4580545-243d-48d2-a3a0-2633a4f46fb1" version="00.00.000" uri="../flows/b4580545-243d-48d2-a3a0-2633a4f46fb1.xml">
+                <common:shortDescription xml:lang="en">Nickel II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>-4.24E-6</meanAmount>
+            <resultingAmount>-4.24E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2569805089976536</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,4); Calculated from the fertilizer application
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;4)" olca:amount="3.01E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4d11b9d2-f8b4-413f-822f-141d7ae493d8" version="00.00.000" uri="../flows/4d11b9d2-f8b4-413f-822f-141d7ae493d8.xml">
+                <common:shortDescription xml:lang="en">Phosphorus</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.01E-4</meanAmount>
+            <resultingAmount>3.01E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2569805089976536</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,4); Calculated with standard method
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="debee4d9-bc47-4e35-8624-4957ecb75386" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:defaultProvider="ae984a76-2fd1-36ce-be4c-3de441ed2f9c" olca:pedigreeUncertainty="(2;2;1;3;1;1)" olca:amount="2.55E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d34c319c-b38e-386c-824f-88e35c993c2d" version="00.00.000" uri="../flows/d34c319c-b38e-386c-824f-88e35c993c2d.xml">
+                <common:shortDescription xml:lang="en">Application of plant protection products, by field sprayer</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.5500000000000003</meanAmount>
+            <resultingAmount>2.5500000000000003</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0392304845413265</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,1,3,1,1); NREL 2006; Nemecek 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="96a7e433-a44f-326d-8b79-5163efae5b5e" olca:pedigreeUncertainty="(1;2;1;3;1;1)" olca:amount="5.94E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0fa2d060-157b-3fd5-9988-a18bf21c087a" version="00.00.000" uri="../flows/0fa2d060-157b-3fd5-9988-a18bf21c087a.xml">
+                <common:shortDescription xml:lang="en">[sulfonyl]urea-compounds, at regional storehouse</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.94E-7</meanAmount>
+            <resultingAmount>5.94E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0295630140987</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,3,1,1); USDA 2004
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;1;1;1;4)" olca:amount="1.37">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cc6a1abb-b123-4ca6-8f16-38209df609be" version="00.00.000" uri="../flows/cc6a1abb-b123-4ca6-8f16-38209df609be.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, in air</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.37</meanAmount>
+            <resultingAmount>1.37</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,1,1,1,4); calculated from the carbon balance
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

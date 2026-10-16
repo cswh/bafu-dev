@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>2405f8dc-ccf4-3db2-abc4-79d541f0795a</common:UUID>
+            <name>
+                <baseName xml:lang="en">Use of wireless IP access network, 5G per hour</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="10267e96-7786-30dd-a378-1a26618e6c38">computers &amp; network</common:class>
+                    <common:class level="1" classId="31411477-cff6-3b61-8fa2-caed9d32e5f4">use cases</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The data set represents 5G wireless networks in Switzerland; UUID: 2405f8dc-ccf4-3db2-abc4-79d541f0795a</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1672527600000" olca:endDate="1890774000000">
+            <common:referenceYear>2023</common:referenceYear>
+            <common:dataSetValidUntil>2029</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Unspecified</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Data for Swiss networks</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">The mix of Swiss access transmission network, wireless. 5G technologies are considered.\n\n# Included processes\nThe dataset is based on multiple Swisscom 5G sites. The equipment considered are antennas, baseband units, cooling units, indoor cabinets, lead acid battery, PSU indoor cabinet, radio units, routers, and cables. The amount of electricity consumed is calculated by multiplying the network energy intensity with the total network traffic. The network energy intensity is based on the latest information from Telefonica since the company presents updated information regarding the energy intensity (kWh/GB) of different access network types. The amount of network traffic is based on the Swisscom network. It is assumed that the devices have a lifetime of 6 years, similar to the core network and based on a blade server platform. The reference year is 2021 based on the information from Telefonica. The functional unit = 1 GB.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="7e27b577-b31d-3a15-b1f7-c47afab2beb7" version="00.00.000" uri="../sources/7e27b577-b31d-3a15-b1f7-c47afab2beb7.xml">
+                <common:shortDescription xml:lang="en">2024 - LCI ICT sector - Raka Adrianto</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Literature &amp; own estimations</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="67f3c08e-69c1-33a4-ae8b-5b595d8e5578" version="00.00.000" uri="../contacts/67f3c08e-69c1-33a4-ae8b-5b595d8e5578.xml">
+                <common:shortDescription xml:lang="en">Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:50:16.583+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="67f3c08e-69c1-33a4-ae8b-5b595d8e5578" version="00.00.000" uri="../contacts/67f3c08e-69c1-33a4-ae8b-5b595d8e5578.xml">
+                <common:shortDescription xml:lang="en">Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:36:48.935+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.002</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="7e27b577-b31d-3a15-b1f7-c47afab2beb7" version="00.00.000" uri="../sources/7e27b577-b31d-3a15-b1f7-c47afab2beb7.xml">
+                <common:shortDescription xml:lang="en">2024 - LCI ICT sector - Raka Adrianto</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>false</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="09cda8b1-b652-39b2-8761-c93aecc29f70" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="1.11E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d0f3397a-c71a-361f-9c4a-8088a46bc8f3" version="00.00.000" uri="../flows/d0f3397a-c71a-361f-9c4a-8088a46bc8f3.xml">
+                <common:shortDescription xml:lang="en">Polypropylene, granulate, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.11E-7</meanAmount>
+            <resultingAmount>1.11E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="c4a92617-9f99-3d7b-95c0-15fb110b80ad" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="0.0184">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ec91f1d-db72-39ef-bbc0-46119b059efe" version="00.00.000" uri="../flows/7ec91f1d-db72-39ef-bbc0-46119b059efe.xml">
+                <common:shortDescription xml:lang="en">Electricity, low voltage, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.06624000000000001</meanAmount>
+            <resultingAmount>0.06624000000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="1235438d-3385-3bd1-8921-17951c10c464" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="1.91E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4b3445e9-30d0-34c3-a092-4ebdbaa25acc" version="00.00.000" uri="../flows/4b3445e9-30d0-34c3-a092-4ebdbaa25acc.xml">
+                <common:shortDescription xml:lang="en">Polystyrene, general purpose, GPPS, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.91E-8</meanAmount>
+            <resultingAmount>1.91E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="6bff31ec-3d70-3720-93b4-68a5017911b4" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="1.91E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2e2ea721-50e4-3dd2-a42b-23aa9605de5a" version="00.00.000" uri="../flows/2e2ea721-50e4-3dd2-a42b-23aa9605de5a.xml">
+                <common:shortDescription xml:lang="en">Polyethylene terephthalate, granulate, amorphous, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.91E-8</meanAmount>
+            <resultingAmount>1.91E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="ea445393-9bd6-3cf6-932d-b73f3d415bce" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="1.24E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="79c05ad9-1143-3dca-bfbc-c6d097b72934" version="00.00.000" uri="../flows/79c05ad9-1143-3dca-bfbc-c6d097b72934.xml">
+                <common:shortDescription xml:lang="en">Cast iron, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.24E-7</meanAmount>
+            <resultingAmount>1.24E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="c66b37b5-67d2-32cf-a5ba-5abcb693cc6f" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="1.91E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a03677f7-a173-3d8b-982f-8d96ebab9ee7" version="00.00.000" uri="../flows/a03677f7-a173-3d8b-982f-8d96ebab9ee7.xml">
+                <common:shortDescription xml:lang="en">Synthetic rubber, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.91E-8</meanAmount>
+            <resultingAmount>1.91E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="fc9385f8-fe2d-3399-b663-4b66e5062a3f" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="2.56E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4b78cf71-32e5-3408-8df4-43fab247dff0" version="00.00.000" uri="../flows/4b78cf71-32e5-3408-8df4-43fab247dff0.xml">
+                <common:shortDescription xml:lang="en">Chromium steel 18/8, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.56E-8</meanAmount>
+            <resultingAmount>2.56E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="8f574699-0784-38ab-8f35-770310aaa795" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="2.56E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="51e78795-a7db-38f2-8d4e-128f82a8d37c" version="00.00.000" uri="../flows/51e78795-a7db-38f2-8d4e-128f82a8d37c.xml">
+                <common:shortDescription xml:lang="en">Sheet rolling, chromium steel</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.56E-8</meanAmount>
+            <resultingAmount>2.56E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="987dc6b3-6f8a-3736-8969-047831fe190f" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="8.17E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d2500ae5-3060-3737-915c-57f6e43d832a" version="00.00.000" uri="../flows/d2500ae5-3060-3737-915c-57f6e43d832a.xml">
+                <common:shortDescription xml:lang="en">Copper, primary, at refinery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.17E-7</meanAmount>
+            <resultingAmount>8.17E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="7cab0912-ac94-3deb-bd13-5ede9c7d223d" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="8.17E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f7139ee0-2b5e-3ca7-9e75-fae30d024b9e" version="00.00.000" uri="../flows/f7139ee0-2b5e-3ca7-9e75-fae30d024b9e.xml">
+                <common:shortDescription xml:lang="en">Wire drawing, copper</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.17E-7</meanAmount>
+            <resultingAmount>8.17E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="f7ce1c49-0916-320e-9585-666388269b3d" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="2.25E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1b4f4192-6d9f-3f42-9579-3e00e26c3599" version="00.00.000" uri="../flows/1b4f4192-6d9f-3f42-9579-3e00e26c3599.xml">
+                <common:shortDescription xml:lang="en">Injection moulding</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.25E-6</meanAmount>
+            <resultingAmount>2.25E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="0cb84959-3b34-3668-8025-edda3120c2a6" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="7.01E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fc102393-19c2-3916-90db-10d3907ad85e" version="00.00.000" uri="../flows/fc102393-19c2-3916-90db-10d3907ad85e.xml">
+                <common:shortDescription xml:lang="en">Printed wiring board, mounted, Laptop PC mainboard, Pb free, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.01E-6</meanAmount>
+            <resultingAmount>7.01E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="6738f024-eb64-3ef8-837e-05b84c6e43da" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="1.13E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2ed71299-f11a-327f-a285-5ea75bb8941b" version="00.00.000" uri="../flows/2ed71299-f11a-327f-a285-5ea75bb8941b.xml">
+                <common:shortDescription xml:lang="en">Polyethylene, HDPE, granulate, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.13E-6</meanAmount>
+            <resultingAmount>1.13E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="dad0fc14-f7f9-3292-8754-ac91fe7c2825" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="1.13E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e12f0627-a5e6-38c8-9259-227adae8a6ee" version="00.00.000" uri="../flows/e12f0627-a5e6-38c8-9259-227adae8a6ee.xml">
+                <common:shortDescription xml:lang="en">Acrylonitrile-butadiene-styrene copolymer, ABS, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.13E-6</meanAmount>
+            <resultingAmount>1.13E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b9430f24-d0b9-3422-a5ad-f874acbbef18" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="3.76E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="740db303-1a44-378b-83ae-6d7423e622cf" version="00.00.000" uri="../flows/740db303-1a44-378b-83ae-6d7423e622cf.xml">
+                <common:shortDescription xml:lang="en">Steel, low-alloyed, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.76E-5</meanAmount>
+            <resultingAmount>3.76E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="d9215fd1-60bb-33f5-9a60-cef1b079b523" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="3.76E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="02808293-f104-3b2a-8aaa-1ff2a90aa78e" version="00.00.000" uri="../flows/02808293-f104-3b2a-8aaa-1ff2a90aa78e.xml">
+                <common:shortDescription xml:lang="en">Sheet rolling, steel</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.76E-5</meanAmount>
+            <resultingAmount>3.76E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="15e202fc-ad29-3de6-8ec0-a9ce3d9ff6fb" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="7.61E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="40c2daa9-934a-3c4c-85d3-50135c4deb1a" version="00.00.000" uri="../flows/40c2daa9-934a-3c4c-85d3-50135c4deb1a.xml">
+                <common:shortDescription xml:lang="en">Aluminium alloy, AlMg3, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.61E-7</meanAmount>
+            <resultingAmount>7.61E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="6113497a-792f-38e7-a69a-420dff702898" olca:pedigreeUncertainty="(2;2;2;2;1;5)" olca:amount="7.61E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aed9f814-644f-3d7c-838d-3af17ff94819" version="00.00.000" uri="../flows/aed9f814-644f-3d7c-838d-3af17ff94819.xml">
+                <common:shortDescription xml:lang="en">Sheet rolling, aluminium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.61E-7</meanAmount>
+            <resultingAmount>7.61E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.104536101718726</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,2,1,5,BU:1.05) Value calculated from Bieser et al. 2020 and 7 lifetime of equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="227a54d9-44e7-468c-b8bb-f2dd1ae68c7a" olca:propertyId="c0447923-0e60-4b3c-97c2-a86dddd9eea5" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2e90d2ac-457d-3e7c-85ae-936550b90ff3" version="00.00.000" uri="../flows/2e90d2ac-457d-3e7c-85ae-936550b90ff3.xml">
+                <common:shortDescription xml:lang="en">Use of wireless IP access network, 5G per hour</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">Total value is calculated from # of subscribers and hours in a year</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

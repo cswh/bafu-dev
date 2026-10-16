@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>9d237109-b8ea-3c06-9b62-9e6c7932f518</common:UUID>
+            <name>
+                <baseName xml:lang="en">Diesel, burned in building machine, without particle filter</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="b3eacddd-023f-3abe-bbbf-ae2b4b24e96d">building processes</common:class>
+                    <common:class level="1" classId="75b88eaf-a797-365b-9af2-a39b0db8db4b">machinery</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The average service life (10'000 h/p) and the consumption of lubricating oil are taken from ecoinvent v2.2. Fuel consumption and regulated exhaust emissions are calculated with the non-road database published by BAFU (2015) for 2015. Data from the Emissions Inventory Guidebook (EMEP/EEA, 2013) were used for specific exhaust emissions not covered by the non-road database. The emission factors are calculated for the case that only a minimal share of the building machines is equipped with a particle filter, namely when it is required by Swiss legislation. The NMVOC speciation is modelled by the shares for lorries and the noise emissions are assumed to be proportional to the fuel consumption of lorries. The fuel consumption of average lorries was calculated with the HBEFA database with data for Switzerland in 2015.;
+UUID: 9d237109-b8ea-3c06-9b62-9e6c7932f518</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="1448924400000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2015</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Switzerland</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Diesel and diesel engine\n\n# Included processes\nThis dataset represents the combustion of 1 MJ Diesel fuel in an average building machine without particle filter (unless it is legally required) in Switzerland. A wide range of different building machines is included but hydraulic diggers, pumps and mobile power generators are not considered. The dataset refers to the entire transport life cycle i.e. to the production, operation, maintenance and end of life of vehicle.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="b5838352-278b-376e-b3c4-7f94ad9e56e1" version="00.00.000" uri="../sources/b5838352-278b-376e-b3c4-7f94ad9e56e1.xml">
+                <common:shortDescription xml:lang="en">2016 - LCI road and non-road transport services - Stolz</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistics </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 06.05.2017; Other validation: \\SRV01\ESU-Docs\Projektablage\544 Aktualisierung mobitool\Strassentransport\EcoSpold\[544_Building_Machine_Digger_EIv2_v0.6.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:52:43.058+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2017-05-06T00:00:00.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="b5838352-278b-376e-b3c4-7f94ad9e56e1" version="00.00.000" uri="../sources/b5838352-278b-376e-b3c4-7f94ad9e56e1.xml">
+                <common:shortDescription xml:lang="en">2016 - LCI road and non-road transport services - Stolz</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="33" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="853eecbe-ecd0-3119-bb72-68e5ac63cbde" olca:pedigreeUncertainty="(3;1;3;2;1;5)" olca:amount="3.4426E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2f654890-a1b9-39f9-bd06-2d06b288fc30" version="00.00.008" uri="../flows/2f654890-a1b9-39f9-bd06-2d06b288fc30.xml">
+                <common:shortDescription xml:lang="en">Building machine</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.4426E-7</meanAmount>
+            <resultingAmount>3.4426E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7522556891047607</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,1,3,2,1,5,BU:3); Vehicle life time performance: 10'000 h; Average fuel consumption: 290 MJ/h; Kellenberger et al. 2007: ecoinvent report 7, Part XVIII; BAFU 2015
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="34" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="2.3364E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5ce378a0-b48d-471c-977d-79681521efde" version="00.00.000" uri="../flows/5ce378a0-b48d-471c-977d-79681521efde.xml">
+                <common:shortDescription xml:lang="en">Zinc II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.3364E-8</meanAmount>
+            <resultingAmount>2.3364E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23761033247525</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:5); Fuel dependent emission factor: 1.00E-06 kg/kgfuel; EMEP/EEA guidebook 2013, 1.A.2.f.ii, Tab. 3-1
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="35" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="3.972E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ec8144d6-d123-43b1-9c17-a295422a0498" version="00.00.000" uri="../flows/ec8144d6-d123-43b1-9c17-a295422a0498.xml">
+                <common:shortDescription xml:lang="en">Copper ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.972E-8</meanAmount>
+            <resultingAmount>3.972E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23761033247525</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:5); Fuel dependent emission factor: 1.70E-06 kg/kgfuel; EMEP/EEA guidebook 2013, 1.A.2.f.ii, Tab. 3-1
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="36" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;3;2)" olca:amount="2.5441E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3b1ecf8e-1d2c-4330-81da-a79f9068976d" version="00.00.000" uri="../flows/3b1ecf8e-1d2c-4330-81da-a79f9068976d.xml">
+                <common:shortDescription xml:lang="en">Toluene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.5441E-9</meanAmount>
+            <resultingAmount>2.5441E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.252038338071163</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,3,2,BU:1.5); Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.01%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="4.6729E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fd7aa71c-508c-480d-81a6-8052aad92646" version="00.00.000" uri="../flows/fd7aa71c-508c-480d-81a6-8052aad92646.xml">
+                <common:shortDescription xml:lang="en">Sulfur dioxide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.6729E-7</meanAmount>
+            <resultingAmount>4.6729E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0421132376090423</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:1.05); Fuel dependent emission factor: 2.00E-05 kg/kgfuel; HBEFA database v3.2
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="30" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;3;2)" olca:amount="1.5264E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="516606eb-99f6-4e8c-b99a-6b439aaed48c" version="00.00.000" uri="../flows/516606eb-99f6-4e8c-b99a-6b439aaed48c.xml">
+                <common:shortDescription xml:lang="en">Pentane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.5264E-8</meanAmount>
+            <resultingAmount>1.5264E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.252038338071163</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,3,2,BU:1.5); Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.06%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="31" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="7.0093E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5e13c2ab-5466-4ff5-816d-702dfdf25f76" version="00.00.000" uri="../flows/5e13c2ab-5466-4ff5-816d-702dfdf25f76.xml">
+                <common:shortDescription xml:lang="en">Benzo(a)pyrene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.0093E-10</meanAmount>
+            <resultingAmount>7.0093E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7337819932159868</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:3); Fuel dependent emission factor: 3.00E-08 kg/kgfuel; EMEP/EEA guidebook 2013, 1.A.2.f.ii, Tab. 3-1
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="32" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="7.6869E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3e5d7d91-67d7-4afb-91dd-36fab58e4685" version="00.00.000" uri="../flows/3e5d7d91-67d7-4afb-91dd-36fab58e4685.xml">
+                <common:shortDescription xml:lang="en">PAH, polycyclic aromatic hydrocarbons</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.6869E-8</meanAmount>
+            <resultingAmount>7.6869E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7337819932159868</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:3); Fuel dependent emission factor: 3.29E-06 kg/kgfuel; EMEP/EEA guidebook 2013, 1.A.2.f.ii, Tab. 3-1
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;3;2)" olca:amount="4.503E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d896ced7-a107-4017-b284-d95a8ef3e735" version="00.00.000" uri="../flows/d896ced7-a107-4017-b284-d95a8ef3e735.xml">
+                <common:shortDescription xml:lang="en">Acrolein</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.503E-7</meanAmount>
+            <resultingAmount>4.503E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.252038338071163</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,3,2,BU:1.5); Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 1.77%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;3;2)" olca:amount="7.6322E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1ec6c4b4-ee5f-4788-8683-c95a84d6d63c" version="00.00.000" uri="../flows/1ec6c4b4-ee5f-4788-8683-c95a84d6d63c.xml">
+                <common:shortDescription xml:lang="en">Heptane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.6322E-8</meanAmount>
+            <resultingAmount>7.6322E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.252038338071163</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,3,2,BU:1.5); Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.30%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;3;2)" olca:amount="1.4247E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9cec94a2-e7fe-43f4-82f4-293c477f86dc" version="00.00.000" uri="../flows/9cec94a2-e7fe-43f4-82f4-293c477f86dc.xml">
+                <common:shortDescription xml:lang="en">Styrene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.4247E-7</meanAmount>
+            <resultingAmount>1.4247E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.252038338071163</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,3,2,BU:1.5); Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.56%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="1.6355E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a5506f4b-113f-4713-95c3-c819dde6e48b" version="00.00.000" uri="../flows/a5506f4b-113f-4713-95c3-c819dde6e48b.xml">
+                <common:shortDescription xml:lang="en">Nickel II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.6355E-9</meanAmount>
+            <resultingAmount>1.6355E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23761033247525</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:5); Fuel dependent emission factor: 7.00E-08 kg/kgfuel; EMEP/EEA guidebook 2013, 1.A.2.f.ii, Tab. 3-1
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="113af6ac-ff61-3bbc-b52b-009a3eb1afcf" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="0.023364">
+            <referenceToFlowDataSet type="flow data set" refObjectId="11582196-2a0b-3c9e-b128-eff229ffa8c2" version="00.00.000" uri="../flows/11582196-2a0b-3c9e-b128-eff229ffa8c2.xml">
+                <common:shortDescription xml:lang="en">Diesel, at regional storage</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.023364</meanAmount>
+            <resultingAmount>0.023364</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0421132376090423</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:1.05); Net calorific value diesel: 42.8 MJ/kg; Frischknecht et al. 2007: ecoinvent report 1, Tab. 4.6
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;3;2)" olca:amount="2.5441E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3a6c936c-0276-4f11-9d98-1bd011387a6e" version="00.00.000" uri="../flows/3a6c936c-0276-4f11-9d98-1bd011387a6e.xml">
+                <common:shortDescription xml:lang="en">Propane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.5441E-8</meanAmount>
+            <resultingAmount>2.5441E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.252038338071163</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,3,2,BU:1.5); Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.10%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="1.2383E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="71234253-b3a7-4dfe-b166-a484ad15bee7" version="00.00.000" uri="../flows/71234253-b3a7-4dfe-b166-a484ad15bee7.xml">
+                <common:shortDescription xml:lang="en">Mercury II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.2383E-10</meanAmount>
+            <resultingAmount>1.2383E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23761033247525</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:5); Fuel dependent emission factor: 5.30E-09 kg/kgfuel; EMEP/EEA guidebook 2013, 1.A.3.b.i-iv, Tab. 3-103
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;3;2)" olca:amount="1.1626E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e3e8f6a2-c45e-4685-9859-698b2eadaf5b" version="00.00.000" uri="../flows/e3e8f6a2-c45e-4685-9859-698b2eadaf5b.xml">
+                <common:shortDescription xml:lang="en">Acetaldehyde</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.1626E-6</meanAmount>
+            <resultingAmount>1.1626E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.252038338071163</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,3,2,BU:1.5); Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 4.57%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="41" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="2.3364E-12">
+            <referenceToFlowDataSet type="flow data set" refObjectId="81e17d9a-3e0b-414e-9b2e-eca7e5b3bd4a" version="00.00.000" uri="../flows/81e17d9a-3e0b-414e-9b2e-eca7e5b3bd4a.xml">
+                <common:shortDescription xml:lang="en">Chromium VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.3364E-12</meanAmount>
+            <resultingAmount>2.3364E-12</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23761033247525</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:5); Fuel dependent emission factor: 1.00E-10 kg/kgfuel; EMEP/EEA guidebook 2013, 1.A.2.f.ii, Tab. 3-1
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="37" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="1.215E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8e123669-94d3-41d8-9480-a79211fe7c43" version="00.00.000" uri="../flows/8e123669-94d3-41d8-9480-a79211fe7c43.xml">
+                <common:shortDescription xml:lang="en">Lead II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.215E-9</meanAmount>
+            <resultingAmount>1.215E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23761033247525</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:5); Fuel dependent emission factor: 5.20E-08 kg/kgfuel; EMEP/EEA guidebook 2013, 1.A.3.b.i-iv, Tab. 3-10
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="38" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="2.3364E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1c5a7322-9261-4d59-a692-adde6c12de92" version="00.00.000" uri="../flows/1c5a7322-9261-4d59-a692-adde6c12de92.xml">
+                <common:shortDescription xml:lang="en">Cadmium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.3364E-10</meanAmount>
+            <resultingAmount>2.3364E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23761033247525</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:5); Fuel dependent emission factor: 1.00E-08 kg/kgfuel; EMEP/EEA guidebook 2013, 1.A.2.f.ii, Tab. 3-1
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="39" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="6.238E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0795345f-c7ae-410c-ad25-1845784c75f5" version="00.00.000" uri="../flows/0795345f-c7ae-410c-ad25-1845784c75f5.xml">
+                <common:shortDescription xml:lang="en">Methane, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.238E-7</meanAmount>
+            <resultingAmount>6.238E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2280879447336008</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:1.5); Average building machine in Switzerland in 2015; BAFU 2015: Non-road database
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="40" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;3;2)" olca:amount="1.0176E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="527d6cb5-bbd7-403d-8dcc-b6678fb123f5" version="00.00.000" uri="../flows/527d6cb5-bbd7-403d-8dcc-b6678fb123f5.xml">
+                <common:shortDescription xml:lang="en">o-Xylene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0176E-7</meanAmount>
+            <resultingAmount>1.0176E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.252038338071163</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,3,2,BU:1.5); Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.40%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="71dfce1e-8d60-33c9-9786-6d6cceb2cfa4" version="00.00.000" uri="../flows/71dfce1e-8d60-33c9-9786-6d6cceb2cfa4.xml">
+                <common:shortDescription xml:lang="en">Diesel, burned in building machine, without particle filter</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;3;2)" olca:amount="1.7809E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="28999907-a8a7-45b3-857e-836495ca2aa0" version="00.00.000" uri="../flows/28999907-a8a7-45b3-857e-836495ca2aa0.xml">
+                <common:shortDescription xml:lang="en">Benzene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.7809E-8</meanAmount>
+            <resultingAmount>1.7809E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7468543156199374</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,3,2,BU:3); Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.07%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="3.3878E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c1b91234-6f24-417b-8309-46111d09c457" version="00.00.000" uri="../flows/c1b91234-6f24-417b-8309-46111d09c457.xml">
+                <common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.3878E-4</meanAmount>
+            <resultingAmount>3.3878E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2280879447336008</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:1.5); Average building machine in Switzerland in 2015; BAFU 2015: Non-road database
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="1.8692E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="87883a4e-1e3e-4c9d-90c0-f1bea36f8014" version="00.00.000" uri="../flows/87883a4e-1e3e-4c9d-90c0-f1bea36f8014.xml">
+                <common:shortDescription xml:lang="en">Ammonia</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.8692E-7</meanAmount>
+            <resultingAmount>1.8692E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1019074371289088</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:1.2); Fuel dependent emission factor: 8.00E-06 kg/kgfuel; EMEP/EEA guidebook 2013, 1.A.2.f.ii, Tab. 3-1
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;3;2)" olca:amount="3.8161E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="982b0510-96ac-4bcb-a758-e98006b95f4d" version="00.00.000" uri="../flows/982b0510-96ac-4bcb-a758-e98006b95f4d.xml">
+                <common:shortDescription xml:lang="en">Butane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.8161E-8</meanAmount>
+            <resultingAmount>3.8161E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.252038338071163</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,3,2,BU:1.5); Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.15%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="2.3364E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="454c61fd-c52b-4a04-9731-f141bb7b5264" version="00.00.000" uri="../flows/454c61fd-c52b-4a04-9731-f141bb7b5264.xml">
+                <common:shortDescription xml:lang="en">Selenium IV</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.3364E-10</meanAmount>
+            <resultingAmount>2.3364E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23761033247525</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:5); Fuel dependent emission factor: 1.00E-08 kg/kgfuel; EMEP/EEA guidebook 2013, 1.A.2.f.ii, Tab. 3-1
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;3;2)" olca:amount="2.0666E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d3260d0e-8203-4cbb-a45a-6a13131a5108" version="00.00.000" uri="../flows/d3260d0e-8203-4cbb-a45a-6a13131a5108.xml">
+                <common:shortDescription xml:lang="en">NMVOC, non-methane volatile organic compounds</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.0666E-5</meanAmount>
+            <resultingAmount>2.0666E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.252038338071163</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,3,2,BU:1.5); Modelled by NMVOC speciation of lorries; Unspecified NMVOC for which no elementary exchange exists; 81.2% of total NMVOC emissions; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="1.1682E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9f7b-0050c2490048" version="00.00.000" uri="../flows/08a91e70-3ddc-11dd-9f7b-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">Chromium III</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.1682E-9</meanAmount>
+            <resultingAmount>1.1682E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23761033247525</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:5); Fuel dependent emission factor: 5.00E-08 kg/kgfuel; EMEP/EEA guidebook 2013, 1.A.2.f.ii, Tab. 3-1
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="1.2872E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ba2f3f82-c93a-47a5-822a-37ec97495275" version="00.00.000" uri="../flows/ba2f3f82-c93a-47a5-822a-37ec97495275.xml">
+                <common:shortDescription xml:lang="en">Carbon monoxide, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.2872E-4</meanAmount>
+            <resultingAmount>1.2872E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23761033247525</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:5); Average building machine in Switzerland in 2015; BAFU 2015: Non-road database
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="2.3364E-12">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dc6dbdaa-9f13-43a8-8af5-6603688c6ad0" version="00.00.000" uri="../flows/dc6dbdaa-9f13-43a8-8af5-6603688c6ad0.xml">
+                <common:shortDescription xml:lang="en">Arsenic ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.3364E-12</meanAmount>
+            <resultingAmount>2.3364E-12</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23761033247525</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:5); Fuel dependent emission factor: 1.00E-10 kg/kgfuel; EMEP/EEA guidebook 2013, 1.A.3.b.i-iv, Tab. 3-103
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;3;2)" olca:amount="3.4854E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="10d26189-a688-4859-8aa9-525e058a07f0" version="00.00.000" uri="../flows/10d26189-a688-4859-8aa9-525e058a07f0.xml">
+                <common:shortDescription xml:lang="en">Benzaldehyde</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.4854E-7</meanAmount>
+            <resultingAmount>3.4854E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.252038338071163</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,3,2,BU:1.5); Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 1.37%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;3;2)" olca:amount="7.6322E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8e30c990-5ed4-4f94-9d0e-2f5e4ff1a1f9" version="00.00.000" uri="../flows/8e30c990-5ed4-4f94-9d0e-2f5e4ff1a1f9.xml">
+                <common:shortDescription xml:lang="en">Ethane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.6322E-9</meanAmount>
+            <resultingAmount>7.6322E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.252038338071163</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,3,2,BU:1.5); Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.03%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="0b14288a-dbf3-3dac-a570-83d083f4b600" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="5.14E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="45effa3b-506a-323b-848c-d8bc43273045" version="00.00.000" uri="../flows/45effa3b-506a-323b-848c-d8bc43273045.xml">
+                <common:shortDescription xml:lang="en">Lubricating oil, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.14E-4</meanAmount>
+            <resultingAmount>5.14E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0421132376090423</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:1.05); Amount taken from ecoinvent data v2; Kellenberger et al. 2007: ecoinvent report 7, Part XVIII
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;3;2)" olca:amount="2.4932E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cfdbc576-e8dc-44ef-bdf2-ddd7009ce57e" version="00.00.000" uri="../flows/cfdbc576-e8dc-44ef-bdf2-ddd7009ce57e.xml">
+                <common:shortDescription xml:lang="en">m-Xylene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.4932E-7</meanAmount>
+            <resultingAmount>2.4932E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.252038338071163</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,3,2,BU:1.5); Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.98%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="2.3945E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="21e46cb8-6233-4c99-bac3-c41d2ab99498" version="00.00.000" uri="../flows/21e46cb8-6233-4c99-bac3-c41d2ab99498.xml">
+                <common:shortDescription xml:lang="en">Particulate Matter, &lt; 2.5 um</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.3945E-5</meanAmount>
+            <resultingAmount>2.3945E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7337819932159868</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:3); Average building machine in Switzerland in 2015; BAFU 2015: Non-road database
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;3;2)" olca:amount="2.137E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a861cfae-a310-4e9d-b9eb-5d555c9a684c" version="00.00.000" uri="../flows/a861cfae-a310-4e9d-b9eb-5d555c9a684c.xml">
+                <common:shortDescription xml:lang="en">Formaldehyde</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.137E-6</meanAmount>
+            <resultingAmount>2.137E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.252038338071163</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,3,2,BU:1.5); Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 8.40%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="0.0736">
+            <referenceToFlowDataSet type="flow data set" refObjectId="349b29d1-3e58-4c66-98b9-9d1a076efd2e" version="00.00.000" uri="../flows/349b29d1-3e58-4c66-98b9-9d1a076efd2e.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0736</meanAmount>
+            <resultingAmount>0.0736</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0421132376090423</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:1.05); Average building machine in Switzerland in 2015; BAFU 2015: Non-road database
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="3d314eab-ef11-4ff3-a35e-9bc5cd858694" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="95.498">
+            <referenceToFlowDataSet type="flow data set" refObjectId="307a17c2-6434-3cf4-9527-2bd1c2288f3e" version="00.00.000" uri="../flows/307a17c2-6434-3cf4-9527-2bd1c2288f3e.xml">
+                <common:shortDescription xml:lang="en">Noise, road, lorry, average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>95.498</meanAmount>
+            <resultingAmount>95.498</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2280879447336008</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:1.5); Ecological Scarcity method 2013; Estimated based on fuel consumption of an average lorry in Switzerland in 2015: 0.245 kg/km; Frischknecht &amp; Büsser Knöpfel 2013; HBEFA database v3.2
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="be69d35d-4a8e-4e4c-88c0-c5df0c7db472" olca:pedigreeUncertainty="(2;2;3;3;1;2)" olca:amount="5.14E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="44b0ed19-fde1-33c0-a55c-8768cf5dcfcc" version="00.00.000" uri="../flows/44b0ed19-fde1-33c0-a55c-8768cf5dcfcc.xml">
+                <common:shortDescription xml:lang="en">Disposal, used mineral oil, 10% water, to hazardous waste incineration</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.14E-4</meanAmount>
+            <resultingAmount>5.14E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.063202708800161</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,3,1,2,BU:1.05); Amount taken from ecoinvent data v2; Kellenberger et al. 2007: ecoinvent report 7, Part XVIII
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="3.4431E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="20185046-64bb-4c09-a8e7-e8a9e144ca98" version="00.00.000" uri="../flows/20185046-64bb-4c09-a8e7-e8a9e144ca98.xml">
+                <common:shortDescription xml:lang="en">Dinitrogen monoxide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.4431E-6</meanAmount>
+            <resultingAmount>3.4431E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2280879447336008</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:1.5); Average building machine in Switzerland in 2015; BAFU 2015: Non-road database
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

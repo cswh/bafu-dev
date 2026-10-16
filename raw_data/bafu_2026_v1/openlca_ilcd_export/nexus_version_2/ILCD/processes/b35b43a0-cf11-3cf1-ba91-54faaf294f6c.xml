@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>b35b43a0-cf11-3cf1-ba91-54faaf294f6c</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, at wind farm</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="60929f0d-0c80-3ab8-b929-ef3db3b5a2bf">wind</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">UUID=b35b43a0-cf11-3cf1-ba91-54faaf294f6c</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1704063600000" olca:endDate="1704063600000">
+            <common:referenceYear>2024</common:referenceYear>
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="RER" latitudeAndLongitude="55.895602991909776;28.119894957029818"/>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en"># Included processes\nElectricity mix from wind power in Europe.\nThe mix consists of 87% from onshore wind farms and 13% from offshore wind farms, reflecting a total electrictiy generation of 420 TWh from onshore wind farms and 61.8 TWh from offshore wind farms in 2024 (source: ENTSO-E).\n\nThe considered contributions from different wind turbine sizes to the electrcity generation mix are:\n50% from onshore wind turbines with nominal capacities &lt; 3 MW (modelled using 2.3 MW onshore wind turbine)\n22% from onshore wind turbines with nominal capacities &gt;= 3 MW and &lt; 4 MW (modelled using 3.4 MW onshore wind turbines)\n10% from onshore wind turbines with nominal capacities &gt;= 4 MW and &lt; 5.5 MW (modelled with 4.5 MW onshore wind turbines)\n5% from onshore wind turbines with nominal capacities &gt;= 5.5 MW (modelled with 6.4 MW onshore wind turbines)\n5% from offshore wind turbines with nominal capacities &lt; 7 MW (modelled with 5 MW offshore wind turbines)\n7% from offshore wind turbines with nominal capacities &gt;= 7 MW and &lt; 12 MW (modelled with 10 MW offshore wind turbines)\n1% from offshore wind turbines with nominal capacities &gt;= 12 MW (modelled with 15 MW offshore wind turbines)\n</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="90bc691d-f2a7-3e06-b5af-d0c9702654ae" version="00.00.000" uri="../sources/90bc691d-f2a7-3e06-b5af-d0c9702654ae.xml">
+                <common:shortDescription xml:lang="en">2025 - LCI wind Energy - Kroehnert</common:shortDescription>
+            </referenceToDataSource>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">22.07.2025 "S:\pools\n\N-IUNR-FG-LCA\Projekte\Wind LCA\LCI-Update\Sachbilanz"</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="00249ec8-2e4a-384f-b37c-8ea25f756a69" version="00.00.000" uri="../contacts/00249ec8-2e4a-384f-b37c-8ea25f756a69.xml">
+                    <common:shortDescription xml:lang="en">Joanna Schlesinger, Mathilde Marchand-Lasserre</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="a27610ad-cbcf-3cf9-89d0-2b3e5356f13c" version="00.00.000" uri="../contacts/a27610ad-cbcf-3cf9-89d0-2b3e5356f13c.xml">
+                <common:shortDescription xml:lang="en">Hanna Kroehnert</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:50:05.923+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="a27610ad-cbcf-3cf9-89d0-2b3e5356f13c" version="00.00.000" uri="../contacts/a27610ad-cbcf-3cf9-89d0-2b3e5356f13c.xml">
+                <common:shortDescription xml:lang="en">Hanna Kroehnert</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2025-07-22T17:44:03.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="90bc691d-f2a7-3e06-b5af-d0c9702654ae" version="00.00.000" uri="../sources/90bc691d-f2a7-3e06-b5af-d0c9702654ae.xml">
+                <common:shortDescription xml:lang="en">2025 - LCI wind Energy - Kroehnert</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b35b43a0-cf11-3cf1-ba91-54faaf294f6c" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b9a490eb-5dd2-3d4b-93c6-4da877870523" version="00.00.000" uri="../flows/b9a490eb-5dd2-3d4b-93c6-4da877870523.xml">
+                <common:shortDescription xml:lang="en">Electricity, at wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="79a7b7d6-d0eb-48f2-bae7-da98facdae0f" olca:pedigreeUncertainty="(1;1;1;1;4;5)" olca:amount="0.50072">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f117faeb-ad59-3ca9-86b4-27a8c995e4d4" version="00.00.000" uri="../flows/f117faeb-ad59-3ca9-86b4-27a8c995e4d4.xml">
+                <common:shortDescription xml:lang="en">Electricity, at 100MW wind farm, onshore, 2.3MW turbines</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.8025920000000002</meanAmount>
+            <resultingAmount>1.8025920000000002</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,4,5,BU:1.05); Own Calculation; contribution to the electricity mix from wind power generated by onshore wind turbines with nominal capacities &lt; 3 MW</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e279b386-d58f-3b89-bd34-e6758b20f7fc" olca:pedigreeUncertainty="(1;1;1;1;4;5)" olca:amount="0.22327">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3552c06a-04f4-385a-958f-0f8efc8310e6" version="00.00.000" uri="../flows/3552c06a-04f4-385a-958f-0f8efc8310e6.xml">
+                <common:shortDescription xml:lang="en">Electricity, at 200MW wind farm, onshore, 3.4MW turbines</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.803772</meanAmount>
+            <resultingAmount>0.803772</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,4,5,BU:1.05); Own Calculation; contribution to the electricity mix from wind power generated by onshore wind turbines with nominal capacities &gt;= 3 MW and &lt; 4 MW</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="8a41b822-3ac8-372e-904e-ef4190c05f41" olca:pedigreeUncertainty="(1;1;1;1;4;5)" olca:amount="0.099801">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b6ae1f3d-b512-3437-bc63-92106534f415" version="00.00.000" uri="../flows/b6ae1f3d-b512-3437-bc63-92106534f415.xml">
+                <common:shortDescription xml:lang="en">Electricity, at 100MW wind farm, onshore, 4.5 MW turbines</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.35928360000000004</meanAmount>
+            <resultingAmount>0.35928360000000004</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,4,5,BU:1.05); Own calculation; contribution the electricity mix from wind power generated by onshore wind turbines with nominal capacities &gt;= 4 MW and &lt; 5.5 MW </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="414b2eda-6015-3e40-b0ea-b36d4c8e0c96" olca:pedigreeUncertainty="(1;1;1;1;4;5)" olca:amount="0.047938">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2c9e9573-713e-3df2-8c9c-47f7909e4f61" version="00.00.000" uri="../flows/2c9e9573-713e-3df2-8c9c-47f7909e4f61.xml">
+                <common:shortDescription xml:lang="en">Electricity, at 100MW wind farm, onshore, 6.2MW turbines</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1725768</meanAmount>
+            <resultingAmount>0.1725768</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,4,5,BU:1.05); Own calculation; contribution to the electricity mix from wind power generated by onshore wind turbines with nominal capacities &gt;= 5.5 MW </generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="7fed9d35-290b-3514-9d8e-95dd9d71d7f2" olca:pedigreeUncertainty="(1;1;1;1;4;5)" olca:amount="0.045193">
+            <referenceToFlowDataSet type="flow data set" refObjectId="91731720-3745-31a9-a4c9-e7e27bf8f5ff" version="00.00.000" uri="../flows/91731720-3745-31a9-a4c9-e7e27bf8f5ff.xml">
+                <common:shortDescription xml:lang="en">Electricity, at 150MW wind farm, offshore, 5MW turbines</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1626948</meanAmount>
+            <resultingAmount>0.1626948</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,4,5,BU:1.05); Own Calculation; contribution to the electricity mix from wind power generated by offshore wind turbines with nominal capacities &lt; 7 MW</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="ddfac649-b18a-36e8-87be-b909a40d2b6d" olca:pedigreeUncertainty="(1;1;1;1;4;5)" olca:amount="0.069473">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f8875895-daef-31a2-bda9-5572a4a6cb06" version="00.00.000" uri="../flows/f8875895-daef-31a2-bda9-5572a4a6cb06.xml">
+                <common:shortDescription xml:lang="en">Electricity, at 740MW wind farm, offshore, 10MW turbines</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.25010279999999996</meanAmount>
+            <resultingAmount>0.25010279999999996</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,4,5,BU:1.05); Own Calculation; contribution to the electricity mix from wind power generated by offshore wind turbines with nominal capacities &gt;= 7 MW and &lt; 12 MW</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="350a9796-22ba-37ac-8733-4dba1db18e3b" olca:pedigreeUncertainty="(1;1;1;1;4;5)" olca:amount="0.013604">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8f93781a-839f-3c78-8881-647275dbd3c6" version="00.00.000" uri="../flows/8f93781a-839f-3c78-8881-647275dbd3c6.xml">
+                <common:shortDescription xml:lang="en">Electricity, at 1005MW wind farm, offshore, 15MW turbines</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0489744</meanAmount>
+            <resultingAmount>0.0489744</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,4,5,BU:1.05); Own Calculation; contribution to the electricity mix from wind power generated by offshore wind turbines with nominal capacities &gt;= 12 MW</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

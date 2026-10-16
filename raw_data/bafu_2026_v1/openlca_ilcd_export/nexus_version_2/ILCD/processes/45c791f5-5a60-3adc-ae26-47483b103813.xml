@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>45c791f5-5a60-3adc-ae26-47483b103813</common:UUID>
+            <name>
+                <baseName xml:lang="en">Cogen unit 500kWe, common components for heat+electricity</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="19cb16ec-2a0e-3f73-a828-b3f1347d3bee">heat</common:class>
+                    <common:class level="1" classId="d102926d-1bb7-30a6-afd5-2543f28f2f53">natural gas</common:class>
+                    <common:class level="2" classId="f587d50d-8287-3be4-9911-8020aa6d359b">cogeneration</common:class>
+                    <common:class level="3" classId="19fe4425-2d33-328e-b553-472b46d4b686">power unit</common:class>
+                    <common:class level="4" classId="9b26ac79-c096-38d2-86f4-bf94b02bf851">infrastructure</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The module summarises infrastructure components of a cogeneration unit. ;
+UUID: 45c791f5-5a60-3adc-ae26-47483b103813</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="631148400000" olca:endDate="975625200000">
+            <common:referenceYear>1990</common:referenceYear>
+            <common:dataSetValidUntil>2000</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">undefined</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="RER" latitudeAndLongitude="55.895602991909776;28.119894957029818">
+                <descriptionOfRestrictions xml:lang="en">Extrapolated from data of a plant in Switzerland, assumed valid for Europe (RER).</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Extrapolated from data of a 160kWe lambda=1 plant, adjusted to lean burn technology currently available on market, no catalytic converters.\n\n# Included processes\nThe module includes all shared components for heat and electricity production.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="6713bc4b-7d57-3225-979e-4e1d8bd656e8" version="00.00.000" uri="../sources/6713bc4b-7d57-3225-979e-4e1d8bd656e8.xml">
+                <common:shortDescription xml:lang="en">2007 - Combined heat power generation - Heck</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Operator and manufacturer information </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: passed; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="5322091d-fd2a-3be0-b341-4124e7b1da28" version="00.00.000" uri="../contacts/5322091d-fd2a-3be0-b341-4124e7b1da28.xml">
+                    <common:shortDescription xml:lang="en">Gerald Rebitzer</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e9a05e3c-7298-38a3-96cb-56f233ea4628" version="00.00.000" uri="../contacts/e9a05e3c-7298-38a3-96cb-56f233ea4628.xml">
+                <common:shortDescription xml:lang="en">Thomas Heck</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:50:27.597+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e9a05e3c-7298-38a3-96cb-56f233ea4628" version="00.00.000" uri="../contacts/e9a05e3c-7298-38a3-96cb-56f233ea4628.xml">
+                <common:shortDescription xml:lang="en">Thomas Heck</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T09:08:39.358+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.010</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="6713bc4b-7d57-3225-979e-4e1d8bd656e8" version="00.00.000" uri="../sources/6713bc4b-7d57-3225-979e-4e1d8bd656e8.xml">
+                <common:shortDescription xml:lang="en">2007 - Combined heat power generation - Heck</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="6b362b1f-cc08-32bc-b84b-18987ff0c71c" olca:amount="1.7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f4518a85-d222-3ef8-817b-c6a5d3120a18" version="00.00.012" uri="../flows/f4518a85-d222-3ef8-817b-c6a5d3120a18.xml">
+                <common:shortDescription xml:lang="en">Planning, cogen unit 160kWe</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7</meanAmount>
+            <resultingAmount>1.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.224744871391589</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty of life time and extrapolation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="f4369630-4581-3201-972e-d0b1c8764028" olca:amount="1.7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="06075fb2-6a5d-348f-94ca-91ddadf2abd2" version="00.00.012" uri="../flows/06075fb2-6a5d-348f-94ca-91ddadf2abd2.xml">
+                <common:shortDescription xml:lang="en">Assembly, module cogen unit 160kWe</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7</meanAmount>
+            <resultingAmount>1.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.224744871391589</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty of life time and extrapolation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="36939450-c8ab-3b78-b66f-8927dc3e6c7b" olca:amount="1.7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="43819f83-1b58-33ce-ba3f-64f9ca9ca671" version="00.00.012" uri="../flows/43819f83-1b58-33ce-ba3f-64f9ca9ca671.xml">
+                <common:shortDescription xml:lang="en">Construction work, cogen unit 160kWe</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7</meanAmount>
+            <resultingAmount>1.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.224744871391589</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty of life time and extrapolation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="307c2b45-4938-3099-9c2b-ce3cd3424345" olca:amount="1.7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e6c861cf-77c2-3322-87c3-e9b9d308d6fa" version="00.00.012" uri="../flows/e6c861cf-77c2-3322-87c3-e9b9d308d6fa.xml">
+                <common:shortDescription xml:lang="en">Operation start, cogen unit 160kWe</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7</meanAmount>
+            <resultingAmount>1.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.224744871391589</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty of life time and extrapolation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="ccf8a4df-cecc-335a-ab25-b328a5c589a8" olca:amount="1.8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0c04e04d-6844-3cb3-ac97-ee7553b46316" version="00.00.013" uri="../flows/0c04e04d-6844-3cb3-ac97-ee7553b46316.xml">
+                <common:shortDescription xml:lang="en">Maintenance, cogen unit 160kWe</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.8</meanAmount>
+            <resultingAmount>1.8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.224744871391589</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty of life time and extrapolation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="809d431b-b5d0-3cb2-8c5f-1ce9b0d7c006" olca:amount="1.7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="611664fd-152d-38ef-840e-7800916b7f3d" version="00.00.012" uri="../flows/611664fd-152d-38ef-840e-7800916b7f3d.xml">
+                <common:shortDescription xml:lang="en">Sound insulation cogen unit 160kWe</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7</meanAmount>
+            <resultingAmount>1.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.224744871391589</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty of life time and extrapolation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="c0005513-9e4d-30b4-93f4-6049d2d4d2e8" olca:amount="1.7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f66321ca-a782-329d-866f-7f0bccffe66e" version="00.00.012" uri="../flows/f66321ca-a782-329d-866f-7f0bccffe66e.xml">
+                <common:shortDescription xml:lang="en">Supply air input/spent air output cogen unit 160kWe</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7</meanAmount>
+            <resultingAmount>1.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.224744871391589</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty of life time and extrapolation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="25f9c6c7-7136-3586-b0a4-ec52d447f440" version="00.00.012" uri="../flows/25f9c6c7-7136-3586-b0a4-ec52d447f440.xml">
+                <common:shortDescription xml:lang="en">Cogen unit 500kWe, common components for heat+electricity</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">Europe
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="4c25440b-aa1d-3686-a290-1b23a9bbb456" olca:amount="1.7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e9cb4446-1005-348c-8c62-148e5ab4bfc9" version="00.00.012" uri="../flows/e9cb4446-1005-348c-8c62-148e5ab4bfc9.xml">
+                <common:shortDescription xml:lang="en">Control cabinet cogen unit 160kWe</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7</meanAmount>
+            <resultingAmount>1.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.224744871391589</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty of life time and extrapolation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="738cc7e9-0399-3e9d-8407-520eb856c547" olca:amount="2.7800000000000002">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f8a1d5e7-bc16-3033-afff-8bd939c2e19a" version="00.00.012" uri="../flows/f8a1d5e7-bc16-3033-afff-8bd939c2e19a.xml">
+                <common:shortDescription xml:lang="en">Gas motor 206kW</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.7800000000000002</meanAmount>
+            <resultingAmount>2.7800000000000002</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3038404810405297</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">uncertainty of life time and extrapolation
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>660db6e6-0993-3c96-bbe4-4c57a2a3ab7f</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, PV, at 93 kWp slanted-roof, multi-Si, panel, mounted</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="3e3c30aa-7498-38cc-aaf1-0977dd9d7c49">photovoltaic</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Annual output of grid-connected PV power plants differentiated for roof-top, facade and centralized power plants. Technology and installation type breakdown based on literature (IEA-PVPS Task 1 and Fraunhofer ISE reports) and expert estimates. Average yield based on national statistics (Swissolar annual reports 2012-2018). The lifetime of PV systems is estimated at 30 years and a linear degradation rate of 0.7% per year is assumed (10.5% on average over 30 years) based on the PEFCR PV electricity. UUID: 660db6e6-0993-3c96-bbe4-4c57a2a3ab7f</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1230764400000" olca:endDate="1543618800000">
+            <common:referenceYear>2009</common:referenceYear>
+            <common:dataSetValidUntil>2018</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Use in CH.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Electricity production with grid-connected photovoltaic power plants.\n\n# Included processes\nInfrastructure for 93kWp PV plant, water use for cleaning, amount of solar energy transformed to electricity and waste heat emission due to losses of electricity in the system. Annual output, Roof-Top: 976 kWh/kWp.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="51a9cf34-4577-3aed-b9ee-3622691cf1e0" version="00.00.000" uri="../sources/51a9cf34-4577-3aed-b9ee-3622691cf1e0.xml">
+                <common:shortDescription xml:lang="en">2015 - LCI and LCA photovoltaic systems - Frischknecht</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource type="source data set" refObjectId="4e1260b1-7bf2-37cd-ac3e-a6e7380e0cf8" version="00.00.000" uri="../sources/4e1260b1-7bf2-37cd-ac3e-a6e7380e0cf8.xml">
+                <common:shortDescription xml:lang="en">2014 - LCI global PV supply chain - Itten</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource type="source data set" refObjectId="23dc2ff1-891f-3e2c-87bc-54f68cebf046" version="00.00.000" uri="../sources/23dc2ff1-891f-3e2c-87bc-54f68cebf046.xml">
+                <common:shortDescription xml:lang="en">2012 - LCI photovoltaics - Jungbluth</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource type="source data set" refObjectId="61beb1da-2fe8-3414-a790-e9bb35c20708" version="00.00.000" uri="../sources/61beb1da-2fe8-3414-a790-e9bb35c20708.xml">
+                <common:shortDescription xml:lang="en">2016 - Electricity from photovoltaics PEFCR - Stolz</common:shortDescription>
+            </referenceToDataSource>
+            <referenceToDataSource type="source data set" refObjectId="b24c69a8-3975-3ace-82c2-14f765e14552" version="00.00.000" uri="../sources/b24c69a8-3975-3ace-82c2-14f765e14552.xml">
+                <common:shortDescription xml:lang="en">2019 - LCA national PV electricity mixes - Stolz</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistical data for CH.</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">14.09.2023 G:\Projekte laufend\174 Photovoltaic, IEA Task 12\2017 Global supply chain\EcoSpold\[174-photovoltaics-global-supply-chain-v2.7.xlsx]X-Process</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:30.947+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2023-09-14T08:17:02.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="51a9cf34-4577-3aed-b9ee-3622691cf1e0" version="00.00.000" uri="../sources/51a9cf34-4577-3aed-b9ee-3622691cf1e0.xml">
+                <common:shortDescription xml:lang="en">2015 - LCI and LCA photovoltaic systems - Frischknecht</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(1;n.a.;n.a.;n.a.;n.a.;n.a.)" olca:amount="3.7966E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="301f2cb6-9672-3d86-ab17-b04d283656da" version="00.00.000" uri="../flows/301f2cb6-9672-3d86-ab17-b04d283656da.xml">
+                <common:shortDescription xml:lang="en">Water, CH</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.7966E-4</meanAmount>
+            <resultingAmount>3.7966E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2545118572576348</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,na,na,na,na,na); Calculation</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="d777787e-6732-3c75-9a75-69c61e46424a" olca:pedigreeUncertainty="(2;1;1;1;1;5)" olca:amount="3.6741E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e56353a9-4ba0-3c02-b963-ba76516e19cf" version="00.00.004" uri="../flows/e56353a9-4ba0-3c02-b963-ba76516e19cf.xml">
+                <common:shortDescription xml:lang="en">93 kWp slanted-roof installation, multi-Si, panel, mounted, on roof</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.6741E-7</meanAmount>
+            <resultingAmount>3.6741E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.929740915252615</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,1,1,1,1,5); Annual yield 976 kWh/kWp, lifetime 30a, average degradation over lifetime 10.5%</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(1;n.a.;n.a.;n.a.;n.a.;n.a.)" olca:amount="0.25027">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b411ec8b-c60a-4235-a3b2-8bf8443cbc55" version="00.00.000" uri="../flows/b411ec8b-c60a-4235-a3b2-8bf8443cbc55.xml">
+                <common:shortDescription xml:lang="en">Heat, waste</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.25027</meanAmount>
+            <resultingAmount>0.25027</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1100900864344299</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,na,na,na,na,na); Calculation</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="99a47074-0f3e-3462-80c0-69226bec1f14" olca:pedigreeUncertainty="(2;2;3;2;1;3)" olca:amount="0.0037966">
+            <referenceToFlowDataSet type="flow data set" refObjectId="63a8c536-f6ba-30f2-a706-428abd5d8dad" version="00.00.004" uri="../flows/63a8c536-f6ba-30f2-a706-428abd5d8dad.xml">
+                <common:shortDescription xml:lang="en">Tap water, water balance according to MoeK 2013, at user</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0037966</meanAmount>
+            <resultingAmount>0.0037966</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1568491690795304</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,2,1,3); Estimation 20l/m2 module</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:defaultProvider="af36788f-505a-462c-bc7b-2b30e1f5f756" olca:pedigreeUncertainty="(2;2;3;2;1;3)" olca:amount="3.4169E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="039f3562-c307-393b-bc50-a2d7f11ec548" version="00.00.000" uri="../flows/039f3562-c307-393b-bc50-a2d7f11ec548.xml">
+                <common:shortDescription xml:lang="en">Treatment, sewage, from residence, to wastewater treatment, class 2</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.4169E-6</meanAmount>
+            <resultingAmount>3.4169E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.154469575172945</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,2,1,3); Estimation 20l/m2 module</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b02a1403-fd64-3a3b-8424-148c47a1c9eb" version="00.00.000" uri="../flows/b02a1403-fd64-3a3b-8424-148c47a1c9eb.xml">
+                <common:shortDescription xml:lang="en">Electricity, PV, at 93 kWp slanted-roof, multi-Si, panel, mounted</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(2;2;3;2;1;3)" olca:amount="3.8503">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a7ff17d4-d3fe-4a70-9f2e-392b34630772" version="00.00.000" uri="../flows/a7ff17d4-d3fe-4a70-9f2e-392b34630772.xml">
+                <common:shortDescription xml:lang="en">Energy, solar, converted</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.8503</meanAmount>
+            <resultingAmount>3.8503</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.154469575172945</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,2,1,3); Energy loss in the system is included</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

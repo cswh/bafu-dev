@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>e0a1e90a-da44-3f54-9187-3bdf139975d7</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, hydropower, at reservoir power plant</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="6f11c2d0-4f16-3031-9733-444055c70cb9">hydro</common:class>
+                    <common:class level="2" classId="ebdac6a0-bc4c-3dfd-89b3-5d0e27064050">reservoir</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The dataset consists of figures of the Itaipu hydropower station complemented with European data. Considered are the area used, the amount of turbined water and the greenhouse gas emissions. The lifetime is assumed to be 150 years for the dams and 80 years for the other material. The data describe a mix and can therefore not be used  for an individual storage hydropower station. This dataset is recalculated based on Itaipu Binacional, Frischknecht et al. (1996) and Bauer (2007), complemented with data from Vattenfall (2008) and Diem et al. (2008).;
+UUID: e0a1e90a-da44-3f54-9187-3bdf139975d7</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1104534000000" olca:endDate="1133391600000">
+            <common:referenceYear>2005</common:referenceYear>
+            <common:dataSetValidUntil>2005</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">undefined</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="BR" latitudeAndLongitude="-10.780858811740831;-53.09248238139795">
+                <descriptionOfRestrictions xml:lang="en">Average Brazilian electricity production in storage hydropower station</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Average installed technology. Efficiency 0.78. Annual production volume: 190GWh/a.\n\n# Included processes\nOperation of an average storage hydropower station in Brazil. It includes the area transformed and occupied, the volume of the reservoir, greenhouse gas emissions, the consumption of lubricant oil and the amount of turbined water.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="edce014f-8cb7-31e2-8dcf-1cae6221d72f" version="00.00.000" uri="../sources/edce014f-8cb7-31e2-8dcf-1cae6221d72f.xml">
+                <common:shortDescription xml:lang="en">2012 - LCI hydroelectric power generation - Flury</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">literature </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 22.10.2012; Other validation: \\Server\e\ESU-Docs\Projektablage\349 Sachbilanzen erneuerbare Energie DE\DatenErgebnisse\[Ecospold_reservoir_CH_v2.2.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e6eddbc0-cb60-39a6-8d13-042cfd4023d2" version="00.00.000" uri="../contacts/e6eddbc0-cb60-39a6-8d13-042cfd4023d2.xml">
+                <common:shortDescription xml:lang="en">Karin Flury</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:52:35.122+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e6eddbc0-cb60-39a6-8d13-042cfd4023d2" version="00.00.000" uri="../contacts/e6eddbc0-cb60-39a6-8d13-042cfd4023d2.xml">
+                <common:shortDescription xml:lang="en">Karin Flury</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:41:24.034+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.006</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="edce014f-8cb7-31e2-8dcf-1cae6221d72f" version="00.00.000" uri="../sources/edce014f-8cb7-31e2-8dcf-1cae6221d72f.xml">
+                <common:shortDescription xml:lang="en">2012 - LCI hydroelectric power generation - Flury</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:pedigreeUncertainty="(4;1;1;3;1;5)" olca:amount="1.2E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="426e316e-db90-40ec-9f45-fa08e6db160c" version="00.00.000" uri="../flows/426e316e-db90-40ec-9f45-fa08e6db160c.xml">
+                <common:shortDescription xml:lang="en">Transformation, to water bodies, artificial</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.2E-4</meanAmount>
+            <resultingAmount>1.2E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4476013042270997</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,1,3,1,5,BU:2); Area covered by the reservoir; based on data of the Itaipu
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(3;1;1;1;1;1)" olca:amount="3.79">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c0dd7ccd-9e7a-42b3-b899-dfd18c2150ca" version="00.00.000" uri="../flows/c0dd7ccd-9e7a-42b3-b899-dfd18c2150ca.xml">
+                <common:shortDescription xml:lang="en">Energy, potential (in hydropower reservoir), converted</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.79</meanAmount>
+            <resultingAmount>3.79</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0549952104156681</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,1,1,1,1,1,BU:1.05); Potential energy of the water
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="c7266b67-4ea2-457f-b391-9b94e26e195a" olca:propertyId="93a60a56-a3c8-21da-a746-0800200c9a66" olca:pedigreeUncertainty="(4;1;1;3;1;5)" olca:amount="1.8E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cf39ec61-e779-4614-97b7-ec622556040d" version="00.00.000" uri="../flows/cf39ec61-e779-4614-97b7-ec622556040d.xml">
+                <common:shortDescription xml:lang="en">Occupation, industrial area, built up</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.8E-4</meanAmount>
+            <resultingAmount>1.8E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2718290026571968</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,1,3,1,5,BU:1.5); Area occupied by the infrastructure; based on data of the Itaipu
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="ee5f2241-18af-4444-b457-b275660e5a20" olca:propertyId="441238a3-ba09-46ec-b35b-c30cfba746d1" olca:pedigreeUncertainty="(4;1;1;3;1;5)" olca:amount="0.2533333333">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9a9d71c7-79f7-42d0-af47-282d22a7cf07" version="00.00.000" uri="../flows/9a9d71c7-79f7-42d0-af47-282d22a7cf07.xml">
+                <common:shortDescription xml:lang="en">Volume occupied, reservoir</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.2533333333</meanAmount>
+            <resultingAmount>0.2533333333</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140631038504564</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,1,3,1,5,BU:1.05); Volume occupied by the reservoir; ; based on data of the Itaipu
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="3f6b6953-77b6-3309-809c-0fef6fa3f3fa" olca:pedigreeUncertainty="(4;5;3;3;1;5)" olca:amount="8.888888889E-14">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2bd76c9f-1a61-3209-ba6b-9115b5704ebc" version="00.00.006" uri="../flows/2bd76c9f-1a61-3209-ba6b-9115b5704ebc.xml">
+                <common:shortDescription xml:lang="en">Reservoir hydropower plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.888888889E-14</meanAmount>
+            <resultingAmount>8.888888889E-14</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7746755117485562</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,3,3,1,5,BU:3); Infrastructure of the storage power station producing the electricity
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(5;5;3;5;1;5)" olca:amount="3.4E-13">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c7c769bb-89b9-4459-afed-e3acecd39339" version="00.00.000" uri="../flows/c7c769bb-89b9-4459-afed-e3acecd39339.xml">
+                <common:shortDescription xml:lang="en">Sulfur hexafluoride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.4E-13</meanAmount>
+            <resultingAmount>3.4E-13</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3791978313498032</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(5,5,3,5,1,5,BU:1.5); From electric insulations (e.g. switches); based on Vattenfall (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;3;3;1;3)" olca:amount="5.56068375E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="57bdb443-d4a6-423d-8024-959b8261d02e" version="00.00.000" uri="../flows/57bdb443-d4a6-423d-8024-959b8261d02e.xml">
+                <common:shortDescription xml:lang="en">Methane, non-fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.56068375E-4</meanAmount>
+            <resultingAmount>5.56068375E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.0</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,3,3,1,3,BU:1.5); Methane emissions due to the biomass in the reservoirs; calculated based on Diem et al. (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(5;5;3;5;1;5)" olca:amount="2.268E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="82c27b2a-69a8-4b1e-ad4e-4de9475630c6" version="00.00.000" uri="../flows/82c27b2a-69a8-4b1e-ad4e-4de9475630c6.xml">
+                <common:shortDescription xml:lang="en">Oils, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.268E-8</meanAmount>
+            <resultingAmount>2.268E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3791978313498032</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(5,5,3,5,1,5,BU:1.5); From turbines; based on Vattenfall (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(5;5;3;5;1;5)" olca:amount="9.76E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e9bf9e2d-4bd1-4679-86ff-e34f6b750ea0" version="00.00.000" uri="../flows/e9bf9e2d-4bd1-4679-86ff-e34f6b750ea0.xml">
+                <common:shortDescription xml:lang="en">Oils, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.76E-9</meanAmount>
+            <resultingAmount>9.76E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3791978313498032</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(5,5,3,5,1,5,BU:1.5); From turbines; based on Vattenfall (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="c7266b67-4ea2-457f-b391-9b94e26e195a" olca:propertyId="93a60a56-a3c8-21da-a746-0800200c9a66" olca:pedigreeUncertainty="(4;1;1;3;1;5)" olca:amount="0.018">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b9a35003-86ed-45d8-b616-ef6859087b40" version="00.00.000" uri="../flows/b9a35003-86ed-45d8-b616-ef6859087b40.xml">
+                <common:shortDescription xml:lang="en">Occupation, water bodies, artificial</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.018</meanAmount>
+            <resultingAmount>0.018</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2718290026571968</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,1,3,1,5,BU:1.5); Area occupied by the reservoir; based on data of the Itaipu
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b1ff97f2-2364-3290-86c7-d513fd4be2e9" olca:pedigreeUncertainty="(5;5;3;5;1;5)" olca:amount="3.4E-13">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9e0359f0-8c08-35fc-9359-53bfa4291aa0" version="00.00.000" uri="../flows/9e0359f0-8c08-35fc-9359-53bfa4291aa0.xml">
+                <common:shortDescription xml:lang="en">Sulphur hexafluoride, liquid, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.4E-13</meanAmount>
+            <resultingAmount>3.4E-13</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.284944303462216</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(5,5,3,5,1,5,BU:1.05); In electric insulation (e.g. switches); based on Vattenfall (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:pedigreeUncertainty="(4;1;1;3;1;5)" olca:amount="1.2E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c24fe83a-3170-49a3-ab67-279d34b8d920" version="00.00.000" uri="../flows/c24fe83a-3170-49a3-ab67-279d34b8d920.xml">
+                <common:shortDescription xml:lang="en">Transformation, to industrial area, built up</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.2E-6</meanAmount>
+            <resultingAmount>1.2E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4476013042270997</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,1,3,1,5,BU:2); Area covered by infrastructures other than held-back river; recalculated based on Frischknecht et al. (1996)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:pedigreeUncertainty="(4;1;1;3;1;5)" olca:amount="1.212E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7899bb60-56fd-3d8b-8c3a-9d6341b9d747" version="00.00.000" uri="../flows/7899bb60-56fd-3d8b-8c3a-9d6341b9d747.xml">
+                <common:shortDescription xml:lang="en">Transformation, from tropical rain forest</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.212E-4</meanAmount>
+            <resultingAmount>1.212E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4476013042270997</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,1,3,1,5,BU:2); Original area before the construction of the power station; based on data of the Itaipu
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;3;3;1;3)" olca:amount="0.03085106322">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6d89125e-e9b7-4d7e-a1fc-ada45dbd8815" version="00.00.000" uri="../flows/6d89125e-e9b7-4d7e-a1fc-ada45dbd8815.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, land transformation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.03085106322</meanAmount>
+            <resultingAmount>0.03085106322</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4142135623730951</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,3,3,1,3,BU:1.4); Carbon dioxide emissions due to the biomass in the reservoirs; calculated based on Diem et al. (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(5;5;5;5;5;n.a.)" olca:amount="290.1312">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3564b893-744f-326d-a75d-a086409ef6ca" version="00.00.000" uri="../flows/3564b893-744f-326d-a75d-a086409ef6ca.xml">
+                <common:shortDescription xml:lang="en">Water</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>290.1312</meanAmount>
+            <resultingAmount>290.1312</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.5873247934811578</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;3;2;4;5)" olca:amount="25.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e21021ad-6c67-3885-bd39-6a1b9195af06" version="00.00.000" uri="../flows/e21021ad-6c67-3885-bd39-6a1b9195af06.xml">
+                <common:shortDescription xml:lang="en">Water, BR</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>25.0</meanAmount>
+            <resultingAmount>25.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3756465865184997</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,3,2,4,5,BU:1.5); Water evaporated from reservoir; calculated based on  Pfister et al. (2011)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="84109613-d782-37c2-b97f-8e1a4c8e6c95" version="00.00.006" uri="../flows/84109613-d782-37c2-b97f-8e1a4c8e6c95.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at reservoir power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+            <generalComment xml:lang="en">BRAZIL
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="0b14288a-dbf3-3dac-a570-83d083f4b600" olca:pedigreeUncertainty="(5;5;3;5;1;5)" olca:amount="3.244E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="45effa3b-506a-323b-848c-d8bc43273045" version="00.00.000" uri="../flows/45effa3b-506a-323b-848c-d8bc43273045.xml">
+                <common:shortDescription xml:lang="en">Lubricating oil, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.244E-8</meanAmount>
+            <resultingAmount>3.244E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.284944303462216</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(5,5,3,5,1,5,BU:1.05); Turbines; based on Vattenfall (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:pedigreeUncertainty="(4;1;1;3;1;5)" olca:amount="0.2901312">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8c1494a5-4987-4715-aa2d-1908c495f4eb" version="00.00.000" uri="../flows/8c1494a5-4987-4715-aa2d-1908c495f4eb.xml">
+                <common:shortDescription xml:lang="en">Water, turbine use, unspecified natural origin</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.2901312</meanAmount>
+            <resultingAmount>0.2901312</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.140631038504564</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,1,3,1,5,BU:1.05); Amount of water turbined for the generation of electricity; based on data of the Itaipu
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

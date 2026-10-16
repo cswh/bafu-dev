@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>fb923d91-9200-3946-a2bf-e6e7da5e82ca</common:UUID>
+            <name>
+                <baseName xml:lang="en">Ethanol, 99.7% in H2O, from biomass, at distillation</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="56fb87a8-ad5c-38dd-b96d-cb4261cac475">biomass</common:class>
+                    <common:class level="1" classId="c4e83563-4b9a-34db-8790-3a1fd2b6814b">fuels</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Inventory refers to the production of 1 kg anhydrous ethanol 99.7% (dry basis, i.e. 1.003 kg anhydrous ethanol wet basis). Dehydration is carried out by molecular sieve technology. Ethanol is produced from rye, in the average RER context.;
+CAS number: 000064-17-5; 
+Formula: C2H6O; 
+Synonyms: Alkohol, alcohol dehydrated, algrain, Anhydrol, cologne spirit, cologne spirits (alcohol), Denatured alcohol, Ethyl alcohol, Ethanol, ethanol 200 proof, Ethanol absolute, ethyl hydrate, ethyl hydroxide, fermentation alcohol, grain alcohol, bioethanol, bio-ethanol; 
+UUID: fb923d91-9200-3946-a2bf-e6e7da5e82ca</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="975625200000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2000</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Data from 2002 to 2006, current technology for the production of ethanol from starch-based feedstocks. Data for the supply mix in 2016.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="RER" latitudeAndLongitude="55.895602991909776;28.119894957029818">
+                <descriptionOfRestrictions xml:lang="en">Data is from the etha+ project (Alcosuisse, CH), adapted to RER context</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Dehydration is done by molecular sieve technology.\n\n# Included processes\nThis dataset includes the dehydration of hydrated ethanol (95%) to anhydrous ethanol (99.7%). Hydrated ethanol input is modelled for the present European ethanol consumption mix. Treatment of waste streams is included.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="54626e26-f2b5-3b7e-b00d-139df3eadd1b" version="00.00.000" uri="../sources/54626e26-f2b5-3b7e-b00d-139df3eadd1b.xml">
+                <common:shortDescription xml:lang="en">2018 - LCI oil products distribution - Jungbluth</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistical data published by the European Commission. </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 22.10.2018; Other validation: C:\Users\Regula\OneDrive - ESU-services\565 LCI oil sector CH BAFU\EcoSpold\[EcoSpold-distribution-2018-v5.0.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="fad5d3ce-a50e-310b-a710-3308d757f599" version="00.00.000" uri="../contacts/fad5d3ce-a50e-310b-a710-3308d757f599.xml">
+                    <common:shortDescription xml:lang="en">Matthias Stucki, René Itten</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="0bcb8400-bb3d-3da1-b808-677f447cdc8c" version="00.00.000" uri="../contacts/0bcb8400-bb3d-3da1-b808-677f447cdc8c.xml">
+                <common:shortDescription xml:lang="en">Niels Jungbluth</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:31.699+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="0bcb8400-bb3d-3da1-b808-677f447cdc8c" version="00.00.000" uri="../contacts/0bcb8400-bb3d-3da1-b808-677f447cdc8c.xml">
+                <common:shortDescription xml:lang="en">Niels Jungbluth</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2018-10-22T00:00:00.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="54626e26-f2b5-3b7e-b00d-139df3eadd1b" version="00.00.000" uri="../sources/54626e26-f2b5-3b7e-b00d-139df3eadd1b.xml">
+                <common:shortDescription xml:lang="en">2018 - LCI oil products distribution - Jungbluth</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="821d07ca-2c29-3922-8ef7-f5d52a16800d" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.24">
+            <referenceToFlowDataSet type="flow data set" refObjectId="67f8535e-f081-371a-8907-5f92438e3d76" version="00.00.012" uri="../flows/67f8535e-f081-371a-8907-5f92438e3d76.xml">
+                <common:shortDescription xml:lang="en">Ethanol, 95% in H2O, from sugar beets, at fermentation plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.24</meanAmount>
+            <resultingAmount>0.24</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); Sugar beet
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="62c1c9e4-bfb7-3bc8-bb5d-b321a29ff82d" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.04">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dfcbaa87-d66c-3475-a31f-060a73a9deb2" version="00.00.012" uri="../flows/dfcbaa87-d66c-3475-a31f-060a73a9deb2.xml">
+                <common:shortDescription xml:lang="en">Ethanol, 95% in H2O, from rye, at distillery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.04</meanAmount>
+            <resultingAmount>0.04</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); Rye
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="85c53a9c-2a8d-3d41-bded-f08d7ba7671b" version="00.00.000" uri="../flows/85c53a9c-2a8d-3d41-bded-f08d7ba7671b.xml">
+                <common:shortDescription xml:lang="en">Ethanol, 99.7% in H2O, from biomass, at distillation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">Europe
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(2;4;1;3;1;3)" olca:amount="0.032944">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b411ec8b-c60a-4235-a3b2-8bf8443cbc55" version="00.00.000" uri="../flows/b411ec8b-c60a-4235-a3b2-8bf8443cbc55.xml">
+                <common:shortDescription xml:lang="en">Heat, waste</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.032944</meanAmount>
+            <resultingAmount>0.032944</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0665833300778707</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,3,1,3); ecoinvent guidelines, calculation from electricity consumption and energy balance
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="8d503cfd-fc2c-324b-9e7f-d23057408f97" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.05">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b3a704b3-d8f8-390a-9461-b52602a23382" version="00.00.012" uri="../flows/b3a704b3-d8f8-390a-9461-b52602a23382.xml">
+                <common:shortDescription xml:lang="en">Ethanol, 95% in H2O, from wood, at distillery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.05</meanAmount>
+            <resultingAmount>0.05</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); Cellulosic biomass
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:defaultProvider="af36788f-505a-462c-bc7b-2b30e1f5f756" olca:pedigreeUncertainty="(1;2;1;1;1;5)" olca:amount="4.9623E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="039f3562-c307-393b-bc50-a2d7f11ec548" version="00.00.000" uri="../flows/039f3562-c307-393b-bc50-a2d7f11ec548.xml">
+                <common:shortDescription xml:lang="en">Treatment, sewage, from residence, to wastewater treatment, class 2</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.9623E-5</meanAmount>
+            <resultingAmount>4.9623E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,1,1,5); etha+ project Alcosuisse, industrial data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="82771312-7ae9-3f97-bee8-a88e5e35512c" olca:pedigreeUncertainty="(1;2;1;1;1;5)" olca:amount="5.2989E-11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="77a2343d-f939-3621-865e-dd5baac0372e" version="00.00.006" uri="../flows/77a2343d-f939-3621-865e-dd5baac0372e.xml">
+                <common:shortDescription xml:lang="en">Ethanol fermentation plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.2989E-11</meanAmount>
+            <resultingAmount>5.2989E-11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.745279347267938</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,1,1,5); etha+ project Alcosuisse, industrial data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="62c1c9e4-bfb7-3bc8-bb5d-b321a29ff82d" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.04">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dfcbaa87-d66c-3475-a31f-060a73a9deb2" version="00.00.012" uri="../flows/dfcbaa87-d66c-3475-a31f-060a73a9deb2.xml">
+                <common:shortDescription xml:lang="en">Ethanol, 95% in H2O, from rye, at distillery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.04</meanAmount>
+            <resultingAmount>0.04</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); Barley
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="62c1c9e4-bfb7-3bc8-bb5d-b321a29ff82d" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.32">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dfcbaa87-d66c-3475-a31f-060a73a9deb2" version="00.00.012" uri="../flows/dfcbaa87-d66c-3475-a31f-060a73a9deb2.xml">
+                <common:shortDescription xml:lang="en">Ethanol, 95% in H2O, from rye, at distillery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.32</meanAmount>
+            <resultingAmount>0.32</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); Wheat
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="2fcda415-e506-38d9-9c3e-8ce2c2e7c8f2" olca:pedigreeUncertainty="(1;2;1;1;1;5)" olca:amount="1.0153">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f823cebb-5a19-323c-9180-adf0143f03e7" version="00.00.006" uri="../flows/f823cebb-5a19-323c-9180-adf0143f03e7.xml">
+                <common:shortDescription xml:lang="en">Heat, natural gas, at industrial furnace 1MW</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0153</meanAmount>
+            <resultingAmount>1.0153</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,1,1,5); etha+ project Alcosuisse, industrial data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="8cebe831-b6c1-4854-a5ab-a08a7ba3e50d" olca:pedigreeUncertainty="(1;2;1;1;1;5)" olca:amount="0.009151">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e6eb4a56-a451-3694-bb66-5f4f4fa19cc1" version="00.00.000" uri="../flows/e6eb4a56-a451-3694-bb66-5f4f4fa19cc1.xml">
+                <common:shortDescription xml:lang="en">Electricity, low voltage, production ENTSO-E, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.032943599999999996</meanAmount>
+            <resultingAmount>0.032943599999999996</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,2,1,1,1,5); etha+ project Alcosuisse, industrial data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="16ffb784-cc3a-3def-ae4d-1fc4d01f431c" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.31">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b2c218ec-4445-346b-99c0-f22a42a0654e" version="00.00.012" uri="../flows/b2c218ec-4445-346b-99c0-f22a42a0654e.xml">
+                <common:shortDescription xml:lang="en">Ethanol, 95% in H2O, from corn, at distillery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.31</meanAmount>
+            <resultingAmount>0.31</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); Corn
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

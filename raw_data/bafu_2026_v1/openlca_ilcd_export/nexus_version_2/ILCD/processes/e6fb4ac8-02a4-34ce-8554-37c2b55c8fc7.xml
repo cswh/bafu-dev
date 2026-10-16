@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>e6fb4ac8-02a4-34ce-8554-37c2b55c8fc7</common:UUID>
+            <name>
+                <baseName xml:lang="en">Transport, freight, lorry, diesel, 32t gross weight, 2010, EURO-V, urban delivery</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="2279f95c-4711-3ee2-8393-0e7a7bbfe8d1">transport systems</common:class>
+                    <common:class level="1" classId="a68df7d5-0492-3d7e-a949-c23730a59b9f">road</common:class>
+                    <common:class level="2" classId="944e4422-9c8a-3ad4-9faa-fe1fdf65edb8">Transformation</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en"> Combustion engine power: 343 [kW]. Power share from combustion engine: 100 [%]. Km over lifetime: 227000 [km]. Yearly mileage: 18900 [km/year]. Autonomy on a full tank/battery: 150 [km]. Tank-to-wheel efficiency: 27 [%]. Tank-to-wheel energy consumption: 12484 [kj/km]. Fuel tank capacity: 520 [kWh]. Available payload: 19857 [kg]. Payload: 6096 [kg]. Load factor: 30 [%]. Curb mass (excl. driver and cargo): 12067 [kg]. Driving mass (incl. driver and cargo): 18239 [kg].. UUID: e6fb4ac8-02a4-34ce-8554-37c2b55c8fc7</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1262300400000" olca:endDate="1291158000000">
+            <common:referenceYear>2010</common:referenceYear>
+            <common:dataSetValidUntil>2010</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">EURO-V emissions standards apply to truck registrations from 2008-01 until 2012-12. Vehicle lightweighting factors match manufacture year of 2010</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="RER" latitudeAndLongitude="55.895602991909776;28.119894957029818">
+                <descriptionOfRestrictions xml:lang="en">Unspecified</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Combustion engine power: 343 [kW]. Power share from combustion engine: 100 [%]. Km over lifetime: 227000 [km]. Yearly mileage: 18900 [km/year]. Autonomy on a full tank/battery: 150 [km]. Tank-to-wheel efficiency: 27 [%]. Tank-to-wheel energy consumption: 12484 [kj/km]. Fuel tank capacity: 520 [kWh]. Available payload: 19857 [kg]. Payload: 6096 [kg]. Load factor: 30 [%]. Curb mass (excl. driver and cargo): 12067 [kg]. Driving mass (incl. driver and cargo): 18239 [kg].</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="7eebd63f-adfa-3256-bb94-bc0706190b0b" version="00.00.000" uri="../sources/7eebd63f-adfa-3256-bb94-bc0706190b0b.xml">
+                <common:shortDescription xml:lang="en">2023 - LCI on-road vehicles - Sacchi</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Unspecified</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Unspecified</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="38b429bd-4961-37c6-b2e8-98ea67ee44eb" version="00.00.000" uri="../contacts/38b429bd-4961-37c6-b2e8-98ea67ee44eb.xml">
+                    <common:shortDescription xml:lang="en">Brian Cox</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:34.417+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="efab6acc-e069-365d-b922-c7081723eaa3" version="00.00.000" uri="../contacts/efab6acc-e069-365d-b922-c7081723eaa3.xml">
+                <common:shortDescription xml:lang="en">Julien McTighe</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T10:01:07.982+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.022</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="7eebd63f-adfa-3256-bb94-bc0706190b0b" version="00.00.000" uri="../sources/7eebd63f-adfa-3256-bb94-bc0706190b0b.xml">
+                <common:shortDescription xml:lang="en">2023 - LCI on-road vehicles - Sacchi</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>false</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="44" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="4.14E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="36e53653-1338-42c7-816c-f6667809e0b1" version="00.00.000" uri="../flows/36e53653-1338-42c7-816c-f6667809e0b1.xml">
+                <common:shortDescription xml:lang="en">Cadmium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.14E-10</meanAmount>
+            <resultingAmount>4.14E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="43" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="0.00803">
+            <referenceToFlowDataSet type="flow data set" refObjectId="eba59fd6-f37e-41dc-9ca3-c7ea22d602c7" version="00.00.000" uri="../flows/eba59fd6-f37e-41dc-9ca3-c7ea22d602c7.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, non-fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00803</meanAmount>
+            <resultingAmount>0.00803</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="46" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="7.4E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="98c66fdb-091d-46e9-a533-686f821e8f6a" version="00.00.000" uri="../flows/98c66fdb-091d-46e9-a533-686f821e8f6a.xml">
+                <common:shortDescription xml:lang="en">Propane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.4E-9</meanAmount>
+            <resultingAmount>7.4E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="45" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="2.96E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5a6eb27d-9157-46d5-be32-92bbd543ada9" version="00.00.000" uri="../flows/5a6eb27d-9157-46d5-be32-92bbd543ada9.xml">
+                <common:shortDescription xml:lang="en">o-Xylene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.96E-8</meanAmount>
+            <resultingAmount>2.96E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="48" olca:unitId="3d314eab-ef11-4ff3-a35e-9bc5cd858694" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:pedigreeUncertainty="(5;5;2;1;4;5)" olca:amount="113.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="307a17c2-6434-3cf4-9527-2bd1c2288f3e" version="00.00.000" uri="../flows/307a17c2-6434-3cf4-9527-2bd1c2288f3e.xml">
+                <common:shortDescription xml:lang="en">Noise, road, lorry, average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>113.0</meanAmount>
+            <resultingAmount>113.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3698567669277186</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (5, 5, 2, 1, 4, 5)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="47" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="2.89E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1bb6a502-3ff9-4a79-835c-5588b855f1f5" version="00.00.000" uri="../flows/1bb6a502-3ff9-4a79-835c-5588b855f1f5.xml">
+                <common:shortDescription xml:lang="en">Benzene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.89E-7</meanAmount>
+            <resultingAmount>2.89E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="49" olca:unitId="f7fe0af2-e764-4984-bb9f-2cbff6cd2f18" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="c7af311d-422f-4f44-8a44-53d0ffc21fe3" olca:pedigreeUncertainty="(3;1;5;2;1;1)" olca:amount="0.0013">
+            <referenceToFlowDataSet type="flow data set" refObjectId="244304a8-6c23-310f-9311-245a00d826ab" version="00.00.000" uri="../flows/244304a8-6c23-310f-9311-245a00d826ab.xml">
+                <common:shortDescription xml:lang="en">Disposal, road</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.3E-6</meanAmount>
+            <resultingAmount>1.3E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2316043414222824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (3, 1, 5, 2, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="4.15E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5f7aad3d-566c-4d0d-ad59-e765f971aa0f" version="00.00.000" uri="../flows/5f7aad3d-566c-4d0d-ad59-e765f971aa0f.xml">
+                <common:shortDescription xml:lang="en">Methane, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.15E-7</meanAmount>
+            <resultingAmount>4.15E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="2.87E-12">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7a59e8d5-cd11-4ee7-b1ca-30979d2b0b3a" version="00.00.000" uri="../flows/7a59e8d5-cd11-4ee7-b1ca-30979d2b0b3a.xml">
+                <common:shortDescription xml:lang="en">Chromium VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.87E-12</meanAmount>
+            <resultingAmount>2.87E-12</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="30" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="4.77E-12">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f4d0a2c8-efef-4188-85da-5801097389a2" version="00.00.000" uri="../flows/f4d0a2c8-efef-4188-85da-5801097389a2.xml">
+                <common:shortDescription xml:lang="en">Arsenic ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.77E-12</meanAmount>
+            <resultingAmount>4.77E-12</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="1.37E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="175baa64-d985-4c5e-84ef-67cc3a1cf952" version="00.00.000" uri="../flows/175baa64-d985-4c5e-84ef-67cc3a1cf952.xml">
+                <common:shortDescription xml:lang="en">NMVOC, non-methane volatile organic compounds</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.37E-5</meanAmount>
+            <resultingAmount>1.37E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="32" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="3.73E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9d1efa17-070a-4602-a65f-daf5056b0647" version="00.00.000" uri="../flows/9d1efa17-070a-4602-a65f-daf5056b0647.xml">
+                <common:shortDescription xml:lang="en">PAH, polycyclic aromatic hydrocarbons</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.73E-9</meanAmount>
+            <resultingAmount>3.73E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="31" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="1.31E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ed6dc0d-9c2e-4046-a44b-e8a708c2081e" version="00.00.000" uri="../flows/7ed6dc0d-9c2e-4046-a44b-e8a708c2081e.xml">
+                <common:shortDescription xml:lang="en">Acrolein</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.31E-7</meanAmount>
+            <resultingAmount>1.31E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="34" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="4.44E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0b9698ec-8b52-4986-8f9f-ad30915aa00c" version="00.00.000" uri="../flows/0b9698ec-8b52-4986-8f9f-ad30915aa00c.xml">
+                <common:shortDescription xml:lang="en">Pentane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.44E-9</meanAmount>
+            <resultingAmount>4.44E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="33" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="1.01E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe65f7e4-ee5b-4a6f-9d60-6c2f829dca3f" version="00.00.000" uri="../flows/fe65f7e4-ee5b-4a6f-9d60-6c2f829dca3f.xml">
+                <common:shortDescription xml:lang="en">Benzaldehyde</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.01E-7</meanAmount>
+            <resultingAmount>1.01E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="36" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="0.142">
+            <referenceToFlowDataSet type="flow data set" refObjectId="349b29d1-3e58-4c66-98b9-9d1a076efd2e" version="00.00.000" uri="../flows/349b29d1-3e58-4c66-98b9-9d1a076efd2e.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.142</meanAmount>
+            <resultingAmount>0.142</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="35" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="9.02E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fd7aa71c-508c-480d-81a6-8052aad92646" version="00.00.000" uri="../flows/fd7aa71c-508c-480d-81a6-8052aad92646.xml">
+                <common:shortDescription xml:lang="en">Sulfur dioxide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.02E-7</meanAmount>
+            <resultingAmount>9.02E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="38" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="1.73E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="626dd1d8-5355-40cb-8569-9c87c2c6ab18" version="00.00.000" uri="../flows/626dd1d8-5355-40cb-8569-9c87c2c6ab18.xml">
+                <common:shortDescription xml:lang="en">Hydrocarbons, chlorinated</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.73E-5</meanAmount>
+            <resultingAmount>1.73E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="37" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="1.43E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a60e0354-94a4-4377-8ded-21f5db15f753" version="00.00.000" uri="../flows/a60e0354-94a4-4377-8ded-21f5db15f753.xml">
+                <common:shortDescription xml:lang="en">Chromium III</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.43E-9</meanAmount>
+            <resultingAmount>1.43E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="40" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="6.22E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="20664d0e-24e3-4daa-8c5c-2ade6e0c2723" version="00.00.000" uri="../flows/20664d0e-24e3-4daa-8c5c-2ade6e0c2723.xml">
+                <common:shortDescription xml:lang="en">Formaldehyde</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.22E-7</meanAmount>
+            <resultingAmount>6.22E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="39" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="2.25E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9990b51b-7023-4700-bca0-1a32ef921f74" version="00.00.000" uri="../flows/9990b51b-7023-4700-bca0-1a32ef921f74.xml">
+                <common:shortDescription xml:lang="en">Ammonia</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.25E-6</meanAmount>
+            <resultingAmount>2.25E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="42" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="0.00116">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d068f3e2-b033-417b-a359-ca4f25da9731" version="00.00.000" uri="../flows/d068f3e2-b033-417b-a359-ca4f25da9731.xml">
+                <common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00116</meanAmount>
+            <resultingAmount>0.00116</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="41" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="2.22E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9ea11aea-7cb7-4b38-b936-a42c2a4bac97" version="00.00.000" uri="../flows/9ea11aea-7cb7-4b38-b936-a42c2a4bac97.xml">
+                <common:shortDescription xml:lang="en">Ethane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.22E-9</meanAmount>
+            <resultingAmount>2.22E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="8.7E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="230d8a0a-517c-43fe-8357-1818dd12997a" version="00.00.000" uri="../flows/230d8a0a-517c-43fe-8357-1818dd12997a.xml">
+                <common:shortDescription xml:lang="en">Particulate Matter, &lt; 2.5 um</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.7E-6</meanAmount>
+            <resultingAmount>8.7E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="98bcd774-bade-38ad-8851-995072e7e6e3" olca:pedigreeUncertainty="(3;3;2;1;1;3)" olca:amount="7.23E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8a1f58b4-1b3e-3798-908a-b332f1475813" version="00.00.022" uri="../flows/8a1f58b4-1b3e-3798-908a-b332f1475813.xml">
+                <common:shortDescription xml:lang="en">Heavy duty truck, diesel, 32t gross weight, 2010, EURO-V, urban delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.23E-7</meanAmount>
+            <resultingAmount>7.23E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.062537964402433</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (3, 3, 2, 1, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="2.22E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f4bb66f1-c78c-409f-8368-85c1205a3573" version="00.00.000" uri="../flows/f4bb66f1-c78c-409f-8368-85c1205a3573.xml">
+                <common:shortDescription xml:lang="en">Heptane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.22E-8</meanAmount>
+            <resultingAmount>2.22E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="1.01E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="88cde01c-df69-40bb-9b14-6eac71bea5b8" version="00.00.000" uri="../flows/88cde01c-df69-40bb-9b14-6eac71bea5b8.xml">
+                <common:shortDescription xml:lang="en">Copper ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.01E-9</meanAmount>
+            <resultingAmount>1.01E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="6.79E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e87f039d-d9ce-4242-ac18-c9284cc80f3d" version="00.00.000" uri="../flows/e87f039d-d9ce-4242-ac18-c9284cc80f3d.xml">
+                <common:shortDescription xml:lang="en">1,1,1,2-Tetrafluoroethane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.79E-7</meanAmount>
+            <resultingAmount>6.79E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="2.52E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a850e6de-a007-432f-be7f-ce6e2cf1f2ae" version="00.00.000" uri="../flows/a850e6de-a007-432f-be7f-ce6e2cf1f2ae.xml">
+                <common:shortDescription xml:lang="en">Mercury II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.52E-10</meanAmount>
+            <resultingAmount>2.52E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="7.26E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="10571d92-ea97-4ac6-adb6-b25893a631cb" version="00.00.000" uri="../flows/10571d92-ea97-4ac6-adb6-b25893a631cb.xml">
+                <common:shortDescription xml:lang="en">m-Xylene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.26E-8</meanAmount>
+            <resultingAmount>7.26E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="1.11E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="892f10da-7bf2-42b3-b171-221989661a05" version="00.00.000" uri="../flows/892f10da-7bf2-42b3-b171-221989661a05.xml">
+                <common:shortDescription xml:lang="en">Butane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.11E-8</meanAmount>
+            <resultingAmount>1.11E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="7.4E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6dc1b46f-ee89-4495-95c4-b8a637bcd6cb" version="00.00.000" uri="../flows/6dc1b46f-ee89-4495-95c4-b8a637bcd6cb.xml">
+                <common:shortDescription xml:lang="en">Dinitrogen monoxide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.4E-6</meanAmount>
+            <resultingAmount>7.4E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="3.38E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5ad58fcc-e9ba-4155-a3c9-e4ffb3065a6f" version="00.00.000" uri="../flows/5ad58fcc-e9ba-4155-a3c9-e4ffb3065a6f.xml">
+                <common:shortDescription xml:lang="en">Acetaldehyde</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.38E-7</meanAmount>
+            <resultingAmount>3.38E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="4.77E-12">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a79be2ee-ac83-4328-a136-a34ba1f99089" version="00.00.000" uri="../flows/a79be2ee-ac83-4328-a136-a34ba1f99089.xml">
+                <common:shortDescription xml:lang="en">Selenium IV</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.77E-12</meanAmount>
+            <resultingAmount>4.77E-12</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="4.15E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d85a44cb-8407-4997-a146-581e4f35f39d" version="00.00.000" uri="../flows/d85a44cb-8407-4997-a146-581e4f35f39d.xml">
+                <common:shortDescription xml:lang="en">Styrene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.15E-8</meanAmount>
+            <resultingAmount>4.15E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="3.3E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6edcc2df-88a3-48e1-83d8-ffc38d31c35b" version="00.00.000" uri="../flows/6edcc2df-88a3-48e1-83d8-ffc38d31c35b.xml">
+                <common:shortDescription xml:lang="en">Carbon monoxide, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.3E-4</meanAmount>
+            <resultingAmount>3.3E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="7.4E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="39946c56-cdf6-4a22-9ac9-1cd333b65533" version="00.00.000" uri="../flows/39946c56-cdf6-4a22-9ac9-1cd333b65533.xml">
+                <common:shortDescription xml:lang="en">Toluene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.4E-10</meanAmount>
+            <resultingAmount>7.4E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="8.29E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="748f22a9-eba4-4726-bef5-92c7442ce189" version="00.00.000" uri="../flows/748f22a9-eba4-4726-bef5-92c7442ce189.xml">
+                <common:shortDescription xml:lang="en">Zinc II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.29E-8</meanAmount>
+            <resultingAmount>8.29E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;1;2;1;3)" olca:amount="4.2E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e43a270f-4f88-4789-a0b8-7aba56677743" version="00.00.000" uri="../flows/e43a270f-4f88-4789-a0b8-7aba56677743.xml">
+                <common:shortDescription xml:lang="en">Nickel II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.2E-10</meanAmount>
+            <resultingAmount>4.2E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0369002492431771</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="9b01adff-bd0c-3881-b8c2-5b5ed1195519" olca:pedigreeUncertainty="(4;5;2;3;4;3)" olca:amount="1.20800561621028E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7197bd6e-101f-3ed1-a46c-aa73a189974e" version="00.00.000" uri="../flows/7197bd6e-101f-3ed1-a46c-aa73a189974e.xml">
+                <common:shortDescription xml:lang="en">Tyre wear emissions, lorry</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.20800561621028E-5</meanAmount>
+            <resultingAmount>1.20800561621028E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2739748268545372</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (4, 5, 2, 3, 4, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4a8d063b-c46b-3f13-8c32-675345aacd03" version="00.00.022" uri="../flows/4a8d063b-c46b-3f13-8c32-675345aacd03.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, diesel, 32t gross weight, 2010, EURO-V, urban delivery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="f7fe0af2-e764-4984-bb9f-2cbff6cd2f18" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="da85c1ba-b1b3-3e9f-817b-d5c1430195ae" olca:pedigreeUncertainty="(3;1;5;2;1;1)" olca:amount="0.00161">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9208c9a3-94e2-3dda-9d43-19ff06cf7cd3" version="00.00.026" uri="../flows/9208c9a3-94e2-3dda-9d43-19ff06cf7cd3.xml">
+                <common:shortDescription xml:lang="en">Road</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.61E-6</meanAmount>
+            <resultingAmount>1.61E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2316043414222824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (3, 1, 5, 2, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="f7fe0af2-e764-4984-bb9f-2cbff6cd2f18" olca:propertyId="b7ffb330-95a8-4815-a78c-47fcdee3b768" olca:defaultProvider="876f8f6b-9548-3edc-84b6-a4b0b05e90c6" olca:pedigreeUncertainty="(3;1;5;2;1;1)" olca:amount="2.12E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f9b47c33-e848-39fc-874f-1310651df5cc" version="00.00.026" uri="../flows/f9b47c33-e848-39fc-874f-1310651df5cc.xml">
+                <common:shortDescription xml:lang="en">Operation, maintenance, road</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.1200000000000002E-7</meanAmount>
+            <resultingAmount>2.1200000000000002E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2316043414222824</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (3, 1, 5, 2, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="ddce4dc4-2356-3d77-8208-187e6598018d" olca:pedigreeUncertainty="(5;5;2;1;1;3)" olca:amount="1.47E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e54846b0-df05-3842-bfa7-1ecb5ee5db42" version="00.00.000" uri="../flows/e54846b0-df05-3842-bfa7-1ecb5ee5db42.xml">
+                <common:shortDescription xml:lang="en">Refrigerant R134a, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.47E-6</meanAmount>
+            <resultingAmount>1.47E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2512059499322343</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (5, 5, 2, 1, 1, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="92c36959-3136-3b24-bdf1-058ff7429972" olca:pedigreeUncertainty="(4;5;2;3;4;3)" olca:amount="1.29308247975992E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aae5985f-e57f-3d0b-8bfd-69f18b27b595" version="00.00.000" uri="../flows/aae5985f-e57f-3d0b-8bfd-69f18b27b595.xml">
+                <common:shortDescription xml:lang="en">Road wear emissions, lorry</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.29308247975992E-5</meanAmount>
+            <resultingAmount>1.29308247975992E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2739748268545372</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (4, 5, 2, 3, 4, 3)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="85b3a5a6-2635-3546-b51b-4ccad397650b" olca:pedigreeUncertainty="(4;5;2;5;3;5)" olca:amount="1.47E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="92f1a04f-c637-3a36-b7f5-7df5e5ac3408" version="00.00.022" uri="../flows/92f1a04f-c637-3a36-b7f5-7df5e5ac3408.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, 16t-32t gross weight, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.47E-7</meanAmount>
+            <resultingAmount>1.47E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2080715940296736</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (4, 5, 2, 5, 3, 5)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="aacc6120-0e68-3835-8303-5ae37d62c030" olca:pedigreeUncertainty="(4;5;2;5;3;5)" olca:amount="8.82E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="12262ce2-ee81-3caf-8488-1dbf8fb21abe" version="00.00.000" uri="../flows/12262ce2-ee81-3caf-8488-1dbf8fb21abe.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, rail</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.82E-7</meanAmount>
+            <resultingAmount>8.82E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2080715940296736</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (4, 5, 2, 5, 3, 5)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="0ac05b55-9544-3be5-93c3-418722ecb8b7" olca:pedigreeUncertainty="(1;1;2;2;1;1)" olca:amount="0.048">
+            <referenceToFlowDataSet type="flow data set" refObjectId="afd78286-fd13-31f9-93ba-0b7e336b2179" version="00.00.022" uri="../flows/afd78286-fd13-31f9-93ba-0b7e336b2179.xml">
+                <common:shortDescription xml:lang="en">Fuel supply for diesel vehicles</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.048</meanAmount>
+            <resultingAmount>0.048</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0157165508832702</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 1, 2, 2, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="c2869f0a-31c9-31db-ad05-37ecd492eae4" olca:pedigreeUncertainty="(4;5;2;3;4;3)" olca:amount="1.46673752322491E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bdd1d7b6-483b-34c6-8ff1-c2a36713feab" version="00.00.000" uri="../flows/bdd1d7b6-483b-34c6-8ff1-c2a36713feab.xml">
+                <common:shortDescription xml:lang="en">Brake wear emissions, lorry</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.46673752322491E-5</meanAmount>
+            <resultingAmount>1.46673752322491E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2739748268545372</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (4, 5, 2, 3, 4, 3)</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

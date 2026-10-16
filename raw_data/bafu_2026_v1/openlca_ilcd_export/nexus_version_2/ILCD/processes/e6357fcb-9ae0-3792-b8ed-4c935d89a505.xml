@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>e6357fcb-9ae0-3792-b8ed-4c935d89a505</common:UUID>
+            <name>
+                <baseName xml:lang="en">Biochar, from spruce wood pyrolysis</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="c3652903-5cc5-3b77-aabb-625d30a0937f">chemicals</common:class>
+                    <common:class level="1" classId="4aee4e4c-41c5-39b3-9ed0-a21b07b51cda">gases</common:class>
+                    <common:class level="2" classId="958b0e17-611a-3933-b6b0-42678b318d23">transformation</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">This dataset represents the production of 1 kilogram of biochar through slow pyrolysis. Biochar yield of 27.9% (of the dry feedstock), bio-oil (55%) and gas (17%). Annual plant capacity: 10'000 t fresh feedstock = 6000 t dry feedstock. The energy needed for pyrolysis, excluding drying (273.59 GJ electricity and 1316.65 GJ of thermal energy required to produce 1673.33 t biochar), was back-calculated from data in Tisserant, A., Morales, M., Cavalett, O., O'Toole, A., Weldon, S., Rasse, D. P., &amp; Cherubini, F. (2022). Life-cycle assessment to unravel co-benefits and trade-offs of large-scale biochar deployment in Norwegian agriculture. Resources, Conservation and Recycling, 179, 106030. https://doi.org/10.1016/j.resconrec.2021.106030, using their supplementary information. Using the cutoff approach for the byproducts.
+
+The yield of biochar is calculated on a dry ash-free basis (DAF) using the following formula: 0.126+0.273*(FSlignin/100)+0.539*EXP(-0.004*Tp, C) where:
+- FS lignin represents the Lignin content of the feedstock, which is expressed as a percentage.
+- Tp, C is pyrolysis temperature (Â°C)
+- exp(âˆ’0.004â‹…T p, C ) represents an exponential decay factor (biochar yield decreases with increasing pyrolysis temperature)
+
+The carbon content of biochar is calculated as a fraction of the dry ash-free biochar using the following formula: 0.93âˆ’0.92â‹…exp(âˆ’0.0042â‹…T p, C) where Tp, C is pyrolysis temperature (Â°C) and exp(âˆ’0.0042â‹…Tp, C): Exponential decay (carbon content stabilizes at higher temperatures)
+
+The oxygen content of biochar is calculated as a fraction of the dry ash-free biochar using the following formula: âˆ’0.0041+0.1â‹…exp(âˆ’0.0024â‹…T p, C ). exp(âˆ’0.0024â‹…T p, C) represents an exponential decay (oxygen content decreases with increasing pyrolysis temperature).
+
+The hydrogen content of biochar is calculated using the following formula: 0.07+0.85â‹…exp(âˆ’0.0048â‹…T p, C)
+
+The gaseous yields such as CO, H2, CH4, C2H2 are also calculated using the respective formulas:
+(CO) (0.043/(1+exp(17.2âˆ’0.03â‹…T p,K )))+(0.317/(1+exp(10.9âˆ’0.01â‹…T p,K)))
+(H2) 0.0295â‹…(1âˆ’exp(âˆ’0.0035â‹…T p,K ))^62.98
+(CH4) 0.0782â‹…(1âˆ’exp(âˆ’0.00338â‹…T p,K))^30.15
+(C2H2) 0.036â‹…(1âˆ’exp(âˆ’0.00522â‹…T p, K ))^154.97, pyrolysis temperature in this case is expressed in Kelvin.
+ A matrix is used to allocate the elemental components (C, O, H) of the feedstock into the pyrolysis products: tar, COâ‚‚, and Hâ‚‚O. The use of the matrix ensures mass conservation for each element (C, O, H) and allows the calculation of yields for tar, COâ‚‚, and Hâ‚‚O based on the initial feedstock composition. The calculations result in bio-oil yields (55% yield, DAF) with an HHV of 16.3 GJ/Mg and of the pyrolysis Gas (17% yield, DAF) with an HHV of 6.8 GJ/Mg.
+
+Source: Hoeskuldsdottir, Gudrun. 2022. Life Cycle Assessment of Biochar to Soil Systems: A Parametric Analysis. Masterâ€™s thesis, Swiss Federal Institute of Technology ZÃ¼rich and Paul Scherrer Institute.
+UUID: e6357fcb-9ae0-3792-b8ed-4c935d89a505</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1704063600000" olca:endDate="1704063600000">
+            <common:referenceYear>2024</common:referenceYear>
+            <common:dataSetValidUntil>2024</common:dataSetValidUntil>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305"/>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">&lt;null&gt;</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="0c114b47-2f0e-36ef-8bdb-16d536f9f5f2" version="00.00.000" uri="../sources/0c114b47-2f0e-36ef-8bdb-16d536f9f5f2.xml">
+                <common:shortDescription xml:lang="en">2024 - LCA power-to-X in residential sector - Sacchi</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Sampling procedure: Literature data</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: Passed, Other validation: none, Validator: Pierryves Padey, Telephone: +41 58 462 93 11, E-mail: pierryves.padey@bafu.admin.ch, Company: Federal Office for the Environment, Country: CH</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1487cf9-01c0-3287-829f-d7950fde8183" version="00.00.000" uri="../contacts/b1487cf9-01c0-3287-829f-d7950fde8183.xml">
+                    <common:shortDescription xml:lang="en">Pierryves Padey</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:51:15.406+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:34:10.918+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.004</common:dataSetVersion>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="c4a92617-9f99-3d7b-95c0-15fb110b80ad" olca:amount="0.045416806">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ec91f1d-db72-39ef-bbc0-46119b059efe" version="00.00.000" uri="../flows/7ec91f1d-db72-39ef-bbc0-46119b059efe.xml">
+                <common:shortDescription xml:lang="en">Electricity, low voltage, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1635005016</meanAmount>
+            <resultingAmount>0.1635005016</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1815244390193542</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">{3;5;1;2;3;5;1.05;}</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b5773a34-3f86-3ee3-bcd3-29d264de8ced" version="00.00.004" uri="../flows/b5773a34-3f86-3ee3-bcd3-29d264de8ced.xml">
+                <common:shortDescription xml:lang="en">Biochar, from spruce wood pyrolysis</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">not defined</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="6763b741-cfe0-3841-b94a-be8fe5c1908d" olca:amount="2.98806E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ab2aae9e-55cd-3c52-b0d2-dff79856de18" version="00.00.012" uri="../flows/ab2aae9e-55cd-3c52-b0d2-dff79856de18.xml">
+                <common:shortDescription xml:lang="en">Mini CHP plant, common components for heat+electricity</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.98806E-8</meanAmount>
+            <resultingAmount>2.98806E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Used as a proxy for a pyrolysis plant.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="2fcda415-e506-38d9-9c3e-8ce2c2e7c8f2" olca:pedigreeUncertainty="(2;4;1;3;1;5)" olca:amount="0.786846164">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f823cebb-5a19-323c-9180-adf0143f03e7" version="00.00.006" uri="../flows/f823cebb-5a19-323c-9180-adf0143f03e7.xml">
+                <common:shortDescription xml:lang="en">Heat, natural gas, at industrial furnace 1MW</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.786846164</meanAmount>
+            <resultingAmount>0.786846164</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1135528725660044</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Heat input for pyrolysis (2,4,1,3,1,5,1.05)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="fe3aeb88-d6f1-316a-8e08-c57091d6c724" olca:amount="1.62">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8ecf7975-005c-3630-bc66-912ae4f5eaf1" version="00.00.009" uri="../flows/8ecf7975-005c-3630-bc66-912ae4f5eaf1.xml">
+                <common:shortDescription xml:lang="en">Spruce wood, chipping and drying</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.62</meanAmount>
+            <resultingAmount>1.62</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1815244390193542</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Oven dry spruce wood {3;5;1;2;3;5;1.05;}.</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

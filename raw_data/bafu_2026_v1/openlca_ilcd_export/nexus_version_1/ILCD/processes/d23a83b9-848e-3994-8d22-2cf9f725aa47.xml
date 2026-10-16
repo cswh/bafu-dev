@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>d23a83b9-848e-3994-8d22-2cf9f725aa47</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, production from hydro power, at plant</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="6f11c2d0-4f16-3031-9733-444055c70cb9">hydro</common:class>
+                    <common:class level="2" classId="865e9ac7-232c-3777-830b-e9dfb179ff0f">power plants</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Electricity domestic net production shares are based on annual averages for the year 2011.;
+UUID: d23a83b9-848e-3994-8d22-2cf9f725aa47</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1293836400000" olca:endDate="1322694000000">
+            <common:referenceYear>2011</common:referenceYear>
+            <common:dataSetValidUntil>2011</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time period of statistics used.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Switzerland</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Hydropower\n\n# Included processes\nIncluded are the shares of run-of-river, reservoir and small hydropower plants in the total hydropower electricity production at the busbar. Not included are transformation, transport or distribution losses.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="de218d2c-ef93-3365-9cee-f88907625c0b" version="00.00.000" uri="../sources/de218d2c-ef93-3365-9cee-f88907625c0b.xml">
+                <common:shortDescription xml:lang="en">2015 - LCA electricity mix Switzerland 2011 - Stolz</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistical data </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: automatic validation in Excel; Other validation: \\SRV01\ESU-Docs\Projekte laufend\563 Aktualisierung KBOB_2016\EcoSpold\[563-Hydropower-CH-v0.1.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:51:52.363+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:41:10.385+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.010</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="de218d2c-ef93-3365-9cee-f88907625c0b" version="00.00.000" uri="../sources/de218d2c-ef93-3365-9cee-f88907625c0b.xml">
+                <common:shortDescription xml:lang="en">2015 - LCA electricity mix Switzerland 2011 - Stolz</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="483b4991-8b17-3a38-9731-a45c18b4b176" version="00.00.010" uri="../flows/483b4991-8b17-3a38-9731-a45c18b4b176.xml">
+                <common:shortDescription xml:lang="en">Electricity, production from hydro power, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="fcc4a324-b55c-3c58-9c7d-2fbc96cf4121" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.10853">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8cfd947f-c710-3954-b1ce-ce2e61124414" version="00.00.006" uri="../flows/8cfd947f-c710-3954-b1ce-ce2e61124414.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at small hydropower plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.390708</meanAmount>
+            <resultingAmount>0.390708</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2011, Flury &amp; Frischknecht 2012
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="8b83697e-270a-36ef-bcd0-c913b8ee67be" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.52973">
+            <referenceToFlowDataSet type="flow data set" refObjectId="58f19637-0706-313c-8838-e060120368e5" version="00.00.006" uri="../flows/58f19637-0706-313c-8838-e060120368e5.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, net, at reservoir power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.9070280000000002</meanAmount>
+            <resultingAmount>1.9070280000000002</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2011, own calculations
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="4ee29e29-9e37-376e-9340-831e6fbe5b37" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.36174">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7e12b7a1-f642-3f0c-98d5-b04fe37dd07e" version="00.00.014" uri="../flows/7e12b7a1-f642-3f0c-98d5-b04fe37dd07e.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at run-of-river power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.302264</meanAmount>
+            <resultingAmount>1.302264</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2011, Flury &amp; Frischknecht 2012
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

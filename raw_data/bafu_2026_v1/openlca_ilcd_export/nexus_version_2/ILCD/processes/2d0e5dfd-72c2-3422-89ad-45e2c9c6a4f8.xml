@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>2d0e5dfd-72c2-3422-89ad-45e2c9c6a4f8</common:UUID>
+            <name>
+                <baseName xml:lang="en">xx Electricity, natural gas, at power plant</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="470d1f1f-c730-32a9-bb66-ef73b3727dfb">energy, obsolete</common:class>
+                    <common:class level="1" classId="b8fe1f30-b806-3968-82c3-f4b9a9618330">electricity by fuel, obsolete</common:class>
+                    <common:class level="2" classId="0c085c4e-f53b-3e69-82a0-1c06d2bf0e7d">gas, obsolete</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">na;
+UUID: 2d0e5dfd-72c2-3422-89ad-45e2c9c6a4f8</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1072911600000" olca:endDate="1101855600000">
+            <common:referenceYear>2004</common:referenceYear>
+            <common:dataSetValidUntil>2004</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">&lt;null&gt;</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="US-SERC" latitudeAndLongitude="34.46739171167318;-86.47189560167106">
+                <descriptionOfRestrictions xml:lang="en">&lt;null&gt;</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Average of installed power plants. Only power plants with 100% natural gas firing have been considered (eGRID 2006).\n\n# Included processes\nThe module uses the average net efficiency of natural gas power plants (estimated from eGRID 2006). Only plants with 100% gas generation (i.e. without co-firing of other fuels) have been considered.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="179008c2-4cb8-3da4-8326-fbb613c915da" version="00.00.000" uri="../sources/179008c2-4cb8-3da4-8326-fbb613c915da.xml">
+                <common:shortDescription xml:lang="en">2007 - Natural gas - Faist-Emmeneger</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Literature </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: passed; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="904c837f-e400-3310-88d9-910ab1423ce4" version="00.00.000" uri="../contacts/904c837f-e400-3310-88d9-910ab1423ce4.xml">
+                    <common:shortDescription xml:lang="en">Thomas Kaegi</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e9a05e3c-7298-38a3-96cb-56f233ea4628" version="00.00.000" uri="../contacts/e9a05e3c-7298-38a3-96cb-56f233ea4628.xml">
+                <common:shortDescription xml:lang="en">Thomas Heck</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:29.124+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e9a05e3c-7298-38a3-96cb-56f233ea4628" version="00.00.000" uri="../contacts/e9a05e3c-7298-38a3-96cb-56f233ea4628.xml">
+                <common:shortDescription xml:lang="en">Thomas Heck</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:50:09.038+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.018</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="179008c2-4cb8-3da4-8326-fbb613c915da" version="00.00.000" uri="../sources/179008c2-4cb8-3da4-8326-fbb613c915da.xml">
+                <common:shortDescription xml:lang="en">2007 - Natural gas - Faist-Emmeneger</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="13dfde5c-7a51-353f-b409-1a94dfd07705" version="00.00.018" uri="../flows/13dfde5c-7a51-353f-b409-1a94dfd07705.xml">
+                <common:shortDescription xml:lang="en">xx Electricity, natural gas, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e92fe655-01c9-3960-aa23-55910e711242" olca:amount="10.200000000000001">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4ba10465-2e53-3f75-9567-fd083081c12f" version="00.00.006" uri="../flows/4ba10465-2e53-3f75-9567-fd083081c12f.xml">
+                <common:shortDescription xml:lang="en">Natural gas, burned in power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>10.200000000000001</meanAmount>
+            <resultingAmount>10.200000000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">based on eGRID 2006
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

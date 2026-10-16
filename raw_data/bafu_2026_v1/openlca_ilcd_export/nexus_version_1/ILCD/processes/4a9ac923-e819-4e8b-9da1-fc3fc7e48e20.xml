@@ -1,0 +1,1470 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>4a9ac923-e819-4e8b-9da1-fc3fc7e48e20</common:UUID>
+            <name>
+                <baseName xml:lang="en">Disposal, natural gas pipeline, 0% water, to construction waste landfill</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="791c965a-a367-3765-af5c-749f3b9a1d40">waste management</common:class>
+                    <common:class level="1" classId="bc59a2f1-89dc-3fc5-945a-e972f9d848c7">construction waste landfill</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">This dataset represents the activity of waste disposal of decommissioned pipeline, natural gas in a construction waste landfill. Recommended use of this dataset: To approximate disposal of various infrastructure materials left in ground after use of a high-pressure natural gas pipeline.Inventoried waste contains several fractions: 0.203% PE; 1.21% MSWI iron scrap; 0.0369% bitumen; 0.403% Concrete; 0.0475% cast iron; 0.48% cement (Doka 2020); 97.6% sand; . Waste composition (wet, in ppm): upper heating value 0.1023 MJ/kg; lower heating value 0.1008 MJ/kg; H2O 2412.2; O 478190; H 1983.7; C 2290.3; S 324.97; N 26.306; P 827.09; B 12.8; Cl 130.78; Br 0.99792; F 672.35; I 0.24632; Ag 0.058113; As 1.4921; Ba 473.93; Cd 0.23788; Co 14.964; Cr 71.199; Cu 201.36; Hg 0.058824; Mn 740.52; Mo 1.4402; Ni 56.201; Pb 19.644; Sb 2.7605; Se 0.063634; Sn 10.997; V 93.64; Zn 70.09; Be 2.7693; Sc 13.737; Sr 353.92; Ti 4072.2; Tl 0.52944; W 1.533; Si 276160; Fe 51435; Ca 33431; Al 82535; K 22236; Mg 15587; Na 25542. Share of carbon in waste that is biogenic 12.4%.;; UUID: 4a9ac923-e819-4e8b-9da1-fc3fc7e48e20</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="253370761200000" olca:endDate="253399618800000">
+            <common:referenceYear>9999</common:referenceYear>
+            <common:dataSetValidUntil>9999</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">undefined</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">&lt;null&gt;</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">This is an inventory for a construction waste landfill (mostly mineral C&amp;D waste, VVEA type B). Ultimate average landfill height is 11 meters. Operation phase duration is 15 years.\n\n# Included processes\nWaste-specific short-term emissions via landfill leachate. Waste-specific long-term emissions from landfill. Land transformation and occupation. Waste placement and compaction. Landfill construction materials, sewer pipe for leachate, and access road.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="997dd0bd-2944-3f04-bc0c-1eee0db21502" version="00.00.000" uri="../sources/997dd0bd-2944-3f04-bc0c-1eee0db21502.xml">
+                <common:shortDescription xml:lang="en">2020 - LCI exc. mat. constr. and dem. waste landfill - Doka</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Landfill model based on average mineral building waste composition and observed average leachate concentrations from various literature sources. Extrapolated to 60'000 years heeding chemical characteristics and hydrology. Based on waste composition and climate data the end of carbonate phase of this landfill is estimated to be reached beyond 60'000 years. </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="25226aff-9059-3bf6-ba7e-1bb9805623ee" version="00.00.000" uri="../contacts/25226aff-9059-3bf6-ba7e-1bb9805623ee.xml">
+                    <common:shortDescription xml:lang="en">Not reviewed</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="04e38ed1-45c3-327a-ad62-032462997291" version="00.00.000" uri="../contacts/04e38ed1-45c3-327a-ad62-032462997291.xml">
+                <common:shortDescription xml:lang="en">default</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:52:41.614+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="04e38ed1-45c3-327a-ad62-032462997291" version="00.00.000" uri="../contacts/04e38ed1-45c3-327a-ad62-032462997291.xml">
+                <common:shortDescription xml:lang="en">default</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2020-06-30T00:00:00.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="997dd0bd-2944-3f04-bc0c-1eee0db21502" version="00.00.000" uri="../sources/997dd0bd-2944-3f04-bc0c-1eee0db21502.xml">
+                <common:shortDescription xml:lang="en">2020 - LCI exc. mat. constr. and dem. waste landfill - Doka</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="fc9385f8-fe2d-3399-b663-4b66e5062a3f" olca:amount="2.6841E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4b78cf71-32e5-3408-8df4-43fab247dff0" version="00.00.000" uri="../flows/4b78cf71-32e5-3408-8df4-43fab247dff0.xml">
+                <common:shortDescription xml:lang="en">Chromium steel 18/8, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.6841E-7</meanAmount>
+            <resultingAmount>2.6841E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for sewer auxiliary materials. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="aacc6120-0e68-3835-8303-5ae37d62c030" olca:amount="2.8427E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="12262ce2-ee81-3caf-8488-1dbf8fb21abe" version="00.00.000" uri="../flows/12262ce2-ee81-3caf-8488-1dbf8fb21abe.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, rail</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.8427E-6</meanAmount>
+            <resultingAmount>2.8427E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4433294842134974</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">transport for landfill infrastructure materials. uncertainty calculated from uncertainty in transported goods
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.7263E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3184c902-c587-4fd7-bd89-769d3cf30072" version="00.00.000" uri="../flows/3184c902-c587-4fd7-bd89-769d3cf30072.xml">
+                <common:shortDescription xml:lang="en">Barium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.7263E-4</meanAmount>
+            <resultingAmount>4.7263E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.385120542027174</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0849E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="24e0a9cb-a789-46e2-a25c-0278a90d67e5" version="00.00.000" uri="../flows/24e0a9cb-a789-46e2-a25c-0278a90d67e5.xml">
+                <common:shortDescription xml:lang="en">Beryllium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0849E-6</meanAmount>
+            <resultingAmount>1.0849E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.6217399133565626</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:amount="4.5671E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2c126bcc-bb63-4d63-bd72-f02a1e616809" version="00.00.000" uri="../flows/2c126bcc-bb63-4d63-bd72-f02a1e616809.xml">
+                <common:shortDescription xml:lang="en">Transformation, from pasture, man made</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.5671E-5</meanAmount>
+            <resultingAmount>4.5671E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.081802103947443</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for establishing the landfill on open ground. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="ea445393-9bd6-3cf6-932d-b73f3d415bce" olca:amount="1.3026E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="79c05ad9-1143-3dca-bfbc-c6d097b72934" version="00.00.000" uri="../flows/79c05ad9-1143-3dca-bfbc-c6d097b72934.xml">
+                <common:shortDescription xml:lang="en">Cast iron, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.3026E-7</meanAmount>
+            <resultingAmount>1.3026E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for sewer auxiliary materials. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.8552E-11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="307c1028-7727-4627-ac0b-a3c14fef1d7a" version="00.00.000" uri="../flows/307c1028-7727-4627-ac0b-a3c14fef1d7a.xml">
+                <common:shortDescription xml:lang="en">Selenium IV</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.8552E-11</meanAmount>
+            <resultingAmount>1.8552E-11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>5.228192804401918</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.6915E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a2632dc9-f27b-4f4d-bf67-c0bab45421dd" version="00.00.000" uri="../flows/a2632dc9-f27b-4f4d-bf67-c0bab45421dd.xml">
+                <common:shortDescription xml:lang="en">Potassium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.6915E-5</meanAmount>
+            <resultingAmount>8.6915E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.382414741391599</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.1418E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9b79e20c-f793-4582-8cc7-e8add9c493db" version="00.00.000" uri="../flows/9b79e20c-f793-4582-8cc7-e8add9c493db.xml">
+                <common:shortDescription xml:lang="en">Silicon</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.1418E-5</meanAmount>
+            <resultingAmount>1.1418E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8764561529771315</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="17b6df58-1792-3ff5-9873-595a09600817" version="00.00.000" uri="../flows/17b6df58-1792-3ff5-9873-595a09600817.xml">
+                <common:shortDescription xml:lang="en">Disposal, natural gas pipeline, 0% water, to construction waste landfill</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.025228">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ada8c83c-995a-3fa1-bdec-36a0590efbd2" version="00.00.000" uri="../flows/ada8c83c-995a-3fa1-bdec-36a0590efbd2.xml">
+                <common:shortDescription xml:lang="en">Sodium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.025228</meanAmount>
+            <resultingAmount>0.025228</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6636706404814625</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="6.2583E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="408b3ab9-9ef7-4535-b7eb-975d55b3c6b6" version="00.00.000" uri="../flows/408b3ab9-9ef7-4535-b7eb-975d55b3c6b6.xml">
+                <common:shortDescription xml:lang="en">Molybdenum VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.2583E-9</meanAmount>
+            <resultingAmount>6.2583E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.095729483254479</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="09cda8b1-b652-39b2-8761-c93aecc29f70" olca:amount="1.9736E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d0f3397a-c71a-361f-9c4a-8088a46bc8f3" version="00.00.000" uri="../flows/d0f3397a-c71a-361f-9c4a-8088a46bc8f3.xml">
+                <common:shortDescription xml:lang="en">Polypropylene, granulate, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.9736E-8</meanAmount>
+            <resultingAmount>1.9736E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for sewer auxiliary materials. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.7254E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4574cd53-77cc-4540-827b-5736dda9c4d7" version="00.00.000" uri="../flows/4574cd53-77cc-4540-827b-5736dda9c4d7.xml">
+                <common:shortDescription xml:lang="en">BOD5, Biological Oxygen Demand</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.7254E-5</meanAmount>
+            <resultingAmount>1.7254E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.568793491116014</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.0126E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7e9baf19-8fa4-49c6-a3c2-2e875217e60b" version="00.00.000" uri="../flows/7e9baf19-8fa4-49c6-a3c2-2e875217e60b.xml">
+                <common:shortDescription xml:lang="en">Thallium I</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.0126E-7</meanAmount>
+            <resultingAmount>5.0126E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.616075220456566</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.8635E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="40f89b03-64f8-466d-9480-bca47d8a435c" version="00.00.000" uri="../flows/40f89b03-64f8-466d-9480-bca47d8a435c.xml">
+                <common:shortDescription xml:lang="en">Mercury II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.8635E-8</meanAmount>
+            <resultingAmount>5.8635E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.0</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0049988">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ce9fd912-233a-4807-a33e-0323b1e4a7a2" version="00.00.000" uri="../flows/ce9fd912-233a-4807-a33e-0323b1e4a7a2.xml">
+                <common:shortDescription xml:lang="en">Magnesium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0049988</meanAmount>
+            <resultingAmount>0.0049988</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.2232633672149595</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.448E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="796c56b3-a863-444c-8b75-1412832af498" version="00.00.000" uri="../flows/796c56b3-a863-444c-8b75-1412832af498.xml">
+                <common:shortDescription xml:lang="en">Sulfate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.448E-5</meanAmount>
+            <resultingAmount>5.448E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.6915423087887733</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.5943E-11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="60d55006-b236-4d9d-8700-71e92bc401af" version="00.00.000" uri="../flows/60d55006-b236-4d9d-8700-71e92bc401af.xml">
+                <common:shortDescription xml:lang="en">Silver I</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.5943E-11</meanAmount>
+            <resultingAmount>3.5943E-11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>5.073066134006139</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.1227E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a1faf981-6b10-45c6-87c0-86bff464c0d6" version="00.00.000" uri="../flows/a1faf981-6b10-45c6-87c0-86bff464c0d6.xml">
+                <common:shortDescription xml:lang="en">Fluoride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.1227E-6</meanAmount>
+            <resultingAmount>1.1227E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.1222427836412723</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.6181E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6d5c5a51-42ce-412a-9517-d0baba8b5b99" version="00.00.000" uri="../flows/6d5c5a51-42ce-412a-9517-d0baba8b5b99.xml">
+                <common:shortDescription xml:lang="en">Sodium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.6181E-4</meanAmount>
+            <resultingAmount>2.6181E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.198590457543196</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.2827E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7282b430-0b75-426c-a8c0-6aff91985c0d" version="00.00.000" uri="../flows/7282b430-0b75-426c-a8c0-6aff91985c0d.xml">
+                <common:shortDescription xml:lang="en">Tungsten</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.2827E-9</meanAmount>
+            <resultingAmount>7.2827E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.067923303111797</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.0954E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a87680bc-ecde-471a-88bb-6bc7482a62cf" version="00.00.000" uri="../flows/a87680bc-ecde-471a-88bb-6bc7482a62cf.xml">
+                <common:shortDescription xml:lang="en">Phosphate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.0954E-7</meanAmount>
+            <resultingAmount>2.0954E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.631528603770043</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.5175E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8f1b69d9-fc00-4b46-99f9-7a57fd71dad2" version="00.00.000" uri="../flows/8f1b69d9-fc00-4b46-99f9-7a57fd71dad2.xml">
+                <common:shortDescription xml:lang="en">Strontium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.5175E-4</meanAmount>
+            <resultingAmount>3.5175E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.4379704674175198</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.5722E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="80b3c2a1-af98-4dde-b298-abf7e78e38ee" version="00.00.000" uri="../flows/80b3c2a1-af98-4dde-b298-abf7e78e38ee.xml">
+                <common:shortDescription xml:lang="en">Lead II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.5722E-9</meanAmount>
+            <resultingAmount>7.5722E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.049197451347612</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.4213E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6c445f1d-db0f-431c-a2f0-d25aa28bdfd1" version="00.00.000" uri="../flows/6c445f1d-db0f-431c-a2f0-d25aa28bdfd1.xml">
+                <common:shortDescription xml:lang="en">Iron ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.4213E-7</meanAmount>
+            <resultingAmount>7.4213E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.2597545919900166</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="70" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.4624E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ca347524-6865-416f-95b5-76e086b46fd7" version="00.00.000" uri="../flows/ca347524-6865-416f-95b5-76e086b46fd7.xml">
+                <common:shortDescription xml:lang="en">Chloride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.4624E-5</meanAmount>
+            <resultingAmount>2.4624E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.7119918878934723</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="69" olca:unitId="c7266b67-4ea2-457f-b391-9b94e26e195a" olca:propertyId="93a60a56-a3c8-21da-a746-0800200c9a66" olca:amount="6.8182E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1eaa9ea4-40b8-414a-b198-5626400372e1" version="00.00.000" uri="../flows/1eaa9ea4-40b8-414a-b198-5626400372e1.xml">
+                <common:shortDescription xml:lang="en">Occupation, dump site</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.8182E-4</meanAmount>
+            <resultingAmount>6.8182E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.59427099327561</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">occupation of landfill during operation phase of 15 years. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="68" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:amount="2.1645E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a42347d2-09f1-405e-95dd-bf6ac03765d8" version="00.00.000" uri="../flows/a42347d2-09f1-405e-95dd-bf6ac03765d8.xml">
+                <common:shortDescription xml:lang="en">Transformation, to traffic area, road network</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.1645E-7</meanAmount>
+            <resultingAmount>2.1645E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.081802103947443</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for access road to landfill. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="67" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.153E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="94426df9-63b1-4dc6-ad1b-3509e22f1154" version="00.00.000" uri="../flows/94426df9-63b1-4dc6-ad1b-3509e22f1154.xml">
+                <common:shortDescription xml:lang="en">Silver I</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.153E-8</meanAmount>
+            <resultingAmount>2.153E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.36016054750281</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="74" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0616E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ea70cc93-c68c-4228-8b8e-1b189b4c705c" version="00.00.000" uri="../flows/ea70cc93-c68c-4228-8b8e-1b189b4c705c.xml">
+                <common:shortDescription xml:lang="en">Chloride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0616E-4</meanAmount>
+            <resultingAmount>1.0616E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.6208967930843823</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="73" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.2645E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b3cfad3f-b7da-490b-a491-8507a1bb7c4b" version="00.00.000" uri="../flows/b3cfad3f-b7da-490b-a491-8507a1bb7c4b.xml">
+                <common:shortDescription xml:lang="en">COD, Chemical Oxygen Demand</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.2645E-4</meanAmount>
+            <resultingAmount>1.2645E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.568793491116014</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="72" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.744E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bdce3a7c-e008-4391-be26-285f71a02453" version="00.00.000" uri="../flows/bdce3a7c-e008-4391-be26-285f71a02453.xml">
+                <common:shortDescription xml:lang="en">Zinc II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.744E-5</meanAmount>
+            <resultingAmount>4.744E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.7826965339396965</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="71" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0068397">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ce88a9b6-0afa-4f68-9b32-8c3438bf4025" version="00.00.000" uri="../flows/ce88a9b6-0afa-4f68-9b32-8c3438bf4025.xml">
+                <common:shortDescription xml:lang="en">Silicon</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0068397</meanAmount>
+            <resultingAmount>0.0068397</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>6.4296967269071095</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="62" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.359E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4ce23896-a82f-49f1-a8e3-8848734805a3" version="00.00.000" uri="../flows/4ce23896-a82f-49f1-a8e3-8848734805a3.xml">
+                <common:shortDescription xml:lang="en">Cadmium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.359E-7</meanAmount>
+            <resultingAmount>2.359E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.759920211919397</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="61" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.2454E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e2a4c2f8-3671-47e7-8649-f5e97a4ad32e" version="00.00.000" uri="../flows/e2a4c2f8-3671-47e7-8649-f5e97a4ad32e.xml">
+                <common:shortDescription xml:lang="en">Copper ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.2454E-7</meanAmount>
+            <resultingAmount>1.2454E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.520795364686792</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="60" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.039E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="061d04a0-af1d-4884-bdd3-997b6cd5550f" version="00.00.000" uri="../flows/061d04a0-af1d-4884-bdd3-997b6cd5550f.xml">
+                <common:shortDescription xml:lang="en">Boron</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.039E-5</meanAmount>
+            <resultingAmount>1.039E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.0414634635319886</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="59" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="6556440f-cd03-3975-9615-023309701fe2" olca:amount="1.6406E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b398c24c-eb85-35da-bc2d-eea4ca5241d8" version="00.00.000" uri="../flows/b398c24c-eb85-35da-bc2d-eea4ca5241d8.xml">
+                <common:shortDescription xml:lang="en">Tap water, at user</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.6406E-4</meanAmount>
+            <resultingAmount>1.6406E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for sewer auxiliary materials. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="66" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="9.508E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ef475b50-9cd0-4e7c-9c59-07868fe16e91" version="00.00.000" uri="../flows/ef475b50-9cd0-4e7c-9c59-07868fe16e91.xml">
+                <common:shortDescription xml:lang="en">Chromium VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.508E-6</meanAmount>
+            <resultingAmount>9.508E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.143187178972246</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="65" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.2959E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0ee08c3a-1553-4637-8f17-c486c115ef2b" version="00.00.000" uri="../flows/0ee08c3a-1553-4637-8f17-c486c115ef2b.xml">
+                <common:shortDescription xml:lang="en">Barium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.2959E-6</meanAmount>
+            <resultingAmount>1.2959E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.0992579757096697</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="64" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:amount="4.5455E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d10b390c-9d0c-4f59-b31d-3d0d70e77a35" version="00.00.000" uri="../flows/d10b390c-9d0c-4f59-b31d-3d0d70e77a35.xml">
+                <common:shortDescription xml:lang="en">Transformation, to dump site, inert material landfill</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.5455E-5</meanAmount>
+            <resultingAmount>4.5455E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.081802103947443</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for establishing the landfill. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="63" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:defaultProvider="ebf03a6f-4e4e-3d94-8c61-1b862c1161d0" olca:amount="3.0229E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0f7d207c-aef3-3604-a7c5-c62eba69f71f" version="00.00.004" uri="../flows/0f7d207c-aef3-3604-a7c5-c62eba69f71f.xml">
+                <common:shortDescription xml:lang="en">Excavation, skid-steer loader</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.0229E-4</meanAmount>
+            <resultingAmount>3.0229E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">excavation work for landfill construction, sewer construction, waste placement and compaction, and landfill recultivation. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="86" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.8112E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="04512c78-0228-4291-8c4d-7e64b6ad670c" version="00.00.000" uri="../flows/04512c78-0228-4291-8c4d-7e64b6ad670c.xml">
+                <common:shortDescription xml:lang="en">Beryllium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.8112E-9</meanAmount>
+            <resultingAmount>1.8112E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.3256213426512495</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="85" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0143E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e60edb16-3c74-415b-9aff-a22a6f49fecb" version="00.00.000" uri="../flows/e60edb16-3c74-415b-9aff-a22a6f49fecb.xml">
+                <common:shortDescription xml:lang="en">Arsenic ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0143E-6</meanAmount>
+            <resultingAmount>1.0143E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.47936775865961</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="84" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.3453E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f069e9b3-0fb0-4e2c-adc7-bb7df6580cc7" version="00.00.000" uri="../flows/f069e9b3-0fb0-4e2c-adc7-bb7df6580cc7.xml">
+                <common:shortDescription xml:lang="en">Magnesium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.3453E-6</meanAmount>
+            <resultingAmount>8.3453E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.785408408115406</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="83" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.6379E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="795b9f74-ca43-4acc-8d29-79165973500a" version="00.00.000" uri="../flows/795b9f74-ca43-4acc-8d29-79165973500a.xml">
+                <common:shortDescription xml:lang="en">Iodide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.6379E-8</meanAmount>
+            <resultingAmount>4.6379E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.851882656571978</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="90" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b38bbde0-a4b0-347f-8136-ce520abfa557" olca:amount="7.6971E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0cce7489-6fcc-315f-94e7-a274ad613444" version="00.00.000" uri="../flows/0cce7489-6fcc-315f-94e7-a274ad613444.xml">
+                <common:shortDescription xml:lang="en">Reinforcing steel, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.6971E-7</meanAmount>
+            <resultingAmount>7.6971E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for sewer auxiliary materials. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="89" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.9198E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7213c990-49f1-4416-b154-64fba3771f50" version="00.00.000" uri="../flows/7213c990-49f1-4416-b154-64fba3771f50.xml">
+                <common:shortDescription xml:lang="en">Zinc II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.9198E-8</meanAmount>
+            <resultingAmount>7.9198E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.6077693939607616</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="88" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0013797">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aedea697-930a-4a0e-9e4f-b9c369aa9a33" version="00.00.000" uri="../flows/aedea697-930a-4a0e-9e4f-b9c369aa9a33.xml">
+                <common:shortDescription xml:lang="en">BOD5, Biological Oxygen Demand</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0013797</meanAmount>
+            <resultingAmount>0.0013797</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.1000714273566983</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="87" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e4e7ddc0-f7d1-3fad-bd12-9d6981142800" olca:amount="1.9748E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4cb41ab9-c1a0-368f-bc5f-792051c1f606" version="00.00.000" uri="../flows/4cb41ab9-c1a0-368f-bc5f-792051c1f606.xml">
+                <common:shortDescription xml:lang="en">Diesel, burned in building machine, average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.9748E-6</meanAmount>
+            <resultingAmount>1.9748E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">construction diesel for access street and sewer construction. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="78" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.2551E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="490b267b-f429-4d9a-ac79-224e37fb4d58" version="00.00.000" uri="../flows/490b267b-f429-4d9a-ac79-224e37fb4d58.xml">
+                <common:shortDescription xml:lang="en">Phosphate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.2551E-4</meanAmount>
+            <resultingAmount>1.2551E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>5.5555377777493336</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="77" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.4713E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="130cedc6-f6ed-4f1b-bd1e-881177f79e74" version="00.00.000" uri="../flows/130cedc6-f6ed-4f1b-bd1e-881177f79e74.xml">
+                <common:shortDescription xml:lang="en">Ammonium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.4713E-6</meanAmount>
+            <resultingAmount>4.4713E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.908332855778375</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="76" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0181E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a86c05d6-fd47-4f0d-8ece-559afa4fd339" version="00.00.000" uri="../flows/a86c05d6-fd47-4f0d-8ece-559afa4fd339.xml">
+                <common:shortDescription xml:lang="en">Titanium ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0181E-7</meanAmount>
+            <resultingAmount>1.0181E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.566090296108611</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="75" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.4101E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="eeaa554c-edc0-4b69-8737-170ac48f6de1" version="00.00.000" uri="../flows/eeaa554c-edc0-4b69-8737-170ac48f6de1.xml">
+                <common:shortDescription xml:lang="en">Boron</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.4101E-6</meanAmount>
+            <resultingAmount>2.4101E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.1332251754382416</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="82" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.3423E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="11a9c7c4-8368-467f-87c6-a8b12b124138" version="00.00.000" uri="../flows/11a9c7c4-8368-467f-87c6-a8b12b124138.xml">
+                <common:shortDescription xml:lang="en">Scandium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.3423E-8</meanAmount>
+            <resultingAmount>3.3423E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.774917217635375</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="81" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.7014E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="83cf77ca-867b-4eef-b0f0-78d71b3d91d5" version="00.00.000" uri="../flows/83cf77ca-867b-4eef-b0f0-78d71b3d91d5.xml">
+                <common:shortDescription xml:lang="en">Antimony ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.7014E-6</meanAmount>
+            <resultingAmount>2.7014E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.316323265304515</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="80" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="8c20066c-bee9-384c-bf96-0c9cf2121d71" olca:amount="0.036583">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d44857c1-8bac-3548-ae93-33f6e1f71c4b" version="00.00.000" uri="../flows/d44857c1-8bac-3548-ae93-33f6e1f71c4b.xml">
+                <common:shortDescription xml:lang="en">Gravel, round, at mine</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.036583</meanAmount>
+            <resultingAmount>0.036583</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for access street, for recultivation layer. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="79" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.7696E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="77b23aa4-9f0a-4d3f-8857-29ee054cdae1" version="00.00.000" uri="../flows/77b23aa4-9f0a-4d3f-8857-29ee054cdae1.xml">
+                <common:shortDescription xml:lang="en">Nickel II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.7696E-8</meanAmount>
+            <resultingAmount>8.7696E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.5906823863995547</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="38" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.9808E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cd26472d-d670-49fd-9df2-f689a14e9892" version="00.00.000" uri="../flows/cd26472d-d670-49fd-9df2-f689a14e9892.xml">
+                <common:shortDescription xml:lang="en">Cadmium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.9808E-9</meanAmount>
+            <resultingAmount>1.9808E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.318911900004444</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="37" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0883E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="60a6702f-20ad-444f-a6df-f6374f1e3183" version="00.00.000" uri="../flows/60a6702f-20ad-444f-a6df-f6374f1e3183.xml">
+                <common:shortDescription xml:lang="en">Tin ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0883E-5</meanAmount>
+            <resultingAmount>1.0883E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.0661539426454114</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="36" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.6402E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="26fd0df4-74ca-4144-b632-6e6f5f6d07b1" version="00.00.000" uri="../flows/26fd0df4-74ca-4144-b632-6e6f5f6d07b1.xml">
+                <common:shortDescription xml:lang="en">Ammonium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.6402E-8</meanAmount>
+            <resultingAmount>4.6402E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.404996328926068</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="35" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="6738f024-eb64-3ef8-837e-05b84c6e43da" olca:amount="2.5439E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2ed71299-f11a-327f-a285-5ea75bb8941b" version="00.00.000" uri="../flows/2ed71299-f11a-327f-a285-5ea75bb8941b.xml">
+                <common:shortDescription xml:lang="en">Polyethylene, HDPE, granulate, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.5439E-6</meanAmount>
+            <resultingAmount>2.5439E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for base drain system in landfill and sewer auxiliary materials. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="42" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.3435E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a708a1f6-7297-45ba-8fda-47a1ce6f11c3" version="00.00.000" uri="../flows/a708a1f6-7297-45ba-8fda-47a1ce6f11c3.xml">
+                <common:shortDescription xml:lang="en">Vanadium V</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.3435E-8</meanAmount>
+            <resultingAmount>1.3435E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.9377658640401667</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="41" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.711E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="41dbbe1f-06e1-4a34-8497-5986be8f9e51" version="00.00.000" uri="../flows/41dbbe1f-06e1-4a34-8497-5986be8f9e51.xml">
+                <common:shortDescription xml:lang="en">Vanadium V</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.711E-6</meanAmount>
+            <resultingAmount>7.711E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.905507109361885</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="40" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.908E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f5aa8364-8feb-4e1b-a9d0-2ceffa388306" version="00.00.000" uri="../flows/f5aa8364-8feb-4e1b-a9d0-2ceffa388306.xml">
+                <common:shortDescription xml:lang="en">Antimony ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.908E-8</meanAmount>
+            <resultingAmount>5.908E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.702836750384764</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="39" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.809E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ed9c7879-2c8f-47ab-943d-c4363cf08b5b" version="00.00.000" uri="../flows/ed9c7879-2c8f-47ab-943d-c4363cf08b5b.xml">
+                <common:shortDescription xml:lang="en">Hydrogen sulfide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.809E-9</meanAmount>
+            <resultingAmount>3.809E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.6915423087887733</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="30" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:defaultProvider="f0b111fc-04a1-34d7-8790-f8809f021bf3" olca:amount="1.156E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5951a247-069f-383e-854a-005e671a0fcf" version="00.00.000" uri="../flows/5951a247-069f-383e-854a-005e671a0fcf.xml">
+                <common:shortDescription xml:lang="en">Concrete, sole plate and foundation, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.156E-8</meanAmount>
+            <resultingAmount>1.156E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for sewer pipe. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.8438E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="78443a3c-a25a-47bc-a1a1-48d2a57e04df" version="00.00.000" uri="../flows/78443a3c-a25a-47bc-a1a1-48d2a57e04df.xml">
+                <common:shortDescription xml:lang="en">Arsenic ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.8438E-9</meanAmount>
+            <resultingAmount>2.8438E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.240754649823543</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.6816E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1e904267-caa3-40e6-a3a0-fc104489770b" version="00.00.000" uri="../flows/1e904267-caa3-40e6-a3a0-fc104489770b.xml">
+                <common:shortDescription xml:lang="en">Cobalt II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.6816E-6</meanAmount>
+            <resultingAmount>2.6816E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.04573849871689</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="c7266b67-4ea2-457f-b391-9b94e26e195a" olca:propertyId="93a60a56-a3c8-21da-a746-0800200c9a66" olca:amount="8.658E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="26efe47c-92a5-4dea-b4d0-eac13e418a58" version="00.00.000" uri="../flows/26efe47c-92a5-4dea-b4d0-eac13e418a58.xml">
+                <common:shortDescription xml:lang="en">Occupation, traffic area, road network</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.658E-6</meanAmount>
+            <resultingAmount>8.658E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.59427099327561</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for access road to landfill during construction, operation, and aftercare phase of 25 years. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="34" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="36f2eccd-a31b-330a-b685-b87163460c36" olca:amount="1.9736E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6d53d8ea-f574-3bf9-b67f-b20e24684a57" version="00.00.000" uri="../flows/6d53d8ea-f574-3bf9-b67f-b20e24684a57.xml">
+                <common:shortDescription xml:lang="en">Polyvinylchloride, at regional storage</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.9736E-8</meanAmount>
+            <resultingAmount>1.9736E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for sewer auxiliary materials. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="33" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="c66b37b5-67d2-32cf-a5ba-5abcb693cc6f" olca:amount="7.8944E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a03677f7-a173-3d8b-982f-8d96ebab9ee7" version="00.00.000" uri="../flows/a03677f7-a173-3d8b-982f-8d96ebab9ee7.xml">
+                <common:shortDescription xml:lang="en">Synthetic rubber, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.8944E-9</meanAmount>
+            <resultingAmount>7.8944E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for sewer auxiliary materials. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="32" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0022903">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e6e16a0e-a4ac-35db-af61-fd667c1577f6" version="00.00.001" uri="../flows/e6e16a0e-a4ac-35db-af61-fd667c1577f6.xml">
+                <common:shortDescription xml:lang="en">Organic carbon, placed in landfill</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0022903</meanAmount>
+            <resultingAmount>0.0022903</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.1000476185077326</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">organic carbon placed in construction waste landfill (for ecoscarcity LCIA only). uncertainty is derived from uncertainty in initial waste composition.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="31" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="263edb08-9a69-3ddc-9e39-595776529614" version="00.00.001" uri="../flows/263edb08-9a69-3ddc-9e39-595776529614.xml">
+                <common:shortDescription xml:lang="en">Waste mass, total, placed in landfill</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">waste mass placed in construction waste landfill (for ecoscarcity LCIA only). uncertainty is low as functional unit.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="54" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0022621">
+            <referenceToFlowDataSet type="flow data set" refObjectId="725c7923-0ed8-43e5-b485-fad7e34bef08" version="00.00.000" uri="../flows/725c7923-0ed8-43e5-b485-fad7e34bef08.xml">
+                <common:shortDescription xml:lang="en">DOC, Dissolved Organic Carbon</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0022621</meanAmount>
+            <resultingAmount>0.0022621</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.1000714273566983</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="53" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.253E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9f69cb8e-51fe-447b-a1ac-4da74de8ebe4" version="00.00.000" uri="../flows/9f69cb8e-51fe-447b-a1ac-4da74de8ebe4.xml">
+                <common:shortDescription xml:lang="en">Nickel II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.253E-5</meanAmount>
+            <resultingAmount>5.253E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.7724718213175765</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="52" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0343E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="180520a0-34e8-4058-bac9-27cbbb32c527" version="00.00.000" uri="../flows/180520a0-34e8-4058-bac9-27cbbb32c527.xml">
+                <common:shortDescription xml:lang="en">Nitrate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0343E-6</meanAmount>
+            <resultingAmount>1.0343E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.404996328926068</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="51" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.5358E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0ff15165-d761-48c9-9814-2d1dcdd56857" version="00.00.000" uri="../flows/0ff15165-d761-48c9-9814-2d1dcdd56857.xml">
+                <common:shortDescription xml:lang="en">Lead II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.5358E-6</meanAmount>
+            <resultingAmount>4.5358E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.705401462729781</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="58" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="6.4339E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="554be2fb-9bb9-46c6-a4df-46df0d53cb65" version="00.00.000" uri="../flows/554be2fb-9bb9-46c6-a4df-46df0d53cb65.xml">
+                <common:shortDescription xml:lang="en">Hydrogen sulfide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.4339E-8</meanAmount>
+            <resultingAmount>6.4339E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.4537726056014235</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="57" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:defaultProvider="de7e006b-f5dd-3d18-873a-23959012d5b9" olca:amount="3.0229E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7d0525f2-9d22-38fd-b803-9e0f96643423" version="00.00.000" uri="../flows/7d0525f2-9d22-38fd-b803-9e0f96643423.xml">
+                <common:shortDescription xml:lang="en">Excavation, hydraulic digger, average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.0229E-4</meanAmount>
+            <resultingAmount>3.0229E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">excavation work for landfill construction, sewer construction, waste placement and compaction, and landfill recultivation. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="56" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.894E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e529c930-e3c6-4d2d-8a96-f052ec23f2e7" version="00.00.000" uri="../flows/e529c930-e3c6-4d2d-8a96-f052ec23f2e7.xml">
+                <common:shortDescription xml:lang="en">Mercury II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.894E-10</meanAmount>
+            <resultingAmount>1.894E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.745945638121027</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="55" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.91E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="835d0907-a668-4d92-b6b6-7b56fa343713" version="00.00.000" uri="../flows/835d0907-a668-4d92-b6b6-7b56fa343713.xml">
+                <common:shortDescription xml:lang="en">Manganese II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.91E-4</meanAmount>
+            <resultingAmount>1.91E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.9303583398622086</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="46" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.704E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="caa6bc06-e7e6-4f08-acd3-2163db51e395" version="00.00.000" uri="../flows/caa6bc06-e7e6-4f08-acd3-2163db51e395.xml">
+                <common:shortDescription xml:lang="en">Chromium VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.704E-8</meanAmount>
+            <resultingAmount>1.704E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.8930707674020004</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="45" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0022621">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8734eb08-50cf-4f5a-8d1a-db76d38efe3c" version="00.00.000" uri="../flows/8734eb08-50cf-4f5a-8d1a-db76d38efe3c.xml">
+                <common:shortDescription xml:lang="en">TOC, Total Organic Carbon</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0022621</meanAmount>
+            <resultingAmount>0.0022621</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.1000714273566983</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="44" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="0c4cff21-9b05-3ebf-bde2-fe4919628d27" olca:amount="2.5834E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4bcba50d-59f9-3f54-be02-7c0c102a479b" version="00.00.000" uri="../flows/4bcba50d-59f9-3f54-be02-7c0c102a479b.xml">
+                <common:shortDescription xml:lang="en">Extrusion, plastic pipes</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.5834E-6</meanAmount>
+            <resultingAmount>2.5834E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for base drain system in landfill and sewer auxiliary materials. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="43" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.010111">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a8fea8cf-9b09-49fc-aa58-5a732494a2a0" version="00.00.000" uri="../flows/a8fea8cf-9b09-49fc-aa58-5a732494a2a0.xml">
+                <common:shortDescription xml:lang="en">COD, Chemical Oxygen Demand</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.010111</meanAmount>
+            <resultingAmount>0.010111</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.1000714273566983</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="50" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.9994E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b5fae91e-cff0-4513-a997-cdb6922f1ab4" version="00.00.000" uri="../flows/b5fae91e-cff0-4513-a997-cdb6922f1ab4.xml">
+                <common:shortDescription xml:lang="en">Iodide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.9994E-7</meanAmount>
+            <resultingAmount>1.9994E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.7564611005572788</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="49" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.4377E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="10319ea8-90db-4340-be33-b7182dca01db" version="00.00.000" uri="../flows/10319ea8-90db-4340-be33-b7182dca01db.xml">
+                <common:shortDescription xml:lang="en">Tungsten</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.4377E-6</meanAmount>
+            <resultingAmount>1.4377E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.424032710124131</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="48" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:amount="4.5455E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c1513682-45ad-444e-afb5-27c660714e88" version="00.00.000" uri="../flows/c1513682-45ad-444e-afb5-27c660714e88.xml">
+                <common:shortDescription xml:lang="en">Transformation, from dump site, inert material landfill</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.5455E-5</meanAmount>
+            <resultingAmount>4.5455E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.081802103947443</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">recultivation of landfill after operation phase. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="47" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.3703E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f6266ac7-9608-47f2-bc91-3857eb366446" version="00.00.000" uri="../flows/f6266ac7-9608-47f2-bc91-3857eb366446.xml">
+                <common:shortDescription xml:lang="en">Scandium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.3703E-5</meanAmount>
+            <resultingAmount>1.3703E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.025888299326332</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="102" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.025756">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a2017716-a6ee-3c76-adf4-eab05dcfeb14" version="00.00.000" uri="../flows/a2017716-a6ee-3c76-adf4-eab05dcfeb14.xml">
+                <common:shortDescription xml:lang="en">Calcium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.025756</meanAmount>
+            <resultingAmount>0.025756</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6432589570728042</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="101" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="6.0984E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="08fbcb07-e7a1-352c-b779-9d7c578059d5" version="00.00.000" uri="../flows/08fbcb07-e7a1-352c-b779-9d7c578059d5.xml">
+                <common:shortDescription xml:lang="en">Titanium ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.0984E-5</meanAmount>
+            <resultingAmount>6.0984E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>9.128691034315928</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="100" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.2455E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ae3e6e8-75e6-4566-b18f-6d848086c4e5" version="00.00.000" uri="../flows/7ae3e6e8-75e6-4566-b18f-6d848086c4e5.xml">
+                <common:shortDescription xml:lang="en">Fluoride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.2455E-4</meanAmount>
+            <resultingAmount>4.2455E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.394347510283334</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="99" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="eb5552ed-63a8-374d-8fa4-296f644c37f8" olca:amount="0.0036943">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f3e7a082-a8ab-3b86-8db2-3e46c3cb8a6c" version="00.00.022" uri="../flows/f3e7a082-a8ab-3b86-8db2-3e46c3cb8a6c.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, 16t-32t gross weight, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0036943</meanAmount>
+            <resultingAmount>0.0036943</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3795651488784428</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">transport for landfill infrastructure materials. uncertainty calculated from uncertainty in transported goods
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="106" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.3283E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7d3f7498-3596-478a-9fa1-72201ef94082" version="00.00.000" uri="../flows/7d3f7498-3596-478a-9fa1-72201ef94082.xml">
+                <common:shortDescription xml:lang="en">Molybdenum VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.3283E-6</meanAmount>
+            <resultingAmount>1.3283E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.436277055186325</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="105" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.4601E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="40229ebf-9346-4f20-910a-f8ea3bd88d44" version="00.00.000" uri="../flows/40229ebf-9346-4f20-910a-f8ea3bd88d44.xml">
+                <common:shortDescription xml:lang="en">Copper ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.4601E-5</meanAmount>
+            <resultingAmount>7.4601E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8751695602172753</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="104" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.1387E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="df28f5b4-4754-4e51-ac98-31238976d7c7" version="00.00.000" uri="../flows/df28f5b4-4754-4e51-ac98-31238976d7c7.xml">
+                <common:shortDescription xml:lang="en">Tin ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.1387E-7</meanAmount>
+            <resultingAmount>1.1387E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.5648281866031075</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="103" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.4454E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9b6d6f07-ebc6-447d-a3c0-f2017d77d852" version="00.00.000" uri="../flows/9b6d6f07-ebc6-447d-a3c0-f2017d77d852.xml">
+                <common:shortDescription xml:lang="en">Iron ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.4454E-4</meanAmount>
+            <resultingAmount>4.4454E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>11.179445424527998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="94" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="9.2023E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bfc0bf1c-e5e2-4702-a502-08c892031837" version="00.00.000" uri="../flows/bfc0bf1c-e5e2-4702-a502-08c892031837.xml">
+                <common:shortDescription xml:lang="en">Sulfate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.2023E-4</meanAmount>
+            <resultingAmount>9.2023E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.4537726056014235</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="93" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="e13183f8-d825-3264-87d6-e66f9750f908" olca:amount="0.021824">
+            <referenceToFlowDataSet type="flow data set" refObjectId="92a557a7-9c3a-3d06-8dc2-30efb6badb64" version="00.00.000" uri="../flows/92a557a7-9c3a-3d06-8dc2-30efb6badb64.xml">
+                <common:shortDescription xml:lang="en">Sand, at mine</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.021824</meanAmount>
+            <resultingAmount>0.021824</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for landfill base layer and sewer auxiliary materials. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="92" olca:unitId="3ce61faa-5716-41c1-aef6-b5920054acc9" olca:propertyId="93a60a56-a3c8-19da-a746-0800200c9a66" olca:amount="4.5455E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7a16b680-6d9a-4db3-a23e-0ec64aca5995" version="00.00.000" uri="../flows/7a16b680-6d9a-4db3-a23e-0ec64aca5995.xml">
+                <common:shortDescription xml:lang="en">Transformation, to pasture, man made</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.5455E-5</meanAmount>
+            <resultingAmount>4.5455E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.081802103947443</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">recultivation of landfill after operation phase. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="91" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.2998E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9e82f459-ca38-43dd-9c30-3913ed433ed8" version="00.00.000" uri="../flows/9e82f459-ca38-43dd-9c30-3913ed433ed8.xml">
+                <common:shortDescription xml:lang="en">Calcium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.2998E-5</meanAmount>
+            <resultingAmount>4.2998E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.51423944762626</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="98" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.8288E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="08ace03b-27d9-4bf1-bf4d-cbe177992052" version="00.00.000" uri="../flows/08ace03b-27d9-4bf1-bf4d-cbe177992052.xml">
+                <common:shortDescription xml:lang="en">DOC, Dissolved Organic Carbon</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.8288E-5</meanAmount>
+            <resultingAmount>2.8288E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.568793491116014</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="97" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.1664E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="549b1a2a-6675-4bf9-b0d7-47a5113a9787" version="00.00.000" uri="../flows/549b1a2a-6675-4bf9-b0d7-47a5113a9787.xml">
+                <common:shortDescription xml:lang="en">Strontium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.1664E-6</meanAmount>
+            <resultingAmount>2.1664E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.014879765430124</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="96" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.8789E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c626d246-a314-4dab-b4be-cfb79c230f55" version="00.00.000" uri="../flows/c626d246-a314-4dab-b4be-cfb79c230f55.xml">
+                <common:shortDescription xml:lang="en">Bromine</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.8789E-7</meanAmount>
+            <resultingAmount>1.8789E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.597082150855051</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="95" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.4769E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e69510c5-d9c6-42aa-a6cb-ff6336b3eae4" version="00.00.000" uri="../flows/e69510c5-d9c6-42aa-a6cb-ff6336b3eae4.xml">
+                <common:shortDescription xml:lang="en">Cobalt II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.4769E-9</meanAmount>
+            <resultingAmount>4.4769E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.150060240526636</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="116" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.0020442">
+            <referenceToFlowDataSet type="flow data set" refObjectId="01056d4b-f9b0-4dfc-b8d9-8407c8376efb" version="00.00.000" uri="../flows/01056d4b-f9b0-4dfc-b8d9-8407c8376efb.xml">
+                <common:shortDescription xml:lang="en">Aluminium III</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0020442</meanAmount>
+            <resultingAmount>0.0020442</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>6.594770655602816</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="115" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.1003E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="20bc9500-2e2f-4cba-9332-8ea17d362aba" version="00.00.000" uri="../flows/20bc9500-2e2f-4cba-9332-8ea17d362aba.xml">
+                <common:shortDescription xml:lang="en">Bromine</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.1003E-7</meanAmount>
+            <resultingAmount>8.1003E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.503284173457814</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="110" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="9.9664E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b61057a3-a0bc-4158-882e-b819c4797419" version="00.00.000" uri="../flows/b61057a3-a0bc-4158-882e-b819c4797419.xml">
+                <common:shortDescription xml:lang="en">Nitrate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.9664E-5</meanAmount>
+            <resultingAmount>9.9664E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.908332855778375</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="109" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.1887E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d3a50c57-7caf-4400-87f5-b0c10d69e760" version="00.00.000" uri="../flows/d3a50c57-7caf-4400-87f5-b0c10d69e760.xml">
+                <common:shortDescription xml:lang="en">Manganese II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.1887E-7</meanAmount>
+            <resultingAmount>3.1887E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.3473870406632096</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="108" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="ff21fce1-7c0b-3a83-b3b0-0646ddc71b90" olca:amount="8.1169E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="220d0466-2ada-3b51-b4c3-8aaaeb05eaa5" version="00.00.000" uri="../flows/220d0466-2ada-3b51-b4c3-8aaaeb05eaa5.xml">
+                <common:shortDescription xml:lang="en">Bitumen, at refinery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.1169E-6</meanAmount>
+            <resultingAmount>8.1169E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7622428890479316</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">for access street. Uncertainty calculated from uncertainty in base parameters.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="107" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="8.3683E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="db652d59-898e-46f3-acce-b28596c26dc7" version="00.00.000" uri="../flows/db652d59-898e-46f3-acce-b28596c26dc7.xml">
+                <common:shortDescription xml:lang="en">Thallium I</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.3683E-10</meanAmount>
+            <resultingAmount>8.3683E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>4.474706694298521</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="114" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0195E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4d54a415-82d7-49ac-88e1-712bd0009363" version="00.00.000" uri="../flows/4d54a415-82d7-49ac-88e1-712bd0009363.xml">
+                <common:shortDescription xml:lang="en">Selenium IV</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0195E-8</meanAmount>
+            <resultingAmount>1.0195E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>5.266497887590956</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="113" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.4126E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5fb7fbc0-e7d1-4be5-a194-ec5ef5fb4f64" version="00.00.000" uri="../flows/5fb7fbc0-e7d1-4be5-a194-ec5ef5fb4f64.xml">
+                <common:shortDescription xml:lang="en">Aluminium III</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.4126E-6</meanAmount>
+            <resultingAmount>3.4126E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>3.005894209715305</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="112" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.8288E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9d73edf8-57c4-443b-80bd-e7cfaeeb93e0" version="00.00.000" uri="../flows/9d73edf8-57c4-443b-80bd-e7cfaeeb93e0.xml">
+                <common:shortDescription xml:lang="en">TOC, Total Organic Carbon</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.8288E-5</meanAmount>
+            <resultingAmount>2.8288E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.568793491116014</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">burden from short-term leachate to groundwater in uncontrolled landfill in moist cimate. Uncertainty calculated from unertainty of the waste composition of this waste and short-term leaching in landfill
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="111" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.020028">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2f2083f7-404b-3c39-a1f6-2bc88e8b1e20" version="00.00.000" uri="../flows/2f2083f7-404b-3c39-a1f6-2bc88e8b1e20.xml">
+                <common:shortDescription xml:lang="en">Potassium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.020028</meanAmount>
+            <resultingAmount>0.020028</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6930445948054647</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Emissions from long-term leachate (&gt;100a) directly from construction waste landfill. Uncertainty calculated depending on waste input and uncertainty of long-term transfer coefficents in landfill.
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

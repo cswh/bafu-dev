@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>596260e5-9b9e-307a-b2b1-a14142ddb90b</common:UUID>
+            <name>
+                <baseName xml:lang="en">Run-of-river hydropower plant</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="6f11c2d0-4f16-3031-9733-444055c70cb9">hydro</common:class>
+                    <common:class level="2" classId="ec67f8ec-e53f-3969-8c70-923566dd1077">flow through</common:class>
+                    <common:class level="3" classId="7c3ad2bd-225e-3cf8-95fa-dd24347607fa">infrastructure</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Only a small number of run-of-river power plants are used for the calculation. They were built between 1945 and 1980. The lifetime assumed is 80 years for the dams and 40 for the other materials. The data set describes a mix and is therefore not representative for individual plants.  This dataset is recalculated based on Frischknecht et al. (1996) and Bauer (2007), complemented with data from Axpo (2008).;
+UUID: 596260e5-9b9e-307a-b2b1-a14142ddb90b</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="-788922000000" olca:endDate="975625200000">
+            <common:referenceYear>1945</common:referenceYear>
+            <common:dataSetValidUntil>2000</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">undefined</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">&lt;null&gt;</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Mix of run-of-river hydropower plants built between 1945 and 1980, representative for Switzerland. Capacity: 8.6MW\n\n# Included processes\nThe dataset includes the most important materials used for the construction of an average run-of-river hydropower plant: cement, gravel, water, steel, copper and explosives. Furthermore, transports, the energy used, particle emissions and disposal/recycling of the materials are included.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="edce014f-8cb7-31e2-8dcf-1cae6221d72f" version="00.00.000" uri="../sources/edce014f-8cb7-31e2-8dcf-1cae6221d72f.xml">
+                <common:shortDescription xml:lang="en">2012 - LCI hydroelectric power generation - Flury</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">literature </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 22.10.2012; Other validation: \\Server\e\ESU-Docs\Projektablage\349 Sachbilanzen erneuerbare Energie DE\DatenErgebnisse\[Ecospold_runofriver_CH_v2.2.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e6eddbc0-cb60-39a6-8d13-042cfd4023d2" version="00.00.000" uri="../contacts/e6eddbc0-cb60-39a6-8d13-042cfd4023d2.xml">
+                <common:shortDescription xml:lang="en">Karin Flury</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:53:00.608+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e6eddbc0-cb60-39a6-8d13-042cfd4023d2" version="00.00.000" uri="../contacts/e6eddbc0-cb60-39a6-8d13-042cfd4023d2.xml">
+                <common:shortDescription xml:lang="en">Karin Flury</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:41:03.955+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.014</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="edce014f-8cb7-31e2-8dcf-1cae6221d72f" version="00.00.000" uri="../sources/edce014f-8cb7-31e2-8dcf-1cae6221d72f.xml">
+                <common:shortDescription xml:lang="en">2012 - LCI hydroelectric power generation - Flury</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b38bbde0-a4b0-347f-8136-ce520abfa557" olca:pedigreeUncertainty="(4;3;3;1;1;4)" olca:amount="472946.3889">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0cce7489-6fcc-315f-94e7-a274ad613444" version="00.00.000" uri="../flows/0cce7489-6fcc-315f-94e7-a274ad613444.xml">
+                <common:shortDescription xml:lang="en">Reinforcing steel, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>472946.3889</meanAmount>
+            <resultingAmount>472946.3889</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1258082647591463</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,3,1,1,4,BU:1.05); Buildings and other infrastructure; based on Frischknecht et al. (1996) and Bauer et al. (2007)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(4;5;3;1;1;5)" olca:amount="5536933.333">
+            <referenceToFlowDataSet type="flow data set" refObjectId="07f704a2-2746-4364-bcfd-606cefc30715" version="00.00.000" uri="../flows/07f704a2-2746-4364-bcfd-606cefc30715.xml">
+                <common:shortDescription xml:lang="en">Heat, waste</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5536933.333</meanAmount>
+            <resultingAmount>5536933.333</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1814284933926387</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,3,1,1,5,BU:1.05); From electricity; based on Frischknecht et al. (1996)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="d5cf31d7-6ed4-4ba6-a283-85bfca5dbbf7" olca:pedigreeUncertainty="(4;3;3;1;1;4)" olca:amount="4.077821001E7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6bef6239-9236-39b2-bce2-6a8bfbe18afe" version="00.00.000" uri="../flows/6bef6239-9236-39b2-bce2-6a8bfbe18afe.xml">
+                <common:shortDescription xml:lang="en">Disposal, building, concrete, not reinforced, to final disposal</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.077821001E7</meanAmount>
+            <resultingAmount>4.077821001E7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1258082647591463</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,3,1,1,4,BU:1.05); Recycling of turbines, generators, tubes and pipes; recalculated based Frischknecht et al. (1996), assumed recycling rate: 100%
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="3972eb0c-d60e-3537-9ad1-fd6b7bbafce8" olca:pedigreeUncertainty="(4;5;4;5;3;5)" olca:amount="30453.13333">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0c11761a-f4b6-3114-a56b-c180f7af93d7" version="00.00.000" uri="../flows/0c11761a-f4b6-3114-a56b-c180f7af93d7.xml">
+                <common:shortDescription xml:lang="en">Copper, at regional storage</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>30453.13333</meanAmount>
+            <resultingAmount>30453.13333</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.234609531795377</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,4,5,3,5,BU:1.05); Electric cables; calculated based on Vattenfall (2008)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="3339051d-d8fc-494c-8dd3-f45bda07f131" olca:pedigreeUncertainty="(4;3;3;1;1;4)" olca:amount="1361162.778">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6f926459-864f-35f2-82af-60ebb608a4e1" version="00.00.000" uri="../flows/6f926459-864f-35f2-82af-60ebb608a4e1.xml">
+                <common:shortDescription xml:lang="en">Disposal, building, reinforcement steel, to recycling</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1361162.778</meanAmount>
+            <resultingAmount>1361162.778</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1258082647591463</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,3,1,1,4,BU:1.05); Recycling of turbines, generators, tubes and pipes; recalculated based Frischknecht et al. (1996), assumed recycling rate: 100%
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="fc9385f8-fe2d-3399-b663-4b66e5062a3f" olca:pedigreeUncertainty="(4;3;3;1;1;4)" olca:amount="92282.22222">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4b78cf71-32e5-3408-8df4-43fab247dff0" version="00.00.000" uri="../flows/4b78cf71-32e5-3408-8df4-43fab247dff0.xml">
+                <common:shortDescription xml:lang="en">Chromium steel 18/8, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>92282.22222</meanAmount>
+            <resultingAmount>92282.22222</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1258082647591463</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,3,1,1,4,BU:1.05); Turbines and generators; based on Frischknecht et al. (1996) and Bauer et al. (2007)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;5;5;5;4;5)" olca:amount="146.4211259">
+            <referenceToFlowDataSet type="flow data set" refObjectId="295c9740-6fdb-4676-9eb8-15e3786f713d" version="00.00.000" uri="../flows/295c9740-6fdb-4676-9eb8-15e3786f713d.xml">
+                <common:shortDescription xml:lang="en">Particulate Matter, &gt; 2.5 um and &lt; 10um</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>146.4211259</meanAmount>
+            <resultingAmount>146.4211259</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.6145856926778461</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,5,5,4,5,BU:2); Particle emissions during the construction; based on BUWAL (2001, 2003)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="eb5552ed-63a8-374d-8fa4-296f644c37f8" olca:pedigreeUncertainty="(4;5;n.a.;n.a.;n.a.;n.a.)" olca:amount="584454.1">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f3e7a082-a8ab-3b86-8db2-3e46c3cb8a6c" version="00.00.022" uri="../flows/f3e7a082-a8ab-3b86-8db2-3e46c3cb8a6c.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, 16t-32t gross weight, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>584454.1</meanAmount>
+            <resultingAmount>584454.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4474094548537397</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,na,na,na,na,BU:2); Transport of materials to the construction site; Based on Frischknecht et al. (1996)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="8c20066c-bee9-384c-bf96-0c9cf2121d71" olca:pedigreeUncertainty="(4;3;3;1;1;4)" olca:amount="5.028712399E7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d44857c1-8bac-3548-ae93-33f6e1f71c4b" version="00.00.000" uri="../flows/d44857c1-8bac-3548-ae93-33f6e1f71c4b.xml">
+                <common:shortDescription xml:lang="en">Gravel, round, at mine</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.028712399E7</meanAmount>
+            <resultingAmount>5.028712399E7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1258082647591463</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,3,1,1,4,BU:1.05); Concrete for buildings and other infrastructure; recalculated based on Frischknecht et al. (1996)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="691ef6dc-0411-4ebd-add7-aff1527b3b00" olca:pedigreeUncertainty="(4;3;3;1;1;4)" olca:amount="1.576487963E7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="58c43b70-07a2-3464-b416-41f5dde5cd07" version="00.00.000" uri="../flows/58c43b70-07a2-3464-b416-41f5dde5cd07.xml">
+                <common:shortDescription xml:lang="en">Disposal, building, reinforced concrete, to recycling</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.576487963E7</meanAmount>
+            <resultingAmount>1.576487963E7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1258082647591463</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,3,1,1,4,BU:1.05); Recycling of reinforced infrastructure (especially buildings); recalculated based on Frischknecht et al. (1996), assumed recycling rate: 100%
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="a169f230-3e05-33d0-a12d-f9d6d4d6abf1" olca:pedigreeUncertainty="(4;5;n.a.;n.a.;n.a.;n.a.)" olca:amount="584454.0741">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f9e371c1-b7aa-3519-8a79-cee28b230151" version="00.00.000" uri="../flows/f9e371c1-b7aa-3519-8a79-cee28b230151.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, rail, electricity with shunting</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>584454.0741</meanAmount>
+            <resultingAmount>584454.0741</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4474094548537397</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,na,na,na,na,BU:2); Transport of materials to the construction site; based on Frischknecht et al. (1996)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;5;5;5;4;5)" olca:amount="25.83902222">
+            <referenceToFlowDataSet type="flow data set" refObjectId="66f50b33-fd62-4fdd-a373-c5b0de7de00d" version="00.00.000" uri="../flows/66f50b33-fd62-4fdd-a373-c5b0de7de00d.xml">
+                <common:shortDescription xml:lang="en">Particulate Matter, &lt; 2.5 um</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>25.83902222</meanAmount>
+            <resultingAmount>25.83902222</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.89876194216126</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,5,5,4,5,BU:3); Particle emissions during the construction; based on BUWAL (2001, 2003)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="df605f09-34c5-3b3f-94ea-227f7a3c06a7" olca:pedigreeUncertainty="(4;5;3;1;1;5)" olca:amount="1538037.037">
+            <referenceToFlowDataSet type="flow data set" refObjectId="501bd4f9-9054-3e53-927b-59744c33b1ed" version="00.00.000" uri="../flows/501bd4f9-9054-3e53-927b-59744c33b1ed.xml">
+                <common:shortDescription xml:lang="en">Electricity, medium voltage, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5536933.3332</meanAmount>
+            <resultingAmount>5536933.3332</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1814284933926387</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,3,1,1,5,BU:1.05); Electricity supply for the construction; recalculated based on Frischknecht et al. (1996)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="39f4c4a5-a5f8-3299-8841-9ab862d9e8fa" olca:pedigreeUncertainty="(4;3;3;1;1;4)" olca:amount="5783019.259">
+            <referenceToFlowDataSet type="flow data set" refObjectId="322b9d5f-b3ac-3dd8-8106-c39614ddf887" version="00.00.000" uri="../flows/322b9d5f-b3ac-3dd8-8106-c39614ddf887.xml">
+                <common:shortDescription xml:lang="en">Cement, unspecified, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5783019.259</meanAmount>
+            <resultingAmount>5783019.259</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1258082647591463</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,3,1,1,4,BU:1.05); Concrete for buildings and other infrastructure; recalculated based on Frischknecht et al. (1996)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="1a2f0384-d903-4f9d-8757-1e78d84366ab" olca:pedigreeUncertainty="(4;3;3;1;1;4)" olca:amount="3193232.374">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0256c736-e28d-38b5-ae2d-6ac8c0a25387" version="00.00.000" uri="../flows/0256c736-e28d-38b5-ae2d-6ac8c0a25387.xml">
+                <common:shortDescription xml:lang="en">Tap water, at user</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3193232.374</meanAmount>
+            <resultingAmount>3193232.374</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1258082647591463</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,3,1,1,4,BU:1.05); Concrete for buildings and other infrastructure; recalculated based on Frischknecht et al. (1996)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e4e7ddc0-f7d1-3fad-bd12-9d6981142800" olca:pedigreeUncertainty="(4;5;3;1;1;5)" olca:amount="1.448215674E7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4cb41ab9-c1a0-368f-bc5f-792051c1f606" version="00.00.000" uri="../flows/4cb41ab9-c1a0-368f-bc5f-792051c1f606.xml">
+                <common:shortDescription xml:lang="en">Diesel, burned in building machine, average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.448215674E7</meanAmount>
+            <resultingAmount>1.448215674E7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1814284933926387</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,3,1,1,5,BU:1.05); Fuel for building machines; recalculated based on Frischknecht et al. (1996)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="8192cd30-4b43-3fa6-9bfe-57fd394849c5" olca:pedigreeUncertainty="(4;5;3;1;1;5)" olca:amount="1937.926667">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a958d2d9-3ca0-39cb-8c27-8fa56fa09ad8" version="00.00.000" uri="../flows/a958d2d9-3ca0-39cb-8c27-8fa56fa09ad8.xml">
+                <common:shortDescription xml:lang="en">Explosives, tovex, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1937.926667</meanAmount>
+            <resultingAmount>1937.926667</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1814284933926387</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,3,1,1,5,BU:1.05); Tunnels and galleries; based on Bauer et al. (2007)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;5;5;5;4;5)" olca:amount="516.7804444">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7678cec7-b8e1-439d-8242-99cd452834b1" version="00.00.000" uri="../flows/7678cec7-b8e1-439d-8242-99cd452834b1.xml">
+                <common:shortDescription xml:lang="en">Particulate Matter, &gt; 10 um</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>516.7804444</meanAmount>
+            <resultingAmount>516.7804444</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4739525379061567</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,5,5,4,5,BU:1.5); Particle emissions during the construction; based on BUWAL (2001, 2003)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b9430f24-d0b9-3422-a5ad-f874acbbef18" olca:pedigreeUncertainty="(4;3;3;1;1;4)" olca:amount="1268880.556">
+            <referenceToFlowDataSet type="flow data set" refObjectId="740db303-1a44-378b-83ae-6d7423e622cf" version="00.00.000" uri="../flows/740db303-1a44-378b-83ae-6d7423e622cf.xml">
+                <common:shortDescription xml:lang="en">Steel, low-alloyed, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1268880.556</meanAmount>
+            <resultingAmount>1268880.556</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1258082647591463</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,3,1,1,4,BU:1.05); Tubes and pipes; based on Frischknecht et al. (1996) and Bauer et al. (2007)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="48f32ca8-4674-368b-aef2-3c7811987045" version="00.00.014" uri="../flows/48f32ca8-4674-368b-aef2-3c7811987045.xml">
+                <common:shortDescription xml:lang="en">Run-of-river hydropower plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

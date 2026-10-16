@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>c174d092-b65a-3234-9bcc-043024e926ad</common:UUID>
+            <name>
+                <baseName xml:lang="en">Transport, passenger bus, fleet average</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="2279f95c-4711-3ee2-8393-0e7a7bbfe8d1">transport systems</common:class>
+                    <common:class level="1" classId="a68df7d5-0492-3d7e-a949-c23730a59b9f">road</common:class>
+                    <common:class level="2" classId="944e4422-9c8a-3ad4-9faa-fe1fdf65edb8">Transformation</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en"> Average of other Mobitool datasets created with the purpose of replacing older datasets in the database. Basis for fleet shares: Switzerland year 2020. Source: HBEFA 5.1, INFRAS. UUID: c174d092-b65a-3234-9bcc-043024e926ad</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>29</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1577833200000" olca:endDate="1606777200000">
+            <common:referenceYear>2020</common:referenceYear>
+            <common:dataSetValidUntil>2020</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Technology and fleet shares valid for year 2020</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Unspecified</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Average of other Mobitool datasets created with the purpose of replacing older datasets in the database. Basis for fleet shares: Switzerland year 2020. Source: HBEFA 5.1, INFRAS</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="0e73cd97-c332-3b37-8f71-c19ea140d648" version="00.00.000" uri="../sources/0e73cd97-c332-3b37-8f71-c19ea140d648.xml">
+                <common:shortDescription xml:lang="en">2025 - Mobitool integration project - Cox</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Unspecified</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Data from HBEFA 5.1 for the year 2020. Some technologies with very small shares in the fleet removed for simplicity. Technology shares normalised to ensure sum of 100%</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="efab6acc-e069-365d-b922-c7081723eaa3" version="00.00.000" uri="../contacts/efab6acc-e069-365d-b922-c7081723eaa3.xml">
+                    <common:shortDescription xml:lang="en">Julien McTighe</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="38b429bd-4961-37c6-b2e8-98ea67ee44eb" version="00.00.000" uri="../contacts/38b429bd-4961-37c6-b2e8-98ea67ee44eb.xml">
+                <common:shortDescription xml:lang="en">Brian Cox</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:52:25.953+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="38b429bd-4961-37c6-b2e8-98ea67ee44eb" version="00.00.000" uri="../contacts/38b429bd-4961-37c6-b2e8-98ea67ee44eb.xml">
+                <common:shortDescription xml:lang="en">Brian Cox</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T10:01:07.817+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.022</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="0e73cd97-c332-3b37-8f71-c19ea140d648" version="00.00.000" uri="../sources/0e73cd97-c332-3b37-8f71-c19ea140d648.xml">
+                <common:shortDescription xml:lang="en">2025 - Mobitool integration project - Cox</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>false</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6c9982b9-f451-3cf8-84ed-ac94702f374b" version="00.00.022" uri="../flows/6c9982b9-f451-3cf8-84ed-ac94702f374b.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="f2bf8e99-13ae-34bd-981a-19310391544c" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="2.3599963363756332E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b51ab6db-ed32-3f7b-b7ce-8f5ed4c13b00" version="00.00.022" uri="../flows/b51ab6db-ed32-3f7b-b7ce-8f5ed4c13b00.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, battery electric - opportunity charging, LTO battery, 13m single deck urban bus, 2020</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.3599963363756332E-4</meanAmount>
+            <resultingAmount>2.3599963363756332E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020, assume NMC battery technology dominant, 80% overnight charging</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="fa6fda02-deeb-38a4-bd8b-3792298a9881" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.0016494616923303114">
+            <referenceToFlowDataSet type="flow data set" refObjectId="192d6774-e344-35d2-8e35-21f28a78aaf1" version="00.00.022" uri="../flows/192d6774-e344-35d2-8e35-21f28a78aaf1.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, battery electric - opportunity charging, LTO battery, 18m articulated urban bus, 2020</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0016494616923303114</meanAmount>
+            <resultingAmount>0.0016494616923303114</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020, assume NMC battery technology dominant, 80% overnight charging</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="bdbcf889-789f-3633-bf6b-c07e5bd53209" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="4.163297441217038E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5c222eab-d9f8-3460-8318-0b736986f5a7" version="00.00.022" uri="../flows/5c222eab-d9f8-3460-8318-0b736986f5a7.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, battery electric - opportunity charging, LTO battery, 9m midibus, 2020</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.163297441217038E-4</meanAmount>
+            <resultingAmount>4.163297441217038E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020, assume NMC battery technology dominant, 80% overnight charging</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="ad5d8781-4c2b-3a8f-a9a4-224944cbf30f" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="9.439985345502533E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe10f361-fb45-3f9c-a251-a74a3d3f9d2e" version="00.00.022" uri="../flows/fe10f361-fb45-3f9c-a251-a74a3d3f9d2e.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, battery electric - overnight charging, NMC-622 battery, 13m single deck urban bus, 2020</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.439985345502533E-4</meanAmount>
+            <resultingAmount>9.439985345502533E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020, assume NMC battery technology dominant, 80% overnight charging</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="8c53aa72-14d8-3e45-94bf-6af24525936e" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.006597846769321246">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fc4878f9-b33d-30c9-bdd7-f1d4940df9ca" version="00.00.022" uri="../flows/fc4878f9-b33d-30c9-bdd7-f1d4940df9ca.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, battery electric - overnight charging, NMC-622 battery, 18m articulated urban bus, 2020</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.006597846769321246</meanAmount>
+            <resultingAmount>0.006597846769321246</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020, assume NMC battery technology dominant, 80% overnight charging</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="ab3585a6-206b-3d1b-981f-88bc8d707d93" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.0016653189764868153">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2f39c1e2-3de0-3512-b04e-ddb709e651b9" version="00.00.022" uri="../flows/2f39c1e2-3de0-3512-b04e-ddb709e651b9.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, battery electric - overnight charging, NMC-622 battery, 9m midibus, 2020</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0016653189764868153</meanAmount>
+            <resultingAmount>0.0016653189764868153</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020, assume NMC battery technology dominant, 80% overnight charging</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="ab7dfbac-3ddb-31d5-b6b6-f1b0b27c362b" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.0010176666339617403">
+            <referenceToFlowDataSet type="flow data set" refObjectId="89415924-11f8-3adc-b318-e7acf9c8787d" version="00.00.022" uri="../flows/89415924-11f8-3adc-b318-e7acf9c8787d.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, compressed gas, 100% biomethane, 13m single deck urban bus, 2010, EURO-V</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0010176666339617403</meanAmount>
+            <resultingAmount>0.0010176666339617403</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="5487a5a9-3066-3f54-9ffe-6215f926caab" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="5.735368977812912E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="efcf7c3d-2d5a-3825-ad7f-9101786e65d0" version="00.00.022" uri="../flows/efcf7c3d-2d5a-3825-ad7f-9101786e65d0.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, compressed gas, 100% biomethane, 13m single deck urban bus, 2020, EURO-VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.735368977812912E-4</meanAmount>
+            <resultingAmount>5.735368977812912E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="a4c6646e-268a-378c-9ddd-2e485df191e1" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.0018012193636912739">
+            <referenceToFlowDataSet type="flow data set" refObjectId="09189cb8-e2c4-3ff1-820c-c78d37ecdac0" version="00.00.022" uri="../flows/09189cb8-e2c4-3ff1-820c-c78d37ecdac0.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, compressed gas, 100% biomethane, 18m articulated urban bus, 2010, EURO-V</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0018012193636912739</meanAmount>
+            <resultingAmount>0.0018012193636912739</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="d954a94b-d549-378d-a6d7-a73df3f8b38f" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.002709091664679929">
+            <referenceToFlowDataSet type="flow data set" refObjectId="11372b29-db0e-3a20-92e4-230249aefedc" version="00.00.022" uri="../flows/11372b29-db0e-3a20-92e4-230249aefedc.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, compressed gas, 13m single deck urban bus, 2010, EURO-V</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.002709091664679929</meanAmount>
+            <resultingAmount>0.002709091664679929</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="38504fb3-804b-3229-99b9-b022763caa90" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.0015267907754005178">
+            <referenceToFlowDataSet type="flow data set" refObjectId="de8d839d-6e74-3693-905f-7140788a4465" version="00.00.022" uri="../flows/de8d839d-6e74-3693-905f-7140788a4465.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, compressed gas, 13m single deck urban bus, 2020, EURO-VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0015267907754005178</meanAmount>
+            <resultingAmount>0.0015267907754005178</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="4ef93067-4088-38f0-860b-35b4b383df7a" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.004794957603591403">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6ef8340e-ac90-31c3-9518-b3870021aacc" version="00.00.022" uri="../flows/6ef8340e-ac90-31c3-9518-b3870021aacc.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, compressed gas, 18m articulated urban bus, 2010, EURO-V</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.004794957603591403</meanAmount>
+            <resultingAmount>0.004794957603591403</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="7928b96a-3190-31e7-b768-9cd149c7ab22" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.0584942101769592">
+            <referenceToFlowDataSet type="flow data set" refObjectId="038b0b38-c417-3daf-be65-d2f3d98e37b7" version="00.00.022" uri="../flows/038b0b38-c417-3daf-be65-d2f3d98e37b7.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, diesel hybrid, 13m single deck urban bus, 2020, EURO-VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0584942101769592</meanAmount>
+            <resultingAmount>0.0584942101769592</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="54cf62cf-f937-34fc-9faa-a4e3a8283568" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.0184667998418045">
+            <referenceToFlowDataSet type="flow data set" refObjectId="04445fcd-8145-3935-82a7-4d7dd6faa6b7" version="00.00.022" uri="../flows/04445fcd-8145-3935-82a7-4d7dd6faa6b7.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, diesel hybrid, 18m articulated urban bus, 2020, EURO-VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0184667998418045</meanAmount>
+            <resultingAmount>0.0184667998418045</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="b700d3e0-67c1-3ec1-8a2d-54e1bb211baf" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a5263058-205d-3eb1-afbc-b6afbbe903e6" version="00.00.022" uri="../flows/a5263058-205d-3eb1-afbc-b6afbbe903e6.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, diesel hybrid, 9m midibus, 2020, EURO-VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0</meanAmount>
+            <resultingAmount>0.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="c2f32f93-c2bb-3f87-9cb5-0ef9a0b1ee2c" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.008293822581024464">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3589b1b0-2a0f-3a24-8045-f100ec6297f0" version="00.00.022" uri="../flows/3589b1b0-2a0f-3a24-8045-f100ec6297f0.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, diesel, 13m single deck urban bus, 2002, EURO-III</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.008293822581024464</meanAmount>
+            <resultingAmount>0.008293822581024464</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="104aea03-2c14-3db2-a905-f97bece03f58" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.020577693398405175">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a7284f10-c1ad-399f-ade8-054b63641dfc" version="00.00.022" uri="../flows/a7284f10-c1ad-399f-ade8-054b63641dfc.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, diesel, 13m single deck urban bus, 2006, EURO-IV</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.020577693398405175</meanAmount>
+            <resultingAmount>0.020577693398405175</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="4b8f9791-1ca4-3dc5-93be-08d4a526901e" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.15766860467740745">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4ff6c31b-e2f1-38fe-a11f-9adf40144b7d" version="00.00.022" uri="../flows/4ff6c31b-e2f1-38fe-a11f-9adf40144b7d.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, diesel, 13m single deck urban bus, 2010, EURO-V</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.15766860467740745</meanAmount>
+            <resultingAmount>0.15766860467740745</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="f223736c-346e-384a-8292-cc1ab640ad0f" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.32712253098361943">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8c50d909-fe5b-3f06-940c-1aebbbf427d4" version="00.00.022" uri="../flows/8c50d909-fe5b-3f06-940c-1aebbbf427d4.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, diesel, 13m single deck urban bus, 2020, EURO-VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.32712253098361943</meanAmount>
+            <resultingAmount>0.32712253098361943</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="ba6a9c86-e9f8-3236-818f-bf8eb2deb575" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.012114018798772328">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ed9ef9fb-bd1e-3fd6-ae53-80c20415c86b" version="00.00.022" uri="../flows/ed9ef9fb-bd1e-3fd6-ae53-80c20415c86b.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, diesel, 18m articulated urban bus, 2002, EURO-III</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.012114018798772328</meanAmount>
+            <resultingAmount>0.012114018798772328</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="7fd60e27-f3be-31ea-9516-ab9778d69443" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.017818527576065096">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7fe5b7df-f4fc-38f7-b121-a2568e7074a4" version="00.00.022" uri="../flows/7fe5b7df-f4fc-38f7-b121-a2568e7074a4.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, diesel, 18m articulated urban bus, 2006, EURO-IV</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.017818527576065096</meanAmount>
+            <resultingAmount>0.017818527576065096</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="19000694-0408-37a2-ac05-be0b90fb0e4d" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.09924209407869425">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b03668a4-d94f-3bb2-9695-7b07f007a6d9" version="00.00.022" uri="../flows/b03668a4-d94f-3bb2-9695-7b07f007a6d9.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, diesel, 18m articulated urban bus, 2010, EURO-V</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.09924209407869425</meanAmount>
+            <resultingAmount>0.09924209407869425</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="782393a7-dec7-3fe2-8c58-ebeb06ca8ced" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.1926496879233161">
+            <referenceToFlowDataSet type="flow data set" refObjectId="76951bb0-ba35-3cb1-aa17-4e11fab18da3" version="00.00.022" uri="../flows/76951bb0-ba35-3cb1-aa17-4e11fab18da3.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, diesel, 18m articulated urban bus, 2020, EURO-VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1926496879233161</meanAmount>
+            <resultingAmount>0.1926496879233161</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="1089dd51-8320-3fab-97ab-b09ff8f049f7" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="3.726359964522731E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="01e06f2d-cf89-3c13-ba53-9f30fecd6e60" version="00.00.022" uri="../flows/01e06f2d-cf89-3c13-ba53-9f30fecd6e60.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, diesel, 9m midibus, 2002, EURO-III</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.726359964522731E-4</meanAmount>
+            <resultingAmount>3.726359964522731E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="9001edf7-3e07-37bd-9a7a-ca26e4d76bf8" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.0015588375195330448">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9b01d18c-e679-382e-a7da-bed07be80f93" version="00.00.022" uri="../flows/9b01d18c-e679-382e-a7da-bed07be80f93.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, diesel, 9m midibus, 2006, EURO-IV</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0015588375195330448</meanAmount>
+            <resultingAmount>0.0015588375195330448</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="4210c82a-de1d-32d7-998b-e0efc5576dd6" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.013200647631831194">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3a74a15e-71d2-3871-a595-47cfdfae9dc7" version="00.00.022" uri="../flows/3a74a15e-71d2-3871-a595-47cfdfae9dc7.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, diesel, 9m midibus, 2010, EURO-V</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.013200647631831194</meanAmount>
+            <resultingAmount>0.013200647631831194</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="44828e38-8c56-3fb3-9522-41e8d5eb8d82" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="0.048150528308571555">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e3bf94f8-d0e4-39e6-b316-95f1f2e2872e" version="00.00.022" uri="../flows/e3bf94f8-d0e4-39e6-b316-95f1f2e2872e.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, diesel, 9m midibus, 2020, EURO-VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.048150528308571555</meanAmount>
+            <resultingAmount>0.048150528308571555</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:defaultProvider="b25bd553-197c-3879-97c3-d4d0758dcb99" olca:pedigreeUncertainty="(2;1;2;1;1;1)" olca:amount="3.371422179899738E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0d04b4cc-2f77-3a2b-819e-11b28f4b03ff" version="00.00.022" uri="../flows/0d04b4cc-2f77-3a2b-819e-11b28f4b03ff.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger bus, fuel cell electric, hydrogen from electrolysis, 13m single deck urban bus, 2020</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.371422179899738E-4</meanAmount>
+            <resultingAmount>3.371422179899738E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0289334812089432</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (2,1,2,1,1,1); Share of technologies from HBEFA 5.1 for CH 2020</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

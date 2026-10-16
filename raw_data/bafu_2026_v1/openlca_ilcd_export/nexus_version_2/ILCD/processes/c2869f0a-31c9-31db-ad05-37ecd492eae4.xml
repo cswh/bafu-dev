@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>c2869f0a-31c9-31db-ad05-37ecd492eae4</common:UUID>
+            <name>
+                <baseName xml:lang="en">Brake wear emissions, lorry</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="2279f95c-4711-3ee2-8393-0e7a7bbfe8d1">transport systems</common:class>
+                    <common:class level="1" classId="a68df7d5-0492-3d7e-a949-c23730a59b9f">road</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Calculation of non-exhaust emissions (tyre, brake and road wear emissions) are based on EMEP/EEA (2013) and values for net vehicle weights and average load factors. Net vehicle weights are taken from the EcoTransIT (2011) report whilst the average load factors are taken from the Tremove model v2.7b (2009) and EcoTransIT (2011) report. The brake wear emissions are to air only. All particulates are accounted for as emissions to air and have particle sizes below 100um. Anything above this does not remain airborne over longer periods. It must be noted that elementary and organic carbon, substances very dominant in the emissions profile from brake wear are currently not available in the ecoinvent database and are therfore not accounted for in this datase other than their representation as unspecified particulate emissions. This means that although the datasets represent 1kg of brake wear the emissions do not sum up to 1kg. In order to use the treatment of non-exhaust emissions in a transport dataset the quantity of emissions per tkm must be calculated. This must then be devided by the specific load factor of the transport in question.Non-exhaust emissions are considered to be linearly scalable to gross vehicle weight (GVW). For brake wear emissions from lorries the specific quantity is 8.13E-9 kg/kg GVW*km.;
+UUID: c2869f0a-31c9-31db-ad05-37ecd492eae4</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="253370761200000" olca:endDate="253399618800000">
+            <common:referenceYear>9999</common:referenceYear>
+            <common:dataSetValidUntil>9999</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Unspecified</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="RER" latitudeAndLongitude="55.895602991909776;28.119894957029818">
+                <descriptionOfRestrictions xml:lang="en">&lt;null&gt;</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Unspecified\n\n# Included processes\nThe activity starts with the friction of lorry brakes. The activity ends with emissions of lorry brake wear.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="1bf11325-6d87-3d87-97b5-78b9cc66f4ef" version="00.00.000" uri="../sources/1bf11325-6d87-3d87-97b5-78b9cc66f4ef.xml">
+                <common:shortDescription xml:lang="en">2016 - Mobitool - Frischknecht</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Literature </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="6108e6fa-8d8c-3be5-a4d6-f634fb82453b" version="00.00.000" uri="../contacts/6108e6fa-8d8c-3be5-a4d6-f634fb82453b.xml">
+                    <common:shortDescription xml:lang="en">Andrew Simons</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="fca0bf47-00d4-376a-b9c8-b9c5234fdd4a" version="00.00.000" uri="../contacts/fca0bf47-00d4-376a-b9c8-b9c5234fdd4a.xml">
+                <common:shortDescription xml:lang="en">Frank Werner</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:50:12.064+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="6108e6fa-8d8c-3be5-a4d6-f634fb82453b" version="00.00.000" uri="../contacts/6108e6fa-8d8c-3be5-a4d6-f634fb82453b.xml">
+                <common:shortDescription xml:lang="en">Andrew Simons</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2022-12-28T15:59:38.290+01:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="1bf11325-6d87-3d87-97b5-78b9cc66f4ef" version="00.00.000" uri="../sources/1bf11325-6d87-3d87-97b5-78b9cc66f4ef.xml">
+                <common:shortDescription xml:lang="en">2016 - Mobitool - Frischknecht</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>false</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.0943">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e98b9661-2844-49dc-9ae4-855b9912c700" version="00.00.000" uri="../flows/e98b9661-2844-49dc-9ae4-855b9912c700.xml">
+                <common:shortDescription xml:lang="en">Silicon</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0943</meanAmount>
+            <resultingAmount>0.0943</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="9.38E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dc6dbdaa-9f13-43a8-8af5-6603688c6ad0" version="00.00.000" uri="../flows/dc6dbdaa-9f13-43a8-8af5-6603688c6ad0.xml">
+                <common:shortDescription xml:lang="en">Arsenic ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.38E-5</meanAmount>
+            <resultingAmount>9.38E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="9.17E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="591b0a62-8064-4697-86ed-47bfa1f8b5e6" version="00.00.000" uri="../flows/591b0a62-8064-4697-86ed-47bfa1f8b5e6.xml">
+                <common:shortDescription xml:lang="en">Vanadium V</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.17E-4</meanAmount>
+            <resultingAmount>9.17E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.0464">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9b00c244-fcce-4d38-922b-601a81f2ba34" version="00.00.000" uri="../flows/9b00c244-fcce-4d38-922b-601a81f2ba34.xml">
+                <common:shortDescription xml:lang="en">Sulfate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0464</meanAmount>
+            <resultingAmount>0.0464</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.02">
+            <referenceToFlowDataSet type="flow data set" refObjectId="66020d27-7ae4-4e59-83a3-89214b72c40a" version="00.00.000" uri="../flows/66020d27-7ae4-4e59-83a3-89214b72c40a.xml">
+                <common:shortDescription xml:lang="en">Particulate Matter, &gt; 10 um</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.02</meanAmount>
+            <resultingAmount>0.02</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.00972">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2a7b68ff-f12a-44c6-8b31-71ec91d29889" version="00.00.000" uri="../flows/2a7b68ff-f12a-44c6-8b31-71ec91d29889.xml">
+                <common:shortDescription xml:lang="en">Tin ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00972</meanAmount>
+            <resultingAmount>0.00972</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.0107">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b87016c6-ac91-4414-98ce-fb665e0a6d2e" version="00.00.000" uri="../flows/b87016c6-ac91-4414-98ce-fb665e0a6d2e.xml">
+                <common:shortDescription xml:lang="en">Calcium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0107</meanAmount>
+            <resultingAmount>0.0107</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="2.47E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3e5d7d91-67d7-4afb-91dd-36fab58e4685" version="00.00.000" uri="../flows/3e5d7d91-67d7-4afb-91dd-36fab58e4685.xml">
+                <common:shortDescription xml:lang="en">PAH, polycyclic aromatic hydrocarbons</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.47E-6</meanAmount>
+            <resultingAmount>2.47E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="8.89E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f0e28a62-ddf9-4c93-af81-676a58c3f2d4" version="00.00.000" uri="../flows/f0e28a62-ddf9-4c93-af81-676a58c3f2d4.xml">
+                <common:shortDescription xml:lang="en">Cobalt II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.89E-6</meanAmount>
+            <resultingAmount>8.89E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="3.11E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1c5a7322-9261-4d59-a692-adde6c12de92" version="00.00.000" uri="../flows/1c5a7322-9261-4d59-a692-adde6c12de92.xml">
+                <common:shortDescription xml:lang="en">Cadmium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.11E-5</meanAmount>
+            <resultingAmount>3.11E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="30" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.071">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ec8144d6-d123-43b1-9c17-a295422a0498" version="00.00.000" uri="../flows/ec8144d6-d123-43b1-9c17-a295422a0498.xml">
+                <common:shortDescription xml:lang="en">Copper ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.071</meanAmount>
+            <resultingAmount>0.071</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="31" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.00208">
+            <referenceToFlowDataSet type="flow data set" refObjectId="39d1390a-ded6-41cb-a536-d47510bf2fbc" version="00.00.000" uri="../flows/39d1390a-ded6-41cb-a536-d47510bf2fbc.xml">
+                <common:shortDescription xml:lang="en">Chlorine</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00208</meanAmount>
+            <resultingAmount>0.00208</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="32" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.59">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b967e1bf-f09b-4c89-8740-ace21db47bba" version="00.00.000" uri="../flows/b967e1bf-f09b-4c89-8740-ace21db47bba.xml">
+                <common:shortDescription xml:lang="en">Particulate Matter, &gt; 2.5 um and &lt; 10um</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.59</meanAmount>
+            <resultingAmount>0.59</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="33" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="7.22E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0d9f52b2-f2d5-46a3-90a3-e22ef252cc37" version="00.00.000" uri="../flows/0d9f52b2-f2d5-46a3-90a3-e22ef252cc37.xml">
+                <common:shortDescription xml:lang="en">Strontium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.22E-4</meanAmount>
+            <resultingAmount>7.22E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.291">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8dba66e2-0f2e-4038-84ef-1e40b4f573a6" version="00.00.000" uri="../flows/8dba66e2-0f2e-4038-84ef-1e40b4f573a6.xml">
+                <common:shortDescription xml:lang="en">Iron ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.291</meanAmount>
+            <resultingAmount>0.291</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.00342">
+            <referenceToFlowDataSet type="flow data set" refObjectId="295060ba-3c3d-45e4-99ca-e17b1204b553" version="00.00.000" uri="../flows/295060ba-3c3d-45e4-99ca-e17b1204b553.xml">
+                <common:shortDescription xml:lang="en">Manganese II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00342</meanAmount>
+            <resultingAmount>0.00342</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.00285">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ff65658c-2d39-44a2-b23e-7ec3c644f064" version="00.00.000" uri="../flows/ff65658c-2d39-44a2-b23e-7ec3c644f064.xml">
+                <common:shortDescription xml:lang="en">Aluminium III</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00285</meanAmount>
+            <resultingAmount>0.00285</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.139">
+            <referenceToFlowDataSet type="flow data set" refObjectId="77927dac-dea3-429d-a434-d5a71d92c4f7" version="00.00.000" uri="../flows/77927dac-dea3-429d-a434-d5a71d92c4f7.xml">
+                <common:shortDescription xml:lang="en">Antimony ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.139</meanAmount>
+            <resultingAmount>0.139</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="4.54E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a5506f4b-113f-4713-95c3-c819dde6e48b" version="00.00.000" uri="../flows/a5506f4b-113f-4713-95c3-c819dde6e48b.xml">
+                <common:shortDescription xml:lang="en">Nickel II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.54E-4</meanAmount>
+            <resultingAmount>4.54E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.0139">
+            <referenceToFlowDataSet type="flow data set" refObjectId="640e30d2-3158-4a1a-82ef-fd0c72922c9a" version="00.00.000" uri="../flows/640e30d2-3158-4a1a-82ef-fd0c72922c9a.xml">
+                <common:shortDescription xml:lang="en">Molybdenum VI</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0139</meanAmount>
+            <resultingAmount>0.0139</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.0535">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7e246e3a-5cff-43fc-a8e6-02d191424559" version="00.00.000" uri="../flows/7e246e3a-5cff-43fc-a8e6-02d191424559.xml">
+                <common:shortDescription xml:lang="en">Barium II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0535</meanAmount>
+            <resultingAmount>0.0535</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.0108">
+            <referenceToFlowDataSet type="flow data set" refObjectId="235b2f02-ff98-4da9-82e2-e4246c7b7990" version="00.00.000" uri="../flows/235b2f02-ff98-4da9-82e2-e4246c7b7990.xml">
+                <common:shortDescription xml:lang="en">Sodium I</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0108</meanAmount>
+            <resultingAmount>0.0108</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.0121">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5ce378a0-b48d-471c-977d-79681521efde" version="00.00.000" uri="../flows/5ce378a0-b48d-471c-977d-79681521efde.xml">
+                <common:shortDescription xml:lang="en">Zinc II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0121</meanAmount>
+            <resultingAmount>0.0121</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="7.27E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="756b1234-887b-406e-88ed-b50ba4694f09" version="00.00.000" uri="../flows/756b1234-887b-406e-88ed-b50ba4694f09.xml">
+                <common:shortDescription xml:lang="en">Potassium I</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.27E-4</meanAmount>
+            <resultingAmount>7.27E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="8.89E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="08a91e70-3ddc-11dd-9f7b-0050c2490048" version="00.00.000" uri="../flows/08a91e70-3ddc-11dd-9f7b-0050c2490048.xml">
+                <common:shortDescription xml:lang="en">Chromium III</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>8.89E-6</meanAmount>
+            <resultingAmount>8.89E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.005">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b15d845f-810e-4614-8633-af8bab2014ee" version="00.00.000" uri="../flows/b15d845f-810e-4614-8633-af8bab2014ee.xml">
+                <common:shortDescription xml:lang="en">Titanium ion</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.005</meanAmount>
+            <resultingAmount>0.005</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="2.78E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="454c61fd-c52b-4a04-9731-f141bb7b5264" version="00.00.000" uri="../flows/454c61fd-c52b-4a04-9731-f141bb7b5264.xml">
+                <common:shortDescription xml:lang="en">Selenium IV</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.78E-5</meanAmount>
+            <resultingAmount>2.78E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.0356">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fd7aa71c-508c-480d-81a6-8052aad92646" version="00.00.000" uri="../flows/fd7aa71c-508c-480d-81a6-8052aad92646.xml">
+                <common:shortDescription xml:lang="en">Sulfur dioxide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0356</meanAmount>
+            <resultingAmount>0.0356</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.00843">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8e123669-94d3-41d8-9480-a79211fe7c43" version="00.00.000" uri="../flows/8e123669-94d3-41d8-9480-a79211fe7c43.xml">
+                <common:shortDescription xml:lang="en">Lead II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00843</meanAmount>
+            <resultingAmount>0.00843</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.00222">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5e7cf95c-9cc3-4479-89af-55377b3db99c" version="00.00.000" uri="../flows/5e7cf95c-9cc3-4479-89af-55377b3db99c.xml">
+                <common:shortDescription xml:lang="en">Nitrate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00222</meanAmount>
+            <resultingAmount>0.00222</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bdd1d7b6-483b-34c6-8ff1-c2a36713feab" version="00.00.000" uri="../flows/bdd1d7b6-483b-34c6-8ff1-c2a36713feab.xml">
+                <common:shortDescription xml:lang="en">Brake wear emissions, lorry</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">Europe
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="5.56E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c24f5894-f95e-4661-ba76-130397348894" version="00.00.000" uri="../flows/c24f5894-f95e-4661-ba76-130397348894.xml">
+                <common:shortDescription xml:lang="en">Bromine</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.56E-5</meanAmount>
+            <resultingAmount>5.56E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;2;3;1;1;n.a.)" olca:amount="0.39">
+            <referenceToFlowDataSet type="flow data set" refObjectId="21e46cb8-6233-4c99-bac3-c41d2ab99498" version="00.00.000" uri="../flows/21e46cb8-6233-4c99-bac3-c41d2ab99498.xml">
+                <common:shortDescription xml:lang="en">Particulate Matter, &lt; 2.5 um</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.39</meanAmount>
+            <resultingAmount>0.39</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0591506030777682</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,1,1,na)
+Calculated value. Derived from EMEP/EEA (2013) and based on an average gross vehicle weight (GVW) of all truck categories and load factors.
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

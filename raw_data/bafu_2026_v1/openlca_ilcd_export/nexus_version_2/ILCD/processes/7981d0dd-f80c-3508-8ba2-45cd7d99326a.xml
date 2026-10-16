@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>7981d0dd-f80c-3508-8ba2-45cd7d99326a</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, supply mix GO</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="6299429b-5a23-3f58-ba95-d33dc8e1875b">electricity</common:class>
+                    <common:class level="1" classId="b3130dcd-51b6-31b7-b98e-f30e6a0e917c">supply mix</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Electricity domestic net production shares are based on annual averages for the year 2019; UUID:7981d0dd-f80c-3508-8ba2-45cd7d99326a</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1577833200000" olca:endDate="1577833200000">
+            <common:referenceYear>2020</common:referenceYear>
+            <common:dataSetValidUntil>2020</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time period of statistics used.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Data apply to public and self producers in Switzerland and from imports.
+Wind power plants are European averages.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">No technology description is provided because the dataset just describes the power plant portfolio of the respective country using current average technology per energy carrier.\n\n# Included processes\nIncluded are the shares of domestic electricity production and imports by technology at the busbar. Not included are transformation, transport or distribution losses</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="dceef253-c5b0-3676-8792-3b64fd5fd8fc" version="00.00.000" uri="../sources/dceef253-c5b0-3676-8792-3b64fd5fd8fc.xml">
+                <common:shortDescription xml:lang="en">2022 - Energy label for passenger cars - Frischknecht</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistical data</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">automatic validation in Excel G:\Projekte laufend\754 Aktualisierung Energieetikette 2022 BFE\EcoSpold\Strommix Schweiz 2020\[754-StrommixSchweiz2020_v0.1.xlsx]X-Process</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:51:21.655+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2022-05-10T11:25:04.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="dceef253-c5b0-3676-8792-3b64fd5fd8fc" version="00.00.000" uri="../sources/dceef253-c5b0-3676-8792-3b64fd5fd8fc.xml">
+                <common:shortDescription xml:lang="en">2022 - Energy label for passenger cars - Frischknecht</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b35b43a0-cf11-3cf1-ba91-54faaf294f6c" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.014075">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b9a490eb-5dd2-3d4b-93c6-4da877870523" version="00.00.000" uri="../flows/b9a490eb-5dd2-3d4b-93c6-4da877870523.xml">
+                <common:shortDescription xml:lang="en">Electricity, at wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.05067000000000001</meanAmount>
+            <resultingAmount>0.05067000000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f566629f-cb3c-361b-a2f1-ad710225f81d" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="7.4136E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="648fefba-a431-39b9-a9ec-d960cae17096" version="00.00.004" uri="../flows/648fefba-a431-39b9-a9ec-d960cae17096.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 1MWth, wood chips, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.668896E-4</meanAmount>
+            <resultingAmount>2.668896E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="fbd1f9e7-9b53-32ce-b7b5-29dd0a7a66bf" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.027316">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0ebc7d9c-a2aa-3522-ab24-c2498293b433" version="00.00.006" uri="../flows/0ebc7d9c-a2aa-3522-ab24-c2498293b433.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at reservoir power plant, non alpine regions</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0983376</meanAmount>
+            <resultingAmount>0.0983376</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="98d8c27e-4603-3c15-b75a-fe61a5997d33" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="1.0744E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b1e82e30-47f7-38ae-9b84-7ce9193f29dd" version="00.00.000" uri="../flows/b1e82e30-47f7-38ae-9b84-7ce9193f29dd.xml">
+                <common:shortDescription xml:lang="en">Electricity, production mix photovoltaic, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.86784E-4</meanAmount>
+            <resultingAmount>3.86784E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="a9f81d35-ac75-3917-8e35-e9c000a104e6" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.0074136">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ce4cbad-79fa-333c-9a41-723e3bce5740" version="00.00.000" uri="../flows/7ce4cbad-79fa-333c-9a41-723e3bce5740.xml">
+                <common:shortDescription xml:lang="en">Electricity from waste, at municipal waste incineration plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.02668896</meanAmount>
+            <resultingAmount>0.02668896</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="9c67c892-d289-3a7d-bf72-cbfd7d0b3484" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.14341">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4183acf1-db0a-3c51-ad72-cf3b33aa9f40" version="00.00.014" uri="../flows/4183acf1-db0a-3c51-ad72-cf3b33aa9f40.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at run-of-river power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.5162760000000001</meanAmount>
+            <resultingAmount>0.5162760000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="29612bfe-5e20-37df-a2d4-e255324c5dbe" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="1.0744E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ae34201f-c861-3fb3-a83f-832ad113c8db" version="00.00.008" uri="../flows/ae34201f-c861-3fb3-a83f-832ad113c8db.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 300kWth, diesel, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.86784E-4</meanAmount>
+            <resultingAmount>3.86784E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="d1c86f4a-5d63-3762-8b21-a103fa453547" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.0011819">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5551f42d-89e2-3240-b76f-d3777ecdc020" version="00.00.004" uri="../flows/5551f42d-89e2-3240-b76f-d3777ecdc020.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 1MWth, natural gas, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00425484</meanAmount>
+            <resultingAmount>0.00425484</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b5fde38b-ee84-39b8-bed7-216d51f4a90e" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.12845">
+            <referenceToFlowDataSet type="flow data set" refObjectId="95532735-a62a-3cff-b685-f41bc4be9261" version="00.00.010" uri="../flows/95532735-a62a-3cff-b685-f41bc4be9261.xml">
+                <common:shortDescription xml:lang="en">Electricity, nuclear, at power plant pressure water reactor</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.46242000000000005</meanAmount>
+            <resultingAmount>0.46242000000000005</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="a6c6744d-d6e7-3804-87b2-e1efa1a9146b" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.083531">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3d6d1a52-2cc0-34fd-9ee9-0d143ee11f5b" version="00.00.015" uri="../flows/3d6d1a52-2cc0-34fd-9ee9-0d143ee11f5b.xml">
+                <common:shortDescription xml:lang="en">Electricity, nuclear, at power plant boiling water reactor</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.30071159999999997</meanAmount>
+            <resultingAmount>0.30071159999999997</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e153215e-5b20-3008-8366-76412dad6b2a" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.0035329">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f511cc43-928a-3dd8-b338-407aaa45f7cf" version="00.00.004" uri="../flows/f511cc43-928a-3dd8-b338-407aaa45f7cf.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 300kWth, biomethane, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.01271844</meanAmount>
+            <resultingAmount>0.01271844</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, Pronovo Jahresbericht EVS, MKF 2020, BFE Statistik der erneuerbaren Energien 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="a9f81d35-ac75-3917-8e35-e9c000a104e6" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.015452">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ce4cbad-79fa-333c-9a41-723e3bce5740" version="00.00.000" uri="../flows/7ce4cbad-79fa-333c-9a41-723e3bce5740.xml">
+                <common:shortDescription xml:lang="en">Electricity from waste, at municipal waste incineration plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0556272</meanAmount>
+            <resultingAmount>0.0556272</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, Pronovo Jahresbericht EVS, MKF 2020, BFE Statistik der erneuerbaren Energien 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f566629f-cb3c-361b-a2f1-ad710225f81d" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.0065412">
+            <referenceToFlowDataSet type="flow data set" refObjectId="648fefba-a431-39b9-a9ec-d960cae17096" version="00.00.004" uri="../flows/648fefba-a431-39b9-a9ec-d960cae17096.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 1MWth, wood chips, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.023548319999999998</meanAmount>
+            <resultingAmount>0.023548319999999998</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, Pronovo Jahresbericht EVS, MKF 2020, BFE Statistik der erneuerbaren Energien 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f750cb25-3801-38c0-a8e1-454eec70b8f5" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.0029141">
+            <referenceToFlowDataSet type="flow data set" refObjectId="49478cac-f2d1-358b-a541-0ac8bd95296b" version="00.00.004" uri="../flows/49478cac-f2d1-358b-a541-0ac8bd95296b.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen with biogas engine, agricultural covered, alloc. exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.010490760000000002</meanAmount>
+            <resultingAmount>0.010490760000000002</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, Pronovo Jahresbericht EVS, MKF 2020, BFE Statistik der erneuerbaren Energien 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="d2ecb765-db25-37a5-b678-26606f6e2cf1" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.028698">
+            <referenceToFlowDataSet type="flow data set" refObjectId="07fd335d-d1b8-344c-afbd-c9f621f8e6f9" version="00.00.000" uri="../flows/07fd335d-d1b8-344c-afbd-c9f621f8e6f9.xml">
+                <common:shortDescription xml:lang="en">Electricity, production mix photovoltaic, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.10331280000000001</meanAmount>
+            <resultingAmount>0.10331280000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, Pronovo Jahresbericht EVS, MKF 2020, BFE Statistik der erneuerbaren Energien 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="542e8ae5-f22c-39fe-8d11-7681851e9dfc" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.0028068">
+            <referenceToFlowDataSet type="flow data set" refObjectId="24c231da-02b1-339d-8527-cdcded72509e" version="00.00.000" uri="../flows/24c231da-02b1-339d-8527-cdcded72509e.xml">
+                <common:shortDescription xml:lang="en">Electricity, at wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.01010448</meanAmount>
+            <resultingAmount>0.01010448</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, Pronovo Jahresbericht EVS, MKF 2020, BFE Statistik der erneuerbaren Energien 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="d1d1da4e-872e-31a3-9232-364044fde30f" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.022026">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5c25292c-1ec1-3d45-9e85-0cc1f1779490" version="00.00.000" uri="../flows/5c25292c-1ec1-3d45-9e85-0cc1f1779490.xml">
+                <common:shortDescription xml:lang="en">Electricity, residual mix</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0792936</meanAmount>
+            <resultingAmount>0.0792936</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); Non-verfied electricity; BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="6e6e5583-44b7-38c8-8f92-8dc8f85dbf1e" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.008488">
+            <referenceToFlowDataSet type="flow data set" refObjectId="af0c5780-3ba7-32cd-a88e-fac75a4f5cb8" version="00.00.000" uri="../flows/af0c5780-3ba7-32cd-a88e-fac75a4f5cb8.xml">
+                <common:shortDescription xml:lang="en">Electricity, from natural gas</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.030556800000000002</meanAmount>
+            <resultingAmount>0.030556800000000002</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="ee0f9f93-524a-380a-963a-5eb4a78b8d92" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.0025786">
+            <referenceToFlowDataSet type="flow data set" refObjectId="851788f3-4a4d-3c4b-b6a2-f5904354fff3" version="00.00.000" uri="../flows/851788f3-4a4d-3c4b-b6a2-f5904354fff3.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00928296</meanAmount>
+            <resultingAmount>0.00928296</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="a9f81d35-ac75-3917-8e35-e9c000a104e6" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="1.7513E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ce4cbad-79fa-333c-9a41-723e3bce5740" version="00.00.000" uri="../flows/7ce4cbad-79fa-333c-9a41-723e3bce5740.xml">
+                <common:shortDescription xml:lang="en">Electricity from waste, at municipal waste incineration plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.30468E-4</meanAmount>
+            <resultingAmount>6.30468E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f70df649-dd9e-3fef-b46e-6a867c000041" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.0017191">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ea9f641d-c74f-3abc-acad-29b3f7a5c681" version="00.00.010" uri="../flows/ea9f641d-c74f-3abc-acad-29b3f7a5c681.xml">
+                <common:shortDescription xml:lang="en">Electricity, nuclear, at power plant pressure water reactor</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.006188760000000001</meanAmount>
+            <resultingAmount>0.006188760000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f750cb25-3801-38c0-a8e1-454eec70b8f5" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="3.3028E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="49478cac-f2d1-358b-a541-0ac8bd95296b" version="00.00.004" uri="../flows/49478cac-f2d1-358b-a541-0ac8bd95296b.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen with biogas engine, agricultural covered, alloc. exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1890080000000002E-4</meanAmount>
+            <resultingAmount>1.1890080000000002E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="e153215e-5b20-3008-8366-76412dad6b2a" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="4.004E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f511cc43-928a-3dd8-b338-407aaa45f7cf" version="00.00.004" uri="../flows/f511cc43-928a-3dd8-b338-407aaa45f7cf.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 300kWth, biomethane, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.4414400000000002E-4</meanAmount>
+            <resultingAmount>1.4414400000000002E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="8b83697e-270a-36ef-bcd0-c913b8ee67be" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.29371">
+            <referenceToFlowDataSet type="flow data set" refObjectId="58f19637-0706-313c-8838-e060120368e5" version="00.00.006" uri="../flows/58f19637-0706-313c-8838-e060120368e5.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, net, at reservoir power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0573560000000002</meanAmount>
+            <resultingAmount>1.0573560000000002</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, own calculations</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="fcc4a324-b55c-3c58-9c7d-2fbc96cf4121" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.053953">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8cfd947f-c710-3954-b1ce-ce2e61124414" version="00.00.006" uri="../flows/8cfd947f-c710-3954-b1ce-ce2e61124414.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at small hydropower plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1942308</meanAmount>
+            <resultingAmount>0.1942308</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Flury &amp; Frischknecht 2012</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="be59485a-e0a8-3e2c-9f04-9312d2fea713" version="00.00.000" uri="../flows/be59485a-e0a8-3e2c-9f04-9312d2fea713.xml">
+                <common:shortDescription xml:lang="en">Electricity, supply mix GO</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="4ee29e29-9e37-376e-9340-831e6fbe5b37" olca:pedigreeUncertainty="(1;1;1;1;1;3)" olca:amount="0.22609">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7e12b7a1-f642-3f0c-98d5-b04fe37dd07e" version="00.00.014" uri="../flows/7e12b7a1-f642-3f0c-98d5-b04fe37dd07e.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at run-of-river power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.8139240000000001</meanAmount>
+            <resultingAmount>0.8139240000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103344</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Flury &amp; Frischknecht 2012</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

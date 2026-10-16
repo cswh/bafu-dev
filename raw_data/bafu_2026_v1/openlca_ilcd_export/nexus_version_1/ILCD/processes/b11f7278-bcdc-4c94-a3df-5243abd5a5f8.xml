@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>b11f7278-bcdc-4c94-a3df-5243abd5a5f8</common:UUID>
+            <name>
+                <baseName xml:lang="en">Transport, passenger car, fleet average</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="2279f95c-4711-3ee2-8393-0e7a7bbfe8d1">transport systems</common:class>
+                    <common:class level="1" classId="a68df7d5-0492-3d7e-a949-c23730a59b9f">road</common:class>
+                    <common:class level="2" classId="944e4422-9c8a-3ad4-9faa-fe1fdf65edb8">Transformation</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en"> Fleet average vehicle, based on HBEFA 4.1 fleet composition for 2020.. UUID: b11f7278-bcdc-4c94-a3df-5243abd5a5f8</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1577833200000" olca:endDate="1606777200000">
+            <common:referenceYear>2020</common:referenceYear>
+            <common:dataSetValidUntil>2020</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Base technology year of 2020</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="RER" latitudeAndLongitude="55.895602991909776;28.119894957029818">
+                <descriptionOfRestrictions xml:lang="en">Unspecified</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Fleet average vehicle, based on HBEFA 4.1 fleet composition for 2020.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="7eebd63f-adfa-3256-bb94-bc0706190b0b" version="00.00.000" uri="../sources/7eebd63f-adfa-3256-bb94-bc0706190b0b.xml">
+                <common:shortDescription xml:lang="en">2023 - LCI on-road vehicles - Sacchi</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Unspecified</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Unspecified</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="38b429bd-4961-37c6-b2e8-98ea67ee44eb" version="00.00.000" uri="../contacts/38b429bd-4961-37c6-b2e8-98ea67ee44eb.xml">
+                    <common:shortDescription xml:lang="en">Brian Cox</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8233df26-b658-3d5a-8b03-6e3d7fb88c58" version="00.00.000" uri="../contacts/8233df26-b658-3d5a-8b03-6e3d7fb88c58.xml">
+                <common:shortDescription xml:lang="en">Romain Sacchi</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:54:29.056+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="efab6acc-e069-365d-b922-c7081723eaa3" version="00.00.000" uri="../contacts/efab6acc-e069-365d-b922-c7081723eaa3.xml">
+                <common:shortDescription xml:lang="en">Julien McTighe</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T10:01:07.714+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.022</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="7eebd63f-adfa-3256-bb94-bc0706190b0b" version="00.00.000" uri="../sources/7eebd63f-adfa-3256-bb94-bc0706190b0b.xml">
+                <common:shortDescription xml:lang="en">2023 - LCI on-road vehicles - Sacchi</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>false</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="56" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="bffde016-02d6-3823-94d8-2b3a6cc2cc77" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0012">
+            <referenceToFlowDataSet type="flow data set" refObjectId="11e2ccdb-3d40-3315-ac35-7b5a26bf45bb" version="00.00.022" uri="../flows/11e2ccdb-3d40-3315-ac35-7b5a26bf45bb.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline hybrid, Medium, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.2</meanAmount>
+            <resultingAmount>1.2</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="57" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="2f90715a-e9d5-3cef-a29e-bed98bb71966" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="8.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3acb7105-6028-3fd5-9acb-1e3efb37bc09" version="00.00.022" uri="../flows/3acb7105-6028-3fd5-9acb-1e3efb37bc09.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline hybrid, Medium, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.8</meanAmount>
+            <resultingAmount>0.8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="58" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="1b2dcbbb-0298-38f2-86bd-88835f0eb749" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0013">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2b1d4ef6-226b-372f-9c6e-e68b0b1208bc" version="00.00.022" uri="../flows/2b1d4ef6-226b-372f-9c6e-e68b0b1208bc.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline hybrid, Medium, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.3</meanAmount>
+            <resultingAmount>1.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="59" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="36836f07-c9e4-311a-99cb-ec2f6ae67a92" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="8.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="20343c69-fe2f-34fd-8e7e-382e518cf1b6" version="00.00.022" uri="../flows/20343c69-fe2f-34fd-8e7e-382e518cf1b6.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline hybrid, Medium, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.8</meanAmount>
+            <resultingAmount>0.8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="60" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="766a2a0d-1801-3baa-905d-dfeb3aaba291" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.001">
+            <referenceToFlowDataSet type="flow data set" refObjectId="62718eaa-368a-36a3-80f4-9de1e033307d" version="00.00.022" uri="../flows/62718eaa-368a-36a3-80f4-9de1e033307d.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline hybrid, Medium, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="61" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="cde82775-d357-3c39-9556-d45ae8dc468d" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.003">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e03a0ba9-c6c7-3396-8353-72556efddc1f" version="00.00.022" uri="../flows/e03a0ba9-c6c7-3396-8353-72556efddc1f.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel hybrid, Medium, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.0</meanAmount>
+            <resultingAmount>3.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="62" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="80ca5cf2-694e-361a-a639-fc288a88f39b" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.002">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3effa664-e47e-3591-9740-5d8e7aa638f7" version="00.00.022" uri="../flows/3effa664-e47e-3591-9740-5d8e7aa638f7.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel hybrid, Medium, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.0</meanAmount>
+            <resultingAmount>2.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="63" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="3ea0947f-7205-3cdc-8c18-d426428018b6" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0035">
+            <referenceToFlowDataSet type="flow data set" refObjectId="102abcc8-0fbe-30af-9d53-ca88f14f44fc" version="00.00.022" uri="../flows/102abcc8-0fbe-30af-9d53-ca88f14f44fc.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel hybrid, Medium, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.5</meanAmount>
+            <resultingAmount>3.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="64" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="29c4de36-883f-3f74-8526-6391147846c7" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0024">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9c525f99-a31c-3473-98e5-75b62b48c91a" version="00.00.022" uri="../flows/9c525f99-a31c-3473-98e5-75b62b48c91a.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel hybrid, Medium, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.4</meanAmount>
+            <resultingAmount>2.4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="65" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="d7e03f35-a212-313c-85bc-820cbf80264b" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0027">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2ebc9178-ae98-37ea-b7d4-4c655d9cd3b5" version="00.00.022" uri="../flows/2ebc9178-ae98-37ea-b7d4-4c655d9cd3b5.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel hybrid, Medium, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.7</meanAmount>
+            <resultingAmount>2.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="66" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="c2ad6ab4-508c-382a-8297-07bd3cdedf99" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="8.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="49097b1b-1408-353b-abd2-eb0f9716f21e" version="00.00.022" uri="../flows/49097b1b-1408-353b-abd2-eb0f9716f21e.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin gasoline hybrid, Medium, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.8</meanAmount>
+            <resultingAmount>0.8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="67" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="959eeac9-b52d-39b9-b03d-bb3c22ad1627" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="3.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0738ce3c-fe15-3e4d-95b9-4d99c0cc3f9b" version="00.00.022" uri="../flows/0738ce3c-fe15-3e4d-95b9-4d99c0cc3f9b.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin gasoline hybrid, Medium, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.3</meanAmount>
+            <resultingAmount>0.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="68" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="57ed2498-9a02-3c09-895f-2bef6ffa4b5d" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="3.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c6f5d13d-73d1-3ed4-8606-f60970229fe3" version="00.00.022" uri="../flows/c6f5d13d-73d1-3ed4-8606-f60970229fe3.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin gasoline hybrid, Medium, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.3</meanAmount>
+            <resultingAmount>0.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="69" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="4afe97b1-2fec-3cd5-a95a-646feea22316" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="2.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="43933f5f-ccab-3b98-b259-e2dc65805365" version="00.00.022" uri="../flows/43933f5f-ccab-3b98-b259-e2dc65805365.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin gasoline hybrid, Medium, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.2</meanAmount>
+            <resultingAmount>0.2</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="70" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="fe868c07-1dd4-3df8-be93-43d18e530d11" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="2.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5f945c3a-553c-3fc1-9b68-ada74a29e036" version="00.00.022" uri="../flows/5f945c3a-553c-3fc1-9b68-ada74a29e036.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin gasoline hybrid, Medium, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.2</meanAmount>
+            <resultingAmount>0.2</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="71" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="31daae12-3dc3-3cb5-901e-c8c9f195dd71" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0021">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a336141b-02a1-33c4-889a-8493d99d86a3" version="00.00.022" uri="../flows/a336141b-02a1-33c4-889a-8493d99d86a3.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin diesel hybrid, Medium, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.1</meanAmount>
+            <resultingAmount>2.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="40" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="aa2bc1c0-1384-37ec-855f-22d4b9a00061" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0171">
+            <referenceToFlowDataSet type="flow data set" refObjectId="71fc5f17-b9a1-30e5-b62c-eb951d336e10" version="00.00.022" uri="../flows/71fc5f17-b9a1-30e5-b62c-eb951d336e10.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Medium, 2008, EURO-4</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>17.1</meanAmount>
+            <resultingAmount>17.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="41" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="35323e1b-708f-394b-a88a-ea842104bbcb" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0515">
+            <referenceToFlowDataSet type="flow data set" refObjectId="75de1bd5-feaf-3f04-b0f2-a5c77946de03" version="00.00.022" uri="../flows/75de1bd5-feaf-3f04-b0f2-a5c77946de03.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Medium, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>51.5</meanAmount>
+            <resultingAmount>51.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="42" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="7c5b155c-87f0-3fdf-92ed-967563e527d5" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0188">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b414dcf2-6bf7-358a-ab01-c5947335e73e" version="00.00.022" uri="../flows/b414dcf2-6bf7-358a-ab01-c5947335e73e.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Medium, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>18.8</meanAmount>
+            <resultingAmount>18.8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="43" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="c5f1672d-66a7-33b0-877d-382c6fb30930" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0164">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0033648a-b6fa-340c-a9b2-ab9d81a16319" version="00.00.022" uri="../flows/0033648a-b6fa-340c-a9b2-ab9d81a16319.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Medium, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>16.400000000000002</meanAmount>
+            <resultingAmount>16.400000000000002</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="44" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="9c9b13b0-f143-3d3e-afa5-1aca836e1216" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.008">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2f44637a-0050-321c-b372-fd6e3b9a5ddd" version="00.00.022" uri="../flows/2f44637a-0050-321c-b372-fd6e3b9a5ddd.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Medium, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>8.0</meanAmount>
+            <resultingAmount>8.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="45" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="6883f4d7-741a-3d6c-910b-fa531725732d" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.009">
+            <referenceToFlowDataSet type="flow data set" refObjectId="55d01181-1a22-35f9-b7d2-fbc59dc4f328" version="00.00.022" uri="../flows/55d01181-1a22-35f9-b7d2-fbc59dc4f328.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Medium, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.0</meanAmount>
+            <resultingAmount>9.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="46" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="de3cd541-c502-3eb2-996c-a5ad92f1fc6c" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0121">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4215213e-57b2-3d35-9838-ceaeeb35e31b" version="00.00.022" uri="../flows/4215213e-57b2-3d35-9838-ceaeeb35e31b.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Medium, 2003, EURO-3</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>12.1</meanAmount>
+            <resultingAmount>12.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="47" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="1c6acead-21a7-35b2-94ef-822ef0445940" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0362">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b7f348bf-26f3-3a31-aefa-c193db6dbbeb" version="00.00.022" uri="../flows/b7f348bf-26f3-3a31-aefa-c193db6dbbeb.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Medium, 2008, EURO-4</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>36.2</meanAmount>
+            <resultingAmount>36.2</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="48" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="c5fa8b3c-8326-3c7e-af1a-21edbfccbc8a" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.113">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0e456638-42ee-343d-8de6-73d320e0ee74" version="00.00.022" uri="../flows/0e456638-42ee-343d-8de6-73d320e0ee74.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Medium, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>113.0</meanAmount>
+            <resultingAmount>113.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="49" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="bd2d01ee-ef41-3f0d-904e-c5958897487e" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0509">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b7433b92-1ea3-3dbe-a761-ed7b54e544fc" version="00.00.022" uri="../flows/b7433b92-1ea3-3dbe-a761-ed7b54e544fc.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Medium, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>50.9</meanAmount>
+            <resultingAmount>50.9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="50" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="0f5d17b7-20a6-39ae-be4b-2b4ea26a4638" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0468">
+            <referenceToFlowDataSet type="flow data set" refObjectId="34d27dca-a5d7-3712-bbea-50458d458e14" version="00.00.022" uri="../flows/34d27dca-a5d7-3712-bbea-50458d458e14.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Medium, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>46.800000000000004</meanAmount>
+            <resultingAmount>46.800000000000004</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="51" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="10a62fbe-20f9-3ebe-941e-ea1a524371ce" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0227">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8d628a58-55c7-3549-ad90-7da171ec32ad" version="00.00.022" uri="../flows/8d628a58-55c7-3549-ad90-7da171ec32ad.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Medium, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>22.700000000000003</meanAmount>
+            <resultingAmount>22.700000000000003</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="52" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="39ad4084-cfea-3c28-82c4-3f6a5a5ce4f0" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.022">
+            <referenceToFlowDataSet type="flow data set" refObjectId="96f1f188-3adc-3a69-bd2b-ca04bbea69d9" version="00.00.022" uri="../flows/96f1f188-3adc-3a69-bd2b-ca04bbea69d9.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Medium, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>22.0</meanAmount>
+            <resultingAmount>22.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="53" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="9a1ec346-2cec-3ddc-8026-6b1e5d13d9c4" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="2.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="55a4289c-c7a4-3cc0-b6b8-08726adb00e0" version="00.00.022" uri="../flows/55a4289c-c7a4-3cc0-b6b8-08726adb00e0.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, compressed gas, Medium, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.2</meanAmount>
+            <resultingAmount>0.2</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="54" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="0185c397-a3db-334c-a798-50005b92ae4e" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="1.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="efe8aab9-7d23-315a-b051-2486cf60bd27" version="00.00.022" uri="../flows/efe8aab9-7d23-315a-b051-2486cf60bd27.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, compressed gas, Medium, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="55" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="6b2788c6-24bb-360c-8c64-daf63ee8620a" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="1.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="eaccbd5c-9e2a-3f69-ba9f-f9ccedcb7a9f" version="00.00.022" uri="../flows/eaccbd5c-9e2a-3f69-ba9f-f9ccedcb7a9f.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, compressed gas, Medium, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="68d00f05-adab-30fd-a6cd-84d1d3743abd" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0019">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ad6f7ec8-1595-31dc-9814-bb85d4b16308" version="00.00.022" uri="../flows/ad6f7ec8-1595-31dc-9814-bb85d4b16308.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel hybrid, Compact, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.9</meanAmount>
+            <resultingAmount>1.9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="80a2b4f5-1be8-3cb3-9708-b341d59bfcc8" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0013">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c77d9ea0-88ac-3d12-88e8-289b859d62b1" version="00.00.022" uri="../flows/c77d9ea0-88ac-3d12-88e8-289b859d62b1.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel hybrid, Compact, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.3</meanAmount>
+            <resultingAmount>1.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="c4b64128-771c-3c4f-b062-aa8a00ab8a3a" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0024">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1e577c99-801b-3755-9873-fdf73630175b" version="00.00.022" uri="../flows/1e577c99-801b-3755-9873-fdf73630175b.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel hybrid, Compact, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.4</meanAmount>
+            <resultingAmount>2.4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="c54b4cf4-103e-3e1c-9ab4-d49128589ce8" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0016">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d9d20fa3-60f7-3329-9e2e-2855af0b4b0c" version="00.00.022" uri="../flows/d9d20fa3-60f7-3329-9e2e-2855af0b4b0c.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel hybrid, Compact, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.6</meanAmount>
+            <resultingAmount>1.6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="b4695290-0091-3022-a86b-7a094ead9c8b" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0018">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b2992791-b259-3de1-b7c4-945f760ed9d1" version="00.00.022" uri="../flows/b2992791-b259-3de1-b7c4-945f760ed9d1.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel hybrid, Compact, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.8</meanAmount>
+            <resultingAmount>1.8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="abcb33e0-ed38-3a9e-9f92-e363983c57e5" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="5.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="073b3d03-9d85-3d5f-b8c6-a64d429f0dc4" version="00.00.022" uri="../flows/073b3d03-9d85-3d5f-b8c6-a64d429f0dc4.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin gasoline hybrid, Compact, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.5</meanAmount>
+            <resultingAmount>0.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="30" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="9478ee68-3937-31f2-9fa7-8e42e8431ddc" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="2.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e9db7935-539b-3ed0-a40f-ad6e92185ebe" version="00.00.022" uri="../flows/e9db7935-539b-3ed0-a40f-ad6e92185ebe.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin gasoline hybrid, Compact, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.2</meanAmount>
+            <resultingAmount>0.2</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="31" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="eb703f79-1f09-394e-9e8b-bd7f913beeb4" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="2.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="70ea7ba3-bf68-367d-a2ab-3ac9639c7aee" version="00.00.022" uri="../flows/70ea7ba3-bf68-367d-a2ab-3ac9639c7aee.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin gasoline hybrid, Compact, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.2</meanAmount>
+            <resultingAmount>0.2</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="32" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="71230c3d-59a9-3386-98a4-edf25580161a" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="1.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="57b92230-2ed4-3047-9b79-e3512a75ee3e" version="00.00.022" uri="../flows/57b92230-2ed4-3047-9b79-e3512a75ee3e.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin gasoline hybrid, Compact, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="33" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="1759d228-939b-359b-8169-1d50a3f118c0" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="1.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3a762c03-0d19-3e90-acc2-db12a1968576" version="00.00.022" uri="../flows/3a762c03-0d19-3e90-acc2-db12a1968576.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin gasoline hybrid, Compact, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="34" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="a08f0928-b850-3316-82e6-80bd5de898ac" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0014">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a0769f72-3d8c-3e7f-b6eb-2aeeb6a23017" version="00.00.022" uri="../flows/a0769f72-3d8c-3e7f-b6eb-2aeeb6a23017.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin diesel hybrid, Compact, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.4</meanAmount>
+            <resultingAmount>1.4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="35" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="0b1a23b5-44b2-3f9d-b5aa-caf8a1b63506" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="5.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bbf6359f-35a2-3ea1-a8a9-674565cfe8d0" version="00.00.022" uri="../flows/bbf6359f-35a2-3ea1-a8a9-674565cfe8d0.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin diesel hybrid, Compact, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.5</meanAmount>
+            <resultingAmount>0.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="36" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="ee1fa2fb-2655-3b9f-a8c0-56e0613e8d7d" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="6.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d8d7b24e-63fb-3706-a800-78a3a28cc73c" version="00.00.022" uri="../flows/d8d7b24e-63fb-3706-a800-78a3a28cc73c.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin diesel hybrid, Compact, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.6</meanAmount>
+            <resultingAmount>0.6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="37" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="76af01f6-fd3f-3dd7-bc77-4db4d3ea9722" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="3.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a1f39316-3f5d-3906-88a5-bcc89d322c42" version="00.00.022" uri="../flows/a1f39316-3f5d-3906-88a5-bcc89d322c42.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin diesel hybrid, Compact, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.3</meanAmount>
+            <resultingAmount>0.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="38" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="aadb5c69-e5f4-38bc-82d4-aada079114d7" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="3.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9a730889-1e79-3e41-85d4-a43234fc2935" version="00.00.022" uri="../flows/9a730889-1e79-3e41-85d4-a43234fc2935.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin diesel hybrid, Compact, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.3</meanAmount>
+            <resultingAmount>0.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="39" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="cf22a4a7-9277-3dc1-8e7e-d3c16f9cf5b9" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0057">
+            <referenceToFlowDataSet type="flow data set" refObjectId="47cc179b-ba19-32b7-947f-427df2849926" version="00.00.022" uri="../flows/47cc179b-ba19-32b7-947f-427df2849926.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Medium, 2003, EURO-3</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.7</meanAmount>
+            <resultingAmount>5.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="96908b73-2e67-3a61-8490-a97d39be5975" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0054">
+            <referenceToFlowDataSet type="flow data set" refObjectId="44f8b257-0bdb-3c5f-8982-31c176fcff18" version="00.00.022" uri="../flows/44f8b257-0bdb-3c5f-8982-31c176fcff18.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Compact, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.4</meanAmount>
+            <resultingAmount>5.4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="6d0f6c60-d1a4-36ed-863a-1e036420979f" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0097">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7a9db642-6d18-34d0-9669-fb8ba03cfeb1" version="00.00.022" uri="../flows/7a9db642-6d18-34d0-9669-fb8ba03cfeb1.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Compact, 2003, EURO-3</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.700000000000001</meanAmount>
+            <resultingAmount>9.700000000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="d6abebd7-907e-3c75-819c-120b8ef84a36" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0292">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0ea7cadc-374d-3762-a61b-afca797ff22e" version="00.00.022" uri="../flows/0ea7cadc-374d-3762-a61b-afca797ff22e.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Compact, 2008, EURO-4</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>29.2</meanAmount>
+            <resultingAmount>29.2</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="a72360d0-c4cd-31a1-a4a9-9eb993dbb602" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0907">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6fac667a-3316-3b2c-8f6e-1ddebde1238d" version="00.00.022" uri="../flows/6fac667a-3316-3b2c-8f6e-1ddebde1238d.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Compact, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>90.7</meanAmount>
+            <resultingAmount>90.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="b6b9afae-6b42-3476-8015-93444544cc21" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0407">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9ae829c5-1f79-3dfc-beb2-c5e282a4743e" version="00.00.022" uri="../flows/9ae829c5-1f79-3dfc-beb2-c5e282a4743e.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Compact, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>40.7</meanAmount>
+            <resultingAmount>40.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="e5c94ac2-731f-379f-a35a-bc2256228ca8" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0375">
+            <referenceToFlowDataSet type="flow data set" refObjectId="addc005d-e408-3210-ad02-96bc9b9224b2" version="00.00.022" uri="../flows/addc005d-e408-3210-ad02-96bc9b9224b2.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Compact, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>37.5</meanAmount>
+            <resultingAmount>37.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="e65f4e0e-bdae-3ff1-b336-f7f468a27968" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0182">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3e0d7265-a0d6-3819-b74f-f47067c9482e" version="00.00.022" uri="../flows/3e0d7265-a0d6-3819-b74f-f47067c9482e.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Compact, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>18.2</meanAmount>
+            <resultingAmount>18.2</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="11f105c7-9b44-3cf7-a6eb-02eac5bf138f" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0132">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4c962500-a650-33b2-b8e8-4249bb9332bd" version="00.00.022" uri="../flows/4c962500-a650-33b2-b8e8-4249bb9332bd.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Compact, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>13.2</meanAmount>
+            <resultingAmount>13.2</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="cb624b2c-aab6-3f50-a68d-ee358052b427" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="2.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="42e55788-3c8c-3739-9e90-cdac310c0b0e" version="00.00.022" uri="../flows/42e55788-3c8c-3739-9e90-cdac310c0b0e.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, compressed gas, Compact, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.2</meanAmount>
+            <resultingAmount>0.2</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="ea3f23cd-a6b3-30fc-970c-0d9a47e3df4d" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="1.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="06dc9e07-eb8d-3494-b8c0-05eb8c869793" version="00.00.022" uri="../flows/06dc9e07-eb8d-3494-b8c0-05eb8c869793.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, compressed gas, Compact, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="7512e5bc-26c4-31ec-8dd5-6a71d47d2767" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="1.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b891934a-421f-3eaf-8827-46b12e603259" version="00.00.022" uri="../flows/b891934a-421f-3eaf-8827-46b12e603259.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, compressed gas, Compact, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="3127f690-218b-3567-8c43-9ab9fec9b6b3" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="7.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7a31ddd4-8adc-3a6c-a1ba-d6f69a8a350f" version="00.00.022" uri="../flows/7a31ddd4-8adc-3a6c-a1ba-d6f69a8a350f.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline hybrid, Compact, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.7</meanAmount>
+            <resultingAmount>0.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="8c00e4cb-0ba3-3676-b796-afde9610c17e" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="5.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6e879617-87ef-3533-bc4f-19e5e715b880" version="00.00.022" uri="../flows/6e879617-87ef-3533-bc4f-19e5e715b880.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline hybrid, Compact, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.5</meanAmount>
+            <resultingAmount>0.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="a6c3b148-1343-38e5-978c-b1b643065922" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="9.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0f61bd5a-f5fc-391a-bc7a-8157d2683350" version="00.00.022" uri="../flows/0f61bd5a-f5fc-391a-bc7a-8157d2683350.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline hybrid, Compact, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.9</meanAmount>
+            <resultingAmount>0.9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="1c3d8d9b-01f6-3cad-9f21-a3593899d0c4" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="6.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="231fd737-1d82-333e-bd92-cc25cafbe8f2" version="00.00.022" uri="../flows/231fd737-1d82-333e-bd92-cc25cafbe8f2.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline hybrid, Compact, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.6</meanAmount>
+            <resultingAmount>0.6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="8c40db2e-c11e-3282-a3b0-b3029a5e8204" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="7.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="33a83927-0902-3d2a-8785-f7d3b79d7d75" version="00.00.022" uri="../flows/33a83927-0902-3d2a-8785-f7d3b79d7d75.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline hybrid, Compact, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.7</meanAmount>
+            <resultingAmount>0.7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="104" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="540c7c93-489e-3121-ad31-20d9349a4ee2" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="1.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1b392af9-96e6-311c-a36a-5c4b7dd325ae" version="00.00.022" uri="../flows/1b392af9-96e6-311c-a36a-5c4b7dd325ae.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin gasoline hybrid, Large, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="105" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="faf0c60a-0456-3d71-b64a-e477ec8b6d5b" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="1.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c9452d0e-3080-3da4-a111-434d823fab83" version="00.00.022" uri="../flows/c9452d0e-3080-3da4-a111-434d823fab83.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin gasoline hybrid, Large, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="106" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="bbfd2b49-bd82-33a5-879e-4fc3f384f2ea" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="9.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f9c2a04e-9760-370d-9345-5c02708774ec" version="00.00.022" uri="../flows/f9c2a04e-9760-370d-9345-5c02708774ec.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin diesel hybrid, Large, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.9</meanAmount>
+            <resultingAmount>0.9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="107" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="2f317667-0347-3714-8416-b8684e492c97" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="3.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2611d7f5-d59a-37c1-8ba3-1f655bffc37a" version="00.00.022" uri="../flows/2611d7f5-d59a-37c1-8ba3-1f655bffc37a.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin diesel hybrid, Large, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.3</meanAmount>
+            <resultingAmount>0.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="108" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="57448da8-22b8-3293-b0af-f640866b4e95" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="4.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5e4837ef-ce61-382b-a986-0bf182859e8c" version="00.00.022" uri="../flows/5e4837ef-ce61-382b-a986-0bf182859e8c.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin diesel hybrid, Large, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.4</meanAmount>
+            <resultingAmount>0.4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="109" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="94773eee-56f3-3373-bc0f-3ea8da905ddb" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="2.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5a0fce16-b784-34aa-a757-77c47c0ae924" version="00.00.022" uri="../flows/5a0fce16-b784-34aa-a757-77c47c0ae924.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin diesel hybrid, Large, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.2</meanAmount>
+            <resultingAmount>0.2</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="110" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="3ab4bd2b-07d3-3fdf-ac5c-018cca768370" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="3.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e02df425-6ef2-3e91-b97a-725e662145b6" version="00.00.022" uri="../flows/e02df425-6ef2-3e91-b97a-725e662145b6.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin diesel hybrid, Large, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.3</meanAmount>
+            <resultingAmount>0.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="88" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="62e204b5-1f08-32b4-a04f-1e68ce1833f3" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0091">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4c685ddb-5154-3fc1-8349-e3c0f49f564f" version="00.00.022" uri="../flows/4c685ddb-5154-3fc1-8349-e3c0f49f564f.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Large, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.1</meanAmount>
+            <resultingAmount>9.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="89" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="99037999-65ca-3c28-9c25-296d4462a459" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0119">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c4710da2-35b6-3722-a16e-4fdc7095bff1" version="00.00.022" uri="../flows/c4710da2-35b6-3722-a16e-4fdc7095bff1.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Large, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>11.9</meanAmount>
+            <resultingAmount>11.9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="90" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="d0de95c0-6668-3b89-aeb2-b8f137e450d5" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="1.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3ef66f01-383e-3f1c-8743-92a0c88023bb" version="00.00.022" uri="../flows/3ef66f01-383e-3f1c-8743-92a0c88023bb.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, compressed gas, Large, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="91" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="df8259f4-d27d-3322-87bc-86cdd3ae67f9" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="5.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f1938dd7-390d-3efd-8f0c-0923fc0b3191" version="00.00.022" uri="../flows/f1938dd7-390d-3efd-8f0c-0923fc0b3191.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline hybrid, Large, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.5</meanAmount>
+            <resultingAmount>0.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="92" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="fbd95bb0-e015-3611-b28e-88cbc8e58f9d" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="3.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="03eb5330-ead1-39c8-8503-78bc8b033d14" version="00.00.022" uri="../flows/03eb5330-ead1-39c8-8503-78bc8b033d14.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline hybrid, Large, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.3</meanAmount>
+            <resultingAmount>0.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="93" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="a1a2e15a-bfbf-39fa-b999-5ea09df01649" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="5.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="de63b294-8652-3c21-9eb5-64d2b5e58901" version="00.00.022" uri="../flows/de63b294-8652-3c21-9eb5-64d2b5e58901.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline hybrid, Large, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.5</meanAmount>
+            <resultingAmount>0.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="94" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="0dc5ae7c-7279-3efd-90dc-83e6d48a0df8" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="3.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c3a1dd5c-c5f1-3738-a741-d9eed5042b4e" version="00.00.022" uri="../flows/c3a1dd5c-c5f1-3738-a741-d9eed5042b4e.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline hybrid, Large, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.3</meanAmount>
+            <resultingAmount>0.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="95" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="8d099acc-1033-3df5-8d5e-6241a4d3c367" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="5.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="354c793f-a3d5-3894-a9f0-3aee68904d64" version="00.00.022" uri="../flows/354c793f-a3d5-3894-a9f0-3aee68904d64.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline hybrid, Large, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.5</meanAmount>
+            <resultingAmount>0.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="96" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="bd3cf3e0-0046-3b50-89fc-fc5479381b8b" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0013">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c9990c56-3531-3c5c-b309-17d53a49b000" version="00.00.022" uri="../flows/c9990c56-3531-3c5c-b309-17d53a49b000.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel hybrid, Large, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.3</meanAmount>
+            <resultingAmount>1.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="97" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="18076c39-a328-3c76-8cfc-2501f912d94d" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="8.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="13f1772f-081a-3850-adff-c9e6aa300591" version="00.00.022" uri="../flows/13f1772f-081a-3850-adff-c9e6aa300591.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel hybrid, Large, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.8</meanAmount>
+            <resultingAmount>0.8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="98" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="b348e6e9-9a01-3472-8e24-e0a05046a423" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0015">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5458e22f-0460-311e-b9e1-2fa3fe019033" version="00.00.022" uri="../flows/5458e22f-0460-311e-b9e1-2fa3fe019033.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel hybrid, Large, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.5</meanAmount>
+            <resultingAmount>1.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="99" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="a0ffc828-fb7c-3b92-98eb-4233cd19968c" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.001">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0c0d75cc-946e-3684-ba13-ae85911da0b3" version="00.00.022" uri="../flows/0c0d75cc-946e-3684-ba13-ae85911da0b3.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel hybrid, Large, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="100" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="53821a3b-5b96-399f-a14b-ad46976b58f5" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0013">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c3a29a17-c627-34a6-8421-7aaf12e973ff" version="00.00.022" uri="../flows/c3a29a17-c627-34a6-8421-7aaf12e973ff.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel hybrid, Large, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.3</meanAmount>
+            <resultingAmount>1.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="101" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="28b4fbdc-ce9c-337f-817c-28fb32f4c3a1" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="4.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b62e97bd-09be-307d-a5f4-debc2e780fcf" version="00.00.022" uri="../flows/b62e97bd-09be-307d-a5f4-debc2e780fcf.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin gasoline hybrid, Large, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.4</meanAmount>
+            <resultingAmount>0.4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="102" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="d7f9dabe-2385-34bf-ae9e-3a677b31272a" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="1.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c914bc93-23be-307d-8d7f-d81d3b9e0ce5" version="00.00.022" uri="../flows/c914bc93-23be-307d-8d7f-d81d3b9e0ce5.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin gasoline hybrid, Large, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="103" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="35d4e948-17ac-398a-b59f-b6c4c06a3f6f" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="1.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3500dea0-bb87-3943-8c68-49b35e3ac7e0" version="00.00.022" uri="../flows/3500dea0-bb87-3943-8c68-49b35e3ac7e0.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin gasoline hybrid, Large, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="72" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="3897afbc-54e8-3e3e-848e-ee76b629d2e0" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="8.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="96b04ba6-c85a-356f-8cbc-96945ebf4124" version="00.00.022" uri="../flows/96b04ba6-c85a-356f-8cbc-96945ebf4124.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin diesel hybrid, Medium, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.8</meanAmount>
+            <resultingAmount>0.8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="73" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="7ffc62dd-40e9-36e3-b192-94aa89b546ed" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="8.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="52ae2d24-9450-3bed-89fb-f0a138b262f5" version="00.00.022" uri="../flows/52ae2d24-9450-3bed-89fb-f0a138b262f5.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin diesel hybrid, Medium, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.8</meanAmount>
+            <resultingAmount>0.8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="74" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="c1a38344-bc18-3380-ae5e-c510148aa6bf" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="5.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="67ee43b8-88e7-3404-960c-73dd217ab610" version="00.00.022" uri="../flows/67ee43b8-88e7-3404-960c-73dd217ab610.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin diesel hybrid, Medium, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.5</meanAmount>
+            <resultingAmount>0.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="75" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="166991f7-1572-31c3-a208-ee793eb90d2d" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="5.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f186b5ce-7c2a-3b61-98de-4cacd133593d" version="00.00.022" uri="../flows/f186b5ce-7c2a-3b61-98de-4cacd133593d.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, plugin diesel hybrid, Medium, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.5</meanAmount>
+            <resultingAmount>0.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="76" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="4ae03d60-ecaa-3c0c-95ba-7b44a6991d30" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0023">
+            <referenceToFlowDataSet type="flow data set" refObjectId="540a2ecb-a83b-31b7-b77c-40a675ee2b65" version="00.00.022" uri="../flows/540a2ecb-a83b-31b7-b77c-40a675ee2b65.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Large, 2003, EURO-3</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.3</meanAmount>
+            <resultingAmount>2.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="77" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="4f3b371e-f6f6-38cd-bba2-844450a55b97" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0068">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fff3430c-2cdd-3428-9c24-9c5eb767d600" version="00.00.022" uri="../flows/fff3430c-2cdd-3428-9c24-9c5eb767d600.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Large, 2008, EURO-4</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.8</meanAmount>
+            <resultingAmount>6.8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="78" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="8f6b73ad-8a9e-3621-b889-e43c7179837d" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0193">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5027030a-21e6-3dd8-9de8-fa567ce618fd" version="00.00.022" uri="../flows/5027030a-21e6-3dd8-9de8-fa567ce618fd.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Large, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>19.3</meanAmount>
+            <resultingAmount>19.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="79" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="20ce5457-f6b3-3d76-87de-158c70463bdc" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0076">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e649958d-f4e9-3522-b523-9ff06145c3a0" version="00.00.022" uri="../flows/e649958d-f4e9-3522-b523-9ff06145c3a0.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Large, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.6</meanAmount>
+            <resultingAmount>7.6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="80" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="0d723a2e-bf19-3b5a-b315-896f2b4665ed" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0066">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8d6030e4-a9b9-3f88-a743-d66e78a26351" version="00.00.022" uri="../flows/8d6030e4-a9b9-3f88-a743-d66e78a26351.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Large, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.6</meanAmount>
+            <resultingAmount>6.6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="81" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="18d0ceef-9b51-3d56-acc1-8afebdf66b36" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0032">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1af7daf9-fe6b-3433-a201-3fd05ef35c5d" version="00.00.022" uri="../flows/1af7daf9-fe6b-3433-a201-3fd05ef35c5d.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Large, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.2</meanAmount>
+            <resultingAmount>3.2</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="82" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="c5c30704-9dd0-3d7e-b368-8b964d6dfa4c" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0048">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aff24569-94e6-3837-bcf0-b122302d0097" version="00.00.022" uri="../flows/aff24569-94e6-3837-bcf0-b122302d0097.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Large, 2021, EURO-6d</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.8</meanAmount>
+            <resultingAmount>4.8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="83" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="9429368a-bbd1-324c-aa5c-d5bed1cf11dc" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0048">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9bbf8801-0813-3e7c-bae3-ac11d502a3df" version="00.00.022" uri="../flows/9bbf8801-0813-3e7c-bae3-ac11d502a3df.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Large, 2003, EURO-3</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.8</meanAmount>
+            <resultingAmount>4.8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="84" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="4202d9cc-8967-32c5-9d7a-c6b5cc12462a" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0145">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3ed05c03-4a9e-3826-99f1-cf0dab55309b" version="00.00.022" uri="../flows/3ed05c03-4a9e-3826-99f1-cf0dab55309b.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Large, 2008, EURO-4</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>14.5</meanAmount>
+            <resultingAmount>14.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="85" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="c61c7a3d-2194-3b9d-9e13-b5076d4b1c19" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0455">
+            <referenceToFlowDataSet type="flow data set" refObjectId="11c3b81c-8772-3931-ac35-83db70fceafb" version="00.00.022" uri="../flows/11c3b81c-8772-3931-ac35-83db70fceafb.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Large, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>45.5</meanAmount>
+            <resultingAmount>45.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="86" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="4d6a7ce5-cac9-3230-9410-7822737b3ecb" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0204">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a1bdf097-7fa1-3d04-ae10-1b226f0002d4" version="00.00.022" uri="../flows/a1bdf097-7fa1-3d04-ae10-1b226f0002d4.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Large, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>20.400000000000002</meanAmount>
+            <resultingAmount>20.400000000000002</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="87" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="915d9735-07fe-354f-87fd-2d752db76308" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0187">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c01f8ba0-8edc-39c7-a536-b0f36394d043" version="00.00.022" uri="../flows/c01f8ba0-8edc-39c7-a536-b0f36394d043.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, diesel, Large, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>18.700000000000003</meanAmount>
+            <resultingAmount>18.700000000000003</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4ca57eaa-a8d8-35b8-9941-c57ba87d4d96" version="00.00.022" uri="../flows/4ca57eaa-a8d8-35b8-9941-c57ba87d4d96.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1000.0</meanAmount>
+            <resultingAmount>1000.0</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="2bcd5377-1254-3352-be85-16234cfa505a" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0046">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0558985f-6935-3d60-b766-7674589f68c6" version="00.00.022" uri="../flows/0558985f-6935-3d60-b766-7674589f68c6.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Compact, 2003, EURO-3</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>4.6</meanAmount>
+            <resultingAmount>4.6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="01856da0-5c35-3947-b2bf-4916ef0b54cb" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0138">
+            <referenceToFlowDataSet type="flow data set" refObjectId="333fbe25-ca6b-361f-a236-5f2401979622" version="00.00.022" uri="../flows/333fbe25-ca6b-361f-a236-5f2401979622.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Compact, 2008, EURO-4</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>13.799999999999999</meanAmount>
+            <resultingAmount>13.799999999999999</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="6129d7fe-06ad-3bca-ba6a-b1b34d1ea829" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0384">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b3e5edc5-8838-33f6-81fa-21b755336bcf" version="00.00.022" uri="../flows/b3e5edc5-8838-33f6-81fa-21b755336bcf.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Compact, 2013, EURO-5</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>38.4</meanAmount>
+            <resultingAmount>38.4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="3baeedba-3847-3f5d-aaf8-6e5439400987" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0193">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a345f53d-f807-3355-a73f-91dde08ff31d" version="00.00.022" uri="../flows/a345f53d-f807-3355-a73f-91dde08ff31d.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Compact, 2016, EURO-6ab</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>19.3</meanAmount>
+            <resultingAmount>19.3</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="eb98fbb9-29f1-31e4-892e-651116fe6d74" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0132">
+            <referenceToFlowDataSet type="flow data set" refObjectId="13565b76-cc0e-3338-bce5-ff5fa1969765" version="00.00.022" uri="../flows/13565b76-cc0e-3338-bce5-ff5fa1969765.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Compact, 2018, EURO-6c</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>13.2</meanAmount>
+            <resultingAmount>13.2</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="cf3ff2e6-b188-375e-ab66-d2d82daad4fa" olca:pedigreeUncertainty="(1;2;1;1;1;1)" olca:amount="0.0064">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a76469ca-9f74-3a6b-9d64-3cf33e96f40a" version="00.00.022" uri="../flows/a76469ca-9f74-3a6b-9d64-3cf33e96f40a.xml">
+                <common:shortDescription xml:lang="en">Transport, passenger car, gasoline, Compact, 2019, EURO-6d-TEMP</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.4</meanAmount>
+            <resultingAmount>6.4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0099504938362078</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Uncertainty from pedigree matrix: (1, 2, 1, 1, 1, 1)</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

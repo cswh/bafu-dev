@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>80d50db6-be54-39d8-bd08-582817b9e03a</common:UUID>
+            <name>
+                <baseName xml:lang="en">xxx Electricity, production mix CENTREL</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="6299429b-5a23-3f58-ba95-d33dc8e1875b">electricity</common:class>
+                    <common:class level="1" classId="d9a2a5d8-400c-3fad-aad9-6a146d736c71">notMaintained</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Electricity net production shares are based on an annual average for the year 2008 according to IEA Electricity Information.;
+UUID: 80d50db6-be54-39d8-bd08-582817b9e03a</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="975625200000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2000</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Statistics for 2008</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CENTREL" latitudeAndLongitude="50.67344723354725;18.8123230834163">
+                <descriptionOfRestrictions xml:lang="en">Data apply to public and self producers in CENTREL network / Europe</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">No technology description is provided because the dataset just describes the power plant portfolio of the respective country using current (2004) average technology per energy carrier.\n\n# Included processes\nIt includes shares of national electricity production CENTREL member countries (in 2008) at the busbar. It does not include transformation, transport nor distribution losses.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="05c5cdf8-1cf2-39cb-9e2f-afb11050eeaa" version="00.00.000" uri="../sources/05c5cdf8-1cf2-39cb-9e2f-afb11050eeaa.xml">
+                <common:shortDescription xml:lang="en">2012 - GHG emis. from Swiss elec. mixes - Frischknecht</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">unknown </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 22.06.2012; Other validation: Z:\ESU-Docs\Projekte laufend\401 Update Strommix v3.0\EcoSpold\[401-electricity-mix-europe-RER-world-GLO-v1.0.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="dda0f90d-944f-3015-ba07-9f8b3ca0af60" version="00.00.000" uri="../contacts/dda0f90d-944f-3015-ba07-9f8b3ca0af60.xml">
+                <common:shortDescription xml:lang="en">René Itten</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:50:08.312+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="dda0f90d-944f-3015-ba07-9f8b3ca0af60" version="00.00.000" uri="../contacts/dda0f90d-944f-3015-ba07-9f8b3ca0af60.xml">
+                <common:shortDescription xml:lang="en">René Itten</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2012-06-22T00:00:00.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="05c5cdf8-1cf2-39cb-9e2f-afb11050eeaa" version="00.00.000" uri="../sources/05c5cdf8-1cf2-39cb-9e2f-afb11050eeaa.xml">
+                <common:shortDescription xml:lang="en">2012 - GHG emis. from Swiss elec. mixes - Frischknecht</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="ba0f66e3-b124-3e06-94c2-dc4fe3af5bb4" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.48886">
+            <referenceToFlowDataSet type="flow data set" refObjectId="547f573e-42a1-3da8-90b6-23c5708181f6" version="00.00.000" uri="../flows/547f573e-42a1-3da8-90b6-23c5708181f6.xml">
+                <common:shortDescription xml:lang="en">xxx Electricity, production mix PL</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.7598960000000001</meanAmount>
+            <resultingAmount>1.7598960000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1.05); IEA statistics 2008;
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="59214e54-1ac3-3606-afdb-1b2a8d3c555e" version="00.00.000" uri="../flows/59214e54-1ac3-3606-afdb-1b2a8d3c555e.xml">
+                <common:shortDescription xml:lang="en">xxx Electricity, production mix CENTREL</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+            <generalComment xml:lang="en">Central european power association
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="a9657712-fc20-3541-b483-60a19f4fb6f9" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.2802">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6d684dae-74fe-3140-a761-9873087dd27a" version="00.00.000" uri="../flows/6d684dae-74fe-3140-a761-9873087dd27a.xml">
+                <common:shortDescription xml:lang="en">xxx Electricity, production mix CZ</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.00872</meanAmount>
+            <resultingAmount>1.00872</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1.05); IEA statistics 2008;
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="488d0480-2c29-36f9-940f-54127606cff8" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.13155">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0de2cae3-ddbf-31ff-ba1c-8ab7b69f7f0e" version="00.00.000" uri="../flows/0de2cae3-ddbf-31ff-ba1c-8ab7b69f7f0e.xml">
+                <common:shortDescription xml:lang="en">xxx Electricity, production mix HU</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.47358</meanAmount>
+            <resultingAmount>0.47358</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1.05); IEA statistics 2008;
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="3ccc2a18-aa58-3368-a8bb-620fb676b037" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.09938">
+            <referenceToFlowDataSet type="flow data set" refObjectId="04e7b49d-2b3f-3a65-a15c-8d43a48d84eb" version="00.00.000" uri="../flows/04e7b49d-2b3f-3a65-a15c-8d43a48d84eb.xml">
+                <common:shortDescription xml:lang="en">xxx Electricity, production mix SK</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.357768</meanAmount>
+            <resultingAmount>0.357768</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1,BU:1.05); IEA statistics 2008;
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

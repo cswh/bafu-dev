@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>7dd78068-d9a7-31ef-8018-3e0f4229457c</common:UUID>
+            <name>
+                <baseName xml:lang="en">Fuel in building machine, hydraulic digger, average</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="2279f95c-4711-3ee2-8393-0e7a7bbfe8d1">transport systems</common:class>
+                    <common:class level="1" classId="a68df7d5-0492-3d7e-a949-c23730a59b9f">road</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The average service life (10'000 h/p), the average excavation capacity (100 m3/h) and the consumption of lubricating oil are taken from ecoinvent v2.2. Fuel consumption and regulated exhaust emissions are calculated with the non-road database published by BAFU (2015) for 2015. Data from the Emissions Inventory Guidebook (EMEP/EEA, 2013) were used for specific exhaust emissions not covered by the non-road database. Average emission factors for hydraulic diggers with and without particle filter were used. The NMVOC speciation was modelled by the shares for lorries and the noise emissions were assumed to be proportional to the fuel consumption of lorries. The fuel consumption of average lorries was calculated with the HBEFA database with data for Switzerland in 2015.;
+UUID: 7dd78068-d9a7-31ef-8018-3e0f4229457c</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="1448924400000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2015</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Switzerland</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Diesel and diesel engine\n\n# Included processes\nThis dataset represents the combustion of 1 MJ in an average hydraulic digger in Switzerland. The building machine is not included. Crawler and wheeled excavators with a mechanical power of 75-130 kW are included. This corresponds to an average excavation capacity of about 100 m3/h. The dataset refers to the entire transport life cycle i.e. to the production, operation, maintenance and end of life of vehicle.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="b5838352-278b-376e-b3c4-7f94ad9e56e1" version="00.00.000" uri="../sources/b5838352-278b-376e-b3c4-7f94ad9e56e1.xml">
+                <common:shortDescription xml:lang="en">2016 - LCI road and non-road transport services - Stolz</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistics </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 04.07.2016; Other validation: \\SRV01\ESU-Docs\Projekte laufend\544 Aktualisierung mobitool\Strassentransport\EcoSpold\[544_Building_Machine_Digger_EIv2_v0.6.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:24.703+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2016-07-04T00:00:00.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="b5838352-278b-376e-b3c4-7f94ad9e56e1" version="00.00.000" uri="../sources/b5838352-278b-376e-b3c4-7f94ad9e56e1.xml">
+                <common:shortDescription xml:lang="en">2016 - LCI road and non-road transport services - Stolz</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="736bafe5-4fd3-3344-815e-b85d78ff35a7" version="00.00.000" uri="../flows/736bafe5-4fd3-3344-815e-b85d78ff35a7.xml">
+                <common:shortDescription xml:lang="en">Fuel in building machine, hydraulic digger, average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:defaultProvider="1284547b-12fd-31cd-95bc-adad9dbf7acb" olca:amount="0.232554841">
+            <referenceToFlowDataSet type="flow data set" refObjectId="605399a9-407b-3f2c-9adf-9143bea5e607" version="00.00.000" uri="../flows/605399a9-407b-3f2c-9adf-9143bea5e607.xml">
+                <common:shortDescription xml:lang="en">Excavation, hydraulic digger, average, without infrastructure</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.232554841</meanAmount>
+            <resultingAmount>0.232554841</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0421132376090423</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">Fuel demand: 0.094715 kg/m3; Net calorific value of Diesel: 42.8 MJ/kg
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

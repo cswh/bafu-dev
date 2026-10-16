@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>0c9a2a8c-a7da-38a3-b8fd-eeca31f89160</common:UUID>
+            <name>
+                <baseName xml:lang="en">Natural gas, at production</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a512f1ea-aeb2-3c87-9933-69109d0282e4">natural gas</common:class>
+                    <common:class level="1" classId="ae3eb514-bd16-3d75-b7b3-88c55da9d6a0">production</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Oil production delivers the co-product natural gas. The values are derived from a multioutput-process "combined onshore gas and oil production" by allocation based on heating values for crude oil and natural gas UUID=0c9a2a8c-a7da-38a3-b8fd-eeca31f89160</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1672527600000" olca:endDate="1735686000000">
+            <common:referenceYear>2023</common:referenceYear>
+            <common:dataSetValidUntil>2025</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of most relevant publications and statistics. Other generic data, e.g. for infrastructure are based on older publications.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="KZ" latitudeAndLongitude="48.15565063521296;67.28699927487587">
+                <descriptionOfRestrictions xml:lang="en">Data valid for KZ.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">13 % offshore and 87 % onshore production\n\n# Included processes\nProduction of natural gas including energy use, infrastructure and emissions.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="c33bbec8-a0aa-3fb8-b756-9a7f4d037bba" version="00.00.000" uri="../sources/c33bbec8-a0aa-3fb8-b756-9a7f4d037bba.xml">
+                <common:shortDescription xml:lang="en">2025 - LCI crude oil and natural gas extraction - Meili</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistics and use of generic data</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">29.04.2025 https://esuservices-my.sharepoint.com/personal/jungbluth_esu-services_ch/Documents/ESU-intern/565 Beratung BAFU/EcoSpoldDataXML/[EcoSpold-crude-gas exploration and extraction-2025-v1.0.xlsb]X-Process</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="0bcb8400-bb3d-3da1-b808-677f447cdc8c" version="00.00.000" uri="../contacts/0bcb8400-bb3d-3da1-b808-677f447cdc8c.xml">
+                    <common:shortDescription xml:lang="en">Niels Jungbluth</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="1d53c53f-b2cd-3a94-8782-b9fa32da925f" version="00.00.000" uri="../contacts/1d53c53f-b2cd-3a94-8782-b9fa32da925f.xml">
+                <common:shortDescription xml:lang="en">Maresa Bussa</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:04.959+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="9c29c260-2c0c-3ed5-9368-14ea1eb19401" version="00.00.000" uri="../contacts/9c29c260-2c0c-3ed5-9368-14ea1eb19401.xml">
+                <common:shortDescription xml:lang="en">Christoph Meili</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2025-04-29T13:47:10.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="c33bbec8-a0aa-3fb8-b756-9a7f4d037bba" version="00.00.000" uri="../sources/c33bbec8-a0aa-3fb8-b756-9a7f4d037bba.xml">
+                <common:shortDescription xml:lang="en">2025 - LCI crude oil and natural gas extraction - Meili</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:defaultProvider="bc45b01f-13e5-3edc-b9e1-2927d4a9f7e0" olca:pedigreeUncertainty="(2;3;1;1;3;5)" olca:amount="0.12712">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0b236892-1d31-336e-9889-345bc8067aed" version="00.00.000" uri="../flows/0b236892-1d31-336e-9889-345bc8067aed.xml">
+                <common:shortDescription xml:lang="en">Natural gas, at production offshore</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.12712</meanAmount>
+            <resultingAmount>0.12712</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,1,1,3,5); Share Offshore 2023</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e0861d09-0cde-3844-9f2f-438ea1cde1b7" version="00.00.000" uri="../flows/e0861d09-0cde-3844-9f2f-438ea1cde1b7.xml">
+                <common:shortDescription xml:lang="en">Natural gas, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:defaultProvider="b1640245-f106-3bd0-b8e9-686ae9d2fc94" olca:pedigreeUncertainty="(2;3;1;1;3;5)" olca:amount="0.87288">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c2ee258f-435f-3bbe-a41b-7c23bc6898fe" version="00.00.000" uri="../flows/c2ee258f-435f-3bbe-a41b-7c23bc6898fe.xml">
+                <common:shortDescription xml:lang="en">Natural gas, at production onshore</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.87288</meanAmount>
+            <resultingAmount>0.87288</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,1,1,3,5); Share Onshore 2023</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

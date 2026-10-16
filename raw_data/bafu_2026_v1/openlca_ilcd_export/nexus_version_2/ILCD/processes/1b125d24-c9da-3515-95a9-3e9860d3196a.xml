@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>1b125d24-c9da-3515-95a9-3e9860d3196a</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, medium voltage, PV, facade, multi-Si, panel</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="21fde27b-c223-3ab4-97f3-ffa2eb5c7501">energy supply, kbob recommendation</common:class>
+                    <common:class level="1" classId="d3c1062a-1146-35d6-a082-8087487ce3ea">electricity, delivered via network</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">This dataset describes the transformation from high to medium voltage as well as the transmission of electricity at medium voltage.;
+UUID: 1b125d24-c9da-3515-95a9-3e9860d3196a</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1104534000000" olca:endDate="1133391600000">
+            <common:referenceYear>2005</common:referenceYear>
+            <common:dataSetValidUntil>2005</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Data apply to public and self producers. Geographical classification according to IEA. Assumptions for transmission network, losses and emissions are based on Swiss data.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Average technology used to transmit and distribute electricity. Includes underground and overhead lines, as well as air-, vacuum- and SF6-insulated high-to-medium voltage switching stations. Electricity production according to related datasets\n\n# Included processes\nIncluded are the electricity production in 0, the transmission network and direct SF6-emissions to air. Electricity losses during medium-voltage transmission and transformation from high-voltage are accounted for.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="c6b7e1c3-453a-3228-8f00-0c7141298a27" version="00.00.000" uri="../sources/c6b7e1c3-453a-3228-8f00-0c7141298a27.xml">
+                <common:shortDescription xml:lang="en">2008 - Prim. energy fact. of energy systems - Frischknecht</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">statistics </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 08.05.2014; Other validation: G:\Projekte laufend\388 Aktualisierung PEF Energie\EcoSpold\[388_60_electricity_from_grid-v0.3.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="dda0f90d-944f-3015-ba07-9f8b3ca0af60" version="00.00.000" uri="../contacts/dda0f90d-944f-3015-ba07-9f8b3ca0af60.xml">
+                <common:shortDescription xml:lang="en">René Itten</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:50:15.141+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="dda0f90d-944f-3015-ba07-9f8b3ca0af60" version="00.00.000" uri="../contacts/dda0f90d-944f-3015-ba07-9f8b3ca0af60.xml">
+                <common:shortDescription xml:lang="en">René Itten</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2023-01-24T16:35:41.056+01:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="c6b7e1c3-453a-3228-8f00-0c7141298a27" version="00.00.000" uri="../sources/c6b7e1c3-453a-3228-8f00-0c7141298a27.xml">
+                <common:shortDescription xml:lang="en">2008 - Prim. energy fact. of energy systems - Frischknecht</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="715ca68e-0ac5-4c4b-b557-fdc36623be88" olca:propertyId="838aaa23-0117-11db-92e3-0800200c9a66" olca:defaultProvider="06d98654-745e-3a79-90f8-65d2aeb01ac3" olca:pedigreeUncertainty="(3;1;4;5;3;5)" olca:amount="1.8628E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0dc049e4-a026-36fe-a631-fd0a68b3b28e" version="00.00.000" uri="../flows/0dc049e4-a026-36fe-a631-fd0a68b3b28e.xml">
+                <common:shortDescription xml:lang="en">Transmission network, electricity, medium voltage</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.8628E-5</meanAmount>
+            <resultingAmount>1.8628E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7780326206231425</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,1,4,5,3,5); based on consumption statistics
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b1ff97f2-2364-3290-86c7-d513fd4be2e9" olca:pedigreeUncertainty="(1;1;2;1;1;3)" olca:amount="5.0604E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9e0359f0-8c08-35fc-9359-53bfa4291aa0" version="00.00.000" uri="../flows/9e0359f0-8c08-35fc-9359-53bfa4291aa0.xml">
+                <common:shortDescription xml:lang="en">Sulphur hexafluoride, liquid, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.0604E-8</meanAmount>
+            <resultingAmount>5.0604E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0382677881933928</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,2,1,1,3); based on emission data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(4;1;3;1;1;5)" olca:amount="0.019417">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f2d84834-d0b3-42e5-b41a-f04cc80337a4" version="00.00.000" uri="../flows/f2d84834-d0b3-42e5-b41a-f04cc80337a4.xml">
+                <common:shortDescription xml:lang="en">Heat, waste</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.019417</meanAmount>
+            <resultingAmount>0.019417</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.149826073804208</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,3,1,1,5); estimations based on losses
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="bd492bf8-41d1-34ef-b04b-6619f275a6ce" olca:pedigreeUncertainty="(3;1;1;1;3;1)" olca:amount="1.0098">
+            <referenceToFlowDataSet type="flow data set" refObjectId="294f0a11-4fee-3bfa-90da-0bfd6689b2bc" version="00.00.000" uri="../flows/294f0a11-4fee-3bfa-90da-0bfd6689b2bc.xml">
+                <common:shortDescription xml:lang="en">Electricity, high voltage, PV, facade, multi-Si, panel</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.6352800000000003</meanAmount>
+            <resultingAmount>3.6352800000000003</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1115304764152893</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,1,1,1,3,1); specific losses of network estimated based on statistics
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(4;1;3;1;1;5)" olca:amount="0.015887">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dfbe093a-f470-4ae7-a207-50444f1f23f1" version="00.00.000" uri="../flows/dfbe093a-f470-4ae7-a207-50444f1f23f1.xml">
+                <common:shortDescription xml:lang="en">Heat, waste</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.015887</meanAmount>
+            <resultingAmount>0.015887</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.149826073804208</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,1,3,1,1,5); estimations based on losses
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(1;1;2;1;1;3)" olca:amount="5.0604E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="35d1dff5-b535-4628-9826-4a8fce08a1f2" version="00.00.000" uri="../flows/35d1dff5-b535-4628-9826-4a8fce08a1f2.xml">
+                <common:shortDescription xml:lang="en">Sulfur hexafluoride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.0604E-8</meanAmount>
+            <resultingAmount>5.0604E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2271919165313956</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,2,1,1,3); national statistics
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5b60dc55-aa0f-3f54-84e6-b59a68ba4afe" version="00.00.000" uri="../flows/5b60dc55-aa0f-3f54-84e6-b59a68ba4afe.xml">
+                <common:shortDescription xml:lang="en">Electricity, medium voltage, PV, facade, multi-Si, panel</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

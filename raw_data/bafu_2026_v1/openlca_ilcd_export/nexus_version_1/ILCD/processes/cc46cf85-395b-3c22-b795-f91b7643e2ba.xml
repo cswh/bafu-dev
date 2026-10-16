@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>cc46cf85-395b-3c22-b795-f91b7643e2ba</common:UUID>
+            <name>
+                <baseName xml:lang="en">Biogas, from biowaste, at storage</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="56fb87a8-ad5c-38dd-b96d-cb4261cac475">biomass</common:class>
+                    <common:class level="1" classId="c4e83563-4b9a-34db-8790-3a1fd2b6814b">fuels</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Inventory refers to 0.1 m3 biogas. Electricity consumption and emissions represent the biogas production in a digestion plant.  Infrastructure expenditures are included. Methane emissions are based on Dinkel et al. 2012, Ökobilanzen zur Biomasseverwertung, Tab 4: sum of pre-storage, fermentation and cogen, but without post rotting (not common anymore) and purification (outside the systemboundary). In order to comply with the requirements of the UVEK and KBOB database, the following allocation approach was implemented: Composting and fermentation are the two viable, legally prescribed options for organic waste treatment. Fermentation is done to additionally produce energy. This leads to the following allocation approach: only the difference in efforts and emissions between fermentation and composting are attributed. Data for composting are also based on Dinkel et al 2012.;
+UUID: cc46cf85-395b-3c22-b795-f91b7643e2ba</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1072911600000" olca:endDate="1101855600000">
+            <common:referenceYear>2004</common:referenceYear>
+            <common:dataSetValidUntil>2004</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">undefined</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Data represents conditions of biogas from biowaste production in Switzerland</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Industry data.\n\n# Included processes\nData represents the environmental exchanges due to biowaste pre treatment biowaste digestion and post-composting of digested matter</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="92df4fe8-1cae-3ab4-a216-b77d67811708" version="00.00.000" uri="../sources/92df4fe8-1cae-3ab4-a216-b77d67811708.xml">
+                <common:shortDescription xml:lang="en">2022 - LCI biogas and biomethane processes - Kaegi</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Data provided by factories </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 12.04.2021; Other validation: Z:\Schreibtisch\WinShare\BAFU Heizsysteme\A_zum konvertieren\[EcoSpold_biogas_rohbiogas.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b12abf97-02db-33c7-9d0c-df8ecdb0ee86" version="00.00.000" uri="../contacts/b12abf97-02db-33c7-9d0c-df8ecdb0ee86.xml">
+                    <common:shortDescription xml:lang="en">Norbert Egli</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="904c837f-e400-3310-88d9-910ab1423ce4" version="00.00.000" uri="../contacts/904c837f-e400-3310-88d9-910ab1423ce4.xml">
+                <common:shortDescription xml:lang="en">Thomas Kaegi</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:53:45.618+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="904c837f-e400-3310-88d9-910ab1423ce4" version="00.00.000" uri="../contacts/904c837f-e400-3310-88d9-910ab1423ce4.xml">
+                <common:shortDescription xml:lang="en">Thomas Kaegi</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2021-04-12T00:00:00.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="92df4fe8-1cae-3ab4-a216-b77d67811708" version="00.00.000" uri="../sources/92df4fe8-1cae-3ab4-a216-b77d67811708.xml">
+                <common:shortDescription xml:lang="en">2022 - LCI biogas and biomethane processes - Kaegi</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;4;4;3;1;5)" olca:amount="9.28E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fb005c47-7b90-41f3-a5ca-f0eb11db354a" version="00.00.000" uri="../flows/fb005c47-7b90-41f3-a5ca-f0eb11db354a.xml">
+                <common:shortDescription xml:lang="en">Ammonium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.28E-8</meanAmount>
+            <resultingAmount>9.28E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2989226304903614</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,4,4,3,1,5,BU:1.5); ; only difference to reference treatment (composting) is allocated to biogas, rest is allocated to biowaste treatment
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;4;4;3;1;5)" olca:amount="1.09E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a703733d-fabc-487b-826a-06c11ac4c0c6" version="00.00.000" uri="../flows/a703733d-fabc-487b-826a-06c11ac4c0c6.xml">
+                <common:shortDescription xml:lang="en">Nitrogen, organic bound</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.09E-7</meanAmount>
+            <resultingAmount>1.09E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2989226304903614</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,4,4,3,1,5,BU:1.5); ; only difference to reference treatment (composting) is allocated to biogas, rest is allocated to biowaste treatment
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;4;4;3;1;5)" olca:amount="9.28E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9f5bfac4-cbb6-4b38-afb9-cf563fc5ca15" version="00.00.000" uri="../flows/9f5bfac4-cbb6-4b38-afb9-cf563fc5ca15.xml">
+                <common:shortDescription xml:lang="en">Nitrite</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.28E-8</meanAmount>
+            <resultingAmount>9.28E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2989226304903614</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,4,4,3,1,5,BU:1.5); ; only difference to reference treatment (composting) is allocated to biogas, rest is allocated to biowaste treatment
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;4;4;3;1;5)" olca:amount="7.04E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2d4b8ec1-8d53-4e62-8a11-ebc45909b02e" version="00.00.000" uri="../flows/2d4b8ec1-8d53-4e62-8a11-ebc45909b02e.xml">
+                <common:shortDescription xml:lang="en">Phosphorus</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.04E-8</meanAmount>
+            <resultingAmount>7.04E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2989226304903614</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,4,4,3,1,5,BU:1.5); ; only difference to reference treatment (composting) is allocated to biogas, rest is allocated to biowaste treatment
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="ec20f738-0516-3cf9-82fc-b0d106ae2e0c" olca:pedigreeUncertainty="(4;5;1;5;1;5)" olca:amount="0.242">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1b32dcd6-b8d4-3d94-8a4c-3aa4948fa1f1" version="00.00.010" uri="../flows/1b32dcd6-b8d4-3d94-8a4c-3aa4948fa1f1.xml">
+                <common:shortDescription xml:lang="en">Heat, at cogen with biogas engine, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.242</meanAmount>
+            <resultingAmount>0.242</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1814397995666135</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,1,5,1,5,BU:1.05); ; only difference to reference treatment (composting) is allocated to biogas, rest is allocated to biowaste treatment
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="1a2f0384-d903-4f9d-8757-1e78d84366ab" olca:pedigreeUncertainty="(3;4;3;3;4;5)" olca:amount="0.225">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0256c736-e28d-38b5-ae2d-6ac8c0a25387" version="00.00.000" uri="../flows/0256c736-e28d-38b5-ae2d-6ac8c0a25387.xml">
+                <common:shortDescription xml:lang="en">Tap water, at user</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.225</meanAmount>
+            <resultingAmount>0.225</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2694486992391618</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,3,3,4,5,BU:1.05); ; only difference to reference treatment (composting) is allocated to biogas, rest is allocated to biowaste treatment
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:amount="0.1">
+            <referenceToFlowDataSet type="flow data set" refObjectId="559a4044-fd53-3c87-8cdc-896f5e4529a4" version="00.00.000" uri="../flows/559a4044-fd53-3c87-8cdc-896f5e4529a4.xml">
+                <common:shortDescription xml:lang="en">Biogas, from biowaste, at storage</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.1</meanAmount>
+            <resultingAmount>0.1</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(1;1;1;1;1;5)" olca:amount="7.0E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="baf58fc9-573c-419c-8c16-831ac03203b9" version="00.00.000" uri="../flows/baf58fc9-573c-419c-8c16-831ac03203b9.xml">
+                <common:shortDescription xml:lang="en">Methane, non-fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.0E-4</meanAmount>
+            <resultingAmount>7.0E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2489195330364562</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,5,BU:1.5); ; only difference to reference treatment (composting) is allocated to biogas, rest is allocated to biowaste treatment
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;4;4;3;1;5)" olca:amount="2.97E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5189de76-6bbb-44ba-8c42-5714f1b4371f" version="00.00.000" uri="../flows/5189de76-6bbb-44ba-8c42-5714f1b4371f.xml">
+                <common:shortDescription xml:lang="en">Nitrate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.97E-6</meanAmount>
+            <resultingAmount>2.97E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2989226304903614</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,4,4,3,1,5,BU:1.5); ; only difference to reference treatment (composting) is allocated to biogas, rest is allocated to biowaste treatment
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

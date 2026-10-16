@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>a1a0ff26-9316-3ac8-be68-8612bb6c95a1</common:UUID>
+            <name>
+                <baseName xml:lang="en">Transport, aircraft, passenger, Infrastruktur</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="2279f95c-4711-3ee2-8393-0e7a7bbfe8d1">transport systems</common:class>
+                    <common:class level="1" classId="fd9d8b3f-f322-3087-b28a-ecd51c099c18">civil engineering_transport</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Inventory refers to the entire transport life cycle. The avereage aircraft transport operated by Lufthansa Group includes 23.2% short-haul, 13.5% medium-haul and 63.3% long-haul flights. The mix of short-, medium- and long-haul flights is based on information from Lufthansa Group.;
+UUID: a1a0ff26-9316-3ac8-be68-8612bb6c95a1</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1451602800000" olca:endDate="1575154800000">
+            <common:referenceYear>2016</common:referenceYear>
+            <common:dataSetValidUntil>2019</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Start date refers to emission factor data. End date refers to year of reporting fuel consumption and transport activities</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="RER" latitudeAndLongitude="55.895602991909776;28.119894957029818">
+                <descriptionOfRestrictions xml:lang="en">&lt;null&gt;</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Aircraft operation modelled based on passenger aircrafts operated by Lufthansa Group in 2019. The emission profiles distinguish between LTO and cruise.\n\n# Included processes\nThe dataset describes the operation of aircrafts including taxying, take-off and landing covering fuel consumption and operation emissions. Aircraft manufacture and maintenance, airport construction, operation and dismantling are inputs to this dataset</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="07f3dd8a-bcc2-37e4-91ee-0a109262c5da" version="00.00.000" uri="../sources/07f3dd8a-bcc2-37e4-91ee-0a109262c5da.xml">
+                <common:shortDescription xml:lang="en">2016 - LCI air transport services - Messmer</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">fuel consumption is based on corporate data, emission profiles are based on FOEN statistics </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 09.03.2021; Other validation: G:\Projekte laufend\735 Aktualisierung Flugtransporte\EcoSpold\[735_aircraftTransport_2021_v0.10.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="c19a828a-d7fd-342a-9626-cbb0076aac8e" version="00.00.000" uri="../contacts/c19a828a-d7fd-342a-9626-cbb0076aac8e.xml">
+                    <common:shortDescription xml:lang="en">Luana Krebs</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:48:51.160+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2021-03-09T00:00:00.000+01:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="07f3dd8a-bcc2-37e4-91ee-0a109262c5da" version="00.00.000" uri="../sources/07f3dd8a-bcc2-37e4-91ee-0a109262c5da.xml">
+                <common:shortDescription xml:lang="en">2016 - LCI air transport services - Messmer</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="a86b716d-de3e-3d0d-8813-d4d53a8774be" olca:pedigreeUncertainty="(2;4;1;3;1;5)" olca:amount="2.5459E-13">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3ccde47d-d7f4-3664-b384-e48916a94b72" version="00.00.006" uri="../flows/3ccde47d-d7f4-3664-b384-e48916a94b72.xml">
+                <common:shortDescription xml:lang="en">Airport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.5459E-13</meanAmount>
+            <resultingAmount>2.5459E-13</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7497428382479523</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,3,1,5,BU:3);  Freight: share short-haul: 0.04, share medium-haul: 0.08, share long-haul: 0.88; Geschäftsbericht Lufthansa 2019
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="7a9564d5-2bc1-4594-a92d-6b67bf37c2ea" olca:pedigreeUncertainty="(2;4;1;3;1;5)" olca:amount="2.5459E-13">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c4c3fcac-85d0-3682-aa2d-c7a1b607692a" version="00.00.000" uri="../flows/c4c3fcac-85d0-3682-aa2d-c7a1b607692a.xml">
+                <common:shortDescription xml:lang="en">Disposal, airport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.5459E-13</meanAmount>
+            <resultingAmount>2.5459E-13</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7497428382479523</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,3,1,5,BU:3); ;
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="d568708a-6fc3-32b8-94cc-1d3923d1da0a" olca:pedigreeUncertainty="(2;4;1;3;1;5)" olca:amount="2.5459E-11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8cdaf4c5-10bd-3a3a-8f0a-23bc0f31c76d" version="00.00.006" uri="../flows/8cdaf4c5-10bd-3a3a-8f0a-23bc0f31c76d.xml">
+                <common:shortDescription xml:lang="en">Operation, maintenance, airport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.5459E-11</meanAmount>
+            <resultingAmount>2.5459E-11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4368716017793657</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,4,1,3,1,5,BU:2); ;
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="fe8da65d-f0ea-4496-b13e-1955aaa412d7" olca:propertyId="8766e10f-9f41-4db0-8173-ad0d002a5b98" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5a894778-fc03-3ae8-b6cb-3738fed95646" version="00.00.000" uri="../flows/5a894778-fc03-3ae8-b6cb-3738fed95646.xml">
+                <common:shortDescription xml:lang="en">Transport, aircraft, passenger, Infrastruktur</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">Europe
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

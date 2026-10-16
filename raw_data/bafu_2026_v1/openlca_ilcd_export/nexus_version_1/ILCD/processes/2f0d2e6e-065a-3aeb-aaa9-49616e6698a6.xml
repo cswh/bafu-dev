@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>2f0d2e6e-065a-3aeb-aaa9-49616e6698a6</common:UUID>
+            <name>
+                <baseName xml:lang="en">Cogen unit 1MWe, components for heat only</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="19cb16ec-2a0e-3f73-a828-b3f1347d3bee">heat</common:class>
+                    <common:class level="1" classId="d102926d-1bb7-30a6-afd5-2543f28f2f53">natural gas</common:class>
+                    <common:class level="2" classId="f587d50d-8287-3be4-9911-8020aa6d359b">cogeneration</common:class>
+                    <common:class level="3" classId="19fe4425-2d33-328e-b553-472b46d4b686">power unit</common:class>
+                    <common:class level="4" classId="9b26ac79-c096-38d2-86f4-bf94b02bf851">infrastructure</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The module summarises infrastructure components of a cogeneration unit. ;
+UUID: 2f0d2e6e-065a-3aeb-aaa9-49616e6698a6</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="631148400000" olca:endDate="975625200000">
+            <common:referenceYear>1990</common:referenceYear>
+            <common:dataSetValidUntil>2000</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">undefined</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="RER" latitudeAndLongitude="55.895602991909776;28.119894957029818">
+                <descriptionOfRestrictions xml:lang="en">Extrapolated from data of a plant in Switzerland, assumed valid for Europe (RER).</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Extrapolated from data of a 160kWe lambda=1 plant, adjusted to lean burn technology currently available on market, no catalytic converters.\n\n# Included processes\nThe module includes all components related exclusively to heat production.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="6713bc4b-7d57-3225-979e-4e1d8bd656e8" version="00.00.000" uri="../sources/6713bc4b-7d57-3225-979e-4e1d8bd656e8.xml">
+                <common:shortDescription xml:lang="en">2007 - Combined heat power generation - Heck</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Operator and manufacturer information </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: passed; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="5322091d-fd2a-3be0-b341-4124e7b1da28" version="00.00.000" uri="../contacts/5322091d-fd2a-3be0-b341-4124e7b1da28.xml">
+                    <common:shortDescription xml:lang="en">Gerald Rebitzer</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e9a05e3c-7298-38a3-96cb-56f233ea4628" version="00.00.000" uri="../contacts/e9a05e3c-7298-38a3-96cb-56f233ea4628.xml">
+                <common:shortDescription xml:lang="en">Thomas Heck</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:53:22.203+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e9a05e3c-7298-38a3-96cb-56f233ea4628" version="00.00.000" uri="../contacts/e9a05e3c-7298-38a3-96cb-56f233ea4628.xml">
+                <common:shortDescription xml:lang="en">Thomas Heck</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T09:08:39.334+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.010</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="6713bc4b-7d57-3225-979e-4e1d8bd656e8" version="00.00.000" uri="../sources/6713bc4b-7d57-3225-979e-4e1d8bd656e8.xml">
+                <common:shortDescription xml:lang="en">2007 - Combined heat power generation - Heck</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9385b3e8-b04a-3d9a-bb3e-26a9592e1865" version="00.00.012" uri="../flows/9385b3e8-b04a-3d9a-bb3e-26a9592e1865.xml">
+                <common:shortDescription xml:lang="en">Cogen unit 1MWe, components for heat only</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">Europe
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="d11b7fe6-ef4f-316e-bafd-b7fff105bcf8" olca:amount="2.61">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cb8bb082-deaf-308b-a424-ba515e8a644d" version="00.00.012" uri="../flows/cb8bb082-deaf-308b-a424-ba515e8a644d.xml">
+                <common:shortDescription xml:lang="en">Heating, sanitary equipment cogen unit 160kWe</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.61</meanAmount>
+            <resultingAmount>2.61</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0</relativeStandardDeviation95In>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="beebd964-ecc7-3e1c-9acf-5322168746ce" olca:amount="5.21">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8e102ef4-c79b-3c41-bf52-943fa32362f3" version="00.00.012" uri="../flows/8e102ef4-c79b-3c41-bf52-943fa32362f3.xml">
+                <common:shortDescription xml:lang="en">Storage 10000 l</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.21</meanAmount>
+            <resultingAmount>5.21</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0</relativeStandardDeviation95In>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="d49cecdc-f98d-32cb-972d-ef57d8b90820" olca:amount="3.26">
+            <referenceToFlowDataSet type="flow data set" refObjectId="50f3076b-a20a-358f-9bb5-0083d3eb0165" version="00.00.012" uri="../flows/50f3076b-a20a-358f-9bb5-0083d3eb0165.xml">
+                <common:shortDescription xml:lang="en">Heat exchanger of cogen unit 160kWe</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.26</meanAmount>
+            <resultingAmount>3.26</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0</relativeStandardDeviation95In>
+        </exchange>
+    </exchanges>
+</processDataSet>

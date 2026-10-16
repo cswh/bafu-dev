@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>a48a6963-60a3-3f2d-a618-4da8b229db2d</common:UUID>
+            <name>
+                <baseName xml:lang="en">District heat, at consumer, heat from nuclear power plant, allocation exergy</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="19cb16ec-2a0e-3f73-a828-b3f1347d3bee">heat</common:class>
+                    <common:class level="1" classId="a704c69b-1c98-3859-a339-5acb3250aa12">nuclear power</common:class>
+                    <common:class level="2" classId="4ff945b5-3204-39fd-a5c4-85efdcb772aa">district heat</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Inventory is valid for the district heat based on heat from nuclear power plant. Heat loss is 11% while heat transportation. For heat from nucelar power plant allocation exergy was used.;
+UUID: a48a6963-60a3-3f2d-a618-4da8b229db2d</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1546297200000" olca:endDate="1606777200000">
+            <common:referenceYear>2019</common:referenceYear>
+            <common:dataSetValidUntil>2020</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Data apply to the supply in Switzerland.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">average technology\n\n# Included processes\nIncluded is the infrastructure of the deliverysystem for district heat, the losses and the heat from nuclear power plant.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="30a19596-4507-3096-ac2d-da99992eb60a" version="00.00.000" uri="../sources/30a19596-4507-3096-ac2d-da99992eb60a.xml">
+                <common:shortDescription xml:lang="en">2021 - LCI heating systems - Kaegi</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">heat efficieny based on literature </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: 14.09.2020; Other validation: Z:\Schreibtisch\WinShare\BAFU Heizsysteme\_A-Konvertieren\Fernwärme\[EcoSpold_heat at district heat nuclear onlyv0.1.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="d67fb2ba-4422-366b-8e35-c6ed50f7dec9" version="00.00.000" uri="../contacts/d67fb2ba-4422-366b-8e35-c6ed50f7dec9.xml">
+                    <common:shortDescription xml:lang="en">Andy Spoerri</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8ec74ed5-1d2c-3fc6-9f81-69835678efd2" version="00.00.000" uri="../contacts/8ec74ed5-1d2c-3fc6-9f81-69835678efd2.xml">
+                <common:shortDescription xml:lang="en">Livia Waldburger</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:54:09.430+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="904c837f-e400-3310-88d9-910ab1423ce4" version="00.00.000" uri="../contacts/904c837f-e400-3310-88d9-910ab1423ce4.xml">
+                <common:shortDescription xml:lang="en">Thomas Kaegi</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T09:09:14.695+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.004</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="30a19596-4507-3096-ac2d-da99992eb60a" version="00.00.000" uri="../sources/30a19596-4507-3096-ac2d-da99992eb60a.xml">
+                <common:shortDescription xml:lang="en">2021 - LCI heating systems - Kaegi</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="7940d64f-9c6b-3a93-8955-811533ded804" olca:pedigreeUncertainty="(2;2;2;1;1;5)" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e25ee10f-5bba-343a-a007-1898621c94e3" version="00.00.000" uri="../flows/e25ee10f-5bba-343a-a007-1898621c94e3.xml">
+                <common:shortDescription xml:lang="en">Transport, district heat, average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7465394355696637</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,1,1,5,BU:3); ;
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b9f7599f-a119-343b-97a9-dd29a6999a80" olca:pedigreeUncertainty="(2;2;2;1;1;5)" olca:amount="1.11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2eba54df-a9e5-37a3-933f-45c3c6a67398" version="00.00.004" uri="../flows/2eba54df-a9e5-37a3-933f-45c3c6a67398.xml">
+                <common:shortDescription xml:lang="en">Heat, at nuclear power plant, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.11</meanAmount>
+            <resultingAmount>1.11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1041738993473809</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,1,1,5,BU:1.05); ;
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="73e8fca6-e384-3174-948c-3604fa046167" version="00.00.004" uri="../flows/73e8fca6-e384-3174-948c-3604fa046167.xml">
+                <common:shortDescription xml:lang="en">District heat, at consumer, heat from nuclear power plant, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

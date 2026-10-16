@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>4cd45852-9516-4f18-83bc-f9c737a3cc15</common:UUID>
+            <name>
+                <baseName xml:lang="en">Deconstruction, hydraulic digger, average</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="791c965a-a367-3765-af5c-749f3b9a1d40">waste management</common:class>
+                    <common:class level="1" classId="593ec29a-698c-369e-be95-7d8b4d0d7ef7">building demolition</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Based on the KBOB dataset excavation, hydraulic digger, average\nEnergy consumption adjusted to 0.018 kWh/kg rubble. Diesel consumption is taken from Energieverbrauch und Schadstoffemissionen des «Non-road-Sektors» (Notter et al., 2015), at 0.232 kg Diesel / kWh. Emissions are adjusted accordingly, based on diesel consumption. Infrastructure (hydraulic digger) and lubricating oil consumptions are adjusted by using hourly performance. It is 11.5 to/h for deconstruction and 100 m3/h for excavation. Results are generously rounded.\n\n\nDescription for the KBOB dataset:\nTranslated name: Aushub, Hydraulikbagger, Durchschnitt\nIncluded processes: This dataset represents the excavation of 1 m3 by an average hydraulic digger in Switzerland. Crawler and wheeled excavators with a mechanical power of 75-130 kW are included. This corresponds to an average excavation capacity of about 100 m3/h. The dataset refers to the entire transport life cycle i.e. to the production, operation, maintenance and end of life of vehicle.\nThe average service life (10'000 h/p), the average excavation capacity (100 m3/h) and the consumption of lubricating oil are taken from ecoinvent v2.2. Fuel consumption and regulated exhaust emissions are calculated with the non-road database published by BAFU (2015) for 2015. Data from the Emissions Inventory Guidebook (EMEP/EEA, 2013) were used for specific exhaust emissions not covered by the non-road database. Average emission factors for hydraulic diggers with and without particle filter were used. The NMVOC speciation was modelled by the shares for lorries and the noise emissions were assumed to be proportional to the fuel consumption of lorries. The fuel consumption of average lorries was calculated with the HBEFA database with data for Switzerland in 2015.;
+UUID: 4cd45852-9516-4f18-83bc-f9c737a3cc15</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1548975600000" olca:endDate="1548975600000">
+            <common:referenceYear>2019</common:referenceYear>
+            <common:dataSetValidUntil>2019</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of publications</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Switzerland</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Diesel and diesel engine\n\n# Included processes\nThis dataset represents the excavation of 1 m3 by an average hydraulic digger in Switzerland. Crawler and wheeled excavators with a mechanical power of 75-130 kW are included. This corresponds to an average excavation capacity of about 100 m3/h. The dataset refers to the entire transport life cycle i.e. to the production, operation, maintenance and end of life of vehicle.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="adf7091e-e077-320b-bb9c-48d066c6b64f" version="00.00.000" uri="../sources/adf7091e-e077-320b-bb9c-48d066c6b64f.xml">
+                <common:shortDescription xml:lang="en">2019 - LCA disposal of building materials - Klingler</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistics </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                    <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:54:09.951+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2021-01-28T00:00:00.000+01:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="adf7091e-e077-320b-bb9c-48d066c6b64f" version="00.00.000" uri="../sources/adf7091e-e077-320b-bb9c-48d066c6b64f.xml">
+                <common:shortDescription xml:lang="en">2019 - LCA disposal of building materials - Klingler</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="be69d35d-4a8e-4e4c-88c0-c5df0c7db472" olca:pedigreeUncertainty="(2;2;3;3;1;2)" olca:amount="0.0018075">
+            <referenceToFlowDataSet type="flow data set" refObjectId="44b0ed19-fde1-33c0-a55c-8768cf5dcfcc" version="00.00.000" uri="../flows/44b0ed19-fde1-33c0-a55c-8768cf5dcfcc.xml">
+                <common:shortDescription xml:lang="en">Disposal, used mineral oil, 10% water, to hazardous waste incineration</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.0018075</meanAmount>
+            <resultingAmount>0.0018075</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.063202708800161</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,3,3,1,2,BU:1.05); Amount scaled based on fuel demand; Kellenberger et al. 2007: ecoinvent report 7, Part XVIII
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="a6e81afd-7aab-35ed-9b9a-b305ac147359" olca:pedigreeUncertainty="(3;1;3;2;1;5)" olca:amount="1.0E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ff00ebc2-ebca-3617-bd96-f93fa54efc98" version="00.00.008" uri="../flows/ff00ebc2-ebca-3617-bd96-f93fa54efc98.xml">
+                <common:shortDescription xml:lang="en">Hydraulic digger</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0E-6</meanAmount>
+            <resultingAmount>1.0E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7522556891047607</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,1,3,2,1,5,BU:3); Vehicle life time performance: 10'000 h; Average excavation capacity: 100 m3/h; Kellenberger et al. 2007: ecoinvent report 7, Part XVIII
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="23fb0fbc-0f04-33eb-9aa8-84a3afcdfe04" version="00.00.000" uri="../flows/23fb0fbc-0f04-33eb-9aa8-84a3afcdfe04.xml">
+                <common:shortDescription xml:lang="en">Deconstruction, hydraulic digger, average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="0b14288a-dbf3-3dac-a570-83d083f4b600" olca:pedigreeUncertainty="(2;2;2;3;1;2)" olca:amount="0.0018075">
+            <referenceToFlowDataSet type="flow data set" refObjectId="45effa3b-506a-323b-848c-d8bc43273045" version="00.00.000" uri="../flows/45effa3b-506a-323b-848c-d8bc43273045.xml">
+                <common:shortDescription xml:lang="en">Lubricating oil, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0018075</meanAmount>
+            <resultingAmount>0.0018075</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0421132376090423</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,2,2,3,1,2,BU:1.05); Amount scaled based on fuel demand; Kellenberger et al. 2007: ecoinvent report 7, Part XVIII
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="ec4009ae-3a1d-4084-93dc-159e195b6fbb" olca:amount="0.001528">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8cc55362-1567-38fc-ab06-972f545f35e3" version="00.00.000" uri="../flows/8cc55362-1567-38fc-ab06-972f545f35e3.xml">
+                <common:shortDescription xml:lang="en">Diesel, burned in hydraulic digger at building deconstruction</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.001528</meanAmount>
+            <resultingAmount>0.001528</resultingAmount>
+        </exchange>
+    </exchanges>
+</processDataSet>

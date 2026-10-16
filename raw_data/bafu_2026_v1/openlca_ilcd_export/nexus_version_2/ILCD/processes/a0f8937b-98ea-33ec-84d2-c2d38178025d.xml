@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>a0f8937b-98ea-33ec-84d2-c2d38178025d</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, low voltage, PV, at 3kWp slanted-roof, CdTe, panel, mounted, at house</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="3e3c30aa-7498-38cc-aaf1-0977dd9d7c49">photovoltaic</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Annual output of grid-connected PV power plants differentiated for roof-top, facade and centralized power plants. Technology and installation type breakdown based on literature (IEA-PVPS Task 1 and Fraunhofer ISE reports) and expert estimates. Average yield based on national statistics (Swissolar annual reports 2012-2018). The lifetime of PV systems is estimated at 30 years and a linear degradation rate of 0.7% per year is assumed (10.5% on average over 30 years) based on the PEFCR PV electricity.;
+UUID: a0f8937b-98ea-33ec-84d2-c2d38178025d</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="1543618800000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2018</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Average yield for 2012-2018.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Operation in Switzerland.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Electricity production with grid-connected photovoltaic power plants.\n\n# Included processes\nInfrastructure for 3kWp PV plant, water use for cleaning, amount of solar energy transformed to electricity and waste heat emission due to losses of electricity in the system. Annual output, Roof-Top: 976 kWh/kWp.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="51a9cf34-4577-3aed-b9ee-3622691cf1e0" version="00.00.000" uri="../sources/51a9cf34-4577-3aed-b9ee-3622691cf1e0.xml">
+                <common:shortDescription xml:lang="en">2015 - LCI and LCA photovoltaic systems - Frischknecht</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistical data for CH. </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                    <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:29.700+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="e7beb32a-a93b-34f5-b118-2617f220ae67" version="00.00.000" uri="../contacts/e7beb32a-a93b-34f5-b118-2617f220ae67.xml">
+                <common:shortDescription xml:lang="en">Philippe Stolz</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2020-08-20T00:00:00.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="51a9cf34-4577-3aed-b9ee-3622691cf1e0" version="00.00.000" uri="../sources/51a9cf34-4577-3aed-b9ee-3622691cf1e0.xml">
+                <common:shortDescription xml:lang="en">2015 - LCI and LCA photovoltaic systems - Frischknecht</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="27c55801-6887-385f-a254-de67ce14dc11" olca:pedigreeUncertainty="(3;1;1;1;3;1)" olca:amount="1.004">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b4e9daef-25fe-338c-8c20-7d7af8c4e574" version="00.00.000" uri="../flows/b4e9daef-25fe-338c-8c20-7d7af8c4e574.xml">
+                <common:shortDescription xml:lang="en">Electricity, PV, at 3kWp slanted-roof, CdTe, panel, mounted</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>3.6144000000000003</meanAmount>
+            <resultingAmount>3.6144000000000003</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1115304764152893</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,1,1,1,3,1); specific losses of network estimated based on statistics
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f028e99d-ad23-3412-8f39-145ed429d1af" version="00.00.000" uri="../flows/f028e99d-ad23-3412-8f39-145ed429d1af.xml">
+                <common:shortDescription xml:lang="en">Electricity, low voltage, PV, at 3kWp slanted-roof, CdTe, panel, mounted, at house</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

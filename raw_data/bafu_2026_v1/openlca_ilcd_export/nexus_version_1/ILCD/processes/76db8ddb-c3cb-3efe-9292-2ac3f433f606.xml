@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>76db8ddb-c3cb-3efe-9292-2ac3f433f606</common:UUID>
+            <name>
+                <baseName xml:lang="en">xxx Electricity, production mix DE</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="6299429b-5a23-3f58-ba95-d33dc8e1875b">electricity</common:class>
+                    <common:class level="1" classId="d9a2a5d8-400c-3fad-aad9-6a146d736c71">notMaintained</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Electricity domestic net production shares are based on IEA statistics for the year 2008.;
+UUID: 76db8ddb-c3cb-3efe-9292-2ac3f433f606</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="975625200000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2000</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time period of statistics used (2008).</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="DE" latitudeAndLongitude="51.10636348632842;10.381493843430931">
+                <descriptionOfRestrictions xml:lang="en">Data apply to public and self producers in Germany.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">No technology description is provided because the dataset just describes the power plant portfolio of the respective country using current (2004) average technology per energy carrier.\n\n# Included processes\nIt includes the shares of domestic electricity production by technology at the busbar. It does not include transformation, transport nor distribution losses.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="05c5cdf8-1cf2-39cb-9e2f-afb11050eeaa" version="00.00.000" uri="../sources/05c5cdf8-1cf2-39cb-9e2f-afb11050eeaa.xml">
+                <common:shortDescription xml:lang="en">2012 - GHG emis. from Swiss elec. mixes - Frischknecht</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistical data </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: automatic validation in Excel; Other validation: Z:\ESU-Docs\Projekte laufend\401 Update Strommix v3.0\EcoSpold\_Europa\[401-electricity-mix-germany-DE-v1.0.xlsx]X-Process;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="dda0f90d-944f-3015-ba07-9f8b3ca0af60" version="00.00.000" uri="../contacts/dda0f90d-944f-3015-ba07-9f8b3ca0af60.xml">
+                <common:shortDescription xml:lang="en">René Itten</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:51:45.284+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="dda0f90d-944f-3015-ba07-9f8b3ca0af60" version="00.00.000" uri="../contacts/dda0f90d-944f-3015-ba07-9f8b3ca0af60.xml">
+                <common:shortDescription xml:lang="en">René Itten</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2012-06-22T00:00:00.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="05c5cdf8-1cf2-39cb-9e2f-afb11050eeaa" version="00.00.000" uri="../sources/05c5cdf8-1cf2-39cb-9e2f-afb11050eeaa.xml">
+                <common:shortDescription xml:lang="en">2012 - GHG emis. from Swiss elec. mixes - Frischknecht</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="ee0f9f93-524a-380a-963a-5eb4a78b8d92" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.19349">
+            <referenceToFlowDataSet type="flow data set" refObjectId="851788f3-4a4d-3c4b-b6a2-f5904354fff3" version="00.00.000" uri="../flows/851788f3-4a4d-3c4b-b6a2-f5904354fff3.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.696564</meanAmount>
+            <resultingAmount>0.696564</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); assumption for hard coal power production in Germany, value: IEA statistics 2008
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="f566629f-cb3c-361b-a2f1-ad710225f81d" olca:pedigreeUncertainty="(1;1;1;3;1;1)" olca:amount="0.013778">
+            <referenceToFlowDataSet type="flow data set" refObjectId="648fefba-a431-39b9-a9ec-d960cae17096" version="00.00.004" uri="../flows/648fefba-a431-39b9-a9ec-d960cae17096.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 1MWth, wood chips, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0496008</meanAmount>
+            <resultingAmount>0.0496008</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0266937225872184</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,1,1); assumption for cogeneration power production in Germany, value: IEA statistics 2008
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="29612bfe-5e20-37df-a2d4-e255324c5dbe" olca:pedigreeUncertainty="(1;1;1;3;1;1)" olca:amount="0.0011425">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ae34201f-c861-3fb3-a83f-832ad113c8db" version="00.00.008" uri="../flows/ae34201f-c861-3fb3-a83f-832ad113c8db.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen 300kWth, diesel, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.004113</meanAmount>
+            <resultingAmount>0.004113</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0266937225872184</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,1,1); assumption for diesel and other fossil fuel power production in Germany, value: IEA statistics 2008
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="10452abe-20fb-3f80-a31c-96dea9abd177" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.013072">
+            <referenceToFlowDataSet type="flow data set" refObjectId="3c972da3-c1a7-310d-8e20-db55edbab6a8" version="00.00.000" uri="../flows/3c972da3-c1a7-310d-8e20-db55edbab6a8.xml">
+                <common:shortDescription xml:lang="en">Electricity, oil, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0470592</meanAmount>
+            <resultingAmount>0.0470592</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); assumption for petroleum product and fuel oil power production in Germany, value: IEA statistics 2008
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="9c67c892-d289-3a7d-bf72-cbfd7d0b3484" olca:pedigreeUncertainty="(1;1;1;2;1;1)" olca:amount="0.029639">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4183acf1-db0a-3c51-ad72-cf3b33aa9f40" version="00.00.014" uri="../flows/4183acf1-db0a-3c51-ad72-cf3b33aa9f40.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at run-of-river power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1067004</meanAmount>
+            <resultingAmount>0.1067004</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0252316811335864</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,2,1,1); estimated share of ROR  hydropower production in Germany: 84%
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="6ee93188-b1d9-3659-a6a9-f708e741ddfd" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.18693">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b997d5da-a1d3-3ddf-b137-a86c1bddcf91" version="00.00.010" uri="../flows/b997d5da-a1d3-3ddf-b137-a86c1bddcf91.xml">
+                <common:shortDescription xml:lang="en">Electricity, nuclear, at power plant pressure water reactor</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.6729480000000001</meanAmount>
+            <resultingAmount>0.6729480000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); assumption for nuclear power production in Germany using PWR, value: IEA statistics 2008, fraction: IAEA Database 2010 (PRIS)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="016d490f-79c5-3c87-b3fb-165aa94757f4" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.23887">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5c0a762d-2a14-3135-a20c-219411240623" version="00.00.000" uri="../flows/5c0a762d-2a14-3135-a20c-219411240623.xml">
+                <common:shortDescription xml:lang="en">Electricity, lignite, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.859932</meanAmount>
+            <resultingAmount>0.859932</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); assumption for lignite power production in Germany, value: IEA statistics 2008
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="fbd1f9e7-9b53-32ce-b7b5-29dd0a7a66bf" olca:pedigreeUncertainty="(1;1;1;2;1;1)" olca:amount="0.0056455">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0ebc7d9c-a2aa-3522-ab24-c2498293b433" version="00.00.006" uri="../flows/0ebc7d9c-a2aa-3522-ab24-c2498293b433.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at reservoir power plant, non alpine regions</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.020323800000000003</meanAmount>
+            <resultingAmount>0.020323800000000003</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0252316811335864</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,2,1,1); estimated share of reservoir hydropower production in Germany: 16%
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="aeb0fb1c-e3e4-371c-802e-7513e1b69faa" olca:pedigreeUncertainty="(1;1;1;3;1;1)" olca:amount="0.016747">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dd527dc0-c908-3998-8113-d8395e514454" version="00.00.004" uri="../flows/dd527dc0-c908-3998-8113-d8395e514454.xml">
+                <common:shortDescription xml:lang="en">Electricity, at cogen with biogas engine, allocation exergy</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.06028920000000001</meanAmount>
+            <resultingAmount>0.06028920000000001</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0266937225872184</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,1,1); assumption for power production from biogas, sewage sludge and landfill gases in Germany, value: IEA statistics 2008
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="ecf35b33-e186-3b5a-9bd5-d60bd87f9518" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.050629">
+            <referenceToFlowDataSet type="flow data set" refObjectId="71a49212-b980-3ffd-9bb0-f4ce374bd111" version="00.00.015" uri="../flows/71a49212-b980-3ffd-9bb0-f4ce374bd111.xml">
+                <common:shortDescription xml:lang="en">Electricity, nuclear, at power plant boiling water reactor</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.1822644</meanAmount>
+            <resultingAmount>0.1822644</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); assumption for nuclear power production in Germany using BWR, value: IEA statistics 2008, fraction: IAEA Database 2010 (PRIS)
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="a9f81d35-ac75-3917-8e35-e9c000a104e6" olca:pedigreeUncertainty="(1;1;1;3;1;1)" olca:amount="0.014405">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ce4cbad-79fa-333c-9a41-723e3bce5740" version="00.00.000" uri="../flows/7ce4cbad-79fa-333c-9a41-723e3bce5740.xml">
+                <common:shortDescription xml:lang="en">Electricity from waste, at municipal waste incineration plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.051858</meanAmount>
+            <resultingAmount>0.051858</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0266937225872184</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,1,1); assumption for power production from municipal and industrial waste in Germany, value: IEA statistics 2008
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="ebbd7d52-14b8-3798-85ae-915fd40643ab" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.010145">
+            <referenceToFlowDataSet type="flow data set" refObjectId="19df4aa8-d616-30f8-8759-2577540477fa" version="00.00.008" uri="../flows/19df4aa8-d616-30f8-8759-2577540477fa.xml">
+                <common:shortDescription xml:lang="en">Electricity, hydropower, at pumped storage power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.036522</meanAmount>
+            <resultingAmount>0.036522</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); estimated share of pumped storage  production in Germany: 22.33%
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="dad4ba2f-4ab9-3f04-abda-c509befed9db" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.13479">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cf24df11-d03b-342a-b095-cdd3fcd9ed33" version="00.00.000" uri="../flows/cf24df11-d03b-342a-b095-cdd3fcd9ed33.xml">
+                <common:shortDescription xml:lang="en">Electricity, from natural gas</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.485244</meanAmount>
+            <resultingAmount>0.485244</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); assumption for natural gas power production in Germany, value: IEA statistics 2008
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="98d8c27e-4603-3c15-b75a-fe61a5997d33" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.0070709">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b1e82e30-47f7-38ae-9b84-7ce9193f29dd" version="00.00.000" uri="../flows/b1e82e30-47f7-38ae-9b84-7ce9193f29dd.xml">
+                <common:shortDescription xml:lang="en">Electricity, production mix photovoltaic, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.02545524</meanAmount>
+            <resultingAmount>0.02545524</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); assumption for solar power production in Germany, value: IEA statistics 2008
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="b35b43a0-cf11-3cf1-ba91-54faaf294f6c" olca:pedigreeUncertainty="(1;1;1;2;1;1)" olca:amount="0.069081">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b9a490eb-5dd2-3d4b-93c6-4da877870523" version="00.00.000" uri="../flows/b9a490eb-5dd2-3d4b-93c6-4da877870523.xml">
+                <common:shortDescription xml:lang="en">Electricity, at wind farm</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.2486916</meanAmount>
+            <resultingAmount>0.2486916</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0252316811335864</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,2,1,1); assumption for wind, geothermal, solar thermal, tidal and other power production in Germany, value: IEA statistics 2008
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="ed68b9a9-e120-315c-8bc6-9161b9e775f0" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.014562">
+            <referenceToFlowDataSet type="flow data set" refObjectId="59bfd8c0-8fd9-3d05-855e-a51055a584a3" version="00.00.000" uri="../flows/59bfd8c0-8fd9-3d05-855e-a51055a584a3.xml">
+                <common:shortDescription xml:lang="en">Electricity, industrial gas, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0524232</meanAmount>
+            <resultingAmount>0.0524232</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); assumption for industrial gas, coke gas and blast furnace gas power production in Germany, value: IEA statistics 2008
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b069e466-5e64-3334-bcc1-8646a88ead8c" version="00.00.000" uri="../flows/b069e466-5e64-3334-bcc1-8646a88ead8c.xml">
+                <common:shortDescription xml:lang="en">xxx Electricity, production mix DE</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+            <generalComment xml:lang="en">GERMANY
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

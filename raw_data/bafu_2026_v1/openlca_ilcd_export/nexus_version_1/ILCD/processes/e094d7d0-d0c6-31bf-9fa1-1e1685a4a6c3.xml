@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>e094d7d0-d0c6-31bf-9fa1-1e1685a4a6c3</common:UUID>
+            <name>
+                <baseName xml:lang="en">Water, deionised, at plant</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="fe659538-8c56-3745-bbe7-25b89c0fbb7e">water</common:class>
+                    <common:class level="1" classId="00c85c96-94dd-313d-ae54-d25a841678ca">industry water</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en"> Large uncertainties exist due to influence of raw water quality and operation mode on regeneration chemical demand and electricity used.;
+CAS number: 007732-18-5; 
+Formula: H2O; 
+Synonyms: demineralised water; 
+UUID: e094d7d0-d0c6-31bf-9fa1-1e1685a4a6c3</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="975625200000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2000</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Time of literature publication. Measurements took place partly before this period.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">&lt;null&gt;</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Process includes a strong cation exchanger a degasser and a strong anion exchanger. unit is operated with counterflow regeneration. Obtained water quality about 1 uS/cm for the conductivity and a silica content (as SiO2) of 5-25 ug/l. As water resource tap water from a public supply with a total hardnes of 1.71 mol/m3 (range 0.7 - 3.2) was assumed. No lime decarbonation as pre treatment is used.\n\n# Included processes\nEnergy for operation, chemicals used for regeneration, transport of chemicals to plant, emissions from regeneration chemicals, infrastructure of plant and replacement of spent exchane resin. Process does not include very small units (cartridges) or very large units with &gt;&gt;100 m3/h (power stations). Other production methods as reverse osmosis electrodialysis or distillation are not covered with this process (only ion exchange).</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="4c9aedab-7b7b-365b-8059-f79f92ff462c" version="00.00.000" uri="../sources/4c9aedab-7b7b-365b-8059-f79f92ff462c.xml">
+                <common:shortDescription xml:lang="en">2007 - LCI chemicals - Althaus</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Data for regeneration chemical demand based mainly on design calculations for the specified water quality. Data on energy demand based on few literature sources. Emissions calculated from process input. Standard distances used for transports. </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: Passed.; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="2094c752-a0c0-37ae-be3e-0e1593b6acf6" version="00.00.000" uri="../contacts/2094c752-a0c0-37ae-be3e-0e1593b6acf6.xml">
+                    <common:shortDescription xml:lang="en">Roland Hischier</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8f5d6c7c-062f-3dba-9816-47dbbeab85b3" version="00.00.000" uri="../contacts/8f5d6c7c-062f-3dba-9816-47dbbeab85b3.xml">
+                <common:shortDescription xml:lang="en">Alex Primas</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:53:16.630+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="5d5ee17d-b932-3435-aa06-4be9ede33c3a" version="00.00.000" uri="../contacts/5d5ee17d-b932-3435-aa06-4be9ede33c3a.xml">
+                <common:shortDescription xml:lang="en">Stefanie Hellweg</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2003-08-26T00:00:00.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="4c9aedab-7b7b-365b-8059-f79f92ff462c" version="00.00.000" uri="../sources/4c9aedab-7b7b-365b-8059-f79f92ff462c.xml">
+                <common:shortDescription xml:lang="en">2007 - LCI chemicals - Althaus</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(n.a.;n.a.;n.a.;n.a.;n.a.;n.a.)" olca:amount="0.00162">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b411ec8b-c60a-4235-a3b2-8bf8443cbc55" version="00.00.000" uri="../flows/b411ec8b-c60a-4235-a3b2-8bf8443cbc55.xml">
+                <common:shortDescription xml:lang="en">Heat, waste</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.00162</meanAmount>
+            <resultingAmount>0.00162</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3601470508735443</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(nA,nA,nA,nA,nA,nA); Calculated from electricity demand
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="6556440f-cd03-3975-9615-023309701fe2" olca:pedigreeUncertainty="(n.a.;n.a.;n.a.;n.a.;n.a.;n.a.)" olca:amount="1.11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b398c24c-eb85-35da-bc2d-eea4ca5241d8" version="00.00.000" uri="../flows/b398c24c-eb85-35da-bc2d-eea4ca5241d8.xml">
+                <common:shortDescription xml:lang="en">Tap water, at user</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.11</meanAmount>
+            <resultingAmount>1.11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.044030650891055</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(nA,nA,nA,nA,nA,nA); CV calculated from range of the reported values
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(n.a.;n.a.;n.a.;n.a.;n.a.;n.a.)" olca:amount="2.3E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="73ed05cc-9727-4abf-9516-4b5c0fe54a16" version="00.00.000" uri="../flows/73ed05cc-9727-4abf-9516-4b5c0fe54a16.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, non-fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.3E-4</meanAmount>
+            <resultingAmount>2.3E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.42828568570857</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(nA,nA,nA,nA,nA,nA); Calculated from data of chemical demand
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="310e3a98-694e-3969-9783-1c2da129d150" olca:pedigreeUncertainty="(4;5;1;2;3;5)" olca:amount="9.0E-11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a49ae552-df91-3fdf-b3ad-791202386cc5" version="00.00.004" uri="../flows/a49ae552-df91-3fdf-b3ad-791202386cc5.xml">
+                <common:shortDescription xml:lang="en">Water treatment plant, deionisation</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.0E-11</meanAmount>
+            <resultingAmount>9.0E-11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.783255450012701</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,1,2,3,5); Estimated with weak data on plant operation
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="eb5552ed-63a8-374d-8fa4-296f644c37f8" olca:pedigreeUncertainty="(4;5;n.a.;n.a.;n.a.;n.a.)" olca:amount="5.2E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f3e7a082-a8ab-3b86-8db2-3e46c3cb8a6c" version="00.00.022" uri="../flows/f3e7a082-a8ab-3b86-8db2-3e46c3cb8a6c.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, lorry, 16t-32t gross weight, fleet average</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>5.2E-5</meanAmount>
+            <resultingAmount>5.2E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.445683229480096</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,nA,nA,nA,nA); Estimated with standard distances
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ed60e659-c867-399b-9cd2-d94f7c326f18" version="00.00.000" uri="../flows/ed60e659-c867-399b-9cd2-d94f7c326f18.xml">
+                <common:shortDescription xml:lang="en">Water, deionised, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="df605f09-34c5-3b3f-94ea-227f7a3c06a7" olca:pedigreeUncertainty="(n.a.;n.a.;n.a.;n.a.;n.a.;n.a.)" olca:amount="4.5E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="501bd4f9-9054-3e53-927b-59744c33b1ed" version="00.00.000" uri="../flows/501bd4f9-9054-3e53-927b-59744c33b1ed.xml">
+                <common:shortDescription xml:lang="en">Electricity, medium voltage, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.00162</meanAmount>
+            <resultingAmount>0.00162</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.3601470508735443</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(nA,nA,nA,nA,nA,nA); CV calculated from range of the reported values
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="2f8b5baa-5930-3460-bca9-ad90d49c1d36" olca:pedigreeUncertainty="(n.a.;n.a.;n.a.;n.a.;n.a.;n.a.)" olca:amount="2.4E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f91f2652-2da7-3b70-812e-4b3f64d0f02e" version="00.00.000" uri="../flows/f91f2652-2da7-3b70-812e-4b3f64d0f02e.xml">
+                <common:shortDescription xml:lang="en">Hydrochloric acid, 30% in H2O, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.4E-4</meanAmount>
+            <resultingAmount>2.4E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.42828568570857</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(nA,nA,nA,nA,nA,nA); CV calculated from range of resin and raw water
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="ce8a12aa-ecaa-37d9-8355-5cb7da9ce6c0" olca:pedigreeUncertainty="(n.a.;n.a.;n.a.;n.a.;n.a.;n.a.)" olca:amount="1.2E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1748a7a4-58a8-332d-a882-c721c10f0381" version="00.00.000" uri="../flows/1748a7a4-58a8-332d-a882-c721c10f0381.xml">
+                <common:shortDescription xml:lang="en">Sodium hydroxide, 50% in H2O, production mix, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.2E-4</meanAmount>
+            <resultingAmount>1.2E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4212670403551895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(nA,nA,nA,nA,nA,nA); CV calculated from range of resin and raw water
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(n.a.;n.a.;n.a.;n.a.;n.a.;n.a.)" olca:amount="2.3E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ca347524-6865-416f-95b5-76e086b46fd7" version="00.00.000" uri="../flows/ca347524-6865-416f-95b5-76e086b46fd7.xml">
+                <common:shortDescription xml:lang="en">Chloride</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.3E-4</meanAmount>
+            <resultingAmount>2.3E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.42828568570857</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(nA,nA,nA,nA,nA,nA); Calculated from data of chemical demand
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="aacc6120-0e68-3835-8303-5ae37d62c030" olca:pedigreeUncertainty="(4;5;n.a.;n.a.;n.a.;n.a.)" olca:amount="6.24E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="12262ce2-ee81-3caf-8488-1dbf8fb21abe" version="00.00.000" uri="../flows/12262ce2-ee81-3caf-8488-1dbf8fb21abe.xml">
+                <common:shortDescription xml:lang="en">Transport, freight, rail</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.24E-4</meanAmount>
+            <resultingAmount>6.24E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.445683229480096</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,nA,nA,nA,nA); Estimated with standard distances
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(n.a.;n.a.;n.a.;n.a.;n.a.;n.a.)" olca:amount="7.0E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6d5c5a51-42ce-412a-9517-d0baba8b5b99" version="00.00.000" uri="../flows/6d5c5a51-42ce-412a-9517-d0baba8b5b99.xml">
+                <common:shortDescription xml:lang="en">Sodium</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.0E-5</meanAmount>
+            <resultingAmount>7.0E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4212670403551895</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(nA,nA,nA,nA,nA,nA); Calculated from data of chemical demand
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

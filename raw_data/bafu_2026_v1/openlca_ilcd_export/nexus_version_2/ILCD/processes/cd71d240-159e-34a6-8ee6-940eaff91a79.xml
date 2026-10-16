@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>cd71d240-159e-34a6-8ee6-940eaff91a79</common:UUID>
+            <name>
+                <baseName xml:lang="en">xx Electricity, biogas, allocation exergy, at SOFC fuel cell 125kWe, future</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="470d1f1f-c730-32a9-bb66-ef73b3727dfb">energy, obsolete</common:class>
+                    <common:class level="1" classId="40f48959-a1e2-320d-9c20-bea89585beff">biomass obsolete</common:class>
+                    <common:class level="2" classId="1b32be20-7b03-3da5-ae94-713d4e9dc4c3">cogeneration, obsolete</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The multioutput-process 'biogas, burned in SOFC fuel cell 125kWe delivers the coproducts 'heat, biogas, allocation exergy, at SOFC fuel cell 125kWe' and 'electricity, biogas, allocation exergy, at SOFC fuel cell 125kWe' . The exergy allocation is the allocation scheme suggested to be used within the ecoinvent database (e.g. in electricity mixes).;
+UUID: cd71d240-159e-34a6-8ee6-940eaff91a79</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="1133391600000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2005</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">undefined</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Biogas input modelled for conditions in Switzerland. Process applicable in central European conditions.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Solid oxide fuel cell (SOFC) with unpressurised tubular stack design for central cogeneration use. Performance, stack lifetime and catalyst use according to expected future values for a serial product. Operation with refined biogas from low pressure gas network. Electrical efficiency 47%, total efficiency 80%. Operation as base load engine with low partial load hours.\n\n# Included processes\nThe module includes fuel input, infrastructure, emissions to air, and working materials for operation.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="2bff1c6e-d656-30dc-b8e5-2e8d3fb0ee06" version="00.00.000" uri="../sources/2bff1c6e-d656-30dc-b8e5-2e8d3fb0ee06.xml">
+                <common:shortDescription xml:lang="en">2007 - LCI new CHP systems - Primas</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Literature data and manufacturer information </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: passed; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8f5d6c7c-062f-3dba-9816-47dbbeab85b3" version="00.00.000" uri="../contacts/8f5d6c7c-062f-3dba-9816-47dbbeab85b3.xml">
+                <common:shortDescription xml:lang="en">Alex Primas</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:51:30.602+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="8f5d6c7c-062f-3dba-9816-47dbbeab85b3" version="00.00.000" uri="../contacts/8f5d6c7c-062f-3dba-9816-47dbbeab85b3.xml">
+                <common:shortDescription xml:lang="en">Alex Primas</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:45:29.544+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.004</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="2bff1c6e-d656-30dc-b8e5-2e8d3fb0ee06" version="00.00.000" uri="../sources/2bff1c6e-d656-30dc-b8e5-2e8d3fb0ee06.xml">
+                <common:shortDescription xml:lang="en">2007 - LCI new CHP systems - Primas</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="543d0375-0a21-3a93-b974-7cf4b3ce0013" olca:pedigreeUncertainty="(n.a.;n.a.;n.a.;n.a.;n.a.;n.a.)" olca:amount="6.847426470588235">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d93559e6-f217-3f2b-ac80-d3bed2eb472d" version="00.00.004" uri="../flows/d93559e6-f217-3f2b-ac80-d3bed2eb472d.xml">
+                <common:shortDescription xml:lang="en">Methane, 96 vol-%, from biogas, low pressure, at consumer</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.847426470588235</meanAmount>
+            <resultingAmount>6.847426470588235</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(nA,nA,nA,nA,nA,nA); input
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d6005af0-4172-3def-914f-5e5120e73fac" version="00.00.006" uri="../flows/d6005af0-4172-3def-914f-5e5120e73fac.xml">
+                <common:shortDescription xml:lang="en">xx Electricity, biogas, allocation exergy, at SOFC fuel cell 125kWe, future</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(2;3;2;1;1;3)" olca:amount="4.361810661764705">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b411ec8b-c60a-4235-a3b2-8bf8443cbc55" version="00.00.000" uri="../flows/b411ec8b-c60a-4235-a3b2-8bf8443cbc55.xml">
+                <common:shortDescription xml:lang="en">Heat, waste</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.361810661764705</meanAmount>
+            <resultingAmount>4.361810661764705</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0522832318344715</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,2,1,1,3); uncertainty of heating value and electric efficiency
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;3;2;1;1;4)" olca:amount="1.3695E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d068f3e2-b033-417b-a359-ca4f25da9731" version="00.00.000" uri="../flows/d068f3e2-b033-417b-a359-ca4f25da9731.xml">
+                <common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.3695E-5</meanAmount>
+            <resultingAmount>1.3695E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.235677951571525</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,2,1,1,4); estimate based on different references
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;n.a.;n.a.;n.a.;1;n.a.)" olca:amount="3.7661E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8c52f40c-69b7-4538-8923-b371523c71f5" version="00.00.000" uri="../flows/8c52f40c-69b7-4538-8923-b371523c71f5.xml">
+                <common:shortDescription xml:lang="en">Sulfur dioxide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.7661E-6</meanAmount>
+            <resultingAmount>3.7661E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103346</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,nA,nA,nA,1,nA); composition of natural gas
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;2;1;1;4)" olca:amount="4.7932E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="175baa64-d985-4c5e-84ef-67cc3a1cf952" version="00.00.000" uri="../flows/175baa64-d985-4c5e-84ef-67cc3a1cf952.xml">
+                <common:shortDescription xml:lang="en">NMVOC, non-methane volatile organic compounds</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.7932E-6</meanAmount>
+            <resultingAmount>4.7932E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2574975149080811</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,2,1,1,4); estimate based on different references
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="1a2f0384-d903-4f9d-8757-1e78d84366ab" olca:pedigreeUncertainty="(3;4;2;2;1;5)" olca:amount="1.6434E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0256c736-e28d-38b5-ae2d-6ac8c0a25387" version="00.00.000" uri="../flows/0256c736-e28d-38b5-ae2d-6ac8c0a25387.xml">
+                <common:shortDescription xml:lang="en">Tap water, at user</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.6434E-4</meanAmount>
+            <resultingAmount>1.6434E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1241441188744439</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,2,2,1,5); company data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;n.a.;n.a.;n.a.;1;n.a.)" olca:amount="0.38224">
+            <referenceToFlowDataSet type="flow data set" refObjectId="73ed05cc-9727-4abf-9516-4b5c0fe54a16" version="00.00.000" uri="../flows/73ed05cc-9727-4abf-9516-4b5c0fe54a16.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, non-fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.38224</meanAmount>
+            <resultingAmount>0.38224</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0350845376103346</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,nA,nA,nA,1,nA); composition of biogas
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="43bc11fa-35a2-3734-8f1a-87975c8a0780" olca:pedigreeUncertainty="(2;3;2;1;1;4)" olca:amount="9.9288E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e1c7059d-fa10-3116-b5b3-d49ada1b0143" version="00.00.013" uri="../flows/e1c7059d-fa10-3116-b5b3-d49ada1b0143.xml">
+                <common:shortDescription xml:lang="en">Maintenance SOFC fuel cell 125kWe, future</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.9288E-7</meanAmount>
+            <resultingAmount>9.9288E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0675673280875544</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,2,1,1,4); uncertainty of maintenance cycle
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(2;3;2;1;1;4)" olca:amount="1.1641E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="550eaab3-16d8-3b28-a1a1-5aa018fd394c" version="00.00.000" uri="../flows/550eaab3-16d8-3b28-a1a1-5aa018fd394c.xml">
+                <common:shortDescription xml:lang="en">Carbon monoxide, non-fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.1641E-5</meanAmount>
+            <resultingAmount>1.1641E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.2411827234743713</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,2,1,1,4); estimate based on different references
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(4;3;2;1;1;5)" olca:amount="2.739E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="baf58fc9-573c-419c-8c16-831ac03203b9" version="00.00.000" uri="../flows/baf58fc9-573c-419c-8c16-831ac03203b9.xml">
+                <common:shortDescription xml:lang="en">Methane, non-fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.739E-5</meanAmount>
+            <resultingAmount>2.739E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2737346662472526</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,3,2,1,1,5); estimate based on few references
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="e00fdfe1-df9f-34c2-b6a1-4b27259faade" olca:pedigreeUncertainty="(2;3;2;1;1;4)" olca:amount="1.1024E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f54655f5-fce1-3c13-97cb-19f0f7f9a2bf" version="00.00.012" uri="../flows/f54655f5-fce1-3c13-97cb-19f0f7f9a2bf.xml">
+                <common:shortDescription xml:lang="en">SOFC fuel cell 125kWe, future</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>1.1024E-7</meanAmount>
+            <resultingAmount>1.1024E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7378434912269862</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,2,1,1,4); uncertainty of life time
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

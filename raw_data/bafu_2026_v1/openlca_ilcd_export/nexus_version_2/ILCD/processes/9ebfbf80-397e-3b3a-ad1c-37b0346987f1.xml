@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>9ebfbf80-397e-3b3a-ad1c-37b0346987f1</common:UUID>
+            <name>
+                <baseName xml:lang="en">xx Heat, biogas, at diffusion absorption heat pump 4kW, future</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="470d1f1f-c730-32a9-bb66-ef73b3727dfb">energy, obsolete</common:class>
+                    <common:class level="1" classId="c630f3db-fe50-38e6-8f28-3063bd38b7fc">heat, obsolete</common:class>
+                    <common:class level="2" classId="b62e5c8c-9b86-39c8-876c-81ee1934938f">heat pumps, obsolete</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">NOx and CO emissions derived from measurements of gas boilers operated with natural gas under controlled conditions;
+Synonyms: DAHP, DAWP; 
+UUID: 9ebfbf80-397e-3b3a-ad1c-37b0346987f1</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="1133391600000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2005</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">undefined</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Natural gas input modelled for Switzerland. Process applicable in central European conditions.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Diffusion absorption heat pump with 4 kWth nominal thermal power connected to a short borehole heat exchanger. The unit includes a peak load boiler which allows a maximal output power of 11 kWth. Operation with connection to low pressure gas network. Seasonal performance factor (SPF) of 1.32. Supply temperature of the heating system 50°C.\n\n# Included processes\nThe module includes input biogas input from low pressure gas network (CH), infrastructure (heat pump with peak boiler and borehole heat exchanger), emissions to air and water, and electricity needed for operation.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="2bff1c6e-d656-30dc-b8e5-2e8d3fb0ee06" version="00.00.000" uri="../sources/2bff1c6e-d656-30dc-b8e5-2e8d3fb0ee06.xml">
+                <common:shortDescription xml:lang="en">2007 - LCI new CHP systems - Primas</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Literature data and manufacturer information, emissions values from ecoinvent process natural gas, burned in boiler condensing modulating under 100kW </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: passed; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                    <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="8f5d6c7c-062f-3dba-9816-47dbbeab85b3" version="00.00.000" uri="../contacts/8f5d6c7c-062f-3dba-9816-47dbbeab85b3.xml">
+                <common:shortDescription xml:lang="en">Alex Primas</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:50:32.281+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="8f5d6c7c-062f-3dba-9816-47dbbeab85b3" version="00.00.000" uri="../contacts/8f5d6c7c-062f-3dba-9816-47dbbeab85b3.xml">
+                <common:shortDescription xml:lang="en">Alex Primas</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:52:45.985+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.024</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="2bff1c6e-d656-30dc-b8e5-2e8d3fb0ee06" version="00.00.000" uri="../sources/2bff1c6e-d656-30dc-b8e5-2e8d3fb0ee06.xml">
+                <common:shortDescription xml:lang="en">2007 - LCI new CHP systems - Primas</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="5.303E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="892f10da-7bf2-42b3-b171-221989661a05" version="00.00.000" uri="../flows/892f10da-7bf2-42b3-b171-221989661a05.xml">
+                <common:shortDescription xml:lang="en">Butane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.303E-7</meanAmount>
+            <resultingAmount>5.303E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8284271247461903</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.5152E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f1c0cd31-8d5e-4bc9-91f6-79e76329234e" version="00.00.000" uri="../flows/f1c0cd31-8d5e-4bc9-91f6-79e76329234e.xml">
+                <common:shortDescription xml:lang="en">Propionic acid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.5152E-8</meanAmount>
+            <resultingAmount>1.5152E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8284271247461903</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.7879E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8c52f40c-69b7-4538-8923-b371523c71f5" version="00.00.000" uri="../flows/8c52f40c-69b7-4538-8923-b371523c71f5.xml">
+                <common:shortDescription xml:lang="en">Sulfur dioxide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.7879E-7</meanAmount>
+            <resultingAmount>3.7879E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0488088481701516</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">based on composition of refined biogas
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.1364E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b9b68c0c-053e-41de-ab72-8dfe1c3f5755" version="00.00.000" uri="../flows/b9b68c0c-053e-41de-ab72-8dfe1c3f5755.xml">
+                <common:shortDescription xml:lang="en">Acetic acid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.1364E-7</meanAmount>
+            <resultingAmount>1.1364E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8284271247461903</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a4cc1f0e-c357-3de8-81fa-93da98d2dff0" version="00.00.024" uri="../flows/a4cc1f0e-c357-3de8-81fa-93da98d2dff0.xml">
+                <common:shortDescription xml:lang="en">xx Heat, biogas, at diffusion absorption heat pump 4kW, future</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.2727E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="09257c34-f323-436a-81be-ef90e9171ed2" version="00.00.000" uri="../flows/09257c34-f323-436a-81be-ef90e9171ed2.xml">
+                <common:shortDescription xml:lang="en">Nitrite</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.2727E-9</meanAmount>
+            <resultingAmount>2.2727E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(3;4;2;2;1;5)" olca:amount="1.1013">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b411ec8b-c60a-4235-a3b2-8bf8443cbc55" version="00.00.000" uri="../flows/b411ec8b-c60a-4235-a3b2-8bf8443cbc55.xml">
+                <common:shortDescription xml:lang="en">Heat, waste</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.1013</meanAmount>
+            <resultingAmount>1.1013</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1241441188744439</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,2,2,1,5); uncertainty of operation supply energy and heating value
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.5758E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="20664d0e-24e3-4daa-8c5c-2ade6e0c2723" version="00.00.000" uri="../flows/20664d0e-24e3-4daa-8c5c-2ade6e0c2723.xml">
+                <common:shortDescription xml:lang="en">Formaldehyde</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.5758E-8</meanAmount>
+            <resultingAmount>7.5758E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8284271247461903</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="9.8485E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="180520a0-34e8-4058-bac9-27cbbb32c527" version="00.00.000" uri="../flows/180520a0-34e8-4058-bac9-27cbbb32c527.xml">
+                <common:shortDescription xml:lang="en">Nitrate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.8485E-8</meanAmount>
+            <resultingAmount>9.8485E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.5152E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="98c66fdb-091d-46e9-a533-686f821e8f6a" version="00.00.000" uri="../flows/98c66fdb-091d-46e9-a533-686f821e8f6a.xml">
+                <common:shortDescription xml:lang="en">Propane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.5152E-7</meanAmount>
+            <resultingAmount>1.5152E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8284271247461903</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="fd051f35-0b76-36a0-96b3-ca224eeba9e2" olca:pedigreeUncertainty="(4;4;2;2;1;5)" olca:amount="6.41E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ba21ca64-2e72-3008-8d84-cfba9c8cbabf" version="00.00.023" uri="../flows/ba21ca64-2e72-3008-8d84-cfba9c8cbabf.xml">
+                <common:shortDescription xml:lang="en">xxx Borehole heat exchanger 150 m</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.41E-8</meanAmount>
+            <resultingAmount>6.41E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.762015890961259</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,4,2,2,1,5); uncertainty of life time 
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.7879E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6dc1b46f-ee89-4495-95c4-b8a637bcd6cb" version="00.00.000" uri="../flows/6dc1b46f-ee89-4495-95c4-b8a637bcd6cb.xml">
+                <common:shortDescription xml:lang="en">Dinitrogen monoxide</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.7879E-7</meanAmount>
+            <resultingAmount>3.7879E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8284271247461903</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.5152E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="39946c56-cdf6-4a22-9ac9-1cd333b65533" version="00.00.000" uri="../flows/39946c56-cdf6-4a22-9ac9-1cd333b65533.xml">
+                <common:shortDescription xml:lang="en">Toluene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.5152E-7</meanAmount>
+            <resultingAmount>1.5152E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8284271247461903</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.5152E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="baf58fc9-573c-419c-8c16-831ac03203b9" version="00.00.000" uri="../flows/baf58fc9-573c-419c-8c16-831ac03203b9.xml">
+                <common:shortDescription xml:lang="en">Methane, non-fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.5152E-6</meanAmount>
+            <resultingAmount>1.5152E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8284271247461903</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.2727E-11">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a850e6de-a007-432f-be7f-ce6e2cf1f2ae" version="00.00.000" uri="../flows/a850e6de-a007-432f-be7f-ce6e2cf1f2ae.xml">
+                <common:shortDescription xml:lang="en">Mercury II</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.2727E-11</meanAmount>
+            <resultingAmount>2.2727E-11</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.23606797749979</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.5758E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="230d8a0a-517c-43fe-8357-1818dd12997a" version="00.00.000" uri="../flows/230d8a0a-517c-43fe-8357-1818dd12997a.xml">
+                <common:shortDescription xml:lang="en">Particulate Matter, &lt; 2.5 um</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.5758E-8</meanAmount>
+            <resultingAmount>7.5758E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4142135623730951</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:pedigreeUncertainty="(3;4;2;2;1;5)" olca:amount="0.24242">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8bc09c04-2190-4ee2-9ee2-ae988ccd4e0c" version="00.00.000" uri="../flows/8bc09c04-2190-4ee2-9ee2-ae988ccd4e0c.xml">
+                <common:shortDescription xml:lang="en">Energy, geothermal, converted</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.24242</meanAmount>
+            <resultingAmount>0.24242</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1241441188744439</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,2,2,1,5); uncertainty of operation supply energy and heating value
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="0b631d30-42e5-3482-adfa-c9762c7a0faf" olca:pedigreeUncertainty="(4;4;2;2;1;5)" olca:amount="6.01E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d3a0f3bf-08c0-3d5a-bf84-60e17c1263fe" version="00.00.026" uri="../flows/d3a0f3bf-08c0-3d5a-bf84-60e17c1263fe.xml">
+                <common:shortDescription xml:lang="en">Diffusion absorption heat pump 4kW, future</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>6.01E-7</meanAmount>
+            <resultingAmount>6.01E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.762015890961259</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,4,2,2,1,5); uncertainty of life time 
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="4.4697E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="550eaab3-16d8-3b28-a1a1-5aa018fd394c" version="00.00.000" uri="../flows/550eaab3-16d8-3b28-a1a1-5aa018fd394c.xml">
+                <common:shortDescription xml:lang="en">Carbon monoxide, non-fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.4697E-6</meanAmount>
+            <resultingAmount>4.4697E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.7202941017470885</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on calculation for gas boiler
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.5758E-10">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5ad58fcc-e9ba-4155-a3c9-e4ffb3065a6f" version="00.00.000" uri="../flows/5ad58fcc-e9ba-4155-a3c9-e4ffb3065a6f.xml">
+                <common:shortDescription xml:lang="en">Acetaldehyde</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.5758E-10</meanAmount>
+            <resultingAmount>7.5758E-10</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8284271247461903</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.0303E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="1bb6a502-3ff9-4a79-835c-5588b855f1f5" version="00.00.000" uri="../flows/1bb6a502-3ff9-4a79-835c-5588b855f1f5.xml">
+                <common:shortDescription xml:lang="en">Benzene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.0303E-7</meanAmount>
+            <resultingAmount>3.0303E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8284271247461903</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.5758E-12">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2cbb504a-ce2f-40e9-9d38-e130e95a1242" version="00.00.000" uri="../flows/2cbb504a-ce2f-40e9-9d38-e130e95a1242.xml">
+                <common:shortDescription xml:lang="en">Benzo(a)pyrene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.5758E-12</meanAmount>
+            <resultingAmount>7.5758E-12</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8284271247461903</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="31" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.5758E-9">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9d1efa17-070a-4602-a65f-daf5056b0647" version="00.00.000" uri="../flows/9d1efa17-070a-4602-a65f-daf5056b0647.xml">
+                <common:shortDescription xml:lang="en">PAH, polycyclic aromatic hydrocarbons</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.5758E-9</meanAmount>
+            <resultingAmount>7.5758E-9</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8284271247461903</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="c4a92617-9f99-3d7b-95c0-15fb110b80ad" olca:pedigreeUncertainty="(4;5;2;2;4;5)" olca:amount="0.0055556">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ec91f1d-db72-39ef-bbc0-46119b059efe" version="00.00.000" uri="../flows/7ec91f1d-db72-39ef-bbc0-46119b059efe.xml">
+                <common:shortDescription xml:lang="en">Electricity, low voltage, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.02000016</meanAmount>
+            <resultingAmount>0.02000016</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2951061732537608</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,2,2,4,5); estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="2.2E-17">
+            <referenceToFlowDataSet type="flow data set" refObjectId="237a5f15-8119-472a-8988-88b7ecb42405" version="00.00.000" uri="../flows/237a5f15-8119-472a-8988-88b7ecb42405.xml">
+                <common:shortDescription xml:lang="en">Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.2E-17</meanAmount>
+            <resultingAmount>2.2E-17</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8284271247461903</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">based on composition of refined biogas
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="7.5E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d068f3e2-b033-417b-a359-ca4f25da9731" version="00.00.000" uri="../flows/d068f3e2-b033-417b-a359-ca4f25da9731.xml">
+                <common:shortDescription xml:lang="en">Nitrogen oxides</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>7.5E-6</meanAmount>
+            <resultingAmount>7.5E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.8973665961010275</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on calculation for gas boiler
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="30" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="543d0375-0a21-3a93-b974-7cf4b3ce0013" olca:pedigreeUncertainty="(3;4;2;2;1;5)" olca:amount="0.75758">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d93559e6-f217-3f2b-ac80-d3bed2eb472d" version="00.00.004" uri="../flows/d93559e6-f217-3f2b-ac80-d3bed2eb472d.xml">
+                <common:shortDescription xml:lang="en">Methane, 96 vol-%, from biogas, low pressure, at consumer</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.75758</meanAmount>
+            <resultingAmount>0.75758</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1241441188744439</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,2,2,1,5); uncertainty of operation temperatures of source and supply
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.7879E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4aed44df-760c-497f-ab37-ebbe7d2b15ff" version="00.00.000" uri="../flows/4aed44df-760c-497f-ab37-ebbe7d2b15ff.xml">
+                <common:shortDescription xml:lang="en">Sulfite</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.7879E-8</meanAmount>
+            <resultingAmount>3.7879E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="9.0909E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0b9698ec-8b52-4986-8f9f-ad30915aa00c" version="00.00.000" uri="../flows/0b9698ec-8b52-4986-8f9f-ad30915aa00c.xml">
+                <common:shortDescription xml:lang="en">Pentane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.0909E-7</meanAmount>
+            <resultingAmount>9.0909E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>2.8284271247461903</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="0.042285">
+            <referenceToFlowDataSet type="flow data set" refObjectId="73ed05cc-9727-4abf-9516-4b5c0fe54a16" version="00.00.000" uri="../flows/73ed05cc-9727-4abf-9516-4b5c0fe54a16.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, non-fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>0.042285</meanAmount>
+            <resultingAmount>0.042285</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0488088481701516</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">based on composition of refined biogas
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="3.7879E-8">
+            <referenceToFlowDataSet type="flow data set" refObjectId="796c56b3-a863-444c-8b75-1412832af498" version="00.00.000" uri="../flows/796c56b3-a863-444c-8b75-1412832af498.xml">
+                <common:shortDescription xml:lang="en">Sulfate</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.7879E-8</meanAmount>
+            <resultingAmount>3.7879E-8</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7320508075688772</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">rough estimate based on gas boiler data
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

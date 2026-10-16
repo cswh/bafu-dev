@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>c02ab928-1508-3c45-a71b-974439a7ed7a</common:UUID>
+            <name>
+                <baseName xml:lang="en">Vinasse, from sweet sorghum, at distillery</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="e70d2ea9-becd-32e6-9944-c946e949f129">fuels</common:class>
+                    <common:class level="1" classId="a23223d7-82cf-3a02-91f2-99c6cf539bd3">biofuels</common:class>
+                    <common:class level="2" classId="93319278-89a2-36c1-bb89-48d21840bc15">ethanol</common:class>
+                    <common:class level="3" classId="516ae018-89ad-36d9-bff1-fcdf99bf87e9">byproducts</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Inventory refers to the production of 1 kg of hydrated ethanol 95% (dry basis, i.e. 1.05 kg hydrated ethanol 95% wet basis), respectively 1 kg of excess bagasse (70% dry matter), 1 kWh of electricity and 1 kg of vinasse. The multioutput-process 'sweet sorghum, in ethanol distillery' delivers the co-products 'ethanol, 95% in H2O, from sweet sorghum, at distillery', 'bagasse, from sweet sorghum, at distillery', 'electricity, bagasse, sorghum, at distillery' and 'vinasse, from sweet sorghum, at distillery'. Economic allocation with allocation factor for common stages of 91% to ethanol. Allocation according to carbon balance for CO2.;
+UUID: c02ab928-1508-3c45-a71b-974439a7ed7a</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="946681200000" olca:endDate="975625200000">
+            <common:referenceYear>2000</common:referenceYear>
+            <common:dataSetValidUntil>2000</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Data from 1992 to 2005, current technology</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CN" latitudeAndLongitude="36.559273388971576;103.83259239930851">
+                <descriptionOfRestrictions xml:lang="en">&lt;null&gt;</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Juice extraction is performed through milling (not diffusion). The juice is then converted to ethanol by standard fermentation and distillation techniques. Energy supply is done by combustion of the bagasse resulting from the extraction stage. The main product is ethanol.\n\n# Included processes\nThis dataset includes the transport of sorghum to the distillery and the processing of sorghum to ethanol (95% w/w), bagasse (70% dry matter, excess), excess electricity and vinasse from ethanol production. System boundary is at the ethanol distillery. Treatment of waste effluents is not included (most wastewater is spread over the fields nearby).</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="49725337-1144-3335-8470-1dede2db7cb4" version="00.00.000" uri="../sources/49725337-1144-3335-8470-1dede2db7cb4.xml">
+                <common:shortDescription xml:lang="en">2007 - LCI bioenergy - Jungbluth</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Data is from the etha+ project (Alcosuisse, CH) and the ASIATIC project (LASEN, CH), technology by French ethanol plant supplier, modelling by ENERS (CH) </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: Passed.; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="0bcb8400-bb3d-3da1-b808-677f447cdc8c" version="00.00.000" uri="../contacts/0bcb8400-bb3d-3da1-b808-677f447cdc8c.xml">
+                    <common:shortDescription xml:lang="en">Niels Jungbluth</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="1ab03926-e279-3520-9229-16eacd2f9105" version="00.00.000" uri="../contacts/1ab03926-e279-3520-9229-16eacd2f9105.xml">
+                <common:shortDescription xml:lang="en">Edgard Gnansounou</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:54:31.456+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="0c4f51b6-fd89-369d-afcc-a1c86b23d7a2" version="00.00.000" uri="../contacts/0c4f51b6-fd89-369d-afcc-a1c86b23d7a2.xml">
+                <common:shortDescription xml:lang="en">Arnaud Dauriat</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:57:09.302+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.012</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="49725337-1144-3335-8470-1dede2db7cb4" version="00.00.000" uri="../sources/49725337-1144-3335-8470-1dede2db7cb4.xml">
+                <common:shortDescription xml:lang="en">2007 - LCI bioenergy - Jungbluth</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4ec71f06-1a9f-3817-8f3e-762f74073a15" version="00.00.012" uri="../flows/4ec71f06-1a9f-3817-8f3e-762f74073a15.xml">
+                <common:shortDescription xml:lang="en">Vinasse, from sweet sorghum, at distillery</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">CHINA
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(1;1;1;1;1;1)" olca:amount="0.044837">
+            <referenceToFlowDataSet type="flow data set" refObjectId="cc6a1abb-b123-4ca6-8f16-38209df609be" version="00.00.000" uri="../flows/cc6a1abb-b123-4ca6-8f16-38209df609be.xml">
+                <common:shortDescription xml:lang="en">Carbon dioxide, in air</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.044837</meanAmount>
+            <resultingAmount>0.044837</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,1); Calculation, to close carbon balance
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>86cfc55f-f38b-3f03-9868-5fea06a23a3b</common:UUID>
+            <name>
+                <baseName xml:lang="en">Electricity, hard coal, at power plant</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="a7a7aa24-604f-3bc6-a698-545bafdf915d">electricity by fuel</common:class>
+                    <common:class level="1" classId="1e16a4cb-ccc6-35f7-b15f-24774dfc57ec">coal</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The dataset describes the electricity production at an average hard coal power plant at busbar in this region of the North American Electricity Reliability Corporation (NERC), modelled separately from the other regions. The datasets includes as only input the fuel use. The corresponding dataset describing the combustion of the fuel contains the following data, assumptions, and extrapolations: The plant is assumed to operate 150000 hours during its lifetime. For the assessment of some of the main characteristics (efficiency and capacity of the plant, capacity factor) and criteria emissions (SOx, NOx, mercury, and CO2) a bottom-up approach has been used, based upon the complete set of these factors for every US hard coal power stations in 2004. The limited number of combined heat and power plants has not been included in the analysis. All other emission data are based on US EPA (1998) and US DOE (1998) reports. The size distribution of particles has been derived from German data, assumed as well representative for European hard coal power plants. The amounts of retained SOx (due to use of FGD) and retained NOx (due to use of SCR) have been calculated as the difference between uncontrolled average US SOx and NOx emissions in year 1998 and actual region specific SOx and NOx emissions in year 2004 assuming that the characteristics of the coals have not changed in the meanwhile. The waste heat releases to air and water have been allocated on the basis of the assumed share of cooling tower vs. river cooled power plants and assumptions on the direct losses to air, along with the corresponding European datasets. The share of the recycled ash is the average US. For the disposal of the remaining ash, the German disposal dataset has been used, roughly representing average European environmental impacts due to hard coal ash disposal.;
+UUID: 86cfc55f-f38b-3f03-9868-5fea06a23a3b</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1072911600000" olca:endDate="1101855600000">
+            <common:referenceYear>2004</common:referenceYear>
+            <common:dataSetValidUntil>2004</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">undefined</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="NPCC" latitudeAndLongitude="51.085295563955185;-76.5012799016501">
+                <descriptionOfRestrictions xml:lang="en">NPCC = Northeast Power Coordinating Council. Region-specific, US average, and European data, see ReferenceFunction/GeneralComment and ReferenceFunction/IncludedProcesses.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Average installed technology.\n\n# Included processes\nConversion of hard coal into electricity: electricity output at busbar. The module uses the average net efficiency of ERCOT hard coal power plants (32.3%) in 2004.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="7490c6fc-e047-3b94-bd16-843ce4c9f98e" version="00.00.000" uri="../sources/7490c6fc-e047-3b94-bd16-843ce4c9f98e.xml">
+                <common:shortDescription xml:lang="en">2007 - Coal - Dones</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">literature and statistics </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: passed; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="904c837f-e400-3310-88d9-910ab1423ce4" version="00.00.000" uri="../contacts/904c837f-e400-3310-88d9-910ab1423ce4.xml">
+                    <common:shortDescription xml:lang="en">Thomas Kaegi</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="233afe28-34e8-3e8b-ad9a-547b2441b39e" version="00.00.000" uri="../contacts/233afe28-34e8-3e8b-ad9a-547b2441b39e.xml">
+                <common:shortDescription xml:lang="en">Christian Bauer</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:49:43.716+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="233afe28-34e8-3e8b-ad9a-547b2441b39e" version="00.00.000" uri="../contacts/233afe28-34e8-3e8b-ad9a-547b2441b39e.xml">
+                <common:shortDescription xml:lang="en">Christian Bauer</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2007-08-31T00:00:00.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="7490c6fc-e047-3b94-bd16-843ce4c9f98e" version="00.00.000" uri="../sources/7490c6fc-e047-3b94-bd16-843ce4c9f98e.xml">
+                <common:shortDescription xml:lang="en">2007 - Coal - Dones</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="55a2c796-3313-3623-8078-25db2c88ba6f" version="00.00.000" uri="../flows/55a2c796-3313-3623-8078-25db2c88ba6f.xml">
+                <common:shortDescription xml:lang="en">Electricity, hard coal, at power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>3.6</meanAmount>
+            <resultingAmount>3.6</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="52765a6c-3896-43c2-b2f4-c679acf13efe" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="0a41e367-fac3-3de6-baac-ac3836f1e983" olca:amount="11.1">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2053fb36-3db8-3722-9f65-08dcb4d2f0f1" version="00.00.006" uri="../flows/2053fb36-3db8-3722-9f65-08dcb4d2f0f1.xml">
+                <common:shortDescription xml:lang="en">Hard coal, burned in power plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>11.1</meanAmount>
+            <resultingAmount>11.1</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">US NERC statistics; uncertainty own estimate
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

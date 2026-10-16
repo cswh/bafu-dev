@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>587bfe49-d2e6-372a-b85f-f0dd1e3dcf09</common:UUID>
+            <name>
+                <baseName xml:lang="en">Use of CPE, for transmission network per hour</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="10267e96-7786-30dd-a378-1a26618e6c38">computers &amp; network</common:class>
+                    <common:class level="1" classId="31411477-cff6-3b61-8fa2-caed9d32e5f4">use cases</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">The data set represents the mix of use/CPE networks in Switzerland; UUID: 587bfe49-d2e6-372a-b85f-f0dd1e3dcf09</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1672527600000" olca:endDate="1890774000000">
+            <common:referenceYear>2023</common:referenceYear>
+            <common:dataSetValidUntil>2029</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Unspecified</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">Data for Swiss networks</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">The mix of Swiss use/CPE transmission network. Technologies considered are modems, multimedia gateways, and complex set top boxes (CSTBs)\n\n# Included processes\nThe dataset corresponds to the amount of equipment and electricity consumed to support a certain amount of network traffic. In literature, they are also often termed as CPE or Customer Premises Equipment. The dataset is based on the number of modems, multimedia gateways, and CSTBs needed to support a certain amount of network traffic in Switzerland for the year 2013. Total amount of network traffic is based on measured traffic for internet-phone and television broadcast. For television broadcast, data volumes are calculated by multiplying the average television use in minutes with the channel and transmission rates of a specific television channel. The amount of electricity consumed is calculated by multiplying the energy intensity of customer premise equipment (modems, multimedia gateways, and CSTBs) with the number of customer premise equipment. The dataset assumes a device lifetime of 6 years. The reference flow of this dataset is = 1 GB (replaced by p since this type of flow and units do not exist in the current data schema document).</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="7e27b577-b31d-3a15-b1f7-c47afab2beb7" version="00.00.000" uri="../sources/7e27b577-b31d-3a15-b1f7-c47afab2beb7.xml">
+                <common:shortDescription xml:lang="en">2024 - LCI ICT sector - Raka Adrianto</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Literature &amp; own estimations</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="67f3c08e-69c1-33a4-ae8b-5b595d8e5578" version="00.00.000" uri="../contacts/67f3c08e-69c1-33a4-ae8b-5b595d8e5578.xml">
+                <common:shortDescription xml:lang="en">Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:48:52.615+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="67f3c08e-69c1-33a4-ae8b-5b595d8e5578" version="00.00.000" uri="../contacts/67f3c08e-69c1-33a4-ae8b-5b595d8e5578.xml">
+                <common:shortDescription xml:lang="en">Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:36:48.930+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.002</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="7e27b577-b31d-3a15-b1f7-c47afab2beb7" version="00.00.000" uri="../sources/7e27b577-b31d-3a15-b1f7-c47afab2beb7.xml">
+                <common:shortDescription xml:lang="en">2024 - LCI ICT sector - Raka Adrianto</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>false</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="fc2c9f42-0324-30e0-b60f-33caf2b2d892" olca:pedigreeUncertainty="(2;3;2;2;2;5)" olca:amount="7.72E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0c385d00-db7a-36fe-8e95-a729d879d5e6" version="00.00.000" uri="../flows/0c385d00-db7a-36fe-8e95-a729d879d5e6.xml">
+                <common:shortDescription xml:lang="en">Complex Set Top Boxes (CSTB), for customer premise equipment (CPE)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>7.72E-6</meanAmount>
+            <resultingAmount>7.72E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1090536506409416</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,2,2,2,5,BU:1.05) Based on the number of hour in use over 6 years lifetime = 6*365*24 hours and share of used equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="86ad2244-1f0e-4912-af53-7865283103e4" olca:propertyId="f6811440-ee37-11de-8a39-0800200c9a66" olca:defaultProvider="c4a92617-9f99-3d7b-95c0-15fb110b80ad" olca:pedigreeUncertainty="(2;3;2;2;2;5)" olca:amount="0.01">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7ec91f1d-db72-39ef-bbc0-46119b059efe" version="00.00.000" uri="../flows/7ec91f1d-db72-39ef-bbc0-46119b059efe.xml">
+                <common:shortDescription xml:lang="en">Electricity, low voltage, at grid</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.036000000000000004</meanAmount>
+            <resultingAmount>0.036000000000000004</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1090536506409416</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,2,2,2,5,BU:1.05) Based on NRDC 2013 (Issue Paper)</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="3e6dfd27-c5c2-3743-b85c-67408d9c64bd" olca:pedigreeUncertainty="(2;3;2;2;2;5)" olca:amount="2.14E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="56636f6a-42fe-3516-9642-c8b71a6d68b0" version="00.00.000" uri="../flows/56636f6a-42fe-3516-9642-c8b71a6d68b0.xml">
+                <common:shortDescription xml:lang="en">Multimedia gateway, for customer premise equipment (CPE)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>2.14E-6</meanAmount>
+            <resultingAmount>2.14E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1090536506409416</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,2,2,2,5,BU:1.05) Based on the number of hour in use over 6 years lifetime = 6*365*24 hours and share of used equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="6dabe201-aaac-4509-92f0-d00c26cb72ab" olca:propertyId="01846770-4cfe-4a25-8ad9-919d8d378345" olca:defaultProvider="2a7d18dd-d003-376d-be3c-64ee2ac2e8d7" olca:pedigreeUncertainty="(2;3;2;2;2;5)" olca:amount="9.15E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="651e4a61-e08d-316e-b03b-b8bd5686e209" version="00.00.000" uri="../flows/651e4a61-e08d-316e-b03b-b8bd5686e209.xml">
+                <common:shortDescription xml:lang="en">Modem, for customer premise equipment (CPE)</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>9.15E-6</meanAmount>
+            <resultingAmount>9.15E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1090536506409416</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(2,3,2,2,2,5,BU:1.05) Based on the number of hour in use over 6 years lifetime = 6*365*24 hours and share of used equipment</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="227a54d9-44e7-468c-b8bb-f2dd1ae68c7a" olca:propertyId="c0447923-0e60-4b3c-97c2-a86dddd9eea5" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="08e87b7d-4471-3cee-9e5b-a787ccc7cfdc" version="00.00.000" uri="../flows/08e87b7d-4471-3cee-9e5b-a787ccc7cfdc.xml">
+                <common:shortDescription xml:lang="en">Use of CPE, for transmission network per hour</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+        </exchange>
+    </exchanges>
+</processDataSet>

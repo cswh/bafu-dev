@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>3112459a-aa14-30e7-84d2-655a39ee0bf1</common:UUID>
+            <name>
+                <baseName xml:lang="en">Crude oil, market mix, at long distance transport</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="7be32f72-05b3-3de0-bb76-49c4e6083a97">oil</common:class>
+                    <common:class level="1" classId="054de7d7-12cc-3321-ad55-12e10806ee46">transport</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Calculation for transport distances assuming transport by pipeline offshore and onshore as well as sea transport in tanker. Sites and modes of transportation based on the supply situation in 2023. UUID=3112459a-aa14-30e7-84d2-655a39ee0bf1</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1672527600000" olca:endDate="1735686000000">
+            <common:referenceYear>2023</common:referenceYear>
+            <common:dataSetValidUntil>2025</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Transport modes investigated for 2023.</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="TW" latitudeAndLongitude="23.752985283586842;120.94987515867938">
+                <descriptionOfRestrictions xml:lang="en">Calculations include production and transport of crude oil from 33 countries.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Operation of crude oil pipelines by electricity.\n\n# Included processes\nTransportation of crude oil from exploration sites to refineries in TW-region. Includes transport service requirements and emissions from oil handling and evaporation.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="f3e1930d-fd27-353b-a59a-a54448c7d2e9" version="00.00.000" uri="../sources/f3e1930d-fd27-353b-a59a-a54448c7d2e9.xml">
+                <common:shortDescription xml:lang="en">2025 - LCI long-distance transport crude oil - Meili</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Literature. Online calculators for distances. The consumption mix is calculated based on international trade statistics for 2023.</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Passed. https://esuservices-my.sharepoint.com/personal/jungbluth_esu-services_ch/Documents/ESU-intern/565 Beratung BAFU/EcoSpoldDataXML/[EcoSpold-oil-transport-2025-v1.0.xlsb]X-Process</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="0bcb8400-bb3d-3da1-b808-677f447cdc8c" version="00.00.000" uri="../contacts/0bcb8400-bb3d-3da1-b808-677f447cdc8c.xml">
+                    <common:shortDescription xml:lang="en">Niels Jungbluth</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="1d53c53f-b2cd-3a94-8782-b9fa32da925f" version="00.00.000" uri="../contacts/1d53c53f-b2cd-3a94-8782-b9fa32da925f.xml">
+                <common:shortDescription xml:lang="en">Maresa Bussa</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:51:30.571+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="9c29c260-2c0c-3ed5-9368-14ea1eb19401" version="00.00.000" uri="../contacts/9c29c260-2c0c-3ed5-9368-14ea1eb19401.xml">
+                <common:shortDescription xml:lang="en">Christoph Meili</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2025-04-29T13:18:22.000+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.000</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="f3e1930d-fd27-353b-a59a-a54448c7d2e9" version="00.00.000" uri="../sources/f3e1930d-fd27-353b-a59a-a54448c7d2e9.xml">
+                <common:shortDescription xml:lang="en">2025 - LCI long-distance transport crude oil - Meili</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="24" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="4363e9b3-9d13-3649-8b7b-c57cb3d8b149" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.027958">
+            <referenceToFlowDataSet type="flow data set" refObjectId="90a99264-b8f7-3ae1-baee-4de54f278e4d" version="00.00.000" uri="../flows/90a99264-b8f7-3ae1-baee-4de54f278e4d.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.027958</meanAmount>
+            <resultingAmount>0.027958</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.931 megatons of crude oil are imported from Nigeria to Taiwan, assuming 90% offshore production. Assumed transport distances: Offshore, at origin: 60km by pipeline. Onshore, at origin: 140km by pipeline. For transport to destination: 17855km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Lagos.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="23" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="7b0076d2-cfe3-3274-9036-71d3fbf674b9" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.016912">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a5ba34e1-43a8-33ea-8c6a-4eea10d42536" version="00.00.000" uri="../flows/a5ba34e1-43a8-33ea-8c6a-4eea10d42536.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.016912</meanAmount>
+            <resultingAmount>0.016912</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.563 megatons of crude oil are imported from Malaysia to Taiwan, assuming 99% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 100km by pipeline. For transport to destination: 4297km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Sungai UdangPort.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="22" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="a4b19262-4f8c-315d-9f87-c83ed256b4a4" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.0074469">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bb1885ea-a7ad-30c2-91b0-cc27a31a6a35" version="00.00.000" uri="../flows/bb1885ea-a7ad-30c2-91b0-cc27a31a6a35.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0074469</meanAmount>
+            <resultingAmount>0.0074469</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); In 2023, 0.248 megatons of crude oil are imported from Mexico to Taiwan, assuming 89.6% offshore production. Assumed transport distances: Offshore, at origin: 307km by pipeline. Onshore, at origin: 240km by pipeline. For transport to destination: 19257km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Veracruz.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="21" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="adae6fd6-9d10-3183-90b2-9d92f27c12cc" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.0030468">
+            <referenceToFlowDataSet type="flow data set" refObjectId="29414fa5-4b4d-323e-b23d-74d9a8050f1e" version="00.00.000" uri="../flows/29414fa5-4b4d-323e-b23d-74d9a8050f1e.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0030468</meanAmount>
+            <resultingAmount>0.0030468</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.102 megatons of crude oil are imported from Libya to Taiwan, assuming 20% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 200km by pipeline. For transport to destination: 13738km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Sirtica Terminal.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="20" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="45f2f92e-2469-3545-b662-6df659cd7869" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.0072748">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b5251c1b-5c5b-324c-8715-547bf266312a" version="00.00.000" uri="../flows/b5251c1b-5c5b-324c-8715-547bf266312a.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0072748</meanAmount>
+            <resultingAmount>0.0072748</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); In 2023, 0.242 megatons of crude oil are imported from Kazakhstan to Taiwan, assuming 12.7% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 3400km by pipeline. For transport to destination: 14588km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Novorossiysk.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="19" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="28ed41d2-4d4e-3f6b-a31c-2d0bb5ac7fd3" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.060405">
+            <referenceToFlowDataSet type="flow data set" refObjectId="141f9bcf-4972-3faf-a0e5-52517cfa482c" version="00.00.000" uri="../flows/141f9bcf-4972-3faf-a0e5-52517cfa482c.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.060405</meanAmount>
+            <resultingAmount>0.060405</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 2.013 megatons of crude oil are imported from Kuwait to Taiwan, assuming 1% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 20km by pipeline. For transport to destination: 10086km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Shuaiba.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="18" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="b4754503-f2a4-32b0-a7fa-4e356b982287" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.011099">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7d29b2f0-74e0-3150-b416-19d73c649543" version="00.00.000" uri="../flows/7d29b2f0-74e0-3150-b416-19d73c649543.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.011099</meanAmount>
+            <resultingAmount>0.011099</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.37 megatons of crude oil are imported from South Korea to Taiwan, assuming 30% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 100km by pipeline. For transport to destination: 1787km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Inchon.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="17" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="749f34b1-7b5e-3a88-b481-741fc7ff3da7" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.041104">
+            <referenceToFlowDataSet type="flow data set" refObjectId="22f0cfc0-850a-325d-8f48-6bce1e269236" version="00.00.000" uri="../flows/22f0cfc0-850a-325d-8f48-6bce1e269236.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.041104</meanAmount>
+            <resultingAmount>0.041104</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 1.37 megatons of crude oil are imported from Iran to Taiwan, assuming 15.8% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 400km by pipeline. For transport to destination: 10014km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Bahregan Sar Oilfield.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="16" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="314fc091-7367-3b6e-9960-16f9222e3181" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.099749">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7fcfd5f4-1804-34d9-8ae6-f2992c00c36d" version="00.00.000" uri="../flows/7fcfd5f4-1804-34d9-8ae6-f2992c00c36d.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.099749</meanAmount>
+            <resultingAmount>0.099749</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); In 2023, 3.323 megatons of crude oil are imported from Iraq to Taiwan, assuming 0% offshore production. Assumed transport distances: Offshore, at origin: 0km by pipeline. Onshore, at origin: 500km by pipeline. For transport to destination: 10216km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Basrah.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="15" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="04f12acd-afbf-3021-b5a5-0e6b1bdbd6ab" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.020655">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c5f76bb0-5185-3adc-8f0c-628d4fb6ffa9" version="00.00.000" uri="../flows/c5f76bb0-5185-3adc-8f0c-628d4fb6ffa9.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.020655</meanAmount>
+            <resultingAmount>0.020655</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.688 megatons of crude oil are imported from Indonesia to Taiwan, assuming 36% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 100km by pipeline. For transport to destination: 4339km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Tanjung Priok.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="14" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="05eb1832-4067-34d8-a023-e62235620bd4" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.0015217">
+            <referenceToFlowDataSet type="flow data set" refObjectId="09807df9-300b-3211-929e-b8b9eacbd568" version="00.00.000" uri="../flows/09807df9-300b-3211-929e-b8b9eacbd568.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0015217</meanAmount>
+            <resultingAmount>0.0015217</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.051 megatons of crude oil are imported from Equatorial Guinea to Taiwan, assuming 100% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 100km by pipeline. For transport to destination: 17474km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Malabo.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="68f7b9d4-5b05-3d55-8a63-72f723ed760f" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.0016283">
+            <referenceToFlowDataSet type="flow data set" refObjectId="65b2f4d3-eea3-3dfe-833a-c83766e4ec68" version="00.00.000" uri="../flows/65b2f4d3-eea3-3dfe-833a-c83766e4ec68.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0016283</meanAmount>
+            <resultingAmount>0.0016283</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.054 megatons of crude oil are imported from United Kingdom to Taiwan, assuming 98% offshore production. Assumed transport distances: Offshore, at origin: 166km by pipeline. Onshore, at origin: 100km by pipeline. For transport to destination: 18876km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Southampton.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="cdce79ae-96a3-3b78-9483-6dc9cc736e2f" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.0015217">
+            <referenceToFlowDataSet type="flow data set" refObjectId="051827ad-fdf6-3d4c-98e4-f2488c811e2d" version="00.00.000" uri="../flows/051827ad-fdf6-3d4c-98e4-f2488c811e2d.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0015217</meanAmount>
+            <resultingAmount>0.0015217</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.051 megatons of crude oil are imported from Egypt to Taiwan, assuming 22% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 100km by pipeline. For transport to destination: 12577km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Alexandria.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="1f7060ad-ecf2-3750-b0fa-2c785b96bf5b" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.0036848">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f9b7ffd7-8094-3c88-af7e-588aeb3be350" version="00.00.000" uri="../flows/f9b7ffd7-8094-3c88-af7e-588aeb3be350.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0036848</meanAmount>
+            <resultingAmount>0.0036848</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.123 megatons of crude oil are imported from Ecuador to Taiwan, assuming 2.4% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 300km by pipeline. For transport to destination: 17162km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Guayaquil.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="95940a24-53d4-37c5-be95-5e77a0e24b21" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.0030811">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0fa44f46-22e3-34c2-a509-e6e6eb5f2810" version="00.00.000" uri="../flows/0fa44f46-22e3-34c2-a509-e6e6eb5f2810.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0030811</meanAmount>
+            <resultingAmount>0.0030811</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.103 megatons of crude oil are imported from Algeria to Taiwan, assuming 0% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 700km by pipeline. For transport to destination: 15072km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Algiers.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="dc8d2616-c01f-3cb9-83a3-1f1fc4177cc5" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.0059216">
+            <referenceToFlowDataSet type="flow data set" refObjectId="061e8778-8cd5-30be-8953-b76452738c95" version="00.00.000" uri="../flows/061e8778-8cd5-30be-8953-b76452738c95.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0059216</meanAmount>
+            <resultingAmount>0.0059216</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.197 megatons of crude oil are imported from Colombia to Taiwan, assuming 12.5% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 800km by pipeline. For transport to destination: 16757km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Tumaco.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="40" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(3;4;4;1;1;n.a.)" olca:amount="1.2642E-4">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fa5512cf-04a2-4014-8e96-d3e2d137f0df" version="00.00.000" uri="../flows/fa5512cf-04a2-4014-8e96-d3e2d137f0df.xml">
+                <common:shortDescription xml:lang="en">Butane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.2642E-4</meanAmount>
+            <resultingAmount>1.2642E-4</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2614673994994876</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,4,1,1,BU:1.5); Evaporation losses for storage and handling</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="39" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(3;4;4;1;1;n.a.)" olca:amount="4.5E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="5e883a00-04e6-4d96-8dce-12d7117c6635" version="00.00.000" uri="../flows/5e883a00-04e6-4d96-8dce-12d7117c6635.xml">
+                <common:shortDescription xml:lang="en">Benzene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>4.5E-7</meanAmount>
+            <resultingAmount>4.5E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.7522271542240178</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,4,1,1,BU:3); Evaporation losses for storage and handling</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="38" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(3;4;4;1;1;n.a.)" olca:amount="1.35E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="17a98e7f-a8fd-431d-9bb6-6c4bf3fc5517" version="00.00.000" uri="../flows/17a98e7f-a8fd-431d-9bb6-6c4bf3fc5517.xml">
+                <common:shortDescription xml:lang="en">Hydrocarbons, aliphatic, alkanes, unspecified</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.35E-6</meanAmount>
+            <resultingAmount>1.35E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2614673994994876</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,4,1,1,BU:1.5); Evaporation losses for storage and handling</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="37" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="3f3618e5-c52b-3a7e-8b59-81972146a159" olca:pedigreeUncertainty="(3;2;1;3;3;n.a.)" olca:amount="0.90709">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a9214446-032c-3cbf-ac25-29038b1dab07" version="00.00.000" uri="../flows/a9214446-032c-3cbf-ac25-29038b1dab07.xml">
+                <common:shortDescription xml:lang="en">Transport, crude oil pipeline, onshore</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.90709</meanAmount>
+            <resultingAmount>0.90709</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1125196627475848</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,2,1,3,3,BU:1.05); Calculation based on estimated shipping route and pipelines according to searates.com and export data for 2023.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="36" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="3b5d0e0e-1faa-34c9-877c-7cc151076ef8" olca:pedigreeUncertainty="(3;2;1;3;3;n.a.)" olca:amount="0.034728">
+            <referenceToFlowDataSet type="flow data set" refObjectId="981661dc-7b17-3fff-bb25-2d3203ec90d1" version="00.00.000" uri="../flows/981661dc-7b17-3fff-bb25-2d3203ec90d1.xml">
+                <common:shortDescription xml:lang="en">Transport, crude oil pipeline, offshore</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.034728</meanAmount>
+            <resultingAmount>0.034728</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1125196627475848</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,2,1,3,3,BU:1.05); Calculation based on estimated shipping route and pipelines according to searates.com and export data for 2023.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="35" olca:unitId="0dea4ed8-bb6b-4049-b2b4-b2c413ef2180" olca:propertyId="838aaa20-0117-11db-92e3-0800200c9a66" olca:defaultProvider="b2a17f00-0798-33f3-a498-dd6da770c269" olca:pedigreeUncertainty="(3;2;1;3;3;n.a.)" olca:amount="12.819">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a1ebb25d-ce64-3e4d-853d-1bf3ac69d0a4" version="00.00.000" uri="../flows/a1ebb25d-ce64-3e4d-853d-1bf3ac69d0a4.xml">
+                <common:shortDescription xml:lang="en">Transport, transoceanic tanker</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>12.819</meanAmount>
+            <resultingAmount>12.819</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.4358969322343438</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,2,1,3,3,BU:2); Calculation based on estimated shipping route and pipelines according to searates.com and export data for 2023.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="34" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="d9b64ed1-99b0-3e13-b17b-d3fb1adb9e79" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.0063252">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6383ff8c-b9b0-3ce0-8e49-33f1095af83d" version="00.00.000" uri="../flows/6383ff8c-b9b0-3ce0-8e49-33f1095af83d.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0063252</meanAmount>
+            <resultingAmount>0.0063252</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.211 megatons of crude oil are imported from Venezuela to Taiwan, assuming 30% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 100km by pipeline. For transport to destination: 18446km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Puerto La Cruz / Jose Petroterminal.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="33" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="c738e262-4da5-3fc1-af07-9140556c7345" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.06237">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c7bf4f21-fafe-3dd4-b175-e72dc83eb32b" version="00.00.000" uri="../flows/c7bf4f21-fafe-3dd4-b175-e72dc83eb32b.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.06237</meanAmount>
+            <resultingAmount>0.06237</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); In 2023, 2.078 megatons of crude oil are imported from United States to Taiwan, assuming 14.6% offshore production. Assumed transport distances: Offshore, at origin: 286km by pipeline. Onshore, at origin: 1100km by pipeline. For transport to destination: 19476km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Houston.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="32" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="49e31582-f8b9-34b2-a74d-ebf9a1586226" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.0039689">
+            <referenceToFlowDataSet type="flow data set" refObjectId="d2a10156-9878-3677-8e8b-21ad6ce0ab98" version="00.00.000" uri="../flows/d2a10156-9878-3677-8e8b-21ad6ce0ab98.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0039689</meanAmount>
+            <resultingAmount>0.0039689</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); In 2023, 0.015 megatons of crude oil are imported from Taiwan to Taiwan, and 0.117 megatons are consumed or refined locally, assuming 30% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 100km by pipeline. For transport to destination: 0km by ship plus additional 0km by onshore pipeline at destination. Port of origin for shipping is assumed to be Kaohsiung.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="31" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="10e7cc2c-ece9-3f87-94aa-df4dd615f563" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.0033823">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a63cae3f-5135-3b11-a1a7-a7072bdb4233" version="00.00.000" uri="../flows/a63cae3f-5135-3b11-a1a7-a7072bdb4233.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0033823</meanAmount>
+            <resultingAmount>0.0033823</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); In 2023, 0.113 megatons of crude oil are imported from Turkey to Taiwan, assuming 5% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 100km by pipeline. For transport to destination: 13744km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Gemlik.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="30" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="754308d6-a11d-3965-9388-d5229d962c94" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.007424">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9498b1b5-611f-3f91-9390-4575b408b115" version="00.00.000" uri="../flows/9498b1b5-611f-3f91-9390-4575b408b115.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.007424</meanAmount>
+            <resultingAmount>0.007424</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); In 2023, 0.247 megatons of crude oil are imported from Thailand to Taiwan, assuming 80% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 100km by pipeline. For transport to destination: 3034km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Sriracha Oil terminals.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="29" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="1313f2ed-6d81-3cee-a245-0167b32f373a" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.21819">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f0a4ab1b-5195-3e3a-b6e9-b2c7e9c28408" version="00.00.000" uri="../flows/f0a4ab1b-5195-3e3a-b6e9-b2c7e9c28408.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.21819</meanAmount>
+            <resultingAmount>0.21819</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); In 2023, 7.27 megatons of crude oil are imported from Saudi Arabia to Taiwan, assuming 34.6% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 1300km by pipeline. For transport to destination: 9856km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Ju' aimah.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="28" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="c033cffb-6afb-3382-bcb4-ab6378de8627" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.15316">
+            <referenceToFlowDataSet type="flow data set" refObjectId="8a551111-9707-34f8-ab17-4f704450cc77" version="00.00.000" uri="../flows/8a551111-9707-34f8-ab17-4f704450cc77.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.15316</meanAmount>
+            <resultingAmount>0.15316</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); In 2023, 5.103 megatons of crude oil are imported from Russian Federation to Taiwan, assuming 17.8% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 3800km by pipeline. For transport to destination: 20652km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be St. Petersburg.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="27" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="a5ab84e0-ad59-3773-ab45-6a5075a0036f" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.014216">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a98b329f-8370-3833-9cd9-8bf1a6b4ba87" version="00.00.000" uri="../flows/a98b329f-8370-3833-9cd9-8bf1a6b4ba87.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.014216</meanAmount>
+            <resultingAmount>0.014216</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.474 megatons of crude oil are imported from Qatar to Taiwan, assuming 69.3% offshore production. Assumed transport distances: Offshore, at origin: 50km by pipeline. Onshore, at origin: 100km by pipeline. For transport to destination: 9590km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Halul Island.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="26" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="ec08d7c0-3dd9-3006-bee9-d47dd69af710" olca:pedigreeUncertainty="(1;1;1;1;3;n.a.)" olca:amount="0.0097008">
+            <referenceToFlowDataSet type="flow data set" refObjectId="4c593e4c-dcac-30cc-a131-3b04a9852021" version="00.00.000" uri="../flows/4c593e4c-dcac-30cc-a131-3b04a9852021.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0097008</meanAmount>
+            <resultingAmount>0.0097008</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.0989540481748998</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,3,BU:1.05); In 2023, 0.323 megatons of crude oil are imported from Oman to Taiwan, assuming 0% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 100km by pipeline. For transport to destination: 8821km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Muscat.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="25" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="0bd1251b-e0ff-31e4-89f1-23b09a1c4a2c" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.0046126">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f81e11bb-2f3e-3b70-b323-5564a23e0d0f" version="00.00.000" uri="../flows/f81e11bb-2f3e-3b70-b323-5564a23e0d0f.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0046126</meanAmount>
+            <resultingAmount>0.0046126</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.154 megatons of crude oil are imported from Norway to Taiwan, assuming 100% offshore production. Assumed transport distances: Offshore, at origin: 195km by pipeline. Onshore, at origin: 200km by pipeline. For transport to destination: 19187km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Bergen.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="46" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(3;4;4;1;1;n.a.)" olca:amount="2.7E-7">
+            <referenceToFlowDataSet type="flow data set" refObjectId="77f17646-cede-4a49-99dd-55950098b077" version="00.00.000" uri="../flows/77f17646-cede-4a49-99dd-55950098b077.xml">
+                <common:shortDescription xml:lang="en">Toluene</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>2.7E-7</meanAmount>
+            <resultingAmount>2.7E-7</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2614673994994876</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,4,1,1,BU:1.5); Evaporation losses for storage and handling</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="45" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(3;4;4;1;1;n.a.)" olca:amount="6.1296E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="9beb60a3-3a8c-4345-9a0e-107eec2f709f" version="00.00.000" uri="../flows/9beb60a3-3a8c-4345-9a0e-107eec2f709f.xml">
+                <common:shortDescription xml:lang="en">Propane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>6.1296E-5</meanAmount>
+            <resultingAmount>6.1296E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2614673994994876</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,4,1,1,BU:1.5); Evaporation losses for storage and handling</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="44" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(3;4;4;1;1;n.a.)" olca:amount="9.558E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="2f052025-4072-4d8e-b22d-68d50bfb260c" version="00.00.000" uri="../flows/2f052025-4072-4d8e-b22d-68d50bfb260c.xml">
+                <common:shortDescription xml:lang="en">Pentane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>9.558E-5</meanAmount>
+            <resultingAmount>9.558E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2614673994994876</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,4,1,1,BU:1.5); Evaporation losses for storage and handling</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="43" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(3;4;4;1;1;n.a.)" olca:amount="5.3876E-5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="41067ac7-bf36-47ef-a19f-683d9b758a28" version="00.00.000" uri="../flows/41067ac7-bf36-47ef-a19f-683d9b758a28.xml">
+                <common:shortDescription xml:lang="en">Hexane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>5.3876E-5</meanAmount>
+            <resultingAmount>5.3876E-5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2614673994994876</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,4,1,1,BU:1.5); Evaporation losses for storage and handling</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="42" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(3;4;4;1;1;n.a.)" olca:amount="1.601E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e7e0031e-791d-42f4-b26c-ec322db637bc" version="00.00.000" uri="../flows/e7e0031e-791d-42f4-b26c-ec322db637bc.xml">
+                <common:shortDescription xml:lang="en">Ethane</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.601E-6</meanAmount>
+            <resultingAmount>1.601E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2614673994994876</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,4,1,1,BU:1.5); Evaporation losses for storage and handling</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="41" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:pedigreeUncertainty="(3;4;4;1;1;n.a.)" olca:amount="1.498E-6">
+            <referenceToFlowDataSet type="flow data set" refObjectId="70ef743b-3ed5-4a6d-b192-fb6d62378555" version="00.00.000" uri="../flows/70ef743b-3ed5-4a6d-b192-fb6d62378555.xml">
+                <common:shortDescription xml:lang="en">Methane, fossil</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.498E-6</meanAmount>
+            <resultingAmount>1.498E-6</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.2614673994994876</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(3,4,4,1,1,BU:1.5); Evaporation losses for storage and handling</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="4896c617-e9b8-3e44-b727-864d9f4e7185" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.0060933">
+            <referenceToFlowDataSet type="flow data set" refObjectId="0d76a5a7-6330-3999-bca7-6e9689366e84" version="00.00.000" uri="../flows/0d76a5a7-6330-3999-bca7-6e9689366e84.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0060933</meanAmount>
+            <resultingAmount>0.0060933</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.203 megatons of crude oil are imported from Canada to Taiwan, assuming 7.3% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 3000km by pipeline. For transport to destination: 21463km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Quebec.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="a416cea1-6075-379f-8fe4-e8ac9ef02392" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.026571">
+            <referenceToFlowDataSet type="flow data set" refObjectId="53bfcc6d-bd9b-3dcb-9016-c03b8247d062" version="00.00.000" uri="../flows/53bfcc6d-bd9b-3dcb-9016-c03b8247d062.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.026571</meanAmount>
+            <resultingAmount>0.026571</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.885 megatons of crude oil are imported from Brazil to Taiwan, assuming 96.7% offshore production. Assumed transport distances: Offshore, at origin: 140km by pipeline. Onshore, at origin: 800km by pipeline. For transport to destination: 19340km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Santos.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="678aec51-f80c-3d21-b062-a6124b755d48" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.0026124">
+            <referenceToFlowDataSet type="flow data set" refObjectId="95ee4e8e-df39-3dae-9473-cb5a653762d5" version="00.00.000" uri="../flows/95ee4e8e-df39-3dae-9473-cb5a653762d5.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0026124</meanAmount>
+            <resultingAmount>0.0026124</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.087 megatons of crude oil are imported from Azerbaijan to Taiwan, assuming 90% offshore production. Assumed transport distances: Offshore, at origin: 43km by pipeline. Onshore, at origin: 1800km by pipeline. For transport to destination: 12945km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Ceyhan (Mersin).</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="ade6b5e9-0bf2-3532-bdaa-51d13bd296fa" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.0077415">
+            <referenceToFlowDataSet type="flow data set" refObjectId="bdf9dcad-7bea-3a09-b84e-dbac8fcbad2b" version="00.00.000" uri="../flows/bdf9dcad-7bea-3a09-b84e-dbac8fcbad2b.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0077415</meanAmount>
+            <resultingAmount>0.0077415</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.258 megatons of crude oil are imported from Australia to Taiwan, assuming 75% offshore production. Assumed transport distances: Offshore, at origin: 268km by pipeline. Onshore, at origin: 800km by pipeline. For transport to destination: 6382km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Perth.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="7535f727-858d-3773-9205-ccbb5d108ac7" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.0074126">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f34ff5d7-a1c2-3c36-8395-a9383b31bc18" version="00.00.000" uri="../flows/f34ff5d7-a1c2-3c36-8395-a9383b31bc18.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.0074126</meanAmount>
+            <resultingAmount>0.0074126</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.247 megatons of crude oil are imported from Argentina to Taiwan, assuming 30% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 500km by pipeline. For transport to destination: 19900km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Buenos Aires.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="7a759ab0-6a2a-34b5-a1f2-32433ca6cc5c" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.021101">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a07dd5ca-cb3c-3e5a-b31f-ae37dd309816" version="00.00.000" uri="../flows/a07dd5ca-cb3c-3e5a-b31f-ae37dd309816.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.021101</meanAmount>
+            <resultingAmount>0.021101</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 0.703 megatons of crude oil are imported from Angola to Taiwan, assuming 30% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 100km by pipeline. For transport to destination: 16070km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be 0.</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="d5688349-f8c0-39f1-9ec0-cd99ffc595f6" olca:pedigreeUncertainty="(1;1;1;3;3;n.a.)" olca:amount="0.13245">
+            <referenceToFlowDataSet type="flow data set" refObjectId="b3d9a1ae-6b28-3767-8c8e-ff5c96be3620" version="00.00.000" uri="../flows/b3d9a1ae-6b28-3767-8c8e-ff5c96be3620.xml">
+                <common:shortDescription xml:lang="en">Crude oil, at production</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.13245</meanAmount>
+            <resultingAmount>0.13245</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.099545360592277</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,3,3,BU:1.05); In 2023, 4.413 megatons of crude oil are imported from United Arab Emirates to Taiwan, assuming 44% offshore production. Assumed transport distances: Offshore, at origin: 100km by pipeline. Onshore, at origin: 100km by pipeline. For transport to destination: 11375km by ship plus additional 100km by onshore pipeline at destination. Port of origin for shipping is assumed to be Dubai or Abu Dhabi .</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ee1635b2-6d66-3735-aa63-aedbf0515c67" version="00.00.000" uri="../flows/ee1635b2-6d66-3735-aa63-aedbf0515c67.xml">
+                <common:shortDescription xml:lang="en">Crude oil, market mix, at long distance transport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+        </exchange>
+    </exchanges>
+</processDataSet>

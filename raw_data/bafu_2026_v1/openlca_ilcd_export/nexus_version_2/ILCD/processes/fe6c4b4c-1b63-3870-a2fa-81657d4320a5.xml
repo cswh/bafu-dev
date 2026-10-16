@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>fe6c4b4c-1b63-3870-a2fa-81657d4320a5</common:UUID>
+            <name>
+                <baseName xml:lang="en">Synthetic gas, production mix, at plant</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="e70d2ea9-becd-32e6-9944-c946e949f129">fuels</common:class>
+                    <common:class level="1" classId="a23223d7-82cf-3a02-91f2-99c6cf539bd3">biofuels</common:class>
+                    <common:class level="2" classId="21104f61-95b3-3f89-9a9e-c971f8f14acb">biogas</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Wood gasification in CH is limited to the Fixed bed pilot plant experience (Pyroforce, Xylowatt). The hypothesis with respect to the syngas production mix is 50% Fixed bed and 50% Fluidized bed. Average composition (% mol.) of the resulting gas is 22.0% H2, 39.9% CO, 29.3% CO2, 7.3% CH4 and 1.6% CnHm on a nitrogen and water free basis. Nitrogen content is 49.0%. Density is 1.15 kg/Nm3. Average lower heating value of the mix is 5.3 MJ/Nm3.;
+Synonyms: syngas, synthesis gas; 
+UUID: fe6c4b4c-1b63-3870-a2fa-81657d4320a5</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>1</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1072911600000" olca:endDate="1101855600000">
+            <common:referenceYear>2004</common:referenceYear>
+            <common:dataSetValidUntil>2004</common:dataSetValidUntil>
+            <common:timeRepresentativenessDescription xml:lang="en">Data from 1995 to 2004, first large scale facilities in the near future</common:timeRepresentativenessDescription>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="CH" latitudeAndLongitude="46.798956905893455;8.215353572959305">
+                <descriptionOfRestrictions xml:lang="en">&lt;null&gt;</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Technologies are Fixed bed and Fluidized bed gasification with equal shares (50%) with respect to the total production volume.\n\n# Included processes\nThis process includes the production of synthetic gas from wood chips, 50% from Fixed bed gasification and 50% from Fluidized bed gasification.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="49725337-1144-3335-8470-1dede2db7cb4" version="00.00.000" uri="../sources/49725337-1144-3335-8470-1dede2db7cb4.xml">
+                <common:shortDescription xml:lang="en">2007 - LCI bioenergy - Jungbluth</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Hypothesis of a potential distribution of synthetic gas technologies and volumes in Switzerland. </samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:reviewDetails xml:lang="en">Proof reading validation: Passed.; Other validation: none;</common:reviewDetails>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="0bcb8400-bb3d-3da1-b808-677f447cdc8c" version="00.00.000" uri="../contacts/0bcb8400-bb3d-3da1-b808-677f447cdc8c.xml">
+                    <common:shortDescription xml:lang="en">Niels Jungbluth</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="1ab03926-e279-3520-9229-16eacd2f9105" version="00.00.000" uri="../contacts/1ab03926-e279-3520-9229-16eacd2f9105.xml">
+                <common:shortDescription xml:lang="en">Edgard Gnansounou</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-10-14T15:51:35.529+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="0c4f51b6-fd89-369d-afcc-a1c86b23d7a2" version="00.00.000" uri="../contacts/0c4f51b6-fd89-369d-afcc-a1c86b23d7a2.xml">
+                <common:shortDescription xml:lang="en">Arnaud Dauriat</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T08:56:13.182+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.016</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="49725337-1144-3335-8470-1dede2db7cb4" version="00.00.000" uri="../sources/49725337-1144-3335-8470-1dede2db7cb4.xml">
+                <common:shortDescription xml:lang="en">2007 - LCI bioenergy - Jungbluth</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="7211aa0e-f4a2-36f6-912c-eba283934f0c" version="00.00.016" uri="../flows/7211aa0e-f4a2-36f6-912c-eba283934f0c.xml">
+                <common:shortDescription xml:lang="en">Synthetic gas, production mix, at plant</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+            <generalComment xml:lang="en">SWITZERLAND
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:defaultProvider="dfa22602-8f80-3f0d-a975-c78a5eb33f5a" olca:pedigreeUncertainty="(4;5;n.a.;n.a.;n.a.;n.a.)" olca:amount="0.5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="aa46ccd1-896a-3d53-a823-aae9832353d3" version="00.00.016" uri="../flows/aa46ccd1-896a-3d53-a823-aae9832353d3.xml">
+                <common:shortDescription xml:lang="en">Synthetic gas, from wood, at fluidized bed gasifier</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.5</meanAmount>
+            <resultingAmount>0.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1402192771568107</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,na,na,na,na); Arbitrary hypothesis
+</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="1c3a9695-398d-4b1f-b07e-a8715b610f70" olca:propertyId="93a60a56-a3c8-22da-a746-0800200c9a66" olca:defaultProvider="74d113a6-54ce-3aec-b0ae-c7d1af34197c" olca:pedigreeUncertainty="(4;5;n.a.;n.a.;n.a.;n.a.)" olca:amount="0.5">
+            <referenceToFlowDataSet type="flow data set" refObjectId="ca98dfc7-2457-3d5c-a4b4-e9b3d953b0f4" version="00.00.016" uri="../flows/ca98dfc7-2457-3d5c-a4b4-e9b3d953b0f4.xml">
+                <common:shortDescription xml:lang="en">Synthetic gas, from wood, at fixed bed gasifier</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.5</meanAmount>
+            <resultingAmount>0.5</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.1402192771568107</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(4,5,na,na,na,na); Arbitrary hypothesis
+</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>

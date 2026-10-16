@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processDataSet xmlns:m="http://lca.jrc.it/ILCD/LCIAMethod" xmlns:common="http://lca.jrc.it/ILCD/Common" xmlns:s="http://lca.jrc.it/ILCD/Source" xmlns:epd2="http://www.indata.network/EPD/2019" xmlns:c="http://lca.jrc.it/ILCD/Contact" xmlns:epd="http://www.iai.kit.edu/EPD/2013" xmlns:f="http://lca.jrc.it/ILCD/Flow" xmlns="http://lca.jrc.it/ILCD/Process" xmlns:fp="http://lca.jrc.it/ILCD/FlowProperty" xmlns:u="http://lca.jrc.it/ILCD/UnitGroup" xmlns:ns11="http://openlca.org/epd_ilcd" version="1.1">
+    <processInformation>
+        <dataSetInformation>
+            <common:UUID>57f3a557-cc9c-305c-964a-77fd22b38910</common:UUID>
+            <name>
+                <baseName xml:lang="en">xxx Crude oil, import mix, at long distance transport</baseName>
+            </name>
+            <classificationInformation>
+                <common:classification>
+                    <common:class level="0" classId="e70d2ea9-becd-32e6-9944-c946e949f129">fuels</common:class>
+                    <common:class level="1" classId="8071603f-6e0f-332b-a0af-9e47cb01d0ee">oil</common:class>
+                    <common:class level="2" classId="d8c2f562-e59c-387c-a3c8-94b0dd7ea413">obsolete</common:class>
+                </common:classification>
+            </classificationInformation>
+            <common:generalComment xml:lang="en">Crude oil imports from different countries based on IEA Oil Statistics 2021. Some production countries are modelled with datasets for countries in the same region. Crude oil production in the Former Soviet Union is allocated to Russia, Kazakhstan and Azerbaijan based on EIA production estimates for 2019/2021.; UUID:57f3a557-cc9c-305c-964a-77fd22b38910</common:generalComment>
+        </dataSetInformation>
+        <quantitativeReference type="Reference flow(s)">
+            <referenceToReferenceFlow>13</referenceToReferenceFlow>
+        </quantitativeReference>
+        <time xmlns:olca="http://openlca.org/ilcd-extensions" olca:startDate="1577833200000" olca:endDate="1609455600000">
+            <common:referenceYear>2020</common:referenceYear>
+            <common:dataSetValidUntil>2021</common:dataSetValidUntil>
+        </time>
+        <geography>
+            <locationOfOperationSupplyOrProduction location="RER" latitudeAndLongitude="55.895602991909776;28.119894957029818">
+                <descriptionOfRestrictions xml:lang="en">Crude oil supplied to Europe.</descriptionOfRestrictions>
+            </locationOfOperationSupplyOrProduction>
+        </geography>
+        <technology>
+            <technologyDescriptionAndIncludedProcesses xml:lang="en">Mix of crude oil from various oil producing countries and world regions\n\n# Included processes\nCrude oil mix processed by European refineries in 2021.</technologyDescriptionAndIncludedProcesses>
+        </technology>
+    </processInformation>
+    <modellingAndValidation>
+        <LCIMethodAndAllocation>
+            <typeOfDataSet>Unit process, black box</typeOfDataSet>
+            <LCIMethodPrinciple>Other</LCIMethodPrinciple>
+        </LCIMethodAndAllocation>
+        <dataSourcesTreatmentAndRepresentativeness>
+            <referenceToDataSource type="source data set" refObjectId="dceef253-c5b0-3676-8792-3b64fd5fd8fc" version="00.00.000" uri="../sources/dceef253-c5b0-3676-8792-3b64fd5fd8fc.xml">
+                <common:shortDescription xml:lang="en">2022 - Energy label for passenger cars - Frischknecht</common:shortDescription>
+            </referenceToDataSource>
+            <samplingProcedure xml:lang="en">Statistics</samplingProcedure>
+        </dataSourcesTreatmentAndRepresentativeness>
+        <validation>
+            <review>
+                <common:referenceToNameOfReviewerAndInstitution type="contact data set" refObjectId="25226aff-9059-3bf6-ba7e-1bb9805623ee" version="00.00.000" uri="../contacts/25226aff-9059-3bf6-ba7e-1bb9805623ee.xml">
+                    <common:shortDescription xml:lang="en">Not reviewed</common:shortDescription>
+                </common:referenceToNameOfReviewerAndInstitution>
+            </review>
+        </validation>
+    </modellingAndValidation>
+    <administrativeInformation>
+        <dataGenerator>
+            <common:referenceToPersonOrEntityGeneratingTheDataSet type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+            </common:referenceToPersonOrEntityGeneratingTheDataSet>
+        </dataGenerator>
+        <dataEntryBy>
+            <common:timeStamp>2026-06-25T14:53:55.158+02:00</common:timeStamp>
+            <common:referenceToDataSetFormat type="source data set" refObjectId="a97a0155-0234-4b87-b4ce-a45da52f2a40" version="01.01.000" uri="../sources/a97a0155-0234-4b87-b4ce-a45da52f2a40_01.01.000.xml">
+                <common:shortDescription xml:lang="en">ILCD format</common:shortDescription>
+            </common:referenceToDataSetFormat>
+            <common:referenceToPersonOrEntityEnteringTheData type="contact data set" refObjectId="b1a346fb-b7c1-3615-b0c3-89d40e413b7d" version="00.00.000" uri="../contacts/b1a346fb-b7c1-3615-b0c3-89d40e413b7d.xml">
+                <common:shortDescription xml:lang="en">Rolf Frischknecht</common:shortDescription>
+            </common:referenceToPersonOrEntityEnteringTheData>
+        </dataEntryBy>
+        <publicationAndOwnership>
+            <common:dateOfLastRevision>2026-06-10T09:02:53.089+02:00</common:dateOfLastRevision>
+            <common:dataSetVersion>00.00.010</common:dataSetVersion>
+            <common:referenceToUnchangedRepublication type="source data set" refObjectId="dceef253-c5b0-3676-8792-3b64fd5fd8fc" version="00.00.000" uri="../sources/dceef253-c5b0-3676-8792-3b64fd5fd8fc.xml">
+                <common:shortDescription xml:lang="en">2022 - Energy label for passenger cars - Frischknecht</common:shortDescription>
+            </common:referenceToUnchangedRepublication>
+            <common:copyright>true</common:copyright>
+            <common:accessRestrictions xml:lang="en">All information can be accessed by everybody.</common:accessRestrictions>
+        </publicationAndOwnership>
+    </administrativeInformation>
+    <exchanges>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="4" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="1e9170ca-4b2b-3fb7-b935-87bb8cbc7f59" olca:pedigreeUncertainty="(1;1;1;1;1;n.a.)" olca:amount="0.085548">
+            <referenceToFlowDataSet type="flow data set" refObjectId="544b3ddf-4004-35a3-946a-e1284e92bc8c" version="00.00.004" uri="../flows/544b3ddf-4004-35a3-946a-e1284e92bc8c.xml">
+                <common:shortDescription xml:lang="en">Crude oil, production IQ, at long distance transport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.085548</meanAmount>
+            <resultingAmount>0.085548</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,na); Crude oil mix according to IEA Oil Statistics 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="3" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="677067e0-1321-3a97-9133-e89597b4fe8d" olca:pedigreeUncertainty="(1;1;1;1;1;n.a.)" olca:amount="0.04951">
+            <referenceToFlowDataSet type="flow data set" refObjectId="e1659e83-2345-3aa2-bc84-97901c67af83" version="00.00.004" uri="../flows/e1659e83-2345-3aa2-bc84-97901c67af83.xml">
+                <common:shortDescription xml:lang="en">Crude oil, production SA, at long distance transport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.04951</meanAmount>
+            <resultingAmount>0.04951</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,na); Crude oil mix according to IEA Oil Statistics 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="6" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="5b4522bb-7b0c-3cd7-8f2a-56c30c999b89" olca:pedigreeUncertainty="(1;1;1;1;1;n.a.)" olca:amount="0.014436">
+            <referenceToFlowDataSet type="flow data set" refObjectId="42388fb4-7310-3c95-bc41-f26e046320c8" version="00.00.004" uri="../flows/42388fb4-7310-3c95-bc41-f26e046320c8.xml">
+                <common:shortDescription xml:lang="en">Crude oil, production MX, at long distance transport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.014436</meanAmount>
+            <resultingAmount>0.014436</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,na); Crude oil mix according to IEA Oil Statistics 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="5" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="4084a1e3-3c04-32fe-9804-52164553ab67" olca:pedigreeUncertainty="(1;1;1;1;1;n.a.)" olca:amount="0.10262">
+            <referenceToFlowDataSet type="flow data set" refObjectId="93f88256-a804-3583-8f66-bfbf88a4bf86" version="00.00.004" uri="../flows/93f88256-a804-3583-8f66-bfbf88a4bf86.xml">
+                <common:shortDescription xml:lang="en">Crude oil, production US, at long distance transport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.10262</meanAmount>
+            <resultingAmount>0.10262</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,na); Crude oil mix according to IEA Oil Statistics 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="13" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:amount="1.0">
+            <referenceToFlowDataSet type="flow data set" refObjectId="c4bb93ec-ad65-36db-a7f4-9fbea3638515" version="00.00.010" uri="../flows/c4bb93ec-ad65-36db-a7f4-9fbea3638515.xml">
+                <common:shortDescription xml:lang="en">xxx Crude oil, import mix, at long distance transport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Output</exchangeDirection>
+            <meanAmount>1.0</meanAmount>
+            <resultingAmount>1.0</resultingAmount>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="2" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="e7ee122a-702b-3f07-9b54-82e41a147162" olca:pedigreeUncertainty="(1;1;1;1;1;n.a.)" olca:amount="0.086707">
+            <referenceToFlowDataSet type="flow data set" refObjectId="fe09575e-800c-38ca-82c2-49f5e3429cef" version="00.00.004" uri="../flows/fe09575e-800c-38ca-82c2-49f5e3429cef.xml">
+                <common:shortDescription xml:lang="en">Crude oil, production NG, at long distance transport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.086707</meanAmount>
+            <resultingAmount>0.086707</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,na); Crude oil mix according to IEA Oil Statistics 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="1" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="9ca62414-6ef3-35d4-b40a-c7193c6527a6" olca:pedigreeUncertainty="(1;1;1;1;1;n.a.)" olca:amount="0.10073">
+            <referenceToFlowDataSet type="flow data set" refObjectId="a6184761-35c0-32a2-9be5-10accf08ed43" version="00.00.004" uri="../flows/a6184761-35c0-32a2-9be5-10accf08ed43.xml">
+                <common:shortDescription xml:lang="en">Crude oil, production RAF, at long distance transport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.10073</meanAmount>
+            <resultingAmount>0.10073</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,na); Crude oil mix according to IEA Oil Statistics 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="12" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="e641fa02-cebf-3c92-99ce-5e98eb50608d" olca:pedigreeUncertainty="(1;1;1;1;1;n.a.)" olca:amount="0.019405">
+            <referenceToFlowDataSet type="flow data set" refObjectId="6af6815c-bea3-3eee-9c11-d0bb0ecff9fc" version="00.00.004" uri="../flows/6af6815c-bea3-3eee-9c11-d0bb0ecff9fc.xml">
+                <common:shortDescription xml:lang="en">Crude oil, production AZ, at long distance transport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.019405</meanAmount>
+            <resultingAmount>0.019405</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,na); Crude oil mix according to IEA Oil Statistics 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="11" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="1d560222-554c-3d97-ae80-95656f8d49b8" olca:pedigreeUncertainty="(1;1;1;1;1;n.a.)" olca:amount="0.047704">
+            <referenceToFlowDataSet type="flow data set" refObjectId="30b86080-19b7-3d2d-b904-ffa1694bba5c" version="00.00.004" uri="../flows/30b86080-19b7-3d2d-b904-ffa1694bba5c.xml">
+                <common:shortDescription xml:lang="en">Crude oil, production KZ, at long distance transport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.047704</meanAmount>
+            <resultingAmount>0.047704</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,na); Crude oil mix according to IEA Oil Statistics 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="8" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="917c272d-c61c-3a86-9e93-c4cef5c79c73" olca:pedigreeUncertainty="(1;1;1;1;1;n.a.)" olca:amount="0.11501">
+            <referenceToFlowDataSet type="flow data set" refObjectId="930227ff-163c-3cb7-ba0f-51a1128b8250" version="00.00.004" uri="../flows/930227ff-163c-3cb7-ba0f-51a1128b8250.xml">
+                <common:shortDescription xml:lang="en">Crude oil, production NO, at long distance transport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.11501</meanAmount>
+            <resultingAmount>0.11501</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,na); Crude oil mix according to IEA Oil Statistics 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="7" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="5be517f3-0dbf-38e8-8244-2da4cdf5ccb9" olca:pedigreeUncertainty="(1;1;1;1;1;n.a.)" olca:amount="0.028089">
+            <referenceToFlowDataSet type="flow data set" refObjectId="605779be-b937-36ac-a9d2-7c332403d119" version="00.00.004" uri="../flows/605779be-b937-36ac-a9d2-7c332403d119.xml">
+                <common:shortDescription xml:lang="en">Crude oil, production RLA, at long distance transport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.028089</meanAmount>
+            <resultingAmount>0.028089</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,na); Crude oil mix according to IEA Oil Statistics 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="10" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="266e31e5-b04a-3145-a692-b5df49a458e6" olca:pedigreeUncertainty="(1;1;1;1;1;n.a.)" olca:amount="0.28299">
+            <referenceToFlowDataSet type="flow data set" refObjectId="f5be47c0-6918-3d4a-bc26-a691ba84b60b" version="00.00.004" uri="../flows/f5be47c0-6918-3d4a-bc26-a691ba84b60b.xml">
+                <common:shortDescription xml:lang="en">Crude oil, production RU, at long distance transport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.28299</meanAmount>
+            <resultingAmount>0.28299</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,na); Crude oil mix according to IEA Oil Statistics 2020</generalComment>
+        </exchange>
+        <exchange xmlns:olca="http://openlca.org/ilcd-extensions" dataSetInternalID="9" olca:unitId="20aadc24-a391-41cf-b340-3e4529f44bde" olca:propertyId="93a60a56-a3c8-11da-a746-0800200b9a66" olca:defaultProvider="6b202209-94dd-3f53-95df-37bdf33b88ca" olca:pedigreeUncertainty="(1;1;1;1;1;n.a.)" olca:amount="0.067259">
+            <referenceToFlowDataSet type="flow data set" refObjectId="dee00792-f1f5-3096-9161-dd84eb86642a" version="00.00.004" uri="../flows/dee00792-f1f5-3096-9161-dd84eb86642a.xml">
+                <common:shortDescription xml:lang="en">Crude oil, production GB, at long distance transport</common:shortDescription>
+            </referenceToFlowDataSet>
+            <exchangeDirection>Input</exchangeDirection>
+            <meanAmount>0.067259</meanAmount>
+            <resultingAmount>0.067259</resultingAmount>
+            <uncertaintyDistributionType>log-normal</uncertaintyDistributionType>
+            <relativeStandardDeviation95In>1.02469507659596</relativeStandardDeviation95In>
+            <generalComment xml:lang="en">(1,1,1,1,1,na); Crude oil mix according to IEA Oil Statistics 2020</generalComment>
+        </exchange>
+    </exchanges>
+</processDataSet>
